@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"origins:climbing",
+		"origins:master_of_webs",
+		"origins:carnivore",
+		"origins:fragile",
+		"origins:arthropod",
+		"originstweaks:arthropod_appearance",
+		"originstweaks:climbing_toggle_hud",
+		"originstweaks:arachnid_sounds"
+	],
+	"icon": {
+		"item": "minecraft:spider_eye"
+	},
+	"order": 1,
+	"impact": 1,
+	"loading_priority": 1
+}

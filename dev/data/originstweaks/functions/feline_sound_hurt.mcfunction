@@ -1,0 +1,1 @@
+playsound minecraft:entity.cat.hurt player @a ~ ~ ~ 1 1.2

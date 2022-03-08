@@ -1,0 +1,44 @@
+{
+    "name": "Spectral Wail",
+    "description": "You are able to release a Wail that reveals other Entites nearby.",
+    "badges": [
+        {
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Press your Secondary Power Key to activate this Power."
+        },
+        {
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "You inflict Glowing to Entities in a radius of 32 Blocks for 30 Seconds."
+        }
+    ],
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "function originstweaks:wail_prepare",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:delay",
+                "ticks": 20,
+                "action": {
+                    "type": "origins:execute_command",
+                    "command": "function originstweaks:wail_execute",
+                    "permission_level": 4
+                }
+            }
+        ]
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 0
+        }
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

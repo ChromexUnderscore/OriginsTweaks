@@ -1,0 +1,1 @@
+playsound minecraft:entity.cat.ambient player @a ~ ~ ~ 1 0.8

@@ -1,0 +1,56 @@
+Origins Tweaks - Changelog
+
+> Developers
+	Chromex_ [Chromex#9707]
+	ShroopD [Shroopd#7500]
+
+> Version 1.0 [Base Datapack]
+	> Added Ambience, Hurt, Death and retreat sounds for every Origin.
+	> Added Orb of Origin Crafting Recipe.
+	[Chromex_]
+
+> Version 1.1 [Arachnid, Avian, Enderian and Merling Buffs]
+	> Added power "Arthropod Appearance" to Arachnid.
+		Height change from 1.8 Blocks to 1.5 blocks
+		Modified Fall damage to only take fall damage after 30 Blocks, after this just half Fall damage
+	> Added power "Merling Trident" to Merling.
+		Adds a craftable Trident for Merlings.
+	> Added power "Heaven's Grace" to Avian.
+		Spectral arrow deal extra Damage.
+	> Added support for datapack "Better Enderian"
+	> Added power "Hydro Knowledge" to Merling.
+		Tridents thrown while submerged in water deal more damage.
+	> Modified power "origins:slow_falling" to have a toggle.
+	[ShroopD & Chromex_]
+
+> Version 1.2 [Elytrian Buff]
+	> Added power "Elytra Boost" to Elytrian.
+		Active Ability that gives a small forward boost if activated while gliding; similar to Rockets but weaker.
+	> Modified power "Need for Mobility" to support Armor up to Iron Tier
+	[ShroopD & Chromex_]
+
+> Version 1.3 [Merling Blacksmith Fix]
+	> Modified power "Merling Trident" to support Blacksmith Buffs.	
+	[Chromex_]
+
+> Version 1.4 [Phantom Buff & Debuff]
+	> Added power "Spectral Wail" to Phantom
+		Active ability that inflicts 30 seconds of Glowing to entities in 32 Blocks range
+	> Added power "Aurophobia" to Phantom
+		Gold Debuffs: Golden Food is uneatable, Golden Blocks are unphasable and give Debuffs in proximity, Golden Tools deal extra Damage to the Origin.
+	> Removed power "Fragile" to balance out the damage modifier caused by "Aurophobia".
+> Version 1.4.1 [Minor Arachnid Tweak]
+	> Added a Hud Render if "origins:climbing" is enabled.
+	[Chromex_]
+
+> Version 1.5 [Arachnid and Feline Buffs]
+	> Modified "Arthropod Appearance"
+		Reworked the Ability.
+		Fixed fall distance not resetting after disabling fall immunity.
+	
+	> Modified "Master of Webs"
+		Added a String Resource.
+		Added Subpower "Web Shooter".
+		changed "Webbing" to consume 1 Notch of the String Resource.
+	> Modified "Climbing"
+		Changed Keybinding from "key.origins.primary_active" to "key.origins.secondary_active"

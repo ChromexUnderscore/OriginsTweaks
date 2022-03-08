@@ -1,0 +1,1 @@
+playsound minecraft:entity.shulker.ambient player @a ~ ~ ~ 1 1

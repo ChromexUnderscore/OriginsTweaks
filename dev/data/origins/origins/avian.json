@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"originstweaks:slow_falling",
+		"origins:fresh_air",
+		"origins:like_air",
+		"origins:tailwind",
+		"origins:lay_eggs",
+		"origins:vegetarian",
+		"originstweaks:heavens_grace",
+		"originstweaks:avian_sounds"
+	],
+	"icon": {
+		"item": "minecraft:feather"
+	},
+	"order": 0,
+	"impact": 1,
+	"loading_priority": 1
+}

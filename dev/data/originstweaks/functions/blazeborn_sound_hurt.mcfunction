@@ -1,0 +1,1 @@
+playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 1 1.2

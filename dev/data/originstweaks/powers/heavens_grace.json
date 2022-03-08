@@ -1,0 +1,19 @@
+{
+    "name": "Heavens Grace",
+    "description": "Your Heavenly Ancestors graced you with the art of Bow Combat.",
+    "type": "origins:modify_projectile_damage",
+    "badges":[
+        {
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "You deal an extra of 3 Hearts of damage when shooting Spectral Arrows."
+        }
+    ],
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:spectral_arrow"
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 3.5
+    }
+}

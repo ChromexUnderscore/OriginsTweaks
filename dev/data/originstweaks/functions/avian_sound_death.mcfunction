@@ -1,0 +1,1 @@
+playsound minecraft:entity.chicken.death player @a ~ ~ ~ 1 1
