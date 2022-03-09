@@ -6,4 +6,4 @@ This Datapack overhauls the vanilla Origins Mod by adding:
 + Hurt Sounds
 + Retreat Sounds
 + Death Sounds
-+ Origin-Specific Archievements (Work in Progress)
++ Origin-Specific Archievements (Planned)
