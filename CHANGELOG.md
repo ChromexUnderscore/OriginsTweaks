@@ -6,7 +6,7 @@
 
 + Added a Hud Render if `origins:climbing` is enabled.
 
-### [Version 1.3 [Phantom Buff]](https://github.com/ChromexUnderscore/OriginsTweaks)
+### [Version 1.3 [Phantom Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3)
 
 + Added power "Spectral Wail" to Phantom.
     + Active ability that inflicts 30 seconds of Glowing to entities in 32 Blocks range
@@ -14,17 +14,17 @@
     + Gold Debuffs: Golden Food is not edible, Golden Blocks are unphasable and give Debuffs in proximity, Golden Tools deal extra Damage to the Origin.
 + Removed power "Fragile" to balance out the damage modifier caused by "Aurophobia".
 
-### [Version 1.2.1 [Merling Blacksmith Fix]](https://github.com/ChromexUnderscore/OriginsTweaks)
+### [Version 1.2.1 [Merling Blacksmith Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.2.1)
 
 + Modified power "Merling Trident" to support Blacksmith Buffs.
 
-### [Verion 1.2 [Elytrian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks)
+### [Verion 1.2 [Elytrian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.2)
 
 +  Added power "Elytra Boost" to Elytrian.
     +  Active Ability that gives a small forward boost if activated while gliding; similar to Rockets but weaker.
 +  Modified power `origins:light_armor` to support Armor up to Iron Tier.
 
-### [Version 1.1 [Basic Buffs]](https://github.com/ChromexUnderscore/OriginsTweaks)
+### [Version 1.1 [Basic Buffs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.1)
 
 +  Added power "Arthropod Appearance" to Arachnid.
     +  Height change from 1.8 Blocks to 1.5 blocks.
@@ -38,7 +38,7 @@
     +  Tridents thrown while submerged in water deal more damage.
 +  Modified power `origins:slow_falling` to have a toggle.
 
-### [Version 1.0 [Base Datapack]](https://github.com/ChromexUnderscore/OriginsTweaks)
+### [Version 1.0 [Base Datapack]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.0)
 
 +  Added Ambience, Hurt, Death and retreat sounds for every Origin.
 +  Added Orb of Origin Crafting Recipe.
