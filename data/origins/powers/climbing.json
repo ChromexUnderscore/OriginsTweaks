@@ -5,6 +5,7 @@
   "loading_priority": 1,
   "toggle": {
     "type": "origins:toggle",
+    "loading_priority": 1,
     "key": {
       "key": "key.origins.secondary_active",
       "continuous": false
@@ -34,7 +35,7 @@
         },
         {
           "type": "origins:power_active",
-          "power": "originstweaks:master_of_webs_toggle"
+          "power": "*:*_toggle"
         }
       ]
     },
@@ -46,9 +47,24 @@
         },
         {
           "type": "origins:power_active",
-          "power": "originstweaks:master_of_webs_toggle"
+          "power": "*:*_toggle"
         }
       ]
     }
-  }
+  },
+  "toggle_hud": {
+    "type": "origins:resource",
+    "hidden": true,
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 24,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}
 }
