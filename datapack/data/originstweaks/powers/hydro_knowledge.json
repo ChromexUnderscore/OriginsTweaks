@@ -1,4 +1,5 @@
 {
+    "type": "origins:modify_projectile_damage",
     "name": "Hydro Knowledge",
     "description": "Due to your experience with physics Underwater, you are able to throw Tridents more efficiently.",
     "badges":[
@@ -7,7 +8,6 @@
             "text": "You deal an extra of 4 Hearts of damage when throwing Tridents underwater."
         }
     ],
-    "type": "origins:modify_projectile_damage",
     "damage_condition": {
         "type": "origins:projectile",
         "projectile": "minecraft:trident"

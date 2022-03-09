@@ -1,7 +1,7 @@
 {
+	"type": "origins:multiple",
 	"name": "Featherweight",
 	"description": "You fall as gently to the ground as a feather would",
-	"type": "origins:multiple",
 	"tweak": {
 		"type": "apoli:modify_falling",
 		"velocity": 0.01,

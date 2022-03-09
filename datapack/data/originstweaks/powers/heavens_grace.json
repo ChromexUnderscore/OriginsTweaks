@@ -1,7 +1,7 @@
 {
+    "type": "origins:modify_projectile_damage",
     "name": "Heavens Grace",
     "description": "Your Heavenly Ancestors graced you with the art of Bow Combat.",
-    "type": "origins:modify_projectile_damage",
     "badges":[
         {
             "sprite": "origins:textures/gui/badge/arrow_up.png",

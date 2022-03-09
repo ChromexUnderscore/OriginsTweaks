@@ -1,4 +1,5 @@
 {
+    "type": "origins:multiple",
     "name": "Aurophobia",
     "description": "Due to the pain and suffering caused by Gold to your Ancestors, you are scared and weakened by it.",
     "badges": [
@@ -19,7 +20,6 @@
             "text": "You will receive Weakness and Slowness III in 10 Blocks Distance to Gold-related Blocks."
         }
     ],
-    "type": "origins:multiple",
     "proximity_stacking": {
         "type": "origins:stacking_status_effect",
         "min_stacks": 0,

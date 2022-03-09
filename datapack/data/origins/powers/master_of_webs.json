@@ -1,4 +1,5 @@
 {
+    "type": "origins:multiple",
     "name": "Master of Webs",
     "description": "You navigate cobweb perfectly, and are able to climb in them. When you hit an enemy, they get stuck in cobweb for a while. You are able to shoot webs onto surfaces which launches you forwards. Non-arthropods stuck in cobweb will be sensed by you. You are able to craft cobweb from string.",
     "loading_priority": 1,
@@ -16,7 +17,6 @@
             "text": "By Pressing your Primary Ability Key, you are able to shoot a web that launches you forwards. This Ability consumes 2 Notches of your String Supply."
         }
     ],
-    "type": "origins:multiple",
     "webbing": {
         "type": "origins:target_action_on_hit",
         "cooldown": 120,

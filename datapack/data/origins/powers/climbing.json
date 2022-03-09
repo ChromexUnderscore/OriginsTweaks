@@ -1,8 +1,8 @@
 {
+  "type": "origins:multiple",
   "name": "Climbing",
   "description": "You are able to climb up any kind of wall, not just ladders.",
   "loading_priority": 1,
-  "type": "origins:multiple",
   "toggle": {
     "type": "origins:toggle",
     "key": {
