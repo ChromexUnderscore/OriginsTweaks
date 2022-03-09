@@ -1,4 +1,5 @@
 {
+    "type": "origins:active_self",
     "name": "Spectral Wail",
     "description": "You are able to release a Wail that reveals other Entites nearby.",
     "badges": [
@@ -11,7 +12,6 @@
             "text": "You inflict Glowing to Entities in a radius of 32 Blocks for 30 Seconds."
         }
     ],
-    "type": "origins:active_self",
     "entity_action": {
         "type": "origins:and",
         "actions": [

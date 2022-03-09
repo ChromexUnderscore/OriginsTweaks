@@ -1,7 +1,7 @@
 {
+  "type": "origins:restrict_armor",
   "name": "Need for Mobility",
   "description": "You cannot wear any Armor heavier than Iron.",
-  "type": "origins:restrict_armor",
   "head": {
     "type": "origins:armor_value",
     "comparison": ">",
