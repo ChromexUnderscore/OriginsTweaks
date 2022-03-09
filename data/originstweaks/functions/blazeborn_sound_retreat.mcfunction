@@ -1,1 +1,0 @@
-playsound minecraft:entity.blaze.ambient player @a ~ ~ ~ 1 0.8
