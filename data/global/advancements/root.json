@@ -6,7 +6,7 @@
             "item": "minecraft:knowledge_book"
         },
         "background": "minecraft:textures/block/gray_concrete.png",
-        "show_toast": false,
+        "show_toast": true,
         "announce_to_chat": false
     },
     "criteria": {
