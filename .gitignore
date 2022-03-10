@@ -1,5 +1,8 @@
 # Main Files
 *.json
 
-# Package Files #
+#functions
+*.mcfunction
+
+# Package Files
 *.zip
