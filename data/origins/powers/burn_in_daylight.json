@@ -20,7 +20,7 @@
                 "equipment_slot": "head",
                 "item_condition": {
                     "type": "origins:armor_value",
-                    "comparison": ">",
+                    "comparison": ">=",
                     "compare_to": 1
                 },
                 "inverted": true
