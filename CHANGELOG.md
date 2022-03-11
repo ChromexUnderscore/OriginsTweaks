@@ -2,7 +2,14 @@
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
-### [Version 1.3.1[Arachnid Climbing Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.1)
+### [Version 1.3.2 [Phantom Patch]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.2)
+
++   Modified power ``origins:burning_in_daylight``.
+    +   Fixed an Issue with Phantoms burning, even when wearing a Helmet.
++   Modified power "Spectral Wail".
+    +   Fixed an Issue with the Glowing Effect visible to everyone.
+
+### [Version 1.3.1 [Arachnid Climbing Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.1)
 
 + Added a Hud Render if `origins:climbing` is enabled.
 
