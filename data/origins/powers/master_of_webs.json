@@ -18,22 +18,48 @@
     ],
     "loading_priority": 1,
     "webbing": {
-        "type": "origins:target_action_on_hit",
+        "type": "origins:action_on_hit",
+        "loading_priority": 1,
         "cooldown": 120,
         "hud_render": {
             "should_render": false
         },
-        "entity_action": {
-            "type": "origins:block_action_at",
-            "block_action": {
-                "type": "origins:if_else",
-                "condition": {
-                    "type": "origins:replacable"
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_string_resource",
+                        "change": -10
+                    }
                 },
-                "if_action": {
-                    "type": "origins:set_block",
-                    "block": "origins:temporary_cobweb"
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:block_action_at",
+                        "block_action": {
+                            "type": "origins:if_else",
+                            "condition": {
+                                "type": "origins:replacable"
+                            },
+                            "if_action": {
+                                "type": "origins:set_block",
+                                "block": "origins:temporary_cobweb"
+                            }
+                        }
+                    }
                 }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_string_resource",
+                "comparison": ">=",
+                "compare_to": 10
             }
         }
     },
@@ -51,12 +77,12 @@
                     "fluid_handling": "any",
                     "hit_action": {
                         "type": "origins:add_velocity",
-                        "z": 2,
+                        "z": 1,
                         "space": "local"
                     },
                     "command_at_hit": "function originstweaks:web_shoot_hit",
-                    "command_along_ray": "particle minecraft:soul_fire_flame",
-                    "command_step": 1,
+                    "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                    "command_step": 0.1,
                     "command_along_ray_only_on_hit": true
                 },
                 {
@@ -71,7 +97,7 @@
                     },
                     "if_action": {
                         "type": "origins:execute_command",
-                        "command": "playsound block.itemframe.remove_item player @a ~ ~ ~ 1 1"
+                        "command": "playsound minecraft:entity.item_frame.add_item player Chromex_ ~ ~ ~ 1 1"
                     }
                 },
                 {
@@ -86,7 +112,7 @@
                     },
                     "if_action": {
                         "type": "origins:change_resource",
-                        "resource": "_string_resource",
+                        "resource": "*:*_string_resource",
                         "change": -10
                     }
                 },
@@ -213,6 +239,7 @@
         "type": "origins:resource",
         "min": 0,
         "max": 60,
+        "start_value": 60,
         "hud_render": {
             "bar_index": 5,
             "condition": {
