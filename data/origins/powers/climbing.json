@@ -1,0 +1,70 @@
+{
+  "type": "origins:multiple",
+  "name": "Climbing",
+  "description": "You are able to climb up any kind of wall, not just ladders.",
+  "loading_priority": 1,
+  "toggle": {
+    "type": "origins:toggle",
+    "loading_priority": 1,
+    "key": {
+      "key": "key.origins.secondary_active",
+      "continuous": false
+    }
+  },
+  "climbing": {
+    "type": "origins:climbing",
+    "hold_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:block_collision",
+              "offset_x": 0.01,
+              "offset_z": 0.01,
+              "offset_y": 0
+            },
+            {
+              "type": "origins:block_collision",
+              "offset_x": -0.01,
+              "offset_z": -0.01,
+              "offset_y": 0
+            }
+          ]
+        },
+        {
+          "type": "origins:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:collided_horizontally"
+        },
+        {
+          "type": "origins:power_active",
+          "power": "*:*_toggle"
+        }
+      ]
+    }
+  },
+  "toggle_hud": {
+    "type": "origins:resource",
+    "hidden": true,
+    "min": 0,
+    "max": 1,
+    "start_value": 1,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 24,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}
+}
