@@ -27,85 +27,46 @@
             "command": "scale reset @s"
         }
     },
-    "no_fall_damage": {
-        "type": "origins:modify_falling",
-        "take_fall_damage": false,
-        "condition": {
-            "type": "origins:fall_distance",
-            "comparison": ">=",
-            "compare_to": 30,
-            "inverted": true
-        }
-    },
-    "fall_distance_reset": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:set_fall_distance",
-                    "fall_distance": 0
-                },
-                {
-                    "type": "origins:change_resource",
-                    "resource": "originstweaks:arthropod_appearance_on_ground_resource",
-                    "change": -1,
-                    "operation": "add"
-                }
-            ]
-        },
-        "interval": 1,
-        "condition": {
+    "fall_dmg_cancel": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
             "type": "origins:and",
             "conditions": [
                 {
-                    "type": "origins:fall_distance",
-                    "comparison": ">",
-                    "compare_to": 30
+                    "type": "origins:name",
+                    "name": "fall"
                 },
                 {
-                    "type": "origins:resource",
-                    "resource": "originstweaks:arthropod_appearance_on_ground_resource",
-                    "comparison": "=",
-                    "compare_to": 1
+                    "type": "origins:amount",
+                    "comparison": "<=",
+                    "compare_to": 30
                 }
             ]
-        }
-    },
-    "block_collision_reset": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "originstweaks:arthropod_appearance_on_ground_resource",
-            "change": 1,
-            "operation": "add"
         },
-        "interval": 1,
-        "condition": {
-            "type": "origins:block_collision",
-            "offset_x": 0,
-            "offset_y": 0,
-            "offset_z": 0
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -1
         }
     },
-    "fall_damage_decrease": {
+    "fall_dmg_reduce": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
-            "type": "origins:name",
-            "name": "fall"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "fall"
+                },
+                {
+                    "type": "origins:amount",
+                    "comparison": ">",
+                    "compare_to": 30
+                }
+            ]
         },
-        "modifiers": {
-            "name": "half fall damage",
-            "operation": "multiply_total",
-            "value": -0.5
-        }
-    },
-    "on_ground_resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 1,
-        "hud_render": {
-            "should_render": false
+        "modifier": {
+            "operation": "addition",
+            "value": -30
         }
     }
 }
