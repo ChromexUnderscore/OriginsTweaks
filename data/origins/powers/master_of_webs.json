@@ -21,8 +21,7 @@
         "type": "origins:target_action_on_hit",
         "cooldown": 120,
         "hud_render": {
-            "sprite_location": "origins:textures/gui/resource_bar.png",
-            "bar_index": 5
+            "should_render": false
         },
         "entity_action": {
             "type": "origins:block_action_at",
@@ -38,7 +37,90 @@
             }
         }
     },
-    "web_shoot": {},
+    "web_shoot": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:raycast",
+                    "distance": 20,
+                    "block": true,
+                    "entity": false,
+                    "shape_type": "collider",
+                    "fluid_handling": "any",
+                    "hit_action": {
+                        "type": "origins:add_velocity",
+                        "z": 2,
+                        "space": "local"
+                    },
+                    "command_at_hit": "function originstweaks:web_shoot_hit",
+                    "command_along_ray": "particle minecraft:soul_fire_flame",
+                    "command_step": 1,
+                    "command_along_ray_only_on_hit": true
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": true,
+                        "entity": false,
+                        "shape_type": "collider",
+                        "fluid_handling": "any"
+                    },
+                    "if_action": {
+                        "type": "origins:execute_command",
+                        "command": "playsound block.itemframe.remove_item player @a ~ ~ ~ 1 1"
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": true,
+                        "entity": false,
+                        "shape_type": "collider",
+                        "fluid_handling": "any"
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "_string_resource",
+                        "change": -10
+                    }
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:raycast",
+                        "distance": 20,
+                        "block": true,
+                        "entity": false,
+                        "shape_type": "collider",
+                        "fluid_handling": "any"
+                    },
+                    "if_action": {
+                        "type": "origins:swing_hand"
+                    }
+                }
+            ]
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_string_resource",
+            "comparison": ">=",
+            "compare_to": 10
+        }
+    },
     "no_slowdown": {
         "type": "origins:simple"
     },
@@ -127,5 +209,29 @@
             }
         }
     },
-    "string_resource": {}
+    "string_resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 60,
+        "hud_render": {
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:climbing",
+                "inverted": true
+            }
+        }
+    },
+    "string_regenerate": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_string_resource",
+            "change": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:climbing",
+            "inverted": true
+        }
+    }
 }
