@@ -2,6 +2,18 @@
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
+### [Version 1.4 [Arachnid Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.4)
+
++ Modified power ``origins:climbing``.
+    + Changed power to be activated using ``key.origins.secondary_active`` rather than ``key.origins.primary_active``.
++ Modified power ``origins:master_of_webs``.
+    + Changed subpower "webbing" to be dependant on the String Resource.
+    + Added subpower "web_shoot".
+    + Modified subpower "web_crafting" to use 6 Strings to craft a Cobweb.
+    + Added subpower "string_resource".
+    + Added subpower "string_regenerate".
++ Fixed "Arthropod Appearance" to properly calculate falldamage delay and amount.
+
 ### [Version 1.3.2 [Phantom Patch]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.2)
 
 +   Modified power ``origins:burning_in_daylight``.
