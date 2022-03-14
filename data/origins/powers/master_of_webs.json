@@ -2,7 +2,7 @@
     "type": "origins:multiple",
     "name": "Master of Webs",
     "description": "You navigate cobweb perfectly, and are able to climb in them. You can shoot your Web onto any solid Surface, which gives you a small forward Boost. When you hit an enemy, they get stuck in cobweb for a while. Non-arthropods stuck in cobweb will be sensed by you. You are able to craft cobweb from string.",
-    "badges":[
+    "badges": [
         {
             "sprite": "origins:textures/gui/badge/active.png",
             "text": "Shoot a Web with your Primary Key."
@@ -20,7 +20,7 @@
     "webbing": {
         "type": "origins:action_on_hit",
         "loading_priority": 1,
-        "cooldown": 120,
+        "cooldown": 240,
         "hud_render": {
             "should_render": false
         },
@@ -70,14 +70,17 @@
             "actions": [
                 {
                     "type": "origins:raycast",
-                    "distance": 20,
+                    "distance": 32,
                     "block": true,
-                    "entity": false,
+                    "entity": true,
                     "shape_type": "collider",
                     "fluid_handling": "any",
                     "hit_action": {
                         "type": "origins:add_velocity",
-                        "z": 1,
+                        "x": 0,
+                        "y": 0,
+                        "z": 1.5,
+                        "operation": "set",
                         "space": "local"
                     },
                     "command_at_hit": "function originstweaks:web_shoot_hit",
@@ -91,7 +94,7 @@
                         "type": "origins:raycast",
                         "distance": 20,
                         "block": true,
-                        "entity": false,
+                        "entity": true,
                         "shape_type": "collider",
                         "fluid_handling": "any"
                     },
@@ -106,7 +109,7 @@
                         "type": "origins:raycast",
                         "distance": 20,
                         "block": true,
-                        "entity": false,
+                        "entity": true,
                         "shape_type": "collider",
                         "fluid_handling": "any"
                     },
@@ -122,7 +125,7 @@
                         "type": "origins:raycast",
                         "distance": 20,
                         "block": true,
-                        "entity": false,
+                        "entity": true,
                         "shape_type": "collider",
                         "fluid_handling": "any"
                     },
@@ -259,6 +262,56 @@
         "condition": {
             "type": "origins:climbing",
             "inverted": true
+        }
+    },
+    "string_consume": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_string_resource",
+                    "change": 15
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:string"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_string_resource",
+                    "comparison": "!=",
+                    "compare_to": 60
+                }
+            ]
         }
     }
 }
