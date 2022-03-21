@@ -2,6 +2,12 @@
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
+###[Version 1.4.1 [Arachnid Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.4.1)
+
++  Set additional velocity on web shoot to be client oriented
++  Set velocity to launch 0.5 upwards and 1.5 forwards
++  Tweaked height to fit under 1 block gaps
+
 ### [Version 1.4 [Arachnid Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.4)
 
 + Modified power ``origins:climbing``.
