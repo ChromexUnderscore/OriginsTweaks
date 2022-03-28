@@ -1,0 +1,214 @@
+{
+    "type": "origins:multiple",
+    "name": "Protective Shell",
+    "description": "You are able to Increase your defence by closing your Shells.",
+    "badges": [
+        {
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Press and hold your sneak key to close your shells."
+        }
+    ],
+    "active_self": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1
+        },
+        "cooldown": 0,
+        "key": {
+            "key": "key.sneak",
+            "continuous": true
+        },
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 140,
+        "start_value": 0,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "comparison": "!=",
+                "compare_to": 0
+            }
+        }
+    },
+    "run_out": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1
+        },
+        "interval": 10
+    },
+    "effects": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_resource",
+                                "comparison": "!=",
+                                "compare_to": 0
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_resource",
+                                "comparison": "<=",
+                                "compare_to": 34
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 10,
+                            "amplifier": 0
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_resource",
+                                "comparison": ">=",
+                                "compare_to": 35
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_resource",
+                                "comparison": "<=",
+                                "compare_to": 69
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 10,
+                            "amplifier": 1
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_resource",
+                                "comparison": ">=",
+                                "compare_to": 70
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_resource",
+                                "comparison": "<=",
+                                "compare_to": 104
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 10,
+                            "amplifier": 2
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_resource",
+                        "comparison": ">=",
+                        "compare_to": 105
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "duration": 10,
+                            "amplifier": 3
+                        }
+                    }
+                }
+            ]
+        },
+        "interval": 5
+    },
+    "sounds_1": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.shulker.open"
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 1
+        }
+    },
+    "sounds_35": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.shulker.open"
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 35
+        }
+    },
+    "sounds_70": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.shulker.open"
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 70
+        }
+    },
+    "sounds_105": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.shulker.open"
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "comparison": "==",
+            "compare_to": 105
+        }
+    }
+}
