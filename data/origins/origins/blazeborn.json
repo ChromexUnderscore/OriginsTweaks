@@ -8,6 +8,9 @@
 		"origins:flame_particles",
 		"origins:damage_from_snowballs",
 		"origins:damage_from_potions",
+		"originstweaks:firecharged_projectile",
+		"originstweaks:blazing_touch",
+		"originstweaks:revved_up",
 		"originstweaks:blazeborn_sounds"
 	],
 	"icon": {

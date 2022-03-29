@@ -1,0 +1,49 @@
+{
+    "type": "origins:multiple",
+    "name": "Firecharged Projectile",
+    "description": "Blazeborn are able to launch a burst of fireballs by pressing the primary key.",
+    "not_revved": {
+        "type": "origins:fire_projectile",
+        "entity_type": "small_fireball",
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": false
+        },
+        "count": 3,
+        "interval": 5,
+        "start_delay": 5,
+        "speed": 1.5,
+        "divergence": 2,
+        "sound": "entity.blaze.shoot",
+        "tag": "{NoGravity:1b}",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        }
+    },
+    "revved_up": {
+        "type": "origins:fire_projectile",
+        "entity_type": "small_fireball",
+        "cooldown": 50,
+        "hud_render": {
+            "should_render": false
+        },
+        "count": 3,
+        "interval": 4,
+        "start_delay": 0,
+        "speed": 2,
+        "divergence": 0,
+        "sound": "entity.blaze.shoot",
+        "tag": "{NoGravity:1b}",
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": true
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:revved_up_resource",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    }
+}
