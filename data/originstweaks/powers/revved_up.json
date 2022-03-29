@@ -22,7 +22,7 @@
                     "operation": "set"
                 },
                 {
-                    "type": "origins:playsound",
+                    "type": "origins:play_sound",
                     "sound": "minecraft:entity.wither.shoot"
                 }
             ]
