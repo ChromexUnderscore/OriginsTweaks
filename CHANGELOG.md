@@ -2,6 +2,27 @@
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
+[Version 1.6.1 [Blazeborn Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.1)
+
++ Added Power ``Thermal Lift`` to Blazeborn.
+    + Hover in Midair and move up and down by using jump or sneak.
++ Fixed ``Blazing Touch``
+    + Removed Right clicking on Block to place power due to being unstable and bugged.
++ Fixes some other small issues
+    + ``originstweaks:candles`` block tag is not a ``.json`` file.
+    + changed some stats for ``Firecharged Projectile`` power. 
+
+## [Version 1.6 [Blazeborn Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6)
+
++ Added Power ``Blazing Touch`` to Blazeborn.
+    + right clicking on a Block Places Fire.
+    + Hitting Entities inflicts Fire Aspect V (X While revved up.).
++ Added Power ``Firecharged Projectile``.
+    + Shoot 3 Inaccurate Fireballs with a second cooldown (5x 100% Accurate, 1/2 Second Cooldown while revved up).
++ Added Power ``Revved up``.
+    + Consume 1 Firecharge for 128 seconds revved up.
+    + Buffs Offensive Abilities when revved.
+
 ### [Version 1.5 [Shulker Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.5)
 
 + Added Power ``antigravity_bullet`` to shulk.
