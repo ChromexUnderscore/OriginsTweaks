@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Blazing Touch",
-    "description": "Your hands are on fire. You have permanent Fire aspect V on your bare hands, and you can place fire by right clicking with empty hands.",
+    "description": "Youcan lit your hands on fire with your Secondary Key. When lit, you have permanent Fire aspect V on your bare hands, and you can light certain Blocks on fire.",
     "fire_hands_active": {
         "type": "origins:toggle",
         "active_by_default": false,
@@ -75,30 +75,7 @@
             ]
         }
     },
-    "set_fire": {
-        "type": "origins:action_on_block_use",
-        "block_action": {
-            "type": "origins:and",
-            "actions":[
-                {
-                    "type": "origins:execute_command",
-                    "command": "setblock ~ ~ ~ minecraft:fire"
-                },
-                {
-                    "type": "origins:play_sound",
-                    "sound": "item.firecharge.use"
-                }
-            ]
-        },
-        "directions": [
-            "up"
-        ],
-        "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_fire_hands_active"
-        }
-    },
-    "ignite_others": {
+    "ignite_campfire": {
         "type": "origins:action_on_block_use",
         "block_action": {
             "type": "origins:modify_block_state",
@@ -106,25 +83,20 @@
             "value": true
         },
         "block_condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:in_tag",
-                    "tag": "minecraft:candle_cakes"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "minecraft:campfires"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:candles"
-                }
-            ]
+            "type": "origins:in_tag",
+            "tag": "minecraft:campfires"
         },
         "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_fire_hands_active"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_fire_hands_active"
+                },
+                {
+                    "type": "origins:sneaking"
+                }
+            ]
         }
     }
 }
