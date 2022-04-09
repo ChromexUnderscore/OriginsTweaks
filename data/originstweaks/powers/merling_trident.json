@@ -1,14 +1,11 @@
 {
-    "type": "origins:multiple",
-    "hidden": true,
-    "no_blacksmith": {
         "type": "origins:recipe",
         "recipe": {
             "id": "origins:merling_trident",
             "type": "minecraft:crafting_shaped",
             "pattern": [
                 "#N#",
-                " H ",
+                " D ",
                 " P "
             ],
             "key": {
@@ -18,8 +15,8 @@
                 "N": {
                     "item": "minecraft:nether_star"
                 },
-                "H": {
-                    "item": "minecraft:heart_of_the_sea"
+                "D": {
+                    "item": "minecraft:diamond"
                 },
                 "P": {
                     "item": "minecraft:prismarine_crystals"
@@ -28,25 +25,7 @@
             "result": {
                 "item": "minecraft:trident",
                 "count": 1
-            }
+            },
+            "group": "trident"
         }
-    },
-    "blacksmith": {
-        "type": "origins:modify_crafting",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "item": "minecraft:trident"
-            }
-        },
-        "result": {
-            "item": "minecraft:trident",
-            "tag": "{Unbreakable:1}"
-        },
-        "condition": {
-            "type": "origins:origin",
-            "origin": "origins-classes:blacksmith",
-            "layer": "origins-classes:class"
-        }
-    }
 }

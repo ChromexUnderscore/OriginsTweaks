@@ -32,5 +32,6 @@
     "result": {
         "item": "origins:orb_of_origin",
         "count": 1
-    }
+    },
+    "group": "orboforigins"
 }
