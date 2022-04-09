@@ -1,32 +1,31 @@
 {
-    "type": "origins:recipe",
-    "recipe": {
-        "id": "origins:merling_trident",
-        "type": "minecraft:crafting_shaped",
-        "pattern": [
-            "#N#",
-            " D ",
-            " P "
-        ],
-        "key": {
-            "#": {
-                "item": "minecraft:prismarine_shard"
+        "type": "origins:recipe",
+        "recipe": {
+            "id": "origins:merling_trident",
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+                "#N#",
+                " D ",
+                " P "
+            ],
+            "key": {
+                "#": {
+                    "item": "minecraft:prismarine_shard"
+                },
+                "N": {
+                    "item": "minecraft:nether_star"
+                },
+                "D": {
+                    "item": "minecraft:diamond"
+                },
+                "P": {
+                    "item": "minecraft:prismarine_crystals"
+                }
             },
-            "N": {
-                "item": "minecraft:nether_star"
+            "result": {
+                "item": "minecraft:trident",
+                "count": 1
             },
-            "D": {
-                "item": "minecraft:diamond"
-            },
-            "P": {
-                "item": "minecraft:prismarine_crystals"
-            }
-        },
-        "result": {
-            "item": "minecraft:trident",
-            "tag": "{Unbreakable:1,display:{Name:'[{\"text\":\"Trident\",\"italic\":false}]',Lore:['[{\"text\":\"Merling Quality\",\"italic\":false,\"color\":\"dark_aqua\"}]']},HideFlags:4}",
-            "count": 1
-        },
-        "group": "trident"
-    }
+            "group": "trident"
+        }
 }
