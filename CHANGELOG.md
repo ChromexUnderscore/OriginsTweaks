@@ -2,6 +2,13 @@
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
+[Version 1.6.2 [Recipe Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.2)
+
++ Fixed Orb of Origins Recipe
+    + Rebased Folder data/minecraft/crafting to be data/crafting
++ Fixed Merling Trident Recipe
+    + Removed Blacksmith Trident and added it as standard Recipe
+
 [Version 1.6.1 [Blazeborn Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.1)
 
 + Added Power ``Thermal Lift`` to Blazeborn.
