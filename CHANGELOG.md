@@ -2,6 +2,12 @@
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
+[Version 1.6.3[Origin Teams and Reload Notification]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.3)
+
++ Added Automatic adding and joining of Origins Teams.
++ Added a ``/tellraw`` message once the Datapack has reloaded.
++ Fixed enderian sounds not working without support of datapack ``Better Enderian``.
+
 [Version 1.6.2 [Recipe Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.2)
 
 + Fixed Orb of Origins Recipe
