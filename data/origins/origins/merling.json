@@ -10,7 +10,8 @@
 		"origins:air_from_potions",
 		"originstweaks:merling_trident",
 		"originstweaks:hydro_knowledge",
-		"originstweaks:merling_sounds"
+		"originstweaks:merling_sounds",
+		"originstweaks:merling_team"
 	],
 	"icon": {
 		"item": "minecraft:trident"

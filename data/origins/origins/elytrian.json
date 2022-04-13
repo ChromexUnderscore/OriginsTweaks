@@ -6,7 +6,8 @@
 		"originstweaks:light_armor",
 		"origins:claustrophobia",
 		"origins:more_kinetic_damage",
-		"originstweaks:elytra_boost"
+		"originstweaks:elytra_boost",
+		"originstweaks:elytrian_team"
 	],
 	"icon": {
 		"item": "minecraft:elytra"

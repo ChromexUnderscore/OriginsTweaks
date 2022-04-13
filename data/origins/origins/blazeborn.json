@@ -12,7 +12,8 @@
 		"originstweaks:blazing_touch",
 		"originstweaks:revved_up",
 		"originstweaks:thermal_lift",
-		"originstweaks:blazeborn_sounds"
+		"originstweaks:blazeborn_sounds",
+		"originstweaks:blazeborn_team"
 	],
 	"icon": {
 		"item": "minecraft:blaze_powder"

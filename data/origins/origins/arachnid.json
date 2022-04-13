@@ -6,7 +6,8 @@
 		"origins:fragile",
 		"origins:arthropod",
 		"originstweaks:arthropod_appearance",
-		"originstweaks:arachnid_sounds"
+		"originstweaks:arachnid_sounds",
+		"originstweaks:arachnid_team"
 	],
 	"icon": {
 		"item": "minecraft:spider_eye"

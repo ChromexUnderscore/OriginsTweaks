@@ -9,7 +9,8 @@
 		"origins:phantomize_overlay",
 		"originstweaks:aurophobia",
 		"originstweaks:spectral_wail",
-		"originstweaks:phantom_sounds"
+		"originstweaks:phantom_sounds",
+		"originstweaks:phantom_team"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"

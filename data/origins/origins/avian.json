@@ -7,7 +7,8 @@
 		"origins:lay_eggs",
 		"origins:vegetarian",
 		"originstweaks:heavens_grace",
-		"originstweaks:avian_sounds"
+		"originstweaks:avian_sounds",
+		"originstweaks:avian_team"
 	],
 	"icon": {
 		"item": "minecraft:feather"

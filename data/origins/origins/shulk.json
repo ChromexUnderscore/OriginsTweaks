@@ -8,7 +8,8 @@
 		"origins:more_exhaustion",
 		"originstweaks:protective_shell",
 		"originstweaks:antigravity_bullet",
-		"originstweaks:shulk_sounds"
+		"originstweaks:shulk_sounds",
+		"originstweaks:shulk_team"
 	],
 	"icon": {
 		"item": "minecraft:shulker_shell"
