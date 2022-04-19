@@ -1,7 +1,7 @@
 {
     "type": "origins:fire_projectile",
     "name": "Antigravity Bullet",
-    "description": "You can throw an Antigravity Bulletby pressing your secondary active key!",
+    "description": "You can throw an Antigravity Bullet by pressing your secondary active key!",
     "entity_type": "minecraft:shulker_bullet",
     "cooldown": 30,
     "hud_render": {

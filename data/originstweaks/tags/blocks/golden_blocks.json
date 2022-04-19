@@ -7,6 +7,10 @@
         "minecraft:gold_block",
         "minecraft:raw_gold_block",
         "minecraft:gilded_blackstone",
-        "minecraft:bell"
+        "minecraft:bell",
+        "charm:gold_lantern",
+        "charm:gold_soul_lantern",
+        "charm:gold_chain",
+        "charm:gold_bars"
     ]
 }

@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Blazing Touch",
-    "description": "Youcan lit your hands on fire with your Secondary Key. When lit, you have permanent Fire aspect V on your bare hands, and you can light certain Blocks on fire.",
+    "description": "You can light your hands on fire with your Secondary Key. When lit, you have permanent Fire aspect V on your bare hands, and you can light certain Blocks on fire.",
     "fire_hands_active": {
         "type": "origins:toggle",
         "active_by_default": false,
@@ -29,7 +29,7 @@
             "type": "origins:set_on_fire",
             "duration": 20
         },
-        "cooldown": 20,
+        "cooldown": 200,
         "hud_render": {
             "should_render": false
         },
@@ -55,7 +55,7 @@
                 }
             ]
         },
-        "cooldown": 10,
+        "cooldown": 0,
         "hud_render": {
             "should_render": false
         },
@@ -75,7 +75,7 @@
             ]
         }
     },
-    "ignite_campfire": {
+    "ignite_stuff": {
         "type": "origins:action_on_block_use",
         "block_action": {
             "type": "origins:modify_block_state",
@@ -83,8 +83,21 @@
             "value": true
         },
         "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "minecraft:campfires"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:campfires"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:candles"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:candle_cakes"
+                }
+            ]
         },
         "condition": {
             "type": "origins:and",
@@ -95,6 +108,28 @@
                 },
                 {
                     "type": "origins:sneaking"
+                }
+            ]
+        }
+    },
+    "restrict_candle_cake_use": {
+        "type": "origins:prevent_block_use",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:candle_cakes"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
                 }
             ]
         }

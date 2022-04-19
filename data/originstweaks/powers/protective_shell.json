@@ -15,7 +15,7 @@
             "resource": "*:*_resource",
             "change": 1
         },
-        "cooldown": 0,
+        "cooldown": 2,
         "key": {
             "key": "key.sneak",
             "continuous": true

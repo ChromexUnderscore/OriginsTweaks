@@ -1,25 +1,50 @@
 {
-  "type": "origins:restrict_armor",
-  "name": "Need for Mobility",
-  "description": "You cannot wear any Armor heavier than Iron.",
-  "head": {
-    "type": "origins:armor_value",
-    "comparison": ">",
-    "compare_to": 2
-  },
-  "chest": {
-    "type": "origins:armor_value",
-    "comparison": ">",
-    "compare_to": 6
-  },
-  "legs": {
-    "type": "origins:armor_value",
-    "comparison": ">",
-    "compare_to": 5
-  },
-  "feet": {
-    "type": "origins:armor_value",
-    "comparison": ">",
-    "compare_to": 2
-  }
+    "type": "origins:prevent_elytra_flight",
+    "name": "Need for Mobility",
+    "description": "Armor heavier than Iron prevent you from gliding.",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "tellraw @s {\"text\": \"Your Armor is too heavy to be able to Fly!\", \"color\": \"red\"}"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:armor_value",
+                    "comparison": ">",
+                    "compare_to": 2
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "chest",
+                "item_condition": {
+                    "type": "origins:armor_value",
+                    "comparison": ">",
+                    "compare_to": 6
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "legs",
+                "item_condition": {
+                    "type": "origins:armor_value",
+                    "comparison": ">",
+                    "compare_to": 5
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "feet",
+                "item_condition": {
+                    "type": "origins:armor_value",
+                    "comparison": ">",
+                    "compare_to": 2
+                }
+            }
+        ]
+    }
 }
