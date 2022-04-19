@@ -14,4 +14,12 @@ team modify enderian color dark_purple
 team modify merling color aqua
 team modify phantom color dark_aqua
 team modify shulk color light_purple
+team modify arachnid seeFriendlyInvisibles false
+team modify avian seeFriendlyInvisibles false
+team modify blazeborn seeFriendlyInvisibles false
+team modify elytrian seeFriendlyInvisibles false
+team modify enderian seeFriendlyInvisibles false
+team modify merling seeFriendlyInvisibles false
+team modify phantom seeFriendlyInvisibles false
+team modify shulk seeFriendlyInvisibles false
 tellraw @a "OriginsTweaks Initialized."

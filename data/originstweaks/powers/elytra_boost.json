@@ -1,7 +1,7 @@
 {
   "type": "origins:active_self",
   "name": "Boosting",
-  "description": "Pressing your Secondary Power key while flying will provide you with a small forward boost.",
+  "description": "Pressing your Secondary Power key while gliding will provide you with a small forward boost.",
   "entity_action": {
     "type": "origins:and",
     "actions": [
@@ -12,7 +12,7 @@
       },
       {
         "type": "origins:execute_command",
-        "command": "playsound minecraft:entity.firework_rocket.launch master @s ~ ~ ~ 1 1"
+        "command": "playsound minecraft:entity.firework_rocket.launch player @s ~ ~ ~ 1 1"
       }
     ]
   },

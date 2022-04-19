@@ -16,8 +16,12 @@
             "text": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
         },
         {
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You cannot wear Golden Armor."
+        },
+        {
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You will receive Weakness and Slowness III in 10 Blocks Distance to Gold-related Blocks."
+            "text": "You will receive Weakness and Slowness III in 5 Blocks Distance to Gold-related Blocks."
         }
     ],
     "proximity_stacking": {
@@ -47,7 +51,7 @@
                 "type": "origins:in_tag",
                 "tag": "originstweaks:golden_blocks"
             },
-            "radius": 10,
+            "radius": 5,
             "shape": "sphere",
             "comparison": ">=",
             "compare_to": 1
@@ -81,5 +85,33 @@
             "value": 0.25,
             "operation": "multiply_total"
         }
+    },
+    "gold_armor": {
+        "type": "origins:conditioned_restrict_armor",
+        "head": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "originstweaks:golden_armor"
+            }
+        },
+        "chest": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "originstweaks:golden_armor"
+            }
+        },
+        "legs": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "originstweaks:golden_armor"
+            }
+        },
+        "feet": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "originstweaks:golden_armor"
+            }
+        },
+        "tick_rate": 20
     }
 }

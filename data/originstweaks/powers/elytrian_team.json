@@ -1,7 +1,12 @@
 {
-    "type": "origins:action_on_callback",
-    "entity_action_added": {
+    "type": "origins:action_over_time",
+    "hidden": true,
+    "rising_action": {
         "type": "origins:execute_command",
         "command": "function originstweaks:elytrian_team"
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:moving"
     }
 }
