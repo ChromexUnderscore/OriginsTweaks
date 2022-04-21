@@ -1,1 +1,0 @@
-team join avian @s

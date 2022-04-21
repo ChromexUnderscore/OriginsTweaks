@@ -3,7 +3,7 @@
     "hidden": true,
     "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:phantom_team"
+        "command": "team join phantom @s"
     },
     "interval": 20,
     "condition": {

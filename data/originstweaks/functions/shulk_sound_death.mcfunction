@@ -1,1 +1,0 @@
-playsound minecraft:entity.shulker.death player @a ~ ~ ~ 1 1

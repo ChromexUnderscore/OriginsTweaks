@@ -3,7 +3,7 @@
     "hidden": true,
     "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:merling_team"
+        "command": "team join merling @s"
     },
     "interval": 20,
     "condition": {

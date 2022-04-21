@@ -3,7 +3,7 @@
     "hidden": true,
     "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:avian_team"
+        "command": "team join avian @s"
     },
     "interval": 20,
     "condition": {

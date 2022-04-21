@@ -3,7 +3,7 @@
     "hidden": true,
     "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:human_team"
+        "command": "team leave @s"
     },
     "interval": 20,
     "condition": {

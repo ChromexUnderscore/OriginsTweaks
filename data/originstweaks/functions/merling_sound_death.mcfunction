@@ -1,1 +1,0 @@
-playsound minecraft:entity.cod.death player @a ~ ~ ~ 1 1

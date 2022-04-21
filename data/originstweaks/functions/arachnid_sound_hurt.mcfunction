@@ -1,1 +1,0 @@
-playsound minecraft:entity.spider.hurt player @a ~ ~ ~ 1 1.2

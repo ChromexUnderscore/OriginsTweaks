@@ -1,1 +1,0 @@
-playsound minecraft:entity.chicken.ambient player @a ~ ~ ~ 1 1

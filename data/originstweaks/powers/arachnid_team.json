@@ -3,7 +3,7 @@
     "hidden": true,
     "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:arachnid_team"
+        "command": "team join arachnid @s"
     },
     "interval": 20,
     "condition": {

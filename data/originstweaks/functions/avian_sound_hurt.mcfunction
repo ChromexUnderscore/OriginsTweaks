@@ -1,1 +1,0 @@
-playsound minecraft:entity.chicken.hurt player @a ~ ~ ~ 1 1.2

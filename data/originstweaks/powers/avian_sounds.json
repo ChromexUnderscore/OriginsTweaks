@@ -12,12 +12,12 @@
             },
             "if_action": {
                 "type": "origins:execute_command",
-                "command": "function originstweaks:avian_sound_hurt",
+                "command": "playsound minecraft:entity.avian.hurt player @a ~ ~ ~ 1 1.2",
                 "permission_level": 4
             },
             "else_action": {
                 "type": "origins:execute_command",
-                "command": "function originstweaks:avian_sound_death",
+                "command": "playsound minecraft:entity.avian.death player @a ~ ~ ~ 1 1",
                 "permission_level": 4
             }
         },
@@ -57,7 +57,7 @@
                 "ticks": 5,
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "function originstweaks:avian_sound_idle"
+                    "command": "playsound minecraft:entity.avian.ambient player @a ~ ~ ~ 1 1"
                 }
             }
         }
@@ -78,7 +78,7 @@
                         },
                         "action": {
                             "type": "origins:execute_command",
-                            "command": "function originstweaks:avian_sound_idle"
+                            "command": "playsound minecraft:entity.avian.ambient player @a ~ ~ ~ 1 1"
                         }
                     },
                     {
@@ -89,7 +89,7 @@
                         },
                         "action": {
                             "type": "origins:execute_command",
-                            "command": "function originstweaks:avian_sound_retreat"
+                            "command": "playsound minecraft:entity.avian.ambient player @a ~ ~ ~ 1 0.8"
                         }
                     }
                 ]

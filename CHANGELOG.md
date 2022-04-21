@@ -4,6 +4,23 @@
 
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 
+#### [Version 1.7.1 [More Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.1)
+
++ Fixed ``Blazing Touch``
+  + Removed ability to light candles and candle cakes due to bugs with Origins 1.4.1.
++ Fixed ``Master of Webs``.
+  + Changed power to execute on both Client and Server side to prevent waste of String resource and failure of grappling.
+  + Increased grapple reach to better grapple onto Boss mobs.
+  + Adjusted grapple strenght to balance reach.
+  + Increased Refill Cooldown using String to supress Item loss.
+  + Changed fluid handling from `any` to `none` to fix being able to grapple onto Water or Lava.
+  + Fixed inconsistent conditions for effects such as `Swing Hand`, `hit command` and `command along ray`.
++ Replaced function calls in sound powers with actual command to decrease chaos in function folder.
++ Removed block tag `originstweaks:candles`.
+  + (For some reason, it reappeared again even though I'm sure I removed it in the last update?).
++ Fixed Origin Team for Feline.
++ Datapack Load Message now shows Version Number.
+
 #### [Version 1.7.0 [Balancing, Mod Support & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.0)
 
 + Updated Datapack to 1.18.2.
@@ -73,7 +90,7 @@
 
 ### [Version 1.5 [Shulk Buff]]
 
-#### [Version 1.5.0 [Shulker Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.5)
+#### [Version 1.5.0 [Shulk Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.5)
 
 + Added Power ``Antigravity Bullet`` to shulk.
   + Fires a Shulker Bullet upon pressing the Secondary ability key
@@ -94,11 +111,11 @@
   + Changed power to be activated using ``key.origins.secondary_active`` rather than ``key.origins.primary_active``.
 + Modified power ``MAster of Webs``.
   + Changed subpower "webbing" to be dependant on the String Resource.
-  + Added subpower "web_shoot".
-  + Modified subpower "web_crafting" to use 6 Strings to craft a Cobweb.
-  + Added subpower "string_resource".
-  + Added subpower "string_regenerate".
-+ Fixed "Arthropod Appearance" to properly calculate falldamage delay and amount.
+  + Added subpower `Web Shoot`.
+  + Modified subpower `Web Crafting` to use 6 Strings to craft a Cobweb.
+  + Added subpower `String Resource`.
+  + Added subpower `String Regenerate`.
++ Fixed `Arthropod Appearance` to properly calculate falldamage delay and amount.
 
 ### [Version 1.3 [Phantom buff]]
 
@@ -115,11 +132,11 @@
 
 #### [Version 1.3.0 [Phantom Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3)
 
-+ Added power "Spectral Wail" to Phantom.
++ Added power `Spectral Wail` to Phantom.
   + Active ability that inflicts 30 seconds of Glowing to entities in 32 Blocks range
-+ Added power "Aurophobia" to Phantom.
++ Added power `Aurophobia` to Phantom.
   + Gold Debuffs: Golden Food is not edible, Golden Blocks are unphasable and give Debuffs in proximity, Golden Tools deal extra Damage to the Origin.
-+ Removed power "Fragile" to balance out the damage modifier caused by "Aurophobia".
++ Removed power `Fragile` to balance out the damage modifier caused by `Aurophobia`.
 
 ### [Version 1.2 [Elytrian Buffs]]
 

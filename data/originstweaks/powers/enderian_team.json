@@ -1,8 +1,12 @@
 {
-    "type": "origins:action_on_callback",
+    "type": "origins:action_over_time",
     "hidden": true,
-    "entity_action_added": {
+    "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:enderian_team"
+        "command": "team join enderian @s"
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:moving"
     }
 }

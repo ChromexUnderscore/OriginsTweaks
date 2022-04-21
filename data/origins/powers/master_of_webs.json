@@ -70,19 +70,19 @@
             "actions": [
                 {
                     "type": "origins:raycast",
-                    "distance": 32,
+                    "distance": 64,
                     "block": true,
                     "entity": true,
                     "shape_type": "collider",
-                    "fluid_handling": "any",
+                    "fluid_handling": "none",
                     "hit_action": {
                         "type": "origins:add_velocity",
                         "x": 0,
                         "y": 0.5,
-                        "z": 1.5,
+                        "z": 2.5,
                         "space": "local",
                         "client": true,
-                        "server": false,
+                        "server": true,
                         "operation": "set"
                     },
                     "command_at_hit": "function originstweaks:web_shoot_hit",
@@ -94,26 +94,11 @@
                     "type": "origins:if_else",
                     "condition": {
                         "type": "origins:raycast",
-                        "distance": 20,
+                        "distance": 64,
                         "block": true,
                         "entity": true,
                         "shape_type": "collider",
-                        "fluid_handling": "any"
-                    },
-                    "if_action": {
-                        "type": "origins:execute_command",
-                        "command": "playsound minecraft:entity.item_frame.add_item player Chromex_ ~ ~ ~ 1 1"
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:raycast",
-                        "distance": 20,
-                        "block": true,
-                        "entity": true,
-                        "shape_type": "collider",
-                        "fluid_handling": "any"
+                        "fluid_handling": "none"
                     },
                     "if_action": {
                         "type": "origins:change_resource",
@@ -125,11 +110,11 @@
                     "type": "origins:if_else",
                     "condition": {
                         "type": "origins:raycast",
-                        "distance": 20,
+                        "distance": 64,
                         "block": true,
                         "entity": true,
                         "shape_type": "collider",
-                        "fluid_handling": "any"
+                        "fluid_handling": "none"
                     },
                     "if_action": {
                         "type": "origins:swing_hand"
@@ -286,7 +271,7 @@
                 }
             ]
         },
-        "cooldown": 1,
+        "cooldown": 5,
         "hud_render": {
             "should_render": false
         },

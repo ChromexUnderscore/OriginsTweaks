@@ -3,7 +3,7 @@
     "hidden": true,
     "rising_action": {
         "type": "origins:execute_command",
-        "command": "function originstweaks:elytrian_team"
+        "command": "team join elytrian @s"
     },
     "interval": 20,
     "condition": {
