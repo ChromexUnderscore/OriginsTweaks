@@ -74,13 +74,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": ">=",
                                 "compare_to": 1
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": "<=",
                                 "compare_to": 5
                             }
@@ -128,13 +128,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": ">=",
                                 "compare_to": 6
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": "<=",
                                 "compare_to": 10
                             }
@@ -182,13 +182,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": ">=",
                                 "compare_to": 11
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": "<=",
                                 "compare_to": 15
                             }
@@ -236,13 +236,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": ">=",
                                 "compare_to": 16
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_web_strenght_resource",
+                                "resource": "*:*_web_strength_resource",
                                 "comparison": "<=",
                                 "compare_to": 20
                             }
@@ -283,24 +283,6 @@
                         "command_step": 0.1,
                         "command_along_ray_only_on_hit": true
                     }
-                },
-                {
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "*:*_web_strenght_resource",
-                        "comparison": "!=",
-                        "compare_to": 0
-                    },
-                    "action": {
-                        "type": "origins:delay",
-                        "ticks": 2,
-                        "action": {
-                            "type": "origins:change_resource",
-                            "resource": "*:*_web_strenght_resource",
-                            "change": 0,
-                            "operation": "set"
-                        }
-                    }
                 }
             ]
         },
@@ -312,14 +294,14 @@
             "compare_to": 0
         }
     },
-    "web_strenght": {
+    "web_strength": {
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "resource": "*:*_web_strenght_resource",
+                    "resource": "*:*_web_strength_resource",
                     "change": 1
                 },
                 {
@@ -344,7 +326,7 @@
             "compare_to": 10
         }
     },
-    "web_strenght_resource": {
+    "web_strength_resource": {
         "type": "origins:resource",
         "min": 0,
         "max": 20,
@@ -354,10 +336,30 @@
             "bar_index": 16,
             "condition": {
                 "type": "origins:resource",
-                "resource": "*:*_web_strenght_resource",
+                "resource": "*:*_web_strength_resource",
                 "comparison": "!=",
                 "compare_to": 0
             }
+        }
+    },
+    "web_strength_resource_reset": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "rising_action": {
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_web_strength_resource",
+                "change": 0,
+                "operation": "set"
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_primary_active_condition",
+            "comparison": "==",
+            "compare_to": 0
         }
     },
     "primary_active_condition": {
@@ -370,7 +372,7 @@
     },
     "primary_active_condition_decrease": {
         "type": "origins:action_over_time",
-        "interval": 1,
+        "interval": 2,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:*_primary_active_condition",
