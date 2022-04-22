@@ -1,7 +1,7 @@
 {
   "type": "origins:modify_break_speed",
   "name": "Weak Arms",
-  "description": "When not under the effect of a strenght potion, you will mine natural stone blocks slower.",
+  "description": "When not under the effect of a strength potion, you will mine natural stone blocks slower.",
   "modifier": {
     "name": "Unbreakable natural stone",
     "value": -0.75,

@@ -64,77 +64,319 @@
         }
     },
     "web_shoot": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type":"origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": "<=",
+                                "compare_to": 5
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 16,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "none",
+                        "hit_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "x": 0,
+                                    "y": 0.0,
+                                    "z": 1.25,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "operation": "set"
+                                },
+                                {
+                                    "type": "origins:change_resource",
+                                    "resource": "*:*_string_resource",
+                                    "change": -10
+                                },
+                                {
+                                    "type": "origins:swing_hand"
+                                }
+                            ]
+                        },
+                        "command_at_hit": "function originstweaks:web_shoot_hit",
+                        "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                        "command_step": 0.1,
+                        "command_along_ray_only_on_hit": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type":"origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": ">=",
+                                "compare_to": 6
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": "<=",
+                                "compare_to": 10
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 16,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "none",
+                        "hit_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "x": 0,
+                                    "y": 0.5,
+                                    "z": 1.5,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "operation": "set"
+                                },
+                                {
+                                    "type": "origins:change_resource",
+                                    "resource": "*:*_string_resource",
+                                    "change": -10
+                                },
+                                {
+                                    "type": "origins:swing_hand"
+                                }
+                            ]
+                        },
+                        "command_at_hit": "function originstweaks:web_shoot_hit",
+                        "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                        "command_step": 0.1,
+                        "command_along_ray_only_on_hit": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type":"origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": ">=",
+                                "compare_to": 11
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": "<=",
+                                "compare_to": 15
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 32,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "none",
+                        "hit_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "x": 0,
+                                    "y": 1.0,
+                                    "z": 1.75,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "operation": "set"
+                                },
+                                {
+                                    "type": "origins:change_resource",
+                                    "resource": "*:*_string_resource",
+                                    "change": -10
+                                },
+                                {
+                                    "type": "origins:swing_hand"
+                                }
+                            ]
+                        },
+                        "command_at_hit": "function originstweaks:web_shoot_hit",
+                        "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                        "command_step": 0.1,
+                        "command_along_ray_only_on_hit": true
+                    }
+                },
+                {
+                    "condition": {
+                        "type":"origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": ">=",
+                                "compare_to": 16
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_web_strength_resource",
+                                "comparison": "<=",
+                                "compare_to": 20
+                            }
+                        ]
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 64,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "none",
+                        "hit_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "x": 0,
+                                    "y": 1.0,
+                                    "z": 2.0,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "operation": "set"
+                                },
+                                {
+                                    "type": "origins:change_resource",
+                                    "resource": "*:*_string_resource",
+                                    "change": -10
+                                },
+                                {
+                                    "type": "origins:swing_hand"
+                                }
+                            ]
+                        },
+                        "command_at_hit": "function originstweaks:web_shoot_hit",
+                        "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                        "command_step": 0.1,
+                        "command_along_ray_only_on_hit": true
+                    }
+                }
+            ]
+        },
+        "interval": 2,
+        "condition":{
+            "type": "origins:resource",
+            "resource": "*:*_primary_active_condition",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "web_strength": {
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:raycast",
-                    "distance": 64,
-                    "block": true,
-                    "entity": true,
-                    "shape_type": "collider",
-                    "fluid_handling": "none",
-                    "hit_action": {
-                        "type": "origins:add_velocity",
-                        "x": 0,
-                        "y": 0.5,
-                        "z": 2.5,
-                        "space": "local",
-                        "client": true,
-                        "server": true,
-                        "operation": "set"
-                    },
-                    "command_at_hit": "function originstweaks:web_shoot_hit",
-                    "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                    "command_step": 0.1,
-                    "command_along_ray_only_on_hit": true
+                    "type": "origins:change_resource",
+                    "resource": "*:*_web_strength_resource",
+                    "change": 1
                 },
                 {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:raycast",
-                        "distance": 64,
-                        "block": true,
-                        "entity": true,
-                        "shape_type": "collider",
-                        "fluid_handling": "none"
-                    },
-                    "if_action": {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_string_resource",
-                        "change": -10
-                    }
-                },
-                {
-                    "type": "origins:if_else",
-                    "condition": {
-                        "type": "origins:raycast",
-                        "distance": 64,
-                        "block": true,
-                        "entity": true,
-                        "shape_type": "collider",
-                        "fluid_handling": "none"
-                    },
-                    "if_action": {
-                        "type": "origins:swing_hand"
-                    }
+                    "type": "origins:change_resource",
+                    "resource": "*:*_primary_active_condition",
+                    "change": 2
                 }
             ]
         },
-        "cooldown": 20,
+        "cooldown": 1,
         "hud_render": {
             "should_render": false
         },
         "key": {
             "key": "key.origins.primary_active",
-            "continuous": false
+            "continuous": true
         },
         "condition": {
             "type": "origins:resource",
             "resource": "*:*_string_resource",
             "comparison": ">=",
             "compare_to": 10
+        }
+    },
+    "web_strength_resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 20,
+        "start_value": 0,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 16,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_web_strength_resource",
+                "comparison": "!=",
+                "compare_to": 0
+            }
+        }
+    },
+    "web_strength_resource_reset": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "rising_action": {
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_web_strength_resource",
+                "change": 0,
+                "operation": "set"
+            }
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_primary_active_condition",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "primary_active_condition": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "primary_active_condition_decrease": {
+        "type": "origins:action_over_time",
+        "interval": 2,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_primary_active_condition",
+            "change": -1
         }
     },
     "no_slowdown": {
@@ -231,11 +473,7 @@
         "max": 60,
         "start_value": 60,
         "hud_render": {
-            "bar_index": 5,
-            "condition": {
-                "type": "origins:climbing",
-                "inverted": true
-            }
+            "bar_index": 5
         }
     },
     "string_regenerate": {
