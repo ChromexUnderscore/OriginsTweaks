@@ -70,6 +70,49 @@
             "actions": [
                 {
                     "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_web_strength_resource",
+                        "comparison": "==",
+                        "compare_to": 0
+                    },
+                    "action": {
+                        "type": "origins:raycast",
+                        "distance": 16,
+                        "block": true,
+                        "entity": true,
+                        "shape_type": "collider",
+                        "fluid_handling": "none",
+                        "hit_action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:add_velocity",
+                                    "x": 0,
+                                    "y": 1.0,
+                                    "z": 1.5,
+                                    "space": "local",
+                                    "client": true,
+                                    "server": true,
+                                    "operation": "set"
+                                },
+                                {
+                                    "type": "origins:change_resource",
+                                    "resource": "*:*_string_resource",
+                                    "change": -10
+                                },
+                                {
+                                    "type": "origins:swing_hand"
+                                }
+                            ]
+                        },
+                        "command_at_hit": "function originstweaks:web_shoot_hit",
+                        "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                        "command_step": 0.1,
+                        "command_along_ray_only_on_hit": true
+                    }
+                },
+                {
+                    "condition": {
                         "type":"origins:and",
                         "conditions": [
                             {
@@ -88,7 +131,7 @@
                     },
                     "action": {
                         "type": "origins:raycast",
-                        "distance": 16,
+                        "distance": 32,
                         "block": true,
                         "entity": true,
                         "shape_type": "collider",
@@ -99,8 +142,8 @@
                                 {
                                     "type": "origins:add_velocity",
                                     "x": 0,
-                                    "y": 0.0,
-                                    "z": 1.25,
+                                    "y": 1.0,
+                                    "z": 1.6,
                                     "space": "local",
                                     "client": true,
                                     "server": true,
@@ -153,8 +196,8 @@
                                 {
                                     "type": "origins:add_velocity",
                                     "x": 0,
-                                    "y": 0.5,
-                                    "z": 1.5,
+                                    "y": 1.1,
+                                    "z": 1.7,
                                     "space": "local",
                                     "client": true,
                                     "server": true,
@@ -207,8 +250,8 @@
                                 {
                                     "type": "origins:add_velocity",
                                     "x": 0,
-                                    "y": 1.0,
-                                    "z": 1.75,
+                                    "y": 1.2,
+                                    "z": 1.8,
                                     "space": "local",
                                     "client": true,
                                     "server": true,
@@ -261,8 +304,8 @@
                                 {
                                     "type": "origins:add_velocity",
                                     "x": 0,
-                                    "y": 1.0,
-                                    "z": 2.0,
+                                    "y": 2.0,
+                                    "z": 2.5,
                                     "space": "local",
                                     "client": true,
                                     "server": true,
@@ -271,7 +314,7 @@
                                 {
                                     "type": "origins:change_resource",
                                     "resource": "*:*_string_resource",
-                                    "change": -10
+                                    "change": -20
                                 },
                                 {
                                     "type": "origins:swing_hand"
@@ -288,35 +331,23 @@
         },
         "interval": 2,
         "condition":{
-            "type": "origins:resource",
-            "resource": "*:*_primary_active_condition",
-            "comparison": "==",
-            "compare_to": 0
+            "type": "origins:sneaking",
+            "inverted": true
         }
     },
     "web_strength": {
         "type": "origins:active_self",
         "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_web_strength_resource",
-                    "change": 1
-                },
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_primary_active_condition",
-                    "change": 2
-                }
-            ]
+            "type": "origins:change_resource",
+            "resource": "*:*_web_strength_resource",
+            "change": 1
         },
         "cooldown": 1,
         "hud_render": {
             "should_render": false
         },
         "key": {
-            "key": "key.origins.primary_active",
+            "key": "key.sneak",
             "continuous": true
         },
         "condition": {
@@ -356,27 +387,7 @@
             }
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_primary_active_condition",
-            "comparison": "==",
-            "compare_to": 0
-        }
-    },
-    "primary_active_condition": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 2,
-        "hud_render": {
-            "should_render": false
-        }
-    },
-    "primary_active_condition_decrease": {
-        "type": "origins:action_over_time",
-        "interval": 2,
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_primary_active_condition",
-            "change": -1
+            "type": "origins:sneaking"
         }
     },
     "no_slowdown": {
