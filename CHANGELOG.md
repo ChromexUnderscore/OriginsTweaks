@@ -4,12 +4,6 @@
 
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 
-### [Version 1.7.2[Arachnid Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.2)
-
-+ Fixed ``Master of Webs``.
-  + Reworked Grappling mechanic
-  + Added Strength Multiplier that increases the longer the primary key is held down.
-
 #### [Version 1.7.1 [More Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.1)
 
 + Fixed ``Blazing Touch``
@@ -17,7 +11,7 @@
 + Fixed ``Master of Webs``.
   + Changed power to execute on both Client and Server side to prevent waste of String resource and failure of grappling.
   + Increased grapple reach to better grapple onto Boss mobs.
-  + Adjusted grapple strength to balance reach.
+  + Adjusted grapple strenght to balance reach.
   + Increased Refill Cooldown using String to supress Item loss.
   + Changed fluid handling from `any` to `none` to fix being able to grapple onto Water or Lava.
   + Fixed inconsistent conditions for effects such as `Swing Hand`, `hit command` and `command along ray`.
