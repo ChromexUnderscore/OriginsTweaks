@@ -4,6 +4,10 @@
 
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 
+### [Version 1.7.3[Arachnid Grapple Server Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.3)
+
++ Fixed Primary_active cutting off on Servers, using sneaking instead.
+
 ### [Version 1.7.2[Arachnid Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.2)
 
 + Fixed ``Master of Webs``.
