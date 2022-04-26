@@ -4,6 +4,11 @@
 
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 
+#### [Version 1.7.2[Slight Grappling Modifications]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.2)
+
++ Simplifed Code for grappling Effects such as `Swing Hand` and using of `String Resource`.
++ Reduced local Z axis grappling power from `2.5` to `2.0` to balance reach buffs.
+
 #### [Version 1.7.1 [More Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.1)
 
 + Fixed ``Blazing Touch``
