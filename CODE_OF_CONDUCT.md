@@ -12,4 +12,4 @@
 
 ## DO NOT
 
-+ Reupload this Datapack and its contents in the Origins Discord or on GitHub and act like its your work without altering the Code.
++ Reupload this Datapack and its contents in the Origins Discord, or your own Discord Community or on GitHub and act like its your work without altering the Code.
