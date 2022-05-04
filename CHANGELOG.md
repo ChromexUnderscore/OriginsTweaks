@@ -2,9 +2,18 @@
 
 ## [1.18.2](https://modrinth.com/mod/origins/version/1.4.1)
 
+### [Version 1.8[Feline Buff]]
+
+#### [Version 1.7.0 [Feline Buff]]
+
++ Tweaked Power ``Weak Arms``
+  + Set Mining Speed from `25%` to `50%`.
+  + "Sturdy Stones" are now unmineable unless under effect oof any Strength Potion.
+  + Added Block Tag `orginstweaks:sturdy_stone`.
+
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 
-#### [Version 1.7.2[Slight Grappling Modifications]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.2)
+#### [Version 1.7.2 [Slight Grappling Modifications]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.2)
 
 + Simplifed Code for grappling Effects such as `Swing Hand` and using of `String Resource`.
 + Reduced local Z axis grappling power from `2.5` to `2.0` to balance reach buffs.
