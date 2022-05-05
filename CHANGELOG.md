@@ -4,7 +4,7 @@
 
 ### [Version 1.8[Feline Buff]]
 
-#### [Version 1.7.0 [Feline Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.8.0)
+#### [Version 1.8.0 [Feline Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.8.0)
 
 + Tweaked Power ``Weak Arms``
   + Set Mining Speed from `25%` to `50%`.
