@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": [
+		"tropical_fish",
+        "cod",
+        "salmon",
+        "rabbit",
+        "chicken",
+        "cooked_cod",
+        "cooked_salmon",
+        "cooked_rabbit",
+        "cooked_chicken",
+        "rabbit_stew"
+	]
+}
