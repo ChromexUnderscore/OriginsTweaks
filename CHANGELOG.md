@@ -4,12 +4,26 @@
 
 ### [Version 1.8[Feline Buff]]
 
-#### [Version 1.7.0 [Feline Buff]]
+#### [Version 1.8.0 [Feline Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.8.0)
 
 + Tweaked Power ``Weak Arms``
   + Set Mining Speed from `25%` to `50%`.
   + "Sturdy Stones" are now unmineable unless under effect oof any Strength Potion.
   + Added Block Tag `orginstweaks:sturdy_stone`.
++ Added Power ``Sharp Claws``
+  + Unarmed Damage dealt is increased.
+  + Sharpness Resource needed in order to apply buff.
+  + Resource can be refilled by right clicking on any blocks in tag ``originstweaks:resharpen_claws``.
+  + Added Block tag ``originstweaks:resharpen_claws``.
++ Added Power `Seventh Sense`.
+  + Huntable Animals in a 16 Block radius will be inflicted glowing for 10 Seconds upon using this ability.
+  + 30 Seconds Cooldown
+  + Huntable Animals are entities specified in `originstweaks:feline_prey`.
+  + Added Entity Type tag `originstweaks:feline_prey`.
++ Added Power `Natural Hunter`.
+  + Food in tag `originstweaks:feline_food` have increased nourishment.
+    + \+ 3 hunger, + 2 Saturation.
+  + Added Item tag `originstweaks:feline_food`.
 
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 

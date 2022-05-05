@@ -1,0 +1,105 @@
+{
+    "type": "origins:multiple",
+    "name": "Sharp Claws",
+    "description": "Your Natural Claws provide a Benefit in disarmed Fights. Remember to keep them Sharp though.",
+    "extra_damage": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "extra damage claws",
+            "operation": "addition",
+            "value": 4.5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "attack_speed_increase": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_speed",
+            "operation": "multiply_base",
+            "value": 2,
+            "name": "attack speed increase"
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:empty"
+            }
+        },
+        "tick_rate": 5
+    },
+    "claws_sharpness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 128,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 12,
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        }
+    },
+    "claws_unsharpen": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_claws_sharpness",
+                "change": -1
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        }
+    },
+    "claws_resharpen": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {},
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_claws_sharpness",
+            "comparison": "<",
+            "compare_to": 128
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "hands": [
+            "main_hand"
+        ],
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "originstweaks:resharpen_claws"
+        }
+    }
+}
