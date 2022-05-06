@@ -4,6 +4,14 @@
 
 ### [Version 1.9 [Avian Buff]]
 
+#### [Version 1.9.1 [Feline and Avian Fix]]
+
++ Fixed Feline Power ``Sharp Claws``
+  + Added change resource action.
+    + I forgor :skull:.
++ Fixed Avian Power `Dual Wielding`
+  + Restructured Raycast Action to make the bientity action supported.
+
 #### [Version 1.9.0 [Avian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.0)
 
 + Added Power `Dual Wielding`.
