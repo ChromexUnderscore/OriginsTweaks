@@ -4,6 +4,8 @@
 
 ### [Version 1.9 [Avian Buff]]
 
+#### [Version 1.9.0 [Avian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.0)
+
 + Added Power `Dual Wielding`.
   + Ability to hit a second time with a offhand sword on a cooldown.
   + Sword damages when hit entity.
