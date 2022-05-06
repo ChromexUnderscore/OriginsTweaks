@@ -2,7 +2,16 @@
 
 ## [1.18.2](https://modrinth.com/mod/origins/version/1.4.1)
 
-### [Version 1.8[Feline Buff]]
+### [Version 1.9 [Avian Buff]]
+
++ Added Power `Dual Wielding`.
+  + Ability to hit a second time with a offhand sword on a cooldown.
+  + Sword damages when hit entity.
+  + Pets are ignored.
+  + Enchantments and effects are ignored.
++ Changed Active keybinding in power `Slow Falling` from `primary` to `secondary`.
+
+### [Version 1.8 [Feline Buff]]
 
 #### [Version 1.8.0 [Feline Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.8.0)
 

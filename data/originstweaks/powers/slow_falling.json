@@ -15,7 +15,7 @@
 		"type": "origins:toggle",
 		"active_by_default": true,
 		"key": {
-			"key": "key.origins.primary_active"
+			"key": "key.origins.secondary_active"
 		}
 	},
 	"indicator": {
