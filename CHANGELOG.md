@@ -4,7 +4,14 @@
 
 ### [Version 1.9 [Avian Buff]]
 
-#### [Version 1.9.1 [Feline and Avian Fix]]
+#### [Version 1.9.2 [Another power for Arachnid]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.2))
+
++ Added power ``Toxic Coating`` to Arachnid.
+  + Projectiles fired poison targets on a cooldown.
++ Changed power ``Thermal Lift``.
+  + Reduced ``action over time`` loop to prevent lag.
+
+#### [Version 1.9.1 [Feline and Avian Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.1))
 
 + Fixed Feline Power ``Sharp Claws``
   + Added change resource action.

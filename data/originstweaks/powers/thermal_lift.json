@@ -65,11 +65,11 @@
     },
     "bar_regenerate":{
         "type": "origins:action_over_time",
-        "interval": 3,
+        "interval": 1,
         "entity_action": {
             "type": "origins:change_resource",
             "resource": "*:*_bar",
-            "change": 10,
+            "change": 5,
             "operation": "add"
         },
         "condition": {
