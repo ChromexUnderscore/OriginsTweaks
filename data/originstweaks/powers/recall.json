@@ -1,0 +1,164 @@
+{
+    "type": "origins:multiple",
+    "name": "Recall Beacon",
+    "description": "By concentrating your teleportation Power, you are able to determine a specific location as your Emergency Exit.",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "!=",
+            "compare_to": 0
+        }
+    },
+    "trigger_on": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon minecraft:area_effect_cloud ~ ~ ~ {Tags: [\"recall\"], Particle: \"minecraft:portal\", Duration: 1220, Radius: 0.5}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:blindness 1 0 true"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "change": -2
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "trigger_off": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "tp @s @e[tag=recall,limit=1,sort=nearest]"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:blindness 1 0 true"
+                },
+                {
+                    "type": "origins:set_fall_distance",
+                    "fall_distance": 0
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 1,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "kill @e[tag=recall,limit=1,sort=nearest]"
+                    }
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 1,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
+                    }
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "change": 1
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle",
+            "inverted": true
+        }
+    },
+    "cooldown": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 240,
+        "start_value": 240,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 7,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_cooldown",
+                "comparison": "!=",
+                "compare_to": 240
+            }
+        },
+        "min_action": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        }
+    },
+    "shader": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/invert.json",
+        "toggleable": false,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "death": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[tag=recall,limit=1,sort=nearest]"
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 1,
+                    "action": {
+                        "type": "origins:toggle",
+                        "power": "*:*_toggle"
+                    }
+                }
+                
+            ]
+        },
+        "cooldown": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:health",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "origins:action_on_callback",
+    "name": "Ender Body",
+    "description": "Your Body resembles that of your fellow Endermen, making you taller and able to reach further.",
+    "entity_action_added": {
+        "type": "origins:delay",
+        "ticks": 1,
+        "action": {
+            "type": "origins:execute_command",
+            "command": "function originstweaks:enderian_scale"
+        }
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
+    }
+}

@@ -2,6 +2,15 @@
 
 ## [1.18.2](https://modrinth.com/mod/origins/version/1.4.1)
 
+### [Version 1.10 [Enderian Buff]]
+
+#### [Version 1.10.0 [Enderian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.0)
+
++ Replaced power ``Slender Body`` with ``Ender Body``.
+  + height, model width, eye height and reach have been changed.
++ Added power ``Recall Beacon`` to Enderian.
+  + Secondary Active summons an AoE Cloud, which acts as a teleportation point. Forces teleport once completely decharged. 30 seconds usage, up to 60 seconds to charge up fully.
+
 ### [Version 1.9 [Avian Buff]]
 
 #### [Version 1.9.2 [Another power for Arachnid]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.2))
