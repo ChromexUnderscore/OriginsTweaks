@@ -4,6 +4,20 @@
 
 ### [Version 1.10 [Enderian Buff]]
 
+#### [Version 1.10.1 [Enderian Buff and Pacify Hostile Mobs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.1)
+
++ Added power `Reflex` to Enderian.
+  + Automatically dodges Arrows and negates damage on a Cooldown.
++ Changed power `Recall`.
+  + Enderian now shakes while in recall.
++ Hostile Mobs paired on Origin are now passive.
+  + Spiders and Cave Spiders won't attack Arachnid.
+  + Blazes won't attack Blazeborn.
+  + Endermen won't attack Enderians.
+  + Pufferfish and Dolphins won't attack Merling.
+  + Phantoms won't attack Phantom.
+  + Shulkers wont attack Shulk.
+
 #### [Version 1.10.0 [Enderian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.0)
 
 + Replaced power ``Slender Body`` with ``Ender Body``.

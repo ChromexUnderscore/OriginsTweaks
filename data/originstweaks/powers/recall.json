@@ -125,6 +125,13 @@
             "power": "*:*_toggle"
         }
     },
+    "shaking": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
     "death": {
         "type": "origins:action_when_damage_taken",
         "entity_action": {
@@ -142,7 +149,6 @@
                         "power": "*:*_toggle"
                     }
                 }
-                
             ]
         },
         "cooldown": 1,
