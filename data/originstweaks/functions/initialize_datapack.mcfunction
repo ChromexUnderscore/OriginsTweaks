@@ -25,5 +25,4 @@ team modify feline seeFriendlyInvisibles false
 team modify merling seeFriendlyInvisibles false
 team modify phantom seeFriendlyInvisibles false
 team modify shulk seeFriendlyInvisibles false
-tellraw @a "OriginsTweaks 1.8.0 Initialized."
-tellraw @a "https://github.com/ChromexUnderscore/OriginsTweaks"
+tellraw @p {"text":"OriginsTweaks","clickEvent":{"action":"open_url","value":"https://github.com/ChromexUnderscore/OriginsTweaks"},"hoverEvent":{"action":"show_text","contents":["Source"]}}
