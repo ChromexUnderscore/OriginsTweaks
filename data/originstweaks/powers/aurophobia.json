@@ -27,13 +27,12 @@
     "proximity_stacking": {
         "type": "origins:stacking_status_effect",
         "min_stacks": 0,
-        "max_stacks": 3,
-        "duration_per_stack": 100,
-        "tick_rate": 20,
+        "max_stacks": 5,
+        "duration_per_stack": 140,
+        "tick_rate": 100,
         "effects": [
             {
                 "effect": "minecraft:slowness",
-                "amplifier": 2,
                 "is_ambient": true,
                 "show_particles": false,
                 "show_icon": true

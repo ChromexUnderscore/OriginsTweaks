@@ -4,6 +4,14 @@
 
 ### [Version 1.10 [Enderian Buff]]
 
+#### [Version 1.10.2 [Shulk and Arachnid Nerfs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.2)
+
++ Changed `pack_format` from `9` to `10`.
++ `Protective Shell` can now be broken.
+  + -14 Shields when hit (Max Shields are 140)
+  + 5 Seconds Cooldown on recharge when hit.
++ `Aurophobia` stacking status effect increases every 5 seconds instead of 1.
+
 #### [Version 1.10.1 [Enderian Buff and Pacify Hostile Mobs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.1)
 
 + Added power `Reflex` to Enderian.

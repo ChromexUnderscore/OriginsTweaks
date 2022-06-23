@@ -8,11 +8,11 @@
             "text": "Press and hold your sneak key to close your shells."
         }
     ],
-    "active_self": {
+    "build_up": {
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_resource",
+            "resource": "*:*_shields",
             "change": 1
         },
         "cooldown": 2,
@@ -22,9 +22,15 @@
         },
         "hud_render": {
             "should_render": false
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_destroyed",
+            "compare_to": 5,
+            "comparison": "=="
         }
     },
-    "resource": {
+    "shields": {
         "type": "origins:resource",
         "min": 0,
         "max": 140,
@@ -34,7 +40,7 @@
             "bar_index": 0,
             "condition": {
                 "type": "origins:resource",
-                "resource": "*:*_resource",
+                "resource": "*:*_shields",
                 "comparison": "!=",
                 "compare_to": 0
             }
@@ -44,10 +50,59 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_resource",
+            "resource": "*:*_shields",
             "change": -1
         },
-        "interval": 10
+        "interval": 10,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_build_up",
+            "inverted": true
+        }
+    },
+    "break": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_shields",
+                    "change": -14
+                },
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_destroyed",
+                    "change": 0,
+                    "operation": "set"
+                }
+            ]
+        },
+        "cooldown": 20
+    },
+    "destroyed": {
+        "type": "origins:resource",
+        "max": 5,
+        "min": 0,
+        "start_value": 5,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "repair_destroyed":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_destroyed",
+            "change": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_destroyed",
+            "compare_to": 5,
+            "comparison": "!="
+        }
     },
     "effects": {
         "type": "origins:action_over_time",
@@ -60,13 +115,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_resource",
+                                "resource": "*:*_shields",
                                 "comparison": "!=",
                                 "compare_to": 0
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_resource",
+                                "resource": "*:*_shields",
                                 "comparison": "<=",
                                 "compare_to": 34
                             }
@@ -87,13 +142,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_resource",
+                                "resource": "*:*_shields",
                                 "comparison": ">=",
                                 "compare_to": 35
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_resource",
+                                "resource": "*:*_shields",
                                 "comparison": "<=",
                                 "compare_to": 69
                             }
@@ -114,13 +169,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_resource",
+                                "resource": "*:*_shields",
                                 "comparison": ">=",
                                 "compare_to": 70
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_resource",
+                                "resource": "*:*_shields",
                                 "comparison": "<=",
                                 "compare_to": 104
                             }
@@ -138,7 +193,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "*:*_resource",
+                        "resource": "*:*_shields",
                         "comparison": ">=",
                         "compare_to": 105
                     },
@@ -164,7 +219,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_resource",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 1
         }
@@ -178,7 +233,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_resource",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 35
         }
@@ -192,7 +247,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_resource",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 70
         }
@@ -206,7 +261,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_resource",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 105
         }
