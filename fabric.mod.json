@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "id": "originstweaks",
+    "version": "1.10.3",
+    "name": "OriginsTweaks",
+    "description": "This Mod overhauls the Vanilla Origins Mod.",
+    "authors": [
+        "ChromexUnderscore"
+    ],
+    "contact": {
+        "homepage": "https://github.com/ChromexUnderscore",
+        "sources": "https://github.com/ChromexUnderscore/OriginsTweaks",
+        "discord": "https://discord.com/invite/Su7tqDmUTu"
+    },
+    "license": "MIT",
+    "icon": "pack.png",
+    "environment": "*",
+    "depends": {
+        "origins": ">=1.4.0",
+        "pehkui": ">=3.3.3",
+        "minecraft": ">=1.18.2"
+    }
+}

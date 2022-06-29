@@ -25,4 +25,3 @@ team modify feline seeFriendlyInvisibles false
 team modify merling seeFriendlyInvisibles false
 team modify phantom seeFriendlyInvisibles false
 team modify shulk seeFriendlyInvisibles false
-tellraw @p {"text":"OriginsTweaks","clickEvent":{"action":"open_url","value":"https://github.com/ChromexUnderscore/OriginsTweaks"},"hoverEvent":{"action":"show_text","contents":["Source"]}}
