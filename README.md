@@ -9,6 +9,5 @@ This Datapack overhauls the vanilla Origins Mod by adding:
 + Retreat Sounds.
 + Death Sounds.
 + Automatic adding and joining of Origin specific Teams.
-+ Origin-Specific Archievements (Planned).
 
 ### Pehkui is Required!
