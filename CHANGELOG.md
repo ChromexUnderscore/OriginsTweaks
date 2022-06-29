@@ -6,7 +6,7 @@
 
 #### [Version 1.10.3 [Fabric Mod]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.3)
 
-+ Switched from Datapack to Fabric Mod
++ Migrated from Datapack to Fabric Mod
   + Changed ``pack.png`` from a lazy wrench pasted onto the Orb of Origins to a pixel-style wrench.
   + Added ``fabric.mod.json``
   + Removed ``tellraw`` message upon datapack reload.
