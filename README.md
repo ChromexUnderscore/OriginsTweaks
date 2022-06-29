@@ -1,6 +1,6 @@
 # OriginsTweaks
 
-This Datapack overhauls the vanilla Origins Mod by adding:
+This Mod overhauls the vanilla Origins Mod by adding:
 
 + New active Powers.
 + New passive Powers.
