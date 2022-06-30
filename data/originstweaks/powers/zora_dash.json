@@ -1,0 +1,32 @@
+{
+    "type": "origins:active_self",
+    "name": "Zora Dash",
+    "description": "Similar to your Ancestors, you are able to dash forwards underwater",
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "space": "local",
+        "z": 2,
+        "server": false,
+        "set": true
+    },
+    "cooldown": 100,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 10
+    },
+    "key": {
+        "key": "key.sprint"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            {
+                "type": "origins:swimming"
+            }
+        ]
+    }
+}

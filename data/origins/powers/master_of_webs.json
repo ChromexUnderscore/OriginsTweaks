@@ -83,7 +83,7 @@
                         "z": 2.0,
                         "space": "local",
                         "client": true,
-                        "server": true,
+                        "server": false,
                         "operation": "set"
                     },
                     {

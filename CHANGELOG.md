@@ -2,6 +2,16 @@
 
 ## [1.18.2](https://modrinth.com/mod/origins/version/1.4.1)
 
+### [Version 1.11 [Merling Rework]]
+
+#### [Version 1.11.0 [Merling Rework]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.0)
+
++ Added power ``Zora Dash``
+  + Ability to dash underwater on a cooldown
++ Changed power ``Hydro Knowledge``, renamed to ``Aquadynamic``.
+  + Changed damage bonus from from ``addition 4`` to ``multiply_total 1.5``
+  + Melee is affected as well now.
+
 ### [Version 1.10 [Enderian Buff]]
 
 #### [Version 1.10.3 [Fabric Mod]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.3)

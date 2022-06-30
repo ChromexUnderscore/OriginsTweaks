@@ -1,0 +1,52 @@
+{
+    "type": "origins:multiple",
+    "name": "Aquadynamic",
+        "description": "Due to your experience with physics Underwater, you are able to use Tridents more efficiently.",
+        "badges":[
+            {
+                "sprite": "origins:textures/gui/badge/arrow_up.png",
+                "text": "You deal 50% extra damage when damaging entities with a Tridents while you are underwater."
+            }
+        ],
+    "projectile": {
+        "type": "origins:modify_projectile_damage",
+        "damage_condition": {
+            "type": "origins:projectile",
+            "projectile": "minecraft:trident"
+        },
+        "modifier": {
+            "name": "merling trident perk projectile",
+            "operation": "multiply_total",
+            "value": 1.5
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "melee": {
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient":{
+                        "item": "minecraft:trident"
+                    }
+                }
+            }
+        },
+        "modifier": {
+            "name": "merling trident perk melee",
+            "operation": "multiply_total",
+            "value": 1.5
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}
