@@ -16,8 +16,8 @@
         },
         "modifier": {
             "name": "merling trident perk projectile",
-            "operation": "multiply_total",
-            "value": 1.5
+            "operation": "multiply_base",
+            "value": 0.5
         },
         "condition": {
             "type": "origins:submerged_in",
@@ -41,8 +41,8 @@
         },
         "modifier": {
             "name": "merling trident perk melee",
-            "operation": "multiply_total",
-            "value": 1.5
+            "operation": "multiply_base",
+            "value": 0.5
         },
         "condition": {
             "type": "origins:submerged_in",

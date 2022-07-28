@@ -4,6 +4,11 @@
 
 ### [Version 1.11 [Merling Rework]]
 
+#### [Version 1.11.1 [Some Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.1)
+
++ ``Merling Trident Recipe`` is now hidden, fixing Issue \#25.
++ ``Aquadynamic`` damage multiplier reduced from times ``1.5`` to times ``0.5`` to properly output a 50% increase of damage.
+
 #### [Version 1.11.0 [Merling Rework]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.0)
 
 + Added power ``Zora Dash``
