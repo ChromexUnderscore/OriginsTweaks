@@ -1,5 +1,6 @@
 {
         "type": "origins:recipe",
+        "hidden": true,
         "recipe": {
             "id": "origins:merling_trident",
             "type": "minecraft:crafting_shaped",
