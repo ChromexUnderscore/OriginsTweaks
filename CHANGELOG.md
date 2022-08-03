@@ -9,6 +9,7 @@
 + Changed file structure to be used as a proper mod.
 + Removed Coloring of Origins specific teams.
 + Fixed Arachnid's grapple sounds only playing for Chromex_.
++ Added Logger message upon initialization.
 
 #### [Version 1.11.1 [Some Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.1)
 
