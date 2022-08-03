@@ -4,6 +4,12 @@
 
 ### [Version 1.11 [Merling Rework]]
 
+#### [Version 1.11.2 [Some more fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.2)
+
++ Changed file structure to be used as a proper mod.
++ Removed Coloring of Origins specific teams.
++ Fixed Arachnid's grapple sounds only playing for Chromex_.
+
 #### [Version 1.11.1 [Some Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.1)
 
 + ``Merling Trident Recipe`` is now hidden, fixing Issue \#25.
