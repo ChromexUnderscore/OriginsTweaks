@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.10.3",
+    "version": "${version}",
     "name": "OriginsTweaks",
     "description": "This Mod overhauls the Vanilla Origins Mod.",
     "authors": [
@@ -13,8 +13,13 @@
         "discord": "https://discord.com/invite/Su7tqDmUTu"
     },
     "license": "MIT",
-    "icon": "pack.png",
+    "icon": "assets/modid/icon.png",
     "environment": "*",
+    "entrypoints": {
+        "main": [
+          "com.chromexunderscore.originstweaks.Main"
+        ]
+      },
     "depends": {
         "origins": ">=1.4.0",
         "pehkui": ">=3.3.3",
