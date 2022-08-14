@@ -1,15 +1,15 @@
 {
     "type": "origins:multiple",
     "name": "Master of Webs",
-    "description": "You navigate cobweb perfectly, and are able to climb in them. You can shoot your Web onto any solid Surface, which gives you a small forward Boost. When you hit an enemy, they get stuck in cobweb for a while. Non-arthropods stuck in cobweb will be sensed by you. You are able to craft cobweb from string.",
+    "description": "You navigate cobweb perfectly, and are able to climb in them. You can shoot your Web onto any solid Surface, which gives you a small forward Boost. When you hit an enemy with your grapple, they get stuck in cobweb for a while. Non-arthropods stuck in cobweb will be sensed by you. You are able to craft cobweb from string.",
     "badges": [
         {
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Shoot a Web with your Primary Key."
+            "text": "Shoot a Web with your Primary Key. Hitting a block will grapple you, hitting a mob will catch it in cobweb."
         },
         {
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You inflict Glowing on Entities stuck in Cobwebs."
+            "text": "Non-arthropods stuck in Cobwebs are glowing for you."
         },
         {
             "sprite": "origins:textures/gui/badge/arrow_up.png",
@@ -17,91 +17,122 @@
         }
     ],
     "loading_priority": 1,
-    "webbing": {
-        "type": "origins:action_on_hit",
-        "loading_priority": 1,
-        "cooldown": 240,
-        "hud_render": {
-            "should_render": false
-        },
-        "bientity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:actor_action",
-                    "action": {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_string_resource",
-                        "change": -10
-                    }
-                },
-                {
-                    "type": "origins:target_action",
-                    "action": {
-                        "type": "origins:block_action_at",
-                        "block_action": {
-                            "type": "origins:if_else",
-                            "condition": {
-                                "type": "origins:replacable"
-                            },
-                            "if_action": {
-                                "type": "origins:set_block",
-                                "block": "origins:temporary_cobweb"
-                            }
-                        }
-                    }
-                }
-            ]
-        },
-        "bientity_condition": {
-            "type": "origins:actor_condition",
-            "condition": {
-                "type": "origins:resource",
-                "resource": "*:*_string_resource",
-                "comparison": ">=",
-                "compare_to": 10
-            }
-        }
-    },
     "web_shoot": {
         "type": "origins:active_self",
         "entity_action": {
-            "type": "origins:raycast",
-            "distance": 64,
-            "block": true,
-            "entity": true,
-            "shape_type": "collider",
-            "fluid_handling": "none",
-            "hit_action": 
-            {
-                "type": "origins:and",
-                "actions": [
-                    {
-                        "type": "origins:add_velocity",
-                        "x": 0,
-                        "y": 0.5,
-                        "z": 2.0,
-                        "space": "local",
-                        "client": true,
-                        "server": false,
-                        "operation": "set"
-                    },
-                    {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_string_resource",
-                        "change": -10
-                    },
-                    {
-                        "type": "origins:swing_hand"
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:raycast",
+                "block": false,
+                "entity": true,
+                "distance": 32,
+                "shape_type": "collider",
+                "fluid_handling": "none",
+                "hit_bientity_condition": {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:living"
                     }
-                ]
+                }
             },
-            "command_at_hit": "function originstweaks:web_shoot_hit",
-            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-            "command_step": 0.1,
-            "command_along_ray_only_on_hit": true
+            "if_action": {
+                "type": "origins:raycast",
+                "distance": 32,
+                "block": false,
+                "entity": true,
+                "shape_type": "collider",
+                "fluid_handling": "none",
+                "bientity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:actor_action",
+                            "action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:change_resource",
+                                        "resource": "*:*_string_resource",
+                                        "change": -10
+                                    },
+                                    {
+                                        "type": "origins:swing_hand"
+                                    },
+                                    {
+                                        "type": "origins:change_resource",
+                                        "change": 200,
+                                        "resource": "*:*_grapple_cooldown",
+                                        "operation": "add"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:block_action_at",
+                                "block_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:replacable"
+                                    },
+                                    "if_action": {
+                                        "type": "origins:set_block",
+                                        "block": "origins:temporary_cobweb"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                "command_at_hit": "function originstweaks:web_shoot_hit",
+                "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                "command_step": 0.1,
+                "command_along_ray_only_on_hit": true
+            },
+            "else_action": {
+                "type": "origins:raycast",
+                "distance": 64,
+                "block": true,
+                "entity": true,
+                "shape_type": "collider",
+                "fluid_handling": "none",
+                "hit_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 2,
+                            "space": "local",
+                            "client": true,
+                            "server": false,
+                            "operation": "set"
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_string_resource",
+                            "change": -10
+                        },
+                        {
+                            "type": "origins:swing_hand"
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "change": 20,
+                            "resource": "*:*_grapple_cooldown",
+                            "operation": "add"
+                        }
+                    ]
+                },
+                "command_at_hit": "function originstweaks:web_shoot_hit",
+                "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                "command_step": 0.1,
+                "command_along_ray_only_on_hit": true
+            }
         },
-        "cooldown": 20,
+        "cooldown": 0,
         "hud_render": {
             "should_render": false
         },
@@ -110,10 +141,52 @@
             "continuous": false
         },
         "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_string_resource",
+                    "comparison": ">=",
+                    "compare_to": 10
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_grapple_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "grapple_cooldown":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 200,
+        "start_value": 0,
+        "hud_render": {
+            "bar_index": 3,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_grapple_cooldown",
+                "compare_to": 0,
+                "comparison": "!="
+            }
+        }
+    },
+    "grapple_cooldown_countdown":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "change": -1,
+            "resource": "*:*_grapple_cooldown",
+            "operation": "add"
+        },
+        "interval": 1,
+        "condition": {
             "type": "origins:resource",
-            "resource": "*:*_string_resource",
-            "comparison": ">=",
-            "compare_to": 10
+            "resource": "*:*_grapple_cooldown",
+            "compare_to": 0,
+            "comparison": "!="
         }
     },
     "no_slowdown": {

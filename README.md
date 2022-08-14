@@ -5,11 +5,11 @@ This Mod overhauls the Standard Origins from the Origins Mod.
 #### Tweaked Origins:
 + Arachnid (Complete)
 + Avian (Complete)
-+ Blazeborn (needs Balancing)
++ Blazeborn (Complete)
 + Elytrian (needs Rework)
-+ Enderian (needs Balancing)
++ Enderian (Complete)
 + Feline (Complete)
-+ Merling (Rework in progress)
++ Merling (Complete)
 + Phantom (Complete)
 + Shulk (Complete)
 
@@ -18,7 +18,8 @@ This Mod overhauls the Standard Origins from the Origins Mod.
 <details><summary>Arachnid</summary>
 
 + Arachnid has a Cobweb Grapple built-in to power **Master of Webs**
-+ Arachnids are shorter (can fit into 1-block gaps when sneaking) and do not take falldamage from a fall less than 30 Blocks
++ Hitting an entity with the cobweb grapple will catch it in a web, instead of directly hitting them. (Grapple cooldown x10).
++ Arachnids are shorter (can fit into 1-block gaps when sneaking) and do not take falldamage from a fall less than 30 Blocks.
 + Arrows shot by Arachnids inflict poison and nausea on a cooldown.
 </details>
 
@@ -46,7 +47,7 @@ This Mod overhauls the Standard Origins from the Origins Mod.
 
 <details><summary>Enderian</summary>
 
-+ height, model width, eye height and reach are changed.
++ height, eye height and reach are changed.
 + can dodge Arrows on a cooldown.
 + Enderians are able to set an AoE Cloud as teleportation point for a short amount of time.
 </details>
@@ -61,8 +62,8 @@ This Mod overhauls the Standard Origins from the Origins Mod.
 <details><summary>Merling</summary>
 
 + Merlings can craft tridents.
-+ Thrown and Melee Tridents deal more damage if the Merling is underwater.
-+ Merlings can dash underwater when swimming on a cooldown.
++ Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
++ Merlings can dash underwater while swimming on a cooldown.
 </details>
 
 <details><summary>Phantom</summary>
@@ -79,7 +80,8 @@ This Mod overhauls the Standard Origins from the Origins Mod.
 <details><summary>Shulk</summary>
 
 + Shulks can throw a shulker bullet on a cooldown.
-+ Shulks can receive resistance by closing their shells (sneaking for a while)
++ Shulks can receive resistance by closing their shells (sneaking for a while).
++ Closed shells will be destroyed upon taking damage.
 </details>
 
 ### Dependencies:
