@@ -2,7 +2,13 @@
 
 ## [1.18.2](https://modrinth.com/mod/origins/version/1.4.1)
 
-### [Version 1.12 [1.19.1 Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.0)
+### [Version 1.12 [1.19.1 Update]]
+
+#### [Version 1.12.1 [Crash fix]]
+
++ Increased interval of sub power `origins:master_of_webs_grapple_cooldown_countdown` from `1` to `3` to fix crashing singleplayer worlds.
+
+#### [Version 1.12.0[1.19.1 Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.0)
 
 + Updated to 1.19.1
 + Removed Arachnid ability to catch entities in cobweb by melee attacks.

@@ -177,11 +177,11 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "change": -1,
+            "change": -3,
             "resource": "*:*_grapple_cooldown",
             "operation": "add"
         },
-        "interval": 1,
+        "interval": 3,
         "condition": {
             "type": "origins:resource",
             "resource": "*:*_grapple_cooldown",
