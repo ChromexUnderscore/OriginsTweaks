@@ -1,6 +1,6 @@
 # OriginsTweaks Changelogs
 
-## [1.18.2](https://modrinth.com/mod/origins/version/1.4.1)
+## [1.19.1](https://minecraft.fandom.com/wiki/Java_Edition_1.19.1)
 
 ### [Version 1.12 [1.19.1 Update]]
 
@@ -14,6 +14,8 @@
 + Removed Arachnid ability to catch entities in cobweb by melee attacks.
 + Added Arachnid Ability to catch entities in cobweb by hitting them with the cobweb grapple.
 + Reworked cooldown for grapple, duration depends on whether entity was caught or block was grappled to.
+
+## [1.18.2](https://minecraft.fandom.com/wiki/Java_Edition_1.18.2)
 
 ### [Version 1.11 [Merling Rework]]
 
