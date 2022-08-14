@@ -1,4 +1,4 @@
-package net.chromexunderscore.originstweaks;
+package com.chromexunderscore.originstweaks;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

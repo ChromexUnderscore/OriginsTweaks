@@ -10,6 +10,7 @@
 + Removed Coloring of Origins specific teams.
 + Fixed Arachnid's grapple sounds only playing for Chromex_.
 + Added Logger message upon initialization.
++ refactored main package from `net.chromexunderscore.originstweaks` to `com.chromexunderscore.originstweaks`.
 
 #### [Version 1.11.1 [Some Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.1)
 
