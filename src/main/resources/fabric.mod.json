@@ -13,7 +13,7 @@
         "discord": "https://discord.com/invite/Su7tqDmUTu"
     },
     "license": "MIT",
-    "icon": "assets/modid/icon.png",
+    "icon": "assets/originstweaks/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
