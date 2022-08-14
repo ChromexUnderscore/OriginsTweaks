@@ -21,8 +21,8 @@
         ]
       },
     "depends": {
-        "origins": ">=1.6.2",
-        "pehkui": ">=3.4.0",
-        "minecraft": ">=1.19.x"
+        "origins": "1.6.2",
+        "pehkui": "3.4.0",
+        "minecraft": "1.19.1"
     }
 }
