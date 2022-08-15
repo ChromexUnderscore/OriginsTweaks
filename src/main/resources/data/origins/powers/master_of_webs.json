@@ -94,7 +94,7 @@
                 "type": "origins:raycast",
                 "distance": 64,
                 "block": true,
-                "entity": true,
+                "entity": false,
                 "shape_type": "collider",
                 "fluid_handling": "none",
                 "hit_action": {
@@ -177,17 +177,11 @@
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "change": -3,
+            "change": -20,
             "resource": "*:*_grapple_cooldown",
             "operation": "add"
         },
-        "interval": 3,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_grapple_cooldown",
-            "compare_to": 0,
-            "comparison": "!="
-        }
+        "interval": 20
     },
     "no_slowdown": {
         "type": "origins:simple"
