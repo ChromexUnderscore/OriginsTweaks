@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "blur":{
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/blur.json",
+        "toggleable": false
+    },
+    "revoke": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "power revoke @s originstweaks:toxic_coating_target"
+        }
+    },
+    "revoke_counter": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_revoke",
+            "change": 1
+        }
+    }
+}

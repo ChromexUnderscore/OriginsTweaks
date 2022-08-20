@@ -11,15 +11,14 @@
                 "compare_to": 0
             },
             "if_action": {
-                "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.spider.hurt player @a ~ ~ ~ 1 1.2",
-                "permission_level": 4
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.spider.hurt"
             },
             "else_action": {
-                "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.spider.death player @a ~ ~ ~ 1 1",
-                "permission_level": 4
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.spider.death"
             }
+
         },
         "cooldown": 1
     },
@@ -56,8 +55,8 @@
                 "type": "origins:delay",
                 "ticks": 5,
                 "action": {
-                    "type": "origins:execute_command",
-                    "command": "playsound minecraft:entity.spider.ambient player @a ~ ~ ~ 1 1"
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.spider.ambient"
                 }
             }
         }
@@ -77,8 +76,8 @@
                             "compare_to": 4
                         },
                         "action": {
-                            "type": "origins:execute_command",
-                            "command": "playsound minecraft:entity.spider.ambient player @a ~ ~ ~ 1 1"
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.spider.ambient"
                         }
                     },
                     {
@@ -88,8 +87,9 @@
                             "compare_to": 4
                         },
                         "action": {
-                            "type": "origins:execute_command",
-                            "command": "playsound minecraft:entity.spider.ambient player @a ~ ~ ~ 1 0.8"
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.spider.ambient",
+                            "pitch": 0.8
                         }
                     }
                 ]

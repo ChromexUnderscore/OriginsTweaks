@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "charm:gold_lantern",
+        "charm:gold_soul_lantern",
+        "charm:gold_chain",
+        "charm:gold_bars"
+    ]
+}

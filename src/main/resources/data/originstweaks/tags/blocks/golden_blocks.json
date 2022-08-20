@@ -8,9 +8,6 @@
         "minecraft:raw_gold_block",
         "minecraft:gilded_blackstone",
         "minecraft:bell",
-        "charm:gold_lantern",
-        "charm:gold_soul_lantern",
-        "charm:gold_chain",
-        "charm:gold_bars"
+        "#originstweaks:golden_blocks_charm"
     ]
 }

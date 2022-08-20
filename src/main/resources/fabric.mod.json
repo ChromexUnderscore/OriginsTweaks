@@ -1,16 +1,15 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "${version}",
+    "version": "1.12.0",
     "name": "OriginsTweaks",
-    "description": "This Mod overhauls the Vanilla Origins Mod.",
+    "description": "This Mod overhauls the Standard Origins.",
     "authors": [
         "ChromexUnderscore"
     ],
     "contact": {
-        "homepage": "https://github.com/ChromexUnderscore",
-        "sources": "https://github.com/ChromexUnderscore/OriginsTweaks",
-        "discord": "https://discord.com/invite/Su7tqDmUTu"
+        "discord": "https://discord.com/invite/Su7tqDmUTu",
+        "sources": "https://github.com/ChromexUnderscore/OriginsTweaks"
     },
     "license": "MIT",
     "icon": "assets/originstweaks/icon.png",
@@ -23,6 +22,6 @@
     "depends": {
         "origins": "1.6.2",
         "pehkui": "3.4.0",
-        "minecraft": "1.19.1"
+        "minecraft": "1.19.0"
     }
 }

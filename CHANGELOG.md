@@ -2,18 +2,16 @@
 
 ## [1.19.1](https://minecraft.fandom.com/wiki/Java_Edition_1.19.1)
 
-### [Version 1.12 [1.19.1 Update]]
+### [Version 1.12 [1.19 Update]]
 
-#### [Version 1.12.1 [Crash fix]]
+#### [Version 1.12.0[1.19 Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.0)
 
-+ Increased interval of sub power `origins:master_of_webs_grapple_cooldown_countdown` from `1` to `3` to fix crashing singleplayer worlds.
-
-#### [Version 1.12.0[1.19.1 Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.0)
-
-+ Updated to 1.19.1
++ Updated to 1.19.0
 + Removed Arachnid ability to catch entities in cobweb by melee attacks.
 + Added Arachnid Ability to catch entities in cobweb by hitting them with the cobweb grapple.
 + Reworked cooldown for grapple, duration depends on whether entity was caught or block was grappled to.
++ Replaced ``execute_command`` actions that execute a ``/playsound`` command with a ``play_sound`` action type.
++ Added a shader for entities hit by a toxic coating arrow.
 
 ## [1.18.2](https://minecraft.fandom.com/wiki/Java_Edition_1.18.2)
 
