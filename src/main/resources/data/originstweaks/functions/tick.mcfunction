@@ -6,3 +6,4 @@ team join merling @e[type=minecraft:pufferfish]
 team join merling @e[type=minecraft:dolphin]
 team join phantom @e[type=minecraft:phantom]
 team join shulk @e[type=minecraft:shulker]
+power grant @a origins:orb
