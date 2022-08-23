@@ -4,7 +4,11 @@
 
 ### [Version 1.12 [1.19 Update]]
 
-#### [Version 1.12.0[1.19 Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.0)
+#### [Version 1.12.1 [Dependency Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.1)
+
++ Updated Dependencies to support Pehkui Version 3.4.1.
+
+#### [Version 1.12.0 [1.19 Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.0)
 
 + Updated to 1.19.0
 + Removed Arachnid ability to catch entities in cobweb by melee attacks.

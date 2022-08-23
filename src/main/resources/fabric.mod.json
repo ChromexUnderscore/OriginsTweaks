@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.12.0",
+    "version": "1.12.1",
     "name": "OriginsTweaks",
     "description": "This Mod overhauls the Standard Origins.",
     "authors": [
@@ -21,7 +21,7 @@
       },
     "depends": {
         "origins": "1.6.2",
-        "pehkui": "3.4.0",
+        "pehkui": "3.4.1",
         "minecraft": "1.19.0"
     }
 }
