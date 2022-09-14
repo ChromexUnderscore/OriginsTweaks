@@ -4,6 +4,14 @@
 
 ### [Version 1.12 [1.19 Update]]
 
+#### [Version 1.12.2 [Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.2)
+
++ Fixed ``Aurophobia`` not working (#31).
++ Fixed ``Merling`` Trident Power not showing up and not having a name and description in the Origin Overview of Merling.
++ Fixed ``Blazing Touch`` not reducing revving resource when hitting another Entity. (#29).
++ Temporarily removed Orb of Origins Recipe.
++ Removed blur shader when hit by toxic coating.
+
 #### [Version 1.12.1 [Dependency Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.1)
 
 + Updated Dependencies to support Pehkui Version 3.4.1.

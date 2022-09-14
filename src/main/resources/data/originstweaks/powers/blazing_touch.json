@@ -23,7 +23,7 @@
             }
         }
     },
-    "fire_aspekt": {
+    "fire_aspect": {
         "type": "origins:target_action_on_hit",
         "entity_action": {
             "type": "origins:set_on_fire",
@@ -39,19 +39,25 @@
         }
     },
     "revved_fire_aspect": {
-        "type": "origins:target_action_on_hit",
-        "entity_action": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:set_on_fire",
-                    "duration": 40
+                    "type": "origins:actor_action",
+                    "action":{
+                        "type": "origins:change_resource",
+                        "resource": "*:revved_up_resource",
+                        "change": -16,
+                        "operation": "add"
+                    }
                 },
                 {
-                    "type": "origins:change_resource",
-                    "resource": "*:revved_up_resource",
-                    "change": -16,
-                    "operation": "add"
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:set_on_fire",
+                        "duration": 40
+                    }
                 }
             ]
         },

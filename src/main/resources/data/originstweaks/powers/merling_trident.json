@@ -1,6 +1,7 @@
 {
         "type": "origins:recipe",
-        "hidden": true,
+        "name": "Merling Trident",
+        "description": "You can craft Tridents.",
         "recipe": {
             "id": "origins:merling_trident",
             "type": "minecraft:crafting_shaped",
