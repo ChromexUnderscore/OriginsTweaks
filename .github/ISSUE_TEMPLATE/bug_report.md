@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help me fix the Bug
+about: Create a report to help fix the Bug
 title: ''
 labels: Bug
 assignees: ChromexUnderscore
