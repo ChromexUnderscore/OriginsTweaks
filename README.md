@@ -1,5 +1,7 @@
 # OriginsTweaks
 
+(This project is currently not being worked on due to private reasons.)
+
 This Mod overhauls the Standard Origins from the Origins Mod.
 
 #### Tweaked Origins:
