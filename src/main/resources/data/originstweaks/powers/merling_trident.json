@@ -6,21 +6,18 @@
             "id": "origins:merling_trident",
             "type": "minecraft:crafting_shaped",
             "pattern": [
-                "#N#",
-                " D ",
-                " P "
+                "SSS",
+                " H ",
+                " C "
             ],
             "key": {
-                "#": {
+                "S": {
                     "item": "minecraft:prismarine_shard"
                 },
-                "N": {
-                    "item": "minecraft:nether_star"
+                "H": {
+                    "item": "minecraft:heart_of_the_sea"
                 },
-                "D": {
-                    "item": "minecraft:diamond"
-                },
-                "P": {
+                "C": {
                     "item": "minecraft:prismarine_crystals"
                 }
             },

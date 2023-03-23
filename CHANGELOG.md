@@ -1,5 +1,26 @@
 # OriginsTweaks Changelogs
 
+## [1.19.3](https://minecraft.fandom.com/wiki/Java_Edition_1.19.3)
+
+### [Version 1.13 [1.19.3 Update / Unarchive of Project / Elytrian Rework]]
+
+#### [Version 1.13.0 [Elytrian Rework & Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.0)
+
++ Unarchived Project.
++ Updated to 1.19.3.
++ Reworked Elytrian.
++ Moved elytra power to Gift of the Skies, and changed texture for the worn elytra.
++ Moved Launch to Gift of the Skies and increased effectiveness.
++ Added power flap wings to maintain altitude.
++ Removed rocket boost power.
++ Removed restriction for Armor, instead wearing heavy armor weakens both Launch and Wing Flap.
++ Removed .mcfuntion files and integrated the commands into the powers itself.
++ Changed Recipe for crafting Cobweb to use only ``2`` String instead of ``6`` in parity with [ReOrigins](https://modrinth.com/datapack/reorigins).
++ Removed ``minecraft:gilded_blackstone`` from the block tag ``origins:unphasable``.
++ Closed Issue #32. Reason: Can't reproduce.
++ Changed Merling's Trident recipe.
++ Removed Origin Teams.
+
 ## [1.19.1](https://minecraft.fandom.com/wiki/Java_Edition_1.19.1)
 
 ### [Version 1.12 [1.19 Update]]

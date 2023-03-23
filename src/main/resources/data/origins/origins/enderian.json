@@ -8,8 +8,7 @@
 		"origins:pumpkin_hate",
 		"origins:ender_particles",
 		"origins:damage_from_potions",
-        "originstweaks:enderian_sounds",
-        "originstweaks:enderian_team"
+        "originstweaks:enderian_sounds"
 	],
 	"icon": {
 		"item": "minecraft:ender_pearl"

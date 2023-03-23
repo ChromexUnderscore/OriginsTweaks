@@ -1,13 +1,9 @@
 {
 	"powers": [
-		"origins:elytra",
-		"origins:launch_into_air",
+		"originstweaks:flap",
 		"origins:aerial_combatant",
-		"originstweaks:light_armor",
 		"origins:claustrophobia",
-		"origins:more_kinetic_damage",
-		"originstweaks:elytra_boost",
-		"originstweaks:elytrian_team"
+		"origins:more_kinetic_damage"
 	],
 	"icon": {
 		"item": "minecraft:elytra"

@@ -6,7 +6,6 @@
 		"minecraft:crying_obsidian",
 		"minecraft:obsidian",
 		"minecraft:gold_block",
-		"minecraft:raw_gold_block",
-		"minecraft:gilded_blackstone"
+		"minecraft:raw_gold_block"
 	]
 }

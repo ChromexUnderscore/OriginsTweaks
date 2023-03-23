@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.12.2",
+    "version": "1.13.0",
     "name": "OriginsTweaks",
     "description": "This Mod overhauls the Standard Origins.",
     "authors": [
@@ -11,7 +11,7 @@
         "discord": "https://discord.com/invite/Su7tqDmUTu",
         "sources": "https://github.com/ChromexUnderscore/OriginsTweaks"
     },
-    "license": "MIT",
+    "license": "MIT License",
     "icon": "assets/originstweaks/icon.png",
     "environment": "*",
     "entrypoints": {
@@ -20,8 +20,8 @@
         ]
       },
     "depends": {
-        "origins": "1.6.2",
-        "pehkui": "3.4.1",
-        "minecraft": "1.19.0"
+        "origins": "1.8.1",
+        "pehkui": "3.7.0",
+        "minecraft": "1.19.3"
     }
 }

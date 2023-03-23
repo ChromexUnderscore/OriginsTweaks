@@ -1,8 +1,12 @@
 # OriginsTweaks
 
-(This project is currently not being worked on due to private reasons.)
-
 This Mod overhauls the Standard Origins from the Origins Mod.
+
+If you prefer Quilt or Datapacks, theres a port of this Mod available.
+
+[ReOrigins](https://modrinth.com/datapack/reorigins) made by Zentropivity.
+
+This Project may not be updated in the future though.
 
 #### Tweaked Origins:
 + Arachnid (Complete)

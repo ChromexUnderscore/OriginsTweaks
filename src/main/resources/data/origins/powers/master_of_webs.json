@@ -85,7 +85,7 @@
                         }
                     ]
                 },
-                "command_at_hit": "function originstweaks:web_shoot_hit",
+                "command_at_hit": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1",
                 "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
                 "command_step": 0.1,
                 "command_along_ray_only_on_hit": true
@@ -97,6 +97,10 @@
                 "entity": false,
                 "shape_type": "collider",
                 "fluid_handling": "none",
+                "block_action": {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1"
+                },
                 "hit_action": {
                     "type": "origins:and",
                     "actions": [
@@ -126,7 +130,7 @@
                         }
                     ]
                 },
-                "command_at_hit": "function originstweaks:web_shoot_hit",
+                "command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
                 "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
                 "command_step": 0.1,
                 "command_along_ray_only_on_hit": true
@@ -251,18 +255,6 @@
             "id": "origins:master_of_webs/web_crafting",
             "type": "minecraft:crafting_shapeless",
             "ingredients": [
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
                 {
                     "item": "minecraft:string"
                 },

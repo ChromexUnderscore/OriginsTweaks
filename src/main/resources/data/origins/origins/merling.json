@@ -11,8 +11,7 @@
 		"originstweaks:merling_trident",
 		"originstweaks:zora_dash",
 		"originstweaks:aquadynamic",
-		"originstweaks:merling_sounds",
-		"originstweaks:merling_team"
+		"originstweaks:merling_sounds"
 	],
 	"icon": {
 		"item": "minecraft:trident"

@@ -4,10 +4,31 @@
     "description": "Your Body resembles that of your fellow Endermen, making you taller and able to reach further.",
     "entity_action_added": {
         "type": "origins:delay",
-        "ticks": 1,
+        "ticks": 3,
         "action": {
-            "type": "origins:execute_command",
-            "command": "function originstweaks:enderian_scale"
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 1.29"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:model_width 1.2"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:eye_height 0.95"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:reach 1.5"
+                }
+            ]
         }
     },
     "entity_action_lost": {
