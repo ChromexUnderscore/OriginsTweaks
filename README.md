@@ -8,17 +8,6 @@ If you prefer Quilt or Datapacks, theres a port of this Mod available.
 
 This Project may not be updated in the future though.
 
-#### Tweaked Origins:
-+ Arachnid (Complete)
-+ Avian (Complete)
-+ Blazeborn (Complete)
-+ Elytrian (needs Rework)
-+ Enderian (Complete)
-+ Feline (Complete)
-+ Merling (Complete)
-+ Phantom (Complete)
-+ Shulk (Complete)
-
 #### Changes to Origins:
 
 <details><summary>Arachnid</summary>
@@ -47,8 +36,9 @@ This Project may not be updated in the future though.
 
 <details><summary>Elytrian</summary>
 
-+ Can wear any armor, but restricts the ability to fly when above chainmail.
-+ Small rocket boost (placeholder).
++ Elytra has a custom texture exclusive to Elytrians. Elytra Texture made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
++ Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
++ Heavy Armor weakens effects of the Launch power and the Wing Flap power.
 </details>
 
 <details><summary>Enderian</summary>
@@ -89,3 +79,5 @@ This Project may not be updated in the future though.
 + Shulks can receive resistance by closing their shells (sneaking for a while).
 + Closed shells will be destroyed upon taking damage.
 </details>
+
+Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
