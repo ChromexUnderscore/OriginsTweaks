@@ -4,7 +4,7 @@
 
 ### [Version 1.13 [1.19.3 Update / Unarchive of Project / Elytrian Rework]]
 
-#### [Version 1.13.1 [Draft]]
+#### [Version 1.13.1 [Merling Update & Bug Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.1)
 
 + Merlings now can gain air by wearing turtle helmets and bathing in cauldrons.
 + Water Bottles now fully replenish Merling's Air.
