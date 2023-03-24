@@ -2,7 +2,7 @@
     "type": "origins:burn",
     "loading_priority": 1,
     "name": "Photoallergic",
-    "description": "You begin to burn in Daylight when not Invisible or weaking some sort of Helmet.",
+    "description": "You begin to burn in Daylight when not invisible or wearing some sort of Helmet.",
     "interval": 20,
     "burn_duration": 6,
     "condition": {
