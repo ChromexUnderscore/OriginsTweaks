@@ -9,7 +9,7 @@
 + Merlings now can gain air by wearing turtle helmets and bathing in cauldrons.
 + Water Bottles now fully replenish Merling's Air.
 + Turtle helmets slow down air use by ⅞.
-+ Removed a condition in all ``<origin>_sounds.json`` files, which crashes the game when Origins Classes is present.
++ Removed a condition in all ``<origin>_sounds.json`` files, which crashes the game when Origins Classes is not present.
 + Removed ambient sounds from merling because ``minecraft:entity.cod.ambient`` does not exist (dummy past me).
 
 #### [Version 1.13.0 [Elytrian Rework & Update]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.0)
