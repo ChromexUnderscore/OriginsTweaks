@@ -4,6 +4,11 @@
 
 ### [Version 1.13 [1.19.3 Update / Unarchive of Project / Elytrian Rework]]
 
+#### [Version 1.13.2 [More Tweaks]](https://youtu.be/5mGuCdlCcNM)
+
++ Added power ``originstweaks:cloud`` that provides Merlings a temporary Rain Cloud.
++ Power ``originstweaks:turtle_helmet`` has been hidden from the Merling Origin overview.
+
 #### [Version 1.13.1 [Merling Update & Bug Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.1)
 
 + Merlings now can gain air by wearing turtle helmets and bathing in cauldrons.

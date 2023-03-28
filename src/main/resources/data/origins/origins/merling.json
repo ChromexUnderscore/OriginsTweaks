@@ -1,6 +1,7 @@
 {
 	"powers": [
 		"origins:water_breathing",
+		"originstweaks:cloud",
 		"origins:water_vision",
 		"origins:aqua_affinity",
 		"origins:swim_speed",
