@@ -4,7 +4,18 @@
 
 ### [Version 1.13 [1.19.3 Update / Unarchive of Project / Elytrian Rework]]
 
-#### [Version 1.13.2 [More Tweaks]](https://youtu.be/5mGuCdlCcNM)
+#### [Version 1.13.3 [Dependency changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.3)
+
++ Changed dependency of Origins to support any version above ```1.3.1```.
++ Changed dependency of Pehkui to support any version.
++ Changed dependency of Minecraft to support any Version above ``1.18.0``.
++ Added Recommendation for latest Origins version (Currently 1.8.1).
++ Added Recommendation for latest Pehkui Version. (Currently 3.7.2)
++ Added Recommendation for latest Minecraft Version (Currently 1.19.3).
+
+These Changes are experimental, and may not work when using some versions. Use at your own risk.
+
+#### [Version 1.13.2 [More Tweaks]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.2)
 
 + Added power ``originstweaks:cloud`` that provides Merlings a temporary Rain Cloud.
 + Power ``originstweaks:turtle_helmet`` has been hidden from the Merling Origin overview.
