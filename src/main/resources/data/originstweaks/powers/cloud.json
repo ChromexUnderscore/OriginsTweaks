@@ -1,7 +1,7 @@
 {
   "type": "origins:multiple",
   "name": "Personal Cloud",
-  "description": "When outside of Water, you can summon a Personal Cloud that follows you around, providing you with enough water to survive for up to 5 minutes. Use it wisely, because it takes double as long to charge it up!",
+  "description": "When outside of Water, you can summon a Personal Cloud that follows you around, providing you with enough water to survive for up to 5 minutes. Use it wisely, because it takes double as long to charge up!",
   "toggle": {
     "type": "origins:toggle",
     "active_by_default": false,

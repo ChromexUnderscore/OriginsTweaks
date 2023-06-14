@@ -4,12 +4,14 @@
     "description": "Your body resembles that of Arthopods, making you shorter and able to feather off your fall.",
     "badges": [
         {
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
             "text": "You are 1.5 Blocks tall."
         },
         {
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You take 50% less fall damage, and only after a fall of more than 30 Blocks."
+            "text": "You only take falldamage after a fall of more than 30 Blocks."
         }
     ],
     "scale": {
@@ -25,16 +27,21 @@
                         "command": "scale delay set 0"
                     },
                     {
-                        "type": "origins:execute_command",
-                        "command": "scale set pehkui:height 0.66"
-                    },
-                    {
-                        "type": "origins:execute_command",
-                        "command": "scale set pehkui:width 0.66"
-                    },
-                    {
-                        "type": "origins:execute_command",
-                        "command": "scale set pehkui:knockback 0.66"
+                        "type": "origins:delay",
+                        "ticks": 1,
+                        "action": {
+                            "type": "origins:and",
+                            "actions": [
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "scale set pehkui:height 0.66"
+                                },
+                                {
+                                    "type": "origins:execute_command",
+                                    "command": "scale set pehkui:width 0.66"
+                                }
+                            ]
+                        }
                     }
                 ]
             }
@@ -44,7 +51,7 @@
             "command": "scale reset @s"
         }
     },
-    "fall_dmg_cancel": {
+    "falldmg_cancel": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
             "type": "origins:and",
@@ -61,11 +68,11 @@
             ]
         },
         "modifier": {
-            "operation": "multiply_total",
-            "value": -1
+            "operation": "set_total",
+            "value": 0
         }
     },
-    "fall_dmg_reduce": {
+    "falldmg_reset": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
             "type": "origins:and",
@@ -82,7 +89,7 @@
             ]
         },
         "modifier": {
-            "operation": "addition",
+            "operation": "add_total_late",
             "value": -30
         }
     }

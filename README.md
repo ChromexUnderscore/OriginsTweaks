@@ -13,16 +13,17 @@ This Project may not be updated in the future though.
 <details><summary>Arachnid</summary>
 
 + Arachnid has a Cobweb Grapple built-in to power **Master of Webs**.
-+ Hitting an entity with the cobweb grapple will catch it in a web instead of grappling. (Grapple cooldown x10).
++ Hitting an entity with the cobweb grapple will catch it in a web instead of grappling.
 + Arachnids are shorter (can fit into 1-block gaps when sneaking) and do not take falldamage from a fall less than 30 Blocks.
-+ Arrows shot by Arachnids inflict poison and other debuffs on a cooldown.
++ Arachnids can craft cobweb out of 9 string and vice versa.
+
 </details>
 
 <details><summary>Avian</summary>
 
 + Feather Falling is Toggleable.
-+ Spectral Arrows shot by the Avian deal increased damage.
 + Avians can use a second sword of the same material in their offhand.
+
 </details>
 
 <details><summary>Blazeborn</summary>
@@ -30,8 +31,10 @@ This Project may not be updated in the future though.
 + Blazeborns can shoot 3 Fireballs on a Cooldown.
 + Blazeborns have a toggleable ability that puts their hands on fire.
   + Catches entites on fire when hit.
+  + Lights Campfires and Fuels Furnei and Brewing stands.
   + Ability to hover while hands are on fire.
-+ Consuming a Firecharge will strengthen the abilities for a short amount of time.
++ Consuming a Firecharge will strengthen the abilities for some time.
+
 </details>
 
 <details><summary>Elytrian</summary>
@@ -39,20 +42,23 @@ This Project may not be updated in the future though.
 + Elytra has a custom texture exclusive to Elytrians. Elytra Texture made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
 + Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
 + Heavy Armor weakens effects of the Launch power and the Wing Flap power.
+
 </details>
 
 <details><summary>Enderian</summary>
 
 + height, eye height and reach are changed.
 + can dodge Arrows on a cooldown.
-+ Enderians are able to set an AoE Cloud as teleportation point for a short amount of time.
++ Enderians are able to set a teleportation point to travel back to.
+
 </details>
 
 <details><summary>Feline</summary>
 
 + Feline can break Stone 50% slower when not under the effect of strength. Some stone blocks can't be broken without strength.
-+ Claws deal stone-sword-level damage when sharp, needs to be resharpened using logs, wool or carpet.
-+ Huntable animals can be sensed by felines, and are more nourishing.
++ Claws deal stone-sword-level damage and attack twice as fast as a sword, but need to be resharpened using logs, wool or carpet.
++ Prey can be sensed by felines, and their meat is more nourishing.
+
 </details>
 
 <details><summary>Merling</summary>
@@ -60,6 +66,8 @@ This Project may not be updated in the future though.
 + Merlings can craft tridents.
 + Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
 + Merlings can dash underwater while swimming on a cooldown.
++ They can also summon a raincloud to keep them moist for some time.
+
 </details>
 
 <details><summary>Phantom</summary>
@@ -67,10 +75,10 @@ This Project may not be updated in the future though.
 + Golden items and blocks have negative effects on phantoms.
   + Can't eat golden food.
   + Can't wear golden Armor.
-  + Golden weapons deal more damage.
   + Golden blocks inflict negative effects.
   + Can't phase through pure golden blocks.
 + Phantoms can highlight any entity in a 32 block radius.
+
 </details>
 
 <details><summary>Shulk</summary>

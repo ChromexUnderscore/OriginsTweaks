@@ -4,10 +4,12 @@
     "description": "You are able to release a Wail that reveals other Entites nearby.",
     "badges": [
         {
+            "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press your Secondary Power Key to activate this Power."
+            "text": "Press %s to activate this Power."
         },
         {
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
             "text": "You inflict Glowing to Entities in a radius of 32 Blocks for 30 Seconds."
         }

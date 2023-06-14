@@ -1,4 +1,12 @@
 {
+	"icon": {
+		"item": "minecraft:shulker_shell"
+	},
+	"name": "origin.origins.shulk.name",
+    "description": "origin.origins.shulk.description",
+	"order": 4,
+	"impact": 1,
+	"loading_priority": 1,
 	"powers": [
 		"origins:shulker_inventory",
 		"origins:natural_armor",
@@ -9,11 +17,5 @@
 		"originstweaks:protective_shell",
 		"originstweaks:antigravity_bullet",
 		"originstweaks:shulk_sounds"
-	],
-	"icon": {
-		"item": "minecraft:shulker_shell"
-	},
-	"order": 4,
-	"impact": 1,
-	"loading_priority": 1
+	]
 }

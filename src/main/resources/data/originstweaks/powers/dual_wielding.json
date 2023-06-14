@@ -1,7 +1,7 @@
 {
     "type": "origins:active_self",
     "name": "Dual Wielding",
-    "description": "When holding a second Sword of the same material in your Offhand, you are able to hit a second time using your Primary Ability Key. Enchantents or Effects do not apply.",
+    "description": "When holding a second Sword of the same material in your Offhand, you are able to strike a second time using your Primary Ability Key. Enchantents or Effects do not apply.",
     "entity_action": {
         "type": "origins:and",
         "actions": [

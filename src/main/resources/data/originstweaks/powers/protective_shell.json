@@ -4,6 +4,7 @@
     "description": "You are able to Increase your defence by closing your Shells.",
     "badges": [
         {
+            "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
             "text": "Press and hold your sneak key to close your shells."
         }
@@ -53,7 +54,7 @@
             "resource": "*:*_shields",
             "change": -1
         },
-        "interval": 10,
+        "interval": 5,
         "condition": {
             "type": "origins:power_active",
             "power": "*:*_build_up",

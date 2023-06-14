@@ -12,12 +12,12 @@
             },
             "if_action": {
                 "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.avian.hurt player @a ~ ~ ~ 1 1.2",
+                "command": "playsound minecraft:entity.parrot.hurt player @a ~ ~ ~ 1 1.2",
                 "permission_level": 4
             },
             "else_action": {
                 "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.avian.death player @a ~ ~ ~ 1 1",
+                "command": "playsound minecraft:entity.parrot.death player @a ~ ~ ~ 1 1",
                 "permission_level": 4
             }
         },
@@ -51,7 +51,7 @@
                 "ticks": 5,
                 "action": {
                     "type": "origins:execute_command",
-                    "command": "playsound minecraft:entity.avian.ambient player @a ~ ~ ~ 1 1"
+                    "command": "playsound minecraft:entity.parrot.ambient player @a ~ ~ ~ 1 1"
                 }
             }
         }
@@ -106,6 +106,36 @@
                     "type": "origins:status_effect",
                     "effect": "minecraft:invisibility",
                     "inverted": true
+                }
+            ]
+        }
+    },
+    "parrot":{
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:chance",
+            "chance": 0.1,
+            "action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.parrot.ambient",
+                "pitch": 1.5
+            }
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[nbt={ShoulderEntityLeft:{id:\"minecraft:parrot\"}}]",
+                    "compare_to": 1,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[nbt={ShoulderEntityRight:{id:\"minecraft:parrot\"}}]",
+                    "compare_to": 1,
+                    "comparison": "=="
                 }
             ]
         }

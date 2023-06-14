@@ -2,7 +2,7 @@
     "type": "origins:multiple",
     "name": "Firecharged Projectile",
     "description": "Blazeborn are able to launch a burst of fireballs by pressing the primary key.",
-    "not_revved_fireball": {
+    "fireball": {
         "type": "origins:fire_projectile",
         "entity_type": "small_fireball",
         "cooldown": 200,
@@ -12,7 +12,7 @@
         "count": 3,
         "interval": 5,
         "start_delay": 5,
-        "speed": 1.0,
+        "speed": 1,
         "divergence": 2,
         "sound": "entity.blaze.shoot",
         "tag": "{NoGravity:1b}",
@@ -24,7 +24,7 @@
     "revved_fireball": {
         "type": "origins:fire_projectile",
         "entity_type": "small_fireball",
-        "cooldown": 50,
+        "cooldown": 200,
         "hud_render": {
             "should_render": false
         },

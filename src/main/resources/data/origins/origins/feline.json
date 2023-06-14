@@ -1,4 +1,12 @@
 {
+	"icon": {
+		"item": "minecraft:salmon"
+	},
+	"name": "origin.origins.feline.name",
+    "description": "origin.origins.feline.description",
+	"order": 0,
+	"impact": 2,
+	"loading_priority": 1,
 	"powers": [
 		"origins:fall_immunity",
 		"origins:sprint_jump",
@@ -11,11 +19,5 @@
 		"originstweaks:sharp_claws",
 		"originstweaks:natural_hunter",
 		"originstweaks:seventh_sense"
-	],
-	"icon": {
-		"item": "minecraft:salmon"
-	},
-	"order": 0,
-	"impact": 2,
-	"loading_priority": 1
+	]
 }

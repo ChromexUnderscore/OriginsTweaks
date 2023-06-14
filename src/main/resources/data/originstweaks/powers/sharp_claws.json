@@ -2,6 +2,18 @@
     "type": "origins:multiple",
     "name": "Sharp Claws",
     "description": "Your Natural Claws provide a Benefit in disarmed Fights. Remember to keep them Sharp though.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Use Logs, Wool or Carpet to resharpen your Claws."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Your Claws can be as sharp as a Stone Sword, but faster."
+        }
+    ],
     "extra_damage": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
@@ -85,9 +97,19 @@
     "claws_resharpen": {
         "type": "origins:action_on_block_use",
         "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_claws_sharpness",
-            "change": 10
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_claws_sharpness",
+                    "change": 10
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:item.axe.strip",
+                    "pitch": 1.5
+                }
+            ]
         },
         "block_condition": {
             "type": "origins:in_tag",

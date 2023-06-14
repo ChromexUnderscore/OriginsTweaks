@@ -109,5 +109,34 @@
                 }
             ]
         }
+    },
+    "parrot":{
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:chance",
+            "chance": 0.1,
+            "action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.parrot.imitate.shulker"
+            }
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[nbt={ShoulderEntityLeft:{id:\"minecraft:parrot\"}}]",
+                    "compare_to": 1,
+                    "comparison": "=="
+                },
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @s[nbt={ShoulderEntityRight:{id:\"minecraft:parrot\"}}]",
+                    "compare_to": 1,
+                    "comparison": "=="
+                }
+            ]
+        }
     }
 }

@@ -1,4 +1,12 @@
 {
+	"icon": {
+		"item": "minecraft:trident"
+	},
+	"name": "origin.origins.merling.name",
+    "description": "origin.origins.merling.description",
+	"order": 0,
+	"impact": 3,
+	"loading_priority": 1,
 	"powers": [
 		"origins:water_breathing",
 		"originstweaks:cloud",
@@ -15,11 +23,5 @@
 		"originstweaks:water_cauldron",
 		"originstweaks:turtle_helmet",
 		"originstweaks:merling_sounds"
-	],
-	"icon": {
-		"item": "minecraft:trident"
-	},
-	"order": 0,
-	"impact": 3,
-	"loading_priority": 1
+	]
 }

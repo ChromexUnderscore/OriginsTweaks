@@ -1,5 +1,54 @@
 # OriginsTweaks Changelogs
 
+## [1.19.4](https://minecraft.fandom.com/wiki/Java_Edition_1.19.4)
+
+### [Version 1.14 [Update to Minecraft 1.19.4]]
+
+#### [Version 1.14.0 [Balance Changes / Power Reworks]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.0)
+
++ Reworked power ``antigravity_bullet``.
+  + Changed Description to mention a Shulker Bullet rather than an Antigravity Bullet.
+  + Set Projectile speed from ``0.75`` to ``1``.
+  + Set Projectile Divergence to ``0``.
+  + Added NBT tag ``{NoGravity:1}`` to Projectile, making it unaffected by Gravity.
+  + Swapped active keybinds with ``shulker_inventory`` for easier access.
++ Reworked power ``aquadynamic``.
+  + Changed Description to use proper English.
+  + Changed Damage Modifiers to use non-Legacy Operations.
++ Added Parrot Imitations of Origin Ambient Sounds while riding on the Player's shoulder.
++ Reworked power ``arthropod_appearance``.
+  + Changed the Second Badge to describe the power more accurately.
+  + Changed Damage Modifiers to use non-Legacy Operations.
++ Reworked power ``aurophobia``.
+  + Golden Tools no longer deal 125% Damage on Phantoms.
+  + Gold related Blocks no longer inflict Slowness when in 5 Blocks proximity.
++ Reworked power ``blazing_touch``.
+  + Changed basic fire aspect to inflict fire for ``8`` seconds instead of ``20``, equivalent to Fire Aspect II.
+  + Changed Revved fire aspect to inflict fire for ``16`` seconds instead of ``40``, equivalent to Fire Aspect IV.
+  + Restricted both fire aspect powers to only work when the mainhand is empty.
+  + Right clicking furnei, campfires and brewing stands while blazing touch is active now fuels / lights these blocks.
++ Reworked power ``firecharged_projectile``.
+  + Changed Cooldown for the revved fireball from ``50`` to ``200`` ticks.
++ Reworked power ``flap``.
+  + Nerfed various velocity values in order to balance this power.
++ Removed power ``heavens_grace``.
++ Added power ``master_of_webs`` to origins/powers for ``no_slowdown`` to work properly.
++ Changed Badge in ``master_of_webs``.
+  + Added a notice to use a sword when mining cobweb to get string refunded.
++ Changed power ``recall``.
+  + The bar now fully depletes when toggling it off.
++ Reopened Issue #32 because I managed to reproduce the bug.
++ Fixed a bug with power ``reflex``.
+  + Negative Damage causes arrows to bounce off of the player, fixed by instead setting the total damage to 1.
++ Closed Issue #32 as this bug is now fixed.
++ Added a sound effect to power ``sharp_claws`` when resharpening claws.
++ Balanced power ``thermal lift``.
+  + Changed usage cost to be ``5`` resource unit per tick instead of ``1``.
+  + Changed resource to recharge ``3`` resource units per tick instead of ``5``.
++ Removed power ``toxic_coating`` as Arachnid has too many abilities.
++ Fixed a Bug with ``recall``.
+  + Added a Cooldown of 10 seconds between toggling the power off -> on, fixing a new beacon being created upon toggling off.
+
 ## [1.19.3](https://minecraft.fandom.com/wiki/Java_Edition_1.19.3)
 
 ### [Version 1.13 [1.19.3 Update / Unarchive of Project / Elytrian Rework]]

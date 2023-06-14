@@ -1,18 +1,21 @@
 {
+    "icon": {
+        "item": "minecraft:spider_eye"
+    },
+    "name": "origin.origins.arachnid.name",
+    "description": "origin.origins.arachnid.description",
+    "order": 1,
+    "impact": 1,
+    "loading_priority": 1,
 	"powers": [
-		"origins:climbing",
-		"origins:master_of_webs",
-		"originstweaks:toxic_coating",
-		"origins:carnivore",
-		"origins:fragile",
-		"origins:arthropod",
-		"originstweaks:arthropod_appearance",
-		"originstweaks:arachnid_sounds"
-	],
-	"icon": {
-		"item": "minecraft:spider_eye"
-	},
-	"order": 1,
-	"impact": 1,
-	"loading_priority": 1
+        "origins:climbing",
+        "originstweaks:master_of_webs",
+        "origins:master_of_webs",
+        "origins:carnivore",
+        "origins:fragile",
+        "origins:arthropod",
+		
+        "originstweaks:arthropod_appearance",
+        "originstweaks:arachnid_sounds"
+    ]
 }

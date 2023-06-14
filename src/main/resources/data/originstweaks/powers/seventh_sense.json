@@ -1,13 +1,15 @@
 {
     "type": "origins:multiple",
     "name": "Seventh Sense",
-    "description": "You are able to sense huntable animals in a short distance",
+    "description": "You are able to sense prey in a short distance",
     "badges": [
         {
+            "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press your Primary Power Key to activate this Power."
+            "text": "Press %s to activate this Power."
         },
         {
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
             "text": "You inflict Glowing to Huntable Entities in a radius of 16 Blocks for 10 Seconds."
         }
@@ -23,7 +25,7 @@
         "cooldown": 600,
         "hud_render": {
             "hud_render": {
-                "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+                "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
                 "bar_index": 7
             }
         },

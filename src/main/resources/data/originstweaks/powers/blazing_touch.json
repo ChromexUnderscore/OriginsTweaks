@@ -1,7 +1,24 @@
 {
     "type": "origins:multiple",
     "name": "Blazing Touch",
-    "description": "You can light your hands on fire with your Secondary Key. When lit, you have permanent Fire aspect V on your bare hands, and you can light certain Blocks on fire.",
+    "description": "You can light your hands on fire, which is useful for other abilities.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": "Set your hands ablaze using %s."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "When your hands are empty but on fire you can set your Friends and Foes in Flames. This is stronger if you Revved up."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "This is also useful to Light Campfires or Fuel Furnei and Brewing Stands."
+        }
+    ],
     "fire_hands_active": {
         "type": "origins:toggle",
         "active_by_default": false,
@@ -27,15 +44,27 @@
         "type": "origins:target_action_on_hit",
         "entity_action": {
             "type": "origins:set_on_fire",
-            "duration": 20
+            "duration": 8
         },
         "cooldown": 200,
         "hud_render": {
             "should_render": false
         },
         "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_fire_hands_active"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_fire_hands_active"
+                }
+            ]
         }
     },
     "revved_fire_aspect": {
@@ -45,7 +74,7 @@
             "actions": [
                 {
                     "type": "origins:actor_action",
-                    "action":{
+                    "action": {
                         "type": "origins:change_resource",
                         "resource": "*:revved_up_resource",
                         "change": -16,
@@ -56,7 +85,7 @@
                     "type": "origins:target_action",
                     "action": {
                         "type": "origins:set_on_fire",
-                        "duration": 40
+                        "duration": 16
                     }
                 }
             ]
@@ -77,20 +106,240 @@
                     "resource": "*:revved_up_resource",
                     "comparison": "!=",
                     "compare_to": 0
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
                 }
             ]
         }
     },
-    "ignite_stuff": {
+    "light_campfires": {
         "type": "origins:action_on_block_use",
         "block_action": {
-            "type": "origins:modify_block_state",
-            "property": "lit",
-            "value": true
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_block_state",
+                    "property": "lit",
+                    "value": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
         },
         "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "minecraft:campfires"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:campfires"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": false
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "light_furnace_visual": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_block_state",
+                    "property": "lit",
+                    "value": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:furnace"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": false
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "light_furnace_technical": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "data merge block ~ ~ ~ {BurnTime:2400}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:furnace"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "light_smoker_visual": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_block_state",
+                    "property": "lit",
+                    "value": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:smoker"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": false
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "light_smoker_technical": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "data merge block ~ ~ ~ {BurnTime:2400}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:smoker"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "light_blast_furnace_visual": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_block_state",
+                    "property": "lit",
+                    "value": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:blast_furnace"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": false
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "light_blast_furnace_technical": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:execute_command",
+            "command": "data merge block ~ ~ ~ {BurnTime:2400}"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:blast_furnace"
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_fire_hands_active"
+        }
+    },
+    "fuel_brewing_stand": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "data merge block ~ ~ ~ {Fuel:20}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:brewing_stand"
         },
         "condition": {
             "type": "origins:power_active",

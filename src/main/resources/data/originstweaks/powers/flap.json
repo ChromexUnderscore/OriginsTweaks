@@ -38,7 +38,7 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 10,
+                "y": 2,
                 "client": false,
                 "operation": "set"
               },
@@ -79,7 +79,7 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 7.5,
+                "y": 1.5,
                 "client": false,
                 "operation": "set"
               },
@@ -120,7 +120,7 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 5,
+                "y": 1,
                 "client": false,
                 "operation": "set"
               },
@@ -161,7 +161,7 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 2.5,
+                "y": 0.5,
                 "client": false,
                 "operation": "set"
               },
@@ -200,10 +200,10 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 1,
-                "z": 0.5,
+                "y": 0.75,
+                "z": 0.4,
                 "client": false,
-                "space": "local",
+                "space": "local_horizontal_normalized",
                 "operation": "set"
               },
               {
@@ -237,10 +237,10 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 0.8,
-                "z": 0.4,
+                "y": 0.5,
+                "z": 0.3,
                 "client": false,
-                "space": "local",
+                "space": "local_horizontal_normalized",
                 "operation": "set"
               },
               {
@@ -274,10 +274,10 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 0.6,
-                "z": 0.3,
+                "y": 0.25,
+                "z": 0.2,
                 "client": false,
-                "space": "local",
+                "space": "local_horizontal_normalized",
                 "operation": "set"
               },
               {
@@ -311,10 +311,9 @@
             "actions": [
               {
                 "type": "origins:add_velocity",
-                "y": 0.4,
-                "z": 0.2,
+                "z": 0.1,
                 "client": false,
-                "space": "local",
+                "space": "local_horizontal_normalized",
                 "operation": "set"
               },
               {

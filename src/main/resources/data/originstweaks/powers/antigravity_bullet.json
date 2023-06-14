@@ -1,14 +1,15 @@
 {
     "type": "origins:fire_projectile",
     "name": "Antigravity Bullet",
-    "description": "You can throw an Antigravity Bullet by pressing your secondary active key!",
+    "description": "You can throw a Shulker Bullet by pressing your secondary active key.",
     "entity_type": "minecraft:shulker_bullet",
     "cooldown": 30,
     "hud_render": {
         "should_render": false
     },
-    "speed": 0.75,
-    "divergence": 0.25,
-    "key": "key.origins.secondary_active",
-    "sound": "minecraft:entity.shulker.shoot"
+    "speed": 1,
+    "divergence": 0,
+    "key": "key.origins.primary_active",
+    "sound": "minecraft:entity.shulker.shoot",
+    "tag": "{NoGravity:1}"
 }

@@ -9,10 +9,21 @@
             "key": "key.origins.secondary_active"
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "comparison": "!=",
-            "compare_to": 0
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_resource",
+                    "comparison": "!=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
         }
     },
     "trigger_on": {
@@ -36,13 +47,24 @@
         },
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_cooldown",
-            "change": -2
+            "resource": "*:*_resource",
+            "change": -1
         },
-        "interval": 10,
+        "interval": 1,
         "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_toggle"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            ]
         }
     },
     "trigger_off": {
@@ -50,6 +72,12 @@
         "rising_action": {
             "type": "origins:and",
             "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "operation": "set",
+                    "change": 0
+                },
                 {
                     "type": "origins:execute_command",
                     "command": "tp @s @e[tag=recall,limit=1,sort=nearest]"
@@ -67,46 +95,48 @@
                     "fall_distance": 0
                 },
                 {
-                    "type": "origins:delay",
-                    "ticks": 1,
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "kill @e[tag=recall,limit=1,sort=nearest]"
-                    }
+                    "type": "origins:change_resource",
+                    "resource": "*:*_cooldown",
+                    "change": 200,
+                    "operation": "set"
                 },
                 {
                     "type": "origins:delay",
-                    "ticks": 1,
+                    "ticks": 3,
                     "action": {
                         "type": "origins:execute_command",
-                        "command": "playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
+                        "command": "kill @e[tag=recall,limit=2,sort=nearest]"
                     }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
                 }
             ]
         },
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_cooldown",
+            "resource": "*:*_resource",
             "change": 1
         },
-        "interval": 10,
+        "interval": 1,
         "condition": {
             "type": "origins:power_active",
             "power": "*:*_toggle",
             "inverted": true
         }
     },
-    "cooldown": {
+    "resource": {
         "type": "origins:resource",
         "min": 0,
-        "max": 240,
-        "start_value": 240,
+        "max": 2400,
+        "start_value": 2400,
         "hud_render": {
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
             "bar_index": 7,
             "condition": {
                 "type": "origins:resource",
-                "resource": "*:*_cooldown",
+                "resource": "*:*_resource",
                 "comparison": "!=",
                 "compare_to": 240
             }
@@ -114,6 +144,24 @@
         "min_action": {
             "type": "origins:toggle",
             "power": "*:*_toggle"
+        }
+    },
+    "cooldown":{
+        "type": "origins:resource",
+        "min": 0,
+        "max": 200,
+        "start_value": 0,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "cooldown_reduce": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "change": -1
         }
     },
     "shader": {

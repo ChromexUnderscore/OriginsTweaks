@@ -1,19 +1,20 @@
 {
-	"powers": [
-		"originstweaks:slow_falling",
-		"origins:fresh_air",
-		"origins:like_air",
-		"origins:tailwind",
-		"origins:lay_eggs",
-		"origins:vegetarian",
-		"originstweaks:heavens_grace",
-		"originstweaks:dual_wielding",
-		"originstweaks:avian_sounds"
-	],
 	"icon": {
 		"item": "minecraft:feather"
 	},
+	"name": "origin.origins.avian.name",
+    "description": "origin.origins.avian.description",
 	"order": 0,
 	"impact": 1,
-	"loading_priority": 1
+	"loading_priority": 1,
+	"powers": [
+		"origins:slow_falling",
+		"originstweaks:dual_wielding",
+		"origins:like_air",
+		"origins:tailwind",
+		"origins:fresh_air",
+		"origins:vegetarian",
+		"origins:lay_eggs",
+		"originstweaks:avian_sounds"
+	]
 }

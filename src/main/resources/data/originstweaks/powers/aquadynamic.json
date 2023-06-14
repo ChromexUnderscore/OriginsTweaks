@@ -1,11 +1,12 @@
-{
+ {
     "type": "origins:multiple",
     "name": "Aquadynamic",
         "description": "Due to your experience with physics Underwater, you are able to use Tridents more efficiently.",
         "badges":[
             {
+                "type": "origins:tooltip",
                 "sprite": "origins:textures/gui/badge/arrow_up.png",
-                "text": "You deal 50% extra damage when damaging entities with a Tridents while you are underwater."
+                "text": "You deal 150% damage to entities while using a Trident underwater."
             }
         ],
     "projectile": {
@@ -15,9 +16,9 @@
             "projectile": "minecraft:trident"
         },
         "modifier": {
-            "name": "merling trident perk projectile",
-            "operation": "multiply_base",
-            "value": 0.5
+            "name": "merling thrown trident perk",
+            "operation": "multiply_total_multiplicative",
+            "value": 1.5
         },
         "condition": {
             "type": "origins:submerged_in",
@@ -26,27 +27,32 @@
     },
     "melee": {
         "type": "origins:modify_damage_dealt",
-        "bientity_condition": {
-            "type": "origins:actor_condition",
-            "condition": {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:ingredient",
-                    "ingredient":{
-                        "item": "minecraft:trident"
-                    }
-                }
-            }
-        },
         "modifier": {
             "name": "merling trident perk melee",
-            "operation": "multiply_base",
-            "value": 0.5
+            "operation": "multiply_total_multiplicative",
+            "value": 1.5
         },
-        "condition": {
-            "type": "origins:submerged_in",
-            "fluid": "minecraft:water"
+        "bientity_condition": {
+        "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient":{
+                                "item": "minecraft:trident"
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:submerged_in",
+                        "fluid": "minecraft:water"
+                    }
+                ]
+            }
         }
     }
 }

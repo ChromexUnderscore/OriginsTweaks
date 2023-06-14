@@ -1,14 +1,16 @@
 {
+	"icon": {
+		"item": "minecraft:elytra"
+	},
+	"name": "origin.origins.elytrian.name",
+    "description": "origin.origins.elytrian.description",
+	"order": 3,
+	"impact": 1,
+	"loading_priority": 1,
 	"powers": [
 		"originstweaks:flap",
 		"origins:aerial_combatant",
 		"origins:claustrophobia",
 		"origins:more_kinetic_damage"
-	],
-	"icon": {
-		"item": "minecraft:elytra"
-	},
-	"order": 3,
-	"impact": 1,
-	"loading_priority": 1
+	]
 }
