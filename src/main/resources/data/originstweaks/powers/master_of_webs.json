@@ -4,14 +4,19 @@
     "description": "As an Arachnid, you can do a bunch of neat stuff using Webs and Strings.",
     "badges": [
         {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Cobweb does not slow you down, but you can still use them to climb up."
-        },
-        {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
             "text": "Shoot a Web with %s. Hitting a block will fling you forwards, hitting a mob will catch it in cobweb. You will need at least one free hand to do so though."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "You have a limited String Supply, which fully regenerates within 60 Seconds. Refill by using string."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Cobweb does not slow you down, but you can still use them to climb up."
         },
         {
             "type": "origins:tooltip",
@@ -58,12 +63,7 @@
                     "item": "minecraft:cobweb"
                 }
             },
-            "suffix": "You can also revert cobwebs back into strings by crafting or mining the placed block (using a sword!)."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You have a limited String Supply, which fully regenerates within 60 Seconds. Refill by using string."
+            "suffix": "You can also revert cobweb items back into strings."
         }
     ],
     "loading_priority": 1,
@@ -717,12 +717,6 @@
             }
         }
     },
-    "cobweb_loottable": {
-        "type": "origins:replace_loot_table",
-        "replace": {
-            "minecraft:block/cobweb": "originstweaks:cobweb_refund"
-        }
-    },  
     "string_resource": {
         "type": "origins:resource",
         "min": 0,
@@ -761,6 +755,14 @@
                         "type": "origins:consume",
                         "amount": 1
                     }
+                },
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.item_frame.rotate_item"
                 },
                 {
                     "type": "origins:change_resource",

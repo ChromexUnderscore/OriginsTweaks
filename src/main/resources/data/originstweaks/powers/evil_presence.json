@@ -1,0 +1,169 @@
+{
+    "type": "origins:multiple",
+    "name": "Evil Presence",
+    "description": "You are able to sense and hunt the undead near you.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "You have a indicator bar that can detect 1 to 7 Undead mobs within a 16 block radius."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "You deal 30% more melee damage against undead mobs."
+        }
+    ],
+    "resource": {
+        "type": "origins:resource",
+        "max": 7,
+        "min": 0,
+        "start_value": 0,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 5,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_resource",
+                "compare_to": 0,
+                "comparison": "!="
+            }
+        }
+    },
+    "modify":{
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 0,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 0,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 1,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 1,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 2,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 2,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 3,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 3,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 4,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 4,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 5,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 5,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 6,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 6,
+                        "comparison": "=="
+                    }
+                },
+                {
+                    "action": {
+                        "type": "origins:change_resource",
+                        "resource":"*:*_resource",
+                        "change": 7,
+                        "operation": "set"
+                    },
+                    "condition": {
+                        "type": "origins:command",
+                        "command": "execute if entity @e[type=#originstweaks:undead,distance=0..16]",
+                        "compare_to": 7,
+                        "comparison": ">="
+                    }
+                }
+            ]
+        }
+    },
+    "smite": {
+        "type": "origins:modify_damage_dealt",
+        "bientity_condition": {
+            "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:in_tag",
+                "tag": "originstweaks:undead"
+            }
+        },
+        "modifier": {
+            "name": "avian bonus smite",
+            "operation": "multiply_total_multiplicative",
+            "value": 0.3
+        }
+    }
+}

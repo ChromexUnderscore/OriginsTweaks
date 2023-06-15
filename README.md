@@ -22,7 +22,8 @@ This Project may not be updated in the future though.
 <details><summary>Avian</summary>
 
 + Feather Falling is Toggleable.
-+ Avians can use a second sword of the same material in their offhand.
++ Avians can sense undead mobs within 16 blocks distance.
++ Spectral Arrows deal 25% more damage when shot by an Avian.
 
 </details>
 
@@ -41,7 +42,9 @@ This Project may not be updated in the future though.
 
 + Elytra has a custom texture exclusive to Elytrians. Elytra Texture made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
 + Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
-+ Heavy Armor weakens effects of the Launch power and the Wing Flap power.
++ Pressing the Primary Key while grounded will launch them to the sky.
++ You have a Stamina bar that is used when launching, flapping or gliding.
++ Heavy Armor weakens effects of the Launch power and the Wing Flap power and costs more stamina.
 
 </details>
 
@@ -77,7 +80,7 @@ This Project may not be updated in the future though.
   + Can't wear golden Armor.
   + Golden blocks inflict negative effects.
   + Can't phase through pure golden blocks.
-+ Phantoms can highlight any entity in a 32 block radius.
++ Phantoms can highlight any entity in a 32 block radius for 10 seconds.
 
 </details>
 
@@ -86,6 +89,8 @@ This Project may not be updated in the future though.
 + Shulks can throw a shulker bullet on a cooldown.
 + Shulks can receive resistance by closing their shells (sneaking for a while).
 + Closed shells will be destroyed upon taking damage.
+
 </details>
 
 Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
+Apple Hunger bar by [Sunnybrook1 on Planet Minecraft](https://www.planetminecraft.com/texture-pack/apple-hunger-bar/).

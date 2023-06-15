@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "When your hands are empty but on fire you can set your Friends and Foes in Flames. This is stronger if you Revved up."
+            "text": "When your hands are empty you can burn mobs and players. This is stronger if you Revved up."
         },
         {
             "type": "origins:tooltip",

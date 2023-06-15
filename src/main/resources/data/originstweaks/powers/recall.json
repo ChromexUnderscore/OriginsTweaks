@@ -101,16 +101,16 @@
                     "operation": "set"
                 },
                 {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
+                },
+                {
                     "type": "origins:delay",
                     "ticks": 3,
                     "action": {
                         "type": "origins:execute_command",
                         "command": "kill @e[tag=recall,limit=2,sort=nearest]"
                     }
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
                 }
             ]
         },
@@ -142,15 +142,25 @@
             }
         },
         "min_action": {
-            "type": "origins:toggle",
-            "power": "*:*_toggle"
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:toggle",
+                "power": "*:*_toggle"
+            },
+            "else_action": {
+                "type": "origins:nothing"
+            }
         }
     },
     "cooldown":{
         "type": "origins:resource",
         "min": 0,
         "max": 200,
-        "start_value": 0,
+        "start_value": 200,
         "hud_render": {
             "should_render": false
         }

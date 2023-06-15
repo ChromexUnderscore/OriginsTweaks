@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Weak Arms",
-    "description": "When not under the effect of a strenght potion, you will mine natural stone blocks slower and you are unable to mine sturdy blocks like deepslate or obsidian..",
+    "description": "When not under the effect of a strenght potion, you will mine natural stone blocks slower and you are unable to mine sturdy blocks like deepslate or obsidian.",
     "loading_priority": 1,
     "slower-mining": {
         "type": "origins:modify_break_speed",

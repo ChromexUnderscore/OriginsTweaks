@@ -4,19 +4,19 @@
 	"description": "You fall as gently to the ground as a feather would",
 	"loading_priority": 1,
 	"tweak": {
-		"type": "apoli:modify_falling",
+		"type": "origins:modify_falling",
 		"velocity": 0.01,
 		"take_fall_damage": false,
 		"condition": {
 			"type": "origins:power_active",
-			"power": "originstweaks:slow_falling_toggle"
+			"power": "origins:slow_falling_toggle"
 		}
 	},
 	"toggle": {
 		"type": "origins:toggle",
 		"active_by_default": true,
 		"key": {
-			"key": "key.origins.secondary_active"
+			"key": "key.origins.primary_active"
 		}
 	},
 	"indicator": {
@@ -29,7 +29,7 @@
 			"bar_index": 23,
 			"condition": {
 				"type": "origins:power_active",
-				"power": "originstweaks:slow_falling_toggle"
+				"power": "origins:slow_falling_toggle"
 			}
 		}
 	}

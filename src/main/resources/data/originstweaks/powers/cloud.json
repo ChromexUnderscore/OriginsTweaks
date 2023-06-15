@@ -1,122 +1,163 @@
 {
-  "type": "origins:multiple",
-  "name": "Personal Cloud",
-  "description": "When outside of Water, you can summon a Personal Cloud that follows you around, providing you with enough water to survive for up to 5 minutes. Use it wisely, because it takes double as long to charge up!",
-  "toggle": {
-    "type": "origins:toggle",
-    "active_by_default": false,
-    "key": {
-      "key": "key.origins.secondary_active"
+    "type": "origins:multiple",
+    "name": "Personal Cloud",
+    "description": "When outside of Water, you can summon a raincloud that follows you around and provides water",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": "Summon your cloud with %s."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "Your Cloud lasts for 2:30 minutes, but needs 10 minutes to charge back up!"
+        }
+    ],
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cloud_resource",
+                    "comparison": "!=",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "minecraft:water"
+                    },
+                    "inverted": true
+                }
+            ]
+        }
     },
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:*_cloud_resource",
-      "comparison": "!=",
-      "compare_to": 0
-    }
-  },
-  "cloud_resource": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 300,
-    "hud_render": {
-      "bar_index": 1,
-      "condition": {
+    "cloud_resource": {
         "type": "origins:resource",
-        "resource": "*:*_cloud_resource",
-        "comparison": "!=",
-        "compare_to": 300
-      }
-    },
-    "min_action": {
-      "type": "origins:toggle",
-      "power": "*:*_toggle"
-    }
-  },
-  "cloud_resource_gain": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "*:*_cloud_resource",
-      "change": 1
-    },
-    "interval": 40,
-    "condition": {
-      "type": "origins:in_block",
-      "block_condition": {
-        "type": "origins:block",
-        "block": "minecraft:water"
-      }
-    }
-  },
-  "cloud_resource_drain": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "*:*_cloud_resource",
-      "change": -1
-    },
-    "interval": 20,
-    "condition": {
-      "type": "origins:power_active",
-      "power": "*:*_toggle"
-    }
-  },
-  "disable": {
-    "type": "origins:action_over_time",
-    "rising_action": {
-      "type": "origins:toggle",
-      "power": "*:*_toggle"
-    },
-    "interval": 2,
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:power_active",
-          "power": "*:*_toggle"
+        "min": 0,
+        "max": 300,
+        "start_value": 300,
+        "hud_render": {
+            "bar_index": 1,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_cloud_resource",
+                "comparison": "!=",
+                "compare_to": 300
+            }
         },
-        {
-          "type": "origins:in_block",
-          "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:water"
-          }
+        "min_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:toggle",
+                "power": "*:*_toggle"
+            },
+            "else_action": {
+                "type": "origins:nothing"
+            }
         }
-      ]
-    }
-  },
-  "moist": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:gain_air",
-      "value": 2
     },
-    "interval": 2,
-    "condition": {
-      "type": "origins:power_active",
-      "power": "*:*_toggle"
-    }
-  },
-  "visual": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:execute_command",
-          "command": "particle minecraft:falling_water ~ ~5 ~ 1 0.5 1 2 10 force"
+    "cloud_resource_gain": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cloud_resource",
+            "change": 1
         },
-        {
-          "type": "origins:execute_command",
-          "command": "particle minecraft:cloud ~ ~5 ~ 1.5 0.5 1.5 0.0001 100"
+        "interval": 40,
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:block",
+                "block": "minecraft:water"
+            }
         }
-      ]
     },
-    "interval": 2,
-    "condition": {
-      "type": "origins:power_active",
-      "power": "*:*_toggle"
+    "cloud_resource_drain": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_cloud_resource",
+            "change": -1
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "disable": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "minecraft:water"
+                    }
+                }
+            ]
+        }
+    },
+    "moist": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:gain_air",
+            "value": 2
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "visual": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:falling_water ~ ~5 ~ 1 0.5 1 2 10 force"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~5 ~ 1.5 0.5 1.5 0.0001 100"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.pointed_dripstone.drip_water",
+                    "volume": 0.1
+                }
+            ]
+        },
+        "interval": 2,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
     }
-  }
 }

@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You inflict Glowing to Entities in a radius of 32 Blocks for 30 Seconds."
+            "text": "You inflict Glowing to Entities in a radius of 32 Blocks for 10 Seconds."
         }
     ],
     "active_power": {
@@ -24,10 +24,9 @@
         },
         "cooldown": 600,
         "hud_render": {
-            "hud_render": {
-                "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-                "bar_index": 0
-            }
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 0
         },
         "key": {
             "key": "key.origins.secondary_active"
@@ -43,8 +42,17 @@
                     "condition": {
                         "type": "origins:resource",
                         "resource": "*:*_resource",
+                        "comparison": "<=",
+                        "compare_to": 30
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_resource",
                         "comparison": ">",
-                        "compare_to": 0
+                        "compare_to": 20
                     }
                 },
                 {

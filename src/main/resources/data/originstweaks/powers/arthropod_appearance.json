@@ -51,46 +51,15 @@
             "command": "scale reset @s"
         }
     },
-    "falldmg_cancel": {
+    "less_falldmg": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:name",
-                    "name": "fall"
-                },
-                {
-                    "type": "origins:amount",
-                    "comparison": "<=",
-                    "compare_to": 30
-                }
-            ]
+            "type": "origins:name",
+            "name": "fall"
         },
         "modifier": {
-            "operation": "set_total",
-            "value": 0
-        }
-    },
-    "falldmg_reset": {
-        "type": "origins:modify_damage_taken",
-        "damage_condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:name",
-                    "name": "fall"
-                },
-                {
-                    "type": "origins:amount",
-                    "comparison": ">",
-                    "compare_to": 30
-                }
-            ]
-        },
-        "modifier": {
-            "operation": "add_total_late",
-            "value": -30
+            "operation": "add_base_early",
+            "value": -27
         }
     }
 }

@@ -2,6 +2,7 @@
     "type": "origins:multiple",
     "name": "Revved Up",
     "description": "You can use a Firecharge to revv up your offensive abilities.",
+    "badges": [],
     "consume_firecharge": {
         "type": "origins:active_self",
         "entity_action": {

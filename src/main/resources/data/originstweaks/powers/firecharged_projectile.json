@@ -2,6 +2,7 @@
     "type": "origins:multiple",
     "name": "Firecharged Projectile",
     "description": "Blazeborn are able to launch a burst of fireballs by pressing the primary key.",
+    "badges": [],
     "fireball": {
         "type": "origins:fire_projectile",
         "entity_type": "small_fireball",

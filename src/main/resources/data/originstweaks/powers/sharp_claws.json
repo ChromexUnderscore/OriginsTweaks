@@ -11,14 +11,14 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Your Claws can be as sharp as a Stone Sword, but faster."
+            "text": "Your Claws can be as sharp as a Stone Sword."
         }
     ],
     "extra_damage": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
             "name": "extra damage claws",
-            "operation": "addition",
+            "operation": "add_total_late",
             "value": 4.5
         },
         "condition": {

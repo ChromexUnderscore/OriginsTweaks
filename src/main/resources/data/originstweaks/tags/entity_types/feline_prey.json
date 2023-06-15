@@ -1,10 +1,10 @@
 {
 	"replace": false,
 	"values": [
-		"tropical_fish",
-        "cod",
-        "salmon",
-        "rabbit",
-        "chicken"
+		"minecraft:tropical_fish",
+        "minecraft:cod",
+        "minecraft:salmon",
+        "minecraft:rabbit",
+        "minecraft:chicken"
 	]
 }

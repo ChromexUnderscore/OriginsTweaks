@@ -8,9 +8,10 @@
 	"impact": 1,
 	"loading_priority": 1,
 	"powers": [
-		"originstweaks:flap",
+		"originstweaks:gift_of_the_skies",
 		"origins:aerial_combatant",
 		"origins:claustrophobia",
-		"origins:more_kinetic_damage"
+		"origins:more_kinetic_damage",
+		"originstweaks:elytrian_sounds"
 	]
 }

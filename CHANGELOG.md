@@ -4,6 +4,37 @@
 
 ### [Version 1.14 [Update to Minecraft 1.19.4]]
 
+#### [Version 1.14.1 [Some more fixes that I forgor :skull:]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.1)
+
++ Fixed ``slow_falling`` not working due to it using ``originstweaks:`` identifier instead of ``origins:`` within toggle conditions.
+  + Also Changed the keybind to use primary active.
++ Restricted ``dual_wielding`` to only swing the Offhand and trigger the cooldown when 2 identical swords are in off- and mainhand.
++ Changed order of powers for ``avian``.
++ Readded ``heavens_grace``.
+  + Changed Damage modifier to increase total damage by ``25%`` instead of a fixed bonus of ``3.5`` hearts.
++ Tweaked various damage modifiers because I can't read.
++ Changed power ``arthropod_appearance``.
+  + Only Reduces falldamage after 30 blocks by ``27`` instead of resseting it and then reducing it by ``30``.
++ Removed power ``dual_wielding`` due to it being broken as hell.
++ Added power ``evil presence`` to avian.
+  + Provides a resource bar ranging from ``0`` to ``7``, indicating how many undead mobs are nearby.
+  + Grants a 30% damage bonus against undead mobs.
++ Tweaked ``master_of_webs``.
+  + Rearranged badges.
+  + Added Visual effects and sounds when restocking string supply.
+  + Removed loottable for cobwebs returning 9 string as cobwebs wont drop string without a sword.
++ Reworked power ``gift_of_the_skies``.
+  + Renamed power ``originstweaks:flap`` to ``originstweaks:gift_of_the_skies``.
+  + Replaced the Cooldown for the launch with a stamina system, used by the elytra glide, launch and flapping wings abilities.
++ Nerfed power ``spectral_wail``.
+  + Changed conditions for entity glow from ``!=0`` to ``<= 30`` and ``>20`` to only activate for the first 10 seconds of the 30 seconds duration.
++ Fixed power ``recall``.
+  + Fixed a bug where the power would turn itself on randomly.
++ Fixed and nerfed power ``cloud``.
+  + Changed active time from ``5 minutes`` to ``2:30 minutes``.
+  + Fixed a bug where the power would turn itself off immediately after turning it on.
+  + Changed conditions so that the cloud cannot be summoned when in water.
+
 #### [Version 1.14.0 [Balance Changes / Power Reworks]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.0)
 
 + Reworked power ``antigravity_bullet``.
