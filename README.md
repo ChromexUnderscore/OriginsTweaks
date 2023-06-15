@@ -16,7 +16,7 @@ Reworks the Standard Origins' Abilities from the Origins Mod and adds new ones.
 <details><summary>Avian</summary>
 
 + Feather Falling is Toggleable.
-+ Avians can sense undead mobs within 16 blocks distance.
++ Avians can sense undead mobs within 16 blocks distance and deal 30% more damage to them.
 + Spectral Arrows deal 25% more damage when shot by an Avian.
 
 </details>
