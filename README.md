@@ -1,12 +1,6 @@
 # OriginsTweaks
 
-This Mod overhauls the Standard Origins from the Origins Mod.
-
-If you prefer Quilt or Datapacks, theres a port of this Mod available.
-
-[ReOrigins](https://modrinth.com/datapack/reorigins) made by Zentropivity.
-
-This Project may not be updated in the future though.
+Reworks the Standard Origins' Abilities from the Origins Mod and adds new ones.
 
 #### Changes to Origins:
 
