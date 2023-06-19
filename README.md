@@ -1,6 +1,6 @@
 # OriginsTweaks
 
-Reworks the Standard Origins' Abilities from the Origins Mod and adds new ones.
+Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/mod/origins) and adds new ones.
 
 #### Changes to Origins:
 
@@ -87,4 +87,3 @@ Reworks the Standard Origins' Abilities from the Origins Mod and adds new ones.
 </details>
 
 Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
-Apple Hunger bar by [Sunnybrook1 on Planet Minecraft](https://www.planetminecraft.com/texture-pack/apple-hunger-bar/).

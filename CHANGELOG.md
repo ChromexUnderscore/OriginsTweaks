@@ -4,6 +4,10 @@
 
 ### [Version 1.14 [Update to Minecraft 1.19.4]]
 
+#### [Version 1.14.2 [Enderian Netherroof Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.1)
+
++ Fixed Issue #34, where the Enderian would get stuck on the Netherroof when dodging arrows.
+
 #### [Version 1.14.1 [Some more fixes that I forgor :skull:]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.1)
 
 + Fixed ``slow_falling`` not working due to it using ``originstweaks:`` identifier instead of ``origins:`` within toggle conditions.

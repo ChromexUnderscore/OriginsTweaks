@@ -33,7 +33,7 @@
                 "actions": [
                     {
                         "type": "origins:execute_command",
-                        "command": "spreadplayers ~ ~ 8 16 false @s"
+                        "command": "spreadplayers ~ ~ 8 16 under 120 false @s"
                     },
                     {
                         "type": "origins:execute_command",
@@ -49,10 +49,19 @@
             }
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_cooldown_resource",
-            "comparison": "==",
-            "compare_to": 200
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown_resource",
+                    "comparison": "==",
+                    "compare_to": 200
+                },
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_nether"
+                }
+            ]
         }
     },
     "cooldown_resource": {

@@ -1,9 +1,9 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.14.1",
+    "version": "1.14.2",
     "name": "OriginsTweaks",
-    "description": "This Mod adds new Abilities to the Base Origins and Improves the existing ones.",
+    "description": "Reworks the Base Origins abilities from the Origins Mod and adds new ones.",
     "authors": [
         "ChromexUnderscore"
     ],
