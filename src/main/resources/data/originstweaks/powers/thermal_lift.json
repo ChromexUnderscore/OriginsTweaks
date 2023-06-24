@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Thermal Lift",
-    "description": "You are able to use your blazing hot hands to generate an updraft, making you able to hover around.",
+    "description": "When on fire, you can use the heat generated to levitate upwards for limited time.",
     "lift_up": {
         "type": "origins:active_self",
         "entity_action": {
@@ -39,8 +39,7 @@
                     "compare_to": 1
                 },
                 {
-                    "type": "origins:power_active",
-                    "power": "*:blazing_touch_fire_hands_active"
+                    "type": "origins:on_fire"
                 }
             ]
         }

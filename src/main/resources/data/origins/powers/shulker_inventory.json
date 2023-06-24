@@ -2,6 +2,7 @@
     "type": "origins:inventory",
     "title": "container.shulker_inventory_power",
     "drop_on_death": false,
+    "recoverable": true,
     "key": {
       "key": "key.origins.secondary_active",
       "continuous": false

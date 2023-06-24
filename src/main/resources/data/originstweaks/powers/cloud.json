@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Personal Cloud",
-    "description": "When outside of Water, you can summon a raincloud that follows you around and provides water",
+    "description": "When outside of water, you can summon a raincloud that follows you around and provides oxigen.",
     "badges": [
         {
             "type": "origins:keybind",
@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "Your Cloud lasts for 2:30 minutes, but needs 10 minutes to charge back up!"
+            "text": "Your Cloud lasts for 2 minutes and 30 seconds, but needs 10 minutes to charge back up, use with caution!"
         }
     ],
     "toggle": {

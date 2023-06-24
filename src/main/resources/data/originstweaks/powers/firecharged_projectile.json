@@ -1,50 +1,35 @@
 {
-    "type": "origins:multiple",
-    "name": "Firecharged Projectile",
-    "description": "Blazeborn are able to launch a burst of fireballs by pressing the primary key.",
-    "badges": [],
-    "fireball": {
-        "type": "origins:fire_projectile",
-        "entity_type": "small_fireball",
-        "cooldown": 200,
-        "hud_render": {
-            "should_render": false
-        },
-        "count": 3,
-        "interval": 5,
-        "start_delay": 5,
-        "speed": 1,
-        "divergence": 2,
-        "sound": "entity.blaze.shoot",
-        "tag": "{NoGravity:1b}",
-        "key": {
-            "key": "key.origins.primary_active",
-            "continuous": true
-        }
-    },
-    "revved_fireball": {
-        "type": "origins:fire_projectile",
-        "entity_type": "small_fireball",
-        "cooldown": 200,
-        "hud_render": {
-            "should_render": false
-        },
-        "count": 5,
-        "interval": 3,
-        "start_delay": 0,
-        "speed": 2,
-        "divergence": 0,
-        "sound": "entity.blaze.shoot",
-        "tag": "{NoGravity:1b}",
-        "key": {
-            "key": "key.origins.primary_active",
-            "continuous": true
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:revved_up_resource",
-            "comparison": "!=",
-            "compare_to": 0
-        }
-    }
+	"type": "origins:multiple",
+	"name": "Firecharged",
+	"description": "The Blazeborn are able to launch a burst of fireballs to light their foes ablaze.",
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Shoot Fireballs with %s, but only when you're on fire."
+		}
+	],
+	"fireballs": {
+		"type": "origins:fire_projectile",
+		"entity_type": "small_fireball",
+		"cooldown": 200,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 7
+		},
+		"count": 3,
+		"interval": 5,
+		"start_delay": 5,
+		"speed": 1,
+		"divergence": 2,
+		"sound": "entity.blaze.shoot",
+		"tag": "{NoGravity:1b}",
+		"key": {
+			"key": "key.origins.secondary_active",
+			"continuous": false
+		},
+		"condition": {
+			"type": "origins:on_fire"
+		}
+	}
 }

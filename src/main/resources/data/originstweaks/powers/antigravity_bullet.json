@@ -1,7 +1,14 @@
 {
     "type": "origins:fire_projectile",
     "name": "Antigravity Bullet",
-    "description": "You can throw a Shulker Bullet by pressing your secondary active key.",
+    "description": "You can throw a Shulker Bullet to make your foes defy gravity... for a short while.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Throw a Bullet with %s."
+        }
+    ],
     "entity_type": "minecraft:shulker_bullet",
     "cooldown": 30,
     "hud_render": {

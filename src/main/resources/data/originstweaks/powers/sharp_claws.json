@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Your Claws can be as sharp as a Stone Sword."
+            "text": "Your Claws are as effective as a Stone Sword in combat."
         }
     ],
     "extra_damage": {
@@ -94,7 +94,7 @@
             }
         }
     },
-    "claws_resharpen": {
+    "claws_resharpen_wood": {
         "type": "origins:action_on_block_use",
         "entity_action": {
             "type": "origins:and",
@@ -113,7 +113,7 @@
         },
         "block_condition": {
             "type": "origins:in_tag",
-            "tag": "originstweaks:resharpen_claws"
+            "tag": "originstweaks:claws_wood"
         },
         "item_condition": {
             "type": "origins:empty"
@@ -127,7 +127,42 @@
             "down"
         ],
         "hands": [
-            "off_hand",
+            "main_hand"
+        ]
+    },
+    "claws_resharpen_fabric": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_claws_sharpness",
+                    "change": 5
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.wool.hit",
+                    "pitch": 1
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "originstweaks:claws_fabric"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "directions": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "hands": [
             "main_hand"
         ]
     }

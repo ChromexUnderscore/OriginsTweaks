@@ -1,7 +1,7 @@
 {
 	"type": "origins:multiple",
-	"name": "Featherweight",
-	"description": "You fall as gently to the ground as a feather would",
+	"name": "power.origins.slow_falling.name",
+	"description": "You fall as gently to the ground as a feather would.",
 	"loading_priority": 1,
 	"tweak": {
 		"type": "origins:modify_falling",

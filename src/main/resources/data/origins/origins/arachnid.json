@@ -8,14 +8,13 @@
     "impact": 1,
     "loading_priority": 1,
 	"powers": [
-        "origins:climbing",
         "originstweaks:master_of_webs",
         "origins:master_of_webs",
+        "origins:climbing",
+        "originstweaks:arthropod_appearance",
         "origins:carnivore",
         "origins:fragile",
         "origins:arthropod",
-		
-        "originstweaks:arthropod_appearance",
         "originstweaks:arachnid_sounds"
     ]
 }

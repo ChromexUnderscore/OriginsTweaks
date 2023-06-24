@@ -4,7 +4,86 @@
 
 ### [Version 1.14 [Update to Minecraft 1.19.4]]
 
-#### [Version 1.14.2 [Enderian Netherroof Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.1)
+#### [Version 1.14.3b [Port to 1.19.2]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.3b)
+
++ Ported OriginsTweaks 1.14.3 to Minecraft 1.19.2 by request.
+
+#### [Version 1.14.3 [Blazeborn , Elytrian and Feline Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.3)
+
++ Removed unnecessary empty lines in ``Main.java``.
++ Updated Version and Pehkui Dependency in ``fabric.mod.json``
++ Removed translations files due to translation keys being broken with badges at the moment.
++ Reordered Arachnid's Powers.
++ Reordered Avian's Powers.
++ Reordered Blazeborn's Powers.
++ Reworked ``origins:burning_wrath``.
+  + Added active subpower to put the player on fire.
+  + Damage bonus when on fire is 25% more instead of adding 3 health points.
+  + Added lighting campfires and fueling furnei / brewing stands as sub power.
++ Removed power ``blazing_touch`` as it has been integrated into ``burning_wrath``.
++ Made Shulker Inventory drop when power has been lost, instead of deleting the items.
++ Fixed a bug with ``weak_arms`` not reducing mining speed.
++ Using Pickaxes with Efficiency III or higher now bypasses ``weak_arms`` mining speed and restrictions.
++ Changed name of ``aurophobia`` to ``Mortis``, a reference to the game ``Faith: the unholy trinity``.
++ Added ``minecraft:entity.cat.purreow`` alongside ``minecraft:entity.cat.ambient`` as ambient soundeffect.
++ Added a ``minecraft:entity.cat.purr`` sound loop when felines are detected asleep in a bed.
++ Changed ``Firecharged Projectile``.
+  + Renamed from ``Firecharged Projectile`` to ``Firecharged``.
+  + Now requiring being on fire.
++ Restricted Firework Rocket use within ``gift_of_the_skies``.
++ Removed power ``revved_up``.
++ Changed ``sharp_claws``.
+  + resharpening claws now use more accurate sounds depending on block material.
+  + Resparpening using wood (logs / wood) now is twice af effective as fabric (wool / carpet).
++ Power ``thermal_lift`` now requires being on fire.
++ Changed block tag ``natural_stone``.
+  + Now includes:
+    + stone
+    + coal ore
+    + copper ore
+    + iron ore
+    + gold ore
+    + redstone ore
+    + emerald ore
+    + lapis ore
+    + diamond ore
+    + ancient debris
+    + granite
+    + diorite
+    + andesite
+    + sandstone
+    + smooth sandstone
+    + red sandstone
+    + smooth red sandstone
+    + smooth basalt
+    + calcite
+    + block of amethyst
+    + budding amethyst
+    + tuff
+    + dripstone block
+    + netherrack
+    + basalt
+    + magma block
+    + end stone
++ Changed block tag ``sturdy_stone``.
+  + Now includes:
+    + deepslate
+    + reinforced deepslate
+    + deepslate coal ore
+    + deepslate iron ore
+    + deepslate copper ore
+    + deepslate gold ore
+    + deepslate redstone ore
+    + deepslate emerald ore
+    + deepslate lapis ore
+    + deepslate diamond ore
+    + obsidian
+    + crying obsidian
+    + blackstone
+    + gilded blackstone
++ Added Block tag ``pickaxes`` for conditions used in ``weak_arms``.
+
+#### [Version 1.14.2 [Enderian Netherroof Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.2)
 
 + Fixed Issue #34, where the Enderian would get stuck on the Netherroof when dodging arrows.
 

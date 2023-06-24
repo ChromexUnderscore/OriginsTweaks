@@ -8,13 +8,13 @@
 	"impact": 1,
 	"loading_priority": 1,
 	"powers": [
-		"origins:slow_falling",
-		"originstweaks:heavens_grace",
 		"originstweaks:evil_presence",
+		"originstweaks:heavens_grace",
+		"origins:slow_falling",
 		"origins:tailwind",
 		"origins:like_air",
-		"origins:fresh_air",
 		"origins:vegetarian",
+		"origins:fresh_air",
 		"origins:lay_eggs",
 		"originstweaks:avian_sounds"
 	]

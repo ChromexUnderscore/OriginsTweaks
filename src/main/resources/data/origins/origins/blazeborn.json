@@ -8,19 +8,17 @@
 	"impact": 3,
 	"loading_priority": 1,
 	"powers": [
+		"origins:burning_wrath",
+		"originstweaks:thermal_lift",
+		"originstweaks:firecharged_projectile",
 		"origins:fire_immunity",
 		"origins:nether_spawn",
-		"origins:burning_wrath",
 		"origins:hotblooded",
 		"origins:water_vulnerability",
-		"origins:flame_particles",
+		"originstweaks:water_cauldron",
 		"origins:damage_from_snowballs",
 		"origins:damage_from_potions",
-		"originstweaks:firecharged_projectile",
-		"originstweaks:blazing_touch",
-		"originstweaks:revved_up",
-		"originstweaks:water_cauldron",
-		"originstweaks:thermal_lift",
+		"origins:flame_particles",
 		"originstweaks:blazeborn_sounds"
 	]
 }

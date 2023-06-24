@@ -1,40 +1,117 @@
 {
     "type": "origins:multiple",
-    "name": "Weak Arms",
-    "description": "When not under the effect of a strenght potion, you will mine natural stone blocks slower and you are unable to mine sturdy blocks like deepslate or obsidian.",
+    "name": "power.origins.weak_arms.name",
+    "description": "Your arms wont allow mining stone as quickly as others would, and some types of stone are too tough to be mined at all.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You mine Natural stone-like blocks as well as ore blocks 50% slower than normal."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You can't break sturdy stone blocks, such as Deepslate blocks and -ore, Obsidian, Blackstone and similar Blocks."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": {
+                "translate": "This restriction can be bypassed by using Strenth Potions or a Pickaxe with Efficiency III or higher."
+            }
+        }
+    ],
     "loading_priority": 1,
-    "slower-mining": {
+    "slower_mining": {
         "type": "origins:modify_break_speed",
         "modifier": {
             "name": "slower natural stone",
-            "value": -0.5,
-            "operation": "multiply_total"
+            "operation": "multiply_total_multiplicative",
+            "value": -0.5
         },
         "block_condition": {
             "type": "origins:in_tag",
-            "tag": "origins:natural_stone"
+            "tag": "originstweaks:natural_stone"
         },
         "condition": {
-            "type": "origins:status_effect",
-            "effect": "minecraft:strength",
-            "inverted": true
+            "type": "origins:and",
+            "conditions":[
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:strength",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient":[
+                                    {
+                                        "tag": "originstweaks:pickaxes"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:enchantment",
+                                "compare_to": 3,
+                                "comparison": ">=",
+                                "enchantment": "minecraft:efficiency"
+                            }
+                        ]
+                    },
+                    "inverted": true
+                }
+            ]
         }
     },
     "no_mining": {
         "type": "origins:modify_break_speed",
         "modifier": {
-            "name": "slower natural stone",
-            "value": -1.0,
-            "operation": "multiply_total"
+            "name": "unbreakable sturdy stone",
+            "operation": "set_total",
+            "value": 0
         },
         "block_condition": {
             "type": "origins:in_tag",
             "tag": "originstweaks:sturdy_stone"
         },
         "condition": {
-            "type": "origins:status_effect",
-            "effect": "minecraft:strength",
-            "inverted": true
+            "type": "origins:and",
+            "conditions":[
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:strength",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient":[
+                                    {
+                                        "tag": "originstweaks:pickaxes"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:enchantment",
+                                "compare_to": 3,
+                                "comparison": ">=",
+                                "enchantment": "minecraft:efficiency"
+                            }
+                        ]
+                    },
+                    "inverted": true
+                }
+            ]
         }
     }
 }

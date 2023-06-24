@@ -1,27 +1,35 @@
 {
     "type": "origins:multiple",
-    "name": "Aurophobia",
+    "name": "Mortis",
     "description": "Due to the pain and suffering caused by Gold to your Ancestors, you are scared and weakened by it.",
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot eat any golden food."
+            "text": {
+                "translate": "You cannot eat any golden food."
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
+            "text": {
+                "translate": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot wear Golden Armor."
+            "text": {
+                "translate": "You cannot wear Golden Armor."
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You will receive Weakness in 5 Blocks Distance to Gold-related Blocks."
+            "text": {
+                "translate": "You will receive Weakness in 5 Blocks Distance to Gold-related Blocks."
+            }
         }
     ],
     "proximity_stacking": {

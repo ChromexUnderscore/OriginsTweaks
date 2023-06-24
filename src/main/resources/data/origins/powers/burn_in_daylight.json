@@ -2,7 +2,7 @@
     "type": "origins:burn",
     "loading_priority": 1,
     "name": "power.origins.burn_in_daylight.name",
-    "description": "power.origins.burn_in_daylight.description",
+    "description": "You begin to burn in Daylight if you are not invisible or wearing some sort of Helmet.",
     "interval": 20,
     "burn_duration": 6,
     "condition": {

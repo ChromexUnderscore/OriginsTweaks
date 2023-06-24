@@ -49,8 +49,23 @@
                 "type": "origins:delay",
                 "ticks": 5,
                 "action": {
-                    "type": "origins:play_sound",
-                    "sound": "minecraft:entity.cat.ambient"
+                    "type": "origins:choice",
+                    "actions": [
+                        {
+                            "element": {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.cat.ambient"
+                            },
+                            "weight": 4
+                        },
+                        {
+                            "element": {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.cat.purreow"
+                            },
+                            "weight": 2
+                        }
+                    ]
                 }
             }
         }
@@ -70,8 +85,23 @@
                             "compare_to": 4
                         },
                         "action": {
-                            "type": "origins:play_sound",
-                            "sound": "minecraft:entity.cat.ambient"
+                            "type": "origins:choice",
+                            "actions": [
+                                {
+                                    "element": {
+                                        "type": "origins:play_sound",
+                                        "sound": "minecraft:entity.cat.ambient"
+                                    },
+                                    "weight": 4
+                                },
+                                {
+                                    "element": {
+                                        "type": "origins:play_sound",
+                                        "sound": "minecraft:entity.cat.purreow"
+                                    },
+                                    "weight": 2
+                                }
+                            ]
                         }
                     },
                     {
@@ -108,6 +138,27 @@
                     "inverted": true
                 }
             ]
+        }
+    },
+    "sleep_init":{
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "scoreboard objectives add feline_sleep minecraft.custom:minecraft.time_since_rest"
+        }
+    },
+    "sleep":{
+        "type": "origins:action_over_time",
+        "interval": 55,
+        "entity_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.cat.purr"
+        },
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "feline_sleep",
+            "compare_to": 0,
+            "comparison": "=="
         }
     },
     "parrot":{

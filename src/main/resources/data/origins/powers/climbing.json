@@ -54,7 +54,6 @@
     },
     "toggle_hud": {
         "type": "origins:resource",
-        "hidden": true,
         "min": 0,
         "max": 1,
         "start_value": 1,

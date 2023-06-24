@@ -6,7 +6,7 @@
             {
                 "type": "origins:tooltip",
                 "sprite": "origins:textures/gui/badge/arrow_up.png",
-                "text": "You deal 150% damage to entities while using a Trident underwater."
+                "text": "You deal 50% more damage to entities while using a Trident underwater."
             }
         ],
     "projectile": {
