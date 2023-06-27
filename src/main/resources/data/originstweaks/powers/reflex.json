@@ -1,15 +1,14 @@
 {
     "type": "origins:multiple",
     "name": "Reflex",
-    "description": "You dodge any Arrow automatically on a 10 Second Cooldown while barely taking any damage.",
+    "description": "You dodge any Projectile automatically on a 10 Second Cooldown while barely taking any damage.",
     "cancel_arrow_damage": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
-            "type": "origins:name",
-            "name": "arrow"
+            "type": "origins:projectile"
         },
         "modifier": {
-            "name": "less arrow damage",
+            "name": "minimal projectile damage",
             "operation": "set_total",
             "value": 1
         },
@@ -23,8 +22,51 @@
     "dodge_projectile": {
         "type": "origins:action_when_hit",
         "damage_condition": {
-            "type": "origins:name",
-            "name": "arrow"
+            "type": "origins:projectile"
+        },
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "spreadplayers ~ ~ 8 16 under 120 false @s"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 1"
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_cooldown_resource",
+                        "change": 0,
+                        "operation": "set"
+                    }
+                ]
+            }
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_cooldown_resource",
+                    "comparison": "==",
+                    "compare_to": 200
+                },
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_nether",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "dodge_projectile_nether": {
+        "type": "origins:action_when_hit",
+        "damage_condition": {
+            "type": "origins:projectile"
         },
         "bientity_action": {
             "type": "origins:target_action",

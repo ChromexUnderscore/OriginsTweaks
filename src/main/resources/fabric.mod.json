@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.14.3",
+    "version": "1.14.4",
     "name": "OriginsTweaks",
     "description": "Reworks the Base Origins abilities from the Origins Mod and adds new ones.",
     "authors": [
@@ -20,8 +20,8 @@
         ]
       },
     "depends": {
-        "origins": "1.9.0",
+        "origins": ">=1.6.0",
         "pehkui": "3.7.6",
-        "minecraft": "1.19.4"
+        "minecraft": ">=1.19.0"
     }
 }

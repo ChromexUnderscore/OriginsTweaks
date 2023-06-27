@@ -27,7 +27,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Blazeborn</summary>
 
-+ ``Burning Wrath`` has been reworked.
++ Burning Wrath has been reworked.
   + Pressing the Primary Key catches the Blazeborn on Fire.
   + Can hover for a short while on fire.
   + Can light Campfires, Fuel Furnei and Brewing stands when on fire.
@@ -49,7 +49,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + Height, eye height and reach are changed.
 + Enderians are able to set a teleportation point to travel back to.
-+ They can dodge Arrows on a cooldown.
++ They can dodge any Projectile on a cooldown.
 
 </details>
 

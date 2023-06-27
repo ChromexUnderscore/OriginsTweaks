@@ -4,6 +4,12 @@
 
 ### [Version 1.14 [Update to Minecraft 1.19.4]]
 
+#### [Version 1.14.4 [(Another) Enderian Reflex Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.4)
+
++ Fixed power Reflex only working in the Nether.
++ Tweaked Reflex's conditions to accept any Projectile instead of Arrows only.
++ Changed Dependencies to accept any version of Minecraft above 1.19.2 and any Version of Origins above 1.6.0
+
 #### [Version 1.14.3b [Port to 1.19.2]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.3b)
 
 + Ported OriginsTweaks 1.14.3 to Minecraft 1.19.2 by request.
