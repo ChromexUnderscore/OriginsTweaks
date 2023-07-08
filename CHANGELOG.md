@@ -14,7 +14,7 @@
 + Added Cherry Logs, Cherry Wood and Bamboo Blocks to block tag for sharpening feline's claws.
   + Due to this change this version is unfortunately no longer compatible with versions older than 1.20.0, as unregistered blocks inside block tags will not load the block tag in the first place, breaking the ability.
   + I may fix this in the next release.
-+ Changed Reflex in both nether and non nether.
++ Changed Reflex in both nether and non nether (Bug #35).
   + In the Overworld and below the netherroof the enderian may teleport up at most 16 blocks at a time.
   + Enderians above the netherroof (> 128) will always teleport to the bottom regardless of y coordinates.
 
