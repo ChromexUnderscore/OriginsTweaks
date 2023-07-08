@@ -6,7 +6,7 @@
 		{
 			"type": "origins:keybind",
 			"sprite": "origins:textures/gui/badge/active.png",
-			"text": "Shoot Fireballs with %s, but only when you're on fire."
+			"text": "Shoot Fireballs with %s."
 		}
 	],
 	"fireballs": {
@@ -27,9 +27,6 @@
 		"key": {
 			"key": "key.origins.secondary_active",
 			"continuous": false
-		},
-		"condition": {
-			"type": "origins:on_fire"
 		}
 	}
 }

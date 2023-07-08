@@ -1,8 +1,26 @@
 # OriginsTweaks Changelogs
 
+## [1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20.1)
+
+### [Version 1.15 [Minecraft 1.20]]
+
+#### [Version 1.15.0 [Update to Origins 1.10]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.0)
+
++ Updated Dependency metadata.
+  + Supports Minecraft 1.20.0 and 1.20.1.
+  + Requires Origins 1.10.
+  + Requires Pehkui 3.7.6.
++ Firecharged no longer requires being on fire.
++ Added Cherry Logs, Cherry Wood and Bamboo Blocks to block tag for sharpening feline's claws.
+  + Due to this change this version is unfortunately no longer compatible with versions older than 1.20.0, as unregistered blocks inside block tags will not load the block tag in the first place, breaking the ability.
+  + I may fix this in the next release.
++ Changed Reflex in both nether and non nether.
+  + In the Overworld and below the netherroof the enderian may teleport up at most 16 blocks at a time.
+  + Enderians above the netherroof (> 128) will always teleport to the bottom regardless of y coordinates.
+
 ## [1.19.4](https://minecraft.fandom.com/wiki/Java_Edition_1.19.4)
 
-### [Version 1.14 [Update to Minecraft 1.19.4]]
+### [Version 1.14 [Minecraft 1.19.4]]
 
 #### [Version 1.14.4 [(Another) Enderian Reflex Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.4)
 

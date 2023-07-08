@@ -30,8 +30,867 @@
                 "type": "origins:and",
                 "actions": [
                     {
-                        "type": "origins:execute_command",
-                        "command": "spreadplayers ~ ~ 8 16 under 120 false @s"
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 0
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 16
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under -48 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 16
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 32
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under -32 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 32
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 48
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under -16 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 48
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 64
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 0 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 64
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 80
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 16 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 80
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 96
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 32 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 96
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 112
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 48 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 112
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 128
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 64 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 128
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 144
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 80 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 144
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 160
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 96 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 160
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 176
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 112 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 178
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 192
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 120 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 192
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 208
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 144 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 208
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 224
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 160 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 224
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 240
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 176 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 240
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 256
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 192 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 256
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 272
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 208 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">",
+                                            "compare_to": 272
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 288
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 224 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 288
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 304
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 240 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 304
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 320
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 256 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 320
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 336
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 272 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 336
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 352
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 288 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 352
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 368
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 304 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": ">=",
+                                            "compare_to": 368
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "offset": {
+                                                "x": 0,
+                                                "y": -64,
+                                                "z": 0
+                                            },
+                                            "comparison": "<=",
+                                            "compare_to": 384
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 320 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:distance_from_coordinates",
+                                    "ignore_x": true,
+                                    "ignore_z": true,
+                                    "offset": {
+                                        "x": 0,
+                                        "y": -64,
+                                        "z": 0
+                                    },
+                                    "comparison": ">",
+                                    "compare_to": 384
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 320 false @s"
+                                }
+                            }
+                        ]
                     },
                     {
                         "type": "origins:execute_command",
@@ -74,8 +933,222 @@
                 "type": "origins:and",
                 "actions": [
                     {
-                        "type": "origins:execute_command",
-                        "command": "spreadplayers ~ ~ 8 16 under 120 false @s"
+                        "type": "origins:if_else_list",
+                        "actions": [
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">=",
+                                            "compare_to": 0
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 16
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 16 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 16
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 32
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 32 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 32
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 48
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 48 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 48
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 64
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 64 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 64
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 80
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 80 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 80
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 96
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 96 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 96
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 112
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 112 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:and",
+                                    "conditions": [
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": ">",
+                                            "compare_to": 112
+                                        },
+                                        {
+                                            "type": "origins:distance_from_coordinates",
+                                            "ignore_x": true,
+                                            "ignore_z": true,
+                                            "comparison": "<=",
+                                            "compare_to": 128
+                                        }
+                                    ]
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 under 127 false @s"
+                                }
+                            },
+                            {
+                                "condition": {
+                                    "type": "origins:distance_from_coordinates",
+                                    "ignore_x": true,
+                                    "ignore_z": true,
+                                    "comparison": ">",
+                                    "compare_to": 128
+                                },
+                                "action": {
+                                    "type": "origins:execute_command",
+                                    "command": "spreadplayers ~ ~ 0 16 false @s"
+                                }
+                            }
+                        ]
                     },
                     {
                         "type": "origins:execute_command",
