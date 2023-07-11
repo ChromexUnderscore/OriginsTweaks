@@ -19,6 +19,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Avian</summary>
 
++ You can double jump.
 + Feather Falling is Toggleable.
 + Avians can sense undead mobs within 16 blocks distance and deal more damage to them in melee combat.
 + Spectral Arrows deal increased damage when shot by an Avian.
@@ -37,7 +38,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Elytrian</summary>
 
-+ The Elytra has a custom texture exclusive to Elytrians. Elytra Texture made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
++ The Elytra has a custom texture exclusive to Elytrians. Elytra Texture made by [Devixius on Planet Minecraft](https://www.planetminecraft.com/texture-pack/eagle-wings-elytra/).
 + Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
 + Pressing the Primary Key while grounded will launch them to the sky.
 + You have a Stamina bar that is used when launching, flapping or gliding.
@@ -89,4 +90,4 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 </details>
 
-Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
+Elytra Texture by [Devixius on Planet Minecraft](https://www.planetminecraft.com/texture-pack/eagle-wings-elytra/).

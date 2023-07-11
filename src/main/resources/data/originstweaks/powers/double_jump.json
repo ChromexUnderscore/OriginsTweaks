@@ -1,0 +1,63 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 2,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "firstjump": {
+        "type": "origins:modify_jump",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 2,
+            "operation": "set"
+        },
+        "condition": {
+            "type": "origins:elytra_flight_possible",
+            "inverted": true
+        }
+    },
+    "2nd": {
+        "type": "origins:modify_jump",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 0,
+            "operation": "set"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 2,
+            "comparison": "=="
+        }
+    },
+    "grounded": {
+        "type": "origins:grounded",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 2,
+            "comparison": "=="
+        }
+    },
+    "hit_ground": {
+        "type": "origins:action_on_land",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 1,
+            "operation": "set"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_resource",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    }
+}
