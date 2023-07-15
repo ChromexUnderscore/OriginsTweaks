@@ -1,12 +1,12 @@
 {
     "type": "origins:multiple",
     "name": "Evil Presence",
-    "description": "You are able to sense and hunt the undead near you.",
+    "description": "You are able to sense the undead abominations of this world.",
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You have a indicator bar that can detect 1 to 7 Undead mobs within a 16 block radius."
+            "text": "You have an indicator that can detect up to 7 undead mobs within a 16 block radius."
         },
         {
             "type": "origins:tooltip",

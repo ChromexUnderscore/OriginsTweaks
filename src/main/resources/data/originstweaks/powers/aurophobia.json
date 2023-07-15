@@ -1,35 +1,27 @@
 {
     "type": "origins:multiple",
-    "name": "Mortis",
+    "name": "Aurophobia",
     "description": "Due to the pain and suffering caused by Gold to your Ancestors, you are scared and weakened by it.",
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": {
-                "translate": "You cannot eat any golden food."
-            }
+            "text": "You cannot eat any golden food."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": {
-                "translate": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
-            }
+            "text": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": {
-                "translate": "You cannot wear Golden Armor."
-            }
+            "text": "You cannot wear Golden Armor."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": {
-                "translate": "You will receive Weakness in 5 Blocks Distance to Gold-related Blocks."
-            }
+            "text": "You will receive Weakness in 5 Blocks Distance to Gold-related Blocks."
         }
     ],
     "proximity_stacking": {
@@ -52,10 +44,6 @@
                     {
                         "type": "origins:in_tag",
                         "tag": "originstweaks:golden_blocks"
-                    },
-                    {
-                        "type": "origins:in_tag",
-                        "tag": "originstweaks:golden_blocks_charm"
                     }
                 ]
             },
@@ -100,6 +88,6 @@
                 "tag": "originstweaks:golden_armor"
             }
         },
-        "tick_rate": 20
+        "tick_rate": 5
     }
 }

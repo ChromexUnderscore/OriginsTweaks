@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "potion",
+        "honey_bottle",
+        "milk_bucket",
+        "rabbit_stew"
+    ]
+}

@@ -6,12 +6,12 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Shoot a Web with %s. Hitting a block will fling you forwards, hitting a mob will catch it in cobweb. You will need at least one free hand to do so though."
+            "text": "Shoot a Web with %s. Hitting a block will fling you forwards, hitting a mob will catch it in cobweb."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You have a limited String Supply, which fully regenerates within 60 Seconds. Refill by using string."
+            "text": "You have a limited string supply, which fully regenerates within 60 Seconds. Refill with string items."
         },
         {
             "type": "origins:tooltip",
@@ -21,7 +21,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "Non-arthropods stuck in Cobwebs are glowing for you."
+            "text": "Non-arthropods stuck in Cobweb are glowing for you."
         },
         {
             "type": "origins:crafting_recipe",
@@ -67,264 +67,39 @@
         }
     ],
     "loading_priority": 1,
-
-    "web_shoot":{
+    "web_shoot": {
         "type": "origins:active_self",
         "entity_action": {
-            "type": "origins:if_else_list",
-            "actions": [
-                {
-                    "action": {
-                        "type": "origins:if_else",
-                        "condition": {
-                            "type": "origins:raycast",
-                            "block": false,
-                            "entity": true,
-                            "distance": 32,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "hit_bientity_condition": {
-                                "type": "origins:target_condition",
-                                "condition": {
-                                    "type": "origins:living"
-                                }
-                            }
-                        },
-                        "if_action": {
-                            "type": "origins:raycast",
-                            "distance": 32,
-                            "block": false,
-                            "entity": true,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "bientity_action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:actor_action",
-                                        "action": {
-                                            "type": "origins:and",
-                                            "actions": [
-                                                {
-                                                    "type": "origins:change_resource",
-                                                    "resource": "*:*_string_resource",
-                                                    "change": -10
-                                                },
-                                                {
-                                                    "type": "origins:chance",
-                                                    "action": {
-                                                        "type": "origins:swing_hand",
-                                                        "hand": "MAIN_HAND"
-                                                    },
-                                                    "fail_action": {
-                                                        "type": "origins:swing_hand",
-                                                        "hand": "OFF_HAND"
-                                                    },
-                                                    "chance": 0.5
-                                                },
-                                                {
-                                                    "type": "origins:change_resource",
-                                                    "change": 200,
-                                                    "resource": "*:*_web_shoot_cooldown",
-                                                    "operation": "add"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "type": "origins:target_action",
-                                        "action": {
-                                            "type": "origins:block_action_at",
-                                            "block_action": {
-                                                "type": "origins:if_else",
-                                                "condition": {
-                                                    "type": "origins:replacable"
-                                                },
-                                                "if_action": {
-                                                    "type": "origins:set_block",
-                                                    "block": "origins:temporary_cobweb"
-                                                }
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "command_at_hit": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1",
-                            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                            "command_step": 0.1,
-                            "command_along_ray_only_on_hit": true
-                        },
-                        "else_action": {
-                            "type": "origins:raycast",
-                            "distance": 64,
-                            "block": true,
-                            "entity": false,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "block_action": {
-                                "type": "origins:execute_command",
-                                "command": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1"
-                            },
-                            "hit_action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:add_velocity",
-                                        "x": 0,
-                                        "y": 0.5,
-                                        "z": 1.5,
-                                        "space": "local",
-                                        "client": true,
-                                        "server": false,
-                                        "operation": "set"
-                                    },
-                                    {
-                                        "type": "origins:change_resource",
-                                        "resource": "*:*_string_resource",
-                                        "change": -10
-                                    },
-                                    {
-                                        "type": "origins:swing_hand"
-                                    },
-                                    {
-                                        "type": "origins:change_resource",
-                                        "change": 20,
-                                        "resource": "*:*_web_shoot_cooldown",
-                                        "operation": "add"
-                                    }
-                                ]
-                            },
-                            "command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                            "command_step": 0.1,
-                            "command_along_ray_only_on_hit": true
-                        }
-                    },
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:raycast",
+                "block": false,
+                "entity": true,
+                "distance": 32,
+                "shape_type": "collider",
+                "fluid_handling": "none",
+                "hit_bientity_condition": {
+                    "type": "origins:target_condition",
                     "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "mainhand",
-                                "item_condition": {
-                                    "type": "origins:empty"
-                                }
-                            },
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "offhand",
-                                "item_condition": {
-                                    "type": "origins:empty"
-                                }
-                            }
-                        ]
+                        "type": "origins:living"
                     }
-                },
-                {
-                    "action": {
-                        "type": "origins:if_else",
-                        "condition": {
-                            "type": "origins:raycast",
-                            "block": false,
-                            "entity": true,
-                            "distance": 32,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "hit_bientity_condition": {
-                                "type": "origins:target_condition",
-                                "condition": {
-                                    "type": "origins:living"
-                                }
-                            }
-                        },
-                        "if_action": {
-                            "type": "origins:raycast",
-                            "distance": 32,
-                            "block": false,
-                            "entity": true,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "bientity_action": {
+                }
+            },
+            "if_action": {
+                "type": "origins:raycast",
+                "distance": 32,
+                "block": false,
+                "entity": true,
+                "shape_type": "collider",
+                "fluid_handling": "none",
+                "bientity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:actor_action",
+                            "action": {
                                 "type": "origins:and",
                                 "actions": [
-                                    {
-                                        "type": "origins:actor_action",
-                                        "action": {
-                                            "type": "origins:and",
-                                            "actions": [
-                                                {
-                                                    "type": "origins:change_resource",
-                                                    "resource": "*:*_string_resource",
-                                                    "change": -10
-                                                },
-                                                {
-                                                    "type": "origins:chance",
-                                                    "action": {
-                                                        "type": "origins:swing_hand",
-                                                        "hand": "MAIN_HAND"
-                                                    },
-                                                    "fail_action": {
-                                                        "type": "origins:swing_hand",
-                                                        "hand": "OFF_HAND"
-                                                    },
-                                                    "chance": 0.5
-                                                },
-                                                {
-                                                    "type": "origins:change_resource",
-                                                    "change": 200,
-                                                    "resource": "*:*_web_shoot_cooldown",
-                                                    "operation": "add"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "type": "origins:target_action",
-                                        "action": {
-                                            "type": "origins:block_action_at",
-                                            "block_action": {
-                                                "type": "origins:if_else",
-                                                "condition": {
-                                                    "type": "origins:replacable"
-                                                },
-                                                "if_action": {
-                                                    "type": "origins:set_block",
-                                                    "block": "origins:temporary_cobweb"
-                                                }
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "command_at_hit": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1",
-                            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                            "command_step": 0.1,
-                            "command_along_ray_only_on_hit": true
-                        },
-                        "else_action": {
-                            "type": "origins:raycast",
-                            "distance": 64,
-                            "block": true,
-                            "entity": false,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "block_action": {
-                                "type": "origins:execute_command",
-                                "command": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1"
-                            },
-                            "hit_action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:add_velocity",
-                                        "x": 0,
-                                        "y": 0.5,
-                                        "z": 1.5,
-                                        "space": "local",
-                                        "client": true,
-                                        "server": false,
-                                        "operation": "set"
-                                    },
                                     {
                                         "type": "origins:change_resource",
                                         "resource": "*:*_string_resource",
@@ -336,215 +111,82 @@
                                     },
                                     {
                                         "type": "origins:change_resource",
-                                        "change": 20,
+                                        "change": 200,
                                         "resource": "*:*_web_shoot_cooldown",
                                         "operation": "add"
                                     }
                                 ]
-                            },
-                            "command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                            "command_step": 0.1,
-                            "command_along_ray_only_on_hit": true
-                        }
-                    },
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "mainhand",
-                                "item_condition": {
-                                    "type": "origins:empty"
-                                }
-                            },
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "offhand",
-                                "item_condition": {
-                                    "type": "origins:empty",
-                                    "inverted": true
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "action": {
-                        "type": "origins:if_else",
-                        "condition": {
-                            "type": "origins:raycast",
-                            "block": false,
-                            "entity": true,
-                            "distance": 32,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "hit_bientity_condition": {
-                                "type": "origins:target_condition",
-                                "condition": {
-                                    "type": "origins:living"
-                                }
                             }
                         },
-                        "if_action": {
-                            "type": "origins:raycast",
-                            "distance": 32,
-                            "block": false,
-                            "entity": true,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "bientity_action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:actor_action",
-                                        "action": {
-                                            "type": "origins:and",
-                                            "actions": [
-                                                {
-                                                    "type": "origins:change_resource",
-                                                    "resource": "*:*_string_resource",
-                                                    "change": -10
-                                                },
-                                                {
-                                                    "type": "origins:chance",
-                                                    "action": {
-                                                        "type": "origins:swing_hand",
-                                                        "hand": "MAIN_HAND"
-                                                    },
-                                                    "fail_action": {
-                                                        "type": "origins:swing_hand",
-                                                        "hand": "OFF_HAND"
-                                                    },
-                                                    "chance": 0.5
-                                                },
-                                                {
-                                                    "type": "origins:change_resource",
-                                                    "change": 200,
-                                                    "resource": "*:*_web_shoot_cooldown",
-                                                    "operation": "add"
-                                                }
-                                            ]
-                                        }
+                        {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:block_action_at",
+                                "block_action": {
+                                    "type": "origins:if_else",
+                                    "condition": {
+                                        "type": "origins:replacable"
                                     },
-                                    {
-                                        "type": "origins:target_action",
-                                        "action": {
-                                            "type": "origins:block_action_at",
-                                            "block_action": {
-                                                "type": "origins:if_else",
-                                                "condition": {
-                                                    "type": "origins:replacable"
-                                                },
-                                                "if_action": {
-                                                    "type": "origins:set_block",
-                                                    "block": "origins:temporary_cobweb"
-                                                }
-                                            }
-                                        }
+                                    "if_action": {
+                                        "type": "origins:set_block",
+                                        "block": "origins:temporary_cobweb"
                                     }
-                                ]
-                            },
-                            "command_at_hit": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1",
-                            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                            "command_step": 0.1,
-                            "command_along_ray_only_on_hit": true
-                        },
-                        "else_action": {
-                            "type": "origins:raycast",
-                            "distance": 64,
-                            "block": true,
-                            "entity": false,
-                            "shape_type": "collider",
-                            "fluid_handling": "none",
-                            "block_action": {
-                                "type": "origins:execute_command",
-                                "command": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1"
-                            },
-                            "hit_action": {
-                                "type": "origins:and",
-                                "actions": [
-                                    {
-                                        "type": "origins:add_velocity",
-                                        "x": 0,
-                                        "y": 0.5,
-                                        "z": 1.5,
-                                        "space": "local",
-                                        "client": true,
-                                        "server": false,
-                                        "operation": "set"
-                                    },
-                                    {
-                                        "type": "origins:change_resource",
-                                        "resource": "*:*_string_resource",
-                                        "change": -10
-                                    },
-                                    {
-                                        "type": "origins:swing_hand",
-                                        "hand": "OFF_HAND"
-                                    },
-                                    {
-                                        "type": "origins:change_resource",
-                                        "change": 20,
-                                        "resource": "*:*_web_shoot_cooldown",
-                                        "operation": "add"
-                                    }
-                                ]
-                            },
-                            "command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
-                            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-                            "command_step": 0.1,
-                            "command_along_ray_only_on_hit": true
+                                }
+                            }
                         }
-                    },
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "mainhand",
-                                "item_condition": {
-                                    "type": "origins:empty",
-                                    "inverted": true
-                                }
-                            },
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "offhand",
-                                "item_condition": {
-                                    "type": "origins:empty"
-                                }
-                            }
-                        ]
-                    }
+                    ]
                 },
-                {
-                    "action": {
-                        "type": "origins:nothing"
-                    },
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "mainhand",
-                                "item_condition": {
-                                    "type": "origins:empty",
-                                    "inverted": true
-                                }
-                            },
-                            {
-                                "type": "origins:equipped_item",
-                                "equipment_slot": "offhand",
-                                "item_condition": {
-                                    "type": "origins:empty",
-                                    "inverted": true
-                                }
-                            }
-                        ]
-                    }
-                }
-            ]
+                "command_at_hit": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1",
+                "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                "command_step": 0.1,
+                "command_along_ray_only_on_hit": true
+            },
+            "else_action": {
+                "type": "origins:raycast",
+                "distance": 64,
+                "block": true,
+                "entity": false,
+                "shape_type": "collider",
+                "fluid_handling": "none",
+                "block_action": {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.item_frame.remove_item player @a ~ ~ ~ 1 1"
+                },
+                "hit_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "x": 0,
+                            "y": 0.5,
+                            "z": 1.5,
+                            "space": "local",
+                            "client": true,
+                            "server": false,
+                            "operation": "set"
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_string_resource",
+                            "change": -10
+                        },
+                        {
+                            "type": "origins:swing_hand",
+                            "hand": "MAIN_HAND"
+                        },
+                        {
+                            "type": "origins:change_resource",
+                            "change": 20,
+                            "resource": "*:*_web_shoot_cooldown",
+                            "operation": "add"
+                        }
+                    ]
+                },
+                "command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
+                "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+                "command_step": 0.1,
+                "command_along_ray_only_on_hit": true
+            }
         },
         "cooldown": 0,
         "hud_render": {
@@ -572,7 +214,7 @@
             ]
         }
     },
-    "web_shoot_cooldown":{
+    "web_shoot_cooldown": {
         "type": "origins:resource",
         "min": 0,
         "max": 200,
@@ -587,7 +229,7 @@
             }
         }
     },
-    "web_shoot_cooldown_decrease":{
+    "web_shoot_cooldown_decrease": {
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
@@ -605,26 +247,22 @@
     "climbing": {
         "type": "origins:climbing",
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:in_block_anywhere",
-                    "compare_to": 0,
-                    "comparison": "!=",
-                    "block_condition": {
-                        "type": "origins:in_tag",
-                        "tag": "origins:cobwebs"
+            "type": "origins:in_block_anywhere",
+            "compare_to": 0,
+            "comparison": ">",
+            "block_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:block",
+                        "block": "minecraft:cobweb"
+                    },
+                    {
+                        "type": "origins:block",
+                        "block": "origins:temporary_cobweb"
                     }
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:climbing_toggle"
-                }
-            ]
-        },
-        "hold_condition": {
-            "type": "origins:power_active",
-            "power": "*:*_climbing"
+                ]
+            }
         }
     },
     "punch_through": {

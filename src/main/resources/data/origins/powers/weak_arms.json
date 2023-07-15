@@ -16,9 +16,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": {
-                "translate": "This restriction can be bypassed by using Strenth Potions or a Pickaxe with Efficiency III or higher."
-            }
+            "text": "This restriction can be bypassed by using Strenth Potions or a Pickaxe with Efficiency III or higher."
         }
     ],
     "loading_priority": 1,

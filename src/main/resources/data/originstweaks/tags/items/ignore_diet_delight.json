@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "farmersdelight:hot_cocoa",
+        "farmersdelight:melon_juice",
+        "farmersdelight:apple_cider",
+        "farmersdelight:bone_broth",
+        "farmersdelight:fried_egg",
+        "farmersdelight:stuffed_potato",
+        "farmersdelight:noodle_soup",
+        "farmersdelight:pumpkin_soup",
+        "farmersdelight:egg_sandwich",
+        "farmersdelight:chicken_sandwich",
+        "farmersdelight:hamburger",
+        "farmersdelight:bacon_sandwich",
+        "farmersdelight:mutton_wrap",
+        "farmersdelight:barbecue_stick",
+        "farmersdelight:cabbage_rolls",
+        "farmersdelight:salmon_roll",
+        "farmersdelight:cod_roll",
+        "farmersdelight:dumplings",
+        "farmersdelight:squid_ink_pasta"
+    ]
+}

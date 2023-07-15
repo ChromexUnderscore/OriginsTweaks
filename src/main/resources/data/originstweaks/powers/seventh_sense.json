@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Seventh Sense",
-    "description": "You are able to sense prey in a short distance",
+    "description": "You are able to sense prey in a short distance.",
     "badges": [
         {
             "type": "origins:keybind",

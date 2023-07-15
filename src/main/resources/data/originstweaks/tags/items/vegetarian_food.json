@@ -1,0 +1,25 @@
+{
+    "replace": false,
+    "values": [
+        "apple",
+        "golden_apple",
+        "enchanted_golden_apple",
+        "melon_slice",
+        "sweet_berries",
+        "glow_berries",
+        "chorus_fruit",
+        "carrot",
+        "golden_carrot",
+        "potato",
+        "baked_potato",
+        "poisonous_potato",
+        "beetroot",
+        "dried_kelp",
+        "bread",
+        "cookie",
+        "pumpkin_pie",
+        "mushroom_stew",
+        "beetroot_soup",
+        "suspicious_stew"
+    ]
+}

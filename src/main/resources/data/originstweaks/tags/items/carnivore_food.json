@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "values": [
+        "beef",
+        "cooked_beef",
+        "porkchop",
+        "cooked_porkchop",
+        "mutton",
+        "cooked_mutton",
+        "chicken",
+        "cooked_chicken",
+        "rabbit",
+        "cooked_rabbit",
+        "cod",
+        "cooked_cod",
+        "salmon",
+        "cooked_salmon",
+        "tropical_fish",
+        "pufferfish",
+        "rotten_flesh",
+        "spider_eye"
+    ]
+}

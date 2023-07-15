@@ -6,10 +6,10 @@
 + Use this Mod on your Singleplayer World.
 + Use this Mod on your Server.
 + Use this Mod on any other Form of Gamemode (if there are any).
-+ Credit me when used as Dependency in any of your own Projects.
-+ Fork this Repo and make it better for your use!
-+ Let me know about bugs and ideas in form of an Issue!
++ Credit me when any code is used in your own Projects.
++ Fork this Repo and make it better for your own use.
++ Let me know about bugs and feature ideas on Discord or on GitHub Issues.
 
 ## DO NOT
 
-+ Reupload this Mod and its contents in the Origins Discord, or your own Discord Community or on GitHub and act like its your work without altering the Code.
++ Reupload this Mod and its contents anywhere without altering the Code and renaming the mod.

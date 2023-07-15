@@ -89,4 +89,12 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 </details>
 
+#### Built-in Mod Compat:
+
++ [Farmer's Delight](https://modrinth.com/mod/farmers-delight-fabric)
++ [Terrestria](https://modrinth.com/mod/terrestria)
++ [Cinderscapes](https://modrinth.com/mod/cinderscapes)
+
+#### Used Assets:
+
 Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).

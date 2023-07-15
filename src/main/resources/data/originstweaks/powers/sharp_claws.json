@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Sharp Claws",
-    "description": "Your Natural Claws provide a Benefit in disarmed Fights. Remember to keep them Sharp though.",
+    "description": "Your claws provide a benefit in disarmed fights. Remember to keep them sharp though.",
     "badges": [
         {
             "type": "origins:keybind",
@@ -112,8 +112,33 @@
             ]
         },
         "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "originstweaks:claws_wood"
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_nether"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_wild"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_trails"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_terrestria"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_cinderscapes"
+                }
+            ]
         },
         "item_condition": {
             "type": "origins:empty"

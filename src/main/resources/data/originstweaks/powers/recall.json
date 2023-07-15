@@ -2,6 +2,13 @@
     "type": "origins:multiple",
     "name": "Recall Beacon",
     "description": "By concentrating your teleportation Power, you are able to determine a specific location as your Emergency Exit.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": "Toggle with %s."
+        }
+    ],
     "toggle": {
         "type": "origins:toggle",
         "active_by_default": false,
