@@ -9,12 +9,39 @@
             "text": "Toggle with %s."
         }
     ],
+    "id": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard objectives add recallID dummy"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scoreboard players add #RECALLID recallID 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute unless score @s recallID matches 1.. run scoreboard players operation @s recallID = #RECALLID recallID"
+                }
+            ]
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scoreboard players set @s recallID 0"
+        },
+        "execute_chosen_when_orb": true
+    },
     "toggle": {
         "type": "origins:toggle",
-        "active_by_default": false,
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.secondary_active",
+            "continuous": false
         },
+        "active_by_default": false,
+        "retain_state": false,
         "condition": {
             "type": "origins:and",
             "conditions": [
@@ -33,104 +60,12 @@
             ]
         }
     },
-    "trigger_on": {
-        "type": "origins:action_over_time",
-        "rising_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "summon minecraft:area_effect_cloud ~ ~ ~ {Tags: [\"recall\"], Particle: \"minecraft:portal\", Duration: 1220, Radius: 0.5}"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.1"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "effect give @s minecraft:blindness 1 0 true"
-                }
-            ]
-        },
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_resource",
-            "change": -1
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_toggle"
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_cooldown",
-                    "comparison": "==",
-                    "compare_to": 0
-                }
-            ]
-        }
-    },
-    "trigger_off": {
-        "type": "origins:action_over_time",
-        "rising_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_resource",
-                    "operation": "set",
-                    "change": 0
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "tp @s @e[tag=recall,limit=1,sort=nearest]"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 1"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "effect give @s minecraft:blindness 1 0 true"
-                },
-                {
-                    "type": "origins:set_fall_distance",
-                    "fall_distance": 0
-                },
-                {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_cooldown",
-                    "change": 200,
-                    "operation": "set"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
-                },
-                {
-                    "type": "origins:delay",
-                    "ticks": 3,
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "kill @e[tag=recall,limit=2,sort=nearest]"
-                    }
-                }
-            ]
-        },
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_resource",
-            "change": 1
-        },
-        "interval": 1,
-        "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_toggle",
-            "inverted": true
+    "was_activated": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1,
+        "hud_render": {
+            "should_render": false
         }
     },
     "resource": {
@@ -140,61 +75,161 @@
         "start_value": 2400,
         "hud_render": {
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-            "bar_index": 7,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "*:*_resource",
-                "comparison": "!=",
-                "compare_to": 240
-            }
+            "bar_index": 7
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 200,
+        "hud_render": {
+            "bar_index": 3
+        }
+    },
+    "trigger_on": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_was_activated",
+                    "change": 1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon minecraft:area_effect_cloud ~ ~ ~ {Tags: [\"recall\"], Particle: \"minecraft:portal\", Duration: 2500, Radius: 0.5}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect give @s minecraft:blindness 1 0 true"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "scoreboard players operation @e[tag=recall,limit=1,sort=nearest] recallID = @s recallID"
+                    },
+                    "ticks": 3
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run execute at @s run forceload add ~ ~"
+                    },
+                    "ticks": 6
+                }
+            ]
         },
-        "min_action": {
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -3
+        },
+        "interval": 3,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "trigger_off": {
+        "type": "origins:action_over_time",
+        "rising_action": {
             "type": "origins:if_else",
             "condition": {
-                "type": "origins:power_active",
-                "power": "*:*_toggle"
+                "type": "origins:resource",
+                "resource": "*:*_was_activated",
+                "compare_to": 1,
+                "comparison": "=="
             },
             "if_action": {
-                "type": "origins:toggle",
-                "power": "*:*_toggle"
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:trigger_cooldown",
+                        "power": "*:*_cooldown"
+                    },
+                    {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_resource",
+                        "change": -200,
+                        "operation": "add"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 1 1"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "effect give @s minecraft:blindness 1 0 true"
+                    },
+                    {
+                        "type": "origins:set_fall_distance",
+                        "fall_distance": 0
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run tp @p @s"
+                    },
+                    {
+                        "type": "origins:delay",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run execute at @s run playsound minecraft:block.beacon.deactivate player @a ~ ~ ~ 1 0.1"
+                        },
+                        "ticks": 3
+                    },
+                    {
+                        "type": "origins:delay",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run execute at @s run forceload remove ~ ~"
+                        },
+                        "ticks": 3
+                    },
+                    {
+                        "type": "origins:delay",
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run kill @s"
+                        },
+                        "ticks": 6
+                    },
+                    {
+                        "type": "origins:delay",
+                        "action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:*_was_activated",
+                            "change": 0,
+                            "operation": "set"
+                        },
+                        "ticks": 6
+                    }
+                ]
             },
             "else_action": {
                 "type": "origins:nothing"
             }
-        }
-    },
-    "cooldown":{
-        "type": "origins:resource",
-        "min": 0,
-        "max": 200,
-        "start_value": 200,
-        "hud_render": {
-            "should_render": false
-        }
-    },
-    "cooldown_reduce": {
-        "type": "origins:action_over_time",
-        "interval": 1,
+        },
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_cooldown",
-            "change": -1
-        }
-    },
-    "shader": {
-        "type": "origins:shader",
-        "shader": "minecraft:shaders/post/invert.json",
-        "toggleable": false,
+            "resource": "*:*_resource",
+            "change": 3
+        },
+        "interval": 3,
         "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_toggle"
-        }
-    },
-    "shaking": {
-        "type": "origins:shaking",
-        "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_toggle"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle",
+                    "inverted": true
+                }
+            ]
         }
     },
     "death": {
@@ -203,20 +238,25 @@
             "type": "origins:and",
             "actions": [
                 {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_resource",
+                    "change": -200
+                },
+                {
                     "type": "origins:execute_command",
-                    "command": "kill @e[tag=recall,limit=1,sort=nearest]"
+                    "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run execute at @s run forceload remove ~ ~"
                 },
                 {
                     "type": "origins:delay",
-                    "ticks": 1,
                     "action": {
-                        "type": "origins:toggle",
-                        "power": "*:*_toggle"
-                    }
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run kill @s"
+                    },
+                    "ticks": 3
                 }
             ]
         },
-        "cooldown": 1,
+        "cooldown": 0,
         "condition": {
             "type": "origins:and",
             "conditions": [
@@ -230,6 +270,42 @@
                     "power": "*:*_toggle"
                 }
             ]
+        }
+    },
+    "disconnect": {
+        "type": "origins:action_on_callback",
+        "entity_action_removed": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run execute at @s run forceload remove ~ ~"
+                },
+                {
+                    "type": "origins:delay",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "execute as @e[tag=recall] if score @s recallID = @p recallID run kill @s"
+                    },
+                    "ticks": 3
+                }
+            ]
+        }
+    },
+    "shader": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/invert.json",
+        "toggleable": true,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "shaking": {
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
         }
     }
 }

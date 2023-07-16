@@ -4,7 +4,21 @@
 
 ### [Version 1.15 [Minecraft 1.20]]
 
-#### [Version 1.15.1 [Diets Tweaks and Mod Compat]]((https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.1))
+#### [Version 1.15.2 [Arachnid Climbing Fix / Enderian Recall Rewrite]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.2)
+
++ Fixed Arachnid's Climbing ability still acting weird due to it somehow getting mixed up with the webshot keybind
++ Reworked Enderian's Recall ability to work better in Multiplayer.
+  + No longer randomly activates after the resource runs out and cooldown has passed.
+  + Cooldown is now visible using a pink resource bar with an X.
+  + No longer teleports to the nearest recall beacon instead of the user's own beacon.
+  + The Beacon now force loads chunks until teleported back.
+    + This enables teleporting back from any distance.
+    + Also has the neat side effect of a less laggy teleport in Singleplayer.
+  + The Shader effect applied when the ability is used is now togglable with F4.
++ The Reflex ability's Cooldown Resource is now only visible when the Cooldown is active.
++ Fixed a typo in the Terrestria's wood and logs block tag which prevented it from loading.
+
+#### [Version 1.15.1 [Diets Tweaks and Mod Compat]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.1)
 
 + Undone dependency metadata change listed in the previous release's changelog.
 + Updated Pehkui Dependency metadata to support Version 3.3.3 or newer due to it being the only version that supports 1.19.0.

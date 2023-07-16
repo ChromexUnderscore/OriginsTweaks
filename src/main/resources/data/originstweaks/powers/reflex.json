@@ -1208,7 +1208,13 @@
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-            "bar_index": 2
+            "bar_index": 2,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_cooldown_resource",
+                "comparison": "!=",
+                "compare_to": 200
+            }
         }
     },
     "regen_cooldown": {
