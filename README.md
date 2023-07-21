@@ -2,7 +2,14 @@
 
 Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/mod/origins) and adds new ones.
 
-#### Changes to Origins:
+![Static Badge](https://img.shields.io/badge/Available_on-Modrinth-%2300AF5C?logo=modrinth&logoColor=%2300AF5C)
+![Static Badge](https://img.shields.io/badge/Available_on-GitHub-%23181717?logo=github&logoColor=%23181717)
+
+![Static Badge](https://img.shields.io/badge/Required_Mods-gray)
+![Static Badge](https://img.shields.io/badge/Origins-lightblue)
+![Static Badge](https://img.shields.io/badge/Pehkui-lightgray)
+
+## Changes to Origins
 
 <details><summary>Arachnid</summary>
 
@@ -89,12 +96,15 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 </details>
 
-#### Built-in Mod Compat:
+## Report Bugs
+Found a Bug, want to request a Feature or have an other question? Join my [Discord](https://discord.gg/Su7tqDmUTu) / Open an Issue on GitHub
+
+## Built-in Mod Compat
 
 + [Farmer's Delight](https://modrinth.com/mod/farmers-delight-fabric)
 + [Terrestria](https://modrinth.com/mod/terrestria)
 + [Cinderscapes](https://modrinth.com/mod/cinderscapes)
 
-#### Used Assets:
+## Used Assets
 
 Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).

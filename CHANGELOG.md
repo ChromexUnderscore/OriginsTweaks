@@ -4,6 +4,12 @@
 
 ### [Version 1.15 [Minecraft 1.20]]
 
+#### [Version 1.15.3 [Quilt Metadata & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.2)
+
++ Added ``quilt_mod.json`` for quilt metadata.
++ Fixed Enderian's Recall not toggling back off after the player died.
++ Added Description Assets for use within the ``README.md``.
+
 #### [Version 1.15.2 [Arachnid Climbing Fix / Enderian Recall Rewrite]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.2)
 
 + Fixed Arachnid's Climbing ability still acting weird due to it somehow getting mixed up with the webshot keybind

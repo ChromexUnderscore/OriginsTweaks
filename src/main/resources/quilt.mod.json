@@ -1,0 +1,52 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "com.chromexunderscore.originstweaks",
+        "id": "originstweaks",
+        "version": "1.15.3",
+        "metadata": {
+            "name": "OriginsTweaks",
+            "description": "Reworks the Base Origins' abilities from the Origins Mod and adds new ones.",
+            "contributors": {
+                "ChromexUnderscore": "Owner"
+            },
+            "contact": {
+                "homepage": "https://github.com/ChromexUnderscore/OriginsTweaks",
+                "issues": "https://github.com/ChromexUnderscore/OriginsTweaks/issues",
+                "discord": "https://discord.com/invite/Su7tqDmUTu"
+            },
+            "license": "MIT",
+            "icon": "assets/originstweaks/icon.png"
+        },
+        "depends": [
+            {
+                "id": "origins",
+                "version": ">=1.6"
+            },
+            {
+                "id": "pehkui",
+                "version": ">=3.3.3"
+            },
+            {
+                "id": "minecraft",
+                "version": ">=1.19"
+            }
+        ],
+        "breaks": [
+            {
+                "id": "bot",
+                "version": "*"
+            },
+            {
+                "id": "origins-minus",
+                "version": "*"
+            }
+        ]
+    },
+    "modmenu": {
+        "parent": {
+            "id": "origins"
+        },
+        "update_checker": true
+    }
+}
