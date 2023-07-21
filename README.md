@@ -97,7 +97,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 </details>
 
 ## Report Bugs
-Found a Bug, want to request a Feature or have an other question? Join my [Discord](https://discord.gg/Su7tqDmUTu) / Open an Issue on GitHub
+Found a Bug, want to request a Feature or have an other question? [Join my Discord](https://discord.gg/Su7tqDmUTu) / [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)!
 
 ## Built-in Mod Compat
 
