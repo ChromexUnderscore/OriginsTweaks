@@ -1,68 +1,68 @@
 {
     "type": "origins:multiple",
+    "loading_priority": 1,
     "fire_projectile": {
         "type": "origins:fire_projectile",
         "entity_type": "origins:enderian_pearl",
         "sound": "minecraft:entity.ender_pearl.throw",
         "speed": 1.5,
         "divergence": 1,
-        "cooldown": 0,
+        "cooldown": 30,
         "hud_render": {
             "should_render": false
         },
         "key": {
             "key": "key.origins.primary_active",
             "continuous": false
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "compare_to": 0,
-            "comparison": "=="
         }
     },
-    "suffocation_buffer":{
-        "type": "origins:modify_damage_taken",
-        "modifier": {
-            "name": "no suffocation",
-            "operation":"set_total",
-            "value": 0
-        },
+    "suffocation_immunity": {
+        "type": "origins:invulnerability",
         "damage_condition": {
             "type": "origins:name",
             "name": "inWall"
         },
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "compare_to": 0,
-            "comparison": "=="
+            "resource": "*:*_resource",
+            "comparison": ">=",
+            "compare_to": 1
         }
     },
-    "cooldown": {
-        "type": "origins:cooldown",
-        "cooldown": 30,
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 5,
+        "start_value": 5,
         "hud_render": {
-            "sprite_location": "origins:textures/gui/resource_bar.png",
-            "bar_index": 6
+            "bar_index": 0
         }
     },
-    "trigger_cooldown":{
+    "activate": {
         "type": "origins:active_self",
         "entity_action": {
-            "type": "origins:trigger_cooldown",
-            "power": "*:*_cooldown"
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": 5,
+            "operation": "set"
         },
-        "cooldown": 0,
+        "cooldown": 30,
+        "hud_render": {
+            "should_render": false
+        },
         "key": {
             "key": "key.origins.primary_active",
             "continuous": false
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "compare_to": 0,
-            "comparison": "=="
+        }
+    },
+    "decrease": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_resource",
+            "change": -1,
+            "operation": "add"
         }
     }
 }

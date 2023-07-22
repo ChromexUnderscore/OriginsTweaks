@@ -1,5 +1,6 @@
 {
     "type": "origins:toggle_night_vision",
+    "loading_priority": 1,
     "strength": 0.4,
     "active_by_default": true,
     "key": {
