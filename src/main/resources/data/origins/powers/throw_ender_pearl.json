@@ -1,0 +1,68 @@
+{
+    "type": "origins:multiple",
+    "fire_projectile": {
+        "type": "origins:fire_projectile",
+        "entity_type": "origins:enderian_pearl",
+        "sound": "minecraft:entity.ender_pearl.throw",
+        "speed": 1.5,
+        "divergence": 1,
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    },
+    "suffocation_buffer":{
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "name": "no suffocation",
+            "operation":"set_total",
+            "value": 0
+        },
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 30,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 6
+        }
+    },
+    "trigger_cooldown":{
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_cooldown"
+        },
+        "cooldown": 0,
+        "key": {
+            "key": "key.origins.primary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "compare_to": 0,
+            "comparison": "=="
+        }
+    }
+}
