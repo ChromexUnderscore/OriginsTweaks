@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.15.2",
+    "version": "1.15.3",
     "name": "OriginsTweaks",
     "description": "Reworks the Base Origins' abilities from the Origins Mod and adds new ones.",
     "authors": [
@@ -15,15 +15,14 @@
     "license": "MIT License",
     "icon": "assets/originstweaks/icon.png",
     "environment": "*",
-    "entrypoints": {
-        "main": [
-            "com.chromexunderscore.originstweaks.Main"
-        ]
-    },
     "depends": {
         "origins": ">=1.6",
         "pehkui": ">=3.3.3",
         "minecraft": ">=1.19"
+    },
+    "breaks":{
+        "bot": "*",
+        "origins-minus": "*"
     },
     "custom": {
         "modmenu": {

@@ -6,12 +6,12 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press %s to activate this Power."
+            "text": "Press %s to sense your prey."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You inflict Glowing to Huntable Entities in a radius of 16 Blocks for 10 Seconds."
+            "text": "You inflict Glowing to specific Entities in a radius of 16 Blocks for 10 Seconds."
         }
     ],
     "active_power": {

@@ -44,6 +44,32 @@
             ]
         }
     },
+    "air_affinity": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:climbing"
+                },
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": ">=",
+                    "compare_to": 0.01
+                }
+            ]
+        }
+    },
     "toggle_hud": {
         "type": "origins:resource",
         "min": 0,

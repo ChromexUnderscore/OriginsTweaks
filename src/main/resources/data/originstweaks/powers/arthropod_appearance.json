@@ -17,39 +17,35 @@
     "scale": {
         "type": "origins:action_on_callback",
         "entity_action_added": {
-            "type": "origins:delay",
-            "ticks": 3,
-            "action": {
-                "type": "origins:and",
-                "actions": [
-                    {
-                        "type": "origins:execute_command",
-                        "command": "scale delay set 0"
-                    },
-                    {
-                        "type": "origins:delay",
-                        "ticks": 1,
-                        "action": {
-                            "type": "origins:and",
-                            "actions": [
-                                {
-                                    "type": "origins:execute_command",
-                                    "command": "scale set pehkui:height 0.66"
-                                },
-                                {
-                                    "type": "origins:execute_command",
-                                    "command": "scale set pehkui:width 0.66"
-                                }
-                            ]
-                        }
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale delay set 0"
+                },
+                {
+                    "type": "origins:delay",
+                    "ticks": 3,
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scale set pehkui:height 0.66"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "scale set pehkui:width 0.66"
+                            }
+                        ]
                     }
-                ]
-            }
-        },
-        "entity_action_lost": {
-            "type": "origins:execute_command",
-            "command": "scale reset @s"
+                }
+            ]
         }
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
     },
     "less_falldmg": {
         "type": "origins:modify_damage_taken",
