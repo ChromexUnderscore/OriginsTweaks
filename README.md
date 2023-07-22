@@ -22,14 +22,16 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Arachnid</summary>
 
 + The Arachnid has a webshot ability.
-  + The webshot is fired using the Primary Key. 
+  + The webshot is fired using the Primary Key.
   + Hitting terrain grapples towards it.
   + Hitting entities catches it in cobweb.
     + Catching entities in cobweb has a longer cooldown than grappling.
     + This replaces the webbing in melee combat.
 + Arachnids are shorter and can fit into 1-block gaps when sneaking.
++ Climbing no longer slows down mining speed.
 + Fall damage is only taken after a fall greater than 30 Blocks.
 + Arachnids can craft 9 strings into cobweb and cobweb back into 9 string.
++ Cobwebs can be broken per hand and always return a cobweb item.
 
 </details>
 
@@ -38,7 +40,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 + The Elytra has a custom texture exclusive to Elytrians. The Elytra Texture was made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
 + Pressing the Primary Key while grounded will launch them to the sky.
 + Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
-+ Elytrians have a limited stamina used for gliding, flapping and launching.
++ Elytrians have limited stamina used for gliding, flapping and launching.
 + Heavy Armor weakens effects of the Launch power and the Wing Flap power and costs more stamina.
 
 </details>
@@ -56,6 +58,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 + The Feline can break Stone 50% slower when not under the effect of strength or using a pickaxe with efficiency III or higher. Some tough stone variants can't be broken without strength or efficiency.
 + Claws deal stone-sword-level damage, but need to be resharpened using logs, wool or carpet.
 + Prey can be sensed by felines, and their meat is more nourishing.
++ Night Vision is togglable.
 
 </details>
 
@@ -64,6 +67,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 + Height, eye height and reach are increased.
 + Enderians are able to set a teleportation point to travel back to.
 + They can dodge any Projectile on a cooldown when sneaking.
++ Teleporting grants a 5 second invincibility widow against suffocation.
 
 </details> 
 

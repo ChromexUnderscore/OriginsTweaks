@@ -11,7 +11,13 @@
 + Added Description Assets for use within the ``README.md``.
 + Changed ``README.md``.
   + Used proper header incrementation.
-  + 
+  + Updated descriptions.
++ Added a toggle to Feline's Cat Vision.
++ Added a 5 seconds invincibility window against suffocation when an enderian teleports via pearl.
++ Negated mining speed penalty when climbing.
++ Increased velocity when using webshot to make it easier to recover from a fall off of a platform such as end islands.
++ Reduced cooldown of webbing entities from 10 to 5 seconds.
++ Mining Cobweb is faster and will now always return cobweb items.
 
 #### [Version 1.15.2 [Arachnid Climbing Fix / Enderian Recall Rewrite]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.2)
 

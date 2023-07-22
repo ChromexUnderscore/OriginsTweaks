@@ -35,7 +35,7 @@
         "max": 5,
         "start_value": 5,
         "hud_render": {
-            "bar_index": 0
+            "should_render": false
         }
     },
     "activate": {

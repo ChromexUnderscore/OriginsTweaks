@@ -370,14 +370,6 @@
             }
         }
     },
-    "little_accident_resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 30,
-        "hud_render": {
-            "should_render": false
-        }
-    },
     "web_harvest_drop": {
         "type": "origins:replace_loot_table",
         "replace": {
