@@ -4,7 +4,16 @@
 
 ### [Version 1.15 [Minecraft 1.20]]
 
-#### [Version 1.15.3 [Quilt Metadata & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.2)
+#### [Version 1.15.4 [No Quilt Metadata & Gamer Suggestions]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.4)
+
++ Removed ``quilt_mod.json`` because quilt natively supports fabric mods (and I'm too stoopid to use quilt metadata).
+  + closes #41.
++ Made changes to Merling's Dash ability.
+  + Reduced base dash velocity from 2 to 1.5.
+  + The dash now increases velocity by 0.5 per level of depth strider.
++ Added an easteregg.
+
+#### [Version 1.15.3 [Quilt Metadata & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.3)
 
 + Added ``quilt_mod.json`` for quilt metadata.
 + Fixed Enderian's Recall not toggling back off after the player died.
