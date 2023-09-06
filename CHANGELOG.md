@@ -4,7 +4,7 @@
 
 ### [Version 1.15 [Minecraft 1.20]]
 
-#### [Version 1.15.4 [No Quilt Metadata & Gamer Suggestions]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.4)
+#### [Version 1.15.4 [Removed Quilt Metadata & Player Suggestions]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.4)
 
 + Removed ``quilt_mod.json`` because quilt natively supports fabric mods (and I'm too stoopid to use quilt metadata).
   + closes #41.
