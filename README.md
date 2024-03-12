@@ -5,7 +5,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <a href="https://modrinth.com/mod/originstweaks"><img src="https://img.shields.io/badge/Available_on-Modrinth-%2300AF5C?logo=modrinth&logoColor=%2300AF5C"></a>
 <a href="https://github.com/ChromexUnderscore/OriginsTweaks"><img src="https://img.shields.io/badge/Available_on-GitHub-%23181717?logo=github&logoColor=%23181717"></a>
 
-<img src=https://img.shields.io/badge/Required_Mods-gray>
+<img src=https://img.shields.io/badge/Requires-gray>
 <a href="https://modrinth.com/mod/origins"><img src="https://img.shields.io/badge/Origins-lightblue"></a>
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
 
@@ -113,6 +113,6 @@ Found a Bug, want to request a Feature / Mod Compat or have any other questions?
 
 [Join my Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
 
-## Assets
+## Credits
 
 Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
