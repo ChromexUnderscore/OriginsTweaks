@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press %s to activate this Power."
+            "text": "Press %s to send out a Wail."
         },
         {
             "type": "origins:tooltip",
@@ -74,7 +74,7 @@
                 },
                 {
                     "type": "origins:execute_command",
-                    "command": "playsound entity.phantom.ambient player @a ~ ~ ~ 5 0.5"
+                    "command": "playsound entity.phantom.ambient player @a ~ ~ ~ 2 0.5"
                 },
                 {
                     "type": "origins:execute_command",

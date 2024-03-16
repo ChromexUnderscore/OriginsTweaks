@@ -1,22 +1,20 @@
 {
-	"icon": {
-		"item": "minecraft:phantom_membrane"
-	},
-	"name": "origin.origins.phantom.name",
-    "description": "origin.origins.phantom.description",
-	"order": 2,
-	"impact": 3,
-	"loading_priority": 1,
-	"powers": [
-		"origins:phantomize",
-		"origins:translucent",
-		"origins:phasing",
-		"origins:invisibility",
-		"origins:burn_in_daylight",
-		"origins:hunger_over_time",
-		"origins:phantomize_overlay",
-		"originstweaks:aurophobia",
-		"originstweaks:spectral_wail",
-		"originstweaks:phantom_sounds"
-	]
+    "icon": {
+        "item": "minecraft:phantom_membrane"
+    },
+    "order": 2,
+    "impact": 3,
+    "loading_priority": 1,
+    "powers": [
+        "origins:phantomize",
+        "origins:phasing",
+        "originstweaks:spectral_wail",
+        "originstweaks:aurophobia",
+        "origins:burn_in_daylight",
+        "origins:hunger_over_time",
+        "origins:translucent",
+        "origins:phantomize_overlay",
+        "origins:invisibility",
+        "originstweaks:phantom_sounds"
+    ]
 }

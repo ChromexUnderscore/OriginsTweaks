@@ -1,8 +1,185 @@
 {
     "type": "origins:multiple",
     "name": "Natural Hunter",
-    "description": "Feline's stomachs have adapted to smaller prey, thus being able to gain more nutrients out of them.",
-    "modifier": {
+    "description": "Felines are natural predators; their claws can be sharpened on wood or fabrics and smaller animals are more nourishing.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "If sharpened, the Claws are as effective as a Stone Sword in combat."
+        },
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Use Logs, Wool or Carpet to resharpen your Claws."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Felines prey include fish, rabbit and chicken. Foods of this type provide 3 extra hunger and 2 extra saturation points."
+        }
+    ],
+    "claws_extra_damage": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "extra damage claws",
+            "operation": "set_base",
+            "value": 5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "claws_sharpness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 128,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 12,
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        }
+    },
+    "claws_unsharpen": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_claws_sharpness",
+                "change": -1
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            }
+        }
+    },
+    "claws_resharpen_wood": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_claws_sharpness",
+                    "change": 10
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:item.axe.strip",
+                    "pitch": 1.5
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_nether"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_wild"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_trails"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_terrestria"
+                },
+                {
+                    "type": "origins:in_tag",
+                    "tag": "originstweaks:claws_wood_cinderscapes"
+                }
+            ]
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "directions": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "hands": [
+            "main_hand"
+        ]
+    },
+    "claws_resharpen_fabric": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_claws_sharpness",
+                    "change": 5
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.wool.hit",
+                    "pitch": 1
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "originstweaks:claws_fabric"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        },
+        "directions": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "hands": [
+            "main_hand"
+        ]
+    },
+    "food_modifier": {
         "type": "origins:modify_food",
         "item_condition": {
             "type": "origins:or",
@@ -22,7 +199,7 @@
             ]
         },
         "food_modifier": {
-            "name": "feline food points",
+            "name": "feline hunger points",
             "operation": "addition",
             "value": 3.0
         },
@@ -33,7 +210,7 @@
         },
         "prevent_effects": true
     },
-    "tooltip": {
+    "food_tooltip": {
         "type": "origins:tooltip",
         "text": {
             "text": "Extra Nutrition (Natural Hunter)",

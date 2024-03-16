@@ -16,12 +16,12 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Flying with heavy armor is harder and thus more exhausting."
+            "text": "Flying with heavy armor is harder and more exhausting."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You can't use Fireworks while gliding. You would just end up setting your wings on fire or something..."
+            "text": "It's too dangerous to use fireworks while gliding."
         }
     ],
     "wings": {

@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Aurophobia",
-    "description": "Due to the pain and suffering caused by Gold to your Ancestors, you are scared and weakened by it.",
+    "description": "Gold's divine origin has a repellent effect on your kind.",
     "badges": [
         {
             "type": "origins:tooltip",
@@ -17,42 +17,8 @@
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
             "text": "You cannot wear Golden Armor."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You will receive Weakness in 5 Blocks Distance to Gold-related Blocks."
         }
     ],
-    "proximity_stacking": {
-        "type": "origins:stacking_status_effect",
-        "min_stacks": 0,
-        "max_stacks": 5,
-        "duration_per_stack": 140,
-        "tick_rate": 100,
-        "effect":             {
-            "effect": "minecraft:weakness",
-            "is_ambient": true,
-            "show_particles": false,
-            "show_icon": true
-        },
-        "condition": {
-            "type": "origins:block_in_radius",
-            "block_condition": {
-                "type": "origins:or",
-                "conditions": [
-                    {
-                        "type": "origins:in_tag",
-                        "tag": "originstweaks:golden_blocks"
-                    }
-                ]
-            },
-            "radius": 5,
-            "shape": "sphere",
-            "comparison": ">=",
-            "compare_to": 1
-        }
-    },
     "gold_diet": {
         "type": "origins:prevent_item_use",
         "item_condition": {

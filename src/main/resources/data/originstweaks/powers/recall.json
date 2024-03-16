@@ -4,6 +4,11 @@
     "description": "By concentrating your teleportation Power, you are able to determine a specific location as your Emergency Exit.",
     "badges": [
         {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Activating this ability places a temporary particle cloud, which you can teleport back to if you toggle off the ability or the timer runs out."
+        },
+        {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/toggle.png",
             "text": "Toggle with %s."
@@ -302,157 +307,11 @@
             ]
         }
     },
-    "shader": {
-        "type": "origins:shader",
-        "shader": "minecraft:shaders/post/invert.json",
-        "toggleable": true,
-        "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_toggle"
-        }
-    },
     "shaking": {
         "type": "origins:shaking",
         "condition": {
             "type": "origins:power_active",
             "power": "*:*_toggle"
-        }
-    },
-    "egg_text":{
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:if_else_list",
-            "actions": [
-                {
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "tellraw @s {\"text\":\"Impending doom approaches...\",\"color\":\"green\"}"
-                    },
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "*:*_egg_timer",
-                        "compare_to": 59,
-                        "comparison": "=="
-                    }
-                },
-                {
-                    "action": {
-                        "type": "origins:execute_command",
-                        "command": "/tellraw @s {\"text\":\"The Moonlord realized it invaded the wrong world and left...\"}"
-                    },
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "*:*_egg_timer",
-                        "compare_to": 1,
-                        "comparison": "=="
-                    }
-                }
-            ]
-        },
-        "interval": 19,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_egg_timer",
-            "compare_to": 0,
-            "comparison": "!="
-        }
-    },
-    "egg_deaf": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "stopsound @s music"
-        },
-        "interval": 3,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_egg_timer",
-                    "compare_to": 1,
-                    "comparison": ">="
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_egg_timer",
-                    "compare_to": 20,
-                    "comparison": "<="
-                }
-            ]
-        }
-    },
-    "egg_shader":{
-        "type": "origins:shader",
-        "shader": "minecraft:shaders/post/deconverge.json",
-        "toggleable": false,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_egg_timer",
-                    "compare_to": 1,
-                    "comparison": ">="
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_egg_timer",
-                    "compare_to": 30,
-                    "comparison": "<="
-                }
-            ]
-        }
-    },
-    "egg_activate": {
-        "type": "origins:action_on_hit",
-        "bientity_action": {
-            "type": "origins:actor_action",
-            "action": {
-                "type": "origins:chance",
-                "chance": 0.1,
-                "action": {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_egg_timer",
-                    "change": 60,
-                    "operation": "set"
-                }
-            }
-        },
-        "bientity_condition": {
-            "type": "origins:target_condition",
-            "condition": {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "type": "origins:entity_type",
-                        "entity_type": "minecraft:ender_dragon"
-                    },
-                    {
-                        "type": "origins:health",
-                        "comparison": "==",
-                        "compare_to": 0
-                    }
-                ]
-            }
-        }
-    },
-    "egg_countdown": {
-        "type": "origins:action_over_time",
-        "interval": 20,
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_egg_timer",
-            "change": -1
-        }
-    },
-    "egg_timer": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 60,
-        "start_value": 0,
-        "hud_render": {
-            "should_render": true
         }
     }
 }

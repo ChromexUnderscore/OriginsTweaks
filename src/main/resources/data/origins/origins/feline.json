@@ -1,23 +1,19 @@
 {
-	"icon": {
-		"item": "minecraft:salmon"
-	},
-	"name": "origin.origins.feline.name",
-    "description": "origin.origins.feline.description",
-	"order": 0,
-	"impact": 2,
-	"loading_priority": 1,
-	"powers": [
-		"originstweaks:sharp_claws",
-		"originstweaks:seventh_sense",
-		"origins:fall_immunity",
-		"origins:sprint_jump",
-		"origins:velvet_paws",
-		"origins:nine_lives",
-		"origins:weak_arms",
-		"origins:scare_creepers",
-		"origins:cat_vision",
-		"originstweaks:feline_sounds",
-		"originstweaks:natural_hunter"
-	]
+    "icon": {
+        "item": "minecraft:salmon"
+    },
+    "order": 0,
+    "impact": 2,
+    "loading_priority": 1,
+    "powers": [
+        "originstweaks:natural_hunter",
+        "origins:fall_immunity",
+        "origins:sprint_jump",
+        "origins:velvet_paws",
+        "origins:nine_lives",
+        "origins:weak_arms",
+        "origins:scare_creepers",
+        "origins:cat_vision",
+        "originstweaks:feline_sounds"
+    ]
 }

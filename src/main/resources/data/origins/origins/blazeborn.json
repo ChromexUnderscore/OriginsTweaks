@@ -1,24 +1,21 @@
 {
-	"icon": {
-		"item": "minecraft:blaze_powder"
-	},
-	"name": "origin.origins.blazeborn.name",
-    "description": "origin.origins.blazeborn.description",
-	"order": 1,
-	"impact": 3,
-	"loading_priority": 1,
-	"powers": [
-		"origins:burning_wrath",
-		"originstweaks:thermal_lift",
-		"originstweaks:firecharged_projectile",
-		"origins:fire_immunity",
-		"origins:nether_spawn",
-		"origins:hotblooded",
-		"origins:water_vulnerability",
-		"originstweaks:water_cauldron",
-		"origins:damage_from_snowballs",
-		"origins:damage_from_potions",
-		"origins:flame_particles",
-		"originstweaks:blazeborn_sounds"
-	]
+    "icon": {
+        "item": "minecraft:blaze_powder"
+    },
+    "order": 1,
+    "impact": 3,
+    "loading_priority": 1,
+    "powers": [
+        "origins:burning_wrath",
+        "originstweaks:firecharged_projectile",
+        "origins:fire_immunity",
+        "origins:nether_spawn",
+        "origins:hotblooded",
+        "origins:water_vulnerability",
+        "originstweaks:water_cauldron",
+        "origins:damage_from_snowballs",
+        "origins:damage_from_potions",
+        "origins:flame_particles",
+        "originstweaks:blazeborn_sounds"
+    ]
 }
