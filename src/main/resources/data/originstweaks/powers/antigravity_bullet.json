@@ -1,0 +1,22 @@
+{
+    "type": "origins:fire_projectile",
+    "name": "Antigravity Bullet",
+    "description": "You can throw a Shulker Bullet to make your foes defy gravity... for a short while.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Throw a Bullet with %s."
+        }
+    ],
+    "entity_type": "minecraft:shulker_bullet",
+    "cooldown": 30,
+    "hud_render": {
+        "should_render": false
+    },
+    "speed": 1,
+    "divergence": 0,
+    "key": "key.origins.primary_active",
+    "sound": "minecraft:entity.shulker.shoot",
+    "tag": "{NoGravity:1}"
+}

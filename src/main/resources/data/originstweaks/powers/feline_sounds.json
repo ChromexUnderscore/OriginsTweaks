@@ -152,9 +152,7 @@
         "interval": 55,
         "entity_action": {
             "type": "origins:play_sound",
-            "sound": "minecraft:entity.cat.purr",
-            "category": "players",
-            "volume": 0.25
+            "sound": "minecraft:entity.cat.purr"
         },
         "condition": {
             "type": "origins:scoreboard",

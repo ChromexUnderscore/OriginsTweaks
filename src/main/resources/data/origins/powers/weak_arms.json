@@ -1,16 +1,17 @@
 {
     "type": "origins:multiple",
+    "name": "power.origins.weak_arms.name",
     "description": "Your arms wont allow mining stone as quickly as others would, and some types of stone are too tough to be mined at all.",
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You mine natural stone-like blocks as well as ore blocks 50% slower than normal."
+            "text": "You mine Natural stone-like blocks as well as ore blocks 50% slower than normal."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot break sturdy stone blocks, such as Deepslate blocks and -ore, Obsidian, Blackstone and similar Blocks."
+            "text": "You can't break sturdy stone blocks, such as Deepslate blocks and -ore, Obsidian, Blackstone and similar Blocks."
         },
         {
             "type": "origins:tooltip",

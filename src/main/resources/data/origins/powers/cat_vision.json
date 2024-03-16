@@ -1,17 +1,10 @@
 {
     "type": "origins:toggle_night_vision",
-    "badges": [
-        {
-            "type": "origins:keybind",
-            "sprite": "origins:textures/gui/badge/toggle.png",
-            "text": "Toggle with %s."
-        }
-    ],
     "loading_priority": 1,
     "strength": 0.4,
     "active_by_default": true,
     "key": {
-        "key": "key.origins.primary_active",
+        "key": "key.origins.secondary_active",
         "continuous": false
     },
     "condition": {

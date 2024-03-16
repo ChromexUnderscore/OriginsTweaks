@@ -1,8 +1,8 @@
 {
     "type": "origins:multiple",
-    "loading_priority": 1,
     "hidden": true,
-    "no_slowdown": {
+    "loading_priority": 1,
+    "no_slowdown":{
         "type": "origins:simple"
     }
 }

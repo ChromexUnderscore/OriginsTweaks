@@ -1,0 +1,51 @@
+{
+	"type": "origins:prevent_item_use",
+	"name": "power.origins.carnivore.name",
+	"description": "power.origins.carnivore.description",
+	"item_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:vegetarian_food"
+						}
+					},
+					{
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:vegetarian_food_cinderscapes"
+						}
+					},
+					{
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:vegetarian_food_delight"
+						}
+					}
+				]
+			},
+			{
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:ignore_diet"
+						}
+					},
+					{
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:ignore_diet_delight"
+						}
+					}
+				],
+				"inverted": true
+			}
+		]
+	}
+}

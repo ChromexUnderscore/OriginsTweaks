@@ -1,18 +1,21 @@
 {
     "icon": {
-        "item": "minecraft:cobweb"
+        "item": "minecraft:spider_eye"
     },
+    "name": "origin.origins.arachnid.name",
+    "description": "origin.origins.arachnid.description",
     "order": 1,
     "impact": 1,
     "loading_priority": 1,
-    "powers": [
-        "originstweaks:spider_silk",
-        "originstweaks:climbing",
+	"powers": [
         "originstweaks:master_of_webs",
-        "origins:master_of_webs_no_slowdown",
-        "origins:arthropod",
+        "origins:master_of_webs",
+        "originstweaks:climbing",
+        "originstweaks:arthropod_appearance",
+        "originstweaks:carnivore",
+        "originstweaks:carnivore_block",
         "origins:fragile",
-        "origins:carnivore",
+        "origins:arthropod",
         "originstweaks:arachnid_sounds"
     ]
 }

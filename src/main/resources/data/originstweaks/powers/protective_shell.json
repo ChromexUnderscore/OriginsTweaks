@@ -1,40 +1,19 @@
 {
     "type": "origins:multiple",
     "name": "Protective Shell",
-    "description": "You are able to increase your defense by closing your Shells.",
+    "description": "You are able to Increase your defence by closing your Shells.",
     "badges": [
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press and hold %s to close your shells."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Taking a hit disables shell buildup for 3 seconds."
+            "text": "Press and hold your sneak key to close your shells."
         }
     ],
-    "shells": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 140,
-        "start_value": 0,
-        "hud_render": {
-            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-            "bar_index": 0,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "*:*_shells",
-                "comparison": "!=",
-                "compare_to": 0
-            }
-        }
-    },
     "build_up": {
         "type": "origins:active_self",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_shells",
+            "resource": "*:*_shields",
             "change": 1
         },
         "cooldown": 2,
@@ -47,70 +26,83 @@
         },
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_cooldown",
-            "compare_to": 0,
+            "resource": "*:*_destroyed",
+            "compare_to": 5,
             "comparison": "=="
+        }
+    },
+    "shields": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 140,
+        "start_value": 0,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 0,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_shields",
+                "comparison": "!=",
+                "compare_to": 0
+            }
         }
     },
     "run_out": {
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:change_resource",
-            "resource": "*:*_shells",
+            "resource": "*:*_shields",
             "change": -1
         },
-        "interval": 10,
+        "interval": 5,
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:sneaking",
-                    "inverted": true
-                }
-            ]
+            "type": "origins:power_active",
+            "power": "*:*_build_up",
+            "inverted": true
         }
     },
-    "hit": {
+    "break": {
         "type": "origins:self_action_when_hit",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
                     "type": "origins:change_resource",
-                    "resource": "*:*_shells",
-                    "change": -7
+                    "resource": "*:*_shields",
+                    "change": -14
                 },
                 {
-                    "type": "origins:trigger_cooldown",
-                    "power": "*:*_cooldown"
+                    "type": "origins:change_resource",
+                    "resource": "*:*_destroyed",
+                    "change": 0,
+                    "operation": "set"
                 }
             ]
         },
         "cooldown": 20
     },
-    "death":{
-        "type": "origins:action_on_death",
-        "bientity_action": {
-            "type": "origins:target_action",
-            "action": {
-                "type": "origins:change_resource",
-                "resource": "*:*_shells",
-                "change": 0,
-                "operation": "set"
-            }
+    "destroyed": {
+        "type": "origins:resource",
+        "max": 5,
+        "min": 0,
+        "start_value": 5,
+        "hud_render": {
+            "should_render": false
         }
     },
-    "cooldown": {
-        "type": "origins:cooldown",
-        "cooldown": 60,
-        "hud_render": {
-            "bar_index": 4,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "*:*_cooldown",
-                "comparison": "!=",
-                "compare_to": 0
-            }
+    "repair_destroyed":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_destroyed",
+            "change": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_destroyed",
+            "compare_to": 5,
+            "comparison": "!="
         }
     },
     "effects": {
@@ -124,13 +116,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_shells",
+                                "resource": "*:*_shields",
                                 "comparison": "!=",
                                 "compare_to": 0
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_shells",
+                                "resource": "*:*_shields",
                                 "comparison": "<=",
                                 "compare_to": 34
                             }
@@ -151,13 +143,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_shells",
+                                "resource": "*:*_shields",
                                 "comparison": ">=",
                                 "compare_to": 35
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_shells",
+                                "resource": "*:*_shields",
                                 "comparison": "<=",
                                 "compare_to": 69
                             }
@@ -178,13 +170,13 @@
                         "conditions": [
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_shells",
+                                "resource": "*:*_shields",
                                 "comparison": ">=",
                                 "compare_to": 70
                             },
                             {
                                 "type": "origins:resource",
-                                "resource": "*:*_shells",
+                                "resource": "*:*_shields",
                                 "comparison": "<=",
                                 "compare_to": 104
                             }
@@ -202,7 +194,7 @@
                 {
                     "condition": {
                         "type": "origins:resource",
-                        "resource": "*:*_shells",
+                        "resource": "*:*_shields",
                         "comparison": ">=",
                         "compare_to": 105
                     },
@@ -228,7 +220,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_shells",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 1
         }
@@ -242,7 +234,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_shells",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 35
         }
@@ -256,7 +248,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_shells",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 70
         }
@@ -270,7 +262,7 @@
         "interval": 1,
         "condition": {
             "type": "origins:resource",
-            "resource": "*:*_shells",
+            "resource": "*:*_shields",
             "comparison": "==",
             "compare_to": 105
         }

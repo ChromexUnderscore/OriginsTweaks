@@ -2,53 +2,11 @@
 
 ## [1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20.1)
 
-### [Version 1.16 [Minecraft 1.20.2]]
-
-#### [Version 1.16.0 [1.20.2 Update & Rebalance]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.0)
-
-This is a big one.
-
-+ Updated to Minecraft 1.20.2
-+ Updated to Origins >= 1.12.
-  + Since power and action types were used that have been added after Origins 1.12, this version unfortunately no longer supports older than Origins 1.12.0 or Minecraft 1.20.2.
-+ Changed dependencies to require any version of Fabric API and Pehkui, to avoid issues with future releases of origins and outdated / bugged pehkui releases.
-+ Fixed various formatting inconsistencies.
-+ Fixed various missing translation keys.
-+ Fixed some typos.
-+ Merged, moved and rearranged various powers and sub-powers to make origins descriptions less cluttered.
-+ Changed ``burn_in_daylight`` to require either or both a netherite helmet and any level of fire resistance on the helmet slot.
-+ Extended the time that ``burning_wrath`` sets the player on fire from ``10`` to ``60`` seconds.
-+ Added a missing toggle badge to Feline's ``cat_vision``.
-+ Switched the shulker inventory keybind from ``secondary_active`` to ``primary_active``.
-+ Tweaked ``zora_dash`` velocity numbers and added the power to ``swim_speed``.
-+ Fixed the missing cooldown bar for ``throw_ender_pearl`` and restricted it's usage while ``recall beacon`` is active.
-+ Added a badge to ``water_breathing`` hinting towards ways to counter this drawback.
-+ Removed power ``antigravity_power`` from shulk.
-+ Removed the weakness debuff from ``aurophobia``.
-+ Removed power ``cloud`` from merling.
-+ Removed power ``reflex`` from enderian.
-  + Added a projectile immunity to ``ender_body`` instead.
-+ Removed power ``evil_presence`` from avian.
-+ Decreased volume for feline's purring sound while asleep.
-+ Reduced divergence of ``firecharged_projectiles`` from ``2`` to ``1``.
-+ Changed ``heavens_grace`` projectile damage bonus to use ``multiply_base_multiplicative`` instead of ``multiply_total_multiplicative``.
-+ Changed ``master_of_webs`` cobweb crafting to use 2 string instead of 9, changed ``string_refill`` accordingly.
-+ Split up ``master_of_webs`` into two powers.
-  + ``spider_silk`` now contains the ``webshot`` and ``silk_resource`` (formerly ``string_resource``) sub-powers.
-  + ``webshot`` now grapples towards entities instead of trapping them.
-  + Reintroduced vanilla ``webbing`` sub-power from ``master_of_webs`` in connection to ``silk_resource``.
-+ Changed ``protective_shell`` to disable buildup for 3 seconds instead of a complicated break mechanic, and reduced shell damage taken on hit.
-+ Removed the previously added easter egg.
-+ Removed power ``seventh_sense`` from feline.
-+ Changed volume of ``spectral_wail`` to be more accurate with the range of the ability.
-+ Removed power ``thermal_lift`` from blazeborn.
-+ Removed power ``turtle_helmet`` from merling.
-
-### [Version 1.15 [Minecraft 1.20.0 / 1.20.1]]
+### [Version 1.15 [Minecraft 1.20]]
 
 #### [Version 1.15.4 [Removed Quilt Metadata & Player Suggestions]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.4)
 
-+ Removed ``quilt_mod.json`` because quilt natively supports fabric mods (and I'm too stupid to use quilt metadata).
++ Removed ``quilt_mod.json`` because quilt natively supports fabric mods (and I'm too stoopid to use quilt metadata).
   + closes #41.
 + Made changes to Merling's Dash ability.
   + Reduced base dash velocity from 2 to 1.5.

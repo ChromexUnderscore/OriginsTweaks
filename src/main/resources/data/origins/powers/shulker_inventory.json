@@ -1,11 +1,11 @@
 {
     "type": "origins:inventory",
-    "loading_priority": 1,
     "title": "container.shulker_inventory_power",
     "drop_on_death": false,
     "recoverable": true,
     "key": {
-      "key": "key.origins.primary_active",
+      "key": "key.origins.secondary_active",
       "continuous": false
-    }
+    },
+    "loading_priority": 1
   }
