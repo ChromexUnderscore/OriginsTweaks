@@ -2,8 +2,6 @@
 	"icon": {
 		"item": "minecraft:ender_pearl"
 	},
-	"name": "origin.origins.enderian.name",
-    "description": "origin.origins.enderian.description",
 	"order": 1,
 	"impact": 2,
 	"loading_priority": 1,
@@ -11,7 +9,6 @@
 		"origins:throw_ender_pearl",
 		"originstweaks:recall",
 		"originstweaks:ender_body",
-		"originstweaks:reflex",
 		"origins:water_vulnerability",
 		"origins:pumpkin_hate",
 		"origins:ender_particles",

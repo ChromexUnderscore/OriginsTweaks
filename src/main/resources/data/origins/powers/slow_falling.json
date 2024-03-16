@@ -1,6 +1,6 @@
 {
 	"type": "origins:multiple",
-	"name": "power.origins.slow_falling.name",
+	"loading_priority": 1,
 	"description": "You fall as gently to the ground as a feather would.",
 	"badges": [
 		{
@@ -9,8 +9,7 @@
 			"text": "Toggle with %s."
 		}
 	],
-	"loading_priority": 1,
-	"tweak": {
+	"modifier": {
 		"type": "origins:modify_falling",
 		"velocity": 0.01,
 		"take_fall_damage": false,

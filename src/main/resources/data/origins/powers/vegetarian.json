@@ -1,7 +1,6 @@
 {
     "type": "origins:prevent_item_use",
-    "name": "Vegetarian",
-    "description": "You can't digest any meat.",
+    "loading_priority": 1,
     "item_condition": {
         "type": "origins:and",
         "conditions": [

@@ -1,7 +1,6 @@
 {
     "type": "origins:burn",
     "loading_priority": 1,
-    "name": "power.origins.burn_in_daylight.name",
     "description": "You begin to burn in Daylight if you are not invisible or wearing some sort of Helmet.",
     "interval": 20,
     "burn_duration": 6,
@@ -16,14 +15,58 @@
                 "inverted": true
             },
             {
-                "type": "origins:equipped_item",
-                "equipment_slot": "head",
-                "item_condition": {
-                    "type": "origins:armor_value",
-                    "comparison": ">=",
-                    "compare_to": 1
-                },
-                "inverted": true
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:netherite_helmet"
+                            }
+                        },
+                        "inverted": true
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "enchantment": "minecraft:fire_protection",
+                            "comparison": "!=",
+                            "compare_to": 0
+                        },
+                        "inverted": true
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "head",
+                                "item_condition": {
+                                    "type": "origins:ingredient",
+                                    "ingredient": {
+                                        "item": "minecraft:netherite_helmet"
+                                    }
+                                },
+                                "inverted": true
+                            },
+                            {
+                                "type": "origins:equipped_item",
+                                "equipment_slot": "head",
+                                "item_condition": {
+                                    "type": "origins:enchantment",
+                                    "enchantment": "minecraft:fire_protection",
+                                    "comparison": "!=",
+                                    "compare_to": 0
+                                },
+                                "inverted": true
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }

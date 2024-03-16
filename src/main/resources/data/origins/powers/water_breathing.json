@@ -1,0 +1,11 @@
+{
+    "loading_priority": 1,
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "This effect can be countered by drinking water bottles, sitting in water cauldrons, having a water breathing potion, wearing a helmet with respiration or wearing a turtle helmet."
+        }
+    ],
+    "type": "origins:simple"
+}

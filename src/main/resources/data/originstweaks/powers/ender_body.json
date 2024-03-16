@@ -1,47 +1,60 @@
 {
-    "type": "origins:action_on_callback",
+    "type": "origins:multiple",
     "name": "Ender Body",
-    "description": "Your Body resembles that of your fellow Endermen, making you taller and able to reach further.",
-    "entity_action_added": {
-        "type": "origins:delay",
-        "ticks": 3,
-        "action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale delay set 0"
-                },
-                {
-                    "type": "origins:delay",
-                    "ticks": 1,
-                    "action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:execute_command",
-                                "command": "scale set pehkui:height 1.29"
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "scale set pehkui:model_width 1.2"
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "scale set pehkui:eye_height 0.95"
-                            },
-                            {
-                                "type": "origins:execute_command",
-                                "command": "scale set pehkui:reach 1.5"
-                            }
-                        ]
+    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further and immune to projectiles.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You are 2.5 Blocks tall and can reach 1.5x as far as a human."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "You're immune to projectiles, they bounce right off your body."
+        }
+    ],
+    "scale": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:delay",
+            "ticks": 3,
+            "action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:height 1.29"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:model_width 1.2"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:eye_height 0.95"
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "scale set pehkui:reach 1.5"
                     }
-                }
-            ]
+                ]
+            }
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale reset @s"
         }
     },
-    "entity_action_lost": {
-        "type": "origins:execute_command",
-        "command": "scale reset @s"
+    "projectile_bounce": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:projectile"
+        },
+        "modifier": {
+            "name": "minimal projectile damage",
+            "operation": "set_total",
+            "value": 0
+        }
     }
 }
