@@ -4,7 +4,17 @@
 
 ### [Version 1.16 [Minecraft 1.20.2]]
 
-#### [Version 1.16.1 [Elytrian and Enderian Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.0)
+#### [Version 1.16.2 []](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
+
+Gameplay Changes
+
+Technical Changes
+
++ Updated Mod to version 1.16.2.
+
+Fixes
+
+#### [Version 1.16.1 [Elytrian and Enderian Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.1)
 
 Gameplay Changes
 
