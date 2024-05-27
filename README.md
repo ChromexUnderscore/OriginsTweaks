@@ -14,7 +14,6 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Avian</summary>
 
 + Slow falling can be toggled.
-+ Avians can sense undead mobs within 16 blocks distance and deal more damage to them in melee combat.
 + Spectral Arrows deal increased damage when shot by an Avian.
 
 </details>
@@ -23,14 +22,12 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + The Arachnid has a webshot ability.
   + The webshot is fired using the Primary Key.
-  + Hitting terrain grapples towards it.
-  + Hitting entities catches it in cobweb.
-    + Catching entities in cobweb has a longer cooldown than grappling.
-    + This replaces the webbing in melee combat.
+  + Grapples towards whatever was hit.
+  + Webshot and close combat Webbing require Silk Resource, which regenerates within 60 seconds but can be refilled using string.
 + Arachnids are shorter and can fit into 1-block gaps when sneaking.
 + Climbing no longer slows down mining speed.
 + Fall damage is only taken after a fall greater than 30 Blocks.
-+ Arachnids can craft 9 strings into cobweb and cobweb back into 9 string.
++ Arachnids can craft 2 strings into cobweb and cobweb back into 2 string.
 + Cobwebs can be broken per hand and always return a cobweb item.
 
 </details>
@@ -47,9 +44,8 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Shulk</summary>
 
-+ Shulks can throw shulker bullets on a cooldown.
-+ They gain defense when closing their shells (sneak for a while).
-+ Closed shells will be destroyed upon taking damage and need to be closed again.
++ Shulks gain a stacking resistance effect when closing their shells by sneaking.
++ Getting hit disables closing shells for 3 seconds.
 
 </details>
 
@@ -57,7 +53,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + The Feline can break Stone 50% slower when not under the effect of strength or using a pickaxe with efficiency III or higher. Some tough stone variants can't be broken without strength or efficiency.
 + Claws deal stone-sword-level damage, but need to be resharpened using logs, wool or carpet.
-+ Prey can be sensed by felines, and their meat is more nourishing.
++ Meat from fish, chicken and rabbit is more nourishing.
 + Night Vision is togglable.
 
 </details>
@@ -66,36 +62,33 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + Height, eye height and reach are increased.
 + Enderians are able to set a teleportation point to travel back to.
-+ They can dodge any Projectile on a cooldown when sneaking.
-+ Teleporting grants a 5 second invincibility widow against suffocation.
++ They are immune against Projectiles, they bounce right off.
++ Teleporting via pearl grants a 5 second invincibility window against suffocation.
 
 </details> 
 
 <details><summary>Merling</summary>
 
-+ Merlings can craft tridents.
++ Merlings can [craft tridents](https://cdn.modrinth.com/data/FRBxogjw/images/2d0819e26f5afce6716b9584f21c022b9175bc86.png).
 + Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
 + Merlings can dash underwater while swimming on a cooldown.
-+ They can also summon a raincloud to keep them hydrated for some time.
 
 </details>
 
 <details><summary>Blazeborn</summary>
 
 + Burning Wrath has been reworked.
-  + Pressing the Primary Key catches the Blazeborn on Fire.
-  + Can hover for a short while on fire.
+  + Pressing the Primary Key catches the Blazeborn on Fire for 1 minute.
   + Can light Campfires, Fuel Furnei and Brewing stands when on fire.
-+ Blazeborns can shoot 3 Fireballs on a Cooldown.
++ Blazeborns can shoot a burst of 3 Fireballs.
 
 </details>
 
 <details><summary>Phantom</summary>
 
-+ Golden items and blocks have negative effects on phantoms.
++ Golden items and blocks have a repelling effect on phantoms.
   + Can't eat golden food.
   + Can't wear golden Armor.
-  + Golden blocks inflicts the weakness effect.
   + Can't phase through pure golden blocks.
 + Phantoms can highlight any entity in a 32 block radius for 10 seconds.
 
