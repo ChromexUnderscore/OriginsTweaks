@@ -11,12 +11,12 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
+            "text": "You cannot wear Golden Armor."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot wear Golden Armor."
+            "text": "You are unable to phase through Gold Blocks, Raw Gold Blocks and Gilded Blackstone."
         }
     ],
     "gold_diet": {

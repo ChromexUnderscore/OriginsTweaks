@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Ender Body",
-    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further and immune to projectiles.",
+    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further and dodge smaller projectiles while taking minimal damage.",
     "badges": [
         {
             "type": "origins:tooltip",
@@ -46,15 +46,78 @@
             "command": "scale reset @s"
         }
     },
-    "projectile_bounce": {
+    "projectile_dodge": {
         "type": "origins:modify_damage_taken",
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:random_teleport",
+                    "area_width": 8,
+                    "area_height": 8,
+                    "landing_block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:bedrock"
+                            },
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:air"
+                            }
+                        ],
+                        "inverted": true
+                    },
+                    "success_action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:spawn_particles",
+                                "particle": "minecraft:portal",
+                                "count": 100,
+                                "speed": 0.5,
+                                "offset_y": 1
+                            },
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:entity.enderman.teleport",
+                                "category": "players"
+                            },
+                            {
+                                "type": "origins:trigger_cooldown",
+                                "power": "*:*_dodge_cooldown"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
         "damage_condition": {
-            "type": "origins:projectile"
+            "type": "origins:projectile",
+            "projectile_condition": {
+                "type": "origins:in_tag",
+                "tag": "originstweaks:dodge_projectiles"
+            }
         },
         "modifier": {
             "name": "minimal projectile damage",
             "operation": "set_total",
             "value": 0
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_dodge_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "dodge_cooldown":{
+        "type": "origins:cooldown",
+        "cooldown": 100,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 2
         }
     }
 }

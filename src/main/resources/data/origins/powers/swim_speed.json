@@ -11,14 +11,14 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "This Power stacks with Depth Strider."
+            "text": "This ability stacks with Depth Strider."
         }
     ],
     "speed": {
         "type": "origins:attribute",
         "modifier": {
             "attribute": "additionalentityattributes:water_speed",
-            "name": "Additional swim speed",
+            "name": "merling swim speed",
             "value": 1.5,
             "operation": "multiply_base"
         }

@@ -45,7 +45,7 @@
             "projectile": "minecraft:trident"
         },
         "modifier": {
-            "name": "merling thrown trident perk",
+            "name": "merling projectile trident",
             "operation": "multiply_total_multiplicative",
             "value": 0.5
         },
@@ -57,7 +57,7 @@
     "melee": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
-            "name": "merling trident perk melee",
+            "name": "merling melee trident",
             "operation": "multiply_total_multiplicative",
             "value": 0.5
         },

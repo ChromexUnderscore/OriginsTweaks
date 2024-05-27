@@ -1,61 +1,6 @@
 {
     "type": "origins:multiple",
     "hidden": true,
-    "hurt_death": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:health",
-                "comparison": ">",
-                "compare_to": 0
-            },
-            "if_action": {
-                "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.parrot.hurt player @a ~ ~ ~ 1 1.2",
-                "permission_level": 4
-            },
-            "else_action": {
-                "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.parrot.death player @a ~ ~ ~ 1 1",
-                "permission_level": 4
-            }
-        },
-        "cooldown": 1
-    },
-    "spawn": {
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "type": "origins:sneaking",
-                        "inverted": true
-                    },
-                    {
-                        "type": "origins:gamemode",
-                        "gamemode": "spectator",
-                        "inverted": true
-                    },
-                    {
-                        "type": "origins:status_effect",
-                        "effect": "minecraft:invisibility",
-                        "inverted": true
-                    }
-                ]
-            },
-            "if_action": {
-                "type": "origins:delay",
-                "ticks": 5,
-                "action": {
-                    "type": "origins:execute_command",
-                    "command": "playsound minecraft:entity.parrot.ambient player @a ~ ~ ~ 1 1"
-                }
-            }
-        }
-    },
     "idle": {
         "type": "origins:action_over_time",
         "interval": 100,
@@ -71,8 +16,8 @@
                             "compare_to": 4
                         },
                         "action": {
-                            "type": "origins:execute_command",
-                            "command": "playsound minecraft:entity.parrot.ambient player @a ~ ~ ~ 1 1"
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.parrot.ambient"
                         }
                     },
                     {
@@ -82,8 +27,9 @@
                             "compare_to": 4
                         },
                         "action": {
-                            "type": "origins:execute_command",
-                            "command": "playsound minecraft:entity.avian.ambient player @a ~ ~ ~ 1 0.8"
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.parrot.ambient",
+                            "pitch": 0.8
                         }
                     }
                 ]
@@ -110,34 +56,25 @@
             ]
         }
     },
-    "parrot":{
-        "type": "origins:action_over_time",
-        "interval": 100,
+    "hurt_death": {
+        "type": "origins:self_action_when_hit",
         "entity_action": {
-            "type": "origins:chance",
-            "chance": 0.1,
-            "action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:health",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            "if_action": {
                 "type": "origins:play_sound",
-                "sound": "minecraft:entity.parrot.ambient",
-                "pitch": 1.5
+                "sound": "minecraft:entity.parrot.hurt"
+            },
+            "else_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.parrot.death"
             }
+
         },
-        "condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:command",
-                    "command": "execute if entity @s[nbt={ShoulderEntityLeft:{id:\"minecraft:parrot\"}}]",
-                    "compare_to": 1,
-                    "comparison": "=="
-                },
-                {
-                    "type": "origins:command",
-                    "command": "execute if entity @s[nbt={ShoulderEntityRight:{id:\"minecraft:parrot\"}}]",
-                    "compare_to": 1,
-                    "comparison": "=="
-                }
-            ]
-        }
+        "cooldown": 1
     }
 }

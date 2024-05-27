@@ -1,7 +1,7 @@
 {
     "type": "origins:burn",
     "loading_priority": 1,
-    "description": "You begin to burn in Daylight if you are not invisible or wearing some sort of Helmet.",
+    "description": "You begin to burn in daylight if you are not invisible or wearing some sort of helmet.",
     "interval": 20,
     "burn_duration": 6,
     "condition": {

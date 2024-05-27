@@ -1,7 +1,6 @@
 {
     "type": "origins:multiple",
     "loading_priority": 1,
-    "name": "Arthopod",
     "description": "Your body is based on Arthopods, making you shorter and able to feather off your fall.",
     "badges": [
         {
@@ -12,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You only take falldamage after a fall of more than 30 Blocks."
+            "text": "You only take damage after a fall of more than 30 Blocks."
         },
         {
             "type": "origins:tooltip",

@@ -4,6 +4,36 @@
 
 ### [Version 1.16 [Minecraft 1.20.2]]
 
+#### [Version 1.16.1 [Elytrian and Enderian Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.0)
+
+Gameplay Changes
+
++ Reworked the removed Reflex mechanic; Enderiand now dodge small projectiles in a 5 second cooldown while taking no damage. Added to ``ender_body``.
+
++ Reworked ``gift_of_the_skies``. Gliding no longer drains stamina, but restores it slowly. Increased stamina cost of launch and ascend. Armor greater than 12 will now prevent launch and ascend instead of increasing stamina cost. Separated launch from ascend and increased cooldown to 10 seconds for launch.
+
+Technical Changes
+
++ Updated Mod to Version 1.16.1
+
++ Dependencies changed to require any version of Minecraft 1.20.x and Origins 1.12.x.
+
++ Removed custom resource indicator for Arachnid's climbing ability, used an community one instead.
+
++ Removed ``shulker_inventory`` power override, since it changed to be indentical to base origins again.
+
++ Removed origins spawn and parrot sound effects.
+
++ Tweaked some conditions to more be more accurate.
+
++ Added a built-in Resourcepack for replacing Elytrian Wings with the vanilla elytra texture, WIP...
+
+Fixes
+
++ Removed ``turtle_helmet`` power from merling since it was removed in the last update.
+
++ Fixed more typos and rephrased some descriptions.
+
 #### [Version 1.16.0 [1.20.2 Update & Rebalance]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.0)
 
 This is a big one.
