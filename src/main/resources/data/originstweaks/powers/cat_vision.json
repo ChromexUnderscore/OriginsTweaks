@@ -1,5 +1,7 @@
 {
     "type": "origins:toggle_night_vision",
+    "name": "Nocturnal",
+    "description": "You can see in the dark.",
     "badges": [
         {
             "type": "origins:keybind",
@@ -7,16 +9,10 @@
             "text": "Toggle with %s."
         }
     ],
-    "loading_priority": 1,
     "strength": 0.4,
     "active_by_default": true,
     "key": {
         "key": "key.origins.primary_active",
         "continuous": false
-    },
-    "condition": {
-        "type": "origins:submerged_in",
-        "fluid": "minecraft:water",
-        "inverted": true
     }
 }

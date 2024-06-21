@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Ender Body",
-    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further and dodge smaller projectiles while taking minimal damage.",
+    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further and dodge smaller projectiles.",
     "badges": [
         {
             "type": "origins:tooltip",
@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You're immune to projectiles, they bounce right off your body."
+            "text": "You can dodge smaller projectiles on a 5 second cooldown."
         }
     ],
     "scale": {

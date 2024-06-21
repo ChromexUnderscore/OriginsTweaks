@@ -1,17 +1,17 @@
 {
     "type": "origins:multiple",
-    "loading_priority": 1,
+    "name": "Burning Wrath",
     "description": "For centuries, the Blazeborn have relied on the power of fire to assist them in both combat and survival.",
     "badges": [
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Set yourself ablaze using %s."
+            "text": "Set yourself ablaze for 30 seconds using %s."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "When on Fire, you deal 25% more damage."
+            "text": "When on Fire, you deal 125% base damage."
         },
         {
             "type": "origins:tooltip",
@@ -26,7 +26,7 @@
             "actions": [
                 {
                     "type": "origins:set_on_fire",
-                    "duration": 60
+                    "duration": 30
                 },
                 {
                     "type": "origins:play_sound",
@@ -35,7 +35,7 @@
                 }
             ]
         },
-        "cooldown": 300,
+        "cooldown": 1200,
         "key": {
             "key": "key.origins.primary_active"
         },
@@ -48,7 +48,7 @@
         "type": "origins:modify_damage_dealt",
         "modifier": {
             "name": "Additional damage while on fire",
-            "operation": "multiply_base_multiplicative",
+            "operation": "multiply_base_additive",
             "value": 0.25
         },
         "condition": {

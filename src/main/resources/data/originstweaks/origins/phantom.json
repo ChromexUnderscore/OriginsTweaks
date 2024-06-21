@@ -1,4 +1,6 @@
 {
+    "name": "Phantom",
+    "description": "As half-human and half-phantom beings, these creatures can switch between a Phantom and a normal form.",
     "icon": {
         "item": "minecraft:phantom_membrane"
     },
@@ -7,10 +9,10 @@
     "loading_priority": 1,
     "powers": [
         "origins:phantomize",
-        "origins:phasing",
+        "originstweaks:phasing",
         "originstweaks:spectral_wail",
-        "originstweaks:aurophobia",
-        "origins:burn_in_daylight",
+        "originstweaks:soulbound",
+        "originstweaks:burn_in_daylight",
         "origins:hunger_over_time",
         "origins:translucent",
         "origins:phantomize_overlay",

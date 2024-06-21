@@ -8,6 +8,34 @@
 
 Gameplay Changes
 
++ Merlings now respawn in a deep ocean biome if available.
+
++ Phantoms now only require any level of fire protection on the helmet slot in order to prevent burning.
+
++ Burning Wrath cooldown was increased to 60 seconds, and the burn time was reduced to 30 seconds.
+
++ Carnivore, Vegetarian and Natural Hunter now use ``Origins: Dietary Delight`` tagging to extend mod compatibility.
+
++ Feline's "Nocturnal" power is no longer disabled when submerged in water.
+
++ Shulk's "Protective Shell" ability moved to "Sturdy Skin".
+  + Base armor changed to 3.
+  + Up to 7 bonus armor can be gained by pressing sneak for a while, for a total of 10 (5 chestplates)
+  + Armor does not run out over time, but taking a hit over 3 hearts removes 1 bonus armor point and disables buildup for 30 seconds.
+
++ Phasing vision increased from 10 to 16.
+
++ "Aurophobia" renamed to "Soulbound"
+  + Added duration stacking saturation and regeneration effects when near soul fire or in a soulsand valley biome.
+
++ Added a dolphins grace effect for 3 seconds upon activating the merling dash.
+
++ Changed "Teleportaton" ability to properly prevent suffocation after pearling.
+
++ Made Changes to "Gift of the Skies".
+  + Launch and ascend now allow using up all remaining stamina points.
+  + Prevent stamina regeneration if it hits 0 while gliding.
+
 Technical Changes
 
 + Updated Mod to version 1.16.2.
@@ -17,6 +45,12 @@ Technical Changes
 + Now uses [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to standardize dietary tags and add mod compatibility.
 
 + Improved various tags not replaced by Dietary Delights.
+
++ Added an options Layer to Elytrian to pick texture and rendering of the Elytra.
+
++ Rebased all changed powers previously in Origins to OriginsTweaks to allow optional usage of vanilla origins.
+
++ Added an option layer prior to the Origins Layer to choose wether OriginsTweaks or Origins Mod Origins are pickable for a single player.
 
 Fixes
 

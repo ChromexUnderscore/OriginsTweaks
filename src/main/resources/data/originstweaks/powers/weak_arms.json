@@ -1,5 +1,6 @@
 {
     "type": "origins:multiple",
+    "name": "Weak Arms",
     "description": "Your arms wont allow mining stone as quickly as others would, and some types of stone are too tough to be mined at all.",
     "badges": [
         {

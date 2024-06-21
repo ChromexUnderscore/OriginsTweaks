@@ -1,4 +1,6 @@
 {
+    "name": "Feline",
+    "description": "With their cat-like appearance, the Feline scare creepers away. With the dexterity of cats, they always land safely on their feet.",
     "icon": {
         "item": "minecraft:salmon"
     },
@@ -11,9 +13,9 @@
         "origins:sprint_jump",
         "origins:velvet_paws",
         "origins:nine_lives",
-        "origins:weak_arms",
+        "originstweaks:weak_arms",
         "origins:scare_creepers",
-        "origins:cat_vision",
+        "originstweaks:cat_vision",
         "originstweaks:feline_sounds"
     ]
 }

@@ -1,6 +1,6 @@
 {
 	"type": "origins:multiple",
-	"loading_priority": 1,
+	"name": "Featherweight",
 	"description": "You fall as gently to the ground as a feather would.",
 	"badges": [
 		{
@@ -15,7 +15,7 @@
 		"take_fall_damage": false,
 		"condition": {
 			"type": "origins:power_active",
-			"power": "origins:slow_falling_toggle"
+			"power": "originstweaks:slow_falling_toggle"
 		}
 	},
 	"toggle": {
@@ -35,7 +35,7 @@
 			"bar_index": 23,
 			"condition": {
 				"type": "origins:power_active",
-				"power": "origins:slow_falling_toggle"
+				"power": "originstweaks:slow_falling_toggle"
 			}
 		}
 	}

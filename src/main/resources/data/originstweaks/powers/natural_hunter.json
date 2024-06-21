@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Natural Hunter",
-    "description": "Felines are natural predators; their claws can be sharpened on wood or fabrics and smaller animals are more nourishing.",
+    "description": "Felines are natural predators; their claws can be sharpened on wood or fabrics to be more lethal in combat and fish is more nourishing.",
     "badges": [
         {
             "type": "origins:tooltip",
@@ -11,12 +11,12 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Use Logs, Wool or Carpet to resharpen your Claws."
+            "text": "Use logs, wool, carpets or banners to resharpen your Claws."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Felines prey include fish, rabbit and chicken. Foods of this type provide 3 extra hunger and 2 extra saturation points."
+            "text": "Food made from fish provide 3 extra hunger and 2 extra saturation points."
         }
     ],
     "claws_extra_damage": {
@@ -100,33 +100,8 @@
             ]
         },
         "block_condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:claws_wood"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:claws_wood_nether"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:claws_wood_wild"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:claws_wood_trails"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:claws_wood_terrestria"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:claws_wood_cinderscapes"
-                }
-            ]
+            "type": "origins:in_tag",
+            "tag": "originstweaks:wood"
         },
         "item_condition": {
             "type": "origins:empty"
@@ -162,7 +137,7 @@
         },
         "block_condition": {
             "type": "origins:in_tag",
-            "tag": "originstweaks:claws_fabric"
+            "tag": "originstweaks:fabric"
         },
         "item_condition": {
             "type": "origins:empty"
@@ -182,21 +157,10 @@
     "food_modifier": {
         "type": "origins:modify_food",
         "item_condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "tag": "originstweaks:feline_food"
-                    }
-                },
-                {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "tag": "originstweaks:feline_food_delight"
-                    }
-                }
-            ]
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "origins:pescatarian"
+            }
         },
         "food_modifier": {
             "name": "feline hunger points",
@@ -213,25 +177,24 @@
     "food_tooltip": {
         "type": "origins:tooltip",
         "text": {
-            "text": "Extra Nutrition (Natural Hunter)",
-            "color": "yellow"
-        },
-        "item_condition": {
-            "type": "origins:or",
-            "conditions": [
+            "text": "Nutritious (",
+            "color": "gray",
+            "extra": [
                 {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "tag": "originstweaks:feline_food"
-                    }
+                    "text": "Natural Hunter",
+                    "color": "yellow"
                 },
                 {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "tag": "originstweaks:feline_food_delight"
-                    }
+                    "text": ")",
+                    "color": "gray"
                 }
             ]
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "origins:pescatarian"
+            }
         }
     }
 }

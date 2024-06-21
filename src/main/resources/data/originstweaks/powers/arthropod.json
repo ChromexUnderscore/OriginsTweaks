@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
-    "loading_priority": 1,
-    "description": "Your body is based on Arthopods, making you shorter and able to feather off your fall.",
+    "name": "Arthopod",
+    "description": "You are an Arthopod, making you shorter and able to feather off your fall.",
     "badges": [
         {
             "type": "origins:tooltip",

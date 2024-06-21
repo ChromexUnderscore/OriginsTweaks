@@ -1,70 +1,70 @@
 {
-  "type": "origins:multiple",
-  "hidden": true,
-  "merling": {
-    "type": "origins:action_over_time",
-    "interval": 3,
-    "entity_action": {
-      "type": "origins:gain_air",
-      "value": 6
-    },
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:in_block",
-          "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:water_cauldron"
-          }
-        },
-        {
-          "type": "origins:origin",
-          "origin": "origins:merling",
-          "layer": "origins:origin"
-        }
-      ]
-    }
-  },
-  "blazeborn_enderian": {
-    "type": "origins:damage_over_time",
-    "interval": 20,
-    "onset_delay": 1,
-    "damage": 2,
-    "damage_easy": 1,
-    "damage_source": {
-      "name": "hurt_by_water",
-      "bypasses_armor": true,
-      "unblockable": true
-    },
-    "protection_enchantment": "origins:water_protection",
-    "protection_effectiveness": 1,
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:or",
-          "conditions": [
-            {
-              "type": "origins:origin",
-              "origin": "origins:enderian",
-              "layer": "origins:origin"
-            },
-            {
-              "type": "origins:origin",
-              "origin": "origins:blazeborn",
-              "layer": "origins:origin"
-            }
-          ]
-        },
-        {
-          "type": "origins:in_block",
-          "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:water_cauldron"
-          }
-        }
-      ]
-    }
-  }
+	"type": "origins:multiple",
+	"hidden": true,
+	"merling": {
+		"type": "origins:action_over_time",
+		"interval": 3,
+		"entity_action": {
+			"type": "origins:gain_air",
+			"value": 6
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:water_cauldron"
+					}
+				},
+				{
+					"type": "origins:origin",
+					"origin": "originstweaks:merling",
+					"layer": "origins:origin"
+				}
+			]
+		}
+	},
+	"blazeborn_enderian": {
+		"type": "origins:damage_over_time",
+		"interval": 20,
+		"onset_delay": 1,
+		"damage": 2,
+		"damage_easy": 1,
+		"damage_source": {
+			"name": "hurt_by_water",
+			"bypasses_armor": true,
+			"unblockable": true
+		},
+		"protection_enchantment": "origins:water_protection",
+		"protection_effectiveness": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:origin",
+							"origin": "originstweaks:enderian",
+							"layer": "origins:origin"
+						},
+						{
+							"type": "origins:origin",
+							"origin": "originstweaks:blazeborn",
+							"layer": "origins:origin"
+						}
+					]
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:water_cauldron"
+					}
+				}
+			]
+		}
+	}
 }

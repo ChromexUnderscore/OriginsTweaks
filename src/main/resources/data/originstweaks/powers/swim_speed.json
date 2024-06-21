@@ -1,6 +1,6 @@
 {
     "type": "origins:multiple",
-    "loading_priority": 1,
+    "name": "Fins",
     "description": "Your underwater speed is increased, and you can peform a dash on a 5 second cooldown.",
     "badges": [
         {
@@ -42,7 +42,16 @@
                             {
                                 "type": "origins:play_sound",
                                 "category": "players",
-                                "sound": "minecraft:item.trident.riptide_1"
+                                "sound": "minecraft:ambient.underwater.enter"
+                            },
+                            {
+                                "type": "origins:apply_effect",
+                                "effect": {
+                                    "effect": "minecraft:dolphins_grace",
+                                    "duration": 60,
+                                    "show_icon": false,
+                                    "show_particles": false
+                                }
                             }
                         ]
                     },
@@ -68,7 +77,7 @@
                             {
                                 "type": "origins:play_sound",
                                 "category": "players",
-                                "sound": "minecraft:item.trident.riptide_1"
+                                "sound": "minecraft:ambient.underwater.enter"
                             }
                         ]
                     },
@@ -94,7 +103,7 @@
                             {
                                 "type": "origins:play_sound",
                                 "category": "players",
-                                "sound": "minecraft:item.trident.riptide_2"
+                                "sound": "minecraft:ambient.underwater.enter"
                             }
                         ]
                     },
@@ -120,7 +129,7 @@
                             {
                                 "type": "origins:play_sound",
                                 "category": "players",
-                                "sound": "minecraft:item.trident.riptide_3"
+                                "sound": "minecraft:ambient.underwater.enter"
                             }
                         ]
                     },
