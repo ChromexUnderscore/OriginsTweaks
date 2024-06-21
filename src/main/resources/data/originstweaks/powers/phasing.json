@@ -1,6 +1,7 @@
 {
     "type": "origins:phasing",
-    "name": "While phantomized, you can walk through solid material, except Obsidian and solid Gold Blocks.",
+    "name": "Phasing",
+    "description": "While phantomized, you can walk through solid material, except Obsidian and solid Gold Blocks.",
     "blacklist": true,
     "render_type": "blindness",
     "view_distance": 16,
