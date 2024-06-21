@@ -4,7 +4,7 @@
 
 ### [Version 1.16 [Minecraft 1.20.2]]
 
-#### [Version 1.16.2 []](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
+#### [Version 1.16.2 [Dietary Delight Compat and OriginsTweaks Opt-In]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
 
 Gameplay Changes
 
@@ -51,8 +51,6 @@ Technical Changes
 + Rebased all changed powers previously in Origins to OriginsTweaks to allow optional usage of vanilla origins.
 
 + Added an option layer prior to the Origins Layer to choose wether OriginsTweaks or Origins Mod Origins are pickable for a single player.
-
-Fixes
 
 #### [Version 1.16.1 [Elytrian and Enderian Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.1)
 
