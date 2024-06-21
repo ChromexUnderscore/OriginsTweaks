@@ -1,0 +1,191 @@
+{
+    "type": "origins:multiple",
+    "name": "Burning Wrath",
+    "description": "For centuries, the Blazeborn have relied on the power of fire to assist them in both combat and survival.",
+    "badges": [
+        {
+            "type": "origins:keybind",
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Set yourself ablaze for 30 seconds using %s."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/arrow_up.png",
+            "text": "When on Fire, you deal 125% base damage."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You can use your fire to Light Campfires or Fuel Furnei and Brewing Stands."
+        }
+    ],
+    "set_on_fire": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:set_on_fire",
+                    "duration": 30
+                },
+                {
+                    "type": "origins:play_sound",
+                    "category": "players",
+                    "sound": "minecraft:item.flintandsteel.use"
+                }
+            ]
+        },
+        "cooldown": 1200,
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 15
+        }
+    },
+    "damage_bonus_on_fire": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "Additional damage while on fire",
+            "operation": "multiply_base_additive",
+            "value": 0.25
+        },
+        "condition": {
+            "type": "origins:on_fire"
+        }
+    },
+    "light_campfires": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_block_state",
+                    "property": "lit",
+                    "value": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_tag",
+                    "tag": "minecraft:campfires"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": false
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:on_fire"
+        }
+    },
+    "fuel_furnei": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_block_state",
+                    "property": "lit",
+                    "value": true
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "data merge block ~ ~ ~ {BurnTime:2400}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:block",
+                            "block": "minecraft:furnace"
+                        },
+                        {
+                            "type": "origins:block",
+                            "block": "minecraft:smoker"
+                        },
+                        {
+                            "type": "origins:block",
+                            "block": "minecraft:blast_furnace"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "lit",
+                    "value": false
+                },
+                {
+                    "type": "origins:nbt",
+                    "nbt": "{BurnTime:0s}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:on_fire"
+        }
+    },
+    "fuel_brewing_stand": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "data merge block ~ ~ ~ {Fuel:20}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~ ~ 0.25 0.25 0.25 0.01 25"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:item.firecharge.use ambient @a ~ ~ ~ 1 0.5"
+                }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:brewing_stand"
+                },
+                {
+                    "type": "origins:nbt",
+                    "nbt": "{Fuel:0b}"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:on_fire"
+        }
+    }
+}

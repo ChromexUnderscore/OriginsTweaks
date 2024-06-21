@@ -1,0 +1,29 @@
+{
+    "type": "origins:burn",
+    "name": "Photoallergic",
+    "description": "You begin to burn in daylight if you are not invisible or wearing a helmet enchanted with fire protection.",
+    "interval": 20,
+    "burn_duration": 6,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sun"
+            },
+            {
+                "type": "origins:invisible",
+                "inverted": true
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:enchantment",
+                    "enchantment": "minecraft:fire_protection",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Enderian",
+	"description": "Born as children of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.",
+	"icon": {
+		"item": "minecraft:ender_pearl"
+	},
+	"order": 1,
+	"impact": 2,
+	"loading_priority": 1,
+	"powers": [
+		"originstweaks:throw_ender_pearl",
+		"originstweaks:ender_body",
+		"origins:water_vulnerability",
+		"origins:pumpkin_hate",
+		"origins:ender_particles",
+		"origins:damage_from_potions",
+		"originstweaks:water_cauldron",
+        "originstweaks:enderian_sounds"
+	]
+}

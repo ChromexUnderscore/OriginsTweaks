@@ -1,0 +1,20 @@
+{
+    "name": "Arachnid",
+    "description": "Their climbing abilities and the ability to trap their foes in spiderweb make the Arachnid perfect hunters.",
+    "icon": {
+        "item": "minecraft:cobweb"
+    },
+    "order": 1,
+    "impact": 1,
+    "loading_priority": 1,
+    "powers": [
+        "originstweaks:spider_silk",
+        "originstweaks:climbing",
+        "originstweaks:master_of_webs",
+        "origins:master_of_webs_no_slowdown",
+        "originstweaks:arthropod",
+        "origins:fragile",
+        "origins:carnivore",
+        "originstweaks:arachnid_sounds"
+    ]
+}

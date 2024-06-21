@@ -1,0 +1,23 @@
+{
+    "name": "Merling",
+    "description": "These natural inhabitants of the ocean are not used to being out of the water for too long.",
+    "icon": {
+        "item": "minecraft:trident"
+    },
+    "order": 0,
+    "impact": 3,
+    "loading_priority": 1,
+    "powers": [
+        "origins:water_breathing",
+        "originstweaks:aquadynamic",
+        "originstweaks:swim_speed",
+        "origins:water_vision",
+        "origins:aqua_affinity",
+        "origins:like_water",
+        "originstweaks:aquatic",
+        "origins:conduit_power_on_land",
+        "originstweaks:air_from_potions",
+        "originstweaks:water_cauldron",
+        "originstweaks:merling_sounds"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Vanilla Elytra",
+    "description": "Your wings will render as the vanilla elytra, this will enable the use of elytra texturepacks and the display of cape patterns.",
+    "icon": "minecraft:elytra",
+    "impact": 0,
+    "order": 0,
+    "powers": []
+}

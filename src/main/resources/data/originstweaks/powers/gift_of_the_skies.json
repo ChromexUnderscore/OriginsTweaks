@@ -24,10 +24,33 @@
             "text": "It's too dangerous to use fireworks while gliding."
         }
     ],
-    "wings": {
+    "vanilla_wings": {
         "type": "origins:elytra_flight",
         "render_elytra": true,
-        "texture_location": "originstweaks:textures/entity/wings.png"
+        "condition": {
+            "type": "origins:origin",
+            "layer": "originstweaks:elytrian_options",
+            "origin": "originstweaks:vanilla_elytra"
+        }
+    },
+    "custom_wings": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true,
+        "texture_location": "originstweaks:textures/entity/wings.png",
+        "condition": {
+            "type": "origins:origin",
+            "layer": "originstweaks:elytrian_options",
+            "origin": "originstweaks:custom_elytra"
+        }
+    },
+    "no_wings": {
+        "type": "origins:elytra_flight",
+        "render_elytra": false,
+        "condition": {
+            "type": "origins:origin",
+            "layer": "originstweaks:elytrian_options",
+            "origin": "originstweaks:no_elytra"
+        }
     },
     "launch": {
         "type": "origins:active_self",
@@ -156,8 +179,8 @@
                             {
                                 "type": "origins:resource",
                                 "resource": "*:*_stamina",
-                                "comparison": ">=",
-                                "compare_to": 30
+                                "comparison": "!=",
+                                "compare_to": 0
                             }
                         ]
                     },
@@ -198,8 +221,8 @@
                             {
                                 "type": "origins:resource",
                                 "resource": "*:*_stamina",
-                                "comparison": "<",
-                                "compare_to": 30
+                                "comparison": "==",
+                                "compare_to": 0
                             }
                         ]
                     },
@@ -310,6 +333,18 @@
                             },
                             {
                                 "type": "origins:fall_flying"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_stamina",
+                                "comparison": "!=",
+                                "compare_to": 600
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_stamina",
+                                "comparison": "!=",
+                                "compare_to": 0
                             }
                         ]
                     }

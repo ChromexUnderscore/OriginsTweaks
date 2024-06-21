@@ -1,0 +1,15 @@
+{
+    "type": "origins:multiple",
+    "name": "Aquatic",
+    "description": "Your natural spawnpoint is in the ocean, and you receive more damage from impaling.",
+    "entity_group": {
+        "type": "origins:entity_group",
+        "group": "aquatic",
+        "hidden": true
+    },
+    "spawn": {
+        "type": "origins:modify_player_spawn",
+        "biome": "minecraft:deep_ocean",
+        "dimension": "minecraft:overworld"
+    }
+}
