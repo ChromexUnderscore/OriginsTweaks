@@ -1,0 +1,21 @@
+{
+    "gui_title": {
+        "choose_origin": "Choose your Elytra.",
+        "view_origin": "This is your chosen Elytra."
+    },
+    "order": 2,
+    "origins": [
+        {
+            "origins": [
+                "originstweaks:vanilla_elytra",
+                "originstweaks:custom_elytra",
+                "originstweaks:no_elytra"
+            ],
+            "condition": {
+                "type": "origins:origin",
+                "layer": "origins:origin",
+                "origin": "origins:elytrian"
+            }
+        }
+    ]
+}

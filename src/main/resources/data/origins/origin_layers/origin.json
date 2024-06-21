@@ -1,0 +1,52 @@
+{
+    "replace": true,
+    "loading_priority": 1,
+    "order": 1,
+    "enabled": true,
+    "origins": [
+        {
+            "origins": [
+                "originstweaks:arachnid",
+                "originstweaks:avian",
+                "originstweaks:blazeborn",
+                "originstweaks:elytrian",
+                "originstweaks:enderian",
+                "originstweaks:feline",
+                "origins:human",
+                "originstweaks:merling",
+                "originstweaks:phantom",
+                "originstweaks:shulk"
+            ],
+            "condition": {
+                "type": "origins:origin",
+                "layer": "originstweaks:opt_in",
+                "origin": "originstweaks:originstweaks_option"
+            }
+        },
+        {
+            "origins": [
+                "origins:arachnid",
+                "origins:avian",
+                "origins:blazeborn",
+                "origins:elytrian",
+                "origins:enderian",
+                "origins:feline",
+                "origins:human",
+                "origins:merling",
+                "origins:phantom",
+                "origins:shulk"
+            ],
+            "condition": {
+                "type": "origins:origin",
+                "layer": "originstweaks:opt_in",
+                "origin": "originstweaks:origins_option"
+            }
+        }
+    ],
+    "allow_random": true,
+    "exclude_random": [
+        "origins:human"
+    ],
+    "allow_random_unchoosable": false,
+    "hidden": false
+}

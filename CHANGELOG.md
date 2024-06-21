@@ -12,6 +12,12 @@ Technical Changes
 
 + Updated Mod to version 1.16.2.
 
++ Updated Gradle files to match latest fabric example mod.
+
++ Now uses [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to standardize dietary tags and add mod compatibility.
+
++ Improved various tags not replaced by Dietary Delights.
+
 Fixes
 
 #### [Version 1.16.1 [Elytrian and Enderian Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.1)
