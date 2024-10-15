@@ -1,8 +1,0 @@
-{
-    "name": "No Elytra",
-    "description": "No elytra will be rendered. Useful when using a mod that adds a custom model for elytras; or you just want to fly wingless.",
-    "icon": "minecraft:barrier",
-    "impact": 0,
-    "order": 2,
-    "powers": []
-}

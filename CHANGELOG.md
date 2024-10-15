@@ -4,6 +4,16 @@
 
 ### [Version 1.16 [Minecraft 1.20.2]]
 
+#### [Version 1.16.3 [Hotfix Elytrian Wings]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.3)
+
+Gameplay Changes
+
++ Fixed a bug with the Base Elytrian having the Wing selector instead of the OriginsTweaks Elytrian.
+
+Technical Changes
+
++ Bumped version to 1.16.3.
++ Changed dependencies of ``minecraft`` and ``origins`` to allow versions greater than the current minor version. Using OriginsTweaks in combination with any alpha build of the Origins Mod will most likely break stuff. Please don't report bugs if you're not using the recommended version of Origins.
 #### [Version 1.16.2 [Dietary Delight Compat and OriginsTweaks Opt-In]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
 
 Gameplay Changes
@@ -116,7 +126,6 @@ This is a big one.
   + ``webshot`` now grapples towards entities instead of trapping them.
   + Reintroduced vanilla ``webbing`` sub-power from ``master_of_webs`` in connection to ``silk_resource``.
 + Changed ``protective_shell`` to disable buildup for 3 seconds instead of a complicated break mechanic, and reduced shell damage taken on hit.
-+ Removed the previously added easter egg.
 + Removed power ``seventh_sense`` from feline.
 + Changed volume of ``spectral_wail`` to be more accurate with the range of the ability.
 + Removed power ``thermal_lift`` from blazeborn.
@@ -131,7 +140,6 @@ This is a big one.
 + Made changes to Merling's Dash ability.
   + Reduced base dash velocity from 2 to 1.5.
   + The dash now increases velocity by 0.5 per level of depth strider.
-+ Added an easteregg.
 
 #### [Version 1.15.3 [Quilt Metadata & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.3)
 

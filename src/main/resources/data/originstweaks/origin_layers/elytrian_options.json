@@ -8,13 +8,12 @@
         {
             "origins": [
                 "originstweaks:vanilla_elytra",
-                "originstweaks:custom_elytra",
-                "originstweaks:no_elytra"
+                "originstweaks:custom_elytra"
             ],
             "condition": {
                 "type": "origins:origin",
                 "layer": "origins:origin",
-                "origin": "origins:elytrian"
+                "origin": "originstweaks:elytrian"
             }
         }
     ]

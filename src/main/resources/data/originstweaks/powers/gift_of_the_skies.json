@@ -43,15 +43,6 @@
             "origin": "originstweaks:custom_elytra"
         }
     },
-    "no_wings": {
-        "type": "origins:elytra_flight",
-        "render_elytra": false,
-        "condition": {
-            "type": "origins:origin",
-            "layer": "originstweaks:elytrian_options",
-            "origin": "originstweaks:no_elytra"
-        }
-    },
     "launch": {
         "type": "origins:active_self",
         "entity_action": {

@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.16.2",
+    "version": "1.16.3",
     "name": "OriginsTweaks",
     "description": "Reworks the Origins Mod's abilities and adds new ones.",
     "authors": [
@@ -17,11 +17,14 @@
     "icon": "assets/originstweaks/icon.png",
     "environment": "*",
     "depends": {
-        "minecraft": "1.20.x",
+        "minecraft": ">=1.20.2",
         "fabric-api": "*",
-        "origins": "1.12.x",
+        "origins": ">=1.12.0",
         "pehkui": "*",
         "mr_origins_dietarydelights": "*"
+    },
+    "recommends": {
+        "modmenu": "*"
     },
     "custom": {
         "modmenu": {
