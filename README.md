@@ -5,7 +5,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <a href="https://modrinth.com/mod/originstweaks"><img src="https://img.shields.io/badge/Available_on-Modrinth-%2300AF5C?logo=modrinth&logoColor=%2300AF5C"></a>
 <a href="https://github.com/ChromexUnderscore/OriginsTweaks"><img src="https://img.shields.io/badge/Available_on-GitHub-%23181717?logo=github&logoColor=%23181717"></a>
 
-<img src=https://img.shields.io/badge/Requires-gray>
+<img src=https://img.shields.io/badge/Required_Mods-gray>
 <a href="https://modrinth.com/mod/origins"><img src="https://img.shields.io/badge/Origins-lightblue"></a>
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
 
@@ -34,7 +34,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Elytrian</summary>
 
-+ The Elytra has a custom texture exclusive to Elytrians. The Elytra Texture was made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
++ Elytrians can pick between vanilla, custom or no texture for their Elytra. Default custom texture made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
 + Pressing the Primary Key while grounded will launch them to the sky.
 + Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
 + Elytrians have limited stamina used for gliding, flapping and launching.
@@ -44,8 +44,8 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Shulk</summary>
 
-+ Shulks gain a stacking resistance effect when closing their shells by sneaking.
-+ Getting hit disables closing shells for 3 seconds.
++ Shulks have a base armor of 3. 
++ Sneaking grants up to 7 bonus defense, 1 point is lost and buildup is disabled for 30 secodns when taking a hit above 3 hearts.
 
 </details>
 
@@ -53,7 +53,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + The Feline can break Stone 50% slower when not under the effect of strength or using a pickaxe with efficiency III or higher. Some tough stone variants can't be broken without strength or efficiency.
 + Claws deal stone-sword-level damage, but need to be resharpened using logs, wool or carpet.
-+ Meat from fish, chicken and rabbit is more nourishing.
++ Food made from Fish is more nourishing.
 + Night Vision is togglable.
 
 </details>
@@ -61,9 +61,8 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Enderian</summary>
 
 + Height, eye height and reach are increased.
-+ Enderians are able to set a teleportation point to travel back to.
-+ They are immune against Projectiles, they bounce right off.
-+ Teleporting via pearl grants a 5 second invincibility window against suffocation.
++ Enderians will dodge smaller projectiles on a cooldown.
++ Teleporting via pearl grants a invincibility window against suffocation.
 
 </details> 
 
@@ -72,13 +71,14 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 + Merlings can [craft tridents](https://cdn.modrinth.com/data/FRBxogjw/images/2d0819e26f5afce6716b9584f21c022b9175bc86.png).
 + Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
 + Merlings can dash underwater while swimming on a cooldown.
++ They will respawn in an ocean biome.
 
 </details>
 
 <details><summary>Blazeborn</summary>
 
 + Burning Wrath has been reworked.
-  + Pressing the Primary Key catches the Blazeborn on Fire for 1 minute.
+  + Pressing the Primary Key catches the Blazeborn on Fire for 30 seconds.
   + Can light Campfires, Fuel Furnei and Brewing stands when on fire.
 + Blazeborns can shoot a burst of 3 Fireballs.
 
@@ -86,6 +86,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Phantom</summary>
 
++ Soul fire blocks and soulsand valley biomes grant duration-stacking saturation and regeneration .
 + Golden items and blocks have a repelling effect on phantoms.
   + Can't eat golden food.
   + Can't wear golden Armor.
@@ -99,6 +100,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 + [Farmer's Delight](https://modrinth.com/mod/farmers-delight-fabric)
 + [Terrestria](https://modrinth.com/mod/terrestria)
 + [Cinderscapes](https://modrinth.com/mod/cinderscapes)
++ Using [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide conventional tagging of various foods.
 
 ## Bugs & Suggestions
 
@@ -106,6 +108,6 @@ Found a Bug, want to request a Feature / Mod Compat or have any other questions?
 
 [Join my Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
 
-## Credits
+## Assets
 
-Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
+Default Custom Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
