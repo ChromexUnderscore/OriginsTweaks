@@ -4,6 +4,36 @@
 
 ### [Version 1.16 [Minecraft 1.20.2]]
 
+#### [Version 1.16.4 [Merling Moisture & Balance Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.3)
+
+Gameplay Changes
+
++ Added a new Merling power: ``Body Moisture``.
+  + Merlings now have a resource bar that provides water breathing for 10 minutes out of water, and 5 minutes in the nether.
+  + Merlings can submerge in water, sit in water cauldrons or drink a bottle of water in order to keep the bar stocked.
++ The Merling's natural spawn is now in Ocean Biomes rather than Deep Ocean Biomes.
++ Merling's dash now grants a 1 second dolphin's grace effect instead of a 3 second effect.
++ Arachnid's power "Arthropod" and "Spider Silk" have been rebalanced.
+  + Arachnid's falldamage calculation now starts after a fall of 16 blocks instead of 30.
+  + close combat webbing now costs 1 Notch of the silk supply instead of 2.
+  + Webshot now has a max range of 16 blocks instead of 32 blocks.
+  + Webshot's forwards velocity has been reduced from 2 to 1, and upwards velocity has been reduced from 0.75 to 0.25.
++ Avian's Heaven's Grace now provides a 25% damage boost to both normal and spectral arrows. Tipped Arrows do not receive a bonus.
++ Arrows and spectral arrows held by avians now have a tooltip displaying the damage bonus Heaven's Grace provides.
++ Elytrians no longer regenerate stamina while gliding.
++ Feline's Claw ability now sets the base melee damage to 5 (2.5 Hearts) regardless of held items, and a 25% melee damage bonus when holding any melee weapon.
++ Feline's Mining speed drawback is now cancelled with pickaxes using any level of efficiency.
+
+Technical Changes
+
++ Moved OriginsTweaks' Origins to the Origins Layer for better compatibility with other addons or custom Origins.
+  + Added an \[OT] suffix to Origins' Names to differentiate it from the base Origins.
++ Replaced the custom texture by Simraa with the vanilla elytra texture, while providing a template for elytrian wing resourcepacks in the release files.
++ Added new item tag ``melee_weapons``.
++ Rephrased some descriptions.
++ Updated ``README.md``.
++ Bumped version to 1.16.4.
+
 #### [Version 1.16.3 [Hotfix Elytrian Wings]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.3)
 
 Gameplay Changes
@@ -14,6 +44,7 @@ Technical Changes
 
 + Bumped version to 1.16.3.
 + Changed dependencies of ``minecraft`` and ``origins`` to allow versions greater than the current minor version. Using OriginsTweaks in combination with any alpha build of the Origins Mod will most likely break stuff. Please don't report bugs if you're not using the recommended version of Origins.
+
 #### [Version 1.16.2 [Dietary Delight Compat and OriginsTweaks Opt-In]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
 
 Gameplay Changes

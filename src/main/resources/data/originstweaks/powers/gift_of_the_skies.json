@@ -156,7 +156,6 @@
         "entity_action": {
             "type": "origins:if_else_list",
             "actions": [
-                
                 {
                     "condition": {
                         "type": "origins:and",
@@ -282,63 +281,25 @@
         "type": "origins:action_over_time",
         "interval": 3,
         "entity_action": {
-            "type": "origins:if_else_list",
-            "actions": [
+            "type": "origins:change_resource",
+            "resource": "*:*_stamina",
+            "change": 6
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
                 {
-                    "action": {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_stamina",
-                        "change": 6
-                    },
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:on_block"
-                            },
-                            {
-                                "type": "origins:fall_flying",
-                                "inverted": true
-                            },
-                            {
-                                "type": "origins:resource",
-                                "resource": "*:*_stamina",
-                                "comparison": "!=",
-                                "compare_to": 600
-                            }
-                        ]
-                    }
+                    "type": "origins:on_block"
                 },
                 {
-                    "action": {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_stamina",
-                        "change": 1
-                    },
-                    "condition": {
-                        "type": "origins:and",
-                        "conditions": [
-                            {
-                                "type": "origins:on_block",
-                                "inverted": true
-                            },
-                            {
-                                "type": "origins:fall_flying"
-                            },
-                            {
-                                "type": "origins:resource",
-                                "resource": "*:*_stamina",
-                                "comparison": "!=",
-                                "compare_to": 600
-                            },
-                            {
-                                "type": "origins:resource",
-                                "resource": "*:*_stamina",
-                                "comparison": "!=",
-                                "compare_to": 0
-                            }
-                        ]
-                    }
+                    "type": "origins:fall_flying",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_stamina",
+                    "comparison": "!=",
+                    "compare_to": 600
                 }
             ]
         }
@@ -365,7 +326,7 @@
         "type": "origins:prevent_item_use",
         "item_condition": {
             "type": "origins:ingredient",
-            "ingredient":{
+            "ingredient": {
                 "item": "minecraft:firework_rocket"
             }
         },

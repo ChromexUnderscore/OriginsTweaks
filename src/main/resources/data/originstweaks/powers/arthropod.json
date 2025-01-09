@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You only take damage after a fall of more than 30 Blocks."
+            "text": "You only take damage after a fall of more than 16 Blocks."
         },
         {
             "type": "origins:tooltip",
@@ -51,7 +51,7 @@
         },
         "modifier": {
             "operation": "add_base_early",
-            "value": -27
+            "value": -13
         }
     }
 }

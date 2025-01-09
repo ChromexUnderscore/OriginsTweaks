@@ -1,20 +1,60 @@
 {
-    "type": "origins:modify_projectile_damage",
+    "type": "origins:multiple",
     "name": "Heavens Grace",
     "description": "Your divine Ancestors graced you with the art of Bow Combat.",
-    "badges":[
+    "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You deal 125% base damage when shooting Spectral Arrows."
+            "text": "Arrows and Spectral Arrows deal +25% bonus damage. Tipped Arrows don't receive a bonus."
         }
     ],
-    "damage_condition": {
-        "type": "origins:projectile",
-        "projectile": "minecraft:spectral_arrow"
+    "arrow": {
+        "type": "origins:modify_projectile_damage",
+        "damage_condition": {
+            "type": "origins:projectile",
+            "projectile": "minecraft:arrow"
+        },
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": 0.25
+        }
     },
-    "modifier": {
-        "operation": "multiply_base_multiplicative",
-        "value": 0.25
+    "spectral_arrow": {
+        "type": "origins:modify_projectile_damage",
+        "damage_condition": {
+            "type": "origins:projectile",
+            "projectile": "minecraft:spectral_arrow"
+        },
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": 0.25
+        }
+    },
+    "arrow_tooltip": {
+        "type": "origins:tooltip",
+        "text": {
+            "text": "+25% Damage",
+            "color": "green"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:arrow"
+            }
+        }
+    },
+    "spectral_arrow_tooltip": {
+        "type": "origins:tooltip",
+        "text": {
+            "text": "+25% Damage",
+            "color": "green"
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:spectral_arrow"
+            }
+        }
     }
 }

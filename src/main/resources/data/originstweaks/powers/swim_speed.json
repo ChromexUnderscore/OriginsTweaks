@@ -48,7 +48,7 @@
                                 "type": "origins:apply_effect",
                                 "effect": {
                                     "effect": "minecraft:dolphins_grace",
-                                    "duration": 60,
+                                    "duration": 20,
                                     "show_icon": false,
                                     "show_particles": false
                                 }

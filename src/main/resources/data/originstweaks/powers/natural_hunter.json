@@ -1,12 +1,12 @@
 {
     "type": "origins:multiple",
     "name": "Natural Hunter",
-    "description": "Felines are natural predators; their claws can be sharpened on wood or fabrics to be more lethal in combat and fish is more nourishing.",
+    "description": "Felines are natural predators; their claws can be sharpened on wood or fabrics to be more lethal in combat; and fish is more nourishing.",
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "If sharpened, the Claws are as effective as a Stone Sword in combat."
+            "text": "If sharpened, claws deal 5 damage (2.5 Hearts). Melee Weapons benefit from a +25% Melee Damage Bonus."
         },
         {
             "type": "origins:keybind",
@@ -19,10 +19,10 @@
             "text": "Food made from fish provide 3 extra hunger and 2 extra saturation points."
         }
     ],
-    "claws_extra_damage": {
+    "claws_base_damage": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
-            "name": "extra damage claws",
+            "name": "base damage claws",
             "operation": "set_base",
             "value": 5
         },
@@ -33,7 +33,11 @@
                     "type": "origins:equipped_item",
                     "equipment_slot": "mainhand",
                     "item_condition": {
-                        "type": "origins:empty"
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "originstweaks:melee_weapons"
+                        },
+                        "inverted": true
                     }
                 },
                 {
@@ -45,20 +49,27 @@
             ]
         }
     },
+    "claws_extra_damage": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "extra damage claws",
+            "operation": "multiply_base_multiplicative",
+            "value": 0.25
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_claws_sharpness",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
     "claws_sharpness": {
         "type": "origins:resource",
         "min": 0,
         "max": 128,
         "hud_render": {
             "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-            "bar_index": 12,
-            "condition": {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:empty"
-                }
-            }
+            "bar_index": 12
         }
     },
     "claws_unsharpen": {
@@ -69,16 +80,6 @@
                 "type": "origins:change_resource",
                 "resource": "*:*_claws_sharpness",
                 "change": -1
-            }
-        },
-        "bientity_condition": {
-            "type": "origins:actor_condition",
-            "condition": {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:empty"
-                }
             }
         }
     },

@@ -21,12 +21,11 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Arachnid</summary>
 
 + The Arachnid has a webshot ability.
-  + The webshot is fired using the Primary Key.
-  + Grapples towards whatever was hit.
+  + The webshot is fired using the Primary Key, grappling towards whatever was hit within a range of 16 blocks.
   + Webshot and close combat Webbing require Silk Resource, which regenerates within 60 seconds but can be refilled using string.
 + Arachnids are shorter and can fit into 1-block gaps when sneaking.
 + Climbing no longer slows down mining speed.
-+ Fall damage is only taken after a fall greater than 30 Blocks.
++ Fall damage is only taken after a fall greater than 16 Blocks.
 + Arachnids can craft 2 strings into cobweb and cobweb back into 2 string.
 + Cobwebs can be broken per hand and always return a cobweb item.
 
@@ -34,7 +33,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Elytrian</summary>
 
-+ Elytrians can pick between vanilla, custom or no texture for their Elytra. Default custom texture made by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
++ Elytrians can pick between vanilla rendering or a custom texture exclusive to their Elytra. A Template is available in OriginsTweaks's Releases.
 + Pressing the Primary Key while grounded will launch them to the sky.
 + Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
 + Elytrians have limited stamina used for gliding, flapping and launching.
@@ -45,13 +44,13 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Shulk</summary>
 
 + Shulks have a base armor of 3. 
-+ Sneaking grants up to 7 bonus defense, 1 point is lost and buildup is disabled for 30 secodns when taking a hit above 3 hearts.
++ Sneaking grants up to 7 bonus defense, 1 bonus defense is lost and buildup is disabled for 30 seconds when taking a hit for over 3 hearts.
 
 </details>
 
 <details><summary>Feline</summary>
 
-+ The Feline can break Stone 50% slower when not under the effect of strength or using a pickaxe with efficiency III or higher. Some tough stone variants can't be broken without strength or efficiency.
++ The Feline breaks stone 50% slower when not under the effect of strength or using a pickaxe with efficiency. Some tough stone variants can't be broken without strength or efficiency.
 + Claws deal stone-sword-level damage, but need to be resharpened using logs, wool or carpet.
 + Food made from Fish is more nourishing.
 + Night Vision is togglable.
@@ -62,7 +61,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + Height, eye height and reach are increased.
 + Enderians will dodge smaller projectiles on a cooldown.
-+ Teleporting via pearl grants a invincibility window against suffocation.
++ Teleporting via pearl grants an invincibility window against suffocation.
 
 </details> 
 
@@ -91,7 +90,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
   + Can't eat golden food.
   + Can't wear golden Armor.
   + Can't phase through pure golden blocks.
-+ Phantoms can highlight any entity in a 32 block radius for 10 seconds.
++ Phantoms can sense entities in a 32 block radius for 10 seconds.
 
 </details>
 
@@ -104,10 +103,6 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 ## Bugs & Suggestions
 
-Found a Bug, want to request a Feature / Mod Compat or have any other questions?
+Found a bug, want to request a feature / mod compatibility or have any other questions?
 
-[Join my Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
-
-## Assets
-
-Default Custom Elytra Texture by [zimraa on Imgur](https://imgur.com/gallery/lROFn).
+[Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)

@@ -16,7 +16,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "This restriction can be bypassed by using Strenth Potions or a Pickaxe with Efficiency III or higher."
+            "text": "These restriction can be bypassed by using Strenth Potions or a Pickaxe enchanted with Efficiency."
         }
     ],
     "loading_priority": 1,
@@ -55,7 +55,7 @@
                             },
                             {
                                 "type": "origins:enchantment",
-                                "compare_to": 3,
+                                "compare_to": 1,
                                 "comparison": ">=",
                                 "enchantment": "minecraft:efficiency"
                             }
@@ -101,7 +101,7 @@
                             },
                             {
                                 "type": "origins:enchantment",
-                                "compare_to": 3,
+                                "compare_to": 1,
                                 "comparison": ">=",
                                 "enchantment": "minecraft:efficiency"
                             }

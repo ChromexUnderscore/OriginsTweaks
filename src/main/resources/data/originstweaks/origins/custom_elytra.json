@@ -1,6 +1,6 @@
 {
     "name": "Custom Elytra",
-    "description": "Your wings will use a custom texture separate to the vanilla Elytra, which allows custom textures that do not apply to equippable elytras (Default Texture by zimraa on Imgur).",
+    "description": "Your wings will use a custom texture separate to the vanilla Elytra, which allows custom textures that do not apply to equippable elytras. Template available in OriginsTweaks Releases.",
     "icon": "minecraft:brush",
     "impact": 0,
     "order": 1,

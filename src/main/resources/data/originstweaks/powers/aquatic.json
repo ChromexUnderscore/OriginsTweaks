@@ -9,7 +9,7 @@
     },
     "spawn": {
         "type": "origins:modify_player_spawn",
-        "biome": "minecraft:deep_ocean",
+        "biome": "minecraft:ocean",
         "dimension": "minecraft:overworld"
     }
 }

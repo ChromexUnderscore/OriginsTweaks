@@ -1,5 +1,5 @@
 {
-    "name": "Merling",
+    "name": "Merling [OT]",
     "description": "These natural inhabitants of the ocean are not used to being out of the water for too long.",
     "icon": {
         "item": "minecraft:trident"
@@ -16,8 +16,7 @@
         "origins:like_water",
         "originstweaks:aquatic",
         "origins:conduit_power_on_land",
-        "originstweaks:air_from_potions",
-        "originstweaks:water_cauldron",
+        "originstweaks:body_moisture",
         "originstweaks:merling_sounds"
     ]
 }
