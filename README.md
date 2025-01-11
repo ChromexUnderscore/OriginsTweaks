@@ -74,7 +74,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 + Merlings now have a body moisture resource to manage in order to not dry out.
 + Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
 + Merlings can dash underwater while swimming on a cooldown.
-+ Merling's Natural Spawn point is located in ocean biomes~~~~.
++ Merling's Natural Spawn point is located in ocean biomes.
 
 </details>
 
