@@ -8,13 +8,15 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <img src=https://img.shields.io/badge/Required_Mods-gray>
 <a href="https://modrinth.com/mod/origins"><img src="https://img.shields.io/badge/Origins-lightblue"></a>
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
+<a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
+
 
 ## Changes to Origins
 
 <details><summary>Avian</summary>
 
 + Slow falling can be toggled.
-+ Spectral Arrows deal increased damage when shot by an Avian.
++ Arrows and Spectral Arrows receive a +25% damage increase increased damage when shot by an Avian. Tipped Arrows do not receive a damage increase.
 
 </details>
 
@@ -22,22 +24,23 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 + The Arachnid has a webshot ability.
   + The webshot is fired using the Primary Key, grappling towards whatever was hit within a range of 16 blocks.
-  + Webshot and close combat Webbing require Silk Resource, which regenerates within 60 seconds but can be refilled using string.
+  + Webshot and close combat Webbing require Silk Resource, which regenerates in 30 seconds.
 + Arachnids are shorter and can fit into 1-block gaps when sneaking.
 + Climbing no longer slows down mining speed.
 + Fall damage is only taken after a fall greater than 16 Blocks.
-+ Arachnids can craft 2 strings into cobweb and cobweb back into 2 string.
++ Arachnids can craft 9 strings into cobweb and cobweb back into 9 string.
 + Cobwebs can be broken per hand and always return a cobweb item.
 
 </details>
 
 <details><summary>Elytrian</summary>
 
-+ Elytrians can pick between vanilla rendering or a custom texture exclusive to their Elytra. A Template is available in OriginsTweaks's Releases.
++ Elytrians can pick between vanilla rendering or a custom texture exclusive to their Elytra. A Template is appended in future Releases.
 + Pressing the Primary Key while grounded will launch them to the sky.
-+ Pressing the Primary Key while gliding flaps their wings, useful to maintain altitude.
-+ Elytrians have limited stamina used for gliding, flapping and launching.
-+ Heavy Armor weakens effects of the Launch power and the Wing Flap power and costs more stamina.
++ Ascend by pressing the Primary Key while gliding.
++ Elytrians have limited stamina used for ascending and launching.
++ Heavy Armor (13+ Armor) weakens effects of the ascend / launch ability and costs more stamina.
++ 20 Armor prevents launch and ascend.
 
 </details>
 
@@ -51,7 +54,8 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Feline</summary>
 
 + The Feline breaks stone 50% slower when not under the effect of strength or using a pickaxe with efficiency. Some tough stone variants can't be broken without strength or efficiency.
-+ Claws deal stone-sword-level damage, but need to be resharpened using logs, wool or carpet.
++ Claws deals increased base damage, but need to be resharpened using logs, wool or carpet.
++ Felines receive a 25% melee damage bonus.
 + Food made from Fish is more nourishing.
 + Night Vision is togglable.
 
@@ -68,9 +72,10 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <details><summary>Merling</summary>
 
 + Merlings can [craft tridents](https://cdn.modrinth.com/data/FRBxogjw/images/2d0819e26f5afce6716b9584f21c022b9175bc86.png).
++ Merlings now have a body moisture resource to manage in order to not dry out.
 + Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
 + Merlings can dash underwater while swimming on a cooldown.
-+ They will respawn in an ocean biome.
++ Merling's Natural Spawn point is located in ocean biomes.
 
 </details>
 
@@ -85,6 +90,7 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 <details><summary>Phantom</summary>
 
++ Phantoms are slowed down whilst phasing, and phasing up and down is now smoother.
 + Soul fire blocks and soulsand valley biomes grant duration-stacking saturation and regeneration .
 + Golden items and blocks have a repelling effect on phantoms.
   + Can't eat golden food.

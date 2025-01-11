@@ -17,11 +17,32 @@
         {
             "type": "origins:crafting_recipe",
             "sprite": "origins:textures/gui/badge/info.png",
-            "prefix": "You can combine 2 string into 1 Cobweb and back into 2 string.",
+            "prefix": "You can combine 9 string into 1 Cobweb and back into 9 string.",
             "recipe": {
                 "id": "originstweaks:master_of_webs/web_crafting_badge",
                 "type": "minecraft:crafting_shapeless",
                 "ingredients": [
+                    {
+                        "item": "minecraft:string"
+                    },
+                    {
+                        "item": "minecraft:string"
+                    },
+                    {
+                        "item": "minecraft:string"
+                    },
+                    {
+                        "item": "minecraft:string"
+                    },
+                    {
+                        "item": "minecraft:string"
+                    },
+                    {
+                        "item": "minecraft:string"
+                    },
+                    {
+                        "item": "minecraft:string"
+                    },
                     {
                         "item": "minecraft:string"
                     },
@@ -33,7 +54,7 @@
                     "item": "minecraft:cobweb"
                 }
             },
-            "suffix": "Breaking cobweb always drops a cobweb item."
+            "suffix": "Breaking cobweb whilst sneaking always drops a cobweb."
         }
     ],
     "punch_through": {
@@ -101,6 +122,27 @@
                 },
                 {
                     "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
+                },
+                {
+                    "item": "minecraft:string"
                 }
             ],
             "result": {
@@ -120,7 +162,7 @@
             ],
             "result": {
                 "item": "minecraft:string",
-                "count": 2
+                "count": 9
             }
         }
     },

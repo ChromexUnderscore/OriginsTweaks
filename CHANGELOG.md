@@ -4,7 +4,27 @@
 
 ### [Version 1.16 [Minecraft 1.20.2]]
 
-#### [Version 1.16.4 [Merling Moisture & Balance Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.3)
+#### [Verion 1.16.5[]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.5)
+
+Gameplay Changes
+
++ Fixed Arachnids not being able to hold onto walls while climbing.
++ Balance Changes to Elytrian's ``Gift of the skies`` power:
+  + Lowered overall Stamina cost of launch and ascend.
+  + Armor values ranging from 13 to 19 now allow launch and ascend, but are weaker and less stamina efficient in comparison to 12 armor and below.
++ Arachnid balance changes:
+  + ``Master of Webs`` now requires and returns 9 string.
+  + ``Spider silk``: doubled general silk supply regeneration, removed the ability to restock using string items.
+  + Cooldown only triggers when the webshot hit a target.
++ Fixed phantom's ``Phasing`` ability; phasing now uses a climbing power and phantoms get slowed when phasing.
++ Fixed ``Soulbound`` Tooltips on Golden foods and armor.
+
+Technical Changes
+
++ Updated ``README.md``.
++ Bumped version to 1.16.5.
+
+#### [Version 1.16.4 [Merling Moisture & Balance Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.4)
 
 Gameplay Changes
 

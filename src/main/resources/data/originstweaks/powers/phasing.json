@@ -1,36 +1,133 @@
 {
-    "type": "origins:phasing",
-    "name": "Phasing",
-    "description": "While phantomized, you can walk through solid material, except Obsidian and solid Gold Blocks.",
-    "blacklist": true,
-    "render_type": "blindness",
-    "view_distance": 16,
-    "block_condition": {
-        "type": "origins:and",
-        "conditions": [
-            {
-                "type": "origins:in_tag",
-                "tag": "origins:unphasable"
-              },
-              {
-                "type": "origins:in_tag",
-                "tag": "originstweaks:golden_blocks"
-              }
-        ]
-    },
-    "phase_down_condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:sneaking"
-        },
-        {
-          "type": "origins:on_block"
-        }
-      ]
-    },
-    "condition": {
-      "type": "origins:power_active",
-      "power": "*:phantomize"
-    }
-  }
+	"type": "origins:multiple",
+	"name": "Phasing",
+	"description": "While phantomized, you can move through solid material, except Obsidian and solid Gold Blocks.",
+	"phase": {
+		"type": "origins:phasing",
+		"blacklist": true,
+		"render_type": "blindness",
+		"view_distance": 10,
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:on_block"
+						},
+						{
+							"type": "origins:in_block",
+							"block_condition": {
+								"type": "origins:movement_blocking"
+							}
+						}
+					]
+				}
+			]
+		},
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "originstweaks:unphasable"
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins:phantomize"
+		}
+	},
+	"slow_movement": {
+		"type": "origins:modify_velocity",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.25
+		},
+		"axes": [
+			"x",
+			"z"
+		],
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "origins:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:movement_blocking"
+					}
+				}
+			]
+		}
+	},
+	"slow_climbing": {
+		"type": "origins:modify_velocity",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.1
+		},
+		"axes": [
+			"y"
+		],
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "origins:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:movement_blocking"
+					}
+				}
+			]
+		}
+	},
+	"climbing": {
+		"type": "origins:climbing",
+		"allow_holding": false,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "origins:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:movement_blocking"
+					}
+				}
+			]
+		}
+	},
+	"prevent_elytra": {
+		"type": "origins:prevent_elytra_flight",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "title @s actionbar \"You cant use your elytra while phasing.\""
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "origins:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:movement_blocking"
+					}
+				}
+			]
+		}
+	}
+}

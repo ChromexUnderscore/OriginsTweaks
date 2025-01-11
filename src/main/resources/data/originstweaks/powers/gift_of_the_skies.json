@@ -11,12 +11,12 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You have limited Stamina. Launching and ascending use stamina; regain by gliding or resting on the ground."
+            "text": "You have limited Stamina. Launching and ascending use stamina; catch your breath by resting on the ground."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Trying to launch or ascend with heavy armor (>12 Armor) is impossible."
+            "text": "It's harder to fly with armor levels higher than 12 (6 Icons)."
         },
         {
             "type": "origins:tooltip",
@@ -62,7 +62,7 @@
                                 "type": "origins:resource",
                                 "resource": "*:*_stamina",
                                 "comparison": ">=",
-                                "compare_to": 120
+                                "compare_to": 100
                             }
                         ]
                     },
@@ -78,7 +78,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "*:*_stamina",
-                                "change": -120,
+                                "change": -100,
                                 "operation": "add"
                             },
                             {
@@ -95,20 +95,43 @@
                             {
                                 "type": "origins:command",
                                 "command": "attribute @s minecraft:generic.armor get",
-                                "comparison": "<=",
+                                "comparison": ">",
                                 "compare_to": 12
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "attribute @s minecraft:generic.armor get",
+                                "comparison": "<",
+                                "compare_to": 20
                             },
                             {
                                 "type": "origins:resource",
                                 "resource": "*:*_stamina",
-                                "comparison": "<",
-                                "compare_to": 120
+                                "comparison": ">=",
+                                "compare_to": 150
                             }
                         ]
                     },
                     "action": {
-                        "type": "origins:execute_command",
-                        "command": "title @s actionbar \"You are too exhausted to launch.\""
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 1,
+                                "client": false,
+                                "operation": "set"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_stamina",
+                                "change": -150,
+                                "operation": "add"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "playsound minecraft:entity.parrot.fly player @a ~ ~ ~ 1 0.5"
+                            }
+                        ]
                     }
                 },
                 {
@@ -118,14 +141,26 @@
                             {
                                 "type": "origins:command",
                                 "command": "attribute @s minecraft:generic.armor get",
-                                "comparison": ">",
-                                "compare_to": 12
+                                "comparison": ">=",
+                                "compare_to": 20
                             }
                         ]
                     },
                     "action": {
                         "type": "origins:execute_command",
                         "command": "title @s actionbar \"Your armor is too heavy for launching.\""
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_stamina",
+                        "comparison": "<",
+                        "compare_to": 100
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "title @s actionbar \"You are too exhausted to launch.\""
                     }
                 }
             ]
@@ -192,7 +227,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "*:*_stamina",
-                                "change": -30,
+                                "change": -25,
                                 "operation": "add"
                             }
                         ]
@@ -205,20 +240,45 @@
                             {
                                 "type": "origins:command",
                                 "command": "attribute @s minecraft:generic.armor get",
-                                "comparison": "<=",
+                                "comparison": ">",
                                 "compare_to": 12
+                            },
+                            {
+                                "type": "origins:command",
+                                "command": "attribute @s minecraft:generic.armor get",
+                                "comparison": "<",
+                                "compare_to": 20
                             },
                             {
                                 "type": "origins:resource",
                                 "resource": "*:*_stamina",
-                                "comparison": "==",
+                                "comparison": "!=",
                                 "compare_to": 0
                             }
                         ]
                     },
                     "action": {
-                        "type": "origins:execute_command",
-                        "command": "title @s actionbar \"You are too exhausted to ascend.\""
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:add_velocity",
+                                "y": 0.5,
+                                "z": 0.25,
+                                "client": false,
+                                "space": "local_horizontal_normalized",
+                                "operation": "set"
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "playsound minecraft:entity.phantom.flap player @a ~ ~ ~ 1 2"
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "*:*_stamina",
+                                "change": -50,
+                                "operation": "add"
+                            }
+                        ]
                     }
                 },
                 {
@@ -228,14 +288,26 @@
                             {
                                 "type": "origins:command",
                                 "command": "attribute @s minecraft:generic.armor get",
-                                "comparison": ">",
-                                "compare_to": 12
+                                "comparison": ">=",
+                                "compare_to": 20
                             }
                         ]
                     },
                     "action": {
                         "type": "origins:execute_command",
                         "command": "title @s actionbar \"Your armor is too heavy to ascend.\""
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_stamina",
+                        "comparison": "==",
+                        "compare_to": 0
+                    },
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "title @s actionbar \"You are too exhausted to ascend.\""
                     }
                 }
             ]

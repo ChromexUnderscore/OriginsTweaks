@@ -49,6 +49,7 @@
         }
     },
     "gold_diet": {
+        "name": "Soulbound",
         "type": "origins:prevent_item_use",
         "item_condition": {
             "type": "origins:ingredient",
@@ -57,7 +58,7 @@
             }
         }
     },
-    "gold_armor": {
+    "gold_armor_equip": {
         "type": "origins:conditioned_restrict_armor",
         "head": {
             "type": "origins:ingredient",
@@ -84,5 +85,15 @@
             }
         },
         "tick_rate": 5
+    },
+    "gold_armor_use": {
+        "name": "Soulbound",
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "originstweaks:golden_armor"
+            }
+        }
     }
 }
