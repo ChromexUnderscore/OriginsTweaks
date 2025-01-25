@@ -11,7 +11,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press and hold %s to gain up to 7 extra armor."
+            "text": "Press and hold [Sneak] to gain up to 7 extra armor."
         },
         {
             "type": "origins:tooltip",

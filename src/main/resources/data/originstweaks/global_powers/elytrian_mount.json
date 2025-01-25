@@ -1,0 +1,8 @@
+{
+    "entity_types": [
+        "minecraft:player"
+    ],
+    "powers": [
+        "originstweaks:mount_actor"
+    ]
+}

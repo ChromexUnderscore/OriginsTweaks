@@ -2,6 +2,18 @@
 	"type": "origins:multiple",
 	"name": "Phasing",
 	"description": "While phantomized, you can move through solid material, except Obsidian and solid Gold Blocks.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": "Phasing drains your soul energy quickly, keep an eye on it!"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "You cannot sprint, sprint-swim, use elytra flight, attack, or interact with blocks while phasing."
+		}
+	],
 	"phase": {
 		"type": "origins:phasing",
 		"blacklist": true,
@@ -34,31 +46,130 @@
 			"tag": "originstweaks:unphasable"
 		},
 		"condition": {
-			"type": "origins:power_active",
-			"power": "origins:phantomize"
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:phantomize"
+				},
+				{
+					"type": "origins:swimming",
+					"inverted": true
+				},
+				{
+					"type": "origins:fall_flying",
+					"inverted": true
+				}
+			]
 		}
 	},
-	"slow_movement": {
-		"type": "origins:modify_velocity",
-		"modifier": {
-			"operation": "multiply_total",
-			"value": -0.25
+	"drain_soul_power": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:soulbound_energy",
+			"change": -1,
+			"operation": "add"
 		},
-		"axes": [
-			"x",
-			"z"
-		],
+		"interval": 50,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:phantomize"
+		}
+	},
+	"drain_soul_power_phasing": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:soulbound_energy",
+			"change": -1,
+			"operation": "add"
+		},
+		"interval": 20,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "origins:phantomize"
+					"power": "*:phantomize"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:movement_blocking"
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+	"no_sprinting": {
+		"type": "origins:prevent_sprinting",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+	"climbing": {
+		"type": "origins:climbing",
+		"allow_holding": false,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
 					}
 				}
 			]
@@ -78,31 +189,161 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "origins:phantomize"
+					"power": "*:phantomize"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:movement_blocking"
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
 					}
 				}
 			]
 		}
 	},
-	"climbing": {
-		"type": "origins:climbing",
-		"allow_holding": false,
+	"no_melee": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"value": 0,
+			"operation": "set_total"
+		},
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "origins:phantomize"
+					"power": "*:phantomize"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:movement_blocking"
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+	"no_projectile": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"value": 0,
+			"operation": "set_total"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+	"no_item_use": {
+		"type": "origins:prevent_item_use",
+		"name": "Phasing",
+		"item_condition": {
+			"type": "origins:constant",
+			"value": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+	"no_blocks": {
+		"type": "origins:prevent_block_selection",
+		"block_condition": {
+			"type": "origins:constant",
+			"value": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:phantomize"
+				},
+				{
+					"type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
 					}
 				}
 			]
@@ -119,12 +360,24 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "origins:phantomize"
+					"power": "*:phantomize"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:movement_blocking"
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:movement_blocking"
+							},
+							{
+								"type": "origins:offset",
+								"condition": {
+									"type": "origins:movement_blocking"
+								},
+								"y": 1
+							}
+						]
 					}
 				}
 			]

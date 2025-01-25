@@ -2,12 +2,12 @@
 	"type": "minecraft:block",
 	"pools": [
 		{
-			"rolls": 1,
+			"rolls": 9,
 			"bonus_rolls": 0,
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "minecraft:cobweb"
+					"name": "minecraft:string"
 				}
 			]
 		}

@@ -1,29 +1,51 @@
 {
     "type": "origins:multiple",
     "name": "Natural Hunter",
-    "description": "Felines are natural predators; their claws can be sharpened on wood or fabrics to be more lethal in combat; and fish is more nourishing.",
+    "description": "Felines are natural predators; their claws can be sharpened to be more lethal in combat and fish is more nourishing.",
     "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "If sharpened, claws deal 5 damage (2.5 Hearts). Melee Weapons benefit from a +25% Melee Damage Bonus."
-        },
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Use logs, wool, carpets or banners to resharpen your Claws."
+            "text": "Use [Primary] while not holding any tool to attack using your Claws."
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Food made from fish provide 3 extra hunger and 2 extra saturation points."
+            "text": "Sharpen your Claws using following blocks in order: Logs or Wool (+5 Attack), Grindstone while sneaking (+6 Attack), Iron block (+7 Attack), Diamond block (+8 Attack)"
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Attacking with your claws deals less knockback, which helps with fast follow-up attacks."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Food made out of fish provide 3 more hunger and 2 more saturation."
         }
     ],
-    "claws_base_damage": {
+    "claws_sharpness": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 400,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+            "bar_index": 12
+        }
+    },
+    "knockback": {
+        "type": "origins:action_on_hit",
+        "bientity_action": {
+            "type": "origins:add_velocity",
+            "z": 0.3,
+            "set": true
+        }
+    },
+    "wood_damage": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
             "name": "base damage claws",
-            "operation": "set_base",
+            "operation": "add_base_early",
             "value": 5
         },
         "condition": {
@@ -35,7 +57,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "tag": "originstweaks:melee_weapons"
+                            "tag": "minecraft:tools"
                         },
                         "inverted": true
                     }
@@ -43,36 +65,121 @@
                 {
                     "type": "origins:resource",
                     "resource": "*:*_claws_sharpness",
-                    "comparison": ">",
-                    "compare_to": 0
+                    "compare_to": 0,
+                    "comparison": "!="
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 100,
+                    "comparison": "<="
                 }
             ]
         }
     },
-    "claws_extra_damage": {
+    "stone_damage": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
-            "name": "extra damage claws",
-            "operation": "multiply_base_multiplicative",
-            "value": 0.25
+            "name": "base damage claws",
+            "operation": "add_base_early",
+            "value": 6
         },
         "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_claws_sharpness",
-            "comparison": ">",
-            "compare_to": 0
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "minecraft:tools"
+                        },
+                        "inverted": true
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 100,
+                    "comparison": ">"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 200,
+                    "comparison": "<="
+                }
+            ]
         }
     },
-    "claws_sharpness": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 128,
-        "hud_render": {
-            "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-            "bar_index": 12
+    "iron_damage": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "base damage claws",
+            "operation": "add_base_early",
+            "value": 7
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "minecraft:tools"
+                        },
+                        "inverted": true
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 200,
+                    "comparison": ">"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 300,
+                    "comparison": "<="
+                }
+            ]
         }
     },
-    "claws_unsharpen": {
+    "diamond_damage": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "base damage claws",
+            "operation": "add_base_early",
+            "value": 8
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "minecraft:tools"
+                        },
+                        "inverted": true
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 300,
+                    "comparison": ">"
+                }
+            ]
+        }
+    },
+    "unsharpen": {
         "type": "origins:action_on_hit",
         "bientity_action": {
             "type": "origins:actor_action",
@@ -83,29 +190,35 @@
             }
         }
     },
-    "claws_resharpen_wood": {
+    "resharpen_wood": {
         "type": "origins:action_on_block_use",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_claws_sharpness",
-                    "change": 10
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_claws_sharpness",
+                        "compare_to": 90,
+                        "comparison": "<="
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_claws_sharpness",
+                        "change": 10
+                    }
                 },
                 {
                     "type": "origins:play_sound",
                     "sound": "minecraft:item.axe.strip",
                     "pitch": 1.5
+                },
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
                 }
             ]
-        },
-        "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "originstweaks:wood"
-        },
-        "item_condition": {
-            "type": "origins:empty"
         },
         "directions": [
             "north",
@@ -117,22 +230,42 @@
         ],
         "hands": [
             "main_hand"
-        ]
+        ],
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "originstweaks:wood"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
     },
-    "claws_resharpen_fabric": {
+    "resharpen_fabric": {
         "type": "origins:action_on_block_use",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
-                    "type": "origins:change_resource",
-                    "resource": "*:*_claws_sharpness",
-                    "change": 5
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_claws_sharpness",
+                        "compare_to": 90,
+                        "comparison": "<="
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_claws_sharpness",
+                        "change": 10
+                    }
                 },
                 {
                     "type": "origins:play_sound",
                     "sound": "minecraft:block.wool.hit",
                     "pitch": 1
+                },
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
                 }
             ]
         },
@@ -154,6 +287,222 @@
         "hands": [
             "main_hand"
         ]
+    },
+    "resharpen_stone": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_claws_sharpness",
+                                "compare_to": 90,
+                                "comparison": ">"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_claws_sharpness",
+                                "compare_to": 190,
+                                "comparison": "<="
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_claws_sharpness",
+                        "change": 10
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.grindstone.use",
+                    "pitch": 1.5
+                },
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                }
+            ]
+        },
+        "directions": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "hands": [
+            "main_hand"
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:smooth_stone"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "resharpen_iron": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_claws_sharpness",
+                                "compare_to": 190,
+                                "comparison": ">"
+                            },
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_claws_sharpness",
+                                "compare_to": 290,
+                                "comparison": "<="
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_claws_sharpness",
+                        "change": 10
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:item.axe.scrape",
+                    "pitch": 1.5
+                },
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                }
+            ]
+        },
+        "directions": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "hands": [
+            "main_hand"
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:iron_block"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "resharpen_diamond": {
+        "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:resource",
+                                "resource": "*:*_claws_sharpness",
+                                "compare_to": 290,
+                                "comparison": ">"
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "*:*_claws_sharpness",
+                        "change": 10
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:item.trident.throw",
+                    "pitch": 1.5
+                },
+                {
+                    "type": "origins:swing_hand",
+                    "hand": "MAIN_HAND"
+                }
+            ]
+        },
+        "directions": [
+            "north",
+            "east",
+            "south",
+            "west",
+            "up",
+            "down"
+        ],
+        "hands": [
+            "main_hand"
+        ],
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:diamond_block"
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "effects": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:sweep_attack ~ ~1 ~ 0 0.5 0 1 5"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~ 0.5 1.5"
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type":"minecraft:player_attack"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "minecraft:tools"
+                        },
+                        "inverted": true
+                    }
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_claws_sharpness",
+                    "compare_to": 0,
+                    "comparison": "!="
+                }
+            ]
+        }
     },
     "food_modifier": {
         "type": "origins:modify_food",

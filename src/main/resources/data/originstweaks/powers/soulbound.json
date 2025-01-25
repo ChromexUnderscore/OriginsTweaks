@@ -1,99 +1,94 @@
 {
     "type": "origins:multiple",
     "name": "Soulbound",
-    "description": "You can absorb the energy of souls trapped in soul fire, but the purity of gold has a repellent effect on your kind.",
+    "description": "You require soul energy to manifest your phantom form.",
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "Soulsand valleys, soulfire and related blocks grant duration-stacking saturation and regeneration effects."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot eat any golden food, wear golden armor or phase through solid gold blocks."
+            "text": "Your soul power regenerates slowly, but you can also steal it from mobs or absorb it from soul fire."
         }
     ],
-    "soul_stacks":{
-        "type": "origins:stacking_status_effect",
-        "min_stacks": -10,
-        "max_stacks": 120,
-        "duration_per_stack": 20,
-        "tick_rate": 10,
-        "effects": [
-            {
-                "effect": "minecraft:saturation",
-                "show_particles": false
-            },
-            {
-                "effect": "minecraft:regeneration",
-                "show_particles": false
-            }
-        ],
+    "energy": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 100,
+        "start_value": 100,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "bar_index": 15
+        }
+    },
+    "regenerate": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_energy",
+            "change": 1,
+            "operation": "add"
+        },
+        "interval": 10,
         "condition": {
-            "type": "origins:or",
-            "conditions": [
+            "type": "origins:power_active",
+            "power": "*:phantomize",
+            "inverted": true
+        }
+    },
+    "absorb_soul_fire": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_energy",
+            "change": 1,
+            "operation": "add"
+        },
+        "interval": 5,
+        "condition": {
+            "type": "origins:block_in_radius",
+            "radius": 8,
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "originstweaks:soul_fire"
+            }
+        }
+    },
+    "steal_souls": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
                 {
-                    "type": "origins:block_in_radius",
-                    "radius": 8,
-                    "block_condition": {
-                        "type": "origins:in_tag",
-                        "tag": "originstweaks:soul_fire"
-                    }
+                    "type": "origins:change_resource",
+                    "resource": "*:*_energy",
+                    "change": 25,
+                    "operation": "add"
                 },
                 {
-                    "type": "origins:biome",
-                    "biome": "minecraft:soul_sand_valley"
+                    "type": "origins:spawn_particles",
+                    "particle": "minecraft:soul",
+                    "offset_y": 1,
+                    "speed": 0.1,
+                    "count": 25
                 }
             ]
         }
     },
-    "gold_diet": {
-        "name": "Soulbound",
-        "type": "origins:prevent_item_use",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_food"
-            }
+    "respawn": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:change_resource",
+            "resource": "*:*_energy",
+            "change": 100,
+            "operation": "set"
         }
     },
-    "gold_armor_equip": {
-        "type": "origins:conditioned_restrict_armor",
-        "head": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "chest": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "legs": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "feet": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "tick_rate": 5
-    },
-    "gold_armor_use": {
-        "name": "Soulbound",
-        "type": "origins:prevent_item_use",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
+    "sleep": {
+        "type": "origins:action_on_wake_up",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_energy",
+            "change": 100,
+            "operation": "set"
         }
     }
 }

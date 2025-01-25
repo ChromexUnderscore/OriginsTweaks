@@ -1,0 +1,23 @@
+{
+	"type": "origins:toggle",
+	"name": "Phantom Form",
+	"description": "You can switch between a human and an invisible phantom form if you have enough soul energy.",
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/toggle.png",
+			"text": "Switch between Human and Phantom Form using [Primary]."
+		}
+	],
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	},
+	"retain_state": false,
+	"condition": {
+		"type": "origins:resource",
+		"resource": "*:soulbound_energy",
+		"comparison": "!=",
+		"compare_to": 0
+	}
+}

@@ -1,7 +1,7 @@
 {
     "type": "origins:multiple",
     "name": "Ender Body",
-    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further and dodge smaller projectiles.",
+    "description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further, pick up blocks as they are and dodge smaller projectiles.",
     "badges": [
         {
             "type": "origins:tooltip",
@@ -12,6 +12,11 @@
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
             "text": "You can dodge smaller projectiles on a 5 second cooldown."
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You are able to pick up blocks as they are while not using any tools."
         }
     ],
     "scale": {
@@ -46,6 +51,33 @@
             "command": "scale reset @s"
         }
     },
+    "silk_touch": {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:silk_touch",
+        "modifier": {
+            "operation": "set_total",
+            "value": 1
+        },
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "tag": "minecraft:tools"
+                },
+                "inverted": true
+            }
+        }
+    },
+    "harvest": {
+        "type": "origins:modify_harvest",
+        "allow": true,
+        "block_condition": {
+            "type": "origins:constant",
+            "value": true
+        }
+    },
     "projectile_dodge": {
         "type": "origins:modify_damage_taken",
         "self_action": {
@@ -65,6 +97,12 @@
                             {
                                 "type": "origins:block",
                                 "block": "minecraft:air"
+                            },
+                            {
+                                "type": "origins:fluid",
+                                "fluid_condition": {
+                                    "type": "origins:still"
+                                }
                             }
                         ],
                         "inverted": true
@@ -112,7 +150,7 @@
             "compare_to": 0
         }
     },
-    "dodge_cooldown":{
+    "dodge_cooldown": {
         "type": "origins:cooldown",
         "cooldown": 100,
         "hud_render": {

@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Shoot a burst of 3 Fireballs with %s."
+            "text": "Shoot a burst of 3 Fireballs with [Secondary]."
         }
     ],
     "fireballs": {

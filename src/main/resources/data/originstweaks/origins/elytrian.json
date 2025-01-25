@@ -9,7 +9,8 @@
     "loading_priority": 1,
     "powers": [
         "originstweaks:gift_of_the_skies",
-        "origins:aerial_combatant",
+        "originstweaks:companion_mounting",
+        "originstweaks:aerial_combatant",
         "origins:claustrophobia",
         "origins:more_kinetic_damage",
         "originstweaks:elytrian_sounds"

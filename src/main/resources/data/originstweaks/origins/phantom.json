@@ -8,15 +8,16 @@
     "impact": 3,
     "loading_priority": 1,
     "powers": [
-        "origins:phantomize",
+        "originstweaks:phantomize",
         "originstweaks:phasing",
-        "originstweaks:spectral_wail",
         "originstweaks:soulbound",
-        "originstweaks:burn_in_daylight",
-        "origins:hunger_over_time",
+        "originstweaks:spectral_wail",
+        "originstweaks:aurophobia",
+        "origins:burn_in_daylight",
+        "originstweaks:no_insomnia",
         "origins:translucent",
-        "origins:phantomize_overlay",
-        "origins:invisibility",
+        "originstweaks:phantomize_overlay",
+        "originstweaks:invisibility",
         "originstweaks:phantom_sounds"
     ]
 }

@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Throw a pearl with %s."
+            "text": "Throw a pearl with [Primary]."
         }
     ],
     "pearl": {

@@ -43,7 +43,7 @@
         "type": "origins:entity_group",
         "group": "arthropod"
     },
-    "falldmg_delay": {
+    "fall_damage_reduction": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
             "type": "origins:name",

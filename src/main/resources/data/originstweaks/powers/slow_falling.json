@@ -6,7 +6,7 @@
 		{
 			"type": "origins:keybind",
 			"sprite": "origins:textures/gui/badge/toggle.png",
-			"text": "Toggle with %s."
+			"text": "Toggle with [Secondary]."
 		}
 	],
 	"modifier": {
@@ -22,7 +22,7 @@
 		"type": "origins:toggle",
 		"active_by_default": true,
 		"key": {
-			"key": "key.origins.primary_active"
+			"key": "key.origins.secondary_active"
 		}
 	},
 	"indicator": {

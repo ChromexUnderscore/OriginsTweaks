@@ -1,0 +1,87 @@
+{
+    "type": "origins:multiple",
+    "name": "Aerial Combatant",
+    "description": "You deal substancially more damage after 3 seconds of elytra flight.",
+    "melee": {
+        "type": "origins:modify_damage_dealt",
+        "modifier": {
+            "name": "melee damage while fall flying",
+            "value": 1,
+            "operation": "multiply_base"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_flight_counter",
+                    "compare_to": 15,
+                    "comparison": "=="
+                }
+            ]
+        }
+    },
+    "ranged": {
+        "type": "origins:modify_projectile_damage",
+        "modifier": {
+            "name": "projectile damage while fall flying",
+            "value": 1,
+            "operation": "multiply_base"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fall_flying"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_flight_counter",
+                    "compare_to": 15,
+                    "comparison": "=="
+                }
+            ]
+        }
+    },
+    "flight_counter": {
+        "type": "origins:resource",
+        "max": 15,
+        "min": 0,
+        "max_action": {
+            "type": "origins:execute_command",
+            "command": "playsound minecraft:entity.arrow.hit_player ambient @s"
+        },
+        "hud_render": {
+            "bar_index": 1,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_flight_counter",
+                "compare_to": 0,
+                "comparison": "!="
+            }
+        }
+    },
+    "ticking": {
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_flight_counter",
+            "change": 1,
+            "operation": "add"
+        },
+        "falling_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_flight_counter",
+            "change": 0,
+            "operation": "set"
+        },
+        "condition": {
+            "type": "origins:fall_flying"
+        }
+    }
+}

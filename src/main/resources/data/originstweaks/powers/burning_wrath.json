@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Set yourself ablaze for 30 seconds using %s."
+            "text": "Set yourself ablaze for 30 seconds using [Primary]."
         },
         {
             "type": "origins:tooltip",
@@ -16,7 +16,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You can use your fire to Light Campfires or Fuel Furnei and Brewing Stands."
+            "text": "You can use your fire to Light Campfires or Fuel Furnaces and Brewing Stands."
         }
     ],
     "set_on_fire": {

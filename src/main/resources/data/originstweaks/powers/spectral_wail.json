@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press %s to send out a Wail."
+            "text": "Press [Secondary] to send out a Wail."
         },
         {
             "type": "origins:tooltip",

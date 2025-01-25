@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Use %s to launch high into the air when grounded, or to ascend while gliding."
+            "text": "Use [Primary] to launch high into the air when grounded, or to ascend while gliding."
         },
         {
             "type": "origins:tooltip",
@@ -358,22 +358,8 @@
             "change": 6
         },
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:on_block"
-                },
-                {
-                    "type": "origins:fall_flying",
-                    "inverted": true
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_stamina",
-                    "comparison": "!=",
-                    "compare_to": 600
-                }
-            ]
+            "type": "origins:fall_flying",
+            "inverted": true
         }
     },
     "stamina_sleep": {
@@ -385,7 +371,7 @@
             "operation": "set"
         }
     },
-    "stamina_reincarnation": {
+    "stamina_respawn": {
         "type": "origins:action_on_callback",
         "entity_action_respawned": {
             "type": "origins:change_resource",

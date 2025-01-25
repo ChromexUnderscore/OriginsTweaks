@@ -8,8 +8,9 @@
     "impact": 1,
     "loading_priority": 1,
     "powers": [
-        "originstweaks:heavens_grace",
         "originstweaks:slow_falling",
+        "originstweaks:animal_friendship",
+        "originstweaks:green_thumb",
         "origins:tailwind",
         "origins:like_air",
         "origins:vegetarian",

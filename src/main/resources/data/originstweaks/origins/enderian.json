@@ -2,7 +2,7 @@
 	"name": "Enderian [OT]",
 	"description": "Born as children of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.",
 	"icon": {
-		"item": "minecraft:ender_pearl"
+		"item": "minecraft:ender_eye"
 	},
 	"order": 1,
 	"impact": 2,

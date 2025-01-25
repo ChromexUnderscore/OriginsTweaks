@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "originstweaks",
-    "version": "1.16.5",
+    "version": "${version}",
     "name": "OriginsTweaks",
     "description": "Reworks the Origins Mod's abilities and adds new ones.",
     "authors": [
@@ -16,6 +16,21 @@
     "license": "MIT License",
     "icon": "assets/originstweaks/icon.png",
     "environment": "*",
+    "entrypoints": {
+		"main": [
+			"com.chromexunderscore.originstweaks.Originstweaks"
+		],
+		"client": [
+			"com.chromexunderscore.originstweaks.OriginstweaksClient"
+		]
+	},
+	"mixins": [
+		"originstweaks.mixins.json",
+		{
+			"config": "originstweaks.client.mixins.json",
+			"environment": "client"
+		}
+	],
     "depends": {
         "minecraft": ">=1.20.2",
         "fabric-api": "*",
@@ -24,7 +39,8 @@
         "mr_origins_dietarydelights": "*"
     },
     "recommends": {
-        "modmenu": "*"
+        "modmenu": "*",
+        "morewaterlogging": "*"
     },
     "custom": {
         "modmenu": {

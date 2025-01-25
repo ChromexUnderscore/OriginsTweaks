@@ -6,7 +6,7 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press %s to dash while sprint swimming."
+            "text": "Press [Sprint] to dash while sprint-swimming."
         },
         {
             "type": "origins:tooltip",

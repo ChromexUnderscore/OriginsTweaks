@@ -2,20 +2,94 @@
 
 ## [1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20.1)
 
+### [Version 1.17 [Minecraft 1.20.4]]
+
+#### [Version 1.17.0 [1.20.4 Port & New Abilities]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.0)
+
+Gameplay Changes
+
++ Phantom:
+	+ Reworked ``Phantom Form``, ``Phasing``, ``Soulbound`` and related abilities:
+		+ Phantom Form and Phasing now use a Soul Energy bar instead of draining hunger; which regenerates in human form, by defeating mobs or by absorbing energy from soul fire.
+		+ Soul fire and related blocks no longer grant stacking buffs.
+		+ Full phasing now prevents sprinting, block selection, item usage, combat, elytra flight and sprint-swimming.
+	+ Removed the ability to prevent burning using fire protection.
+	+ Added golden tools to Phantom's ``Aurophobia``.
+	+ Phantoms no longer tick insomnia, effectively eliminating Phantom (mob) spawns for the Phantom Origin.
+	+ Fixed an issue with Phantoms being slowed down on semi full blocks if phantomized but not phasing.
++ Avian:
+	+ Added a new Power ``Animal Friendship``
+		+ Avians can tame certain animals without items using primary active on a 2 minute cooldown.
+		+ Foxes, axolotls and ocelots always trust avians, causing them to not run away and sometimes fighting alongside the avian.
+	+ Added a new Power ``Green Thumb``.
+		+ Harvesting crops with any hoe increases the yield of the crop.
+		+ Carrot crops, melons, oak leaves and dark oak leaves have a chance to drop 1 golden carrot, glistering melon and golden apple, respectively.
+		+ Glistering Melons are edible.
+		+ Replaces the power ``Heaven's Grace``.
+	+ Moved ``Featherweight`` key to secondary.
++ Arachnid:
+	+ Added a new Power ``Venom``.
+		+ Arachnids have a small chance to inflict 5 seconds of poison on hit.
+		+ Shares a toggle with ``Climbing``.
+	+ ``Master of Webs``:
+		+ Cobweb now drops 9 string.
+		+ Removed webbing in exchange for ``Venom``.
+		+ Webshot can now pull mobs and players instead pf flinging towards them.
++ Elytrian:
+	+ Added a new Power: ``Companion Mounting``.
+		+ Allows another player to mount the elytrian.
+		+ Pressing the secondary key as elytrian, sneak as passenger, crashing or being hit by a projectile kicks the passenger off.
+		+ Ability contributed by AnimGoated.
+	+ Changed ``Aerial Combatant`` to require 3 seconds of gliding before receiving a damage bonus. 
+	+ ``Aerial Combatant`` now also accounts for ranged combat.
+	+ ``Gift of the skies`` now regenerates stamina while jumping (but not gliding).
++ Enderian:
+	+ ``Ender Body`` now includes the ability to silk touch blocks while not holding a tool.
++ Feline: 
+	+ Added a new Power: ``Dexterity``.
+		+ Felines now jump higher regardless of sprinting.
+		+ Holding shift when touching a wall allows for clinging onto that block for a few seconds.
+		+ Holding sneak charges up a leap if grounded or clinging onto a block, and released by pressing jump.
+		+ Multiple leaps in a row without touching the ground will gradually reduce the leap's effectiveness.
+	+ ``Natural Hunter``:
+		+ Claws can now be sharpened using logs / wool > smooth stone > iron block > diamond block in that order to deal progressively higher damage.
++ Merling:
+	+ ``Body Moisture``:
+		+ now regenerates moisture when standing in any water instead of needing to fully submerge.
+		+ Now also regenerates when standing in rain.
+		+ Respawning now fully refills the moisture.
+
+Technical Changes
+
++ Added a new item tag ``Golden Tools``.
+	+ Moved ``Spider Silk`` abilities back into ``Master of Webs``.
++ Phantom:
+	+ Split gold related phantom drawbacks back into ``Aurophobia``.
++ Feline:
+	+ Fixed Claws ability ignoring armor by changing the modifier from ``set_total`` to ``add_base_early``.
++ Merling:
+	+ ``Body Moisture`` now prevents oxigen depletion instead of applying a waterbreathing effect.
++ Enderian:
+	+ ``Ender Body``'s Projectle dodge no longer teleports into fluids.
++ Temporarily replaced Keybind variables with strings due to the origins 1.13.0 alpha 4 breaking keybind badges. 
++ Updated Gradle and added up to date files.
++ Updated ``README.md``.
++ Bumped version to 1.17.0.
+
 ### [Version 1.16 [Minecraft 1.20.2]]
 
-#### [Verion 1.16.5[]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.5)
+#### [Verion 1.16.5 [Arachnid & Phantom Balance]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.5)
 
 Gameplay Changes
 
 + Fixed Arachnids not being able to hold onto walls while climbing.
 + Balance Changes to Elytrian's ``Gift of the skies`` power:
-  + Lowered overall Stamina cost of launch and ascend.
-  + Armor values ranging from 13 to 19 now allow launch and ascend, but are weaker and less stamina efficient in comparison to 12 armor and below.
+	+ Lowered overall Stamina cost of launch and ascend.
+	+ Armor values ranging from 13 to 19 now allow launch and ascend, but are weaker and less stamina efficient in comparison to 12 armor and below.
 + Arachnid balance changes:
-  + ``Master of Webs`` now requires and returns 9 string.
-  + ``Spider silk``: doubled general silk supply regeneration, removed the ability to restock using string items.
-  + Cooldown only triggers when the webshot hit a target.
+	+ ``Master of Webs`` now requires and returns 9 string.
+	+ ``Spider silk``: doubled general silk supply regeneration, removed the ability to restock using string items.
+	+ Cooldown only triggers when the webshot hit a target.
 + Fixed phantom's ``Phasing`` ability; phasing now uses a climbing power and phantoms get slowed when phasing.
 + Fixed ``Soulbound`` Tooltips on Golden foods and armor.
 
@@ -29,15 +103,15 @@ Technical Changes
 Gameplay Changes
 
 + Added a new Merling power: ``Body Moisture``.
-  + Merlings now have a resource bar that provides water breathing for 10 minutes out of water, and 5 minutes in the nether.
-  + Merlings can submerge in water, sit in water cauldrons or drink a bottle of water in order to keep the bar stocked.
+	+ Merlings now have a resource bar that provides water breathing for 10 minutes out of water, and 5 minutes in the nether.
+	+ Merlings can submerge in water, sit in water cauldrons or drink a bottle of water in order to keep the bar stocked.
 + The Merling's natural spawn is now in Ocean Biomes rather than Deep Ocean Biomes.
 + Merling's dash now grants a 1 second dolphin's grace effect instead of a 3 second effect.
 + Arachnid's power "Arthropod" and "Spider Silk" have been rebalanced.
-  + Arachnid's falldamage calculation now starts after a fall of 16 blocks instead of 30.
-  + close combat webbing now costs 1 Notch of the silk supply instead of 2.
-  + Webshot now has a max range of 16 blocks instead of 32 blocks.
-  + Webshot's forwards velocity has been reduced from 2 to 1, and upwards velocity has been reduced from 0.75 to 0.25.
+	+ Arachnid's falldamage calculation now starts after a fall of 16 blocks instead of 30.
+	+ close combat webbing now costs 1 Notch of the silk supply instead of 2.
+	+ Webshot now has a max range of 16 blocks instead of 32 blocks.
+	+ Webshot's forwards velocity has been reduced from 2 to 1, and upwards velocity has been reduced from 0.75 to 0.25.
 + Avian's Heaven's Grace now provides a 25% damage boost to both normal and spectral arrows. Tipped Arrows do not receive a bonus.
 + Arrows and spectral arrows held by avians now have a tooltip displaying the damage bonus Heaven's Grace provides.
 + Elytrians no longer regenerate stamina while gliding.
@@ -47,7 +121,7 @@ Gameplay Changes
 Technical Changes
 
 + Moved OriginsTweaks' Origins to the Origins Layer for better compatibility with other addons or custom Origins.
-  + Added an \[OT] suffix to Origins' Names to differentiate it from the base Origins.
+	+ Added an \[OT] suffix to Origins' Names to differentiate it from the base Origins.
 + Replaced the custom texture by Simraa with the vanilla elytra texture, while providing a template for elytrian wing resourcepacks in the release files.
 + Added new item tag ``melee_weapons``.
 + Rephrased some descriptions.
@@ -80,22 +154,22 @@ Gameplay Changes
 + Feline's "Nocturnal" power is no longer disabled when submerged in water.
 
 + Shulk's "Protective Shell" ability moved to "Sturdy Skin".
-  + Base armor changed to 3.
-  + Up to 7 bonus armor can be gained by pressing sneak for a while, for a total of 10 (5 chestplates)
-  + Armor does not run out over time, but taking a hit over 3 hearts removes 1 bonus armor point and disables buildup for 30 seconds.
+	+ Base armor changed to 3.
+	+ Up to 7 bonus armor can be gained by pressing sneak for a while, for a total of 10 (5 chestplates)
+	+ Armor does not run out over time, but taking a hit over 3 hearts removes 1 bonus armor point and disables buildup for 30 seconds.
 
 + Phasing vision increased from 10 to 16.
 
 + "Aurophobia" renamed to "Soulbound"
-  + Added duration stacking saturation and regeneration effects when near soul fire or in a soulsand valley biome.
+	+ Added duration stacking saturation and regeneration effects when near soul fire or in a soulsand valley biome.
 
 + Added a dolphins grace effect for 3 seconds upon activating the merling dash.
 
 + Changed "Teleportaton" ability to properly prevent suffocation after pearling.
 
 + Made Changes to "Gift of the Skies".
-  + Launch and ascend now allow using up all remaining stamina points.
-  + Prevent stamina regeneration if it hits 0 while gliding.
+	+ Launch and ascend now allow using up all remaining stamina points.
+	+ Prevent stamina regeneration if it hits 0 while gliding.
 
 Technical Changes
 
@@ -149,7 +223,7 @@ This is a big one.
 
 + Updated to Minecraft 1.20.2
 + Updated to Origins >= 1.12.
-  + Since power and action types were used that have been added after Origins 1.12, this version unfortunately no longer supports older than Origins 1.12.0 or Minecraft 1.20.2.
+	+ Since power and action types were used that have been added after Origins 1.12, this version unfortunately no longer supports older than Origins 1.12.0 or Minecraft 1.20.2.
 + Changed dependencies to require any version of Fabric API and Pehkui, to avoid issues with future releases of origins and outdated / bugged pehkui releases.
 + Fixed various formatting inconsistencies.
 + Fixed various missing translation keys.
@@ -166,16 +240,16 @@ This is a big one.
 + Removed the weakness debuff from ``aurophobia``.
 + Removed power ``cloud`` from merling.
 + Removed power ``reflex`` from enderian.
-  + Added a projectile immunity to ``ender_body`` instead.
+	+ Added a projectile immunity to ``ender_body`` instead.
 + Removed power ``evil_presence`` from avian.
 + Decreased volume for feline's purring sound while asleep.
 + Reduced divergence of ``firecharged_projectiles`` from ``2`` to ``1``.
 + Changed ``heavens_grace`` projectile damage bonus to use ``multiply_base_multiplicative`` instead of ``multiply_total_multiplicative``.
 + Changed ``master_of_webs`` cobweb crafting to use 2 string instead of 9, changed ``string_refill`` accordingly.
 + Split up ``master_of_webs`` into two powers.
-  + ``spider_silk`` now contains the ``webshot`` and ``silk_resource`` (formerly ``string_resource``) sub-powers.
-  + ``webshot`` now grapples towards entities instead of trapping them.
-  + Reintroduced vanilla ``webbing`` sub-power from ``master_of_webs`` in connection to ``silk_resource``.
+	+ ``spider_silk`` now contains the ``webshot`` and ``silk_resource`` (formerly ``string_resource``) sub-powers.
+	+ ``webshot`` now grapples towards entities instead of trapping them.
+	+ Reintroduced vanilla ``webbing`` sub-power from ``master_of_webs`` in connection to ``silk_resource``.
 + Changed ``protective_shell`` to disable buildup for 3 seconds instead of a complicated break mechanic, and reduced shell damage taken on hit.
 + Removed power ``seventh_sense`` from feline.
 + Changed volume of ``spectral_wail`` to be more accurate with the range of the ability.
@@ -187,10 +261,10 @@ This is a big one.
 #### [Version 1.15.4 [Removed Quilt Metadata & Player Suggestions]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.4)
 
 + Removed ``quilt_mod.json`` because quilt natively supports fabric mods (and I'm too stupid to use quilt metadata).
-  + closes #41.
+	+ closes #41.
 + Made changes to Merling's Dash ability.
-  + Reduced base dash velocity from 2 to 1.5.
-  + The dash now increases velocity by 0.5 per level of depth strider.
+	+ Reduced base dash velocity from 2 to 1.5.
+	+ The dash now increases velocity by 0.5 per level of depth strider.
 
 #### [Version 1.15.3 [Quilt Metadata & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.3)
 
@@ -198,8 +272,8 @@ This is a big one.
 + Fixed Enderian's Recall not toggling back off after the player died.
 + Added Description Assets for use within the ``README.md``.
 + Changed ``README.md``.
-  + Used proper header incrementation.
-  + Updated descriptions.
+	+ Used proper header incrementation.
+	+ Updated descriptions.
 + Added a toggle to Feline's Cat Vision.
 + Added a 5 seconds invincibility window against suffocation when an enderian teleports via pearl.
 + Negated mining speed penalty when climbing.
@@ -211,13 +285,13 @@ This is a big one.
 
 + Fixed Arachnid's Climbing ability still acting weird due to it somehow getting mixed up with the webshot keybind
 + Reworked Enderian's Recall ability to work better in Multiplayer.
-  + No longer randomly activates after the resource runs out and cooldown has passed.
-  + Cooldown is now visible using a pink resource bar with an X.
-  + No longer teleports to the nearest recall beacon instead of the user's own beacon.
-  + The Beacon now force loads chunks until teleported back.
-    + This enables teleporting back from any distance.
-    + Also has the neat side effect of a less laggy teleport in Singleplayer.
-  + The Shader effect applied when the ability is used is now togglable with F4.
+	+ No longer randomly activates after the resource runs out and cooldown has passed.
+	+ Cooldown is now visible using a pink resource bar with an X.
+	+ No longer teleports to the nearest recall beacon instead of the user's own beacon.
+	+ The Beacon now force loads chunks until teleported back.
+		+ This enables teleporting back from any distance.
+		+ Also has the neat side effect of a less laggy teleport in Singleplayer.
+	+ The Shader effect applied when the ability is used is now togglable with F4.
 + The Reflex ability's Cooldown Resource is now only visible when the Cooldown is active.
 + Fixed a typo in the Terrestria's wood and logs block tag which prevented it from loading.
 
@@ -226,21 +300,21 @@ This is a big one.
 + Undone dependency metadata change listed in the previous release's changelog.
 + Updated Pehkui Dependency metadata to support Version 3.3.3 or newer due to it being the only version that supports 1.19.0.
 + Added proper integration with the Mod menu API.
-  + Set Origins as parent for this mod.
-  + Enabled Update Checker.
+	+ Set Origins as parent for this mod.
+	+ Enabled Update Checker.
 + Modified and added new Block tags to make Feline's Claw ability work with earlier versions of Minecraft.
 + Changed diet abilities.
-  + Carnivore no longer has the condition of "origins:meat" to prevent issues with mixed food.
-  + Avians have now a separate item tag for their vegetarian diet.
-  + Foods that are an even mix of vegetarian and carnivore ingredients are ignored by both diets (for example rabbit stew).
+	+ Carnivore no longer has the condition of "origins:meat" to prevent issues with mixed food.
+	+ Avians have now a separate item tag for their vegetarian diet.
+	+ Foods that are an even mix of vegetarian and carnivore ingredients are ignored by both diets (for example rabbit stew).
 + Added compatibility for Terrestria and Cinderscapes.
-  + Felines can now use (quarter) logs and wood from these mods to resharpen their claws.
-  + Carnivores can't eat Bramble Berries from Cinderscapes.
+	+ Felines can now use (quarter) logs and wood from these mods to resharpen their claws.
+	+ Carnivores can't eat Bramble Berries from Cinderscapes.
 + Added compatibility for Farmer's Delight.
-  + Added vegetable based foods to Avian's vegetarian diet.
-  + Added meat based foods to arachnid's carnivore diet.
-  + Mixed foods added by Farmer's Delight are ignored by both diets.
-  + Added foods based off of feline prey such as chicken and fish to feline's saturation buff.
+	+ Added vegetable based foods to Avian's vegetarian diet.
+	+ Added meat based foods to arachnid's carnivore diet.
+	+ Mixed foods added by Farmer's Delight are ignored by both diets.
+	+ Added foods based off of feline prey such as chicken and fish to feline's saturation buff.
 + Fixed conditions for climbing inside cobwebs for the arachnid as this somehow granted the Arachnid Creative flight (confusion).
 + Reverted change of needing one free hand for the Arachnid's web shot, because this was just annoying to deal with when accidentally picking up stuff.
 + Added a proper name and description for Feline's natural Hunter Ability.
@@ -250,16 +324,16 @@ This is a big one.
 #### [Version 1.15.0 [Update to Origins 1.10]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.0)
 
 + Updated Dependency metadata.
-  + Supports Minecraft 1.20.0 and 1.20.1.
-  + Requires Origins 1.10.
-  + Requires Pehkui 3.7.6.
+	+ Supports Minecraft 1.20.0 and 1.20.1.
+	+ Requires Origins 1.10.
+	+ Requires Pehkui 3.7.6.
 + Firecharged no longer requires being on fire.
 + Added Cherry Logs, Cherry Wood and Bamboo Blocks to block tag for sharpening feline's claws.
-  + Due to this change this version is unfortunately no longer compatible with versions older than 1.20.0, as unregistered blocks inside block tags will not load the block tag in the first place, breaking the ability.
-  + I may fix this in the next release.
+	+ Due to this change this version is unfortunately no longer compatible with versions older than 1.20.0, as unregistered blocks inside block tags will not load the block tag in the first place, breaking the ability.
+	+ I may fix this in the next release.
 + Changed Reflex in both nether and non-nether (Bug #35).
-  + In the Overworld and below the nether-roof the Enderian may teleport up at most 16 blocks at a time.
-  + Enderians above the nether-roof (> 128) will always teleport to the bottom regardless of y coordinates.
+	+ In the Overworld and below the nether-roof the Enderian may teleport up at most 16 blocks at a time.
+	+ Enderians above the nether-roof (> 128) will always teleport to the bottom regardless of y coordinates.
 
 ## [1.19.4](https://minecraft.fandom.com/wiki/Java_Edition_1.19.4)
 
@@ -284,9 +358,9 @@ This is a big one.
 + Reordered Avian's Powers.
 + Reordered Blazeborn's Powers.
 + Reworked ``origins:burning_wrath``.
-  + Added active sub-power to put the player on fire.
-  + Damage bonus when on fire is 25% more instead of adding 3 health points.
-  + Added lighting campfires and fueling furnaces / brewing stands as sub power.
+	+ Added active sub-power to put the player on fire.
+	+ Damage bonus when on fire is 25% more instead of adding 3 health points.
+	+ Added lighting campfires and fueling furnaces / brewing stands as sub power.
 + Removed power ``blazing_touch`` as it has been integrated into ``burning_wrath``.
 + Made Shulker Inventory drop when power has been lost, instead of deleting the items.
 + Fixed a bug with ``weak_arms`` not reducing mining speed.
@@ -295,59 +369,59 @@ This is a big one.
 + Added ``minecraft:entity.cat.purreow`` alongside ``minecraft:entity.cat.ambient`` as ambient sound effect.
 + Added a ``minecraft:entity.cat.purr`` sound loop when felines are detected asleep in a bed.
 + Changed ``Firecharged Projectile``.
-  + Renamed from ``Firecharged Projectile`` to ``Firecharged``.
-  + Now requiring being on fire.
+	+ Renamed from ``Firecharged Projectile`` to ``Firecharged``.
+	+ Now requiring being on fire.
 + Restricted Firework Rocket use within ``gift_of_the_skies``.
 + Removed power ``revved_up``.
 + Changed ``sharp_claws``.
-  + resharpening claws now use more accurate sounds depending on block material.
-  + Resharpening using wood (logs / wood) now is twice af effective as fabric (wool / carpet).
+	+ resharpening claws now use more accurate sounds depending on block material.
+	+ Resharpening using wood (logs / wood) now is twice af effective as fabric (wool / carpet).
 + Power ``thermal_lift`` now requires being on fire.
 + Changed block tag ``natural_stone``.
-  + Now includes:
-    + stone
-    + coal ore
-    + copper ore
-    + iron ore
-    + gold ore
-    + redstone ore
-    + emerald ore
-    + lapis ore
-    + diamond ore
-    + ancient debris
-    + granite
-    + diorite
-    + andesite
-    + sandstone
-    + smooth sandstone
-    + red sandstone
-    + smooth red sandstone
-    + smooth basalt
-    + calcite
-    + block of amethyst
-    + budding amethyst
-    + tuff
-    + dripstone block
-    + netherrack
-    + basalt
-    + magma block
-    + end stone
+	+ Now includes:
+		+ stone
+		+ coal ore
+		+ copper ore
+		+ iron ore
+		+ gold ore
+		+ redstone ore
+		+ emerald ore
+		+ lapis ore
+		+ diamond ore
+		+ ancient debris
+		+ granite
+		+ diorite
+		+ andesite
+		+ sandstone
+		+ smooth sandstone
+		+ red sandstone
+		+ smooth red sandstone
+		+ smooth basalt
+		+ calcite
+		+ block of amethyst
+		+ budding amethyst
+		+ tuff
+		+ dripstone block
+		+ netherrack
+		+ basalt
+		+ magma block
+		+ end stone
 + Changed block tag ``sturdy_stone``.
-  + Now includes:
-    + deepslate
-    + reinforced deepslate
-    + deepslate coal ore
-    + deepslate iron ore
-    + deepslate copper ore
-    + deepslate gold ore
-    + deepslate redstone ore
-    + deepslate emerald ore
-    + deepslate lapis ore
-    + deepslate diamond ore
-    + obsidian
-    + crying obsidian
-    + blackstone
-    + gilded blackstone
+	+ Now includes:
+		+ deepslate
+		+ reinforced deepslate
+		+ deepslate coal ore
+		+ deepslate iron ore
+		+ deepslate copper ore
+		+ deepslate gold ore
+		+ deepslate redstone ore
+		+ deepslate emerald ore
+		+ deepslate lapis ore
+		+ deepslate diamond ore
+		+ obsidian
+		+ crying obsidian
+		+ blackstone
+		+ gilded blackstone
 + Added Block tag ``pickaxes`` for conditions used in ``weak_arms``.
 
 #### [Version 1.14.2 [Enderian Nether-roof Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.2)
@@ -357,78 +431,78 @@ This is a big one.
 #### [Version 1.14.1 [Some more fixes that I forgor :skull:]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.1)
 
 + Fixed ``slow_falling`` not working due to it using ``originstweaks:`` identifier instead of ``origins:`` within toggle conditions.
-  + Also changed the keybinding to use primary active.
+	+ Also changed the keybinding to use primary active.
 + Restricted ``dual_wielding`` to only swing the Offhand and trigger the cool down when 2 identical swords are in off- and mainhand.
 + Changed order of powers for ``avian``.
 + Readded ``heavens_grace``.
-  + Changed Damage modifier to increase total damage by ``25%`` instead of a fixed bonus of ``3.5`` hearts.
+	+ Changed Damage modifier to increase total damage by ``25%`` instead of a fixed bonus of ``3.5`` hearts.
 + Tweaked various damage modifiers because I can't read.
 + Changed power ``arthropod_appearance``.
-  + Only Reduces fall damage after 30 blocks by ``27`` instead of resetting it and then reducing it by ``30``.
+	+ Only Reduces fall damage after 30 blocks by ``27`` instead of resetting it and then reducing it by ``30``.
 + Removed power ``dual_wielding`` due to it being broken as hell.
 + Added power ``evil presence`` to avian.
-  + Provides a resource bar ranging from ``0`` to ``7``, indicating how many undead mobs are nearby.
-  + Grants a 30% damage bonus against undead mobs.
+	+ Provides a resource bar ranging from ``0`` to ``7``, indicating how many undead mobs are nearby.
+	+ Grants a 30% damage bonus against undead mobs.
 + Tweaked ``master_of_webs``.
-  + Rearranged badges.
-  + Added Visual effects and sounds when restocking string supply.
-  + Removed loot table for cobwebs returning 9 string as cobwebs won't drop string without a sword.
+	+ Rearranged badges.
+	+ Added Visual effects and sounds when restocking string supply.
+	+ Removed loot table for cobwebs returning 9 string as cobwebs won't drop string without a sword.
 + Reworked power ``gift_of_the_skies``.
-  + Renamed power ``originstweaks:flap`` to ``originstweaks:gift_of_the_skies``.
-  + Replaced the Cool down for the launch with a stamina system, used by the Elytra glide, launch and flapping wings abilities.
+	+ Renamed power ``originstweaks:flap`` to ``originstweaks:gift_of_the_skies``.
+	+ Replaced the Cool down for the launch with a stamina system, used by the Elytra glide, launch and flapping wings abilities.
 + Nerfed power ``spectral_wail``.
-  + Changed conditions for entity glow from ``!=0`` to ``<= 30`` and ``>20`` to only activate for the first 10 seconds of the 30 seconds duration.
+	+ Changed conditions for entity glow from ``!=0`` to ``<= 30`` and ``>20`` to only activate for the first 10 seconds of the 30 seconds duration.
 + Fixed power ``recall``.
-  + Fixed a bug where the power would turn itself on randomly.
+	+ Fixed a bug where the power would turn itself on randomly.
 + Fixed and nerfed power ``cloud``.
-  + Changed active time from ``5 minutes`` to ``2:30 minutes``.
-  + Fixed a bug where the power would turn itself off immediately after turning it on.
-  + Changed conditions so that the cloud cannot be summoned when in water.
+	+ Changed active time from ``5 minutes`` to ``2:30 minutes``.
+	+ Fixed a bug where the power would turn itself off immediately after turning it on.
+	+ Changed conditions so that the cloud cannot be summoned when in water.
 
 #### [Version 1.14.0 [Balance Changes / Power Reworks]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.0)
 
 + Reworked power ``antigravity_bullet``.
-  + Changed Description to mention a Shulker Bullet rather than an Antigravity Bullet.
-  + Set Projectile speed from ``0.75`` to ``1``.
-  + Set Projectile Divergence to ``0``.
-  + Added NBT tag ``{NoGravity:1}`` to Projectile, making it unaffected by Gravity.
-  + Swapped active keybindings with ``shulker_inventory`` for easier access.
+	+ Changed Description to mention a Shulker Bullet rather than an Antigravity Bullet.
+	+ Set Projectile speed from ``0.75`` to ``1``.
+	+ Set Projectile Divergence to ``0``.
+	+ Added NBT tag ``{NoGravity:1}`` to Projectile, making it unaffected by Gravity.
+	+ Swapped active keybindings with ``shulker_inventory`` for easier access.
 + Reworked power ``aquadynamic``.
-  + Changed Description to use proper English.
-  + Changed Damage Modifiers to use non-Legacy Operations.
+	+ Changed Description to use proper English.
+	+ Changed Damage Modifiers to use non-Legacy Operations.
 + Added Parrot Imitations of Origin Ambient Sounds while riding on the Player's shoulder.
 + Reworked power ``arthropod_appearance``.
-  + Changed the Second Badge to describe the power more accurately.
-  + Changed Damage Modifiers to use non-Legacy Operations.
+	+ Changed the Second Badge to describe the power more accurately.
+	+ Changed Damage Modifiers to use non-Legacy Operations.
 + Reworked power ``aurophobia``.
-  + Golden Tools no longer deal 125% Damage on Phantoms.
-  + Gold related Blocks no longer inflict Slowness when in 5 Blocks proximity.
+	+ Golden Tools no longer deal 125% Damage on Phantoms.
+	+ Gold related Blocks no longer inflict Slowness when in 5 Blocks proximity.
 + Reworked power ``blazing_touch``.
-  + Changed basic fire aspect to inflict fire for ``8`` seconds instead of ``20``, equivalent to Fire Aspect II.
-  + Changed Revved fire aspect to inflict fire for ``16`` seconds instead of ``40``, equivalent to Fire Aspect IV.
-  + Restricted both fire aspect powers to only work when the mainhand is empty.
-  + Right-clicking furnaces, campfires and brewing stands while blazing touch is active now fuels / lights these blocks.
+	+ Changed basic fire aspect to inflict fire for ``8`` seconds instead of ``20``, equivalent to Fire Aspect II.
+	+ Changed Revved fire aspect to inflict fire for ``16`` seconds instead of ``40``, equivalent to Fire Aspect IV.
+	+ Restricted both fire aspect powers to only work when the mainhand is empty.
+	+ Right-clicking furnaces, campfires and brewing stands while blazing touch is active now fuels / lights these blocks.
 + Reworked power ``firecharged_projectile``.
-  + Changed Cool down for the revved fireball from ``50`` to ``200`` ticks.
+	+ Changed Cool down for the revved fireball from ``50`` to ``200`` ticks.
 + Reworked power ``flap``.
-  + Nerfed various velocity values in order to balance this power.
+	+ Nerfed various velocity values in order to balance this power.
 + Removed power ``heavens_grace``.
 + Added power ``master_of_webs`` to origins/powers for ``no_slowdown`` to work properly.
 + Changed Badge in ``master_of_webs``.
-  + Added a notice to use a sword when mining cobweb to get string refunded.
+	+ Added a notice to use a sword when mining cobweb to get string refunded.
 + Changed power ``recall``.
-  + The bar now fully depletes when toggling it off.
+	+ The bar now fully depletes when toggling it off.
 + Reopened Issue #32 because I managed to reproduce the bug.
 + Fixed a bug with power ``reflex``.
-  + Negative Damage causes arrows to bounce off of the player, fixed by instead setting the total damage to 1.
+	+ Negative Damage causes arrows to bounce off of the player, fixed by instead setting the total damage to 1.
 + Closed Issue #32 as this bug is now fixed.
 + Added a sound effect to power ``sharp_claws`` when resharpening claws.
 + Balanced power ``thermal lift``.
-  + Changed usage cost to be ``5`` resource unit per tick instead of ``1``.
-  + Changed resource to recharge ``3`` resource units per tick instead of ``5``.
+	+ Changed usage cost to be ``5`` resource unit per tick instead of ``1``.
+	+ Changed resource to recharge ``3`` resource units per tick instead of ``5``.
 + Removed power ``toxic_coating`` as Arachnid has too many abilities.
 + Fixed a Bug with ``recall``.
-  + Added a Cool down of 10 seconds between toggling the power off -> on, fixing a new beacon being created upon toggling off.
+	+ Added a Cool down of 10 seconds between toggling the power off -> on, fixing a new beacon being created upon toggling off.
 
 ## [1.19.3](https://minecraft.fandom.com/wiki/Java_Edition_1.19.3)
 
@@ -509,73 +583,73 @@ This is a big one.
 #### [Version 1.11.0 [Merling Rework]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.0)
 
 + Added power ``Zora Dash``
-  + Ability to dash underwater on a cool down
+	+ Ability to dash underwater on a cool down
 + Changed power ``Hydro Knowledge``, renamed to ``Aquadynamic``.
-  + Changed damage bonus from ``addition 4`` to ``multiply_total 1.5``
-  + Melee is affected as well now.
+	+ Changed damage bonus from ``addition 4`` to ``multiply_total 1.5``
+	+ Melee is affected as well now.
 
 ### [Version 1.10 [Enderian Buff]]
 
 #### [Version 1.10.3 [Fabric Mod]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.3)
 
 + Migrated from Datapack to Fabric Mod
-  + Changed ``pack.png`` from a lazy wrench pasted onto the Orb of Origins to a pixel-style wrench.
-  + Added ``fabric.mod.json``
-  + Removed ``tellraw`` message upon datapack reload.
+	+ Changed ``pack.png`` from a lazy wrench pasted onto the Orb of Origins to a pixel-style wrench.
+	+ Added ``fabric.mod.json``
+	+ Removed ``tellraw`` message upon datapack reload.
 
 #### [Version 1.10.2 [Shulk and Arachnid Nerfs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.2)
 
 + Changed `pack_format` from `9` to `10`.
 + `Protective Shell` can now be broken.
-  + -14 Shields when hit (Max Shields are 140)
-  + 5 Seconds Cool down on recharge when hit.
+	+ -14 Shields when hit (Max Shields are 140)
+	+ 5 Seconds Cool down on recharge when hit.
 + `Aurophobia` stacking status effect increases every 5 seconds instead of 1.
 
 #### [Version 1.10.1 [Enderian Buff and Pacify Hostile Mobs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.1)
 
 + Added power `Reflex` to Enderian.
-  + Automatically dodges Arrows and negates damage on a Cool down.
+	+ Automatically dodges Arrows and negates damage on a Cool down.
 + Changed power `Recall`.
-  + Enderian now shakes while in recall.
+	+ Enderian now shakes while in recall.
 + Hostile Mobs paired on Origin are now passive.
-  + Spiders and Cave Spiders won't attack Arachnid.
-  + Blazes won't attack Blazeborn.
-  + Endermen won't attack Enderians.
-  + Puffer fish and Dolphins won't attack Merling.
-  + Phantoms won't attack Phantom.
-  + Shulkers wont attack Shulk.
+	+ Spiders and Cave Spiders won't attack Arachnid.
+	+ Blazes won't attack Blazeborn.
+	+ Endermen won't attack Enderians.
+	+ Puffer fish and Dolphins won't attack Merling.
+	+ Phantoms won't attack Phantom.
+	+ Shulkers wont attack Shulk.
 
 #### [Version 1.10.0 [Enderian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.0)
 
 + Replaced power ``Slender Body`` with ``Ender Body``.
-  + height, model width, eye height and reach have been changed.
+	+ height, model width, eye height and reach have been changed.
 + Added power ``Recall Beacon`` to Enderian.
-  + Secondary Active summons an AoE Cloud, which acts as a teleportation point. Forces teleport once completely uncharged. 30 seconds usage, up to 60 seconds to charge up fully.
+	+ Secondary Active summons an AoE Cloud, which acts as a teleportation point. Forces teleport once completely uncharged. 30 seconds usage, up to 60 seconds to charge up fully.
 
 ### [Version 1.9 [Avian Buff]]
 
 #### [Version 1.9.2 [Another power for Arachnid]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.2))
 
 + Added power ``Toxic Coating`` to Arachnid.
-  + Projectiles fired poison targets on a cool down.
+	+ Projectiles fired poison targets on a cool down.
 + Changed power ``Thermal Lift``.
-  + Reduced ``action over time`` loop to prevent lag.
+	+ Reduced ``action over time`` loop to prevent lag.
 
 #### [Version 1.9.1 [Feline and Avian Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.1))
 
 + Fixed Feline Power ``Sharp Claws``
-  + Added change resource action.
-    + I forgor :skull:.
+	+ Added change resource action.
+		+ I forgor :skull:.
 + Fixed Avian Power `Dual Wielding`
-  + Restructured Raycast Action to support the bi-entity action.
+	+ Restructured Raycast Action to support the bi-entity action.
 
 #### [Version 1.9.0 [Avian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.0)
 
 + Added Power `Dual Wielding`.
-  + Ability to hit a second time with an offhand sword on a cool down.
-  + Sword damages when hit entity.
-  + Pets are ignored.
-  + Enchantments and effects are ignored.
+	+ Ability to hit a second time with an offhand sword on a cool down.
+	+ Sword damages when hit entity.
+	+ Pets are ignored.
+	+ Enchantments and effects are ignored.
 + Changed Active keybinding in power `Slow Falling` from `primary` to `secondary`.
 
 ### [Version 1.8 [Feline Buff]]
@@ -583,23 +657,23 @@ This is a big one.
 #### [Version 1.8.0 [Feline Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.8.0)
 
 + Tweaked Power ``Weak Arms``
-  + Set Mining Speed from `25%` to `50%`.
-  + "Sturdy Stones" are now un-mineable unless under effect oof any Strength Potion.
-  + Added Block Tag `orginstweaks:sturdy_stone`.
+	+ Set Mining Speed from `25%` to `50%`.
+	+ "Sturdy Stones" are now un-mineable unless under effect oof any Strength Potion.
+	+ Added Block Tag `orginstweaks:sturdy_stone`.
 + Added Power ``Sharp Claws``
-  + Unarmed Damage dealt is increased.
-  + Sharpness Resource needed in order to apply buff.
-  + Resource can be refilled by right-clicking on any blocks in tag ``originstweaks:resharpen_claws``.
-  + Added Block tag ``originstweaks:resharpen_claws``.
+	+ Unarmed Damage dealt is increased.
+	+ Sharpness Resource needed in order to apply buff.
+	+ Resource can be refilled by right-clicking on any blocks in tag ``originstweaks:resharpen_claws``.
+	+ Added Block tag ``originstweaks:resharpen_claws``.
 + Added Power `Seventh Sense`.
-  + Feline Prey in a 16 Block radius will be inflicted glowing for 10 Seconds upon using this ability.
-  + 30 Seconds Cool down
-  + Feline Prey are entities specified in `originstweaks:feline_prey`, such as chickens, rabbits and fish.
-  + Added Entity Type tag `originstweaks:feline_prey`.
+	+ Feline Prey in a 16 Block radius will be inflicted glowing for 10 Seconds upon using this ability.
+	+ 30 Seconds Cool down
+	+ Feline Prey are entities specified in `originstweaks:feline_prey`, such as chickens, rabbits and fish.
+	+ Added Entity Type tag `originstweaks:feline_prey`.
 + Added Power `Natural Hunter`.
-  + Food in tag `originstweaks:feline_food` have increased nourishment.
-    + \+ 3 hunger, + 2 Saturation.
-  + Added Item tag `originstweaks:feline_food`.
+	+ Food in tag `originstweaks:feline_food` have increased nourishment.
+		+ \+ 3 hunger, + 2 Saturation.
+	+ Added Item tag `originstweaks:feline_food`.
 
 ### [Version 1.7 [Balancing, Mod Support & Fixes]]
 
@@ -611,47 +685,47 @@ This is a big one.
 #### [Version 1.7.1 [More Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.1)
 
 + Fixed ``Blazing Touch``
-  + Removed ability to light candles and candle cakes due to bugs with Origins 1.4.1.
+	+ Removed ability to light candles and candle cakes due to bugs with Origins 1.4.1.
 + Fixed ``Master of Webs``.
-  + Changed power to execute on both Client and Server side to prevent waste of String resource and failure of grappling.
-  + Increased grapple reach to better grapple onto Boss mobs.
-  + Adjusted grapple strength to balance reach.
-  + Increased Refill Cool down using String to suppress Item loss.
-  + Changed fluid handling from `any` to `none` to fix being able to grapple onto Water or Lava.
-  + Fixed inconsistent conditions for effects such as `Swing Hand`, `hit command` and `command along ray`.
+	+ Changed power to execute on both Client and Server side to prevent waste of String resource and failure of grappling.
+	+ Increased grapple reach to better grapple onto Boss mobs.
+	+ Adjusted grapple strength to balance reach.
+	+ Increased Refill Cool down using String to suppress Item loss.
+	+ Changed fluid handling from `any` to `none` to fix being able to grapple onto Water or Lava.
+	+ Fixed inconsistent conditions for effects such as `Swing Hand`, `hit command` and `command along ray`.
 + Replaced function calls in sound powers with actual command to decrease chaos in function folder.
 + Removed block tag `originstweaks:candles`.
-  + (For some reason, it reappeared again even though I'm sure I removed it in the last update?).
+	+ (For some reason, it reappeared again even though I'm sure I removed it in the last update?).
 + Fixed Origin Team for Feline.
 + Datapack Load Message now shows Version Number.
 
 #### [Version 1.7.0 [Balancing, Mod Support & Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.0)
 
 + Updated Datapack to 1.18.2.
-  + Changed Pack Format to 9.
+	+ Changed Pack Format to 9.
 + Removed Block Tag.
-  + Removed ``originstweaks:candle`` due to not being used.
+	+ Removed ``originstweaks:candle`` due to not being used.
 + Added Support for Charm.
-  + Added Modded Gold Blocks to ``origintweaks:golden_blocks``.
+	+ Added Modded Gold Blocks to ``origintweaks:golden_blocks``.
 + Fixed Team System
-  + Added property ``"hidden": true`` to avoid showing up on the Origin info card.
-  + Set ``seeFriendlyInvisibles`` of all Origin Teams to false.
-  + Fixed Issue with VanillaTweaks' Datapack ``AFK Display`` not reapplying Origins Teams after revoking AFK status.
+	+ Added property ``"hidden": true`` to avoid showing up on the Origin info card.
+	+ Set ``seeFriendlyInvisibles`` of all Origin Teams to false.
+	+ Fixed Issue with VanillaTweaks' Datapack ``AFK Display`` not reapplying Origins Teams after revoking AFK status.
 + Balanced Phantom Power ``Aurophobia``.
-  + Decreased the gold-debuff range from ``10`` to ``5``.
-  + Added Sub-power ``golden_armor``.
-    + Restricts armor in tag ``originstweaks:golden_armor`` to be equipped.
-  + Added Item tag ``originstweaks:golden_armor``.
+	+ Decreased the gold-debuff range from ``10`` to ``5``.
+	+ Added Sub-power ``golden_armor``.
+		+ Restricts armor in tag ``originstweaks:golden_armor`` to be equipped.
+	+ Added Item tag ``originstweaks:golden_armor``.
 + Balanced Shulk power ``Protective Shell``.
-  + Changed Sneak Cool down from ``0 Ticks`` to ``2 ticks``.
+	+ Changed Sneak Cool down from ``0 Ticks`` to ``2 ticks``.
 + Balanced Blazeborn Power ``Blazing Touch``.
-  + Increased non-revved Fire Aspect Cool down from ``20 Ticks`` to ``200 Ticks``.
-  + Decreased Revved Cool down from ``10 Ticks`` to ``0 Ticks``.
-  + Added blocks in tags ``minecraft:candles`` and ``minecraft:candle_cakes`` to be lit.
-  + Restrict Item use on Candle Cakes when sneaking to prevent it from being eaten when trying to light the candle.
+	+ Increased non-revved Fire Aspect Cool down from ``20 Ticks`` to ``200 Ticks``.
+	+ Decreased Revved Cool down from ``10 Ticks`` to ``0 Ticks``.
+	+ Added blocks in tags ``minecraft:candles`` and ``minecraft:candle_cakes`` to be lit.
+	+ Restrict Item use on Candle Cakes when sneaking to prevent it from being eaten when trying to light the candle.
 + Balanced Elytrian Power `Need for Mobility`
-  + Removed Restriction of equipping Armor higher than Iron Tier.
-  + Restricts usage of Elytra when wearing higher than Iron Tier.
+	+ Removed Restriction of equipping Armor higher than Iron Tier.
+	+ Restricts usage of Elytra when wearing higher than Iron Tier.
 + Fixed Various Spelling Errors.
 
 ## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
@@ -667,39 +741,39 @@ This is a big one.
 #### [Version 1.6.2 [Recipe Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.2)
 
 + Fixed Orb of Origins Recipe
-  + Rebased Folder data/minecraft/crafting to be data/crafting.
+	+ Rebased Folder data/minecraft/crafting to be data/crafting.
 + Fixed Merling Trident Recipe.
-  + Removed Blacksmith Trident.
+	+ Removed Blacksmith Trident.
 
 #### [Version 1.6.1 [Blazeborn Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.1)
 
 + Added Power ``Thermal Lift`` to Blazeborn.
-  + Hover in Midair and move up and down by using jump or sneak.
+	+ Hover in Midair and move up and down by using jump or sneak.
 + Fixed ``Blazing Touch``
-  + Removed Right-clicking on Block to place power due to being unstable and bugged.
+	+ Removed Right-clicking on Block to place power due to being unstable and bugged.
 + Fixes some other small issues
-  + ``originstweaks:candles`` block tag is not a ``.json`` file.
-  + changed some stats for ``Firecharged Projectile`` power.
+	+ ``originstweaks:candles`` block tag is not a ``.json`` file.
+	+ changed some stats for ``Firecharged Projectile`` power.
 
 #### [Version 1.6.0 [Blazeborn Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6)
 
 + Added Power ``Blazing Touch`` to Blazeborn.
-  + right-clicking on a Block Places Fire.
-  + Hitting Entities inflicts Fire Aspect V (X While revved up.).
+	+ right-clicking on a Block Places Fire.
+	+ Hitting Entities inflicts Fire Aspect V (X While revved up.).
 + Added Power ``Firecharged Projectile``.
-  + Shoot 3 Inaccurate Fireballs with a second cool down (5x 100% Accurate, 1/2 Second Cool down while revved up).
+	+ Shoot 3 Inaccurate Fireballs with a second cool down (5x 100% Accurate, 1/2 Second Cool down while revved up).
 + Added Power ``Revved up``.
-  + Consume 1 Firecharge for 128 seconds revved up.
-  + Buffs Offensive Abilities when revved.
+	+ Consume 1 Firecharge for 128 seconds revved up.
+	+ Buffs Offensive Abilities when revved.
 
 ### [Version 1.5 [Shulk Buff]]
 
 #### [Version 1.5.0 [Shulk Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.5)
 
 + Added Power ``Antigravity Bullet`` to shulk.
-  + Fires a Shulker Bullet upon pressing the Secondary ability key
+	+ Fires a Shulker Bullet upon pressing the Secondary ability key
 + Added Power ``Protective Shell`` to shulk.
-  + Grants 3 stages of resistance upon holding down shift
+	+ Grants 3 stages of resistance upon holding down shift
 
 ### [Version 1.4 [Arachnid Buff]]
 
@@ -712,13 +786,13 @@ This is a big one.
 #### [Version 1.4.0 [Arachnid Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.4)
 
 + Modified power ``Climbing``.
-  + Changed power to be activated using ``key.origins.secondary_active`` rather than ``key.origins.primary_active``.
+	+ Changed power to be activated using ``key.origins.secondary_active`` rather than ``key.origins.primary_active``.
 + Modified power ``MAster of Webs``.
-  + Changed sub-power "webbing" to be dependent on the String Resource.
-  + Added sub-power `Web Shoot`.
-  + Modified sub-power `Web Crafting` to use 6 Strings to craft a Cobweb.
-  + Added sub-power `String Resource`.
-  + Added sub-power `String Regenerate`.
+	+ Changed sub-power "webbing" to be dependent on the String Resource.
+	+ Added sub-power `Web Shoot`.
+	+ Modified sub-power `Web Crafting` to use 6 Strings to craft a Cobweb.
+	+ Added sub-power `String Resource`.
+	+ Added sub-power `String Regenerate`.
 + Fixed `Arthropod Appearance` to properly calculate fall damage delay and amount.
 
 ### [Version 1.3 [Phantom buff]]
@@ -726,9 +800,9 @@ This is a big one.
 #### [Version 1.3.2 [Phantom Patch]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.2)
 
 + Modified power ``Burning in Daylight``.
-  + Fixed an Issue with Phantoms burning, even when wearing a Helmet.
+	+ Fixed an Issue with Phantoms burning, even when wearing a Helmet.
 + Modified power `Spectral Wail`.
-  + Fixed an Issue with the Glowing Effect visible to everyone.
+	+ Fixed an Issue with the Glowing Effect visible to everyone.
 
 #### [Version 1.3.1 [Arachnid Climbing Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.1)
 
@@ -737,9 +811,9 @@ This is a big one.
 #### [Version 1.3.0 [Phantom Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3)
 
 + Added power `Spectral Wail` to Phantom.
-  + Active ability that inflicts 30 seconds of Glowing to entities in 32 Blocks range
+	+ Active ability that inflicts 30 seconds of Glowing to entities in 32 Blocks range
 + Added power `Aurophobia` to Phantom.
-  + Gold Debuffs: Golden Food is not edible, Golden Blocks are unphasable and give Debuffs in proximity, Golden Tools deal extra Damage to the Origin.
+	+ Gold Debuffs: Golden Food is not edible, Golden Blocks are unphasable and give Debuffs in proximity, Golden Tools deal extra Damage to the Origin.
 + Removed power `Fragile` to balance out the damage modifier caused by `Aurophobia`.
 
 ### [Version 1.2 [Elytrian Buffs]]
@@ -751,7 +825,7 @@ This is a big one.
 #### [Version 1.2.0 [Elytrian Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.2)
 
 + Added power "Elytra Boost" to Elytrian.
-  + Active Ability that gives a small forward boost if activated while gliding; similar to Rockets but weaker.
+	+ Active Ability that gives a small forward boost if activated while gliding; similar to Rockets but weaker.
 + Modified power `Need for Mobility` to support Armor up to Iron Tier.
 
 ### [Version 1.1 [Basic Buffs]]
@@ -759,15 +833,15 @@ This is a big one.
 #### [Version 1.1.0 [Basic Buffs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.1)
 
 + Added power "Arthropod Appearance" to Arachnid.
-  + Height change from 1.8 Blocks to 1.5 blocks.
-  + Modified fall damage start calculating after 30 Blocks, and half the amount.
+	+ Height change from 1.8 Blocks to 1.5 blocks.
+	+ Modified fall damage start calculating after 30 Blocks, and half the amount.
 + Added power "Merling Trident" to Merling.
-  + Adds a craftable Trident for Merlings.
+	+ Adds a craftable Trident for Merlings.
 + Added power "Heaven's Grace" to Avian.
-  + Spectral arrow deal extra Damage.
+	+ Spectral arrow deal extra Damage.
 + Added support for datapack "Better Enderian"
 + Added power "Hydro Knowledge" to Merling.
-  + Tridents thrown while submerged in water deal more damage.
+	+ Tridents thrown while submerged in water deal more damage.
 + Modified power `Slow Falling` to have a toggle.
 
 ### [Version 1.0 [Base Datapack]]
