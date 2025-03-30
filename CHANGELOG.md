@@ -4,6 +4,63 @@
 
 ### [Version 1.17 [Minecraft 1.20.4]]
 
+#### [Version 1.17.1 [Origin Advancements]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.1)
+
+Gameplay Changes
+
++ Added Advancements for all Origins.
+	+ Added 4 Advancements for each [OT] Origin.
+	+ Added an Advancement Tab for each [OT] Origin.
++ Avian:
+	+ ``Animal Friendship``:
+		+ Fixed a bug which caused all animals to spawn particles and trigger the ability cooldown regardless of being untameable.
+	+ ``Green Thumb``:
+		+ Fixed an Issue with Glistering Melons granting far more saturation than intended.
++ Arachnid:
+	+ ``Venom``:
+		+ Sneaking no longer restricts inflicting poison.
+		+ Changed Chance to inflict poison from 10% to 25%.
++ Elytrian:
+	+ ``Aerial Combatant``:
+		+	Projectile damage bonus has beed reduced from +100% to +50%.
+	+ Readded ``No Wing Render`` Wing option.
++ Feline:
+	+ ``Dexterity``:
+		+ Merged ``origins:fall_immunity``.
+		+ Readded Sprint Jump.
+		+ Felines can no longer control the angle of the jump with the camera, and can't cling onto blocks.
+		+ A charged jump now executes a high jump, similar to how the sprint jump works.
+		+ The strength of the jump can now be controlled with the charge bar, instead of requiring the bar to be full.
+	+ ``Natural Hunter``:
+		+ Fixed claw damage values to properly pair with swords of the same tier.
++ Blazeborn:
+	+ ``Fire Immunity``:
+		+ Blazeborn now move faster through lava, and can also swim when submerged.
+		+ Lava visibility has been slightly improved in parity of fire resistance potions.
++ Merling:
+	+ ``Body Moisture``:
+		+ Fixed a bug with any potion restoring moisture.
+		+ Water Bottles now have a tooltip informing about the moisture gain when consumed.
+		+ Activated Conduits now grant 5 minutes of Conduit Power.
+		+ Conduit Power also stops moisture from being lost while active.
++ Phantom:
+	+ ``Soulbound``:
+		+ Soul Energy gain and particle effect now depends on max health of the mob:
+			+ 0.5 - 5 Hearts: 5 Soul Energy.
+			+ 5.5 - 10 Hearts: 25 Soul Energy.
+			+ 10.5 - 50 Hearts: 50 Soul Energy.
+			+ \> 100 Hearts (Boss Mob): Full Soul Energy.
+	+ ``Spectral Wail``:
+		+ Fixed an Issue with non-living entities being highlighted by the Wail.
+
+Technical Changes
+
++ Advancement criteria are resolved through sub-powers in ``originstweaks:*_advancements.json`` power files, with exceptions that fit directly into existing powers.
++ Added new entity type tag ``Illager and Allies``.
++ Added Predicates ``In Village``, ``In Monument`` and ``In Yungs Monument`` for use with advancements. 
++ Updated ``README.md``.
++ Bumped version to 1.17.1.
+
 #### [Version 1.17.0 [1.20.4 Port & New Abilities]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.0)
 
 Gameplay Changes

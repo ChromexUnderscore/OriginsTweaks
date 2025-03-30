@@ -85,8 +85,8 @@
         },
         "consume_sound": "minecraft:entity.generic.eat",
         "food_component": {
-            "hunger": 8,
-            "saturation": 1.5,
+            "hunger": 6,
+            "saturation": 0.75,
             "meat": false
         },
         "use_action": "eat"

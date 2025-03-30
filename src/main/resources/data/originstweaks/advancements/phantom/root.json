@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Phantom"
+        },
+        "description": {
+            "text": "You chose the Phantom Origin."
+        },
+        "icon": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "background": "minecraft:textures/block/soul_sand.png"
+    },
+    "criteria": {
+        "chose_phantom": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

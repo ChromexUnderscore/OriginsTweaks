@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Mayday, Mayday"
+        },
+        "description": {
+            "text": "Take 7 or more hearts of kinetic damage at once"
+        },
+        "icon": {
+            "item": "minecraft:elytra",
+            "nbt": "{Damage:431}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "14_kinetic_damage": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:elytrian/root"
+}

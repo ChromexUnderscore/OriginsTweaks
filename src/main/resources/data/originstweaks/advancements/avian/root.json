@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Avian"
+        },
+        "description": {
+            "text": "You chose the Avian Origin."
+        },
+        "icon": {
+            "item": "minecraft:feather"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "background": "minecraft:textures/block/farmland.png"
+    },
+    "criteria": {
+        "chose_avian": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

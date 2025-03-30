@@ -11,7 +11,7 @@
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
-			"text": "You cannot sprint, sprint-swim, use elytra flight, attack, or interact with blocks while phasing."
+			"text": "You cannot sprint, swim, fly, attack, or interact with blocks while fully phasing."
 		}
 	],
 	"phase": {

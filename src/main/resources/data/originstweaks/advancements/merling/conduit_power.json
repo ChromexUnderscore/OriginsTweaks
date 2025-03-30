@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Maelstrom"
+        },
+        "description": {
+            "text": "Place a Conduit into a valid prismarine frame and receive its effect"
+        },
+        "icon": {
+            "item": "minecraft:conduit"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "obtain_trident": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:merling/root"
+}

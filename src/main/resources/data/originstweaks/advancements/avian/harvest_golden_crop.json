@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "So good and tasty"
+        },
+        "description": {
+            "text": "Harvest or craft a golden carrot, glistering melon or golden apple."
+        },
+        "icon": {
+            "item": "minecraft:golden_carrot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "harvest": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:avian/tame"
+}

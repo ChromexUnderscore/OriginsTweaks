@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "To Infinity and Beyond!"
+        },
+        "description": {
+            "text": "Let another player mount you and take flight."
+        },
+        "icon": {
+            "item": "minecraft:firework_rocket"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "mount_flight": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:elytrian/root"
+}

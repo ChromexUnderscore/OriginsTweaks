@@ -10,12 +10,12 @@
     "powers": [
         "originstweaks:natural_hunter",
         "originstweaks:dexterity",
-        "origins:fall_immunity",
+        "originstweaks:weak_arms",
         "origins:velvet_paws",
         "origins:nine_lives",
-        "originstweaks:weak_arms",
         "origins:scare_creepers",
         "originstweaks:cat_vision",
-        "originstweaks:feline_sounds"
+        "originstweaks:feline_sounds",
+        "originstweaks:feline_advancements"
     ]
 }

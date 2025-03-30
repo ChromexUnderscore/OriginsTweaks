@@ -2,6 +2,13 @@
     "type": "origins:multiple",
     "name": "Aerial Combatant",
     "description": "You deal substancially more damage after 3 seconds of elytra flight.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Attacks mid-flight receive a x2 (Melee) and x1.5 (Ranged) damage boost respectively"
+        }
+    ],
     "melee": {
         "type": "origins:modify_damage_dealt",
         "modifier": {
@@ -28,7 +35,7 @@
         "type": "origins:modify_projectile_damage",
         "modifier": {
             "name": "projectile damage while fall flying",
-            "value": 1,
+            "value": 0.5,
             "operation": "multiply_base"
         },
         "condition": {

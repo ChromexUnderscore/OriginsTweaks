@@ -15,6 +15,7 @@
 		"origins:ender_particles",
 		"origins:damage_from_potions",
 		"originstweaks:water_cauldron",
-        "originstweaks:enderian_sounds"
+        "originstweaks:enderian_sounds",
+		"originstweaks:enderian_advancements"
 	]
 }

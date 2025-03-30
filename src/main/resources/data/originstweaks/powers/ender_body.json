@@ -118,6 +118,10 @@
                                 "offset_y": 1
                             },
                             {
+                                "type": "origins:grant_advancement",
+                                "advancement": "originstweaks:enderian/dodge_projectile"
+                            },
+                            {
                                 "type": "origins:play_sound",
                                 "sound": "minecraft:entity.enderman.teleport",
                                 "category": "players"

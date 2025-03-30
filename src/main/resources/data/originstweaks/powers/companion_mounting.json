@@ -12,7 +12,7 @@
             "type": "origins:tooltip",
             "sprite": "minecraft:textures/item/diamond.png",
             "text": {
-                "text": "Ability by AnimGoated on Discord!",
+                "text": "Ability contributed by AnimGoated on Discord!",
                 "color": "aqua"
             }
         }
@@ -108,6 +108,16 @@
                     }
                 }
             ]
+        },
+        "condition": {
+            "type": "origins:passenger",
+            "bientity_condition": {
+                "type": "origins:actor_condition",
+                "condition": {
+                    "type": "origins:entity_type",
+                    "entity_type": "minecraft:player"
+                }
+            }
         }
     },
     "glow": {

@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Gotta Go Fast"
+        },
+        "description": {
+            "text": "Gain a speed of 200% compared to human or higher"
+        },
+        "icon": {
+            "item": "minecraft:sugar"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "high_speed": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:avian/root"
+}

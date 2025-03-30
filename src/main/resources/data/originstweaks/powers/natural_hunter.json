@@ -11,7 +11,7 @@
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Sharpen your Claws using following blocks in order: Logs or Wool (+5 Attack), Grindstone while sneaking (+6 Attack), Iron block (+7 Attack), Diamond block (+8 Attack)"
+            "text": "Sharpen your Claws using following blocks in order: Logs or Wool (+5 Attack), Smooth Stone (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack)"
         },
         {
             "type": "origins:tooltip",
@@ -28,6 +28,10 @@
         "type": "origins:resource",
         "min": 0,
         "max": 400,
+        "max_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:feline/sharp_claws"
+        },
         "hud_render": {
             "sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
             "bar_index": 12
@@ -46,7 +50,7 @@
         "modifier": {
             "name": "base damage claws",
             "operation": "add_base_early",
-            "value": 5
+            "value": 3
         },
         "condition": {
             "type": "origins:and",
@@ -82,7 +86,7 @@
         "modifier": {
             "name": "base damage claws",
             "operation": "add_base_early",
-            "value": 6
+            "value": 4
         },
         "condition": {
             "type": "origins:and",
@@ -118,7 +122,7 @@
         "modifier": {
             "name": "base damage claws",
             "operation": "add_base_early",
-            "value": 7
+            "value": 5
         },
         "condition": {
             "type": "origins:and",
@@ -154,7 +158,7 @@
         "modifier": {
             "name": "base damage claws",
             "operation": "add_base_early",
-            "value": 8
+            "value": 6
         },
         "condition": {
             "type": "origins:and",

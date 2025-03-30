@@ -1,0 +1,20 @@
+{
+    "display": {
+        "title": {
+            "text": "Recycling"
+        },
+        "description": {
+            "text": "Craft a Cobweb out of 9 String"
+        },
+        "icon": {
+            "item": "minecraft:string"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "cobweb": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:arachnid/root"
+}

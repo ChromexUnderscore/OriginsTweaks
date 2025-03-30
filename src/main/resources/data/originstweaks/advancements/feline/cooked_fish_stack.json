@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Stocked up"
+        },
+        "description": {
+            "text": "Carry a full stack of cooked cod or cooked salmon in your inventory"
+        },
+        "icon": {
+            "item": "minecraft:cooked_cod"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "cooked_fish_stack": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:feline/root"
+}

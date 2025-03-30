@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Arachnid"
+        },
+        "description": {
+            "text": "You chose the Arachnid Origin."
+        },
+        "icon": {
+            "item": "minecraft:cobweb"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "background": "minecraft:textures/block/cobweb.png"
+    },
+    "criteria": {
+        "chose_arachnid": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

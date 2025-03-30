@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Guardian Season"
+        },
+        "description": {
+            "text": "Clear an ocean monument of Elder Guardians"
+        },
+        "icon": {
+            "item": "minecraft:prismarine"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "clear_monument": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:merling/root"
+}

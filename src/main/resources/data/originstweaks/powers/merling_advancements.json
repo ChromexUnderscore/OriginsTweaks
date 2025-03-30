@@ -1,0 +1,95 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:merling/root"
+        }
+    },
+    "clear_monument": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute unless entity @e[type=minecraft:elder_guardian,distance=0..256] run advancement grant @s only originstweaks:merling/clear_monument"
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:elder_guardian"
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:predicate",
+                    "predicate": "originstweaks:in_monument"
+                },
+                {
+                    "type": "origins:predicate",
+                    "predicate": "originstweaks:in_yungs_monument"
+                }
+            ]
+        }
+    },
+    "loyalty_channeling": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:merling/loyalty_channeling"
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "items",
+            "item_condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:trident"
+                        }
+                    },
+                    {
+                        "type": "origins:enchantment",
+                        "enchantment": "minecraft:loyalty",
+                        "compare_to": 3,
+                        "comparison": ">="
+                    },
+                    {
+                        "type": "origins:enchantment",
+                        "enchantment": "minecraft:channeling",
+                        "compare_to": 1,
+                        "comparison": ">="
+                    }
+                ]
+            }
+        }
+    },
+    "conduit_power": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:merling/conduit_power"
+        },
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:conduit_power"
+        }
+    },
+    "nether": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:merling/nether"
+        },
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Lookin Sharp"
+        },
+        "description": {
+            "text": "Use a log, smooth stone, iron block and diamond block to fully sharpen your claws"
+        },
+        "icon": {
+            "item": "minecraft:diamond_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:feline/cooked_fish_stack"
+}

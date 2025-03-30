@@ -1,0 +1,62 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/root"
+        }
+    },
+    "kill_wither_nether": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/kill_wither_nether"
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "target_condition": {
+            "type": "origins:entity_type",
+            "entity_type": "minecraft:wither"
+        },
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_nether"
+        }
+    },
+    "lava_bath": {
+        "type": "origins:action_over_time",
+        "interval": 3,
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/lava_bath"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:swimming"
+                },
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:lava"
+                }
+            ]
+        }
+    },
+    "reach_overworld": {
+        "type": "origins:action_over_time",
+        "interval":40,
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/reach_overworld"
+        },
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:overworld"
+        }
+    }
+}

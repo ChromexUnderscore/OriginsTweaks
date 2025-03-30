@@ -57,6 +57,11 @@
     },
     "light_campfires": {
         "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/fuel",
+            "criterion": "campfire"
+        },
         "block_action": {
             "type": "origins:and",
             "actions": [
@@ -93,8 +98,13 @@
             "type": "origins:on_fire"
         }
     },
-    "fuel_furnei": {
+    "fuel_furnaces": {
         "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/fuel",
+            "criterion": "furnace"
+        },
         "block_action": {
             "type": "origins:and",
             "actions": [
@@ -154,6 +164,11 @@
     },
     "fuel_brewing_stand": {
         "type": "origins:action_on_block_use",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:blazeborn/fuel",
+            "criterion": "brewing_stand"
+        },
         "block_action": {
             "type": "origins:and",
             "actions": [

@@ -1,0 +1,78 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:avian/root"
+        }
+    },
+    "buildlimit_sleep": {
+        "type": "origins:action_on_wake_up",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:avian/buildlimit_sleep"
+        },
+        "block_condition": {
+            "type": "origins:height",
+            "compare_to": 300,
+            "comparison": ">="
+        }
+    },
+    "harvest_golden_crop": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:avian/harvest_golden_crop"
+        },
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:inventory",
+                    "process_mode": "items",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:golden_apple"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:inventory",
+                    "process_mode": "items",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:golden_carrot"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:inventory",
+                    "process_mode": "items",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:glistering_melon_slice"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "speed": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:avian/speed"
+        },
+        "condition": {
+            "type": "origins:attribute",
+            "attribute": "minecraft:generic.movement_speed",
+            "compare_to": 0.2,
+            "comparison": ">="
+        }
+    }
+}

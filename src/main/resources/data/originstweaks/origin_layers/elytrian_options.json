@@ -4,11 +4,13 @@
         "view_origin": "This is your chosen Elytra."
     },
     "order": 2,
+    "auto_choose": true,
     "origins": [
         {
             "origins": [
                 "originstweaks:vanilla_elytra",
-                "originstweaks:custom_elytra"
+                "originstweaks:custom_wings",
+                "originstweaks:no_render"
             ],
             "condition": {
                 "type": "origins:origin",

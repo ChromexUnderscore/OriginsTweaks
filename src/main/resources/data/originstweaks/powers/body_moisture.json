@@ -1,11 +1,21 @@
 {
 	"name": "Moisture",
-	"description": "Your body can store water for up to 10 minutes, but only 5 minutes in the nether! When expired, you will begin to lose oxygen.",
+	"description": "Your body can store water for up to 10 minutes. When expired, you will begin to lose oxygen.",
 	"badges": [
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/arrow_up.png",
-			"text": "Remember to periodically enter or drink water to stay wet! Step in water, sit in a cauldron or drink a bottle of water to refill your water reserve."
+			"text": "Step in water, sit in a cauldron or drink a bottle of water to refill your water reserve."
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": "The Nether drains your water reserve twice as fast!"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "A Conduits effect will last far longer, and stop your body from losing moisture."
 		}
 	],
 	"type": "origins:multiple",
@@ -55,7 +65,7 @@
 			]
 		}
 	},
-	"potion": {
+	"water_bottle": {
 		"type": "origins:action_on_item_use",
 		"entity_action": {
 			"type": "origins:change_resource",
@@ -64,12 +74,21 @@
 			"operation": "add"
 		},
 		"item_condition": {
-			"type": "origins:ingredient",
-			"ingredient": {
-				"item": "minecraft:potion"
-			}
+			"type": "origins:nbt",
+			"nbt": "{Potion:\"minecraft:water\"}"
 		}
 	},
+	"water_bottle_tooltip": {
+        "type": "origins:tooltip",
+        "text": {
+            "text": "+60 Moisture",
+            "color": "aqua"
+        },
+        "item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{Potion:\"minecraft:water\"}"
+		}
+    },
 	"respawn": {
 		"type": "origins:action_on_callback",
 		"entity_action_respawned": {
@@ -168,5 +187,63 @@
 			"compare_to": 0,
 			"comparison": "!="
 		}
-	}
+	},
+	"extend_conduit": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:conduit_power",
+                "duration": 6000
+            }
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:conduit_power"
+                },
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water"
+                },
+				{
+					"type": "origins:block_in_radius",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:conduit"
+					},
+					"compare_to": 1,
+					"comparison": ">=",
+					"radius": 32
+				}
+            ]
+        }
+    },
+    "conduit_on_land": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:body_moisture_resource",
+            "change": 600,
+            "operation": "set"
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:conduit_power"
+                },
+                {
+                    "type": "origins:submerged_in",
+                    "fluid": "minecraft:water",
+					"inverted": true
+                }
+            ]
+        }
+    }
 }

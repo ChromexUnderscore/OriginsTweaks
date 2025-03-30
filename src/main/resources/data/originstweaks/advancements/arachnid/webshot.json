@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "The Amazing"
+        },
+        "description": {
+            "text": "Use your webshot 7 times without touching the ground or climbing."
+        },
+        "icon": {
+            "item": "minecraft:cobweb"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "7_webshot": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:arachnid/craft_cobweb"
+}

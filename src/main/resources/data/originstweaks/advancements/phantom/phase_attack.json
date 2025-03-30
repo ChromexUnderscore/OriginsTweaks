@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Ankle Biter"
+        },
+        "description": {
+            "text": "Hit a player of mob while phased halfway into the ground"
+        },
+        "icon": {
+            "item": "minecraft:infested_stone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "phasing_attack": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:phantom/root"
+}

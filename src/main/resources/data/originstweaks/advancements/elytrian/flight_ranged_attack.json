@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Air Support"
+        },
+        "description": {
+            "text": "Use a ranged attack after gliding for at least 3 seconds."
+        },
+        "icon": {
+            "item": "minecraft:crossbow"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "ranged_hit": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:elytrian/root"
+}

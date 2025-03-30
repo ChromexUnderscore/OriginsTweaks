@@ -1,0 +1,75 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:feline/root"
+        }
+    },
+    "break_tough_stone": {
+        "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:feline/break_tough_stone"
+        },
+        "only_when_harvested": true,
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "originstweaks:sturdy_stone"
+        }
+    },
+    "cooked_fish_stack": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:feline/cooked_fish_stack"
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "items",
+            "compare_to": 64,
+            "comparison": ">=",
+            "item_condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:cooked_cod"
+                        }
+                    },
+                    {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:cooked_salmon"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "sleep_village": {
+        "type": "origins:action_on_wake_up",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:feline/sleep_in_village"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:command",
+                    "command": "execute if entity @e[type=minecraft:iron_golem,distance=0..32]",
+                    "compare_to": 0,
+                    "comparison": "!="
+                },
+                {
+                    "type": "origins:predicate",
+                    "predicate": "originstweaks:in_village"
+                }
+            ]
+        }
+    }
+}

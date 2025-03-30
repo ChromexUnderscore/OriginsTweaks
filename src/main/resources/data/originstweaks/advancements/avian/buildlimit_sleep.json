@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Some serious GOURMET air"
+        },
+        "description": {
+            "text": "Sleep at a height of at least 300 blocks"
+        },
+        "icon": {
+            "item": "minecraft:red_bed"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "sleep_y_300": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100
+      },
+    "parent": "originstweaks:avian/root"
+}

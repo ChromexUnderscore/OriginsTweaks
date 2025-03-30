@@ -1,0 +1,65 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:enderian/root"
+        }
+    },
+    "max_waterprotection": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:enderian/max_waterprotection"
+        },
+        "interval": 3,
+        "condition": {
+            "type": "origins:enchantment",
+            "enchantment": "origins:water_protection",
+            "calculation": "sum",
+            "compare_to": 4,
+            "comparison": ">="
+        }
+    },
+    "punch_pumpkin": {
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:enderian/punch_pumpkin"
+        },
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type":"minecraft:player_attack"
+        },
+        "target_condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "head",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:carved_pumpkin"
+                }
+            }
+        }
+    },
+    "rain": {
+        "type": "origins:action_when_damage_taken",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:enderian/rain"
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "damage_condition": {
+            "type": "origins:type",
+            "damage_type": "origins:hurt_by_water"
+        },
+        "condition": {
+            "type": "origins:in_rain"
+        }
+    }
+}

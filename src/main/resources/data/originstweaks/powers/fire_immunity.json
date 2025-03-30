@@ -1,0 +1,45 @@
+{
+    "type": "origins:multiple",
+    "name": "Fire Immunity",
+    "description": "You are immune to all types of fire damage, and you can swim in lava.",
+    "fire_immune": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:fire"
+        }
+    },
+    "lava_swim": {
+        "type": "origins:swimming",
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:lava"
+        }
+    },
+    "lava_swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": -0.02
+        },
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:lava"
+        }
+    },
+    "lava_movement_speed": {
+        "type": "origins:modify_lava_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.2
+        },
+        "condition": {
+            "type": "origins:swimming",
+            "inverted": true
+        }
+    },
+    "lava_vision": {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 3
+    }
+}

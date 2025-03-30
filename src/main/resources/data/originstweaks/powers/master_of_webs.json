@@ -123,6 +123,12 @@
                         "set": true
                     },
                     {
+                        "type": "origins:change_resource",
+                        "resource": "*:arachnid_advancements_webshot",
+                        "change": 1,
+                        "operation": "add"
+                    },
+                    {
                         "type": "origins:swing_hand",
                         "hand": "MAIN_HAND"
                     },
@@ -278,23 +284,6 @@
         "block_condition": {
             "type": "origins:block",
             "block": "minecraft:cobweb"
-        }
-    },
-    "cobweb_advancement": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:arachnid/craft_cobweb"
-        },
-        "condition": {
-            "type": "origins:inventory",
-            "process_mode": "items",
-            "item_condition": {
-                "type": "origins:ingredient",
-                "ingredient": {
-                    "item": "minecraft:cobweb"
-                }
-            }
         }
     }
 }

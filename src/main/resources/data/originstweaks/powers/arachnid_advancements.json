@@ -1,0 +1,91 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:arachnid/root"
+        }
+    },
+    "cobweb": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:arachnid/craft_cobweb"
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "items",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:cobweb"
+                }
+            }
+        }
+    },
+    "webshot": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 7,
+        "max_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:arachnid/webshot"
+        }
+    },
+    "webshot_reset": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:*_webshot",
+            "change": 0,
+            "operation": "set"
+        },
+        "interval": 3,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:on_block"
+                },
+                {
+                    "type": "origins:climbing"
+                }
+            ]
+        }
+    },
+    "bane_of_arthropods": {
+        "type": "origins:action_when_hit",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:grant_advancement",
+                "advancement": "originstweaks:arachnid/bane_of_arthropods"
+            }
+        },
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:type",
+                    "damage_type":"minecraft:player_attack"
+                },
+                {
+                    "type": "origins:type",
+                    "damage_type":"minecraft:mob_attack"
+                }
+            ]
+        },
+        "bientity_condition": {
+            "type": "origins:actor_condition",
+            "condition": {
+                "type": "origins:enchantment",
+                "enchantment": "minecraft:bane_of_arthropods",
+                "calculation": "sum",
+                "compare_to": 5,
+                "comparison": "=="
+            }
+        }
+    }
+}

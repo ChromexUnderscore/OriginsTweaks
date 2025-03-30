@@ -6,13 +6,13 @@
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/toggle.png",
-            "text": "Toggle with %s."
+            "text": "Toggle with [Secondary]."
         }
     ],
     "strength": 0.4,
     "active_by_default": true,
     "key": {
-        "key": "key.origins.primary_active",
+        "key": "key.origins.secondary_active",
         "continuous": false
     }
 }

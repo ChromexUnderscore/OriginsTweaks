@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Lord of the Nether"
+        },
+        "description": {
+            "text": "As Blazeborn, kill the Wither in the Nether"
+        },
+        "icon": {
+            "item": "minecraft:nether_star"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:blazeborn/root"
+}

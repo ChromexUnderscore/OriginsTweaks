@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Fire is Fuel. Nether is Full."
+        },
+        "description": {
+            "text": "Fuel a Campfire, a Brewing Stand and any type of Furnace using Burning Wrath."
+        },
+        "icon": {
+            "item": "minecraft:furnace"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "campfire": {
+            "trigger": "minecraft:impossible"
+        },
+        "brewing_stand": {
+            "trigger": "minecraft:impossible"
+        },
+        "furnace": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "originstweaks:blazeborn/lava_bath"
+}

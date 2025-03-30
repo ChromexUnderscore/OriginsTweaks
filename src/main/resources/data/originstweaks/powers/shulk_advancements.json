@@ -1,0 +1,127 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "root": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:shulk/root"
+        }
+    },
+    "shulker_bullet": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:shulk/shulker_bullet"
+        },
+        "cooldown": 0,
+        "hud_render": {
+            "should_render": false
+        },
+        "damage_condition": {
+            "type": "origins:projectile",
+            "projectile": "minecraft:shulker_bullet"
+        }
+    },
+    "inventory": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:shulk/inventory"
+        },
+        "condition": {
+            "type": "origins:inventory",
+            "inventory_types": [
+                "power"
+            ],
+            "power": "origins:shulker_inventory",
+            "process_mode": "items",
+            "compare_to": 1,
+            "comparison": ">="
+        }
+    },
+    "max_armor": {
+        "type": "origins:action_over_time",
+        "rising_action": {
+            "type": "origins:grant_advancement",
+            "advancement": "originstweaks:shulk/max_armor"
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "compare_to": 30,
+                    "comparison": ">="
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:natural_armor_shells",
+                    "comparison": "==",
+                    "compare_to": 7
+                }
+            ]
+        }
+    },
+    "tank_warden": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:delay",
+            "ticks": 3,
+            "action": {
+                "type": "origins:execute_command",
+                "command": "execute unless data entity @s {Health:0f} run advancement grant @s only originstweaks:shulk/tank_warden"
+            }
+        },
+        "damage_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:attacker",
+                    "entity_condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:warden"
+                    }
+                },
+                {
+                    "type": "origins:type",
+                    "damage_type": "minecraft:mob_attack"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "head",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                }
+            ]
+        }
+    }
+}
