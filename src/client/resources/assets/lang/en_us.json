@@ -4,8 +4,8 @@
 
     "power.originstweaks.master_of_webs.name": "Master of Webs",
     "power.originstweaks.master_of_webs.description": "Arachnids have mastered the delicate handling of cobwebs, using them to their advantage and navigating through them with ease.",
-    "badge.originstweaks.master_of_webs.0": "Fling yourself towards a block or mob within 16 blocks using [Primary].",
-    "badge.originstweaks.master_of_webs.1": "Webshot holds 7 charges. Fully regenerates over 30 seconds.",
+    "badge.originstweaks.master_of_webs.0": "Fling yourself toward a block or mob within 16 blocks using [Primary].",
+    "badge.originstweaks.master_of_webs.1": "Webshot holds 7 charges and fully regenerates over 30 seconds.",
     "badge.originstweaks.master_of_webs.2": "You move freely through cobwebs and can use them for climbing.",
     "badge.originstweaks.master_of_webs.3.prefix": "Combine 9 String to craft Cobweb.",
     "badge.originstweaks.master_of_webs.3.suffix": "Sneaking and breaking a Cobweb block refunds the 9 String used to craft it.",
@@ -19,7 +19,7 @@
     "power.originstweaks.climbing.description": "Allows climbing of any wall, not just ladders.",
     "badge.originstweaks.climbing.0": "Press [Secondary] to toggle Climbing and Venom abilities.",
 
-    "power.originstweaks.arthropod.name": "Arthopod",
+    "power.originstweaks.arthropod.name": "Arthropod",
     "power.originstweaks.arthropod.description": "As an Arthropod, you are shorter and able to feather your falls.",
     "badge.originstweaks.arthropod.0": "You stand at a height of 1.5 blocks.",
     "badge.originstweaks.arthropod.1": "You only take fall damage from drops exceeding 16 blocks.",
@@ -28,22 +28,22 @@
 
 
     "origin.originstweaks.avian.name": "Avian [OT]",
-    "origin.originstweaks.avian.description": "The Avian race has lost their ability to fly a long time ago. Now these peaceful creatures can be seen gliding from one place to another.",
+    "origin.originstweaks.avian.description": "The Avian race lost their ability to fly a long time ago. Now these peaceful creatures can be seen gliding from one place to another.",
     
     "power.originstweaks.slow_falling.name": "Featherweight",
     "power.originstweaks.slow_falling.description": "You fall as gently to the ground as a feather would.",
     "badge.originstweaks.slow_falling.0": "Toggle with [Secondary].",
 
     "power.originstweaks.animal_friendship.name": "Animal Friendship",
-    "power.originstweaks.animal_friendship.description": "Animals feel safe around you, and can be tamed without food or items.",
-    "badge.originstweaks.animal_friendship.0": "Tame an animal with [Primary] on a 2 minute cooldown.",
-    "badge.originstweaks.animal_friendship.1": "Tameable animals include: Wolves, Cats, Parrots, Horses, Donkeys, Mules and Llamas.",
-    "badge.originstweaks.animal_friendship.2": "Animals such as axolotls, foxes and ocelots trust you, won't run away and even fight for you.",
+    "power.originstweaks.animal_friendship.description": "Animals feel safe around you and can be tamed without food or items.",
+    "badge.originstweaks.animal_friendship.0": "Tame an animal with [Primary] on a 2-minute cooldown.",
+    "badge.originstweaks.animal_friendship.1": "Tameable animals include: Wolves, Cats, Parrots, Horses, Donkeys, Mules, and Llamas.",
+    "badge.originstweaks.animal_friendship.2": "Animals such as axolotls, foxes, and ocelots trust you, won't run away, and will even fight for you.",
 
     "power.originstweaks.green_thumb.name": "Green Thumb",
     "power.originstweaks.green_thumb.description": "You have a natural talent for growing and harvesting crops.",
     "badge.originstweaks.green_thumb.0": "Harvesting crops with a hoe increases the yield.",
-    "badge.originstweaks.green_thumb.1": "Harvesting Carrots, Melons and Apples has a chance to drop a golden variant of the crop.",
+    "badge.originstweaks.green_thumb.1": "Harvesting Carrots, Melons, and Apples has a chance to drop a golden variant of the crop.",
     "badge.originstweaks.green_thumb.2": "You can eat glistering melon slices.",
 
 
@@ -67,11 +67,11 @@
 
 
     "origin.originstweaks.elytrian.name": "Elytrian [OT]",
-    "origin.originstweaks.elytrian.description": "Often flying around in the winds, Elytrians are uncomfortable when they don't have enough space above their head.",
+    "origin.originstweaks.elytrian.description": "Often flying around in the winds, Elytrians are uncomfortable when they don't have enough space above their heads.",
     
     "power.originstweaks.gift_of_the_skies.name": "Gift of the Skies",
     "power.originstweaks.gift_of_the_skies.description": "Evolution gifted you wings, which you can use to fly around with ease.",
-    "badge.originstweaks.gift_of_the_skies.0": "Use [Primary] to launch high into the air when grounded, or to ascend while gliding.",
+    "badge.originstweaks.gift_of_the_skies.0": "Use [Primary] to launch high into the air when grounded or to ascend while gliding.",
     "badge.originstweaks.gift_of_the_skies.1": "You have limited Stamina. Launching and ascending use stamina; catch your breath by resting on the ground.",
     "badge.originstweaks.gift_of_the_skies.2": "It's harder to fly with armor levels higher than 12 (6 Icons).",
     "badge.originstweaks.gift_of_the_skies.3": "It's too dangerous to use fireworks while gliding.",
@@ -82,7 +82,7 @@
     "badge.originstweaks.companion_mounting.1": "Ability contributed by AnimGoated",
 
     "power.originstweaks.aerial_combatant.name": "Aerial Combatant",
-    "power.originstweaks.aerial_combatant.description": "You deal substancially more damage after 3 seconds of elytra flight.",
+    "power.originstweaks.aerial_combatant.description": "You deal substantially more damage after 3 seconds of elytra flight.",
     "badge.originstweaks.aerial_combatant.0": "Attacks mid-flight receive a x2 (Melee) and x1.5 (Ranged) damage boost respectively",
 
 
@@ -91,38 +91,38 @@
     "origin.originstweaks.enderian.description": "Born as children of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.",
     
     "power.originstweaks.throw_ender_pearl.name": "Teleportation",
-    "power.originstweaks.throw_ender_pearl.description": "Whenever you want, you may throw an ender pearl which deals no damage, allowing you to teleport.",
+    "power.originstweaks.throw_ender_pearl.description": "Whenever you want, you may throw an ender pearl that deals no damage, allowing you to teleport.",
     "badge.originstweaks.throw_ender_pearl.0": "Throw a pearl with [Primary].",
 
     "power.originstweaks.ender_body.name": "Ender Body",
-    "power.originstweaks.ender_body.description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further, pick up blocks as they are and dodge smaller projectiles.",
-    "badge.originstweaks.ender_body.0": "You are 2.5 Blocks tall and can reach 1.5x as far as a human.",
-    "badge.originstweaks.ender_body.1": "You can dodge smaller projectiles on a 5 second cooldown.",
+    "power.originstweaks.ender_body.description": "Your Body resembles that of your fellow Endermen, making you taller, able to reach further, pick up blocks as they are, and dodge smaller projectiles.",
+    "badge.originstweaks.ender_body.0": "You are 2.5 blocks tall and can reach 1.5x as far as a human.",
+    "badge.originstweaks.ender_body.1": "You can dodge smaller projectiles on a 5-second cooldown.",
     "badge.originstweaks.ender_body.2": "You are able to pick up blocks as they are while not using any tools.",
 
 
 
     "origin.originstweaks.feline.name": "Feline [OT]",
-    "origin.originstweaks.feline.description": "With their cat-like appearance, the Feline scare creepers away. With the dexterity of cats, they always land safely on their feet.",
+    "origin.originstweaks.feline.description": "With their cat-like appearance, Felines scare creepers away. With the dexterity of cats, they always land safely on their feet.",
     
     "power.originstweaks.natural_hunter.name": "Natural Hunter",
-    "power.originstweaks.natural_hunter.description": "Felines are natural predators; their claws can be sharpened to be more lethal in combat and fish is more nourishing.",
+    "power.originstweaks.natural_hunter.description": "Felines are natural predators; their claws can be sharpened to be more lethal in combat, and fish is more nourishing.",
     "badge.originstweaks.natural_hunter.0": "Use [Primary] while not holding any tool to attack using your Claws.",
-    "badge.originstweaks.natural_hunter.1": "Sharpen your Claws using following blocks in order: Logs or Wool (+5 Attack), Smooth Stone (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack)",
+    "badge.originstweaks.natural_hunter.1": "Sharpen your Claws using the following blocks in order: Logs or Wool (+5 Attack), Smooth Stone (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack)",
     "badge.originstweaks.natural_hunter.2": "Attacking with your claws deals less knockback, which helps with fast follow-up attacks.",
-    "badge.originstweaks.natural_hunter.3": "Food made out of fish provide 3 more hunger and 2 more saturation.",
+    "badge.originstweaks.natural_hunter.3": "Food made out of fish provides 3 more hunger and 2 more saturation.",
 
     "power.originstweaks.dexterity.name": "Acrobatics",
     "power.originstweaks.dexterity.description": "The Felines dexterity allows them to move around their environment easily.",
-    "badge.originstweaks.dexterity.0": "Hold [Sneak] to charge up a jump, press [Jump] to peform a high jump.",
+    "badge.originstweaks.dexterity.0": "Hold [Sneak] to charge up a jump, press [Jump] to perform a high jump.",
     "badge.originstweaks.dexterity.1": "You jump a little higher while sprinting.",
-    "badge.originstweaks.dexterity.2": "You never take fall damage, no matter from which height you fall.",
+    "badge.originstweaks.dexterity.2": "You never take fall damage, no matter from what height you fall.",
 
     "power.originstweaks.weak_arms.name": "Weak Arms",
     "power.originstweaks.weak_arms.description": "Your arms wont allow mining stone as quickly as others would, and some types of stone are too tough to be mined at all.",
     "badge.originstweaks.weak_arms.0": "You mine natural stone-like blocks as well as ore blocks 50% slower than normal.",
-    "badge.originstweaks.weak_arms.1": "You cannot break sturdy stone blocks, such as Deepslate blocks and -ore, Obsidian, Blackstone and similar Blocks.",
-    "badge.originstweaks.weak_arms.2": "These restriction can be bypassed by using Strenth Potions or a Pickaxe enchanted with Efficiency.",
+    "badge.originstweaks.weak_arms.1": "You cannot break sturdy stone blocks, such as Deepslate blocks, Deepslate ores, Obsidian and Blackstone.",
+    "badge.originstweaks.weak_arms.2": "These restrictions can be bypassed by using Strength Potions or a Pickaxe enchanted with Efficiency.",
 
     "power.originstweaks.cat_vision.name": "Nocturnal",
     "power.originstweaks.cat_vision.description": "You can see in the dark.",
@@ -139,7 +139,7 @@
     "badge.originstweaks.aquadynamic.1.prefix": "You are able to craft tridents.",
 
     "power.originstweaks.swim_speed.name": "Fins",
-    "power.originstweaks.swim_speed.description": "Your underwater speed is increased, and you can peform a dash on a 5 second cooldown.",
+    "power.originstweaks.swim_speed.description": "Your underwater speed is increased, and you can perform a dash on a 5-second cooldown.",
     "badge.originstweaks.swim_speed.0": "Press [Sprint] to dash while sprint-swimming.",
     "badge.originstweaks.swim_speed.1": "This ability stacks with Depth Strider.",
 
@@ -147,10 +147,10 @@
     "power.originstweaks.aquatic.description": "Your natural spawnpoint is in the ocean, and you receive more damage from impaling.",
 
     "power.originstweaks.body_moisture.name": "Moisture",
-    "power.originstweaks.body_moisture.description": "Your body can store water for up to 10 minutes. When expired, you will begin to lose oxygen.",
-    "badge.originstweaks.body_moisture.0": "Step in water, sit in a cauldron or drink a bottle of water to refill your water reserve.",
+    "power.originstweaks.body_moisture.description": "Your body can store water for up to 10 minutes. When the moisture bar expires, you will begin to lose oxygen.",
+    "badge.originstweaks.body_moisture.0": "Step in water, sit in a cauldron, or drink a bottle of water to refill your water reserve.",
     "badge.originstweaks.body_moisture.1": "The Nether drains your water reserve twice as fast!",
-    "badge.originstweaks.body_moisture.2": "A Conduits effect will last far longer, and stop your body from losing moisture.",
+    "badge.originstweaks.body_moisture.2": "A Conduits effect will last far longer and stop your body from losing moisture.",
 
 
 
@@ -163,22 +163,21 @@
 
     "power.originstweaks.phasing.name": "Phasing",
     "power.originstweaks.phasing.description": "While phantomized, you can move through solid material, except Obsidian and solid Gold Blocks.",
-    "badge.originstweaks.phasing.0": "Phasing drains your soul energy quickly, keep an eye on it!",
+    "badge.originstweaks.phasing.0": "Phasing drains your soul energy quickly; keep an eye on it!",
     "badge.originstweaks.phasing.1": "You cannot sprint, swim, fly, attack, or interact with blocks while fully phasing.",
 
     "power.originstweaks.soulbound.name": "Soulbound",
     "power.originstweaks.soulbound.description": "You require soul energy to manifest your phantom form.",
-    "badge.originstweaks.soulbound.0": "Your soul energy regenerates slowly, but you may absorb it from dead mobs or soul fire as well.",
-  
+    "badge.originstweaks.soulbound.0": "Your soul energy regenerates slowly, but you may also absorb it from dead mobs or soul fire.",
+
     "power.originstweaks.spectral_wail.name": "Spectral Wail",
-    "power.originstweaks.spectral_wail.description": "You are able to release a Wail that reveals other Entites nearby.",
+    "power.originstweaks.spectral_wail.description": "You are able to release a Wail that reveals other Entities nearby.",
     "badge.originstweaks.spectral_wail.0": "Press [Secondary] to send out a Wail.",
-    "badge.originstweaks.spectral_wail.1": "The Wail highlights any mob or player in a 32 block radius.",
+    "badge.originstweaks.spectral_wail.1": "The Wail highlights any mob or player in a 32-block radius.",
 
     "power.originstweaks.aurophobia.name": "Aurophobia",
     "power.originstweaks.aurophobia.description": "Gold has a repellent effect on your kind.",
-    "badge.originstweaks.aurophobia.0": "You cannot eat any golden food, wear golden armor, use golden tools or phase through gold blocks.",
-  
+    "badge.originstweaks.aurophobia.0": "You cannot eat any golden food, wear golden armor, use golden tools, or phase through gold blocks.",
 
 
     "origin.originstweaks.shulk.name": "Shulk [OT]",
@@ -188,15 +187,15 @@
     "power.originstweaks.natural_armor.description": "Even without wearing armor, your shell provides protection.",
     "badge.originstweaks.natural_armor.0": "You start with a base of 3 armor.",
     "badge.originstweaks.natural_armor.1": "Press and hold [Sneak] to gain up to 7 extra armor.",
-    "badge.originstweaks.natural_armor.2": "Taking a heavy hit (more or equal to 3 Hearts) reduces bonus armor by 1 and disables shell buildup for 30 seconds.",
+    "badge.originstweaks.natural_armor.2": "Taking a heavy hit (more than or equal to 3 Hearts) reduces bonus armor by 1 and disables shell buildup for 30 seconds.",
 
 
     
     "origin.originstweaks.vanilla_elytra.name": "Vanilla Elytra",
-    "origin.originstweaks.vanilla_elytra.description": "Your wings will render as the vanilla Elytra, this will enable the use of Elytra resourcepacks and cape patterns.",
+    "origin.originstweaks.vanilla_elytra.description": "Your wings will render as the vanilla Elytra; this will enable the use of Elytra resource packs and cape patterns.",
 
     "origin.originstweaks.custom_wings.name": "Custom Wings",
-    "origin.originstweaks.custom_wings.description": "Your wings will use a custom texture separate to the vanilla Elytra, which allows custom textures that do not apply to equippable elytras. Template available in OriginsTweaks Releases.",
+    "origin.originstweaks.custom_wings.description": "Your wings will use a custom texture separate from the vanilla Elytra, which allows custom textures that do not apply to equippable elytras. Template available in OriginsTweaks Releases.",
 
     "origin.originstweaks.no_render.name": "No Wings",
     "origin.originstweaks.no_render.description": "Your wings will not render. Useful for wingless flight or using a custom Elytra Model via mods such as Figura."
