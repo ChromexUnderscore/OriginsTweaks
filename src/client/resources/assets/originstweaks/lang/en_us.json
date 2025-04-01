@@ -73,7 +73,7 @@
     "power.originstweaks.gift_of_the_skies.description": "Evolution gifted you wings, which you can use to fly around with ease.",
     "badge.originstweaks.gift_of_the_skies.0": "Use [Primary] to launch high into the air when grounded or to ascend while gliding.",
     "badge.originstweaks.gift_of_the_skies.1": "You have limited Stamina. Launching and ascending use stamina; catch your breath by resting on the ground.",
-    "badge.originstweaks.gift_of_the_skies.2": "It's harder to fly with armor levels higher than 12 (6 Icons).",
+    "badge.originstweaks.gift_of_the_skies.2": "It's harder to fly with armor levels higher than 12.",
     "badge.originstweaks.gift_of_the_skies.3": "It's too dangerous to use fireworks while gliding.",
 
     "power.originstweaks.companion_mounting.name": "Companion Mounting",
@@ -185,8 +185,8 @@
 
     "power.originstweaks.natural_armor.name": "Sturdy Skin",
     "power.originstweaks.natural_armor.description": "Even without wearing armor, your shell provides protection.",
-    "badge.originstweaks.natural_armor.0": "You start with a base of 3 armor.",
-    "badge.originstweaks.natural_armor.1": "Press and hold [Sneak] to gain up to 7 extra armor.",
+    "badge.originstweaks.natural_armor.0": "You start with a base of 3 armor points.",
+    "badge.originstweaks.natural_armor.1": "Press and hold [Sneak] to gain up to 7 extra armor points.",
     "badge.originstweaks.natural_armor.2": "Taking a heavy hit (more than or equal to 3 Hearts) reduces bonus armor by 1 and disables shell buildup for 30 seconds.",
 
 
@@ -198,5 +198,158 @@
     "origin.originstweaks.custom_wings.description": "Your wings will use a custom texture separate from the vanilla Elytra, which allows custom textures that do not apply to equippable elytras. Template available in OriginsTweaks Releases.",
 
     "origin.originstweaks.no_render.name": "No Wings",
-    "origin.originstweaks.no_render.description": "Disables the rendering of wings, useful for wingless flight or custom Elytra models via mods like Figura."
+    "origin.originstweaks.no_render.description": "Disables the rendering of wings, useful for wingless flight or custom Elytra models via mods like Figura.",
+
+
+
+    "advancement.originstweaks.arachnid.root.title": "Arachnid",
+    "advancement.originstweaks.arachnid.root.description": "You chose the Arachnid Origin.",
+    
+    "advancement.originstweaks.arachnid.bane_of_arthropods.title": "Begone!",
+    "advancement.originstweaks.arachnid.bane_of_arthropods.description": "Take damage from a weapon enchanted with Bane of Arthropods V.",
+    
+    "advancement.originstweaks.arachnid.craft_cobweb.title": "Recycling",
+    "advancement.originstweaks.arachnid.craft_cobweb.description": "Craft a Cobweb out of 9 String.",
+    
+    "advancement.originstweaks.arachnid.poison_illager.title": "Biological Warfare",
+    "advancement.originstweaks.arachnid.poison_illager.description": "Poison all types of Illager and allies using your Venom ability at least once.",
+    
+    "advancement.originstweaks.arachnid.webshot.title": "The Amazing Spider-Man",
+    "advancement.originstweaks.arachnid.webshot.description": "Use your webshot 7 times without touching the ground or climbing.",
+    
+    
+    
+    "advancement.originstweaks.avian.root.title": "Avian",
+    "advancement.originstweaks.avian.root.description": "You chose the Avian Origin.",
+    
+    "advancement.originstweaks.avian.buildlimit_sleep.title": "Some Serious Gourmet Air",
+    "advancement.originstweaks.avian.buildlimit_sleep.description": "Sleep at a height of at least 300 blocks.",
+    
+    "advancement.originstweaks.avian.harvest_golden_crop.title": "So good and tasty",
+    "advancement.originstweaks.avian.harvest_golden_crop.description": "Harvest or craft a golden carrot, glistering melon or golden apple.",
+    
+    "advancement.originstweaks.avian.speed.title": "Gotta Go Fast",
+    "advancement.originstweaks.avian.speed.description": "Gain a speed of at least 200% compared to a human.",
+    
+    "advancement.originstweaks.avian.tame.title": "Dr. Dolittle",
+    "advancement.originstweaks.avian.tame.description": "Tame an animal without using items.",
+    
+    
+    
+    "advancement.originstweaks.blazeborn.root.title": "Blazeborn",
+    "advancement.originstweaks.blazeborn.root.description": "You chose the Blazeborn Origin.",
+    
+    "advancement.originstweaks.blazeborn.fuel.title": "Fire is Fuel. Nether is Full.",
+    "advancement.originstweaks.blazeborn.fuel.description": "Use Burning Wrath to fuel a Campfire, Brewing Stand, and Furnace.",
+    
+    "advancement.originstweaks.blazeborn.kill_wither_nether.title": "Lord of the Nether",
+    "advancement.originstweaks.blazeborn.kill_wither_nether.description": "Defeat the Wither in the Nether as a Blazeborn.",
+    
+    "advancement.originstweaks.blazeborn.lava_bath.title": "Hot Spring",
+    "advancement.originstweaks.blazeborn.lava_bath.description": "Take a swim in lava.",
+    
+    "advancement.originstweaks.blazeborn.reach_overworld.title": "We Need to Go Higher",
+    "advancement.originstweaks.blazeborn.reach_overworld.description": "Reach the Overworld as a Blazeborn.",
+
+
+
+    "advancement.originstweaks.elytrian.root.title": "Elytrian",
+    "advancement.originstweaks.elytrian.root.description": "You chose the Elytrian Origin.",
+    
+    "advancement.originstweaks.elytrian.crash.title": "Mayday, Mayday",
+    "advancement.originstweaks.elytrian.crash.description": "Take 7 or more hearts of kinetic damage at once.",
+    
+    "advancement.originstweaks.elytrian.flight_ranged_attack.title": "Elytrian Air Support",
+    "advancement.originstweaks.elytrian.flight_ranged_attack.description": "Use a ranged attack after gliding for at least 3 seconds.",
+    
+    "advancement.originstweaks.elytrian.player_mount.title": "To Infinity and Beyond!",
+    "advancement.originstweaks.elytrian.player_mount.description": "Let another player mount you and take flight.",
+    
+    "advancement.originstweaks.elytrian.y_700.title": "MAJESTICA - Above The Sky",
+    "advancement.originstweaks.elytrian.y_700.description": "Reach Y-Coordinate 700 using your flight abilities.",
+
+
+
+    "advancement.originstweaks.enderian.root.title": "Enderian",
+    "advancement.originstweaks.enderian.root.description": "You chose the Enderian Origin.",
+    
+    "advancement.originstweaks.enderian.dodge_projectile.title": "Skill Issue",
+    "advancement.originstweaks.enderian.dodge_projectile.description": "Dodge a projectile by teleporting.",
+    
+    "advancement.originstweaks.enderian.max_waterprotection.title": "Waterproof",
+    "advancement.originstweaks.enderian.max_waterprotection.description": "Equip a piece of armor with Water Protection IV.",
+    
+    "advancement.originstweaks.enderian.rain.title": "Risk of Rain",
+    "advancement.originstweaks.enderian.rain.description": "Take damage from rain.",
+    
+    "advancement.originstweaks.enderian.punch_pumpkin.title": "Hide N Seek",
+    "advancement.originstweaks.enderian.punch_pumpkin.description": "Punch a player or mob that is wearing a Carved Pumpkin.",
+
+
+
+    "advancement.originstweaks.feline.root.title": "Feline",
+    "advancement.originstweaks.feline.root.description": "You chose the Feline Origin.",
+    
+    "advancement.originstweaks.feline.break_tough_stone.title": "A Stubborn One",
+    "advancement.originstweaks.feline.break_tough_stone.description": "Break a tough block using Strength or Efficiency.",
+
+    "advancement.originstweaks.feline.cooked_fish_stack.title": "Fish Hoarder",
+    "advancement.originstweaks.feline.cooked_fish_stack.description": "Carry a full stack of cooked cod or cooked salmon in your inventory.",
+
+    "advancement.originstweaks.feline.sharp_claws.title": "Lookin Sharp",
+    "advancement.originstweaks.feline.sharp_claws.description": "Use a log, smooth stone, iron block and diamond block to fully sharpen your claws.",
+
+    "advancement.originstweaks.feline.sleep_in_village.title": "Safe and Sound",
+    "advancement.originstweaks.feline.sleep_in_village.description": "Sleep in a village with an iron golem nearby.",
+
+    
+
+    "advancement.originstweaks.merling.root.title": "Merling",
+    "advancement.originstweaks.merling.root.description": "You chose the Merling Origin.",
+
+    "advancement.originstweaks.merling.clear_monument.title": "Guardian Season",
+    "advancement.originstweaks.merling.clear_monument.description": "Clear an ocean monument of Elder Guardians.",
+
+    "advancement.originstweaks.merling.conduit_power.title": "Maelstrom",
+    "advancement.originstweaks.merling.conduit_power.description": "Place a Conduit into a valid prismarine frame and receive its effect.",
+
+    "advancement.originstweaks.merling.loyalty_channeling.title": "Odinson",
+    "advancement.originstweaks.merling.loyalty_channeling.description": "Enchant a Trident with Channeling and Loyalty III.",
+
+    "advancement.originstweaks.merling.nether.title": "Hostile Environment",
+    "advancement.originstweaks.merling.nether.description": "As a Merling, enter the Nether.",
+
+
+
+    "advancement.originstweaks.phantom.root.title": "Phantom",
+    "advancement.originstweaks.phantom.root.description": "You chose the Phantom Origin.",
+
+    "advancement.originstweaks.phantom.absorb_boss_soul.title": "Fetch me their Souls",
+    "advancement.originstweaks.phantom.absorb_boss_soul.description": "Absorb a boss mob's soul energy.",
+
+    "advancement.originstweaks.phantom.absorb_soulfire.title": "Rejuvenating",
+    "advancement.originstweaks.phantom.absorb_soulfire.description": "Absorb some Soul Energy from Soul Fire.",
+
+    "advancement.originstweaks.phantom.phase_attack.title": "Ankle Biter",
+    "advancement.originstweaks.phantom.phase_attack.description": "Hit a player of mob while phased halfway into the ground.",
+
+    "advancement.originstweaks.phantom.spectral_wail.title": "Echolocation",
+    "advancement.originstweaks.phantom.spectral_wail.description": "Detect a mob or player through walls by using your Spectral Wail.",
+
+
+
+    "advancement.originstweaks.shulk.root.title": "Shulk",
+    "advancement.originstweaks.shulk.root.description": "You chose the Shulk Origin.",
+
+    "advancement.originstweaks.shulk.inventory.title": "Keep some Inventory",
+    "advancement.originstweaks.shulk.inventory.description": "Put an item into your Shulker Inventory.",
+
+    "advancement.originstweaks.shulk.max_armor.title": "Topped Off",
+    "advancement.originstweaks.shulk.max_armor.description": "Equip Armor and charge Sturdy Skin until you reach 30 Armor Points.",
+
+    "advancement.originstweaks.shulk.shulker_bullet.title": "Friendly Fire",
+    "advancement.originstweaks.shulk.shulker_bullet.description": "As Shulk, get hit by a Shulker Bullet.",
+
+    "advancement.originstweaks.shulk.tank_warden.title": "Irresistible Force Paradox",
+    "advancement.originstweaks.shulk.tank_warden.description": "Endure a melee hit from the Warden without wearing any physical armor."
 }

@@ -4,7 +4,7 @@
             "text": "Ankle Biter"
         },
         "description": {
-            "text": "Hit a player of mob while phased halfway into the ground"
+            "text": "Hit a player or mob while phased halfway into the ground"
         },
         "icon": {
             "item": "minecraft:infested_stone"
