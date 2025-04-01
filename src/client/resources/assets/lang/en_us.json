@@ -4,7 +4,7 @@
 
     "power.originstweaks.master_of_webs.name": "Master of Webs",
     "power.originstweaks.master_of_webs.description": "Arachnids have mastered the delicate handling of cobwebs, using them to their advantage and navigating through them with ease.",
-    "badge.originstweaks.master_of_webs.0": "Fling yourself toward a block or mob within 16 blocks using [Primary].",
+    "badge.originstweaks.master_of_webs.0": "Propel yourself toward a block or mob within 16 blocks using [Primary].",
     "badge.originstweaks.master_of_webs.1": "Webshot holds 7 charges and fully regenerates over 30 seconds.",
     "badge.originstweaks.master_of_webs.2": "You move freely through cobwebs and can use them for climbing.",
     "badge.originstweaks.master_of_webs.3.prefix": "Combine 9 String to craft Cobweb.",
@@ -83,7 +83,7 @@
 
     "power.originstweaks.aerial_combatant.name": "Aerial Combatant",
     "power.originstweaks.aerial_combatant.description": "You deal substantially more damage after 3 seconds of elytra flight.",
-    "badge.originstweaks.aerial_combatant.0": "Attacks mid-flight receive a x2 (Melee) and x1.5 (Ranged) damage boost respectively",
+    "badge.originstweaks.aerial_combatant.0": "Attacks mid-flight receive a 2x (Melee) and 1.5x (Ranged) damage boost respectively",
 
 
 
@@ -148,7 +148,7 @@
 
     "power.originstweaks.body_moisture.name": "Moisture",
     "power.originstweaks.body_moisture.description": "Your body can store water for up to 10 minutes. When the moisture bar expires, you will begin to lose oxygen.",
-    "badge.originstweaks.body_moisture.0": "Step in water, sit in a cauldron, or drink a bottle of water to refill your water reserve.",
+    "badge.originstweaks.body_moisture.0": "Step in water, stand in a cauldron filled with water, or drink a bottle of water to refill your water reserve.",
     "badge.originstweaks.body_moisture.1": "The Nether drains your water reserve twice as fast!",
     "badge.originstweaks.body_moisture.2": "A Conduits effect will last far longer and stop your body from losing moisture.",
 
@@ -198,5 +198,5 @@
     "origin.originstweaks.custom_wings.description": "Your wings will use a custom texture separate from the vanilla Elytra, which allows custom textures that do not apply to equippable elytras. Template available in OriginsTweaks Releases.",
 
     "origin.originstweaks.no_render.name": "No Wings",
-    "origin.originstweaks.no_render.description": "Your wings will not render. Useful for wingless flight or using a custom Elytra Model via mods such as Figura."
+    "origin.originstweaks.no_render.description": "Disables the rendering of wings, useful for wingless flight or custom Elytra models via mods like Figura."
 }
