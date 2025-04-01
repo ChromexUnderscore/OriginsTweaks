@@ -1,22 +1,32 @@
 {
     "type": "origins:multiple",
-    "name": "Green Thumb",
-    "description": "You have a natural talent for growing and harvesting crops.",
+    "name": {
+        "translate": "power.originstweaks.green_thumb.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.green_thumb.description"
+    },
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "Harvesting crops with a hoe increases the yield."
+            "text": {
+                "translate": "badge.originstweaks.green_thumb.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Harvesting Carrots, Melons and Apples has a chance to drop a golden variant of the crop."
+            "text": {
+                "translate": "badge.originstweaks.green_thumb.1"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You can eat glistering melon slices."
+            "text": {
+                "translate": "badge.originstweaks.green_thumb.2"
+            }
         }
     ],
     "fortune": {

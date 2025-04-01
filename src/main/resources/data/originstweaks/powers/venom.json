@@ -1,17 +1,25 @@
 {
 	"type": "origins:multiple",
-	"name": "Venom",
-	"description": "Arachnids can inject threats or prey with neurotoxin to weaken them.",
+	"name": {
+		"translate": "power.originstweaks.venom.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.venom.description"
+	},
 	"badges": [
-		{
-			"type": "origins:keybind",
-			"sprite": "origins:textures/gui/badge/toggle.png",
-			"text": "Toggle Climbing and Venom abilities using [Secondary]."
-		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/star.png",
-			"text": "You have a chance to inflict poison by striking a mob or player with a melee attack."
+			"text": {
+				"translate": "badge.originstweaks.venom.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/toggle.png",
+			"text": {
+				"translate": "badge.originstweaks.venom.1"
+			}
 		}
 	],
 	"poison": {

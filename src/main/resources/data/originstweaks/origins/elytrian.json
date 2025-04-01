@@ -1,6 +1,10 @@
 {
-    "name": "Elytrian [OT]",
-    "description": "Often flying around in the winds, Elytrians are uncomfortable when they don't have enough space above their head.",
+    "name": {
+        "translate": "origin.originstweaks.elytrian.name"
+    },
+    "description": {
+        "translate": "origin.originstweaks.elytrian.description"
+    },
     "icon": {
         "item": "minecraft:elytra"
     },

@@ -1,22 +1,32 @@
 {
     "type": "origins:multiple",
-    "name": "Weak Arms",
-    "description": "Your arms wont allow mining stone as quickly as others would, and some types of stone are too tough to be mined at all.",
+    "name": {
+        "translate": "power.originstweaks.weak_arms.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.weak_arms.description"
+    },
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You mine natural stone-like blocks as well as ore blocks 50% slower than normal."
+            "text": {
+                "translate": "badge.originstweaks.weak_arms.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot break sturdy stone blocks, such as Deepslate blocks and -ore, Obsidian, Blackstone and similar Blocks."
+            "text": {
+                "translate": "badge.originstweaks.weak_arms.1"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "These restriction can be bypassed by using Strenth Potions or a Pickaxe enchanted with Efficiency."
+            "text": {
+                "translate": "badge.originstweaks.weak_arms.2"
+            }
         }
     ],
     "loading_priority": 1,

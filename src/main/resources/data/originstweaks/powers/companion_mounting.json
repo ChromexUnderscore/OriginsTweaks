@@ -1,18 +1,24 @@
 {
     "type": "origins:multiple",
-    "name": "Companion Mounting",
-    "description": "Your companions can mount you, but if you crash or are hit by any projectile, they will fall off.",
+    "name": {
+        "translate": "power.originstweaks.companion_mounting.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.companion_mounting.description"
+    },
     "badges": [
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You may kick off passengers at any time with [Secondary]."
+            "text": {
+                "translate": "badge.originstweaks.companion_mounting.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "minecraft:textures/item/diamond.png",
             "text": {
-                "text": "Ability contributed by AnimGoated on Discord!",
+                "translate": "badge.originstweaks.companion_mounting.1",
                 "color": "aqua"
             }
         }

@@ -1,12 +1,18 @@
 {
 	"type": "origins:multiple",
-	"name": "Featherweight",
-	"description": "You fall as gently to the ground as a feather would.",
+	"name": {
+		"translate": "power.originstweaks.slow_falling.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.slow_falling.description"
+	},
 	"badges": [
 		{
-			"type": "origins:keybind",
+			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/toggle.png",
-			"text": "Toggle with [Secondary]."
+			"text": {
+				"translate": "badge.originstweaks.slow_falling.0"
+			}
 		}
 	],
 	"modifier": {

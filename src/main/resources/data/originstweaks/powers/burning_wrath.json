@@ -1,22 +1,32 @@
 {
     "type": "origins:multiple",
-    "name": "Burning Wrath",
-    "description": "For centuries, the Blazeborn have relied on the power of fire to assist them in both combat and survival.",
+    "name": {
+        "translate": "power.originstweaks.burning_wrath.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.burning_wrath.description"
+    },
     "badges": [
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Set yourself ablaze for 30 seconds using [Primary]."
+            "text": {
+                "translate": "badge.originstweaks.burning_wrath.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "When on Fire, you deal 125% base damage."
+            "text": {
+                "translate": "badge.originstweaks.burning_wrath.1"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You can use your fire to Light Campfires or Fuel Furnaces and Brewing Stands."
+            "text": {
+                "translate": "badge.originstweaks.burning_wrath.2"
+            }
         }
     ],
     "set_on_fire": {

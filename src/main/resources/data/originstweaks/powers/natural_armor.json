@@ -1,22 +1,32 @@
 {
     "type": "origins:multiple",
-    "name": "Sturdy Skin",
-    "description": "Even without wearing armor, your shell provides protection.",
+    "name": {
+        "translate": "power.originstweaks.natural_armor.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.natural_armor.description"
+    },
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You start with a base of 3 armor."
+            "text": {
+                "translate": "badge.originstweaks.natural_armor.0"
+            }
         },
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press and hold [Sneak] to gain up to 7 extra armor."
+            "text": {
+                "translate": "badge.originstweaks.natural_armor.1"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Taking a heavy hit (more or equal to 3 Hearts) reduces bonus armor by 1 and disables shell buildup for 30 seconds."
+            "text": {
+                "translate": "badge.originstweaks.natural_armor.2"
+            }
         }
     ],
     "shells": {
@@ -112,7 +122,7 @@
             "operation": "add_base_early",
             "resource": "*:*_shells",
             "value": 0,
-            "modifier":{
+            "modifier": {
                 "operation": "add_base_early",
                 "value": 3
             }

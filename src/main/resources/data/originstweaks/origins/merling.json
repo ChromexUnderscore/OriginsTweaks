@@ -1,6 +1,10 @@
 {
-    "name": "Merling [OT]",
-    "description": "These natural inhabitants of the ocean are not used to being out of the water for too long.",
+    "name": {
+        "translate": "origin.originstweaks.merling.name"
+    },
+    "description": {
+        "translate": "origin.originstweaks.merling.description"
+    },
     "icon": {
         "item": "minecraft:trident"
     },

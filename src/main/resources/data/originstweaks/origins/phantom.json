@@ -1,6 +1,10 @@
 {
-    "name": "Phantom [OT]",
-    "description": "As half-human and half-phantom beings, these creatures can switch between a Phantom and a normal form.",
+    "name": {
+        "translate": "origin.originstweaks.phantom.name"
+    },
+    "description": {
+        "translate": "origin.originstweaks.phantom.description"
+    },
     "icon": {
         "item": "minecraft:phantom_membrane"
     },

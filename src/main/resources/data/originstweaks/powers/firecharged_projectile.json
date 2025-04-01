@@ -1,12 +1,18 @@
 {
     "type": "origins:multiple",
-    "name": "Firecharged",
-    "description": "You can attack foes with a burst of Fireballs.",
+    "name": {
+        "translate": "power.originstweaks.firecharged_projectile.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.firecharged_projectile.description"
+    },
     "badges": [
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Shoot a burst of 3 Fireballs with [Secondary]."
+            "text": {
+                "translate": "badge.originstweaks.firecharged_projectile.0"
+            }
         }
     ],
     "fireballs": {

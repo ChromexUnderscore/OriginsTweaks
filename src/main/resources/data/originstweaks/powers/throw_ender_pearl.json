@@ -1,12 +1,18 @@
 {
     "type": "origins:multiple",
-    "name": "Teleportation",
-    "description": "Whenever you want, you may throw an ender pearl which deals no damage, allowing you to teleport.",
+    "name": {
+        "translate": "power.originstweaks.throw_ender_pearl.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.throw_ender_pearl.description"
+    },
     "badges": [
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Throw a pearl with [Primary]."
+            "text": {
+                "translate": "badge.originstweaks.throw_ender_pearl.0"
+            }
         }
     ],
     "pearl": {

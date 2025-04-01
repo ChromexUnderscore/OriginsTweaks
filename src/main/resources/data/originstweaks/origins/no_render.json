@@ -1,6 +1,10 @@
 {
-    "name": "No Wings",
-    "description": "Your wings will not render. Useful for wingless flight or using a custom Elytra Model via mods such as Figura.",
+    "name": {
+        "translate": "origin.originstweaks.no_render.name"
+    },
+    "description": {
+        "translate": "origin.originstweaks.no_render.description"
+    },
     "icon": "minecraft:barrier",
     "impact": 0,
     "order": 2,

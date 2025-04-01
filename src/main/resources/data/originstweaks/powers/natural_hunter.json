@@ -1,27 +1,39 @@
 {
     "type": "origins:multiple",
-    "name": "Natural Hunter",
-    "description": "Felines are natural predators; their claws can be sharpened to be more lethal in combat and fish is more nourishing.",
+    "name": {
+        "translate": "power.originstweaks.natural_hunter.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.natural_hunter.description"
+    },
     "badges": [
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Use [Primary] while not holding any tool to attack using your Claws."
+            "text": {
+                "translate": "badge.originstweaks.natural_hunter.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Sharpen your Claws using following blocks in order: Logs or Wool (+5 Attack), Smooth Stone (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack)"
+            "text": {
+                "translate": "badge.originstweaks.natural_hunter.1"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Attacking with your claws deals less knockback, which helps with fast follow-up attacks."
+            "text": {
+                "translate": "badge.originstweaks.natural_hunter.2"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Food made out of fish provide 3 more hunger and 2 more saturation."
+            "text": {
+                "translate": "badge.originstweaks.natural_hunter.3"
+            }
         }
     ],
     "claws_sharpness": {
@@ -483,7 +495,7 @@
         },
         "damage_condition": {
             "type": "origins:type",
-            "damage_type":"minecraft:player_attack"
+            "damage_type": "minecraft:player_attack"
         },
         "condition": {
             "type": "origins:and",

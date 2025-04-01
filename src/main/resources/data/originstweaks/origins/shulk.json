@@ -1,6 +1,10 @@
 {
-    "name": "Shulk [OT]",
-    "description": "Related to Shulkers, the bodies of the Shulk are outfitted with a protective shell-like skin.",
+    "name": {
+        "translate": "origin.originstweaks.shulk.name"
+    },
+    "description": {
+        "translate": "origin.originstweaks.shulk.description"
+    },
     "icon": {
         "item": "minecraft:shulker_shell"
     },

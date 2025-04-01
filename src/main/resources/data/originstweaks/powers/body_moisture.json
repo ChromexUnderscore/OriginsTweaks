@@ -1,21 +1,31 @@
 {
-	"name": "Moisture",
-	"description": "Your body can store water for up to 10 minutes. When expired, you will begin to lose oxygen.",
+	"name": {
+		"translate": "power.originstweaks.body_moisture.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.body_moisture.description"
+	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/arrow_up.png",
-			"text": "Step in water, sit in a cauldron or drink a bottle of water to refill your water reserve."
+			"text": {
+				"translate": "badge.originstweaks.body_moisture.0"
+			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/star.png",
-			"text": "The Nether drains your water reserve twice as fast!"
+			"text": {
+				"translate": "badge.originstweaks.body_moisture.1"
+			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
-			"text": "A Conduits effect will last far longer, and stop your body from losing moisture."
+			"text": {
+				"translate": "badge.originstweaks.body_moisture.2"
+			}
 		}
 	],
 	"type": "origins:multiple",
@@ -79,16 +89,16 @@
 		}
 	},
 	"water_bottle_tooltip": {
-        "type": "origins:tooltip",
-        "text": {
-            "text": "+60 Moisture",
-            "color": "aqua"
-        },
-        "item_condition": {
+		"type": "origins:tooltip",
+		"text": {
+			"text": "+60 Moisture",
+			"color": "aqua"
+		},
+		"item_condition": {
 			"type": "origins:nbt",
 			"nbt": "{Potion:\"minecraft:water\"}"
 		}
-    },
+	},
 	"respawn": {
 		"type": "origins:action_on_callback",
 		"entity_action_respawned": {
@@ -189,26 +199,26 @@
 		}
 	},
 	"extend_conduit": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:conduit_power",
-                "duration": 6000
-            }
-        },
-        "interval": 20,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:status_effect",
-                    "effect": "minecraft:conduit_power"
-                },
-                {
-                    "type": "origins:submerged_in",
-                    "fluid": "minecraft:water"
-                },
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"effect": "minecraft:conduit_power",
+				"duration": 6000
+			}
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:conduit_power"
+				},
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
+				},
 				{
 					"type": "origins:block_in_radius",
 					"block_condition": {
@@ -219,31 +229,31 @@
 					"comparison": ">=",
 					"radius": 32
 				}
-            ]
-        }
-    },
-    "conduit_on_land": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:body_moisture_resource",
-            "change": 600,
-            "operation": "set"
-        },
-        "interval": 10,
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:status_effect",
-                    "effect": "minecraft:conduit_power"
-                },
-                {
-                    "type": "origins:submerged_in",
-                    "fluid": "minecraft:water",
+			]
+		}
+	},
+	"conduit_on_land": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:body_moisture_resource",
+			"change": 600,
+			"operation": "set"
+		},
+		"interval": 10,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:conduit_power"
+				},
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water",
 					"inverted": true
-                }
-            ]
-        }
-    }
+				}
+			]
+		}
+	}
 }

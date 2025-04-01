@@ -1,7 +1,11 @@
 {
     "type": "origins:multiple",
-    "name": "Fire Immunity",
-    "description": "You are immune to all types of fire damage, and you can swim in lava.",
+    "name": {
+        "translate": "power.originstweaks.fire_immunity.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.fire_immunity.description"
+    },
     "fire_immune": {
         "type": "origins:invulnerability",
         "damage_condition": {

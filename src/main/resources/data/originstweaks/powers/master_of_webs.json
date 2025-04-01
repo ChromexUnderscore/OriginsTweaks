@@ -1,28 +1,40 @@
 {
     "type": "origins:multiple",
     "loading_priority": 1,
-    "name": "Master of Webs",
-    "description": "Arachnids have mastered the delicate handling of cobwebs; they use them to their advantage and can navigate through them with ease.",
+    "name": {
+        "translate": "power.originstweaks.master_of_webs.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.master_of_webs.description"
+    },
     "badges": [
         {
             "type": "origins:keybind",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Fling towards a block or mob within 16 blocks using [Primary]."
+            "text": {
+                "translate": "badge.originstweaks.master_of_webs.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "The Webshot has 7 charges, it fully regenerates over 30 Seconds."
+            "text": {
+                "translate": "badge.originstweaks.master_of_webs.1"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Cobweb does not slow you down and can be used to climb."
+            "text": {
+                "translate": "badge.originstweaks.master_of_webs.2"
+            }
         },
         {
             "type": "origins:crafting_recipe",
             "sprite": "origins:textures/gui/badge/info.png",
-            "prefix": "You can craft 9 string into Cobweb.",
+            "prefix": {
+                "translate": "badge.originstweaks.master_of_webs.3.prefix"
+            },
             "recipe": {
                 "id": "originstweaks:master_of_webs/web_crafting_badge",
                 "type": "minecraft:crafting_shapeless",
@@ -59,7 +71,9 @@
                     "item": "minecraft:cobweb"
                 }
             },
-            "suffix": "Breaking a cobweb block while sneaking returns all 9 string used to craft the cobweb"
+            "suffix": {
+                "translate": "badge.originstweaks.master_of_webs.3.suffix"
+            }
         }
     ],
     "silk_resource": {

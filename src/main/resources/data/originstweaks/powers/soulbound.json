@@ -1,12 +1,18 @@
 {
     "type": "origins:multiple",
-    "name": "Soulbound",
-    "description": "You require soul energy to manifest your phantom form.",
+    "name": {
+        "translate": "power.originstweaks.soulbound.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.soulbound.description"
+    },
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "Your soul energy regenerates slowly, but you may absorb it from dead mobs or soul fire as well."
+            "text": {
+                "translate": "badge.originstweaks.soulbound.0"
+            }
         }
     ],
     "energy": {

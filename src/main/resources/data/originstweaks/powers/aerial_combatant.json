@@ -1,12 +1,18 @@
 {
     "type": "origins:multiple",
-    "name": "Aerial Combatant",
-    "description": "You deal substancially more damage after 3 seconds of elytra flight.",
+    "name": {
+        "translate": "power.originstweaks.aerial_combatant.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.aerial_combatant.description"
+    },
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Attacks mid-flight receive a x2 (Melee) and x1.5 (Ranged) damage boost respectively"
+            "text": {
+                "translate": "badge.originstweaks.aerial_combatant.0"
+            }
         }
     ],
     "melee": {

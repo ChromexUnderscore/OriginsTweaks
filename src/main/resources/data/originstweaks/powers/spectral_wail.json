@@ -1,17 +1,25 @@
 {
     "type": "origins:multiple",
-    "name": "Spectral Wail",
-    "description": "You are able to release a Wail that reveals other Entites nearby.",
+    "name": {
+        "translate": "power.originstweaks.spectral_wail.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.spectral_wail.description"
+    },
     "badges": [
         {
-            "type": "origins:keybind",
+            "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Press [Secondary] to send out a Wail."
+            "text": {
+                "translate": "badge.originstweaks.spectral_wail.0"
+            }
         },
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/star.png",
-            "text": "The Wail highlights any mob or player in a 32 block radius."
+            "text": {
+                "translate": "badge.originstweaks.spectral_wail.1"
+            }
         }
     ],
     "active_power": {

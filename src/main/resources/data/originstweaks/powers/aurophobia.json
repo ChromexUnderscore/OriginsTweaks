@@ -1,16 +1,24 @@
 {
     "type": "origins:multiple",
-    "name": "Aurophobia",
-    "description": "Gold has a repellent effect on your kind.",
+    "name": {
+        "translate": "power.originstweaks.aurophobia.name"
+    },
+    "description": {
+        "translate": "power.originstweaks.aurophobia.description"
+    },
     "badges": [
         {
             "type": "origins:tooltip",
             "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot eat any golden food, wear golden armor, use golden tools or phase through gold blocks."
+            "text": {
+                "translate": "badge.originstweaks.aurophobia.0"
+            }
         }
     ],
     "gold_diet": {
-        "name": "Aurophobia",
+        "name": {
+            "translate": "power.originstweaks.aurophobia.name"
+        },
         "type": "origins:prevent_item_use",
         "item_condition": {
             "type": "origins:ingredient",
@@ -85,8 +93,10 @@
         }
     },
     "gold_tools_use": {
+        "name": {
+            "translate": "power.originstweaks.aurophobia.name"
+        },
         "type": "origins:prevent_item_use",
-        "name": "Aurophobia",
         "item_condition": {
             "type": "origins:ingredient",
             "ingredient": {
@@ -168,7 +178,9 @@
         "tick_rate": 5
     },
     "gold_armor_use": {
-        "name": "Aurophobia",
+        "name": {
+            "translate": "power.originstweaks.aurophobia.name"
+        },
         "type": "origins:prevent_item_use",
         "item_condition": {
             "type": "origins:ingredient",

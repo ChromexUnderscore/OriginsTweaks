@@ -1,6 +1,10 @@
 {
-    "name": "Avian [OT]",
-    "description": "The Avian race has lost their ability to fly a long time ago. Now these peaceful creatures can be seen gliding from one place to another.",
+    "name": {
+        "translate": "origin.originstweaks.avian.name"
+    },
+    "description": {
+        "translate": "origin.originstweaks.avian.description"
+    },
     "icon": {
         "item": "minecraft:feather"
     },
