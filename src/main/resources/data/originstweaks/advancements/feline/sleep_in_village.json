@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Safe and Snug"
+            "translate": "advancement.originstweaks.feline.sleep_in_village.title"
         },
         "description": {
-            "text": "Sleep in a village with an iron golem nearby."
+            "translate": "advancement.originstweaks.feline.sleep_in_village.description"
         },
         "icon": {
             "item": "minecraft:feather"

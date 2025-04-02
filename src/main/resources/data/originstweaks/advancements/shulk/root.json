@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Shulk"
+            "translate": "advancement.originstweaks.shulk.root.title"
         },
         "description": {
-            "text": "You chose the Shulk Origin."
+            "translate": "advancement.originstweaks.shulk.root.description"
         },
         "icon": {
             "item": "minecraft:shulker_shell"

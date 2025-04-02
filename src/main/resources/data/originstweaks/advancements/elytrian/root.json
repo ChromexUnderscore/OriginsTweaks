@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Elytrian"
+            "translate": "advancement.originstweaks.elytrian.root.title"
         },
         "description": {
-            "text": "You chose the Elytrian Origin."
+            "translate": "advancement.originstweaks.elytrian.root.description"
         },
         "icon": {
             "item": "minecraft:elytra"

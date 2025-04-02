@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Biological Warfare"
+            "translate": "advancement.originstweaks.arachnid.poison_illager.title"
         },
         "description": {
-            "text": "Poison all types of Illager and allies using your Venom ability at least once."
+            "translate": "advancement.originstweaks.arachnid.poison_illager.description"
         },
         "icon": {
             "item": "minecraft:spider_eye"

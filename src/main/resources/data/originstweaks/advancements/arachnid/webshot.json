@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "The Amazing"
+            "translate": "advancement.originstweaks.arachnid.webshot.title"
         },
         "description": {
-            "text": "Use your webshot 7 times without touching the ground or climbing."
+            "translate": "advancement.originstweaks.arachnid.webshot.description"
         },
         "icon": {
             "item": "minecraft:cobweb"

@@ -7,14 +7,14 @@
     "badge.originstweaks.master_of_webs.0": "Propel yourself toward a block or mob within 16 blocks using [Primary].",
     "badge.originstweaks.master_of_webs.1": "Webshot holds 7 charges and fully regenerates over 30 seconds.",
     "badge.originstweaks.master_of_webs.2": "You move freely through cobwebs and can use them for climbing.",
-    "badge.originstweaks.master_of_webs.3.prefix": "Combine 9 String to craft Cobweb.",
+    "badge.originstweaks.master_of_webs.3.prefix": "Combine 9 string to craft a cobweb.",
     "badge.originstweaks.master_of_webs.3.suffix": "Sneaking and breaking a cobweb block refunds the 9 string used to craft it.",
-    
+
     "power.originstweaks.venom.name": "Venom",
     "power.originstweaks.venom.description": "Arachnids can inject neurotoxins into threats or prey to weaken them.",
     "badge.originstweaks.venom.0": "Melee attacks have a chance to inflict poison.",
     "badge.originstweaks.venom.1": "Press [Secondary] to toggle Climbing and Venom abilities.",
-    
+
     "power.originstweaks.climbing.name": "Climbing",
     "power.originstweaks.climbing.description": "Allows climbing of any wall, not just ladders.",
     "badge.originstweaks.climbing.0": "Press [Secondary] to toggle Climbing and Venom abilities.",
@@ -29,7 +29,7 @@
 
     "origin.originstweaks.avian.name": "Avian [OT]",
     "origin.originstweaks.avian.description": "The Avian race lost their ability to fly a long time ago. Now these peaceful creatures can be seen gliding from one place to another.",
-    
+
     "power.originstweaks.slow_falling.name": "Featherweight",
     "power.originstweaks.slow_falling.description": "You fall as gently to the ground as a feather would.",
     "badge.originstweaks.slow_falling.0": "Toggle with [Secondary].",
@@ -50,12 +50,12 @@
 
     "origin.originstweaks.blazeborn.name": "Blazeborn [OT]",
     "origin.originstweaks.blazeborn.description": "Late descendants of the Blaze, the Blazeborn are naturally immune to the perils of the Nether.",
-    
+
     "power.originstweaks.burning_wrath.name": "Burning Wrath",
     "power.originstweaks.burning_wrath.description": "For centuries, the Blazeborn have relied on the power of fire to assist them in both combat and survival.",
     "badge.originstweaks.burning_wrath.0": "Set yourself ablaze for 30 seconds using [Primary].",
     "badge.originstweaks.burning_wrath.1": "When on Fire, you deal 125% base damage.",
-    "badge.originstweaks.burning_wrath.2": "You can use your fire to Light Campfires or Fuel Furnaces and Brewing Stands.",
+    "badge.originstweaks.burning_wrath.2": "You can use your fire to light campfires or fuel furnaces and brewing stands.",
 
     "power.originstweaks.firecharged_projectile.name": "Firecharged",
     "power.originstweaks.firecharged_projectile.description": "You can attack foes with a burst of Fireballs.",
@@ -68,12 +68,12 @@
 
     "origin.originstweaks.elytrian.name": "Elytrian [OT]",
     "origin.originstweaks.elytrian.description": "Often flying around in the winds, Elytrians are uncomfortable when they don't have enough space above their heads.",
-    
+
     "power.originstweaks.gift_of_the_skies.name": "Gift of the Skies",
     "power.originstweaks.gift_of_the_skies.description": "Evolution gifted you wings, which you can use to fly around with ease.",
     "badge.originstweaks.gift_of_the_skies.0": "Use [Primary] to launch high into the air when grounded or to ascend while gliding.",
     "badge.originstweaks.gift_of_the_skies.1": "You have limited Stamina. Launching and ascending use stamina; catch your breath by resting on the ground.",
-    "badge.originstweaks.gift_of_the_skies.2": "It's harder to fly with armor levels higher than 12.",
+    "badge.originstweaks.gift_of_the_skies.2": "It's harder to fly with armour levels higher than 12.",
     "badge.originstweaks.gift_of_the_skies.3": "It's too dangerous to use fireworks while gliding.",
 
     "power.originstweaks.companion_mounting.name": "Companion Mounting",
@@ -89,7 +89,7 @@
 
     "origin.originstweaks.enderian.name": "Enderian [OT]",
     "origin.originstweaks.enderian.description": "Born as children of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.",
-    
+
     "power.originstweaks.throw_ender_pearl.name": "Teleportation",
     "power.originstweaks.throw_ender_pearl.description": "Whenever you want, you may throw an ender pearl that deals no damage, allowing you to teleport.",
     "badge.originstweaks.throw_ender_pearl.0": "Throw a pearl with [Primary].",
@@ -104,7 +104,7 @@
 
     "origin.originstweaks.feline.name": "Feline [OT]",
     "origin.originstweaks.feline.description": "With their cat-like appearance, Felines scare creepers away. With the dexterity of cats, they always land safely on their feet.",
-    
+
     "power.originstweaks.natural_hunter.name": "Natural Hunter",
     "power.originstweaks.natural_hunter.description": "Felines are natural predators; their claws can be sharpened to be more lethal in combat, and fish is more nourishing.",
     "badge.originstweaks.natural_hunter.0": "Use [Primary] while not holding any tool to attack using your Claws.",
@@ -132,7 +132,7 @@
 
     "origin.originstweaks.merling.name": "Merling [OT]",
     "origin.originstweaks.merling.description": "These natural inhabitants of the ocean are not used to being out of the water for too long.",
-    
+
     "power.originstweaks.aquadynamic.name": "Aquadynamic",
     "power.originstweaks.aquadynamic.description": "Due to your experience with physics underwater, you are able to use Tridents more efficiently and know how to craft them.",
     "badge.originstweaks.aquadynamic.0": "You deal 1.5x damage to entities while using a Trident underwater.",
@@ -177,17 +177,17 @@
 
     "power.originstweaks.aurophobia.name": "Aurophobia",
     "power.originstweaks.aurophobia.description": "Gold has a repellent effect on your kind.",
-    "badge.originstweaks.aurophobia.0": "You cannot eat any golden food, wear golden armor, use golden tools, or phase through gold blocks.",
+    "badge.originstweaks.aurophobia.0": "You cannot eat any golden food, wear golden armour, use golden tools, or phase through gold blocks.",
 
 
     "origin.originstweaks.shulk.name": "Shulk [OT]",
     "origin.originstweaks.shulk.description": "Related to Shulkers, the bodies of the Shulk are outfitted with a protective shell-like skin.",
 
     "power.originstweaks.natural_armor.name": "Sturdy Skin",
-    "power.originstweaks.natural_armor.description": "Even without wearing armor, your shell provides protection.",
-    "badge.originstweaks.natural_armor.0": "You start with a base of 3 armor points.",
-    "badge.originstweaks.natural_armor.1": "Press and hold [Sneak] to gain up to 7 extra armor points.",
-    "badge.originstweaks.natural_armor.2": "Taking a heavy hit (more than or equal to 3 hearts) reduces bonus armor by 1 and disables shell buildup for 30 seconds.",
+    "power.originstweaks.natural_armor.description": "Even without wearing armour, your shell provides protection.",
+    "badge.originstweaks.natural_armor.0": "You start with a base of 3 armour points.",
+    "badge.originstweaks.natural_armor.1": "Press and hold [Sneak] to gain up to 7 extra armour points.",
+    "badge.originstweaks.natural_armor.2": "Taking a heavy hit (more than or equal to 3 hearts) reduces bonus armour by 1 and disables shell buildup for 30 seconds.",
 
 
     
@@ -277,7 +277,7 @@
     "advancement.originstweaks.enderian.dodge_projectile.description": "Dodge a projectile by teleporting.",
     
     "advancement.originstweaks.enderian.max_waterprotection.title": "Waterproof",
-    "advancement.originstweaks.enderian.max_waterprotection.description": "Equip a piece of armor with Water Protection IV.",
+    "advancement.originstweaks.enderian.max_waterprotection.description": "Equip a piece of armour with Water Protection IV.",
     
     "advancement.originstweaks.enderian.rain.title": "Risk of Rain",
     "advancement.originstweaks.enderian.rain.description": "Take damage from rain.",
@@ -311,7 +311,7 @@
     "advancement.originstweaks.merling.clear_monument.description": "Clear an ocean monument of Elder Guardians.",
 
     "advancement.originstweaks.merling.conduit_power.title": "Maelstrom",
-    "advancement.originstweaks.merling.conduit_power.description": "Place a Conduit into a valid prismarine frame and receive its effect.",
+    "advancement.originstweaks.merling.conduit_power.description": "Place a conduit into a valid prismarine frame and receive its effect.",
 
     "advancement.originstweaks.merling.loyalty_channeling.title": "Odinson",
     "advancement.originstweaks.merling.loyalty_channeling.description": "Enchant a Trident with Channeling and Loyalty III.",
@@ -345,11 +345,11 @@
     "advancement.originstweaks.shulk.inventory.description": "Put an item into your Shulker Inventory.",
 
     "advancement.originstweaks.shulk.max_armor.title": "Topped Off",
-    "advancement.originstweaks.shulk.max_armor.description": "Equip Armor and charge Sturdy Skin until you reach 30 Armor Points.",
+    "advancement.originstweaks.shulk.max_armor.description": "Equip Armour and charge Sturdy Skin until you reach 30 Armour Points.",
 
     "advancement.originstweaks.shulk.shulker_bullet.title": "Friendly Fire",
     "advancement.originstweaks.shulk.shulker_bullet.description": "As Shulk, get hit by a Shulker Bullet.",
 
     "advancement.originstweaks.shulk.tank_warden.title": "Irresistible Force Paradox",
-    "advancement.originstweaks.shulk.tank_warden.description": "Endure a melee hit from the Warden without wearing any physical armor."
+    "advancement.originstweaks.shulk.tank_warden.description": "Endure a melee hit from the Warden without wearing any physical armour."
 }

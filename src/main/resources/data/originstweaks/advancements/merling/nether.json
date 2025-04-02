@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Hostile Environment"
+            "translate": "advancement.originstweaks.merling.nether.title"
         },
         "description": {
-            "text": "As Merling, enter the Nether"
+            "translate": "advancement.originstweaks.merling.nether.description"
         },
         "icon": {
             "item": "minecraft:netherrack"

@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "MAJESTICA - Above The Sky"
+            "translate": "advancement.originstweaks.elytrian.y_700.title"
         },
         "description": {
-            "text": "Reach Y-Coordinate 700 using your flight abilities"
+            "translate": "advancement.originstweaks.elytrian.y_700.description"
         },
         "icon": {
             "item": "minecraft:glowstone"

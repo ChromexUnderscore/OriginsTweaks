@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "We Need to Go Higher"
+            "translate": "advancement.originstweaks.blazeborn.reach_overworld.title"
         },
         "description": {
-            "text": "As Blazeborn, reach the Overworld"
+            "translate": "advancement.originstweaks.blazeborn.reach_overworld.description"
         },
         "icon": {
             "item": "minecraft:fire_charge"

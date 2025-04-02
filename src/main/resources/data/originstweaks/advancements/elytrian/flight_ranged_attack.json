@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Air Support"
+            "translate": "advancement.originstweaks.elytrian.flight_ranged_attack.title"
         },
         "description": {
-            "text": "Use a ranged attack after gliding for at least 3 seconds."
+            "translate": "advancement.originstweaks.elytrian.flight_ranged_attack.description"
         },
         "icon": {
             "item": "minecraft:crossbow"

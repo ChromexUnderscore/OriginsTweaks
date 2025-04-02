@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Mayday, Mayday"
+            "translate": "advancement.originstweaks.elytrian.crash.title"
         },
         "description": {
-            "text": "Take 7 or more hearts of kinetic damage at once"
+            "translate": "advancement.originstweaks.elytrian.crash.description"
         },
         "icon": {
             "item": "minecraft:elytra",

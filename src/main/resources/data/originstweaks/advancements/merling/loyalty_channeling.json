@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Odinson"
+            "translate": "advancement.originstweaks.merling.loyalty_channeling.title"
         },
         "description": {
-            "text": "Enchant a Trident with Channeling and Loyalty 3"
+            "translate": "advancement.originstweaks.merling.loyalty_channeling.description"
         },
         "icon": {
             "item": "minecraft:trident",

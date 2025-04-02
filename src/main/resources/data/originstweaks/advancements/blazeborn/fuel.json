@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Fire is Fuel. Nether is Full."
+            "translate": "advancement.originstweaks.blazeborn.fuel.title"
         },
         "description": {
-            "text": "Fuel a Campfire, a Brewing Stand and any type of Furnace using Burning Wrath."
+            "translate": "advancement.originstweaks.blazeborn.fuel.description"
         },
         "icon": {
             "item": "minecraft:furnace"

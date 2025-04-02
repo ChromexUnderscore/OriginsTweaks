@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Friendly Fire"
+            "translate": "advancement.originstweaks.shulk.shulker_bullet.title"
         },
         "description": {
-            "text": "As Shulk, get hit by another Shulkers Bullet"
+            "translate": "advancement.originstweaks.shulk.shulker_bullet.description"
         },
         "icon": {
             "item": "minecraft:bow"

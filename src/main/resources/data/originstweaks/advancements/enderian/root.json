@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Enderian"
+            "translate": "advancement.originstweaks.enderian.root.title"
         },
         "description": {
-            "text": "You chose the Enderian Origin."
+            "translate": "advancement.originstweaks.enderian.root.description"
         },
         "icon": {
             "item": "minecraft:ender_eye"

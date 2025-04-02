@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Feline"
+            "translate": "advancement.originstweaks.feline.root.title"
         },
         "description": {
-            "text": "You chose the Feline Origin."
+            "translate": "advancement.originstweaks.feline.root.description"
         },
         "icon": {
             "item": "minecraft:salmon"

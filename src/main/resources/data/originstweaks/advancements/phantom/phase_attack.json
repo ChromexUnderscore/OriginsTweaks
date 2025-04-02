@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Ankle Biter"
+            "translate": "advancement.originstweaks.phantom.phase_attack.title"
         },
         "description": {
-            "text": "Hit a player or mob while phased halfway into the ground"
+            "translate": "advancement.originstweaks.phantom.phase_attack.description"
         },
         "icon": {
             "item": "minecraft:infested_stone"

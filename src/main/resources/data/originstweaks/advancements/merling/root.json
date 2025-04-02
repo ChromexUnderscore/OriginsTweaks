@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Merling"
+            "translate": "advancement.originstweaks.merling.root.title"
         },
         "description": {
-            "text": "You chose the Merling Origin."
+            "translate": "advancement.originstweaks.merling.root.description"
         },
         "icon": {
             "item": "minecraft:trident"

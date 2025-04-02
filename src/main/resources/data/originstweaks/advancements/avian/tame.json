@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Dr Dolittle"
+            "translate": "advancement.originstweaks.avian.tame.title"
         },
         "description": {
-            "text": "Tame an animal without using items."
+            "translate": "advancement.originstweaks.avian.tame.description"
         },
         "icon": {
             "item": "minecraft:bone"

@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Lookin Sharp"
+            "translate": "advancement.originstweaks.feline.sharp_claws.title"
         },
         "description": {
-            "text": "Use a log, smooth stone, iron block and diamond block to fully sharpen your claws"
+            "translate": "advancement.originstweaks.feline.sharp_claws.description"
         },
         "icon": {
             "item": "minecraft:diamond_block"

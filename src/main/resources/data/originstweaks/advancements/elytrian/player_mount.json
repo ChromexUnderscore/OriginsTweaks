@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "To Infinity and Beyond!"
+            "translate": "advancement.originstweaks.elytrian.player_mount.title"
         },
         "description": {
-            "text": "Let another player mount you and take flight."
+            "translate": "advancement.originstweaks.elytrian.player_mount.description"
         },
         "icon": {
             "item": "minecraft:firework_rocket"

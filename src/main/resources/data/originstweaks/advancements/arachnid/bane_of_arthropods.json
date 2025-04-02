@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Banished"
+            "translate": "advancement.originstweaks.arachnid.bane_of_arthropods.title"
         },
         "description": {
-            "text": "Get hit by a weapon enchanted with Bane of Arthropods V."
+            "translate": "advancement.originstweaks.arachnid.bane_of_arthropods.description"
         },
         "icon": {
             "item": "minecraft:diamond_axe"

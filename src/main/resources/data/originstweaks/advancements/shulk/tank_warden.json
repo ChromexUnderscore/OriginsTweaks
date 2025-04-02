@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Irresistible Force Paradox"
+            "translate": "advancement.originstweaks.shulk.tank_warden.title"
         },
         "description": {
-            "text": "Survive a melee hit from the Warden without wearing any physical armor"
+            "translate": "advancement.originstweaks.shulk.tank_warden.description"
         },
         "icon": {
             "item": "minecraft:netherite_chestplate"

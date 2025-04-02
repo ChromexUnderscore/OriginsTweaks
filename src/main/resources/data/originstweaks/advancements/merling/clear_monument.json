@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Guardian Season"
+            "translate": "advancement.originstweaks.merling.clear_monument.title"
         },
         "description": {
-            "text": "Clear an ocean monument of Elder Guardians"
+            "translate": "advancement.originstweaks.merling.clear_monument.description"
         },
         "icon": {
             "item": "minecraft:prismarine"

@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Maelstrom"
+            "translate": "advancement.originstweaks.merling.conduit_power.title"
         },
         "description": {
-            "text": "Place a Conduit into a valid prismarine frame and receive its effect"
+            "translate": "advancement.originstweaks.merling.conduit_power.description"
         },
         "icon": {
             "item": "minecraft:conduit"

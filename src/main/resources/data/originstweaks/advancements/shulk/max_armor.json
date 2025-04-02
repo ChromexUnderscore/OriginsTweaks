@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Topped Off"
+            "translate": "advancement.originstweaks.shulk.max_armor.title"
         },
         "description": {
-            "text": "Equip Armor and charge Sturdy Skin until you reach 30 Armor Points"
+            "translate": "advancement.originstweaks.shulk.max_armor.description"
         },
         "icon": {
             "item": "minecraft:iron_chestplate"

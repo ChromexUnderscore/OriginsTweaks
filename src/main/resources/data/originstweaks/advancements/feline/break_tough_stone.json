@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "You're a stubborn one"
+            "translate": "advancement.originstweaks.feline.break_tough_stone.title"
         },
         "description": {
-            "text": "Break a tough block using Strength or Efficiency"
+            "translate": "advancement.originstweaks.feline.break_tough_stone.description"
         },
         "icon": {
             "item": "minecraft:obsidian"

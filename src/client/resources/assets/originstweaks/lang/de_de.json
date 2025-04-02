@@ -4,7 +4,7 @@
 
 	"power.originstweaks.master_of_webs.name": "Meister der Netze",
 	"power.originstweaks.master_of_webs.description": "Arachniden sind Experten im Umgang mit Spinnennetzen. Sie nutzen sie geschickt zu ihrem Vorteil und bewegen sich problemlos durch sie hindurch.",
-	"badge.originstweaks.master_of_webs.0": "Benutze [Primär], um dich zu einem Block oder Mob in bis zu 16 Blöcken Entfernung zu ziehen.",
+	"badge.originstweaks.master_of_webs.0": "Benutze [Primär], um dich zu einem Block oder Kreatur in bis zu 16 Blöcken Entfernung zu ziehen.",
 	"badge.originstweaks.master_of_webs.1": "Du kannst bis zu 7 Netzschüsse aufbewahren, die sich innerhalb von 30 Sekunden vollständig regenerieren.",
 	"badge.originstweaks.master_of_webs.2": "Du bewegst dich frei durch Spinnennetzen und kannst sie zum Klettern nutzen.",
 	"badge.originstweaks.master_of_webs.3.prefix": "Nutze 9 Fäden, um ein Spinnennetz herzustellen.",
@@ -12,7 +12,7 @@
 
     "power.originstweaks.venom.name": "Giftig",
     "power.originstweaks.venom.description": "Arachniden injizieren ein Neurotoxin, um Bedrohungen oder Beute zu schwächen.",
-	"badge.originstweaks.venom.0": "Nahkampfangriffe haben eine Chance, Gift zu verursachen.",
+	"badge.originstweaks.venom.0": "Nahkampfangriffe haben eine Chance, einen Gifteffekt zu verursachen.",
     "badge.originstweaks.venom.1": "Drücke [Sekundär], um die Kletter- und Gift-Fähigkeiten gemeinsam ein- oder auszuschalten.",
 
 	"power.originstweaks.climbing.name": "Klettern",
@@ -21,7 +21,7 @@
 
 	"power.originstweaks.arthropod.name": "Gliederfüßer",
 	"power.originstweaks.arthropod.description": "Als Gliederfüßer bist du kleiner und kannst deinen Fall abfedern.",
-    "badge.originstweaks.arthropod.0": "Du bist nur 1,5 Blöcken groß.",
+    "badge.originstweaks.arthropod.0": "Du bist nur 1,5 Blöcke groß.",
     "badge.originstweaks.arthropod.1": "Du nimmst nur Fallschaden bei Stürzen aus einer Höhe von mehr als 16 Blöcken.",
 	"badge.originstweaks.arthropod.2": "Als Gliederfüßer bist du anfällig für die Verzauberung \"Nemesis der Gliederfüßer\".",
 
@@ -51,15 +51,15 @@
 	"origin.originstweaks.blazeborn.name": "Lohenwesen [OT]",
 	"origin.originstweaks.blazeborn.description": "Als entfernte Verwandte der Lohe besitzen Lohenwesen eine natürliche Immunität gegen die Gefahren des Nether.",
 	
-	"power.originstweaks.burning_wrath.name": "Brennender Zorn",
-	"power.originstweaks.burning_wrath.description": "Seit Jahrhunderten verlassen sich die Lohenwesen auf die Macht des Feuers, um ihnen sowohl im Kampf als auch beim Überleben zu helfen.",
+	"power.originstweaks.burning_wrath.name": "Flammender Zorn",
+	"power.originstweaks.burning_wrath.description": "Seit Jahrhunderten verlassen sich die Lohenwesen auf die Macht des Feuers, um ihnen sowohl im Kampf als auch beim Überleben zu unterstützen.",
     "badge.originstweaks.burning_wrath.0": "Zünde dich für 30 Sekunden mit [Primär] an.",
     "badge.originstweaks.burning_wrath.1": "Wenn du brennst, verursachst du 1.25x Basisschaden.",
 	"badge.originstweaks.burning_wrath.2": "Du kannst dein Feuer nutzen, um Lagerfeuer anzuzünden oder Öfen und Braustände zu befeuern.",
 
     "power.originstweaks.firecharged_projectile.name": "Feuerkugeln",
     "power.originstweaks.firecharged_projectile.description": "Du kannst Feinde mit einer Salve aus Feuerkugeln angreifen.",
-    "badge.originstweaks.firecharged_projectile.0": "Schieße eine Salve von 3 Feuerkugeln mit [Sekundär]. Diese Fähigkeit hat eine Wartezeit von 5 Sekunden.",
+    "badge.originstweaks.firecharged_projectile.0": "Schieße eine Salve von 3 Feuerkugeln mit [Sekundär]. Diese Fähigkeit hat eine Wartezeit von 10 Sekunden.",
 
 	"power.originstweaks.fire_immunity.name": "Feuerimmunität",
 	"power.originstweaks.fire_immunity.description": "Du bist immun gegen alle Arten von Feuerschaden und kannst in Lava schwimmen.",
@@ -67,7 +67,7 @@
 
 
 	"origin.originstweaks.elytrian.name": "Elytraner [OT]",
-	"origin.originstweaks.elytrian.description": "Da sie häufig mit den Winden herumfliegen, fühlen sich Elytraner unwohl, wenn sie nicht genug Platz über ihren Köpfen haben.",
+	"origin.originstweaks.elytrian.description": "Da sie häufig in den Winden gleiten, fühlen sich Elytraner unwohl, wenn sie nicht genug Platz über ihren Kopf haben.",
 	
 	"power.originstweaks.gift_of_the_skies.name": "Geschenk der Winde",
     "power.originstweaks.gift_of_the_skies.description": "Durch die Gunst der Lüfte wurden dir Flügel verliehen, mit denen du mühelos fliegen kannst.",
@@ -122,7 +122,7 @@
     "power.originstweaks.weak_arms.description": "Deine Arme sind nicht stark genug, um Stein schnell abzubauen. Einige Steinarten kannst du gar nicht abbauen.",
     "badge.originstweaks.weak_arms.0": "Du baust natürliches Stein sowie Erzblöcke halb so schnell ab wie normal.",
 	"badge.originstweaks.weak_arms.1": "Du kannst keine robusten Steinblöcke wie Tiefenschieferblöcke, Tiefenschiefererze, Obsidian oder Schwarzstein abbauen.",
-	"badge.originstweaks.weak_arms.2": "Diese Einschränkungen können durch die Verwendung von Stärke-Tränken oder einer Spitzhacke mit Effizienz-Verzauberung umgangen werden.",
+	"badge.originstweaks.weak_arms.2": "Diese Einschränkungen können durch die Verwendung von Tränke der Stärke oder einer Spitzhacke mit einer Effizienz Verzauberung umgangen werden.",
 
 	"power.originstweaks.cat_vision.name": "Nachtaktiv",
     "power.originstweaks.cat_vision.description": "Du kannst im Dunkeln sehen, was dir einen Vorteil in schlecht beleuchteten Umgebungen verschafft.",
@@ -134,7 +134,7 @@
 	"origin.originstweaks.merling.description": "Diese natürlichen Bewohner des Ozeans sind es nicht gewohnt, sich zu lange außerhalb des Wassers aufzuhalten.",
 	
 	"power.originstweaks.aquadynamic.name": "Aquadynamik",
-	"power.originstweaks.aquadynamic.description": "Aufgrund deiner Erfahrung mit Wasserwiederstand kannst du Dreizacke effizienter einsetzen und weißt, wie man sie herstellt.",
+	"power.originstweaks.aquadynamic.description": "Aufgrund deiner Erfahrung mit Wasserwiderstand kannst du Dreizacke effizienter einsetzen und weißt, wie man sie herstellt.",
 	"badge.originstweaks.aquadynamic.0": "Wenn du einen Dreizack unter Wasser wirfst, verursachst du 1.5x Basisschaden.",
 	"badge.originstweaks.aquadynamic.1.prefix": "Du kannst Dreizacke herstellen.",
 
@@ -148,7 +148,7 @@
 
 	"power.originstweaks.body_moisture.name": "Feuchtigkeit",
 	"power.originstweaks.body_moisture.description": "Dein Körper kann Wasser für bis zu 10 Minuten speichern. Wenn dein Wasservorrat abläuft, wirst du anfangen, Sauerstoff zu verlieren.",
-	"badge.originstweaks.body_moisture.0": "Spring ins Wasser, setz dich in einen  Wasserkessel oder trinke eine Wasserflasche, um deinen Wasservorrat aufzufüllen.",
+	"badge.originstweaks.body_moisture.0": "Spring ins Wasser, setz dich in einen Wasserkessel oder trinke eine Wasserflasche, um deinen Wasservorrat aufzufüllen.",
 	"badge.originstweaks.body_moisture.1": "Der Nether entzieht deinem Wasservorrat doppelt so schnell Feuchtigkeit!",
 	"badge.originstweaks.body_moisture.2": "Meereskraft von Aquisatoren hält viel länger an und verhindert, dass dein Körper Feuchtigkeit verliert.",
 
@@ -185,7 +185,7 @@
 
 	"power.originstweaks.natural_armor.name": "Robuste Schale",
 	"power.originstweaks.natural_armor.description": "Auch ohne Rüstung bietet deine Schale Schutz.",
-	"badge.originstweaks.natural_armor.0": "Du startest mit von 3 Rüstungspunkten.",
+	"badge.originstweaks.natural_armor.0": "Du startest mit 3 Rüstungspunkten.",
 	"badge.originstweaks.natural_armor.1": "Halte [Schleichen] gedrückt, um bis zu 7 zusätzliche Rüstungspunkte zu erhalten.",
 	"badge.originstweaks.natural_armor.2": "Ein schwerer Treffer (mehr als oder gleich 3 Herzen) reduziert die Bonusrüstung um 1 und deaktiviert den Schalenaufbau für 30 Sekunden.",
 
@@ -214,7 +214,7 @@
 	"advancement.originstweaks.arachnid.poison_illager.title": "Biologische Kriegsführung",
 	"advancement.originstweaks.arachnid.poison_illager.description": "Vergifte alle Arten von Illagern und deren Verbündeten mindestens einmal mit deiner Giftfähigkeit.",
 	
-	"advancement.originstweaks.arachnid.webshot.title": "Der unglaubliche Spider-Man",
+	"advancement.originstweaks.arachnid.webshot.title": "The Amazing Spider-Man",
 	"advancement.originstweaks.arachnid.webshot.description": "Nutze deinen Netzschuss 7 Mal, ohne den Boden zu berühren oder zu klettern.",
     
     
@@ -240,7 +240,7 @@
 	"advancement.originstweaks.blazeborn.root.description": "Du hast die Lohenwesen-Herkunft gewählt.",
 	
 	"advancement.originstweaks.blazeborn.fuel.title": "Feuer und Flamme",
-	"advancement.originstweaks.blazeborn.fuel.description": "Nutze \"Brennender Zorn\", um ein Lagerfeuer, einen Braustand und einen Ofen zu befeuern.",
+	"advancement.originstweaks.blazeborn.fuel.description": "Nutze \"Flammender Zorn\", um ein Lagerfeuer, einen Braustand und einen Ofen zu befeuern.",
 	
 	"advancement.originstweaks.blazeborn.kill_wither_nether.title": "König des Nethers",
 	"advancement.originstweaks.blazeborn.kill_wither_nether.description": "Besiege den Wither im Nether als Lohenwesen.",
@@ -262,7 +262,7 @@
 	"advancement.originstweaks.elytrian.flight_ranged_attack.title": "Luftangriff",
 	"advancement.originstweaks.elytrian.flight_ranged_attack.description": "Führe einen Fernkampfangriff aus, nachdem du mindestens 3 Sekunden geflogen bist.",
 	
-	"advancement.originstweaks.elytrian.player_mount.title": "Bis zur Unendlichkeit und noch viel weiter!",
+	"advancement.originstweaks.elytrian.player_mount.title": "Bis zur Unendlichkeit...",
 	"advancement.originstweaks.elytrian.player_mount.description": "Nimm einen Freund huckepack hebe ab.",
 	
 	"advancement.originstweaks.elytrian.y_700.title": "MAJESTICA - Above the Sky",
@@ -277,7 +277,7 @@
 	"advancement.originstweaks.enderian.dodge_projectile.description": "Weiche einem Projektil durch Teleportation aus.",
 	
 	"advancement.originstweaks.enderian.max_waterprotection.title": "Wasserdicht",
-	"advancement.originstweaks.enderian.max_waterprotection.description": "Trage ein Rüstungsteil mit einer Wasser-Schutz IV Verzauberung.",
+	"advancement.originstweaks.enderian.max_waterprotection.description": "Trage ein Rüstungsteil mit einer Wasserschutz IV Verzauberung.",
 	
 	"advancement.originstweaks.enderian.rain.title": "Risk of Rain",
 	"advancement.originstweaks.enderian.rain.description": "Nimm Schaden durch Regen.",
@@ -293,7 +293,7 @@
 	"advancement.originstweaks.feline.break_tough_stone.title": "Sturer Block",
 	"advancement.originstweaks.feline.break_tough_stone.description": "Zerstöre einen robusten Steinblock mit einem Trank der Stärke oder der Effizienz Verzauberung.",
 
-	"advancement.originstweaks.feline.cooked_fish_stack.title": "Fischers Fritz fischt frische Fische",
+	"advancement.originstweaks.feline.cooked_fish_stack.title": "Frischers Fitz frischt... Frischers...",
 	"advancement.originstweaks.feline.cooked_fish_stack.description": "Trage einen vollen Stapel gekochten Kabeljau oder gekochten Lachs in deinem Inventar.",
 
 	"advancement.originstweaks.feline.sharp_claws.title": "Vorsicht, Scharf",
@@ -324,7 +324,7 @@
 	"advancement.originstweaks.phantom.root.title": "Phantom",
 	"advancement.originstweaks.phantom.root.description": "Du hast die Phantom-Herkunft gewählt.",
 
-	"advancement.originstweaks.phantom.absorb_boss_soul.title": "Hol mir ihre Seelen",
+	"advancement.originstweaks.phantom.absorb_boss_soul.title": "Bring mir ihre Seelen",
 	"advancement.originstweaks.phantom.absorb_boss_soul.description": "Absorbiere die Seelenenergie einer Boss-Kreatur.",
 
 	"advancement.originstweaks.phantom.absorb_soulfire.title": "Erfrischend",
@@ -351,5 +351,5 @@
 	"advancement.originstweaks.shulk.shulker_bullet.description": "Lass dich als Shulk von einem Shulker-Geschoss treffen.",
 
 	"advancement.originstweaks.shulk.tank_warden.title": "Unaufhaltsame Kraft Paradoxon",
-	"advancement.originstweaks.shulk.tank_warden.description": "Überlebe einen Nahkampfangriff des Wächters, ohne physische Rüstung zu tragen."
+	"advancement.originstweaks.shulk.tank_warden.description": "Überlebe einen Nahkampfangriff des Wächters, ohne Rüstung zu tragen."
 }

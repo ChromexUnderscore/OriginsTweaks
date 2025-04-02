@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Stocked up"
+            "translate": "advancement.originstweaks.feline.cooked_fish_stack.title"
         },
         "description": {
-            "text": "Carry a full stack of cooked cod or cooked salmon in your inventory"
+            "translate": "advancement.originstweaks.feline.cooked_fish_stack.description"
         },
         "icon": {
             "item": "minecraft:cooked_cod"

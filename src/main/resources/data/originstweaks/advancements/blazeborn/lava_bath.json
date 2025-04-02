@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Hot Spring"
+            "translate": "advancement.originstweaks.blazeborn.lava_bath.title"
         },
         "description": {
-            "text": "Go for a swim in Lava."
+            "translate": "advancement.originstweaks.blazeborn.lava_bath.description"
         },
         "icon": {
             "item": "minecraft:golden_leggings"

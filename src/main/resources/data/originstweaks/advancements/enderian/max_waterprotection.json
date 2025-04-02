@@ -1,10 +1,10 @@
 {
     "display": {
         "title": {
-            "text": "Waterproof"
+            "translate": "advancement.originstweaks.enderian.max_waterprotection.title"
         },
         "description": {
-            "text": "Equip a piece of armor with Water Protection IV"
+            "translate": "advancement.originstweaks.enderian.max_waterprotection.description"
         },
         "icon": {
             "item": "minecraft:enchanted_book"
