@@ -357,8 +357,8 @@
 			"main_hand"
 		],
 		"block_condition": {
-			"type": "origins:block",
-			"block": "minecraft:smooth_stone"
+			"type": "origins:in_tag",
+			"tag": "originstweaks:sharpen_stone"
 		},
 		"item_condition": {
 			"type": "origins:empty"

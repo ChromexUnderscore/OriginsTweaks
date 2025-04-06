@@ -9,18 +9,19 @@
 	"badges": [
 		{
 			"type": "origins:tooltip",
-			"sprite": "origins:textures/gui/badge/star.png",
+			"sprite": "origins:textures/gui/badge/toggle.png",
 			"text": {
 				"translate": "badge.originstweaks.venom.0"
 			}
 		},
 		{
 			"type": "origins:tooltip",
-			"sprite": "origins:textures/gui/badge/toggle.png",
+			"sprite": "origins:textures/gui/badge/star.png",
 			"text": {
 				"translate": "badge.originstweaks.venom.1"
 			}
 		}
+		
 	],
 	"poison": {
 		"type": "origins:action_on_hit",
@@ -45,15 +46,17 @@
 								{
 									"type": "origins:actor_action",
 									"action": {
-										"type": "origins:trigger_cooldown",
-										"power": "*:*_indicator"
+										"type": "origins:change_resource",
+										"resource": "*:*_cooldown",
+										"change": 0,
+										"operation": "set"
 									}
 								},
 								{
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -82,8 +85,10 @@
 												"criterion": "pillager"
 											},
 											{
-												"type": "origins:trigger_cooldown",
-												"power": "*:*_indicator"
+												"type": "origins:change_resource",
+												"resource": "*:*_cooldown",
+												"change": 0,
+												"operation": "set"
 											}
 										]
 									}
@@ -92,7 +97,7 @@
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -121,8 +126,10 @@
 												"criterion": "vindicator"
 											},
 											{
-												"type": "origins:trigger_cooldown",
-												"power": "*:*_indicator"
+												"type": "origins:change_resource",
+												"resource": "*:*_cooldown",
+												"change": 0,
+												"operation": "set"
 											}
 										]
 									}
@@ -131,7 +138,7 @@
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -160,8 +167,10 @@
 												"criterion": "evoker"
 											},
 											{
-												"type": "origins:trigger_cooldown",
-												"power": "*:*_indicator"
+												"type": "origins:change_resource",
+												"resource": "*:*_cooldown",
+												"change": 0,
+												"operation": "set"
 											}
 										]
 									}
@@ -170,7 +179,7 @@
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -199,8 +208,10 @@
 												"criterion": "vex"
 											},
 											{
-												"type": "origins:trigger_cooldown",
-												"power": "*:*_indicator"
+												"type": "origins:change_resource",
+												"resource": "*:*_cooldown",
+												"change": 0,
+												"operation": "set"
 											}
 										]
 									}
@@ -209,7 +220,7 @@
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -238,8 +249,10 @@
 												"criterion": "ravager"
 											},
 											{
-												"type": "origins:trigger_cooldown",
-												"power": "*:*_indicator"
+												"type": "origins:change_resource",
+												"resource": "*:*_cooldown",
+												"change": 0,
+												"operation": "set"
 											}
 										]
 									}
@@ -248,7 +261,7 @@
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -277,8 +290,10 @@
 												"criterion": "witch"
 											},
 											{
-												"type": "origins:trigger_cooldown",
-												"power": "*:*_indicator"
+												"type": "origins:change_resource",
+												"resource": "*:*_cooldown",
+												"change": 0,
+												"operation": "set"
 											}
 										]
 									}
@@ -287,7 +302,7 @@
 									"type": "origins:target_action",
 									"action": {
 										"type": "origins:execute_command",
-										"command": "effect give @s minecraft:poison 5"
+										"command": "effect give @s minecraft:poison 5 1"
 									}
 								}
 							]
@@ -305,20 +320,46 @@
 			"should_render": false
 		},
 		"condition": {
-			"type": "origins:power_active",
-			"power": "*:climbing_toggle"
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:power_active",
+					"power": "*:climbing_toggle",
+					"inverted": true
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_cooldown",
+					"comparison": "==",
+					"compare_to": 100
+				}
+			]
 		}
 	},
-	"indicator": {
-		"type": "origins:cooldown",
-		"cooldown": 100,
+	"cooldown": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"start_value": 100,
 		"hud_render": {
 			"bar_index": 18,
-			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png"
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"order": 0,
+			"condition": {
+				"type": "origins:power_active",
+				"power": "*:climbing_toggle",
+				"inverted": true
+			}
 		}
 	},
-	"toggle_dummy": {
-		"type": "origins:toggle",
-		"key": "key.origins.secondary_active"
+	"cooldown_tick": {
+		"type": "origins:action_over_time",
+		"interval": 3,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_cooldown",
+			"operation": "add",
+			"change": 3
+		}
 	}
 }

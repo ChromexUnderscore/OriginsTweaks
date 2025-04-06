@@ -13,6 +13,7 @@
 	"loading_priority": 1,
 	"powers": [
 		"origins:water_breathing",
+		"originstweaks:body_moisture",
 		"originstweaks:aquadynamic",
 		"originstweaks:swim_speed",
 		"origins:water_vision",
@@ -20,7 +21,6 @@
 		"origins:like_water",
 		"originstweaks:aquatic",
 		"origins:conduit_power_on_land",
-		"originstweaks:body_moisture",
 		"originstweaks:merling_sounds",
 		"originstweaks:merling_advancements"
 	]

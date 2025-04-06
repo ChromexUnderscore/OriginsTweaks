@@ -4,6 +4,44 @@
 
 ### [Version 1.17 [Minecraft 1.20.4]]
 
+#### [Version 1.17.2 [Localization Keys & German Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.2)
+
+Gameplay Changes
+
++ Arachnid:
+	+ ``Climbing`` and ``Venom``:
+		+ Powers now switch using the Secondary Key instead of both being toggled together.
+	+ ``Venom``:
+		+ Effect Amplifier is now ``1``, increasing the speed of poison ticks.
+		+ Poison Indicator now acts as a cooldown of 5 seconds.
++ Feline:
+	+ ``Natural Hunter``:
+		+ Polished Granite, Andesite or Diorite can now be used to sharpen to Stone Tier.
++ Enderian:
+	+ Refactored ``Ender Body`` to ``Slender Body`` in parity with the Original Origins Mod Power.
+	+ ``Slender Body``:
+		+  Projectile dodge now includes all Projectiles.
++ Phantom:
+	+ Moved ``Phantomize Energy Drain`` to ``Phantomize`` Power.
+	+ ``Phantomize``:
+		+ Reduced Soul Energy Drain to 0.5/s.
+
+Technical Changes
+
++ Removed ``Dodge Projectile`` Entity Type Tag.
++ Reordered some Powers in Origins Overview.
++ Added Translation Keys to Origins, Powers, Badges and Advancements. (Issue #54)
+	+ Due to a limitation with the Origins Mod, Tooltips can't have Translation Keys.
++ Updated English (US) translations with proper grammar.
++ Rewrote various Descriptions and Badges to be more clear and concise.
++ Added German translations. (Issue #55)
++ Added English (UK) translations.
+	+ Identical to English (US) besides some grammar rules and select words.
++ Changed all Keybind type Badges to use the Tooltips.
++ Convert Indentation of all Files to use Tabs.
++ Rewrote ``README.md``. (Issue #52)
++ Bumped version to 1.17.2.
+
 #### [Version 1.17.1 [Origin Advancements]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.1)
 
 Gameplay Changes

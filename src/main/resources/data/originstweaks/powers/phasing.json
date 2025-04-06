@@ -79,20 +79,6 @@
 			"change": -1,
 			"operation": "add"
 		},
-		"interval": 50,
-		"condition": {
-			"type": "origins:power_active",
-			"power": "*:phantomize"
-		}
-	},
-	"drain_soul_power_phasing": {
-		"type": "origins:action_over_time",
-		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "*:soulbound_energy",
-			"change": -1,
-			"operation": "add"
-		},
 		"interval": 20,
 		"condition": {
 			"type": "origins:and",

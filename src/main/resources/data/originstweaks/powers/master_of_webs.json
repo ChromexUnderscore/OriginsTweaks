@@ -83,6 +83,7 @@
 		"start_value": 7,
 		"hud_render": {
 			"bar_index": 5,
+			"order": 1,
 			"condition": {
 				"type": "origins:resource",
 				"resource": "*:*_silk_resource",

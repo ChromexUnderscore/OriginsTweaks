@@ -146,11 +146,7 @@
 			]
 		},
 		"damage_condition": {
-			"type": "origins:projectile",
-			"projectile_condition": {
-				"type": "origins:in_tag",
-				"tag": "originstweaks:dodge_projectiles"
-			}
+			"type": "origins:projectile"
 		},
 		"modifier": {
 			"name": "minimal projectile damage",

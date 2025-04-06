@@ -12,9 +12,9 @@
 	"impact": 3,
 	"loading_priority": 1,
 	"powers": [
+		"originstweaks:soulbound",
 		"originstweaks:phantomize",
 		"originstweaks:phasing",
-		"originstweaks:soulbound",
 		"originstweaks:spectral_wail",
 		"originstweaks:aurophobia",
 		"origins:burn_in_daylight",

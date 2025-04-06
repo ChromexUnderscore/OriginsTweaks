@@ -1,5 +1,5 @@
 {
-	"type": "origins:toggle",
+	"type": "origins:multiple",
 	"name": {
 		"translate": "power.originstweaks.phantomize.name"
 	},
@@ -15,15 +15,32 @@
 			}
 		}
 	],
-	"key": {
-		"key": "key.origins.primary_active",
-		"continuous": false
+	"toggle": {
+		"type": "origins:toggle",
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": false
+		},
+		"retain_state": false,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:soulbound_energy",
+			"comparison": "!=",
+			"compare_to": 0
+		}
 	},
-	"retain_state": false,
-	"condition": {
-		"type": "origins:resource",
-		"resource": "*:soulbound_energy",
-		"comparison": "!=",
-		"compare_to": 0
+	"drain_soul_power": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:soulbound_energy",
+			"change": -1,
+			"operation": "add"
+		},
+		"interval": 40,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
 	}
 }

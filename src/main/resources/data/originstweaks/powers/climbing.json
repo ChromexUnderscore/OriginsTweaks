@@ -59,6 +59,7 @@
 		"hud_render": {
 			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
 			"bar_index": 4,
+			"order": 0,
 			"condition": {
 				"type": "origins:power_active",
 				"power": "*:*_toggle"
