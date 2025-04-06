@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.avian.harvest_golden_crop.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.avian.harvest_golden_crop.description"
-        },
-        "icon": {
-            "item": "minecraft:golden_carrot"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "harvest": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:avian/tame"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.avian.harvest_golden_crop.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.avian.harvest_golden_crop.description"
+		},
+		"icon": {
+			"item": "minecraft:golden_carrot"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"harvest": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:avian/tame"
 }

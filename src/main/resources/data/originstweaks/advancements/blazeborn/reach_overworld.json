@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.blazeborn.reach_overworld.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.blazeborn.reach_overworld.description"
-        },
-        "icon": {
-            "item": "minecraft:fire_charge"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "overworld": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-      },
-    "parent": "originstweaks:blazeborn/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.blazeborn.reach_overworld.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.blazeborn.reach_overworld.description"
+		},
+		"icon": {
+			"item": "minecraft:fire_charge"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"overworld": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	  },
+	"parent": "originstweaks:blazeborn/root"
 }

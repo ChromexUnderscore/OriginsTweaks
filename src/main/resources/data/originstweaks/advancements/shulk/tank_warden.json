@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.shulk.tank_warden.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.shulk.tank_warden.description"
-        },
-        "icon": {
-            "item": "minecraft:netherite_chestplate"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "tank_warden": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-      },
-    "parent": "originstweaks:shulk/max_armor"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.shulk.tank_warden.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.shulk.tank_warden.description"
+		},
+		"icon": {
+			"item": "minecraft:netherite_chestplate"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"tank_warden": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	  },
+	"parent": "originstweaks:shulk/max_armor"
 }

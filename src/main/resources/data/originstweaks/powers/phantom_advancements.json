@@ -1,44 +1,44 @@
 {
-    "type": "origins:multiple",
-    "hidden": true,
-    "root": {
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:phantom/root"
-        }
-    },
-    "phase_attack": {
-        "type": "origins:self_action_on_hit",
-        "cooldown": 0,
-        "hud_render": {
-            "should_render": false
-        },
-        "entity_action": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:phantom/phase_attack"
-        },
-        "target_condition": {
-            "type": "origins:living"
-        },
-        "condition": {
-            "type": "origins:in_block",
-            "block_condition": {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "type": "origins:movement_blocking"
-                    },
-                    {
-                        "type": "origins:offset",
-                        "y": 1,
-                        "condition": {
-                            "type": "origins:movement_blocking",
-                            "inverted": true
-                        }
-                    }
-                ]
-            }
-        }
-    }
+	"type": "origins:multiple",
+	"hidden": true,
+	"root": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:phantom/root"
+		}
+	},
+	"phase_attack": {
+		"type": "origins:self_action_on_hit",
+		"cooldown": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"entity_action": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:phantom/phase_attack"
+		},
+		"target_condition": {
+			"type": "origins:living"
+		},
+		"condition": {
+			"type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:movement_blocking"
+					},
+					{
+						"type": "origins:offset",
+						"y": 1,
+						"condition": {
+							"type": "origins:movement_blocking",
+							"inverted": true
+						}
+					}
+				]
+			}
+		}
+	}
 }

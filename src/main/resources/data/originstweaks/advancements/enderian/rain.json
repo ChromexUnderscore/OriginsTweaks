@@ -1,24 +1,24 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.enderian.rain.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.enderian.rain.description"
-        },
-        "icon": {
-            "item": "minecraft:potion",
-            "nbt": "{Potion:\"minecraft:water\"}"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "rain_damage": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:enderian/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.enderian.rain.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.enderian.rain.description"
+		},
+		"icon": {
+			"item": "minecraft:potion",
+			"nbt": "{Potion:\"minecraft:water\"}"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"rain_damage": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:enderian/root"
 }

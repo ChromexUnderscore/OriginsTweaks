@@ -1,142 +1,142 @@
 {
-    "type": "origins:multiple",
-    "name": {
-        "translate": "power.originstweaks.companion_mounting.name"
-    },
-    "description": {
-        "translate": "power.originstweaks.companion_mounting.description"
-    },
-    "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": {
-                "translate": "badge.originstweaks.companion_mounting.0"
-            }
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "minecraft:textures/item/diamond.png",
-            "text": {
-                "translate": "badge.originstweaks.companion_mounting.1",
-                "color": "aqua"
-            }
-        }
-    ],
-    "mount": {
-        "type": "origins:action_on_being_used",
-        "bientity_action": {
-            "type": "origins:mount"
-        },
-        "bientity_condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:target_condition",
-                    "condition": {
-                        "type": "origins:passenger",
-                        "inverted": true
-                    }
-                },
-                {
-                    "type": "origins:target_condition",
-                    "condition": {
-                        "type": "origins:resource",
-                        "resource": "*:*_mount_cooldown",
-                        "comparison": "==",
-                        "compare_to": 0
-                    }
-                }
-            ]
-        }
-    },
-    "mount_cooldown": {
-        "type": "origins:cooldown",
-        "cooldown": 100,
-        "hud_render": {
-            "bar_index": 3
-        }
-    },
-    "hit_dismount": {
-        "type": "origins:action_when_hit",
-        "bientity_action": {
-            "type": "origins:target_action",
-            "action": {
-                "type": "origins:and",
-                "actions": [
-                    {
-                        "type": "origins:trigger_cooldown",
-                        "power": "*:*_mount_cooldown"
-                    },
-                    {
-                        "type": "origins:passenger_action",
-                        "action": {
-                            "type": "origins:dismount"
-                        }
-                    }
-                ]
-            }
-        },
-        "damage_condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:projectile"
-                },
-                {
-                    "type": "origins:type",
-                    "damage_type": "minecraft:fly_into_wall"
-                },
-                {
-                    "type": "origins:type",
-                    "damage_type": "minecraft:fall"
-                }
-            ]
-        }
-    },
-    "kick_off": {
-        "type": "origins:active_self",
-        "cooldown": 1,
-        "key": {
-            "key": "key.origins.secondary_active"
-        },
-        "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:trigger_cooldown",
-                    "power": "*:*_mount_cooldown"
-                },
-                {
-                    "type": "origins:passenger_action",
-                    "action": {
-                        "type": "origins:dismount"
-                    }
-                }
-            ]
-        },
-        "condition": {
-            "type": "origins:passenger",
-            "bientity_condition": {
-                "type": "origins:actor_condition",
-                "condition": {
-                    "type": "origins:entity_type",
-                    "entity_type": "minecraft:player"
-                }
-            }
-        }
-    },
-    "glow": {
-        "type": "origins:entity_glow",
-        "bientity_condition": {
-            "type": "origins:invert",
-            "condition": {
-                "type": "origins:riding"
-            }
-        },
-        "use_teams": false,
-        "red": 0.5,
-        "green": 0.8,
-        "blue": 0.65
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.companion_mounting.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.companion_mounting.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.companion_mounting.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/item/diamond.png",
+			"text": {
+				"translate": "badge.originstweaks.companion_mounting.1",
+				"color": "aqua"
+			}
+		}
+	],
+	"mount": {
+		"type": "origins:action_on_being_used",
+		"bientity_action": {
+			"type": "origins:mount"
+		},
+		"bientity_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:target_condition",
+					"condition": {
+						"type": "origins:passenger",
+						"inverted": true
+					}
+				},
+				{
+					"type": "origins:target_condition",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_mount_cooldown",
+						"comparison": "==",
+						"compare_to": 0
+					}
+				}
+			]
+		}
+	},
+	"mount_cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 100,
+		"hud_render": {
+			"bar_index": 3
+		}
+	},
+	"hit_dismount": {
+		"type": "origins:action_when_hit",
+		"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:trigger_cooldown",
+						"power": "*:*_mount_cooldown"
+					},
+					{
+						"type": "origins:passenger_action",
+						"action": {
+							"type": "origins:dismount"
+						}
+					}
+				]
+			}
+		},
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:projectile"
+				},
+				{
+					"type": "origins:type",
+					"damage_type": "minecraft:fly_into_wall"
+				},
+				{
+					"type": "origins:type",
+					"damage_type": "minecraft:fall"
+				}
+			]
+		}
+	},
+	"kick_off": {
+		"type": "origins:active_self",
+		"cooldown": 1,
+		"key": {
+			"key": "key.origins.secondary_active"
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "*:*_mount_cooldown"
+				},
+				{
+					"type": "origins:passenger_action",
+					"action": {
+						"type": "origins:dismount"
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:passenger",
+			"bientity_condition": {
+				"type": "origins:actor_condition",
+				"condition": {
+					"type": "origins:entity_type",
+					"entity_type": "minecraft:player"
+				}
+			}
+		}
+	},
+	"glow": {
+		"type": "origins:entity_glow",
+		"bientity_condition": {
+			"type": "origins:invert",
+			"condition": {
+				"type": "origins:riding"
+			}
+		},
+		"use_teams": false,
+		"red": 0.5,
+		"green": 0.8,
+		"blue": 0.65
+	}
 }

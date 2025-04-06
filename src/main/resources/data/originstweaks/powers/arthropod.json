@@ -1,67 +1,67 @@
 {
-    "type": "origins:multiple",
-    "name": {
-        "translate": "power.originstweaks.arthropod.name"
-    },
-    "description": {
-        "translate": "power.originstweaks.arthropod.description"
-    },
-    "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": {
-                "translate": "badge.originstweaks.arthropod.0"
-            }
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": {
-                "translate": "badge.originstweaks.arthropod.1"
-            }
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/star.png",
-            "text": {
-                "translate": "badge.originstweaks.arthropod.2"
-            }
-        }
-    ],
-    "scale": {
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:height 0.66"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:width 0.66"
-                }
-            ]
-        },
-        "entity_action_lost": {
-            "type": "origins:execute_command",
-            "command": "scale reset @s"
-        }
-    },
-    "entity_group": {
-        "type": "origins:entity_group",
-        "group": "arthropod"
-    },
-    "fall_damage_reduction": {
-        "type": "origins:modify_damage_taken",
-        "damage_condition": {
-            "type": "origins:name",
-            "name": "fall"
-        },
-        "modifier": {
-            "operation": "add_base_early",
-            "value": -13
-        }
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.arthropod.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.arthropod.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.arthropod.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": {
+				"translate": "badge.originstweaks.arthropod.1"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": {
+				"translate": "badge.originstweaks.arthropod.2"
+			}
+		}
+	],
+	"scale": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 0.66"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 0.66"
+				}
+			]
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "scale reset @s"
+		}
+	},
+	"entity_group": {
+		"type": "origins:entity_group",
+		"group": "arthropod"
+	},
+	"fall_damage_reduction": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"modifier": {
+			"operation": "add_base_early",
+			"value": -13
+		}
+	}
 }

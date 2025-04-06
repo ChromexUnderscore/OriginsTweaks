@@ -1,13 +1,13 @@
 {
-    "values": [
+	"values": [
 		{
-            "id": "#minecraft:swords",
-            "required": true
-        },
+			"id": "#minecraft:swords",
+			"required": true
+		},
 		{
-            "id": "#minecraft:axes",
-            "required": true
-        },
+			"id": "#minecraft:axes",
+			"required": true
+		},
 		"minecraft:trident"
 	  ]
 }

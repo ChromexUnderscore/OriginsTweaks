@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.elytrian.player_mount.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.elytrian.player_mount.description"
-        },
-        "icon": {
-            "item": "minecraft:firework_rocket"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "mount_flight": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:elytrian/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.elytrian.player_mount.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.elytrian.player_mount.description"
+		},
+		"icon": {
+			"item": "minecraft:firework_rocket"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"mount_flight": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:elytrian/root"
 }

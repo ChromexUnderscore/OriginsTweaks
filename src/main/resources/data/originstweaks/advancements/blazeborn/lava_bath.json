@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.blazeborn.lava_bath.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.blazeborn.lava_bath.description"
-        },
-        "icon": {
-            "item": "minecraft:golden_leggings"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "c1": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:blazeborn/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.blazeborn.lava_bath.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.blazeborn.lava_bath.description"
+		},
+		"icon": {
+			"item": "minecraft:golden_leggings"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:blazeborn/root"
 }

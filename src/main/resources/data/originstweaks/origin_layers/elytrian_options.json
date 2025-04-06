@@ -1,22 +1,22 @@
 {
-    "gui_title": {
-        "choose_origin": "Choose your Elytra.",
-        "view_origin": "This is your chosen Elytra."
-    },
-    "order": 2,
-    "auto_choose": true,
-    "origins": [
-        {
-            "origins": [
-                "originstweaks:vanilla_elytra",
-                "originstweaks:custom_wings",
-                "originstweaks:no_render"
-            ],
-            "condition": {
-                "type": "origins:origin",
-                "layer": "origins:origin",
-                "origin": "originstweaks:elytrian"
-            }
-        }
-    ]
+	"gui_title": {
+		"choose_origin": "Choose your Elytra.",
+		"view_origin": "This is your chosen Elytra."
+	},
+	"order": 2,
+	"auto_choose": true,
+	"origins": [
+		{
+			"origins": [
+				"originstweaks:vanilla_elytra",
+				"originstweaks:custom_wings",
+				"originstweaks:no_render"
+			],
+			"condition": {
+				"type": "origins:origin",
+				"layer": "origins:origin",
+				"origin": "originstweaks:elytrian"
+			}
+		}
+	]
 }

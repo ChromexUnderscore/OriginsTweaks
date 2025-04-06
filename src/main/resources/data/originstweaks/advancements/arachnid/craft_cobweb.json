@@ -1,20 +1,20 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.arachnid.craft_cobweb.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.arachnid.craft_cobweb.description"
-        },
-        "icon": {
-            "item": "minecraft:string"
-        },
-        "frame": "task"
-    },
-    "criteria": {
-        "cobweb": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:arachnid/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.arachnid.craft_cobweb.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.arachnid.craft_cobweb.description"
+		},
+		"icon": {
+			"item": "minecraft:string"
+		},
+		"frame": "task"
+	},
+	"criteria": {
+		"cobweb": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:arachnid/root"
 }

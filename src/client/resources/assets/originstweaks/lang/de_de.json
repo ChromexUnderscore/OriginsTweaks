@@ -1,7 +1,6 @@
 {
 	"origin.originstweaks.arachnid.name": "Arachnide [OT]",
 	"origin.originstweaks.arachnid.description": "Ihre Kletterkünste und die Fähigkeit ihre Feinde zu vergiften machen die Arachniden zu perfekten Jägern.",
-
 	"power.originstweaks.master_of_webs.name": "Meister der Netze",
 	"power.originstweaks.master_of_webs.description": "Arachniden sind Experten im Umgang mit Spinnennetzen. Sie nutzen sie geschickt zu ihrem Vorteil und bewegen sich problemlos durch sie hindurch.",
 	"badge.originstweaks.master_of_webs.0": "Benutze [Primär], um dich zu einem Block oder Kreatur in bis zu 16 Blöcken Entfernung zu ziehen.",
@@ -9,347 +8,228 @@
 	"badge.originstweaks.master_of_webs.2": "Du bewegst dich frei durch Spinnennetzen und kannst sie zum Klettern nutzen.",
 	"badge.originstweaks.master_of_webs.3.prefix": "Nutze 9 Fäden, um ein Spinnennetz herzustellen.",
 	"badge.originstweaks.master_of_webs.3.suffix": "Halte [Schleichen] gedrückt und zerstöre ein Spinnennetz, um die 9 verwendeten Fäden zurückzuerhalten.",
-
-    "power.originstweaks.venom.name": "Giftig",
-    "power.originstweaks.venom.description": "Arachniden injizieren ein Neurotoxin, um Bedrohungen oder Beute zu schwächen.",
+	"power.originstweaks.venom.name": "Giftig",
+	"power.originstweaks.venom.description": "Arachniden injizieren ein Neurotoxin, um Bedrohungen oder Beute zu schwächen.",
 	"badge.originstweaks.venom.0": "Nahkampfangriffe haben eine Chance, einen Gifteffekt zu verursachen.",
-    "badge.originstweaks.venom.1": "Drücke [Sekundär], um die Kletter- und Gift-Fähigkeiten gemeinsam ein- oder auszuschalten.",
-
+	"badge.originstweaks.venom.1": "Drücke [Sekundär], um die Kletter- und Gift-Fähigkeiten gemeinsam ein- oder auszuschalten.",
 	"power.originstweaks.climbing.name": "Klettern",
 	"power.originstweaks.climbing.description": "Du kannst jede Wand hochklettern, nicht nur Leitern.",
-    "badge.originstweaks.climbing.0": "Drücke [Sekundär], um die Kletter- und Gift-Fähigkeiten gemeinsam ein- oder auszuschalten.",
-
+	"badge.originstweaks.climbing.0": "Drücke [Sekundär], um die Kletter- und Gift-Fähigkeiten gemeinsam ein- oder auszuschalten.",
 	"power.originstweaks.arthropod.name": "Gliederfüßer",
 	"power.originstweaks.arthropod.description": "Als Gliederfüßer bist du kleiner und kannst deinen Fall abfedern.",
-    "badge.originstweaks.arthropod.0": "Du bist nur 1,5 Blöcke groß.",
-    "badge.originstweaks.arthropod.1": "Du nimmst nur Fallschaden bei Stürzen aus einer Höhe von mehr als 16 Blöcken.",
+	"badge.originstweaks.arthropod.0": "Du bist nur 1,5 Blöcke groß.",
+	"badge.originstweaks.arthropod.1": "Du nimmst nur Fallschaden bei Stürzen aus einer Höhe von mehr als 16 Blöcken.",
 	"badge.originstweaks.arthropod.2": "Als Gliederfüßer bist du anfällig für die Verzauberung \"Nemesis der Gliederfüßer\".",
-
-
-
 	"origin.originstweaks.avian.name": "Vogelwesen [OT]",
 	"origin.originstweaks.avian.description": "Die Vogelwesen haben ihre Flugfähigkeit vor langer Zeit verloren. Heutzutage können diese friedliebenden Kreaturen dabei beobachtet werden wie sie von einem Platz zum nächsten gleiten.",
-	
 	"power.originstweaks.slow_falling.name": "Federgewicht",
 	"power.originstweaks.slow_falling.description": "Du sinkst langsam wie eine Feder zum Boden.",
-    "badge.originstweaks.slow_falling.0": "Drücke [Sekundär], um die Fähigkeit ein- oder auszuschalten.",
-
+	"badge.originstweaks.slow_falling.0": "Drücke [Sekundär], um die Fähigkeit ein- oder auszuschalten.",
 	"power.originstweaks.animal_friendship.name": "Tierflüster",
-    "power.originstweaks.animal_friendship.description": "Wilde Tiere vertrauen dir und können ohne Futter oder Gegenstände gezähmt werden.",
+	"power.originstweaks.animal_friendship.description": "Wilde Tiere vertrauen dir und können ohne Futter oder Gegenstände gezähmt werden.",
 	"badge.originstweaks.animal_friendship.0": "Zähme ein Wildes Tier mit [Primär] mit einer 2-minütigen Wartezeit.",
 	"badge.originstweaks.animal_friendship.1": "Zähmbare Tiere umfassen: Wölfe, Katzen, Papageien, Pferde, Esel, Maultiere und Lamas.",
 	"badge.originstweaks.animal_friendship.2": "Tiere wie das Axolotl, Füchse und Ozelots vertrauen dir, laufen nicht weg und können dich im Kampf unterstützen.",
-
 	"power.originstweaks.green_thumb.name": "Grüner Daumen",
 	"power.originstweaks.green_thumb.description": "Vogelwesen haben ein natürliches Talent für das Anbauen und Ernten von Früchten und Gemüse.",
 	"badge.originstweaks.green_thumb.0": "Das Ernten mit einer Hacke erhöht den Ertrag.",
-    "badge.originstweaks.green_thumb.1": "Beim Ernten von Karotten, Melonen und Äpfeln besteht die Chance, eine goldene Variante zu erhalten.",
+	"badge.originstweaks.green_thumb.1": "Beim Ernten von Karotten, Melonen und Äpfeln besteht die Chance, eine goldene Variante zu erhalten.",
 	"badge.originstweaks.green_thumb.2": "Du kannst glitzernde Melonenscheiben essen.",
-
-
-
 	"origin.originstweaks.blazeborn.name": "Lohenwesen [OT]",
 	"origin.originstweaks.blazeborn.description": "Als entfernte Verwandte der Lohe besitzen Lohenwesen eine natürliche Immunität gegen die Gefahren des Nether.",
-	
 	"power.originstweaks.burning_wrath.name": "Flammender Zorn",
 	"power.originstweaks.burning_wrath.description": "Seit Jahrhunderten verlassen sich die Lohenwesen auf die Macht des Feuers, um ihnen sowohl im Kampf als auch beim Überleben zu unterstützen.",
-    "badge.originstweaks.burning_wrath.0": "Zünde dich für 30 Sekunden mit [Primär] an.",
-    "badge.originstweaks.burning_wrath.1": "Wenn du brennst, verursachst du 1.25x Basisschaden.",
+	"badge.originstweaks.burning_wrath.0": "Zünde dich für 30 Sekunden mit [Primär] an.",
+	"badge.originstweaks.burning_wrath.1": "Wenn du brennst, verursachst du 1.25x Basisschaden.",
 	"badge.originstweaks.burning_wrath.2": "Du kannst dein Feuer nutzen, um Lagerfeuer anzuzünden oder Öfen und Braustände zu befeuern.",
-
-    "power.originstweaks.firecharged_projectile.name": "Feuerkugeln",
-    "power.originstweaks.firecharged_projectile.description": "Du kannst Feinde mit einer Salve aus Feuerkugeln angreifen.",
-    "badge.originstweaks.firecharged_projectile.0": "Schieße eine Salve von 3 Feuerkugeln mit [Sekundär]. Diese Fähigkeit hat eine Wartezeit von 10 Sekunden.",
-
+	"power.originstweaks.firecharged_projectile.name": "Feuerkugeln",
+	"power.originstweaks.firecharged_projectile.description": "Du kannst Feinde mit einer Salve aus Feuerkugeln angreifen.",
+	"badge.originstweaks.firecharged_projectile.0": "Schieße eine Salve von 3 Feuerkugeln mit [Sekundär]. Diese Fähigkeit hat eine Wartezeit von 10 Sekunden.",
 	"power.originstweaks.fire_immunity.name": "Feuerimmunität",
 	"power.originstweaks.fire_immunity.description": "Du bist immun gegen alle Arten von Feuerschaden und kannst in Lava schwimmen.",
-
-
-
 	"origin.originstweaks.elytrian.name": "Elytraner [OT]",
 	"origin.originstweaks.elytrian.description": "Da sie häufig in den Winden gleiten, fühlen sich Elytraner unwohl, wenn sie nicht genug Platz über ihren Kopf haben.",
-	
 	"power.originstweaks.gift_of_the_skies.name": "Geschenk der Winde",
-    "power.originstweaks.gift_of_the_skies.description": "Durch die Gunst der Lüfte wurden dir Flügel verliehen, mit denen du mühelos fliegen kannst.",
-    "badge.originstweaks.gift_of_the_skies.0": "Drücke [Primär], um vom Boden abzuheben oder während des Gleitens aufzusteigen.",
-    "badge.originstweaks.gift_of_the_skies.1": "Abheben und Aufsteigen verbrauchen Energie. Ruhe dich regelmäßig am Boden aus, um nicht zu erschöpfen.",
+	"power.originstweaks.gift_of_the_skies.description": "Durch die Gunst der Lüfte wurden dir Flügel verliehen, mit denen du mühelos fliegen kannst.",
+	"badge.originstweaks.gift_of_the_skies.0": "Drücke [Primär], um vom Boden abzuheben oder während des Gleitens aufzusteigen.",
+	"badge.originstweaks.gift_of_the_skies.1": "Abheben und Aufsteigen verbrauchen Energie. Ruhe dich regelmäßig am Boden aus, um nicht zu erschöpfen.",
 	"badge.originstweaks.gift_of_the_skies.2": "Es ist schwieriger in der Luft zu bleiben, wenn du mehr als 12 Rüstungspunkte hast.",
 	"badge.originstweaks.gift_of_the_skies.3": "Es ist zu gefährlich, Feuerwerksraketen beim Gleiten zu verwenden.",
-
 	"power.originstweaks.companion_mounting.name": "Freundestransport",
-    "power.originstweaks.companion_mounting.description": "Du kannst deine Freunde auf deinem Rücken tragen, während du mit deinen Elytren fliegst. Bei einem Absturz oder Treffer durch ein Projektil fallen sie jedoch ab.",
+	"power.originstweaks.companion_mounting.description": "Du kannst deine Freunde auf deinem Rücken tragen, während du mit deinen Elytren fliegst. Bei einem Absturz oder Treffer durch ein Projektil fallen sie jedoch ab.",
 	"badge.originstweaks.companion_mounting.0": "Du kannst Passagiere jederzeit mit [Sekundär] abwerfen.",
 	"badge.originstweaks.companion_mounting.1": "Beigetragen von AnimGoated",
-
 	"power.originstweaks.aerial_combatant.name": "Luftiger Kämpfer",
 	"power.originstweaks.aerial_combatant.description": "Du verursachst erheblich mehr Schaden, wenn du nach 3 Sekunden Flug angreifst.",
-    "badge.originstweaks.aerial_combatant.0": "Angriffe während des Flugs erhalten jeweils einen Schadensbonus von 2x im Nahkampf und 1.5x im Fernkampf.",
-
-
-
+	"badge.originstweaks.aerial_combatant.0": "Angriffe während des Flugs erhalten jeweils einen Schadensbonus von 2x im Nahkampf und 1.5x im Fernkampf.",
 	"origin.originstweaks.enderian.name": "Enderling [OT]",
 	"origin.originstweaks.enderian.description": "Als Töchter und Söhne des Enderdrachen können sich Enderlinge teleportieren, nehmen jedoch Schaden im Wasser.",
-	
 	"power.originstweaks.throw_ender_pearl.name": "Teleportation",
-    "power.originstweaks.throw_ender_pearl.description": "Du kannst jederzeit eine Enderperle werfen, ohne welche im Inventar zu haben. Diese Fähigkeit verursacht keinen Schaden im Gegensatz zu herkömmlichen Enderperlen.",
-    "badge.originstweaks.throw_ender_pearl.0": "Wirf eine Enderperle mit [Primär], um dich zu teleportieren.",
-
+	"power.originstweaks.throw_ender_pearl.description": "Du kannst jederzeit eine Enderperle werfen, ohne welche im Inventar zu haben. Diese Fähigkeit verursacht keinen Schaden im Gegensatz zu herkömmlichen Enderperlen.",
+	"badge.originstweaks.throw_ender_pearl.0": "Wirf eine Enderperle mit [Primär], um dich zu teleportieren.",
 	"power.originstweaks.ender_body.name": "Enderkörper",
-    "power.originstweaks.ender_body.description": "Dein Körper ähnelt dem der Endermen. Dadurch bist du größer und hast eine größere Reichweite. Du kannst Blöcke behutsam aufheben und kleineren Projektilen ausweichen.",
-    "badge.originstweaks.ender_body.0": "Du bist 2.5 Blöcke groß und hast eine 1.5-fache Reichweite im Vergleich zu einem gewöhnlichen Menschen.",
-    "badge.originstweaks.ender_body.1": "Du kannst kleineren Projektilen mit einer Wartezeit von 5 Sekunden ausweichen.",
+	"power.originstweaks.ender_body.description": "Dein Körper ähnelt dem der Endermen. Dadurch bist du größer und hast eine größere Reichweite. Du kannst Blöcke behutsam aufheben und kleineren Projektilen ausweichen.",
+	"badge.originstweaks.ender_body.0": "Du bist 2.5 Blöcke groß und hast eine 1.5-fache Reichweite im Vergleich zu einem gewöhnlichen Menschen.",
+	"badge.originstweaks.ender_body.1": "Du kannst kleineren Projektilen mit einer Wartezeit von 5 Sekunden ausweichen.",
 	"badge.originstweaks.ender_body.2": "Du kannst Blöcke mit Behutsamkeit aufheben, während du deine Hände benutzt.",
-
-
-
 	"origin.originstweaks.feline.name": "Samtpfote [OT]",
 	"origin.originstweaks.feline.description": "Mit ihrem katzenartigen Aussehen schlagen die Samtpfoten Creeper in die Flucht. Mit der Geschicklichkeit einer Katze landen sie immer sicher auf ihren Füßen.",
-	
 	"power.originstweaks.natural_hunter.name": "Raubtier",
-    "power.originstweaks.natural_hunter.description": "Samtpfoten sind von Natur aus Raubtiere. Ihre Krallen können geschärft werden, um im Kampf tödlicher zu sein, und Fisch ist für sie nahrhafter.",
+	"power.originstweaks.natural_hunter.description": "Samtpfoten sind von Natur aus Raubtiere. Ihre Krallen können geschärft werden, um im Kampf tödlicher zu sein, und Fisch ist für sie nahrhafter.",
 	"badge.originstweaks.natural_hunter.0": "Nutze [Primär], während du kein Werkzeug in der Hand hältst, um mit deinen Krallen anzugreifen.",
-    "badge.originstweaks.natural_hunter.1": "Schärfe deine Krallen mit Blöcken in der folgenden Reihenfolge: Holzstämme oder Wolle (+5 Angriff), Glatter Stein (+6 Angriff), Eisenblock (+7 Angriff), Diamantblock (+8 Angriff).",
-    "badge.originstweaks.natural_hunter.2": "Angriffe mit deinen Krallen verursachen weniger Rückstoß, was schnelle Folgeangriffe erleichtert.",
-    "badge.originstweaks.natural_hunter.3": "Nahrung hergestellt aus Fisch stellt 3 zusätzliche Hungerpunkte und 2 zusätzliche Sättigungspunkte wieder her.",
-
+	"badge.originstweaks.natural_hunter.1": "Schärfe deine Krallen mit Blöcken in der folgenden Reihenfolge: Holzstämme oder Wolle (+5 Angriff), Glatter Stein (+6 Angriff), Eisenblock (+7 Angriff), Diamantblock (+8 Angriff).",
+	"badge.originstweaks.natural_hunter.2": "Angriffe mit deinen Krallen verursachen weniger Rückstoß, was schnelle Folgeangriffe erleichtert.",
+	"badge.originstweaks.natural_hunter.3": "Nahrung hergestellt aus Fisch stellt 3 zusätzliche Hungerpunkte und 2 zusätzliche Sättigungspunkte wieder her.",
 	"power.originstweaks.dexterity.name": "Akrobatik",
 	"power.originstweaks.dexterity.description": "Die Geschicklichkeit der Samtpfoten ermöglicht es ihnen, sich leicht in ihrer Umgebung zu bewegen.",
 	"badge.originstweaks.dexterity.0": "Halte [Schleichen], um einen Sprung aufzuladen, drücke [Springen], um einen hohen Sprung auszuführen.",
 	"badge.originstweaks.dexterity.1": "Du springst ein wenig höher, während du sprintest.",
 	"badge.originstweaks.dexterity.2": "Du nimmst keinen Fallschaden, egal von welcher Höhe du fällst.",
-
 	"power.originstweaks.weak_arms.name": "Schwache Arme",
-    "power.originstweaks.weak_arms.description": "Deine Arme sind nicht stark genug, um Stein schnell abzubauen. Einige Steinarten kannst du gar nicht abbauen.",
-    "badge.originstweaks.weak_arms.0": "Du baust natürliches Stein sowie Erzblöcke halb so schnell ab wie normal.",
+	"power.originstweaks.weak_arms.description": "Deine Arme sind nicht stark genug, um Stein schnell abzubauen. Einige Steinarten kannst du gar nicht abbauen.",
+	"badge.originstweaks.weak_arms.0": "Du baust natürliches Stein sowie Erzblöcke halb so schnell ab wie normal.",
 	"badge.originstweaks.weak_arms.1": "Du kannst keine robusten Steinblöcke wie Tiefenschieferblöcke, Tiefenschiefererze, Obsidian oder Schwarzstein abbauen.",
 	"badge.originstweaks.weak_arms.2": "Diese Einschränkungen können durch die Verwendung von Tränke der Stärke oder einer Spitzhacke mit einer Effizienz Verzauberung umgangen werden.",
-
 	"power.originstweaks.cat_vision.name": "Nachtaktiv",
-    "power.originstweaks.cat_vision.description": "Du kannst im Dunkeln sehen, was dir einen Vorteil in schlecht beleuchteten Umgebungen verschafft.",
-    "badge.originstweaks.cat_vision.0": "Schalte die Nachtsicht ein und aus mit [Sekundär].",
-
-
-
+	"power.originstweaks.cat_vision.description": "Du kannst im Dunkeln sehen, was dir einen Vorteil in schlecht beleuchteten Umgebungen verschafft.",
+	"badge.originstweaks.cat_vision.0": "Schalte die Nachtsicht ein und aus mit [Sekundär].",
 	"origin.originstweaks.merling.name": "Meerling [OT]",
 	"origin.originstweaks.merling.description": "Diese natürlichen Bewohner des Ozeans sind es nicht gewohnt, sich zu lange außerhalb des Wassers aufzuhalten.",
-	
 	"power.originstweaks.aquadynamic.name": "Aquadynamik",
 	"power.originstweaks.aquadynamic.description": "Aufgrund deiner Erfahrung mit Wasserwiderstand kannst du Dreizacke effizienter einsetzen und weißt, wie man sie herstellt.",
 	"badge.originstweaks.aquadynamic.0": "Wenn du einen Dreizack unter Wasser wirfst, verursachst du 1.5x Basisschaden.",
 	"badge.originstweaks.aquadynamic.1.prefix": "Du kannst Dreizacke herstellen.",
-
 	"power.originstweaks.swim_speed.name": "Flossen",
 	"power.originstweaks.swim_speed.description": "Deine Unterwassergeschwindigkeit ist erhöht, und du kannst einen Sprint mit einer 5 Sekunden Wartezeit ausführen.",
 	"badge.originstweaks.swim_speed.0": "Drücke [Sprinten], um einen Geschwindigkeitsschub beim Schwimmen auszulösen.",
 	"badge.originstweaks.swim_speed.1": "Diese Fähigkeit eignet sich mit der Wasserläufer Verzauberung.",
-
 	"power.originstweaks.aquatic.name": "Aquatisch",
 	"power.originstweaks.aquatic.description": "Dein natürlicher Welteinstiegspunkt ist im Ozean. Du erleidest mehr Schaden von der Harpune Verzauberung.",
-
 	"power.originstweaks.body_moisture.name": "Feuchtigkeit",
 	"power.originstweaks.body_moisture.description": "Dein Körper kann Wasser für bis zu 10 Minuten speichern. Wenn dein Wasservorrat abläuft, wirst du anfangen, Sauerstoff zu verlieren.",
 	"badge.originstweaks.body_moisture.0": "Spring ins Wasser, setz dich in einen Wasserkessel oder trinke eine Wasserflasche, um deinen Wasservorrat aufzufüllen.",
 	"badge.originstweaks.body_moisture.1": "Der Nether entzieht deinem Wasservorrat doppelt so schnell Feuchtigkeit!",
 	"badge.originstweaks.body_moisture.2": "Meereskraft von Aquisatoren hält viel länger an und verhindert, dass dein Körper Feuchtigkeit verliert.",
-
-
-
-    "origin.originstweaks.phantom.name": "Phantom [OT]",
-    "origin.originstweaks.phantom.description": "Als Kind eines Menschen und eines Phantoms können diese Kreaturen zwischen ihrer normalen Gestalt und ihrer Phantomgestalt wechseln.",
-
-    "power.originstweaks.phantomize.name": "Schemenform",
+	"origin.originstweaks.phantom.name": "Phantom [OT]",
+	"origin.originstweaks.phantom.description": "Als Kind eines Menschen und eines Phantoms können diese Kreaturen zwischen ihrer normalen Gestalt und ihrer Phantomgestalt wechseln.",
+	"power.originstweaks.phantomize.name": "Schemenform",
 	"power.originstweaks.phantomize.description": "Du kannst zwischen einer menschlichen und einer unsichtbaren Phantomform wechseln, wenn du genug Seelenenergie hast.",
 	"badge.originstweaks.phantomize.0": "Wechsle zwischen Mensch- und Phantomform mit [Primär].",
-
 	"power.originstweaks.phasing.name": "Phantomdurchgang",
 	"power.originstweaks.phasing.description": "Während du in der Phantomform bist, kannst du dich durch feste Materialien bewegen, mit Ausnahme von Obsidian und reinen Goldblöcken.",
 	"badge.originstweaks.phasing.0": "Blöcke zu durchdringen verbraucht schnell deine Seelenenergie; behalte die Seelenenergie-Anzeige im Auge und plane entsprechend!",
 	"badge.originstweaks.phasing.1": "Du kannst nicht sprinten, schwimmen oder fliegen, während du vollständig in Blöcke gedrungen bist. Außerdem kannst du weder angreifen noch mit Blöcken interagieren.",
-
 	"power.originstweaks.soulbound.name": "Seelengebunden",
 	"power.originstweaks.soulbound.description": "Du benötigst Seelenenergie, um deine Phantomform zu manifestieren.",
 	"badge.originstweaks.soulbound.0": "Deine Seelenenergie regeneriert sich langsam, aber du kannst sie auch von toten Kreaturen oder Seelenfeuer absorbieren.",
-
 	"power.originstweaks.spectral_wail.name": "Spektraler Schrei",
 	"power.originstweaks.spectral_wail.description": "Du kannst einen Schrei ausstoßen, der nahe Kreaturen aufdeckt. Markierte Kreaturen bleiben für 10 Sekunden sichtbar.",
 	"badge.originstweaks.spectral_wail.0": "Drücke [Sekundär], um einen Schrei auszusenden.",
 	"badge.originstweaks.spectral_wail.1": "Der Schrei markiert alle Kreaturen und Spieler in einem Radius von 32 Blöcken für 10 Sekunden, sodass sie leuchten, selbst durch Hindernisse wie Wände hindurch.",
-
 	"power.originstweaks.aurophobia.name": "Aurophobie",
 	"power.originstweaks.aurophobia.description": "Gold hat eine abstoßende Wirkung auf Kreaturen deiner Art.",
 	"badge.originstweaks.aurophobia.0": "Du kannst keine goldene Nahrung essen, keine goldene Rüstung tragen, keine goldenen Werkzeuge benutzen oder durch Goldblöcke dringen.",
-
-
 	"origin.originstweaks.shulk.name": "Shulk [OT]",
 	"origin.originstweaks.shulk.description": "Verwandt mit Shulkern, sind die Körper der Shulk mit einer schützenden, schalenartigen Haut ausgestattet.",
-
 	"power.originstweaks.natural_armor.name": "Robuste Schale",
 	"power.originstweaks.natural_armor.description": "Auch ohne Rüstung bietet deine Schale Schutz.",
 	"badge.originstweaks.natural_armor.0": "Du startest mit 3 Rüstungspunkten.",
 	"badge.originstweaks.natural_armor.1": "Halte [Schleichen] gedrückt, um bis zu 7 zusätzliche Rüstungspunkte zu erhalten.",
 	"badge.originstweaks.natural_armor.2": "Ein schwerer Treffer (mehr als oder gleich 3 Herzen) reduziert die Bonusrüstung um 1 und deaktiviert den Schalenaufbau für 30 Sekunden.",
-
-
-	
 	"origin.originstweaks.vanilla_elytra.name": "Vanilla Elytren",
 	"origin.originstweaks.vanilla_elytra.description": "Deine Flügel werden als Vanilla Elytren angezeigt; dies ermöglicht die Verwendung von Elytren-Texturpaketen und Umhangmustern.",
-
 	"origin.originstweaks.custom_wings.name": "Benutzerdefinierte Flügel",
 	"origin.originstweaks.custom_wings.description": "Deine Flügel verwenden eine eigene Textur, die von den Vanilla Elytren getrennt ist, welches benutzerdefinierte Texturen ermöglicht, die nicht auf ausrüstbare Elytren angewendet werden. Eine Vorlage ist verfügbar in OriginsTweaks Releases.",
-
 	"origin.originstweaks.no_render.name": "Keine Flügel",
 	"origin.originstweaks.no_render.description": "Deaktiviert Flügelanzeige, nützlich für Flug ohne Elytren oder benutzerdefinierte Elytren-Modelle über Mods wie Figura.",
-
-
-
 	"advancement.originstweaks.arachnid.root.title": "Arachnide",
 	"advancement.originstweaks.arachnid.root.description": "Du hast die Arachniden-Herkunft gewählt.",
-	
 	"advancement.originstweaks.arachnid.bane_of_arthropods.title": "Verschwinde!",
 	"advancement.originstweaks.arachnid.bane_of_arthropods.description": "Erleide Schaden von einer Waffe mit der Verzauberung Nemesis der Gliederfüßer V.",
-	
 	"advancement.originstweaks.arachnid.craft_cobweb.title": "Recycling",
 	"advancement.originstweaks.arachnid.craft_cobweb.description": "Stelle ein Spinnennetz aus 9 Fäden her.",
-	
 	"advancement.originstweaks.arachnid.poison_illager.title": "Biologische Kriegsführung",
 	"advancement.originstweaks.arachnid.poison_illager.description": "Vergifte alle Arten von Illagern und deren Verbündeten mindestens einmal mit deiner Giftfähigkeit.",
-	
 	"advancement.originstweaks.arachnid.webshot.title": "The Amazing Spider-Man",
 	"advancement.originstweaks.arachnid.webshot.description": "Nutze deinen Netzschuss 7 Mal, ohne den Boden zu berühren oder zu klettern.",
-    
-    
-    
 	"advancement.originstweaks.avian.root.title": "Vogelwesen",
 	"advancement.originstweaks.avian.root.description": "Du hast die Vogelwesen-Herkunft gewählt.",
-	
 	"advancement.originstweaks.avian.buildlimit_sleep.title": "Reinhart Mey - Über den Wolken",
 	"advancement.originstweaks.avian.buildlimit_sleep.description": "Schlafe in einer Höhe von mindestens 300 Blöcken.",
-	
 	"advancement.originstweaks.avian.harvest_golden_crop.title": "Schmackofatz",
 	"advancement.originstweaks.avian.harvest_golden_crop.description": "Ernte oder stelle eine goldene Karotte, glitzernde Melone oder einen goldenen Apfel her.",
-	
 	"advancement.originstweaks.avian.speed.title": "Schnall dich an!",
 	"advancement.originstweaks.avian.speed.description": "Erreiche eine Geschwindigkeit von 200% im Vergleich zu einem Menschen oder mehr.",
-	
 	"advancement.originstweaks.avian.tame.title": "Ein Herz für Tiere",
 	"advancement.originstweaks.avian.tame.description": "Zähme ein Wildes Tier, ohne Futter oder Gegenstände zu verwenden.",
-    
-    
-    
 	"advancement.originstweaks.blazeborn.root.title": "Lohenwesen",
 	"advancement.originstweaks.blazeborn.root.description": "Du hast die Lohenwesen-Herkunft gewählt.",
-	
 	"advancement.originstweaks.blazeborn.fuel.title": "Feuer und Flamme",
 	"advancement.originstweaks.blazeborn.fuel.description": "Nutze \"Flammender Zorn\", um ein Lagerfeuer, einen Braustand und einen Ofen zu befeuern.",
-	
 	"advancement.originstweaks.blazeborn.kill_wither_nether.title": "König des Nethers",
 	"advancement.originstweaks.blazeborn.kill_wither_nether.description": "Besiege den Wither im Nether als Lohenwesen.",
-	
 	"advancement.originstweaks.blazeborn.lava_bath.title": "Heiße Quelle",
 	"advancement.originstweaks.blazeborn.lava_bath.description": "Nimm ein Bad in Lava.",
-	
 	"advancement.originstweaks.blazeborn.reach_overworld.title": "Wir müssen noch höher",
 	"advancement.originstweaks.blazeborn.reach_overworld.description": "Erreiche als Lohenwesen die Oberwelt.",
-
-
-
 	"advancement.originstweaks.elytrian.root.title": "Elytraner",
 	"advancement.originstweaks.elytrian.root.description": "Du hast die Elytraner-Herkunft gewählt.",
-	
 	"advancement.originstweaks.elytrian.crash.title": "Nicht so tief, Rüdiger!",
 	"advancement.originstweaks.elytrian.crash.description": "Erleide 7 oder mehr Herzen kinetischen Schaden auf einmal.",
-	
 	"advancement.originstweaks.elytrian.flight_ranged_attack.title": "Luftangriff",
 	"advancement.originstweaks.elytrian.flight_ranged_attack.description": "Führe einen Fernkampfangriff aus, nachdem du mindestens 3 Sekunden geflogen bist.",
-	
 	"advancement.originstweaks.elytrian.player_mount.title": "Bis zur Unendlichkeit...",
 	"advancement.originstweaks.elytrian.player_mount.description": "Nimm einen Freund huckepack hebe ab.",
-	
 	"advancement.originstweaks.elytrian.y_700.title": "MAJESTICA - Above the Sky",
 	"advancement.originstweaks.elytrian.y_700.description": "Erreiche die Y-Koordinate 700 mit deinen Flugfähigkeiten.",
-
-
-
 	"advancement.originstweaks.enderian.root.title": "Enderling",
 	"advancement.originstweaks.enderian.root.description": "Du hast die Enderling-Herkunft gewählt.",
-	
 	"advancement.originstweaks.enderian.dodge_projectile.title": "Lern mal treffen",
 	"advancement.originstweaks.enderian.dodge_projectile.description": "Weiche einem Projektil durch Teleportation aus.",
-	
 	"advancement.originstweaks.enderian.max_waterprotection.title": "Wasserdicht",
 	"advancement.originstweaks.enderian.max_waterprotection.description": "Trage ein Rüstungsteil mit einer Wasserschutz IV Verzauberung.",
-	
 	"advancement.originstweaks.enderian.rain.title": "Risk of Rain",
 	"advancement.originstweaks.enderian.rain.description": "Nimm Schaden durch Regen.",
-	
 	"advancement.originstweaks.enderian.punch_pumpkin.title": "Verstecken",
 	"advancement.originstweaks.enderian.punch_pumpkin.description": "Schlage eine Kreatur oder Spieler, die einen geschnitzten Kürbis trägt.",
-
-
-
 	"advancement.originstweaks.feline.root.title": "Samtpfote",
 	"advancement.originstweaks.feline.root.description": "Du hast die Samtpfoten-Herkunft gewählt.",
-	
 	"advancement.originstweaks.feline.break_tough_stone.title": "Sturer Block",
 	"advancement.originstweaks.feline.break_tough_stone.description": "Zerstöre einen robusten Steinblock mit einem Trank der Stärke oder der Effizienz Verzauberung.",
-
 	"advancement.originstweaks.feline.cooked_fish_stack.title": "Frischers Fitz frischt... Frischers...",
 	"advancement.originstweaks.feline.cooked_fish_stack.description": "Trage einen vollen Stapel gekochten Kabeljau oder gekochten Lachs in deinem Inventar.",
-
 	"advancement.originstweaks.feline.sharp_claws.title": "Vorsicht, Scharf",
 	"advancement.originstweaks.feline.sharp_claws.description": "Nutze zuerst einen Holzstamm, dann glatten Stein, gefolgt von einem Eisenblock und schließlich einen Diamantblock, um deine Krallen vollständig zu schärfen.",
-
 	"advancement.originstweaks.feline.sleep_in_village.title": "Dorfkatze",
 	"advancement.originstweaks.feline.sleep_in_village.description": "Schlafe in einem Dorf mit einem Eisengolem in der Nähe.",
-
-    
-
 	"advancement.originstweaks.merling.root.title": "Meerling",
 	"advancement.originstweaks.merling.root.description": "Du hast die Meerling-Herkunft gewählt.",
-
 	"advancement.originstweaks.merling.clear_monument.title": "Wächter-Saison",
 	"advancement.originstweaks.merling.clear_monument.description": "Befreie ein Ozeanmonument von Großwächtern.",
-
 	"advancement.originstweaks.merling.conduit_power.title": "Meereskraft",
 	"advancement.originstweaks.merling.conduit_power.description": "Platziere einen Aquisator in einem gültigen Prismarinrahmen und erhalte seinen Effekt.",
-
 	"advancement.originstweaks.merling.loyalty_channeling.title": "Sohn des Odin",
 	"advancement.originstweaks.merling.loyalty_channeling.description": "Verzaubere einen Dreizack mit Entladung und Treue III.",
-
 	"advancement.originstweaks.merling.nether.title": "Wie ein Fisch aus dem Wasser",
 	"advancement.originstweaks.merling.nether.description": "Betritt als Meerling den Nether.",
-
-
-
 	"advancement.originstweaks.phantom.root.title": "Phantom",
 	"advancement.originstweaks.phantom.root.description": "Du hast die Phantom-Herkunft gewählt.",
-
 	"advancement.originstweaks.phantom.absorb_boss_soul.title": "Bring mir ihre Seelen",
 	"advancement.originstweaks.phantom.absorb_boss_soul.description": "Absorbiere die Seelenenergie einer Boss-Kreatur.",
-
 	"advancement.originstweaks.phantom.absorb_soulfire.title": "Erfrischend",
 	"advancement.originstweaks.phantom.absorb_soulfire.description": "Absorbiere etwas Seelenenergie aus Seelenfeuer.",
-
 	"advancement.originstweaks.phantom.phase_attack.title": "Knöchelbeißer",
 	"advancement.originstweaks.phantom.phase_attack.description": "Treffe einen Spieler oder Mob, während du halb im Boden verschwunden bist.",
-
 	"advancement.originstweaks.phantom.spectral_wail.title": "Sonar",
 	"advancement.originstweaks.phantom.spectral_wail.description": "Entdecke eine Kreatur oder Spieler durch Wände, indem du deinen Spektralen Schrei einsetzt.",
-
-
-
 	"advancement.originstweaks.shulk.root.title": "Shulk",
 	"advancement.originstweaks.shulk.root.description": "Du hast die Shulk-Herkunft gewählt.",
-
 	"advancement.originstweaks.shulk.inventory.title": "Vorratskammer",
 	"advancement.originstweaks.shulk.inventory.description": "Lege einen Gegenstand in dein Shulker-Inventar.",
-
 	"advancement.originstweaks.shulk.max_armor.title": "Unverwundbar",
 	"advancement.originstweaks.shulk.max_armor.description": "Lege die beste Rüstung an und lade Robuste Schale auf, bis du 30 Rüstungspunkte erreichst.",
-
 	"advancement.originstweaks.shulk.shulker_bullet.title": "Eigenbeschuss",
 	"advancement.originstweaks.shulk.shulker_bullet.description": "Lass dich als Shulk von einem Shulker-Geschoss treffen.",
-
 	"advancement.originstweaks.shulk.tank_warden.title": "Unaufhaltsame Kraft Paradoxon",
 	"advancement.originstweaks.shulk.tank_warden.description": "Überlebe einen Nahkampfangriff des Wächters, ohne Rüstung zu tragen."
 }

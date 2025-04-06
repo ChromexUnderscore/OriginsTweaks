@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.arachnid.bane_of_arthropods.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.arachnid.bane_of_arthropods.description"
-        },
-        "icon": {
-            "item": "minecraft:diamond_axe"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "bane_v": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:arachnid/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.arachnid.bane_of_arthropods.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.arachnid.bane_of_arthropods.description"
+		},
+		"icon": {
+			"item": "minecraft:diamond_axe"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"bane_v": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:arachnid/root"
 }

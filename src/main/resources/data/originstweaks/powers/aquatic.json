@@ -1,19 +1,19 @@
 {
-    "type": "origins:multiple",
-    "name": {
-        "translate": "power.originstweaks.aquatic.name"
-    },
-    "description": {
-        "translate": "power.originstweaks.aquatic.description"
-    },
-    "entity_group": {
-        "type": "origins:entity_group",
-        "group": "aquatic",
-        "hidden": true
-    },
-    "spawn": {
-        "type": "origins:modify_player_spawn",
-        "biome": "minecraft:ocean",
-        "dimension": "minecraft:overworld"
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.aquatic.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.aquatic.description"
+	},
+	"entity_group": {
+		"type": "origins:entity_group",
+		"group": "aquatic",
+		"hidden": true
+	},
+	"spawn": {
+		"type": "origins:modify_player_spawn",
+		"biome": "minecraft:ocean",
+		"dimension": "minecraft:overworld"
+	}
 }

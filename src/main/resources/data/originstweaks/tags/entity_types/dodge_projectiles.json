@@ -2,9 +2,9 @@
 	"replace": false,
 	"values": [
 		"minecraft:arrow",
-        "minecraft:llama_spit",
-        "minecraft:shulker_bullet",
-        "minecraft:small_fireball",
-        "minecraft:spectral_arrow"
+		"minecraft:llama_spit",
+		"minecraft:shulker_bullet",
+		"minecraft:small_fireball",
+		"minecraft:spectral_arrow"
 	]
 }

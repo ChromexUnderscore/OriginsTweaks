@@ -1,118 +1,118 @@
 {
-    "type": "origins:multiple",
-    "hidden": true,
-    "idle": {
-        "type": "origins:action_over_time",
-        "interval": 100,
-        "entity_action": {
-            "type": "origins:chance",
-            "action": {
-                "type": "origins:if_else_list",
-                "actions": [
-                    {
-                        "condition": {
-                            "type": "origins:health",
-                            "comparison": ">",
-                            "compare_to": 4
-                        },
-                        "action": {
-                            "type": "origins:choice",
-                            "actions": [
-                                {
-                                    "element": {
-                                        "type": "origins:play_sound",
-                                        "sound": "minecraft:entity.cat.ambient"
-                                    },
-                                    "weight": 4
-                                },
-                                {
-                                    "element": {
-                                        "type": "origins:play_sound",
-                                        "sound": "minecraft:entity.cat.purreow"
-                                    },
-                                    "weight": 2
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "condition": {
-                            "type": "origins:health",
-                            "comparison": "<=",
-                            "compare_to": 4
-                        },
-                        "action": {
-                            "type": "origins:play_sound",
-                            "sound": "minecraft:entity.cat.ambient",
-                            "pitch": 0.8
-                        }
-                    }
-                ]
-            },
-            "chance": 0.05
-        },
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:sneaking",
-                    "inverted": true
-                },
-                {
-                    "type": "origins:gamemode",
-                    "gamemode": "spectator",
-                    "inverted": true
-                },
-                {
-                    "type": "origins:status_effect",
-                    "effect": "minecraft:invisibility",
-                    "inverted": true
-                }
-            ]
-        }
-    },
-    "hurt_death": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:health",
-                "comparison": ">",
-                "compare_to": 0
-            },
-            "if_action": {
-                "type": "origins:play_sound",
-                "sound": "minecraft:entity.cat.hurt"
-            },
-            "else_action": {
-                "type": "origins:play_sound",
-                "sound": "minecraft:entity.cat.death"
-            }
+	"type": "origins:multiple",
+	"hidden": true,
+	"idle": {
+		"type": "origins:action_over_time",
+		"interval": 100,
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:if_else_list",
+				"actions": [
+					{
+						"condition": {
+							"type": "origins:health",
+							"comparison": ">",
+							"compare_to": 4
+						},
+						"action": {
+							"type": "origins:choice",
+							"actions": [
+								{
+									"element": {
+										"type": "origins:play_sound",
+										"sound": "minecraft:entity.cat.ambient"
+									},
+									"weight": 4
+								},
+								{
+									"element": {
+										"type": "origins:play_sound",
+										"sound": "minecraft:entity.cat.purreow"
+									},
+									"weight": 2
+								}
+							]
+						}
+					},
+					{
+						"condition": {
+							"type": "origins:health",
+							"comparison": "<=",
+							"compare_to": 4
+						},
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.cat.ambient",
+							"pitch": 0.8
+						}
+					}
+				]
+			},
+			"chance": 0.05
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking",
+					"inverted": true
+				},
+				{
+					"type": "origins:gamemode",
+					"gamemode": "spectator",
+					"inverted": true
+				},
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:invisibility",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"hurt_death": {
+		"type": "origins:self_action_when_hit",
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:health",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.cat.hurt"
+			},
+			"else_action": {
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.cat.death"
+			}
 
-        },
-        "cooldown": 1
-    },
-    "sleep_init":{
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:execute_command",
-            "command": "scoreboard objectives add feline_sleep minecraft.custom:minecraft.time_since_rest"
-        }
-    },
-    "sleep":{
-        "type": "origins:action_over_time",
-        "interval": 200,
-        "entity_action": {
-            "type": "origins:play_sound",
-            "sound": "minecraft:entity.cat.purr",
-            "category": "players",
-            "volume": 0.25
-        },
-        "condition": {
-            "type": "origins:scoreboard",
-            "objective": "feline_sleep",
-            "compare_to": 0,
-            "comparison": "=="
-        }
-    }
+		},
+		"cooldown": 1
+	},
+	"sleep_init":{
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:execute_command",
+			"command": "scoreboard objectives add feline_sleep minecraft.custom:minecraft.time_since_rest"
+		}
+	},
+	"sleep":{
+		"type": "origins:action_over_time",
+		"interval": 200,
+		"entity_action": {
+			"type": "origins:play_sound",
+			"sound": "minecraft:entity.cat.purr",
+			"category": "players",
+			"volume": 0.25
+		},
+		"condition": {
+			"type": "origins:scoreboard",
+			"objective": "feline_sleep",
+			"compare_to": 0,
+			"comparison": "=="
+		}
+	}
 }

@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.phantom.phase_attack.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.phantom.phase_attack.description"
-        },
-        "icon": {
-            "item": "minecraft:infested_stone"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "phasing_attack": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:phantom/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.phantom.phase_attack.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.phantom.phase_attack.description"
+		},
+		"icon": {
+			"item": "minecraft:infested_stone"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"phasing_attack": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:phantom/root"
 }

@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.phantom.absorb_boss_soul.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.phantom.absorb_boss_soul.description"
-        },
-        "icon": {
-            "item": "minecraft:soul_campfire"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "boss_soul": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-      },
-    "parent": "originstweaks:phantom/absorb_soulfire"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.phantom.absorb_boss_soul.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.phantom.absorb_boss_soul.description"
+		},
+		"icon": {
+			"item": "minecraft:soul_campfire"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"boss_soul": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	  },
+	"parent": "originstweaks:phantom/absorb_soulfire"
 }

@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.feline.root.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.feline.root.description"
-        },
-        "icon": {
-            "item": "minecraft:salmon"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true,
-        "background": "minecraft:textures/block/orange_wool.png"
-    },
-    "criteria": {
-        "chose_feline": {
-            "trigger": "minecraft:impossible"
-        }
-    }
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.feline.root.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.feline.root.description"
+		},
+		"icon": {
+			"item": "minecraft:salmon"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true,
+		"background": "minecraft:textures/block/orange_wool.png"
+	},
+	"criteria": {
+		"chose_feline": {
+			"trigger": "minecraft:impossible"
+		}
+	}
 }

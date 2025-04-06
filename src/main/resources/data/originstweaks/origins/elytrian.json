@@ -1,23 +1,23 @@
 {
-    "name": {
-        "translate": "origin.originstweaks.elytrian.name"
-    },
-    "description": {
-        "translate": "origin.originstweaks.elytrian.description"
-    },
-    "icon": {
-        "item": "minecraft:elytra"
-    },
-    "order": 3,
-    "impact": 1,
-    "loading_priority": 1,
-    "powers": [
-        "originstweaks:gift_of_the_skies",
-        "originstweaks:companion_mounting",
-        "originstweaks:aerial_combatant",
-        "origins:claustrophobia",
-        "origins:more_kinetic_damage",
-        "originstweaks:elytrian_sounds",
-        "originstweaks:elytrian_advancements"
-    ]
+	"name": {
+		"translate": "origin.originstweaks.elytrian.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.elytrian.description"
+	},
+	"icon": {
+		"item": "minecraft:elytra"
+	},
+	"order": 3,
+	"impact": 1,
+	"loading_priority": 1,
+	"powers": [
+		"originstweaks:gift_of_the_skies",
+		"originstweaks:companion_mounting",
+		"originstweaks:aerial_combatant",
+		"origins:claustrophobia",
+		"origins:more_kinetic_damage",
+		"originstweaks:elytrian_sounds",
+		"originstweaks:elytrian_advancements"
+	]
 }

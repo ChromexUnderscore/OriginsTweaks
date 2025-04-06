@@ -1,27 +1,27 @@
 {
-    "name": {
-        "translate": "origin.originstweaks.merling.name"
-    },
-    "description": {
-        "translate": "origin.originstweaks.merling.description"
-    },
-    "icon": {
-        "item": "minecraft:trident"
-    },
-    "order": 0,
-    "impact": 3,
-    "loading_priority": 1,
-    "powers": [
-        "origins:water_breathing",
-        "originstweaks:aquadynamic",
-        "originstweaks:swim_speed",
-        "origins:water_vision",
-        "origins:aqua_affinity",
-        "origins:like_water",
-        "originstweaks:aquatic",
-        "origins:conduit_power_on_land",
-        "originstweaks:body_moisture",
-        "originstweaks:merling_sounds",
-        "originstweaks:merling_advancements"
-    ]
+	"name": {
+		"translate": "origin.originstweaks.merling.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.merling.description"
+	},
+	"icon": {
+		"item": "minecraft:trident"
+	},
+	"order": 0,
+	"impact": 3,
+	"loading_priority": 1,
+	"powers": [
+		"origins:water_breathing",
+		"originstweaks:aquadynamic",
+		"originstweaks:swim_speed",
+		"origins:water_vision",
+		"origins:aqua_affinity",
+		"origins:like_water",
+		"originstweaks:aquatic",
+		"origins:conduit_power_on_land",
+		"originstweaks:body_moisture",
+		"originstweaks:merling_sounds",
+		"originstweaks:merling_advancements"
+	]
 }

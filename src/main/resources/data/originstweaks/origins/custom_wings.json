@@ -1,12 +1,12 @@
 {
-    "name": {
-        "translate": "origin.originstweaks.custom_wings.name"
-    },
-    "description": {
-        "translate": "origin.originstweaks.custom_wings.description"
-    },
-    "icon": "minecraft:brush",
-    "impact": 0,
-    "order": 1,
-    "powers": []
+	"name": {
+		"translate": "origin.originstweaks.custom_wings.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.custom_wings.description"
+	},
+	"icon": "minecraft:brush",
+	"impact": 0,
+	"order": 1,
+	"powers": []
 }

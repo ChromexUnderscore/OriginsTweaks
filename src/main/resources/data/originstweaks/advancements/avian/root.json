@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.avian.root.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.avian.root.description"
-        },
-        "icon": {
-            "item": "minecraft:feather"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true,
-        "background": "minecraft:textures/block/farmland.png"
-    },
-    "criteria": {
-        "chose_avian": {
-            "trigger": "minecraft:impossible"
-        }
-    }
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.avian.root.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.avian.root.description"
+		},
+		"icon": {
+			"item": "minecraft:feather"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true,
+		"background": "minecraft:textures/block/farmland.png"
+	},
+	"criteria": {
+		"chose_avian": {
+			"trigger": "minecraft:impossible"
+		}
+	}
 }

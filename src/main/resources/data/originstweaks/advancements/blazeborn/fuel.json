@@ -1,29 +1,29 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.blazeborn.fuel.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.blazeborn.fuel.description"
-        },
-        "icon": {
-            "item": "minecraft:furnace"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "campfire": {
-            "trigger": "minecraft:impossible"
-        },
-        "brewing_stand": {
-            "trigger": "minecraft:impossible"
-        },
-        "furnace": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:blazeborn/lava_bath"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.blazeborn.fuel.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.blazeborn.fuel.description"
+		},
+		"icon": {
+			"item": "minecraft:furnace"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"campfire": {
+			"trigger": "minecraft:impossible"
+		},
+		"brewing_stand": {
+			"trigger": "minecraft:impossible"
+		},
+		"furnace": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:blazeborn/lava_bath"
 }

@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.originstweaks.phantom.absorb_soulfire.title"
-        },
-        "description": {
-            "translate": "advancement.originstweaks.phantom.absorb_soulfire.description"
-        },
-        "icon": {
-            "item": "minecraft:soul_lantern"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "c1": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:phantom/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.phantom.absorb_soulfire.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.phantom.absorb_soulfire.description"
+		},
+		"icon": {
+			"item": "minecraft:soul_lantern"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:phantom/root"
 }

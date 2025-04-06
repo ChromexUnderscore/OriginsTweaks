@@ -1,12 +1,12 @@
 {
 	"replace": false,
 	"values": [
-        "minecraft:cat",
-        "minecraft:horse",
-        "minecraft:donkey",
-        "minecraft:mule",
-        "minecraft:llama",
-        "minecraft:parrot",
-        "minecraft:wolf"
+	"minecraft:cat",
+	"minecraft:horse",
+	"minecraft:donkey",
+	"minecraft:mule",
+	"minecraft:llama",
+	"minecraft:parrot",
+	"minecraft:wolf"
 	]
 }
