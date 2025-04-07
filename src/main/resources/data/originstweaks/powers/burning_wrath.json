@@ -65,6 +65,35 @@
 			"type": "origins:on_fire"
 		}
 	},
+	"enemy_fire": {
+		"type": "origins:action_on_hit",
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:extinguish"
+					}
+				},
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:set_on_fire",
+						"duration": 8
+					}
+				}
+			]
+		},
+		"cooldown": 600,
+		"damage_condition": {
+			"type": "origins:type",
+			"damage_type": "minecraft:player_attack"
+		},
+		"condition": {
+			"type": "origins:on_fire"
+		}
+	},
 	"light_campfires": {
 		"type": "origins:action_on_block_use",
 		"entity_action": {

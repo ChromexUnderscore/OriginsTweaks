@@ -15,8 +15,6 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 For detailed changes to Powers from the Origins Mod and New Powers added by OriginsTweaks, check out the [OriginsTweaks Wiki](https://github.com/ChromexUnderscore/OriginsTweaks/wiki).
 
-#### Quick description of changes and additions:
-
 <details><summary>Avian</summary>
 
 + Avians can tame animals, and certain animals will automatically trust the avian.
@@ -52,15 +50,20 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 + Shulks have a base armor of 3. 
 + Sneaking grants up to 7 bonus defense.
   + 1 bonus defense is lost if taking a hit that dealt more than 3 hearts.
++ They can shoot shulker bullets or self-inflict levitation.
 
 </details>
 
 <details><summary>Feline</summary>
 
-+ Claws deal increased base damage, but need to be sharpened using logs or wool > smooth stone > iron blocks > diamond blocks.
++ Claws deal increased base damage, but need to be sharpened in the following order:
+  - Logs or wool
+  - Smooth stone
+  - Iron blocks
+  - Diamond blocks
 + Felines can charge a high jump by sneaking.
 + The Feline breaks stone 50% slower.
-Some tough stone variants can't be broken without help of certain effects.
+  + Some tough stone variants can't be broken without help of certain effects.
 + Food made from Fish is more nourishing.
 + Night Vision is toggleable.
 
@@ -85,11 +88,11 @@ Some tough stone variants can't be broken without help of certain effects.
 + Merling's Natural Spawn point is located in ocean biomes.
 
 </details>
-
 <details><summary>Blazeborn</summary>
 
-+ Bladeborn can light themselves on fire.
-+ Can light Campfires, Fuel Furnei and Brewing stands while lit on fire.
++ The Blazeborn can light themselves on fire.
+  + Can light Campfires, Fuel Furnei and Brewing stands while lit on fire.
+  + In addition to the 25% damage increase, set targets on fire for 8 seconds.
 + Blazeborn move slightly faster through lava, have improved vision and can swim if submerged.
 + Blazeborns can shoot a burst of 3 Fireballs.
 
@@ -97,7 +100,7 @@ Some tough stone variants can't be broken without help of certain effects.
 
 <details><summary>Phantom</summary>
 
-+ Phantom Form and phasing use a soul energy bar instead of hunger.
++ Phantom Form and phasing use soul energy instead of hunger.
 + Actively phasing will drain soul energy much quicker than just using phantom form.
 + Soul Energy regenerates naturally, but can be accelerated by killing mobs or being around soul fire.
 + Golden items and blocks have a repelling effect on phantoms.
@@ -111,9 +114,10 @@ Some tough stone variants can't be broken without help of certain effects.
 
 ## Built-in Mod Compat
 
-+ Feline's Claw ability: Wood Types from [Terrestria](https://modrinth.com/mod/terrestria) and [Cinderscapes](https://modrinth.com/mod/cinderscapes).
-+ Merling advancements: Ocean Monuments from [Yung's Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments).
-+ Arachnid, Avian and Feline diets: Using [Overgrown's Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide tagging of various modded foods.
++ OriginsTweaks Displays as an Addon under Origins in [Modmenu](https://modrinth.com/mod/modmenu).
++ Wood Types from [Terrestria](https://modrinth.com/mod/terrestria) and [Cinderscapes](https://modrinth.com/mod/cinderscapes).
++ Ocean Monuments from [Yung's Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments).
++ Using [Overgrown's Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide tagging of various modded foods.
 
 ## Bugs, Suggestions and Contribution
 

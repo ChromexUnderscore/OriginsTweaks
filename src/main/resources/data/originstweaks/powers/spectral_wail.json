@@ -64,6 +64,13 @@
 					"type": "origins:distance",
 					"compare_to": 32,
 					"comparison": "<="
+				},
+				{
+					"type": "origins:target_condition",
+					"condition": {
+						"type": "origins:sneaking",
+						"inverted": true
+					}
 				}
 			]
 		},

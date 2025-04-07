@@ -97,7 +97,8 @@
 		"food_component": {
 			"hunger": 6,
 			"saturation": 0.75,
-			"meat": false
+			"meat": false,
+			"snack": true
 		},
 		"use_action": "eat"
 	}

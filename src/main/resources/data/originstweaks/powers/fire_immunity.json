@@ -43,7 +43,7 @@
 	},
 	"lava_vision": {
 		"type": "origins:lava_vision",
-		"s": 0,
-		"v": 3
+		"s": 0.0,
+		"v": 3.0
 	}
 }
