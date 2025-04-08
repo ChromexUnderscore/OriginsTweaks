@@ -13,15 +13,15 @@ An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Defa
 
 ## Changes and Additions
 
-For detailed changes to Powers from the Origins Mod and New Powers added by OriginsTweaks, check out the [OriginsTweaks Wiki](https://github.com/ChromexUnderscore/OriginsTweaks/wiki).
+For detailed changes to Abilities from the Origins Mod and New Abilities added by OriginsTweaks, check out the [OriginsTweaks Wiki](https://github.com/ChromexUnderscore/OriginsTweaks/wiki).
 
 #### Summary
 
 <details><summary>Avian</summary>
 
 + Avians can tame animals, and some animals will automatically trust them.
-+ When harvesting crops with a hoe, Avians get more drops and have a chance for golden versions.
-+ Glistering Melons can be eaten by Avians.
++ When harvesting crops with a hoe, Avians get more drops and have a chance for golden variants.
++ Glistering Melons can be eaten.
 + Avians can toggle Slow Falling on or off.
 
 </details>
@@ -31,7 +31,7 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 + Arachnids can use a webshot to pull themselves towards mobs and blocks.
 + Arachnid melee attacks have a chance to inflict poison.
 + Mining speed is no longer slowed while climbing.
-+ Arachnids are shorter and can fit through 1-block high spaces while sneaking.
++ Arachnids are shorter and can fit through 1-block spaces while sneaking.
 + Fall damage is only taken from falls greater than 16 blocks.
 + Arachnids can craft 9 string into 1 cobweb.
 
@@ -58,15 +58,16 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 
 <details><summary>Feline</summary>
 
-+ Feline claws deal more base damage but need to be sharpened in this order:
++ Feline can attack with claws but they need to be sharpened using blocks in this order:
   - Logs or wool
-  - Smooth stone
+  - Smooth stone, Polished stones
   - Iron blocks
   - Diamond blocks
 + Felines can charge a high jump by sneaking.
 + Felines break stone 50% slower.
-  + Some very hard stone types cannot be broken without certain effects.
-+ Food made from Fish provides more nourishment to Felines.
+  + Some tough stone types cannot be broken.
+  + This can be worked around using strength or efficiency.
++ Food made from Fish provides more hunger and saturation to Felines.
 + Felines can toggle Night Vision on or off.
 
 </details>
@@ -74,8 +75,8 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 <details><summary>Enderian</summary>
 
 + Enderians have increased height and reach.
-+ Enderians will dodge incoming projectiles after a cooldown period.
-+ Teleporting with an ender pearl grants a temporary period of invincibility against suffocation.
++ Enderians will dodge incoming projectiles.
++ Teleporting with an ender pearl grants an invincibility window against suffocation.
 + Enderians can use Silk Touch on blocks if they are not holding any tools.
 
 </details>
@@ -94,8 +95,8 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 
 + Blazeborn can set themselves on fire.
   + While on fire, they can light Campfires, Furnaces, and Brewing Stands.
-  + In addition to a 25% damage increase, being on fire causes targets to burn for 8 seconds.
-+ Blazeborn move slightly faster in lava, have better vision in it, and can swim when fully submerged.
+  + In addition to a 25% damage increase, hitting targets causes them to burn for 8 seconds.
++ Blazeborn move slightly faster in lava, have better vision, and can swim when submerged.
 + Blazeborn can shoot a burst of 3 Fireballs.
 
 </details>
