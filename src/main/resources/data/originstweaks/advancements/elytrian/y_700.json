@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "MAJESTICA - Above The Sky"
-        },
-        "description": {
-            "text": "Reach Y-Coordinate 700 using your flight abilities"
-        },
-        "icon": {
-            "item": "minecraft:glowstone"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "y_700": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-      },
-    "parent": "originstweaks:elytrian/flight_ranged_attack"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.elytrian.y_700.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.elytrian.y_700.description"
+		},
+		"icon": {
+			"item": "minecraft:glowstone"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"y_700": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	  },
+	"parent": "originstweaks:elytrian/flight_ranged_attack"
 }

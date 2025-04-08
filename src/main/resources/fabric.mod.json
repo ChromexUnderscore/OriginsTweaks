@@ -1,22 +1,22 @@
 {
-    "schemaVersion": 1,
-    "id": "originstweaks",
-    "version": "${version}",
-    "name": "OriginsTweaks",
-    "description": "Reworks the Origins Mod's abilities and adds new ones.",
-    "authors": [
-        "ChromexUnderscore"
-    ],
-    "contact": {
-        "repository": "https://github.com/ChromexUnderscore/OriginsTweaks",
-        "issues": "https://github.com/ChromexUnderscore/OriginsTweaks/issues",
-        "wiki": "https://github.com/ChromexUnderscore/OriginsTweaks/wiki",
-        "discord": "https://discord.com/invite/Su7tqDmUTu"
-    },
-    "license": "MIT License",
-    "icon": "assets/originstweaks/icon.png",
-    "environment": "*",
-    "entrypoints": {
+	"schemaVersion": 1,
+	"id": "originstweaks",
+	"version": "${version}",
+	"name": "OriginsTweaks",
+	"description": "Reworks the Origins Mod's abilities and adds new ones.",
+	"authors": [
+		"ChromexUnderscore"
+	],
+	"contact": {
+		"repository": "https://github.com/ChromexUnderscore/OriginsTweaks",
+		"issues": "https://github.com/ChromexUnderscore/OriginsTweaks/issues",
+		"wiki": "https://github.com/ChromexUnderscore/OriginsTweaks/wiki",
+		"discord": "https://discord.com/invite/Su7tqDmUTu"
+	},
+	"license": "MIT License",
+	"icon": "assets/originstweaks/icon.png",
+	"environment": "*",
+	"entrypoints": {
 		"main": [
 			"com.chromexunderscore.originstweaks.Originstweaks"
 		],
@@ -31,23 +31,23 @@
 			"environment": "client"
 		}
 	],
-    "depends": {
-        "minecraft": ">=1.20.2",
-        "fabric-api": "*",
-        "origins": ">=1.12.0",
-        "pehkui": "*",
-        "mr_origins_dietarydelights": "*"
-    },
-    "recommends": {
-        "modmenu": "*",
-        "morewaterlogging": "*"
-    },
-    "custom": {
-        "modmenu": {
-            "parent": {
-                "id": "origins"
-            },
-            "update_checker": true
-        }
-    }
+	"depends": {
+		"minecraft": ">=1.20.2",
+		"fabric-api": "*",
+		"origins": ">=1.12.0",
+		"pehkui": "*",
+		"mr_origins_dietarydelights": "*"
+	},
+	"recommends": {
+		"modmenu": "*",
+		"morewaterlogging": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"parent": {
+				"id": "origins"
+			},
+			"update_checker": true
+		}
+	}
 }

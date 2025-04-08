@@ -1,115 +1,123 @@
- {
-    "type": "origins:multiple",
-    "name": "Aquadynamic",
-        "description": "Due to your experience with physics underwater, you are able to use Tridents more efficiently and know how to craft them.",
-        "badges":[
-            {
-                "type": "origins:tooltip",
-                "sprite": "origins:textures/gui/badge/arrow_up.png",
-                "text": "You deal 1.5x damage to entities while using a Trident underwater."
-            },
-            {
-                "type": "origins:crafting_recipe",
-                "sprite": "origins:textures/gui/badge/info.png",
-                "prefix": "You are able to craft tridents.",
-                "recipe": {
-                    "id": "originstweaks:merling_trident_badge",
-                    "type": "minecraft:crafting_shaped",
-                    "pattern": [
-                        "SSS",
-                        " H ",
-                        " C "
-                    ],
-                    "key": {
-                        "S": {
-                            "item": "minecraft:prismarine_shard"
-                        },
-                        "H": {
-                            "item": "minecraft:heart_of_the_sea"
-                        },
-                        "C": {
-                            "item": "minecraft:prismarine_crystals"
-                        }
-                    },
-                    "result": {
-                        "item": "minecraft:trident",
-                        "count": 1
-                    }
-                }
-            }
-        ],
-    "projectile": {
-        "type": "origins:modify_projectile_damage",
-        "damage_condition": {
-            "type": "origins:projectile",
-            "projectile": "minecraft:trident"
-        },
-        "modifier": {
-            "name": "merling projectile trident",
-            "operation": "multiply_total_multiplicative",
-            "value": 0.5
-        },
-        "condition": {
-            "type": "origins:submerged_in",
-            "fluid": "minecraft:water"
-        }
-    },
-    "melee": {
-        "type": "origins:modify_damage_dealt",
-        "modifier": {
-            "name": "merling melee trident",
-            "operation": "multiply_total_multiplicative",
-            "value": 0.5
-        },
-        "bientity_condition": {
-        "type": "origins:actor_condition",
-            "condition": {
-                "type": "origins:and",
-                "conditions": [
-                    {
-                        "type": "origins:equipped_item",
-                        "equipment_slot": "mainhand",
-                        "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient":{
-                                "item": "minecraft:trident"
-                            }
-                        }
-                    },
-                    {
-                        "type": "origins:submerged_in",
-                        "fluid": "minecraft:water"
-                    }
-                ]
-            }
-        }
-    },
-    "crafting": {
-        "type": "origins:recipe",
-        "recipe": {
-            "id": "originstweaks:merling_trident",
-            "type": "minecraft:crafting_shaped",
-            "pattern": [
-                "SSS",
-                " H ",
-                " C "
-            ],
-            "key": {
-                "S": {
-                    "item": "minecraft:prismarine_shard"
-                },
-                "H": {
-                    "item": "minecraft:heart_of_the_sea"
-                },
-                "C": {
-                    "item": "minecraft:prismarine_crystals"
-                }
-            },
-            "result": {
-                "item": "minecraft:trident",
-                "count": 1
-            },
-            "group": "trident"
-        }
-    }
+{
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.aquadynamic.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.aquadynamic.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": {
+				"translate": "badge.originstweaks.aquadynamic.0"
+			}
+		},
+		{
+			"type": "origins:crafting_recipe",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"prefix": {
+				"translate": "badge.originstweaks.aquadynamic.1.prefix"
+			},
+			"recipe": {
+				"id": "originstweaks:merling_trident_badge",
+				"type": "minecraft:crafting_shaped",
+				"pattern": [
+					"SSS",
+					" H ",
+					" C "
+				],
+				"key": {
+					"S": {
+						"item": "minecraft:prismarine_shard"
+					},
+					"H": {
+						"item": "minecraft:heart_of_the_sea"
+					},
+					"C": {
+						"item": "minecraft:prismarine_crystals"
+					}
+				},
+				"result": {
+					"item": "minecraft:trident",
+					"count": 1
+				}
+			}
+		}
+	],
+	"projectile": {
+		"type": "origins:modify_projectile_damage",
+		"damage_condition": {
+			"type": "origins:projectile",
+			"projectile": "minecraft:trident"
+		},
+		"modifier": {
+			"name": "merling projectile trident",
+			"operation": "multiply_total_multiplicative",
+			"value": 0.5
+		},
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water"
+		}
+	},
+	"melee": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"name": "merling melee trident",
+			"operation": "multiply_total_multiplicative",
+			"value": 0.5
+		},
+		"bientity_condition": {
+			"type": "origins:actor_condition",
+			"condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:equipped_item",
+						"equipment_slot": "mainhand",
+						"item_condition": {
+							"type": "origins:ingredient",
+							"ingredient": {
+								"item": "minecraft:trident"
+							}
+						}
+					},
+					{
+						"type": "origins:submerged_in",
+						"fluid": "minecraft:water"
+					}
+				]
+			}
+		}
+	},
+	"crafting": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "originstweaks:merling_trident",
+			"type": "minecraft:crafting_shaped",
+			"pattern": [
+				"SSS",
+				" H ",
+				" C "
+			],
+			"key": {
+				"S": {
+					"item": "minecraft:prismarine_shard"
+				},
+				"H": {
+					"item": "minecraft:heart_of_the_sea"
+				},
+				"C": {
+					"item": "minecraft:prismarine_crystals"
+				}
+			},
+			"result": {
+				"item": "minecraft:trident",
+				"count": 1
+			},
+			"group": "trident"
+		}
+	}
 }

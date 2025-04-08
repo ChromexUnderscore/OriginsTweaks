@@ -1,22 +1,32 @@
 {
 	"type": "origins:multiple",
-	"name": "Acrobatics",
-	"description": "The Felines dexterity allows them to move around their environment easily.",
+	"name": {
+		"translate": "power.originstweaks.dexterity.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.dexterity.description"
+	},
 	"badges": [
 		{
-			"type": "origins:keybind",
+			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/active.png",
-			"text": "Hold [Sneak] to charge up a jump, press [Jump] to peform a high jump."
+			"text": {
+				"translate": "badge.originstweaks.dexterity.0"
+			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
-			"text": "You jump a little higher while sprinting."
+			"text": {
+				"translate": "badge.originstweaks.dexterity.1"
+			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
-			"text": "You never take fall damage, no matter from which height you fall."
+			"text": {
+				"translate": "badge.originstweaks.dexterity.2"
+			}
 		}
 	],
 	"sprint_jump": {

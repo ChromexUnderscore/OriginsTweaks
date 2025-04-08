@@ -1,94 +1,105 @@
 {
-    "type": "origins:multiple",
-    "name": "Green Thumb",
-    "description": "You have a natural talent for growing and harvesting crops.",
-    "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "Harvesting crops with a hoe increases the yield."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Harvesting Carrots, Melons and Apples has a chance to drop a golden variant of the crop."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You can eat glistering melon slices."
-        }
-    ],
-    "fortune": {
-        "type": "origins:modify_enchantment_level",
-        "enchantment": "minecraft:fortune",
-        "modifier": {
-            "operation": "add_base_late",
-            "value": 2
-        },
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "minecraft:hoes"
-            }
-        }
-    },
-    "melon_harvest": {
-        "type": "origins:modify_harvest",
-        "allow": true,
-        "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:melon"
-        },
-        "condition": {
-            "type": "origins:equipped_item",
-            "equipment_slot": "mainhand",
-            "item_condition": {
-                "type": "origins:ingredient",
-                "ingredient": {
-                    "tag": "minecraft:hoes"
-                }
-            }
-        }
-    },
-    "golden_apple_oak": {
-        "type": "origins:replace_loot_table",
-        "replace": {
-            "minecraft:blocks/oak_leaves": "originstweaks:blocks/avian_oak_leaves"
-        }
-    },
-    "golden_apple_dark_oak": {
-        "type": "origins:replace_loot_table",
-        "replace": {
-            "minecraft:blocks/dark_oak_leaves": "originstweaks:blocks/avian_dark_oak_leaves"
-        }
-    },
-    "golden_apple_carrots": {
-        "type": "origins:replace_loot_table",
-        "replace": {
-            "minecraft:blocks/carrots": "originstweaks:blocks/avian_carrots"
-        }
-    },
-    "glistering_melon": {
-        "type": "origins:replace_loot_table",
-        "replace": {
-            "minecraft:blocks/melon": "originstweaks:blocks/avian_melon"
-        }
-    },
-    "glistering_melon_food": {
-        "type": "origins:edible_item",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "item": "minecraft:glistering_melon_slice"
-            }
-        },
-        "consume_sound": "minecraft:entity.generic.eat",
-        "food_component": {
-            "hunger": 6,
-            "saturation": 0.75,
-            "meat": false
-        },
-        "use_action": "eat"
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.green_thumb.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.green_thumb.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": {
+				"translate": "badge.originstweaks.green_thumb.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.green_thumb.1"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.green_thumb.2"
+			}
+		}
+	],
+	"fortune": {
+		"type": "origins:modify_enchantment_level",
+		"enchantment": "minecraft:fortune",
+		"modifier": {
+			"operation": "add_base_late",
+			"value": 2
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "minecraft:hoes"
+			}
+		}
+	},
+	"melon_harvest": {
+		"type": "origins:modify_harvest",
+		"allow": true,
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:melon"
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "minecraft:hoes"
+				}
+			}
+		}
+	},
+	"golden_apple_oak": {
+		"type": "origins:replace_loot_table",
+		"replace": {
+			"minecraft:blocks/oak_leaves": "originstweaks:blocks/avian_oak_leaves"
+		}
+	},
+	"golden_apple_dark_oak": {
+		"type": "origins:replace_loot_table",
+		"replace": {
+			"minecraft:blocks/dark_oak_leaves": "originstweaks:blocks/avian_dark_oak_leaves"
+		}
+	},
+	"golden_apple_carrots": {
+		"type": "origins:replace_loot_table",
+		"replace": {
+			"minecraft:blocks/carrots": "originstweaks:blocks/avian_carrots"
+		}
+	},
+	"glistering_melon": {
+		"type": "origins:replace_loot_table",
+		"replace": {
+			"minecraft:blocks/melon": "originstweaks:blocks/avian_melon"
+		}
+	},
+	"glistering_melon_food": {
+		"type": "origins:edible_item",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:glistering_melon_slice"
+			}
+		},
+		"consume_sound": "minecraft:entity.generic.eat",
+		"food_component": {
+			"hunger": 6,
+			"saturation": 0.75,
+			"meat": false,
+			"snack": true
+		},
+		"use_action": "eat"
+	}
 }

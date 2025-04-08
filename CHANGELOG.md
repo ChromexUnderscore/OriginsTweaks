@@ -4,6 +4,62 @@
 
 ### [Version 1.17 [Minecraft 1.20.4]]
 
+#### [Version 1.17.2 [Localization Keys & German Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.2)
+
+Gameplay Changes
+
++ Arachnid:
+	+ ``Climbing`` and ``Venom``:
+		+ Powers now switch using the Secondary Key instead of both being toggled together.
+	+ ``Venom``:
+		+ Effect Amplifier is now ``1``, increasing the speed of poison ticks.
+		+ Poison Indicator now acts as a cooldown of 5 seconds.
++ Avian
+	+ ``Green Thumb``:
+		+ Glistering Melons now count as snack, meaning they can be consumed faster than normal food items.
++ Blazeborn:
+	+ ``Burning Wrath``:
+		+ Now also sets targets hit on fire for 8 seconds, while they are on fire themselves.
++ Feline:
+	+ ``Natural Hunter``:
+		+ Polished Granite, Andesite or Diorite can now be used to sharpen to Stone Tier.
++ Enderian:
+	+ Refactored ``Ender Body`` to ``Slender Body`` in parity with the Original Origins Mod Power.
+	+ ``Slender Body``:
+		+  Projectile dodge now includes all Projectiles.
++ Phantom:
+	+ Moved ``Phantomize Energy Drain`` to ``Phantomize`` Power.
+	+ ``Phantomize``:
+		+ Reduced Soul Energy Drain to 0.5/s.
+	+ ``Spectral Wail``:
+		+ Sneaking Players will no longer be Highlighted.
++ Shulk:
+	+ Readded old Power under the name ``Antigravity Pellet``
+		+ Can shoot a shulker bullet on a 40 seconds cooldown using [Secondary].
+		+ Sneaking while using this ability inflicts levitation on the shulk instead.
+
+Technical Changes
+
++ Changed OriginsTweaks Icons to match the base Origins' Icons.
++ Removed ``Dodge Projectile`` Entity Type Tag.
++ Added ``Sharpen Stone`` Block Tag.
++ Reordered some Powers for the in-game Origin Overview.
++ Added Translation Keys to Origins, Powers, Badges and Advancements. (Issue #54)
+	+ Due to a limitation with the Origins Mod, some tooltips currently don't have Translation Keys.
++ Updated English (US) translations with proper grammar.
+	+ Rewrote various Descriptions and Badges to be more clear and concise.
++ Added English (UK) translations.
+	+ Identical to English (US) besides some grammar rules and select words.
++ Added German translations. (Issue #55)
++ Added joke language translations:
+	+ Pirate Speak (The Seven Seas)
+	+ Shakespearean English (Kingdom of England)
+	+ LOLCAT (Kingdom of Cats)
++ Changed all Keybind type Badges to use the Tooltips.
++ Convert Indentation of all Files to use Tabs.
++ Rewrote ``README.md``. (Issue #52)
++ Bumped version to 1.17.2.
+
 #### [Version 1.17.1 [Origin Advancements]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.1)
 
 Gameplay Changes

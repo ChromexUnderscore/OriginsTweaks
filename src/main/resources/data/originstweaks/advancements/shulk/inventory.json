@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Keep some Inventory"
-        },
-        "description": {
-            "text": "Put an item into your Shulker Inventory"
-        },
-        "icon": {
-            "item": "minecraft:shulker_box"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "use_shulker_inventory": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:shulk/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.shulk.inventory.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.shulk.inventory.description"
+		},
+		"icon": {
+			"item": "minecraft:shulker_box"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"use_shulker_inventory": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:shulk/root"
 }

@@ -1,18 +1,18 @@
 {
-    "values": [
-        "deepslate",
-        "reinforced_deepslate",
-        "deepslate_coal_ore",
-        "deepslate_iron_ore",
-        "deepslate_copper_ore",
-        "deepslate_gold_ore",
-        "deepslate_redstone_ore",
-        "deepslate_emerald_ore",
-        "deepslate_lapis_ore",
-        "deepslate_diamond_ore",
-        "obsidian",
-        "crying_obsidian",
-        "blackstone",
-        "gilded_blackstone"
-    ]
+	"values": [
+		"deepslate",
+		"reinforced_deepslate",
+		"deepslate_coal_ore",
+		"deepslate_iron_ore",
+		"deepslate_copper_ore",
+		"deepslate_gold_ore",
+		"deepslate_redstone_ore",
+		"deepslate_emerald_ore",
+		"deepslate_lapis_ore",
+		"deepslate_diamond_ore",
+		"obsidian",
+		"crying_obsidian",
+		"blackstone",
+		"gilded_blackstone"
+	]
 }

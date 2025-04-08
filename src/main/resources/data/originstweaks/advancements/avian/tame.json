@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Dr Dolittle"
-        },
-        "description": {
-            "text": "Tame an animal without using items."
-        },
-        "icon": {
-            "item": "minecraft:bone"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "tame": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:avian/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.avian.tame.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.avian.tame.description"
+		},
+		"icon": {
+			"item": "minecraft:bone"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"tame": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:avian/root"
 }

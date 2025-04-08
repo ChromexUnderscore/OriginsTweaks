@@ -1,8 +1,12 @@
 {
-    "name": "Vanilla Elytra",
-    "description": "Your wings will render as the vanilla Elytra, this will enable the use of Elytra resourcepacks and cape patterns.",
-    "icon": "minecraft:elytra",
-    "impact": 0,
-    "order": 0,
-    "powers": []
+	"name": {
+		"translate": "origin.originstweaks.vanilla_elytra.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.vanilla_elytra.description"
+	},
+	"icon": "minecraft:elytra",
+	"impact": 0,
+	"order": 0,
+	"powers": []
 }

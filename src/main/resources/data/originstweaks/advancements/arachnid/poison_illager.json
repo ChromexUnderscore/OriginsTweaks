@@ -1,38 +1,38 @@
 {
-    "display": {
-        "title": {
-            "text": "Biological Warfare"
-        },
-        "description": {
-            "text": "Poison all types of Illager and allies using your Venom ability at least once."
-        },
-        "icon": {
-            "item": "minecraft:spider_eye"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "pillager": {
-            "trigger": "minecraft:impossible"
-        },
-        "vindicator": {
-            "trigger": "minecraft:impossible"
-        },
-        "evoker": {
-            "trigger": "minecraft:impossible"
-        },
-        "vex": {
-            "trigger": "minecraft:impossible"
-        },
-        "ravager": {
-            "trigger": "minecraft:impossible"
-        },
-        "witch": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:arachnid/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.arachnid.poison_illager.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.arachnid.poison_illager.description"
+		},
+		"icon": {
+			"item": "minecraft:spider_eye"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"pillager": {
+			"trigger": "minecraft:impossible"
+		},
+		"vindicator": {
+			"trigger": "minecraft:impossible"
+		},
+		"evoker": {
+			"trigger": "minecraft:impossible"
+		},
+		"vex": {
+			"trigger": "minecraft:impossible"
+		},
+		"ravager": {
+			"trigger": "minecraft:impossible"
+		},
+		"witch": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:arachnid/root"
 }

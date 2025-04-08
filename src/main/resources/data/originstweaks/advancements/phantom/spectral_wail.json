@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Echolocation"
-        },
-        "description": {
-            "text": "Detect a mob or player through walls by using your Spectral Wail"
-        },
-        "icon": {
-            "item": "minecraft:compass"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "detect_entity": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:phantom/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.phantom.spectral_wail.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.phantom.spectral_wail.description"
+		},
+		"icon": {
+			"item": "minecraft:compass"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"detect_entity": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:phantom/root"
 }

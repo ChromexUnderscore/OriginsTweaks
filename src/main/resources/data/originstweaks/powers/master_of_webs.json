@@ -1,289 +1,304 @@
 {
-    "type": "origins:multiple",
-    "loading_priority": 1,
-    "name": "Master of Webs",
-    "description": "Arachnids have mastered the delicate handling of cobwebs; they use them to their advantage and can navigate through them with ease.",
-    "badges": [
-        {
-            "type": "origins:keybind",
-            "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Fling towards a block or mob within 16 blocks using [Primary]."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "The Webshot has 7 charges, it fully regenerates over 30 Seconds."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "Cobweb does not slow you down and can be used to climb."
-        },
-        {
-            "type": "origins:crafting_recipe",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "prefix": "You can craft 9 string into Cobweb.",
-            "recipe": {
-                "id": "originstweaks:master_of_webs/web_crafting_badge",
-                "type": "minecraft:crafting_shapeless",
-                "ingredients": [
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    },
-                    {
-                        "item": "minecraft:string"
-                    }
-                ],
-                "result": {
-                    "item": "minecraft:cobweb"
-                }
-            },
-            "suffix": "Breaking a cobweb block while sneaking returns all 9 string used to craft the cobweb"
-        }
-    ],
-    "silk_resource": {
-        "type": "origins:resource",
-        "min": 0,
-        "max": 7,
-        "start_value": 7,
-        "hud_render": {
-            "bar_index": 5,
-            "condition": {
-                "type": "origins:resource",
-                "resource": "*:*_silk_resource",
-                "comparison": "!=",
-                "compare_to": 7
-            }
-        }
-    },
-    "silk_regenerate": {
-        "type": "origins:action_over_time",
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_silk_resource",
-            "change": 1
-        },
-        "interval": 100
-    },
-    "silk_sleep": {
-        "type": "origins:action_on_wake_up",
-        "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_silk_resource",
-            "change": 7,
-            "operation": "set"
-        }
-    },
-    "silk_respawn": {
-        "type": "origins:action_on_callback",
-        "entity_action_respawned": {
-            "type": "origins:change_resource",
-            "resource": "*:*_silk_resource",
-            "change": 7,
-            "operation": "set"
-        }
-    },
-    "web_shot": {
-        "type": "origins:active_self",
-        "entity_action": {
-            "type": "origins:raycast",
-            "distance": 16,
-            "shape_type": "collider",
-            "hit_action": {
-                "type": "origins:and",
-                "actions": [
-                    {
-                        "type": "origins:add_velocity",
-                        "x": 0,
-                        "y": 0.25,
-                        "z": 1,
-                        "client": false,
-                        "space": "local",
-                        "set": true
-                    },
-                    {
-                        "type": "origins:change_resource",
-                        "resource": "*:arachnid_advancements_webshot",
-                        "change": 1,
-                        "operation": "add"
-                    },
-                    {
-                        "type": "origins:swing_hand",
-                        "hand": "MAIN_HAND"
-                    },
-                    {
-                        "type": "origins:change_resource",
-                        "resource": "*:*_silk_resource",
-                        "change": -1
-                    }
-                ]
-            },
-            "bientity_action": {
-                "type": "origins:target_action",
-                "action": {
-                    "type": "origins:play_sound",
-                    "sound": "minecraft:entity.item_frame.remove_item",
-                    "category": "players"
-                }
-            },
-            "block_action": {
-                "type": "origins:execute_command",
-                "command": "playsound minecraft:entity.item_frame.remove_item player @a"
-            },
-            "command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
-            "command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
-            "command_step": 0.1,
-            "command_along_ray_only_on_hit": true
-        },
-        "cooldown": 10,
-        "hud_render": {
-            "should_render": false
-        },
-        "key": {
-            "key": "key.origins.primary_active",
-            "continuous": false
-        },
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:raycast",
-                    "distance": 16,
-                    "shape_type": "collider",
-                    "block_condition": {
-                        "type": "origins:fluid",
-                        "fluid_condition": {
-                            "type": "origins:empty"
-                        }
-                    }
-                },
-                {
-                    "type": "origins:resource",
-                    "resource": "*:*_silk_resource",
-                    "comparison": ">=",
-                    "compare_to": 1
-                }
-            ]
-        }
-    },
-    "punch_through": {
-        "type": "origins:prevent_block_selection",
-        "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "origins:cobwebs"
-        },
-        "condition": {
-            "type": "origins:sneaking",
-            "inverted": true
-        }
-    },
-    "climbing": {
-        "type": "origins:climbing",
-        "hold_condition": {
-            "type": "origins:sneaking",
-            "inverted": true
-        },
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:in_block_anywhere",
-                    "block_condition": {
-                        "type": "origins:in_tag",
-                        "tag": "origins:cobwebs"
-                    }
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:climbing_toggle"
-                }
-            ]
-        }
-    },
-    "web_crafting": {
-        "type": "origins:recipe",
-        "recipe": {
-            "id": "origins:master_of_webs/web_crafting",
-            "type": "minecraft:crafting_shapeless",
-            "ingredients": [
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                },
-                {
-                    "item": "minecraft:string"
-                }
-            ],
-            "result": {
-                "item": "minecraft:cobweb"
-            }
-        }
-    },
-    "cobweb_harvest": {
-        "type": "origins:modify_harvest",
-        "allow": true,
-        "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:cobweb"
-        }
-    },
-    "cobweb_drop": {
-        "type": "origins:replace_loot_table",
-        "replace": {
-            "minecraft:blocks/cobweb": "originstweaks:blocks/arachnid_cobweb"
-        }
-    },
-    "cobweb_speed": {
-        "type": "origins:modify_break_speed",
-        "modifier": {
-            "name": "web harvest",
-            "operation": "set_total",
-            "value": 0.1
-        },
-        "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:cobweb"
-        }
-    }
+	"type": "origins:multiple",
+	"loading_priority": 1,
+	"name": {
+		"translate": "power.originstweaks.master_of_webs.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.master_of_webs.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": {
+				"translate": "badge.originstweaks.master_of_webs.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": {
+				"translate": "badge.originstweaks.master_of_webs.1"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.master_of_webs.2"
+			}
+		},
+		{
+			"type": "origins:crafting_recipe",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"prefix": {
+				"translate": "badge.originstweaks.master_of_webs.3.prefix"
+			},
+			"recipe": {
+				"id": "originstweaks:master_of_webs/web_crafting_badge",
+				"type": "minecraft:crafting_shapeless",
+				"ingredients": [
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					},
+					{
+						"item": "minecraft:string"
+					}
+				],
+				"result": {
+					"item": "minecraft:cobweb"
+				}
+			},
+			"suffix": {
+				"translate": "badge.originstweaks.master_of_webs.3.suffix"
+			}
+		}
+	],
+	"silk_resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 7,
+		"start_value": 7,
+		"hud_render": {
+			"bar_index": 5,
+			"order": 1,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_silk_resource",
+				"comparison": "!=",
+				"compare_to": 7
+			}
+		}
+	},
+	"silk_regenerate": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_silk_resource",
+			"change": 1
+		},
+		"interval": 100
+	},
+	"silk_sleep": {
+		"type": "origins:action_on_wake_up",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_silk_resource",
+			"change": 7,
+			"operation": "set"
+		}
+	},
+	"silk_respawn": {
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:change_resource",
+			"resource": "*:*_silk_resource",
+			"change": 7,
+			"operation": "set"
+		}
+	},
+	"web_shot": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:raycast",
+			"distance": 16,
+			"shape_type": "collider",
+			"hit_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:add_velocity",
+						"x": 0,
+						"y": 0.25,
+						"z": 1,
+						"client": false,
+						"space": "local",
+						"set": true
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "*:arachnid_advancements_webshot",
+						"change": 1,
+						"operation": "add"
+					},
+					{
+						"type": "origins:swing_hand",
+						"hand": "MAIN_HAND"
+					},
+					{
+						"type": "origins:change_resource",
+						"resource": "*:*_silk_resource",
+						"change": -1
+					}
+				]
+			},
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.item_frame.remove_item",
+					"category": "players"
+				}
+			},
+			"block_action": {
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:entity.item_frame.remove_item player @a"
+			},
+			"command_at_hit": "particle minecraft:block_marker minecraft:cobweb ~ ~ ~ 0 0 0 0.0 1 normal @a",
+			"command_along_ray": "particle minecraft:dust 1 1 1 1 ~ ~ ~ 0 0 0 0.1 1 normal @a",
+			"command_step": 0.1,
+			"command_along_ray_only_on_hit": true
+		},
+		"cooldown": 10,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": false
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:raycast",
+					"distance": 16,
+					"shape_type": "collider",
+					"block_condition": {
+						"type": "origins:fluid",
+						"fluid_condition": {
+							"type": "origins:empty"
+						}
+					}
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_silk_resource",
+					"comparison": ">=",
+					"compare_to": 1
+				}
+			]
+		}
+	},
+	"punch_through": {
+		"type": "origins:prevent_block_selection",
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "origins:cobwebs"
+		},
+		"condition": {
+			"type": "origins:sneaking",
+			"inverted": true
+		}
+	},
+	"climbing": {
+		"type": "origins:climbing",
+		"hold_condition": {
+			"type": "origins:sneaking",
+			"inverted": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:in_block_anywhere",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "origins:cobwebs"
+					}
+				},
+				{
+					"type": "origins:power_active",
+					"power": "*:climbing_toggle"
+				}
+			]
+		}
+	},
+	"web_crafting": {
+		"type": "origins:recipe",
+		"recipe": {
+			"id": "origins:master_of_webs/web_crafting",
+			"type": "minecraft:crafting_shapeless",
+			"ingredients": [
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				},
+				{
+					"item": "minecraft:string"
+				}
+			],
+			"result": {
+				"item": "minecraft:cobweb"
+			}
+		}
+	},
+	"cobweb_harvest": {
+		"type": "origins:modify_harvest",
+		"allow": true,
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:cobweb"
+		}
+	},
+	"cobweb_drop": {
+		"type": "origins:replace_loot_table",
+		"replace": {
+			"minecraft:blocks/cobweb": "originstweaks:blocks/arachnid_cobweb"
+		}
+	},
+	"cobweb_speed": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"name": "web harvest",
+			"operation": "set_total",
+			"value": 0.1
+		},
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:cobweb"
+		}
+	}
 }

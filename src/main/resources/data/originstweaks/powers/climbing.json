@@ -1,12 +1,18 @@
 {
 	"type": "origins:multiple",
-	"name": "Climbing",
-	"description": "You are able to climb up any kind of wall, not just ladders",
+	"name": {
+		"translate": "power.originstweaks.climbing.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.climbing.description"
+	},
 	"badges": [
 		{
-			"type": "origins:keybind",
+			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/toggle.png",
-			"text": "Toggle Climbing and Venom using [Secondary]."
+			"text": {
+				"translate": "badge.originstweaks.climbing.0"
+			}
 		}
 	],
 	"climbing": {
@@ -53,6 +59,7 @@
 		"hud_render": {
 			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
 			"bar_index": 4,
+			"order": 0,
 			"condition": {
 				"type": "origins:power_active",
 				"power": "*:*_toggle"

@@ -1,24 +1,28 @@
 {
-    "name": "Blazeborn [OT]",
-    "description": "Late descendants of the Blaze, the Blazeborn are naturally immune to the perils of the Nether.",
-    "icon": {
-        "item": "minecraft:blaze_powder"
-    },
-    "order": 1,
-    "impact": 3,
-    "loading_priority": 1,
-    "powers": [
-        "originstweaks:burning_wrath",
-        "originstweaks:firecharged_projectile",
-        "originstweaks:fire_immunity",
-        "origins:nether_spawn",
-        "origins:hotblooded",
-        "origins:water_vulnerability",
-        "originstweaks:water_cauldron",
-        "origins:damage_from_snowballs",
-        "origins:damage_from_potions",
-        "origins:flame_particles",
-        "originstweaks:blazeborn_sounds",
-        "originstweaks:blazeborn_advancements"
-    ]
+	"name": {
+		"translate": "origin.originstweaks.blazeborn.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.blazeborn.description"
+	},
+	"icon": {
+		"item": "minecraft:blaze_powder"
+	},
+	"order": 1,
+	"impact": 3,
+	"loading_priority": 1,
+	"powers": [
+		"originstweaks:burning_wrath",
+		"originstweaks:firecharged_projectile",
+		"originstweaks:fire_immunity",
+		"origins:nether_spawn",
+		"origins:hotblooded",
+		"origins:water_vulnerability",
+		"originstweaks:water_cauldron",
+		"origins:damage_from_snowballs",
+		"origins:damage_from_potions",
+		"origins:flame_particles",
+		"originstweaks:blazeborn_sounds",
+		"originstweaks:blazeborn_advancements"
+	]
 }

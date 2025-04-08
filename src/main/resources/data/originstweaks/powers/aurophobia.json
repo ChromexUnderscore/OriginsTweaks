@@ -1,180 +1,192 @@
 {
-    "type": "origins:multiple",
-    "name": "Aurophobia",
-    "description": "Gold has a repellent effect on your kind.",
-    "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot eat any golden food, wear golden armor, use golden tools or phase through gold blocks."
-        }
-    ],
-    "gold_diet": {
-        "name": "Aurophobia",
-        "type": "origins:prevent_item_use",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_food"
-            }
-        }
-    },
-    "gold_tools_attack": {
-        "type": "origins:modify_damage_dealt",
-        "modifier": {
-            "value": 0,
-            "operation": "set_total"
-        },
-        "condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "mainhand",
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "tag": "originstweaks:golden_tools"
-                        }
-                    }
-                },
-                {
-                    "type": "origins:and",
-                    "conditions": [
-                        {
-                            "type": "origins:equipped_item",
-                            "equipment_slot": "mainhand",
-                            "item_condition": {
-                                "type": "origins:ingredient",
-                                "ingredient": {
-                                    "tag": "originstweaks:golden_tools"
-                                },
-                                "inverted": true
-                            }
-                        },
-                        {
-                            "type": "origins:equipped_item",
-                            "equipment_slot": "offhand",
-                            "item_condition": {
-                                "type": "origins:ingredient",
-                                "ingredient": {
-                                    "tag": "originstweaks:golden_tools"
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    },
-    "gold_tools_mining": {
-        "type": "origins:modify_break_speed",
-        "modifier": {
-            "value": 0,
-            "operation": "set_total"
-        },
-        "condition": {
-            "type": "origins:equipped_item",
-            "equipment_slot": "mainhand",
-            "item_condition": {
-                "type": "origins:ingredient",
-                "ingredient": {
-                    "tag": "originstweaks:golden_tools"
-                }
-            }
-        }
-    },
-    "gold_tools_use": {
-        "type": "origins:prevent_item_use",
-        "name": "Aurophobia",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_tools"
-            }
-        }
-    },
-    "no_block_use": {
-        "type": "origins:prevent_block_use",
-        "block_condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:wood"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "originstweaks:copper"
-                },
-                {
-                    "type": "origins:in_tag",
-                    "tag": "minecraft:dirt"
-                }
-            ]
-        },
-        "condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "mainhand",
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "tag": "originstweaks:golden_tools"
-                        }
-                    }
-                },
-                {
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "offhand",
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "tag": "originstweaks:golden_tools"
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    "gold_armor_equip": {
-        "type": "origins:conditioned_restrict_armor",
-        "head": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "chest": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "legs": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "feet": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        },
-        "tick_rate": 5
-    },
-    "gold_armor_use": {
-        "name": "Aurophobia",
-        "type": "origins:prevent_item_use",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "originstweaks:golden_armor"
-            }
-        }
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.aurophobia.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.aurophobia.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.aurophobia.0"
+			}
+		}
+	],
+	"gold_diet": {
+		"name": {
+			"translate": "power.originstweaks.aurophobia.name"
+		},
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_food"
+			}
+		}
+	},
+	"gold_tools_attack": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"value": 0,
+			"operation": "set_total"
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:golden_tools"
+						}
+					}
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "mainhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"tag": "originstweaks:golden_tools"
+								},
+								"inverted": true
+							}
+						},
+						{
+							"type": "origins:equipped_item",
+							"equipment_slot": "offhand",
+							"item_condition": {
+								"type": "origins:ingredient",
+								"ingredient": {
+									"tag": "originstweaks:golden_tools"
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	"gold_tools_mining": {
+		"type": "origins:modify_break_speed",
+		"modifier": {
+			"value": 0,
+			"operation": "set_total"
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "originstweaks:golden_tools"
+				}
+			}
+		}
+	},
+	"gold_tools_use": {
+		"name": {
+			"translate": "power.originstweaks.aurophobia.name"
+		},
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_tools"
+			}
+		}
+	},
+	"no_block_use": {
+		"type": "origins:prevent_block_use",
+		"block_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:in_tag",
+					"tag": "originstweaks:wood"
+				},
+				{
+					"type": "origins:in_tag",
+					"tag": "originstweaks:copper"
+				},
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:dirt"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:golden_tools"
+						}
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"tag": "originstweaks:golden_tools"
+						}
+					}
+				}
+			]
+		}
+	},
+	"gold_armor_equip": {
+		"type": "origins:conditioned_restrict_armor",
+		"head": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_armor"
+			}
+		},
+		"chest": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_armor"
+			}
+		},
+		"legs": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_armor"
+			}
+		},
+		"feet": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_armor"
+			}
+		},
+		"tick_rate": 5
+	},
+	"gold_armor_use": {
+		"name": {
+			"translate": "power.originstweaks.aurophobia.name"
+		},
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "originstweaks:golden_armor"
+			}
+		}
+	}
 }

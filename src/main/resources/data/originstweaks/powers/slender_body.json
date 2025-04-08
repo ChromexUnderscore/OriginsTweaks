@@ -1,0 +1,171 @@
+{
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.ender_body.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.ender_body.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.ender_body.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": {
+				"translate": "badge.originstweaks.ender_body.1"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.ender_body.2"
+			}
+		}
+	],
+	"scale": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:delay",
+			"ticks": 3,
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "scale set pehkui:height 1.29"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "scale set pehkui:model_width 1.2"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "scale set pehkui:eye_height 0.95"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "scale set pehkui:reach 1.5"
+					}
+				]
+			}
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "scale reset @s"
+		}
+	},
+	"silk_touch": {
+		"type": "origins:modify_enchantment_level",
+		"enchantment": "minecraft:silk_touch",
+		"modifier": {
+			"operation": "set_total",
+			"value": 1
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "minecraft:tools"
+				},
+				"inverted": true
+			}
+		}
+	},
+	"harvest": {
+		"type": "origins:modify_harvest",
+		"allow": true,
+		"block_condition": {
+			"type": "origins:constant",
+			"value": true
+		}
+	},
+	"projectile_dodge": {
+		"type": "origins:modify_damage_taken",
+		"self_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:random_teleport",
+					"area_width": 8,
+					"area_height": 8,
+					"landing_block_condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "origins:block",
+								"block": "minecraft:bedrock"
+							},
+							{
+								"type": "origins:block",
+								"block": "minecraft:air"
+							},
+							{
+								"type": "origins:fluid",
+								"fluid_condition": {
+									"type": "origins:still"
+								}
+							}
+						],
+						"inverted": true
+					},
+					"success_action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:spawn_particles",
+								"particle": "minecraft:portal",
+								"count": 100,
+								"speed": 0.5,
+								"offset_y": 1
+							},
+							{
+								"type": "origins:grant_advancement",
+								"advancement": "originstweaks:enderian/dodge_projectile"
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.enderman.teleport",
+								"category": "players"
+							},
+							{
+								"type": "origins:trigger_cooldown",
+								"power": "*:*_dodge_cooldown"
+							}
+						]
+					}
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:projectile"
+		},
+		"modifier": {
+			"name": "minimal projectile damage",
+			"operation": "set_total",
+			"value": 0
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_dodge_cooldown",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	},
+	"dodge_cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 100,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 2
+		}
+	}
+}

@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Elytrian"
-        },
-        "description": {
-            "text": "You chose the Elytrian Origin."
-        },
-        "icon": {
-            "item": "minecraft:elytra"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true,
-        "background": "minecraft:textures/block/glowstone.png"
-    },
-    "criteria": {
-        "chose_elytrian": {
-            "trigger": "minecraft:impossible"
-        }
-    }
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.elytrian.root.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.elytrian.root.description"
+		},
+		"icon": {
+			"item": "minecraft:elytra"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true,
+		"background": "minecraft:textures/block/glowstone.png"
+	},
+	"criteria": {
+		"chose_elytrian": {
+			"trigger": "minecraft:impossible"
+		}
+	}
 }

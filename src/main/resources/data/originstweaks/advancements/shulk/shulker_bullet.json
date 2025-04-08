@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Friendly Fire"
-        },
-        "description": {
-            "text": "As Shulk, get hit by another Shulkers Bullet"
-        },
-        "icon": {
-            "item": "minecraft:bow"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "hit_by_bullet": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:shulk/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.shulk.shulker_bullet.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.shulk.shulker_bullet.description"
+		},
+		"icon": {
+			"item": "minecraft:bow"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"hit_by_bullet": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:shulk/root"
 }

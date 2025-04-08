@@ -1,32 +1,38 @@
 {
-    "type": "origins:multiple",
-    "name": "Firecharged",
-    "description": "You can attack foes with a burst of Fireballs.",
-    "badges": [
-        {
-            "type": "origins:keybind",
-            "sprite": "origins:textures/gui/badge/active.png",
-            "text": "Shoot a burst of 3 Fireballs with [Secondary]."
-        }
-    ],
-    "fireballs": {
-        "type": "origins:fire_projectile",
-        "entity_type": "small_fireball",
-        "cooldown": 200,
-        "hud_render": {
-            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-            "bar_index": 7
-        },
-        "count": 3,
-        "interval": 5,
-        "start_delay": 5,
-        "speed": 1,
-        "divergence": 1,
-        "sound": "entity.blaze.shoot",
-        "tag": "{NoGravity:1b}",
-        "key": {
-            "key": "key.origins.secondary_active",
-            "continuous": false
-        }
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.firecharged_projectile.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.firecharged_projectile.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": {
+				"translate": "badge.originstweaks.firecharged_projectile.0"
+			}
+		}
+	],
+	"fireballs": {
+		"type": "origins:fire_projectile",
+		"entity_type": "small_fireball",
+		"cooldown": 200,
+		"hud_render": {
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 7
+		},
+		"count": 3,
+		"interval": 5,
+		"start_delay": 5,
+		"speed": 1,
+		"divergence": 1,
+		"sound": "entity.blaze.shoot",
+		"tag": "{NoGravity:1b}",
+		"key": {
+			"key": "key.origins.secondary_active",
+			"continuous": false
+		}
+	}
 }

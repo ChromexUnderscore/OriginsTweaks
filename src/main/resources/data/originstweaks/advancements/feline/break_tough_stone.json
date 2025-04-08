@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "You're a stubborn one"
-        },
-        "description": {
-            "text": "Break a tough block using Strength or Efficiency"
-        },
-        "icon": {
-            "item": "minecraft:obsidian"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "c1": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-      },
-    "parent": "originstweaks:feline/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.feline.break_tough_stone.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.feline.break_tough_stone.description"
+		},
+		"icon": {
+			"item": "minecraft:obsidian"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	  },
+	"parent": "originstweaks:feline/root"
 }

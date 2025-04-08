@@ -1,21 +1,25 @@
 {
-    "name": "Feline [OT]",
-    "description": "With their cat-like appearance, the Feline scare creepers away. With the dexterity of cats, they always land safely on their feet.",
-    "icon": {
-        "item": "minecraft:salmon"
-    },
-    "order": 0,
-    "impact": 2,
-    "loading_priority": 1,
-    "powers": [
-        "originstweaks:natural_hunter",
-        "originstweaks:dexterity",
-        "originstweaks:weak_arms",
-        "origins:velvet_paws",
-        "origins:nine_lives",
-        "origins:scare_creepers",
-        "originstweaks:cat_vision",
-        "originstweaks:feline_sounds",
-        "originstweaks:feline_advancements"
-    ]
+	"name": {
+		"translate": "origin.originstweaks.feline.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.feline.description"
+	},
+	"icon": {
+		"item": "minecraft:orange_wool"
+	},
+	"order": 0,
+	"impact": 2,
+	"loading_priority": 1,
+	"powers": [
+		"originstweaks:natural_hunter",
+		"originstweaks:dexterity",
+		"originstweaks:weak_arms",
+		"origins:velvet_paws",
+		"origins:nine_lives",
+		"origins:scare_creepers",
+		"originstweaks:cat_vision",
+		"originstweaks:feline_sounds",
+		"originstweaks:feline_advancements"
+	]
 }

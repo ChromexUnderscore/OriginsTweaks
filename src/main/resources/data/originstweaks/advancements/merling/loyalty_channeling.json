@@ -1,27 +1,27 @@
 {
-    "display": {
-        "title": {
-            "text": "Odinson"
-        },
-        "description": {
-            "text": "Enchant a Trident with Channeling and Loyalty 3"
-        },
-        "icon": {
-            "item": "minecraft:trident",
-            "nbt": "{Enchantments:[{lvl:1,id:channeling},{lvl:3,id:loyalty}]}"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "loyalty_channeling": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-    },
-    "parent": "originstweaks:merling/clear_monument"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.merling.loyalty_channeling.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.merling.loyalty_channeling.description"
+		},
+		"icon": {
+			"item": "minecraft:trident",
+			"nbt": "{Enchantments:[{lvl:1,id:channeling},{lvl:3,id:loyalty}]}"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"loyalty_channeling": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	},
+	"parent": "originstweaks:merling/clear_monument"
 }

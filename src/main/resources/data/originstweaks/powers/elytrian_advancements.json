@@ -1,116 +1,116 @@
 {
-    "type": "origins:multiple",
-    "hidden": true,
-    "root": {
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:elytrian/root"
-        }
-    },
-    "crash": {
-        "type": "origins:action_when_damage_taken",
-        "entity_action": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:elytrian/crash"
-        },
-        "cooldown": 0,
-        "hud_render": {
-            "should_render": false
-        },
-        "damage_condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:amount",
-                    "compare_to": 14,
-                    "comparison": ">="
-                },
-                {
-                    "type": "origins:or",
-                    "conditions": [
-                        {
-                            "type": "origins:type",
-                            "damage_type": "minecraft:fly_into_wall"
-                        },
-                        {
-                            "type": "origins:type",
-                            "damage_type": "minecraft:fall"
-                        }
-                    ]
-                }
-            ]
-        },
-        "condition": {
-            "type": "origins:fall_flying"
-        }
-    },
-    "flight_ranged_attack": {
-        "type": "origins:self_action_on_hit",
-        "entity_action": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:elytrian/flight_ranged_attack"
-        },
-        "cooldown": 0,
-        "hud_render": {
-            "should_render": false
-        },
-        "damage_condition": {
-            "type": "origins:projectile"
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:aerial_combatant_flight_counter",
-            "compare_to": 15,
-            "comparison": "=="
-        }
-    },
-    "player_mount": {
-        "type": "origins:action_over_time",
-        "rising_action": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:elytrian/player_mount"
-        },
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:fall_flying"
-                },
-                {
-                    "type": "origins:passenger",
-                    "bientity_condition": {
-                        "type": "origins:actor_condition",
-                        "condition": {
-                            "type": "origins:entity_type",
-                            "entity_type": "minecraft:player"
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    "y_700": {
-        "type": "origins:action_over_time",
-        "rising_action": {
-            "type": "origins:grant_advancement",
-            "advancement": "originstweaks:elytrian/y_700"
-        },
-        "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:fall_flying"
-                },
-                {
-                    "type": "origins:in_block_anywhere",
-                    "block_condition": {
-                        "type": "origins:height",
-                        "comparison": ">=",
-                        "compare_to": 700
-                    }
-                }
-            ]
-        }
-    }
+	"type": "origins:multiple",
+	"hidden": true,
+	"root": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:elytrian/root"
+		}
+	},
+	"crash": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:elytrian/crash"
+		},
+		"cooldown": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"damage_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:amount",
+					"compare_to": 14,
+					"comparison": ">="
+				},
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:type",
+							"damage_type": "minecraft:fly_into_wall"
+						},
+						{
+							"type": "origins:type",
+							"damage_type": "minecraft:fall"
+						}
+					]
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:fall_flying"
+		}
+	},
+	"flight_ranged_attack": {
+		"type": "origins:self_action_on_hit",
+		"entity_action": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:elytrian/flight_ranged_attack"
+		},
+		"cooldown": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"damage_condition": {
+			"type": "origins:projectile"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:aerial_combatant_flight_counter",
+			"compare_to": 15,
+			"comparison": "=="
+		}
+	},
+	"player_mount": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:elytrian/player_mount"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_flying"
+				},
+				{
+					"type": "origins:passenger",
+					"bientity_condition": {
+						"type": "origins:actor_condition",
+						"condition": {
+							"type": "origins:entity_type",
+							"entity_type": "minecraft:player"
+						}
+					}
+				}
+			]
+		}
+	},
+	"y_700": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:grant_advancement",
+			"advancement": "originstweaks:elytrian/y_700"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_flying"
+				},
+				{
+					"type": "origins:in_block_anywhere",
+					"block_condition": {
+						"type": "origins:height",
+						"comparison": ">=",
+						"compare_to": 700
+					}
+				}
+			]
+		}
+	}
 }

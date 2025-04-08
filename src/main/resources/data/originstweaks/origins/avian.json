@@ -1,22 +1,26 @@
 {
-    "name": "Avian [OT]",
-    "description": "The Avian race has lost their ability to fly a long time ago. Now these peaceful creatures can be seen gliding from one place to another.",
-    "icon": {
-        "item": "minecraft:feather"
-    },
-    "order": 0,
-    "impact": 1,
-    "loading_priority": 1,
-    "powers": [
-        "originstweaks:slow_falling",
-        "originstweaks:animal_friendship",
-        "originstweaks:green_thumb",
-        "origins:tailwind",
-        "origins:like_air",
-        "origins:vegetarian",
-        "origins:fresh_air",
-        "origins:lay_eggs",
-        "originstweaks:avian_sounds",
-        "originstweaks:avian_advancements"
-    ]
+	"name": {
+		"translate": "origin.originstweaks.avian.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.avian.description"
+	},
+	"icon": {
+		"item": "minecraft:feather"
+	},
+	"order": 0,
+	"impact": 1,
+	"loading_priority": 1,
+	"powers": [
+		"originstweaks:slow_falling",
+		"originstweaks:animal_friendship",
+		"originstweaks:green_thumb",
+		"origins:tailwind",
+		"origins:like_air",
+		"origins:vegetarian",
+		"origins:fresh_air",
+		"origins:lay_eggs",
+		"originstweaks:avian_sounds",
+		"originstweaks:avian_advancements"
+	]
 }

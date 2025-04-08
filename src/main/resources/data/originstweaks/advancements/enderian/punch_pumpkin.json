@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Pumpkin Puncher"
-        },
-        "description": {
-            "text": "Punch a player or mob that is wearing a Carved Pumpkin"
-        },
-        "icon": {
-            "item": "minecraft:carved_pumpkin"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "punch_pumpkin": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:enderian/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.enderian.punch_pumpkin.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.enderian.punch_pumpkin.description"
+		},
+		"icon": {
+			"item": "minecraft:carved_pumpkin"
+		},
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"punch_pumpkin": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:enderian/root"
 }

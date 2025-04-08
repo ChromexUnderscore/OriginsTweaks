@@ -1,17 +1,25 @@
 {
 	"type": "origins:multiple",
-	"name": "Phasing",
-	"description": "While phantomized, you can move through solid material, except Obsidian and solid Gold Blocks.",
+	"name": {
+		"translate": "power.originstweaks.phasing.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.phasing.description"
+	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/arrow_up.png",
-			"text": "Phasing drains your soul energy quickly, keep an eye on it!"
+			"text": {
+				"translate": "badge.originstweaks.phasing.0"
+			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
-			"text": "You cannot sprint, swim, fly, attack, or interact with blocks while fully phasing."
+			"text": {
+				"translate": "badge.originstweaks.phasing.1"
+			}
 		}
 	],
 	"phase": {
@@ -64,20 +72,6 @@
 		}
 	},
 	"drain_soul_power": {
-		"type": "origins:action_over_time",
-		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "*:soulbound_energy",
-			"change": -1,
-			"operation": "add"
-		},
-		"interval": 50,
-		"condition": {
-			"type": "origins:power_active",
-			"power": "*:phantomize"
-		}
-	},
-	"drain_soul_power_phasing": {
 		"type": "origins:action_over_time",
 		"entity_action": {
 			"type": "origins:change_resource",

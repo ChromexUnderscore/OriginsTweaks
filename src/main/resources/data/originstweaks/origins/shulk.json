@@ -1,20 +1,25 @@
 {
-    "name": "Shulk [OT]",
-    "description": "Related to Shulkers, the bodies of the Shulk are outfitted with a protective shell-like skin.",
-    "icon": {
-        "item": "minecraft:shulker_shell"
-    },
-    "order": 4,
-    "impact": 1,
-    "loading_priority": 1,
-    "powers": [
-        "origins:shulker_inventory",
-        "originstweaks:natural_armor",
-        "origins:strong_arms",
-        "origins:strong_arms_break_speed",
-        "origins:no_shield",
-        "origins:more_exhaustion",
-        "originstweaks:shulk_sounds",
-        "originstweaks:shulk_advancements"
-    ]
+	"name": {
+		"translate": "origin.originstweaks.shulk.name"
+	},
+	"description": {
+		"translate": "origin.originstweaks.shulk.description"
+	},
+	"icon": {
+		"item": "minecraft:shulker_shell"
+	},
+	"order": 4,
+	"impact": 1,
+	"loading_priority": 1,
+	"powers": [
+		"origins:shulker_inventory",
+		"originstweaks:natural_armor",
+		"originstweaks:antigravity_pellet",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed",
+		"origins:no_shield",
+		"origins:more_exhaustion",
+		"originstweaks:shulk_sounds",
+		"originstweaks:shulk_advancements"
+	]
 }

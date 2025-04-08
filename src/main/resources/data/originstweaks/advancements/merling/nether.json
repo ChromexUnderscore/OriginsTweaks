@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Hostile Environment"
-        },
-        "description": {
-            "text": "As Merling, enter the Nether"
-        },
-        "icon": {
-            "item": "minecraft:netherrack"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "reach_nether": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:merling/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.merling.nether.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.merling.nether.description"
+		},
+		"icon": {
+			"item": "minecraft:netherrack"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"reach_nether": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:merling/root"
 }

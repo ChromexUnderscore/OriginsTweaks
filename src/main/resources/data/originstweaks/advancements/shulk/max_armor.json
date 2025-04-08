@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Topped Off"
-        },
-        "description": {
-            "text": "Equip Armor and charge Sturdy Skin until you reach 30 Armor Points"
-        },
-        "icon": {
-            "item": "minecraft:iron_chestplate"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "30_armor": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:shulk/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.shulk.max_armor.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.shulk.max_armor.description"
+		},
+		"icon": {
+			"item": "minecraft:iron_chestplate"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"30_armor": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:shulk/root"
 }

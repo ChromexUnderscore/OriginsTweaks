@@ -1,14 +1,14 @@
 {
-    "replace": false,
-    "values": [
-        "#minecraft:logs",
-        {
-            "id": "#originstweaks:wood/cinderscapes",
-            "required": false
-        },
-        {
-            "id": "#originstweaks:wood/terrestria",
-            "required": false
-        }
-    ]
+	"replace": false,
+	"values": [
+		"#minecraft:logs",
+		{
+			"id": "#originstweaks:wood/cinderscapes",
+			"required": false
+		},
+		{
+			"id": "#originstweaks:wood/terrestria",
+			"required": false
+		}
+	]
 }

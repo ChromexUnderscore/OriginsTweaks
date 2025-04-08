@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Enderian"
-        },
-        "description": {
-            "text": "You chose the Enderian Origin."
-        },
-        "icon": {
-            "item": "minecraft:ender_eye"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true,
-        "background": "minecraft:textures/block/end_stone.png"
-    },
-    "criteria": {
-        "chose_enderian": {
-            "trigger": "minecraft:impossible"
-        }
-    }
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.enderian.root.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.enderian.root.description"
+		},
+		"icon": {
+			"item": "minecraft:ender_eye"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true,
+		"background": "minecraft:textures/block/end_stone.png"
+	},
+	"criteria": {
+		"chose_enderian": {
+			"trigger": "minecraft:impossible"
+		}
+	}
 }

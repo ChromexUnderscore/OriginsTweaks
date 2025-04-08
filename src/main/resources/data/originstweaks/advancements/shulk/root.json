@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Shulk"
-        },
-        "description": {
-            "text": "You chose the Shulk Origin."
-        },
-        "icon": {
-            "item": "minecraft:shulker_shell"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true,
-        "background": "minecraft:textures/block/purpur_block.png"
-    },
-    "criteria": {
-        "chose_shulk": {
-            "trigger": "minecraft:impossible"
-        }
-    }
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.shulk.root.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.shulk.root.description"
+		},
+		"icon": {
+			"item": "minecraft:shulker_shell"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true,
+		"background": "minecraft:textures/block/purpur_block.png"
+	},
+	"criteria": {
+		"chose_shulk": {
+			"trigger": "minecraft:impossible"
+		}
+	}
 }

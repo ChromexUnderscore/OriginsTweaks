@@ -1,25 +1,25 @@
 {
-    "type": "origins:multiple",
-    "hidden": true,
-    "hurt_death": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:if_else",
-            "condition": {
-                "type": "origins:health",
-                "comparison": ">",
-                "compare_to": 0
-            },
-            "if_action": {
-                "type": "origins:play_sound",
-                "sound": "minecraft:entity.cod.hurt"
-            },
-            "else_action": {
-                "type": "origins:play_sound",
-                "sound": "minecraft:entity.cod.death"
-            }
+	"type": "origins:multiple",
+	"hidden": true,
+	"hurt_death": {
+		"type": "origins:self_action_when_hit",
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:health",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			"if_action": {
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.cod.hurt"
+			},
+			"else_action": {
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.cod.death"
+			}
 
-        },
-        "cooldown": 1
-    }
+		},
+		"cooldown": 1
+	}
 }

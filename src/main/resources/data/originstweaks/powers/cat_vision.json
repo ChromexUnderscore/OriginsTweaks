@@ -1,18 +1,24 @@
 {
-    "type": "origins:toggle_night_vision",
-    "name": "Nocturnal",
-    "description": "You can see in the dark.",
-    "badges": [
-        {
-            "type": "origins:keybind",
-            "sprite": "origins:textures/gui/badge/toggle.png",
-            "text": "Toggle with [Secondary]."
-        }
-    ],
-    "strength": 0.4,
-    "active_by_default": true,
-    "key": {
-        "key": "key.origins.secondary_active",
-        "continuous": false
-    }
+	"type": "origins:toggle_night_vision",
+	"name": {
+		"translate": "power.originstweaks.cat_vision.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.cat_vision.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/toggle.png",
+			"text": {
+				"translate": "badge.originstweaks.cat_vision.0"
+			}
+		}
+	],
+	"strength": 0.4,
+	"active_by_default": true,
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	}
 }

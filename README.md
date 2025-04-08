@@ -1,6 +1,6 @@
 # OriginsTweaks
 
-Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/mod/origins) and adds new ones.
+An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Default Origins and adds new abilities.
 
 <a href="https://modrinth.com/mod/originstweaks"><img src="https://img.shields.io/badge/Available_on-Modrinth-%2300AF5C?logo=modrinth&logoColor=%2300AF5C"></a>
 <a href="https://github.com/ChromexUnderscore/OriginsTweaks"><img src="https://img.shields.io/badge/Available_on-GitHub-%23181717?logo=github&logoColor=%23181717"></a>
@@ -10,120 +10,133 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
 <a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
 
+OriginsTweaks currently offers translations for following Languages:
++ English (US)
++ English (United Kingdom)
++ German
++ Joke Languages:
+    + Shakespearean English
+    + Pirate Speak
+    + LOLCAT
 
-## Changes to Origins
+## Changes and Additions
+
+For detailed changes to Abilities from the Origins Mod and New Abilities added by OriginsTweaks, check out the [OriginsTweaks Wiki](https://github.com/ChromexUnderscore/OriginsTweaks/wiki).
+
+#### Summary
 
 <details><summary>Avian</summary>
 
-+ Avians can tame animals by using the primary action key, and certain animals such will automatically trust the avian.
-+ Avians receive more drops from harvesting crops using a hoe, and have a chance to receive golden carrots, apples and glistering melons on harvesting the respective crops.
-+ Glistering Melons are edible.
-+ Slow falling can be toggled.
++ Avians can tame animals, and some animals will automatically trust them.
++ When harvesting crops with a hoe, Avians get more drops and have a chance for golden variants.
++ Glistering Melons can be eaten.
++ Avians can toggle Slow Falling on or off.
 
 </details>
 
 <details><summary>Arachnid</summary>
 
-+ The Arachnid has a webshot ability built into Master of Webs.
-  + The webshot is fired using the Primary Action Key, grappling towards whatever was hit within a range of 16 blocks.
-  + Webshot consumes a part of the Silk bar, which regenerates over time.
-+ Arachnids have a small chance to inflict 5 seconds of poison (~2 Hearts total) on melee attack.
-  + This replaces close combat Webbing.
-+ Climbing no longer slows down mining speed.
-  + Climbing and Venom abilities can be toggled with the Secondary Action Key.
-+ Arachnids are shorter and can fit into 1-block gaps when sneaking.
-+ Fall damage is only taken after a fall greater than 16 Blocks.
-+ Arachnids can craft 9 strings into cobweb and cobweb back into 9 string.
-+ Cobwebs can be broken by hand and always return 9 string.
++ Arachnids can use a webshot to pull themselves towards mobs and blocks.
++ Arachnid melee attacks have a chance to inflict poison.
++ Mining speed is no longer slowed while climbing.
++ Arachnids are shorter and can fit through 1-block spaces while sneaking.
++ Fall damage is only taken from falls greater than 16 blocks.
++ Arachnids can craft 9 string into 1 cobweb.
 
 </details>
 
 <details><summary>Elytrian</summary>
 
-+ Elytrians can pick between vanilla elytra rendering, a custom wing texture exclusive to their Elytra or no wing rendering.
-  + A template for custom wings is appended in modrinth and github releases.
-+ Pressing the Primary Action Key will launch them to the sky or ascend if gliding.
-  + Elytrians have limited stamina used for ascending and launching.
-  + Heavy Armor (13+ Armor) weakens effects of the ascend / launch ability and costs more stamina.
-  + 20 Armor or higher prevents launch and ascend.
-+ Gliding now also grants a +50% ranged damage boost.
-+ Players can right click an elytrian to mount them, but get kicked off if the elytrian crashes into terrain, gets hit by a projectile or uses the secondary key.
-  + Ability contributed by AnimGoated.
++ Elytrians can choose different visual styles for their elytra.
++ They can launch into the sky from the ground or ascend while gliding, which consumes stamina.
++ Elytrians can wear any armor, but Heavy Armor reduces or prevents the ascend/launch ability and costs more stamina.
++ Gliding now also provides a +50% damage boost to ranged attacks.
++ Players can right-click an Elytrian to ride and fly with them.
 
 </details>
 
 <details><summary>Shulk</summary>
 
-+ Shulks have a base armor of 3. 
-+ Sneaking grants up to 7 bonus defense
-  + 1 bonus defense is lost and buildup is disabled for 30 seconds when taking a heavy hit (> 3 Hearts).
++ Shulks have a base armor value of 3.
++ While sneaking, Shulks gain up to 7 additional defense.
+  + 1 bonus defense is lost if they take a hit dealing more than 3 hearts of damage.
++ Shulks can shoot shulker bullets or apply levitation to themselves.
 
 </details>
 
 <details><summary>Feline</summary>
 
-+ Claws deal increased base damage, but need to be sharpened using logs or wool > smooth stone > iron blocks > diamond blocks.
++ Feline can attack with claws but they need to be sharpened using blocks in this order:
+  - Logs or wool
+  - Smooth stone, Polished stones
+  - Iron blocks
+  - Diamond blocks
 + Felines can charge a high jump by sneaking.
-+ The Feline breaks stone 50% slower when not under the effect of strength or using a pickaxe with efficiency. Some tough stone variants can't be broken without strength or efficiency.
-+ Food made from Fish is more nourishing.
-+ Night Vision is toggleable.
++ Felines break stone 50% slower.
+  + Some tough stone types cannot be broken.
+  + This can be worked around using strength or efficiency.
++ Food made from Fish provides more hunger and saturation to Felines.
++ Felines can toggle Night Vision on or off.
 
 </details>
 
 <details><summary>Enderian</summary>
 
-+ Height, eye height and reach are increased.
-+ Enderians will dodge smaller projectiles on a cooldown.
-+ Teleporting via pearl grants an invincibility window against suffocation.
-+ Enderians can silk touch blocks if not holding any tools.
++ Enderians have increased height and reach.
++ Enderians will dodge incoming projectiles.
++ Teleporting with an ender pearl grants an invincibility window against suffocation.
++ Enderians can use Silk Touch on blocks if they are not holding any tools.
 
-</details> 
+</details>
 
 <details><summary>Merling</summary>
 
 + Merlings can [craft tridents](https://cdn.modrinth.com/data/FRBxogjw/images/2d0819e26f5afce6716b9584f21c022b9175bc86.png).
-+ Merlings now have a body moisture resource to manage in order to not dry out.
-+ Conduit Power lasts longer and delays drying out.
-+ Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
-+ Merlings can dash underwater while swimming on a cooldown.
-+ Merling's Natural Spawn point is located in ocean biomes.
++ Merlings have a body moisture level they must manage to avoid drying out.
++ Conduit Power lasts longer for Merlings and delays drying out.
++ Trident projectile and melee attacks deal more damage if the Merling is underwater.
++ Merlings can dash forward underwater while swimming.
++ Merlings naturally spawn in ocean biomes.
 
 </details>
-
 <details><summary>Blazeborn</summary>
 
-+ Burning Wrath has been reworked.
-  + Pressing the Primary Key catches the Blazeborn on Fire for 30 seconds.
-    + Can light Campfires, Fuel Furnei and Brewing stands while lit on fire.
-+ Blazeborn move slightly faster through lava, have improved vision and can swim if submerged.
-+ Blazeborns shoot a burst of 3 Fireballs with the Secondary Action Key.
++ Blazeborn can set themselves on fire.
+  + While on fire, they can light Campfires, Furnaces, and Brewing Stands.
+  + In addition to a 25% damage increase, hitting targets causes them to burn for 8 seconds.
++ Blazeborn move slightly faster in lava, have better vision, and can swim when submerged.
++ Blazeborn can shoot a burst of 3 Fireballs.
 
 </details>
 
 <details><summary>Phantom</summary>
 
-+ Phantoms cannot sprint while phasing; phasing up and down is now smoother.
-+ Phantom Form and phasing use a soul energy bar instead of hunger.
-  + Actively phasing will drain soul energy much quicker than just using phantom form.
-  + Regenerates naturally, but can be accelerated by killing mobs or being around soul fire.
-+ Golden items and blocks have a repelling effect on phantoms.
-  + Can't eat golden food.
-  + Can't wear golden Armor.
-  + Golden tools are useless.
-  + Can't phase through pure golden blocks.
-+ Phantoms can sense mobs and players in a 32 block radius for 10 seconds using the secondary action key.
++ Phantom Form and phasing consume soul energy instead of hunger.
++ Actively phasing drains soul energy much faster than simply using phantom form.
++ Soul Energy regenerates naturally but regenerates faster when killing mobs or being near soul fire.
++ Golden items and blocks repel phantoms.
+  + Phantoms cannot eat golden food.
+  + Phantoms cannot wear golden armor.
+  + Phantoms cannot use golden tools.
+  + Phantoms cannot phase through solid gold blocks.
++ Phantoms can sense the location of mobs and players behind walls by making them glow.
 
 </details>
 
+
 ## Built-in Mod Compat
 
-+ Wood Types from [Terrestria](https://modrinth.com/mod/terrestria).
-+ Wood Types from [Cinderscapes](https://modrinth.com/mod/cinderscapes).
-+ Monuments from [Yung's Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments).
-+ Using [Overgrown's Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide conventional tagging of various foods.
++ OriginsTweaks displays as an Addon under Origins in [Modmenu](https://modrinth.com/mod/modmenu).
++ Wood Types from [Terrestria](https://modrinth.com/mod/terrestria) and [Cinderscapes](https://modrinth.com/mod/cinderscapes).
++ Ocean Monuments from [Yung's Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments).
++ Using [Overgrown's Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide tagging of various modded foods.
 
-## Bugs & Suggestions
+## Bugs, Suggestions & Contribution
 
-Found a bug, want to request a feature / mod compatibility or have any other questions?
+Found a bug, have a suggestion, or want to request mod compatibility?
+
+Want to help develop OriginsTweaks or add translations?
+
+Have other questions?
 
 [Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)

@@ -1,23 +1,23 @@
 {
-    "display": {
-        "title": {
-            "text": "Safe and Snug"
-        },
-        "description": {
-            "text": "Wake up after sleeping in a village with an iron golem nearby"
-        },
-        "icon": {
-            "item": "minecraft:feather"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "wall_jumps": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "parent": "originstweaks:feline/root"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.feline.sleep_in_village.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.feline.sleep_in_village.description"
+		},
+		"icon": {
+			"item": "minecraft:feather"
+		},
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"wall_jumps": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "originstweaks:feline/root"
 }

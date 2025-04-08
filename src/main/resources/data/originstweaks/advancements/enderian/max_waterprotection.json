@@ -1,26 +1,26 @@
 {
-    "display": {
-        "title": {
-            "text": "Waterproof"
-        },
-        "description": {
-            "text": "Equip a piece of armor with Water Protection IV"
-        },
-        "icon": {
-            "item": "minecraft:enchanted_book"
-        },
-        "frame": "goal",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "criteria": {
-        "max_waterprotection": {
-            "trigger": "minecraft:impossible"
-        }
-    },
-    "rewards": {
-        "experience": 100
-      },
-    "parent": "originstweaks:enderian/rain"
+	"display": {
+		"title": {
+			"translate": "advancement.originstweaks.enderian.max_waterprotection.title"
+		},
+		"description": {
+			"translate": "advancement.originstweaks.enderian.max_waterprotection.description"
+		},
+		"icon": {
+			"item": "minecraft:enchanted_book"
+		},
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"criteria": {
+		"max_waterprotection": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"experience": 100
+	  },
+	"parent": "originstweaks:enderian/rain"
 }

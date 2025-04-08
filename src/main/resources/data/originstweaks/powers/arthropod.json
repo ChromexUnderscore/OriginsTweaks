@@ -1,57 +1,67 @@
 {
-    "type": "origins:multiple",
-    "name": "Arthopod",
-    "description": "You are an Arthopod, making you shorter and able to feather off your fall.",
-    "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You are 1.5 Blocks tall."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/arrow_up.png",
-            "text": "You only take damage after a fall of more than 16 Blocks."
-        },
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/star.png",
-            "text": "You are part of the arthropod group, thus Bane of Arthropods will harm you."
-        }
-    ],
-    "scale": {
-        "type": "origins:action_on_callback",
-        "entity_action_added": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:height 0.66"
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "scale set pehkui:width 0.66"
-                }
-            ]
-        },
-        "entity_action_lost": {
-            "type": "origins:execute_command",
-            "command": "scale reset @s"
-        }
-    },
-    "entity_group": {
-        "type": "origins:entity_group",
-        "group": "arthropod"
-    },
-    "fall_damage_reduction": {
-        "type": "origins:modify_damage_taken",
-        "damage_condition": {
-            "type": "origins:name",
-            "name": "fall"
-        },
-        "modifier": {
-            "operation": "add_base_early",
-            "value": -13
-        }
-    }
+	"type": "origins:multiple",
+	"name": {
+		"translate": "power.originstweaks.arthropod.name"
+	},
+	"description": {
+		"translate": "power.originstweaks.arthropod.description"
+	},
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": {
+				"translate": "badge.originstweaks.arthropod.0"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/arrow_up.png",
+			"text": {
+				"translate": "badge.originstweaks.arthropod.1"
+			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/star.png",
+			"text": {
+				"translate": "badge.originstweaks.arthropod.2"
+			}
+		}
+	],
+	"scale": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 0.66"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 0.66"
+				}
+			]
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "scale reset @s"
+		}
+	},
+	"entity_group": {
+		"type": "origins:entity_group",
+		"group": "arthropod"
+	},
+	"fall_damage_reduction": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"modifier": {
+			"operation": "add_base_early",
+			"value": -13
+		}
+	}
 }
