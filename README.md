@@ -1,13 +1,16 @@
 # OriginsTweaks
 
-An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Default Origins' abilities and adds new ones.
+An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Default Origins and adds new abilities.
 
 <a href="https://modrinth.com/mod/originstweaks"><img src="https://img.shields.io/badge/Available_on-Modrinth-%2300AF5C?logo=modrinth&logoColor=%2300AF5C"></a>
 <a href="https://github.com/ChromexUnderscore/OriginsTweaks"><img src="https://img.shields.io/badge/Available_on-GitHub-%23181717?logo=github&logoColor=%23181717"></a>
 
 <img src=https://img.shields.io/badge/Required_Mods-gray>
+
 <a href="https://modrinth.com/mod/origins"><img src="https://img.shields.io/badge/Origins-lightblue"></a>
+
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
+
 <a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
 
 
@@ -124,11 +127,11 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 
 ## Bugs, Suggestions & Contribution
 
-**Found a bug, have a suggestion, or want mod compatibility?**
+Found a bug, have a suggestion, or want to request mod compatibility?
 
-**Want to help develop OriginsTweaks or add translations?**
+Want to help develop OriginsTweaks or add translations?
 
-**Have other questions?**
+Have other questions?
 
 [Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
 
