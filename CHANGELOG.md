@@ -40,6 +40,7 @@ Gameplay Changes
 
 Technical Changes
 
++ Changed OriginsTweaks Icons to match the base Origins' Icons.
 + Removed ``Dodge Projectile`` Entity Type Tag.
 + Added ``Sharpen Stone`` Block Tag.
 + Reordered some Powers for the in-game Origin Overview.

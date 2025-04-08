@@ -6,7 +6,7 @@
 		"translate": "origin.originstweaks.merling.description"
 	},
 	"icon": {
-		"item": "minecraft:trident"
+		"item": "minecraft:cod"
 	},
 	"order": 0,
 	"impact": 3,

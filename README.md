@@ -10,6 +10,14 @@ An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Defa
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
 <a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
 
+OriginsTweaks currently offers translations for following Languages:
++ English (US)
++ English (United Kingdom)
++ German
++ Joke Languages:
+    + Shakespearean English
+    + Pirate Speak
+    + LOLCAT
 
 ## Changes and Additions
 
@@ -118,7 +126,7 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 
 ## Built-in Mod Compat
 
-+ OriginsTweaks Displays as an Addon under Origins in [Modmenu](https://modrinth.com/mod/modmenu).
++ OriginsTweaks displays as an Addon under Origins in [Modmenu](https://modrinth.com/mod/modmenu).
 + Wood Types from [Terrestria](https://modrinth.com/mod/terrestria) and [Cinderscapes](https://modrinth.com/mod/cinderscapes).
 + Ocean Monuments from [Yung's Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments).
 + Using [Overgrown's Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide tagging of various modded foods.
@@ -132,4 +140,3 @@ Want to help develop OriginsTweaks or add translations?
 Have other questions?
 
 [Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
-

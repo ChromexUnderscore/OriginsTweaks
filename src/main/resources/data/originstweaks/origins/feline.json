@@ -6,7 +6,7 @@
 		"translate": "origin.originstweaks.feline.description"
 	},
 	"icon": {
-		"item": "minecraft:salmon"
+		"item": "minecraft:orange_wool"
 	},
 	"order": 0,
 	"impact": 2,

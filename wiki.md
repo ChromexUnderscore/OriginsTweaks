@@ -1,12 +1,13 @@
-# Welcome to the OriginsTweaks Wiki!
-Welcome to the **OriginsTweaks Wiki**, your guide to all the features, mechanics, and enhancements introduced by OriginsTweaks. Whether you're a seasoned player or new to the Origins Mod, this wiki is designed to provide you with detailed information about the changes to origins, powers, and gameplay changes OriginsTweaks provides.
+# OriginsTweaks
 
-OriginsTweaks builds upon the popular **Origins Mod** and it's Base Origins, expanding their functionality with new abilities and refined mechanics. OriginsTweaks' goal is to enhance the Origins experience by offering players more in-depth abilities and Quality-of-Life changes using their favorite Origin.
+Welcome to the **OriginsTweaks Wiki**! This wiki is designed to provide you with detailed information about the changes to origins, powers, and gameplay changes OriginsTweaks provides.
+
+OriginsTweaks builds upon the popular **Origins Mod** and it's default Origins, expanding their functionality with reworked and new abilities. OriginsTweaks' goal is to enhance the Origins Mod experience by offering players more in-depth abilities and Quality-of-Life changes for their favorite Origin.
 
 In this wiki, you'll find:
-- **Detailed Descriptions of Ability Changes**: Learn about the changes to abilities and playstyles of each base origin.
-- **OriginsTweaks exclusive Abilities**: Understand how each new ability works, including cooldowns, effects, and synergies with other gameplay elements.
-- **Playstyle Tips and Tricks**: Get insights into how to use the abilities of each origin, including tips and strategies to maximize their potential.
+- **Detailed Information about Ability Changes**: Find out about the changes to abilities and playstyles of each default origin.
+- **New OriginsTweaks Abilities**: Understand how each new ability works, including cooldowns, effects, and synergies with other abilities.
+- **Playstyle Tips and Tricks**: Learn about how to use the abilities of each origin, including tips and strategies to maximize their potential.
 
 OriginsTweaks is available on both **[Modrinth](https://modrinth.com/mod/originstweaks)** and **[GitHub](https://github.com/ChromexUnderscore/OriginsTweaks)**. Be sure to check out these platforms for the latest updates, additional resources, and community contributions.
 
@@ -18,14 +19,23 @@ OriginsTweaks is available on both **[Modrinth](https://modrinth.com/mod/origins
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
 <a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
 
+
+**[C]** Tags mark **Changes** to Abilities from the [Origins Mod](https://modrinth.com/mod/origins).
+
+**[U]** Tags mark abilities of the Origins Mod that are **Unchanged**.
+
+**[OT]** Tags mark New Abilities added by **OriginsTweaks**.
+
+
+
 # Arachnid
 
 The Arachnid origin grants players spider-like abilities, allowing them to climb walls, use webs for mobility, and inflict venomous attacks. This origin is ideal for players who enjoy extensive mobility and tactical combat.
 
 ## Abilities
 
-### Master of Webs [OM]
-- Adds a **Webshot Ability**: 
+### Master of Webs [C]
+- Adds a **Webshot Ability**:
     - Fire webs with the **[Primary] Key** to grapple to blocks or mobs within 16 blocks.
     - **7 Charges**, regenerating over 35 seconds.
     - Charges also refill after sleeping or respawning.
@@ -37,13 +47,20 @@ The Arachnid origin grants players spider-like abilities, allowing them to climb
 - **Cooldown**: 5 seconds.
 - Switch between **Climbing** and **Venom** abilities using the **[Secondary] Key**.
 
-### Climbing [OM]
+### Climbing [C]
 - Climbing walls does not reduce mining speed.
 - Switch between **Climbing** and **Venom** abilities using the **[Secondary] Key**.
 
-### Arthropod [OM]
+### Arthropod [C]
 - Arachnids are **1.5 blocks tall** and can fit into 1-block gaps when sneaking.
 - Fall damage is only taken after falling more than **16 blocks**.
+
+### Fragile [U]
++ You have 3 less hearts of health than humans.
+
+### Carnivore [C]
++ Your diet is restricted to meat, you can't eat vegetables.
+    + Using Overgrown's Origins: Dietary Delights for support of modded foods.
 
 ## Playstyle Tips
 - Use the **Webshot** Ability to quickly traverse terrain or cycle in and out of combat.
@@ -53,13 +70,14 @@ The Arachnid origin grants players spider-like abilities, allowing them to climb
 - Craft cobwebs for traps, mob farms or to decorate builds that should feel abandoned.
 
 
+
 # Avian
 
 The Avian origin provides players with (flightless) bird-like traits, emphasizing easy movement, farming crops and taming animals. This origin is perfect for players who enjoy farming, taming animals, and a lightweight playstyle.
 
 ## Abilities
 
-### Featherweight [OM]
+### Featherweight [C]
 - Use the **[Secondary] Key** to toggle the Featherweight Ability instead of sneaking.
 
 ### Animal Friendship [OT]
@@ -76,11 +94,28 @@ The Avian origin provides players with (flightless) bird-like traits, emphasizin
 - **Glistering Melons**: Edible and restore **6 Hunger Points** and **4 Saturation Points**.
     - They can be consumed twice as fast as regular food items.
 
+### Tailwind [U]
++ You are a little bit quicker on foot than others.
+
+### Like Air [U]
++ Modifiers to your walking speed also apply while you're airborne.
+
+### Vegetarian [C]
++ You can't digest any meat.
+    + Using Overgrown's Origins: Dietary Delights for support of modded foods.
+
+### Fresh Air [U]
++ When sleeping, your bed needs to be at an altitude of at least 86 blocks, so you can breathe fresh air.
+
+### Oviparous [U]
++ Whenever you wake up in the morning, you will lay an egg.
+
 ## Playstyle Tips
 - Activate the **Featherweight** ability for slow falling while exploring, and deactivate it to enable falling Critical Hits in combat.
 - Use **Animal Friendship** to tame animals without the need of the right item.
 - Craft a hoe to maximize farming efficiency and gain easy access to golden crop variants using the **Green Thumb** Ability.
 - Use **Glistering Melons** as a reliable food source during exploration or combat.
+
 
 
 # Blazeborn
@@ -89,7 +124,7 @@ The Blazeborn origin grants players fire-based abilities, making them formidable
 
 ## Abilities
 
-### Burning Wrath [OM]
+### Burning Wrath [C]
 - Activate with the **[Primary] Key** to enable fire abilities:
     - Set yourself on fire for **30 seconds**.
     - Light **Campfires**, fuel **Furnaces**, and **Brewing Stands** while on fire.
@@ -101,9 +136,19 @@ The Blazeborn origin grants players fire-based abilities, making them formidable
     - Fireballs have **no gravity**.
     - **Cooldown**: 10 seconds.
 
-### Fire Immunity [OM]
+### Fire Immunity [C]
 - Move slightly faster through **lava** and swim when submerged.
 - Gain improved **Lava Vision**, comparable to the **Fire Resistance Effect**.
+
+### Nether Inhabitant [U]
++ Your natural spawn will be in the Nether.
+
+### Hotblooded [U]
++ Due to your hot body, venoms burn up, making you immune to poison and hunger status effects.
+
+### Hydrophobia [U]
+
++ You receive damage over time while in contact with water.
 
 ## Playstyle Tips
 - Use **Burning Wrath** to improve damage output during combat or use utility blocks without fuel.
@@ -112,13 +157,14 @@ The Blazeborn origin grants players fire-based abilities, making them formidable
 - Be mindful of the cooldowns to time your abilities effectively during combat.
 
 
+
 # Elytrian
 
 The Elytrian origin grants players flight-related abilities, making them masters of aerial combat and mobility. This origin is perfect for players who enjoy soaring through the skies and engaging in strategic combat from above.
 
 ## Abilities
 
-### Gift of the Skies [OM]
+### Gift of the Skies [C]
 - Activate with the **[Primary] Key**:
     - While grounded: Launch ~20 blocks into the air using **100 Stamina**.
     - While gliding: Ascend up to 7 blocks using **25 Stamina**.
@@ -129,11 +175,6 @@ The Elytrian origin grants players flight-related abilities, making them masters
     - +25 Stamina for ascending.
     - **20+ Armor** prevents launching and ascending entirely.
 
-### Aerial Combatant [OM]
-- Activates after gliding for at least **3 seconds**.
-    - **Melee Attacks**: Gain a **2x damage increase**.
-    - **Ranged Attacks**: Gain a **1.5x damage increase**.
-
 ### Companion Mounting [OT]
 - Other players can **right-click** an Elytrian to mount them.
     - Elytrians can **kick off passengers** by pressing the **[Secondary] Key**.
@@ -141,6 +182,17 @@ The Elytrian origin grants players flight-related abilities, making them masters
         - The Elytrian crashes into terrain.
         - The Elytrian is hit by a projectile.
 - This ability was contributed by **AnimGoated**.
+
+### Aerial Combatant [C]
+- Activates after gliding for at least **3 seconds**.
+    - **Melee Attacks**: Gain a **2x damage increase**.
+    - **Ranged Attacks**: Gain a **1.5x damage increase**.
+
+### Claustrophobia [U]
++ Being somewhere with a low ceiling for too long will weaken you and make you slower.
+
+### Brittle Bones [U]
++ You take more damage from falling and flying into blocks.
 
 ### Elytra Options [OT]
 - Elytrians can choose between:
@@ -164,20 +216,27 @@ The Enderian origin grants players abilities inspired by Endermen, emphasizing t
 
 ## Abilities
 
-### Teleportation [OM]
+### Teleportation [C]
 - Teleporting via Ender Pearls grants a brief **invincibility window** against suffocation damage.
 
-### Slender Body [OM]
+### Slender Body [C]
 - Enderians are **2.5 blocks tall** and gain a **50% increase in reach**.
 - Automatically **dodge projectiles** by teleporting to a random block within an **8-block radius**:
     - **Cooldown**: 5 seconds.
     - Teleportation avoids air, bedrock, and fluid source blocks.
+
+### Hydrophobia [U]
++ You receive damage over time while in contact with water.
+
+### Scared of Gourds [U]
++ You are afraid of pumpkins. For good reason.
 
 ## Playstyle Tips
 - Use **Teleportation** to navigate challenging terrain or escape dangerous situations.
 - Take advantage of your **increased height and reach** to interact with blocks or attack mobs that are out of reach for other origins.
 - Time the cooldown of your **Projectile Dodge** ability to avoid incoming ranged attacks.
 - Be mindful of your taller stature when navigating tight spaces or structures with low ceilings.
+
 
 
 # Feline
@@ -196,20 +255,29 @@ The Feline origin grants players cat-like traits, enhancing agility, movement, a
     - Claw Tiers deal damage comparable to their sword counterparts, attack faster, and inflict less knockback, making them effective for combos.
 - Food made from fish restores an additional **3 Hunger Points** and **2 Saturation Points**.
 
-### Acrobatics [OM]
+### Acrobatics [C]
 - Hold the **[Sneak] Key** to charge your jump, then press the **[Jump] Key** to leap.
     - Jump height ranges from **2 to 6 blocks**, depending on charge level, with added forward momentum.
     - Charge can be held for a few seconds after releasing **[Sneak]**.
     - **Cooldown**: 3 seconds.
 
-### Weak Arms [OM]
+### Weak Arms [C]
 - Breaking stone blocks is **50% slower**, and some tough stone blocks cannot be broken without the **Strength Effect** or a pickaxe with **Efficiency**.
 - **Affected Stone Blocks**:
     - Stone, Stone Ores, Ancient Debris, Granite, Diorite, Andesite, Sandstone, Smooth Sandstone, Red Sandstone, Smooth Red Sandstone, Smooth Basalt, Calcite, Block of Amethyst, Budding Amethyst, Tuff, Dripstone Block, Netherrack, Basalt, Magma Block, End Stone.
 - **Tough Stone Blocks**:
     - Deepslate, Reinforced Deepslate, Deepslate Ores, Obsidian, Crying Obsidian, Blackstone, Gilded Blackstone.
 
-### Nocturnal [OM]
+### Velvet Paws [U]
++ Your footsteps don't cause any vibrations which could otherwise be picked up by nearby lifeforms.
+
+### Nine Lives [U]
++ You have 1 less heart of health than humans.
+
+### Catlike Appearance [U]
++ Creepers are scared of you and will only explode if you attack them first.
+
+### Nocturnal [C]
 - Activate or deactivate Night Vision using the **[Secondary] Key**.
 
 ## Playstyle Tips
@@ -228,7 +296,10 @@ The Merling origin grants players aquatic abilities, making them masters of unde
 
 ## Abilities
 
-### Moisture [OM]
+### Gills [U]
++ You can breathe underwater, but not on land.
+
+### Moisture [C]
 - Merlings have a **Body Moisture Bar** that prevents drying out:
     - **600 Units** of Moisture last for **10 minutes** in the Overworld and the End, and **5 minutes** in the Nether.
     - Regain Moisture by:
@@ -244,13 +315,23 @@ The Merling origin grants players aquatic abilities, making them masters of unde
     - [Crafting Recipe](https://cdn.modrinth.com/data/FRBxogjw/images/2d0819e26f5afce6716b9584f21c022b9175bc86.png).
 - **Trident Attacks** (melee and ranged) deal increased damage when underwater.
 
-### Fins [OM]
+### Fins [C]
 - Merlings can **dash underwater** while swimming:
     - **Cooldown**: 5 seconds.
     - Stacks with **Depth Strider** enchantments.
 
-### Aquatic [OM]
+### Wet Eyes [U]
++ Your vision underwater is perfect.
+    + Toggle with the **[Primary] Key**.
+
+### Aqua Affinity [U]
++ You may break blocks underwater as others do on land.
+
+### Like Water [U]
+
+### Aquatic [C]
 - Merlings' **natural spawn point** is in ocean biomes.
++ They are part of Aquatic group, and take more damage from the Impaling Enchantment. 
 
 ## Playstyle Tips
 - Keep an eye on your **Body Moisture Bar** and plan your exploration around water sources.
@@ -264,7 +345,7 @@ The Merling origin grants players aquatic abilities, making them masters of unde
 
 # Phantom
 
-The Phantom origin grants players ghostly abilities, allowing them to phase through blocks, highlight enemies, and utilize spectral powers. This origin is ideal for players who enjoy stealth, evasion, and tactical gameplay.
+The Phantom origin grants players ghostly abilities, allowing them to phase through blocks, highlight enemies, and utilize spectral powers. This origin is ideal for players who enjoy stealth and unrestricted movement.
 
 ## Abilities
 
@@ -278,11 +359,11 @@ The Phantom origin grants players ghostly abilities, allowing them to phase thro
         - **10.5 - 50 Health**: +50 Soul Energy.
         - **50+ Health (Boss Mobs)**: Fully restores Soul Energy.
 
-### Phantom Form [OM]
+### Phantom Form [C]
 - Enter a **Phantom Form** to become invisible and enable phasing:
     - No longer requires Hunger but consumes **0.5 Soul Energy per second**.
 
-### Phase [OM]
+### Phase [C]
 - Smoothly phase through blocks without stopping at each layer:
     - **Partial Phasing** restricts sprinting, swimming, and flying.
     - **Full Phasing** additionally prevents attacking and interacting with blocks.
@@ -294,12 +375,18 @@ The Phantom origin grants players ghostly abilities, allowing them to phase thro
     - Affects living mobs and players within a **32-block radius** for **10 seconds**.
     - **Cooldown**: 30 seconds.
 
-### Aurophobia [OM]
+### Aurophobia [C]
 - Phantoms are repelled by gold:
     - Cannot eat **Golden Apples**, **Enchanted Golden Apples**, or **Golden Carrots**.
     - Cannot wear **Golden Armor**.
     - **Golden Tools** prevent mining and block interactions.
     - Cannot phase through **pure golden blocks**.
+
+### Photoallergic [U]
++ You begin to burn in daylight if you are not invisible.
+
+### Translucent [U]
++ Your skin is translucent.
 
 ## Playstyle Tips
 - Monitor your **Soul Energy Gauge** to maintain Phantom Form and Phase abilities.
@@ -312,11 +399,14 @@ The Phantom origin grants players ghostly abilities, allowing them to phase thro
 
 # Shulk
 
-The Shulk origin grants players abilities inspired by Shulkers, emphasizing defense, levitation, and tactical combat. This origin is ideal for players who enjoy tanky playstyles and creative mobility options.
+The Shulk origin grants players abilities inspired by Shulkers, adding abilities related to defense, levitation effects and a bigger Inventory. This origin is ideal for players who enjoy tanky playstyles and a safe inventory.
 
 ## Abilities
 
-### Sturdy Skin [OM]
+### Hoarder [U]
++ You have access to an additional 9 slots of inventory, which keep the items on death.
+
+### Sturdy Skin [C]
 - Shulks have a base **Natural Armor** of **3 points**.
 - **Sneaking** grants up to **7 bonus defense**, for a total of **10 Natural Armor Points**.
     - Taking a **heavy hit** (damage > 3 Hearts) causes:
@@ -324,14 +414,21 @@ The Shulk origin grants players abilities inspired by Shulkers, emphasizing defe
         - Shell Buildup cooldown for **30 seconds**.
 
 ### Antigravity Pellet [OT]
-- Shulks can utilize **Shulker Bullets** or inflict **Levitation** on themselves:
-    - **Shulker Bullet**:
-        - Activate with the **[Secondary] Key** to shoot a Shulker Bullet.
+- Shulks can inflict **Levitation** on themselves:
+    - Activate with the **[Secondary] Key** to shoot a Shulker Bullet.
         - Bullets have **perfect accuracy** and **no gravity**.
         - **Cooldown**: 40 seconds.
-    - **Self-Inflicted Levitation**:
-        - Activate by holding **[Sneak]** and pressing the **[Secondary] Key**.
+    - Activate by holding **[Sneak]** and pressing the **[Secondary] Key**.
         - Levitation lasts for **10 seconds**.
+
+### Strong Arms [U]
++ You are strong enough to break natural stones without using a pickaxe.
+
+### Unwieldy [U]
++ The way your hands are formed provide no way of holding a shield upright.
+
+### Large Appetite [U]
++ You exhaust much quicker than others, thus requiring you to eat more.
 
 ## Playstyle Tips
 - Use **Sturdy Skin** to absorb damage and maintain a strong defense in combat.
