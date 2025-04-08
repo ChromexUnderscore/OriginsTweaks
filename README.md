@@ -1,6 +1,6 @@
 # OriginsTweaks
 
-Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/mod/origins) and adds new ones.
+An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Default Origins' abilities and adds new ones.
 
 <a href="https://modrinth.com/mod/originstweaks"><img src="https://img.shields.io/badge/Available_on-Modrinth-%2300AF5C?logo=modrinth&logoColor=%2300AF5C"></a>
 <a href="https://github.com/ChromexUnderscore/OriginsTweaks"><img src="https://img.shields.io/badge/Available_on-GitHub-%23181717?logo=github&logoColor=%23181717"></a>
@@ -15,102 +15,105 @@ Reworks the Base Origins abilities from the [Origins Mod](https://modrinth.com/m
 
 For detailed changes to Powers from the Origins Mod and New Powers added by OriginsTweaks, check out the [OriginsTweaks Wiki](https://github.com/ChromexUnderscore/OriginsTweaks/wiki).
 
+#### Summary
+
 <details><summary>Avian</summary>
 
-+ Avians can tame animals, and certain animals will automatically trust the avian.
-+ Avians receive more drops from harvesting crops using a hoe, and have a chance to receive golden variants.
-+ Glistering Melons are edible.
-+ Slow falling can be toggled.
++ Avians can tame animals, and some animals will automatically trust them.
++ When harvesting crops with a hoe, Avians get more drops and have a chance for golden versions.
++ Glistering Melons can be eaten by Avians.
++ Avians can toggle Slow Falling on or off.
 
 </details>
 
 <details><summary>Arachnid</summary>
 
-+ The Arachnid can grapple towards mobs and blocks using a webshot.
-+ Arachnids have a chance to inflict a poison effect on melee attacks.
-+ Climbing no longer slows down mining speed.
-+ Arachnids are shorter and can fit into 1-block gaps when sneaking.
-+ Fall damage is only taken after a fall greater than 16 Blocks.
-+ Arachnids can craft 9 strings into cobweb.
++ Arachnids can use a webshot to pull themselves towards mobs and blocks.
++ Arachnid melee attacks have a chance to inflict poison.
++ Mining speed is no longer slowed while climbing.
++ Arachnids are shorter and can fit through 1-block high spaces while sneaking.
++ Fall damage is only taken from falls greater than 16 blocks.
++ Arachnids can craft 9 string into 1 cobweb.
 
 </details>
 
 <details><summary>Elytrian</summary>
 
-+ Elytrians can choose between different rendering types of their elytra.
-+ They can launch to the sky if grounded or ascend if gliding, using stamina.
-+ Can wear any armor, but Heavy Armor weakens or prevents effects of the ascend / launch ability and costs more stamina.
-+ Gliding now also grants a +50% ranged damage boost.
-+ Players can right click an elytrian to mount them and fly with them.
++ Elytrians can choose different visual styles for their elytra.
++ They can launch into the sky from the ground or ascend while gliding, which consumes stamina.
++ Elytrians can wear any armor, but Heavy Armor reduces or prevents the ascend/launch ability and costs more stamina.
++ Gliding now also provides a +50% damage boost to ranged attacks.
++ Players can right-click an Elytrian to ride and fly with them.
 
 </details>
 
 <details><summary>Shulk</summary>
 
-+ Shulks have a base armor of 3. 
-+ Sneaking grants up to 7 bonus defense.
-  + 1 bonus defense is lost if taking a hit that dealt more than 3 hearts.
-+ They can shoot shulker bullets or self-inflict levitation.
++ Shulks have a base armor value of 3.
++ While sneaking, Shulks gain up to 7 additional defense.
+  + 1 bonus defense is lost if they take a hit dealing more than 3 hearts of damage.
++ Shulks can shoot shulker bullets or apply levitation to themselves.
 
 </details>
 
 <details><summary>Feline</summary>
 
-+ Claws deal increased base damage, but need to be sharpened in the following order:
++ Feline claws deal more base damage but need to be sharpened in this order:
   - Logs or wool
   - Smooth stone
   - Iron blocks
   - Diamond blocks
 + Felines can charge a high jump by sneaking.
-+ The Feline breaks stone 50% slower.
-  + Some tough stone variants can't be broken without help of certain effects.
-+ Food made from Fish is more nourishing.
-+ Night Vision is toggleable.
++ Felines break stone 50% slower.
+  + Some very hard stone types cannot be broken without certain effects.
++ Food made from Fish provides more nourishment to Felines.
++ Felines can toggle Night Vision on or off.
 
 </details>
 
 <details><summary>Enderian</summary>
 
-+ Height and reach are increased.
-+ Enderians will dodge projectiles on a cooldown.
-+ Teleporting via pearl grants an invincibility window against suffocation.
-+ Enderians can silk touch blocks if not holding any tools.
++ Enderians have increased height and reach.
++ Enderians will dodge incoming projectiles after a cooldown period.
++ Teleporting with an ender pearl grants a temporary period of invincibility against suffocation.
++ Enderians can use Silk Touch on blocks if they are not holding any tools.
 
-</details> 
+</details>
 
 <details><summary>Merling</summary>
 
 + Merlings can [craft tridents](https://cdn.modrinth.com/data/FRBxogjw/images/2d0819e26f5afce6716b9584f21c022b9175bc86.png).
-+ Merlings now have a body moisture resource to manage in order to not dry out.
-+ Conduit Power lasts longer and delays drying out.
-+ Projectile and Melee attacks with Tridents deal more damage if the Merling is underwater.
-+ Merlings can dash underwater while swimming.
-+ Merling's Natural Spawn point is located in ocean biomes.
++ Merlings have a body moisture level they must manage to avoid drying out.
++ Conduit Power lasts longer for Merlings and delays drying out.
++ Trident projectile and melee attacks deal more damage if the Merling is underwater.
++ Merlings can dash forward underwater while swimming.
++ Merlings naturally spawn in ocean biomes.
 
 </details>
 <details><summary>Blazeborn</summary>
 
-+ The Blazeborn can light themselves on fire.
-  + Can light Campfires, Fuel Furnei and Brewing stands while lit on fire.
-  + In addition to the 25% damage increase, set targets on fire for 8 seconds.
-+ Blazeborn move slightly faster through lava, have improved vision and can swim if submerged.
-+ Blazeborns can shoot a burst of 3 Fireballs.
++ Blazeborn can set themselves on fire.
+  + While on fire, they can light Campfires, Furnaces, and Brewing Stands.
+  + In addition to a 25% damage increase, being on fire causes targets to burn for 8 seconds.
++ Blazeborn move slightly faster in lava, have better vision in it, and can swim when fully submerged.
++ Blazeborn can shoot a burst of 3 Fireballs.
 
 </details>
 
 <details><summary>Phantom</summary>
 
-+ Phantom Form and phasing use soul energy instead of hunger.
-+ Actively phasing will drain soul energy much quicker than just using phantom form.
-+ Soul Energy regenerates naturally, but can be accelerated by killing mobs or being around soul fire.
-+ Golden items and blocks have a repelling effect on phantoms.
-  + Can't eat golden food.
-  + Can't wear golden Armor.
-  + Can't use Golden tools.
-  + Can't phase through pure golden blocks.
-+ Phantoms can sense mobs and players behind walls using a glowing effect.
++ Phantom Form and phasing consume soul energy instead of hunger.
++ Actively phasing drains soul energy much faster than simply using phantom form.
++ Soul Energy regenerates naturally but regenerates faster when killing mobs or being near soul fire.
++ Golden items and blocks repel phantoms.
+  + Phantoms cannot eat golden food.
+  + Phantoms cannot wear golden armor.
+  + Phantoms cannot use golden tools.
+  + Phantoms cannot phase through solid gold blocks.
++ Phantoms can sense the location of mobs and players behind walls by making them glow.
 
 </details>
+
 
 ## Built-in Mod Compat
 
@@ -119,12 +122,13 @@ For detailed changes to Powers from the Origins Mod and New Powers added by Orig
 + Ocean Monuments from [Yung's Better Ocean Monuments](https://modrinth.com/mod/yungs-better-ocean-monuments).
 + Using [Overgrown's Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights) to provide tagging of various modded foods.
 
-## Bugs, Suggestions and Contribution
+## Bugs, Suggestions & Contribution
 
-Found a bug, want to suggest a feature or mod compatibility?
+**Found a bug, have a suggestion, or want mod compatibility?**
 
-Want to help in the Development of OriginsTweaks or add translations for a language you speak?
+**Want to help develop OriginsTweaks or add translations?**
 
-Have any other questions?
+**Have other questions?**
 
 [Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
+
