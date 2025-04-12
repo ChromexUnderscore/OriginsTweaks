@@ -139,4 +139,4 @@ Want to help develop OriginsTweaks or add translations?
 
 Have other questions?
 
-[Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues)
+[Join OriginsTweaks on Discord](https://discord.gg/Su7tqDmUTu) | [Open an Issue on GitHub](https://github.com/ChromexUnderscore/OriginsTweaks/issues) | [Translate on Crowdin](https://crowdin.com/project/originstweaks)
