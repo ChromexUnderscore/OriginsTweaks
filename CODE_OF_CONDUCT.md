@@ -12,7 +12,7 @@ By contributing, you agree to these guidelines:
 #### Translation Consistency:
 
 - For items, blocks, entities and other terms straight from Minecraft, always use their official translated names as they appear in the game. This ensures clarity and avoids confusion for players.
-  - Also refer to the [Minecraft Official Glossary for Crowdin](https://docs.google.com/spreadsheets/d/1xxDvR2MrPUaxXwNfn-oJX-fBerEsZkfo/edit?gid=810030519#gid=810030519)
+  - Also refer to the [Minecraft Official Glossary for Crowdin](https://docs.google.com/spreadsheets/d/1xxDvR2MrPUaxXwNfn-oJX-fBerEsZkfo/edit?gid=810030519#gid=810030519).
 - When translating descriptions for changed abilities from the Origins Mod, strive to stay faithful to the existing translations used within the base Origins Mod. This helps players easily understand the relationship between the mods.
 
 ####  Prohibited Conduct:
