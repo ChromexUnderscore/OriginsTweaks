@@ -4,6 +4,14 @@
 
 ### [Version 1.17 [Minecraft 1.20.4]]
 
+#### [Version 1.17.3 [Russian Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.3)
+
+Technical Changes
+
++ Added Russian Translations.
+	+ Translations by tiglakirill7.
++ Bumped version to 1.17.3.
+
 #### [Version 1.17.2 [Localization Keys & German Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.2)
 
 Gameplay Changes

@@ -11,9 +11,12 @@ An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Defa
 <a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
 
 OriginsTweaks currently offers translations for following Languages:
-+ English (US)
-+ English (United Kingdom)
-+ German
++ Complete:
+  + English (US)
+  + English (United Kingdom)
+  + German
++ Proofreading Required (Reach out on [Discord](#bugs-suggestions--contribution))
+  + Russian
 + Joke Languages:
     + Shakespearean English
     + Pirate Speak
