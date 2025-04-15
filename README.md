@@ -55,6 +55,7 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 + Elytrians can wear any armor, but Heavy Armor reduces or prevents the ascend/launch ability and costs more stamina.
 + Gliding now also provides a +50% damage boost to ranged attacks.
 + Players can right-click an Elytrian to ride and fly with them.
+  + Ability contributed by AnimGoated.
 
 </details>
 
