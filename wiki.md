@@ -90,9 +90,11 @@ The Avian origin provides players with (flightless) bird-like traits, emphasizin
 
 ### Green Thumb [OT]
 - Harvesting crops with a hoe gives bonus item drops, which stacks with Fortune Enchantments.
-    - Crops have a 50% chance to drop golden variants.
+    - This ability is not available in 1.20.1.
+- Crops have a 50% chance to drop golden variants.
 - **Glistering Melons**: Edible and restore **6 Hunger Points** and **4 Saturation Points**.
     - They can be consumed twice as fast as regular food items.
+    - This ability is not available in 1.20.1.
 
 ### Tailwind [U]
 + You are a little bit quicker on foot than others.
@@ -221,6 +223,8 @@ The Enderian origin grants players abilities inspired by Endermen, emphasizing t
 
 ### Slender Body [C]
 - Enderians are **2.5 blocks tall** and gain a **50% increase in reach**.
+- They can "silk touch" blocks while not holding any tools.
+    - This ability is not available in 1.20.1.
 - Automatically **dodge projectiles** by teleporting to a random block within an **8-block radius**:
     - **Cooldown**: 5 seconds.
     - Teleportation avoids air, bedrock, and fluid source blocks.

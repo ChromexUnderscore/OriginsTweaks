@@ -31,8 +31,12 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 <details><summary>Avian</summary>
 
 + Avians can tame animals, and some animals will automatically trust them.
-+ When harvesting crops with a hoe, Avians get more drops and have a chance for golden variants.
++ When harvesting crops with a hoe, they can drop more items.
+  + Not Available in 1.20.1.
++ Avians can receive golden variants of crops.
 + Glistering Melons can be eaten.
+  + Not Available in 1.20.1.
+  
 + Avians can toggle Slow Falling on or off.
 
 </details>
@@ -90,6 +94,7 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 + Enderians will dodge incoming projectiles.
 + Teleporting with an ender pearl grants an invincibility window against suffocation.
 + Enderians can use Silk Touch on blocks if they are not holding any tools.
+  + Not Available in 1.20.1.
 
 </details>
 
