@@ -39,11 +39,11 @@
 
 **Dependencies**
 
-Minecraft 1.20.1 - 1.20.4
-Origins Mod [1.10.0](https://modrinth.com/mod/origins/version/1.10.0) - [1.13.0-alpha.4](https://modrinth.com/mod/origins/version/1.13.0-alpha.4+mc.1.20.4)
-[Fabric API](https://modrinth.com/mod/fabric-api)
-[Pehkui](https://modrinth.com/mod/pehkui)
-[Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
++ Minecraft 1.20.1 - 1.20.4
++ Origins Mod [1.10.0](https://modrinth.com/mod/origins/version/1.10.0) - [1.13.0-alpha.4](https://modrinth.com/mod/origins/version/1.13.0-alpha.4+mc.1.20.4)
++ [Fabric API](https://modrinth.com/mod/fabric-api)
++ [Pehkui](https://modrinth.com/mod/pehkui)
++ [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
 
 ### [Version 1.17 [Minecraft 1.20.4]]
 
