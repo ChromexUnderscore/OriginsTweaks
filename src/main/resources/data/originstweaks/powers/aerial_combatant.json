@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.aerial_combatant.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.aerial_combatant.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

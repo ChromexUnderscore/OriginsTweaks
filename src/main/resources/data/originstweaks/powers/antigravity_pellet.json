@@ -1,11 +1,5 @@
 {
     "type": "origins:multiple",
-    "name": {
-        "translate": "power.originstweaks.antigravity_pellet.name"
-    },
-    "description": {
-        "translate": "power.originstweaks.antigravity_pellet.description"
-    },
     "badges": [
         {
             "type": "origins:tooltip",
@@ -53,7 +47,7 @@
                 {
                     "type": "origins:apply_effect",
                     "effect": {
-                        "effect": "origins:levitation",
+                        "effect": "minecraft:levitation",
                         "duration": 200,
                         "amplifier": 0,
                         "show_particles": true,

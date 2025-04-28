@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.companion_mounting.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.companion_mounting.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -84,12 +78,20 @@
 					"type": "origins:projectile"
 				},
 				{
-					"type": "origins:type",
-					"damage_type": "minecraft:fly_into_wall"
+					"type": "origins:name",
+					"name": "flyIntoWall"
 				},
 				{
-					"type": "origins:type",
-					"damage_type": "minecraft:fall"
+					"type": "origins:name",
+					"name": "flyIntoWall.player"
+				},
+				{
+					"type": "origins:name",
+					"name": "fall"
+				},
+				{
+					"type": "origins:name",
+					"name": "fall.player"
 				}
 			]
 		}

@@ -68,12 +68,20 @@
 			"type": "origins:or",
 			"conditions": [
 				{
-					"type": "origins:type",
-					"damage_type":"minecraft:player_attack"
+					"type": "origins:name",
+					"name": "player"
 				},
 				{
-					"type": "origins:type",
-					"damage_type":"minecraft:mob_attack"
+					"type": "origins:name",
+					"name": "player.item"
+				},
+				{
+					"type": "origins:name",
+					"name": "mob"
+				},
+				{
+					"type": "origins:name",
+					"name": "mob.item"
 				}
 			]
 		},

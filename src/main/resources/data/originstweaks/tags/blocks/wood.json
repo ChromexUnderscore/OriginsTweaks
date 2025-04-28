@@ -3,6 +3,10 @@
 	"values": [
 		"#minecraft:logs",
 		{
+			"id": "#c:woods",
+			"required": false
+		},
+		{
 			"id": "#originstweaks:wood/cinderscapes",
 			"required": false
 		},

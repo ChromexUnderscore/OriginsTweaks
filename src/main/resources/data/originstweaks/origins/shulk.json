@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.shulk.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.shulk.description"
-	},
 	"icon": {
 		"item": "minecraft:shulker_shell"
 	},

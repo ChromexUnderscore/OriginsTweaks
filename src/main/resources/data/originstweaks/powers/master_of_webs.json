@@ -1,12 +1,6 @@
 {
 	"type": "origins:multiple",
 	"loading_priority": 1,
-	"name": {
-		"translate": "power.originstweaks.master_of_webs.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.master_of_webs.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

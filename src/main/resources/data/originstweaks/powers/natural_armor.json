@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.natural_armor.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.natural_armor.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -100,6 +94,31 @@
 				"change": 0,
 				"operation": "set"
 			}
+		}
+	},
+	"death_fallback": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_shells",
+			"change": 0,
+			"operation": "set"
+		},
+		"interval": 3,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:health",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:power",
+					"power": "*:*_death",
+					"inverted": true
+				}
+			]
 		}
 	},
 	"cooldown": {

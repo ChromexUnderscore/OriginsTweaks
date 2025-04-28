@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.venom.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.venom.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -312,8 +306,17 @@
 			}
 		},
 		"damage_condition": {
-			"type": "origins:type",
-			"damage_type": "minecraft:player_attack"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "player"
+				},
+				{
+					"type": "origins:name",
+					"name": "player.item"
+				}
+			]
 		},
 		"cooldown": 0,
 		"hud_render": {

@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.soulbound.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.soulbound.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -221,10 +215,8 @@
 					"type": "origins:living"
 				},
 				{
-					"type": "origins:attribute",
-					"attribute": "minecraft:generic.max_health",
-					"compare_to": 100,
-					"comparison": ">"
+					"type": "origins:in_tag",
+					"tag": "c:bosses"
 				}
 			]
 		}

@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.gift_of_the_skies.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.gift_of_the_skies.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

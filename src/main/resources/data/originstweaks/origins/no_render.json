@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.no_render.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.no_render.description"
-	},
 	"icon": "minecraft:barrier",
 	"impact": 0,
 	"order": 2,

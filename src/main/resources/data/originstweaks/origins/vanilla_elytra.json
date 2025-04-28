@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.vanilla_elytra.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.vanilla_elytra.description"
-	},
 	"icon": "minecraft:elytra",
 	"impact": 0,
 	"order": 0,

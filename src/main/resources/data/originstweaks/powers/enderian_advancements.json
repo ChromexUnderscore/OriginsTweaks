@@ -30,8 +30,17 @@
 			"advancement": "originstweaks:enderian/punch_pumpkin"
 		},
 		"damage_condition": {
-			"type": "origins:type",
-			"damage_type":"minecraft:player_attack"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "player"
+				},
+				{
+					"type": "origins:name",
+					"name": "player.item"
+				}
+			]
 		},
 		"target_condition": {
 			"type": "origins:equipped_item",
@@ -55,8 +64,17 @@
 			"should_render": false
 		},
 		"damage_condition": {
-			"type": "origins:type",
-			"damage_type": "origins:hurt_by_water"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "hurt_by_water"
+				},
+				{
+					"type": "origins:name",
+					"name": "hurt_by_water.player"
+				}
+			]
 		},
 		"condition": {
 			"type": "origins:in_rain"

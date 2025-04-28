@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.blazeborn.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.blazeborn.description"
-	},
 	"icon": {
 		"item": "minecraft:blaze_powder"
 	},

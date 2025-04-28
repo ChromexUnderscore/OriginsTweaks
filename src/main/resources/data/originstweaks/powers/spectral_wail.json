@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.spectral_wail.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.spectral_wail.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

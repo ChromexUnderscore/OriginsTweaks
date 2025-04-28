@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.feline.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.feline.description"
-	},
 	"icon": {
 		"item": "minecraft:orange_wool"
 	},

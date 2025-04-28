@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.aquadynamic.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.aquadynamic.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

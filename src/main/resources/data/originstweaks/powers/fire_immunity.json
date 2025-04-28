@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.fire_immunity.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.fire_immunity.description"
-	},
 	"fire_immune": {
 		"type": "origins:invulnerability",
 		"damage_condition": {

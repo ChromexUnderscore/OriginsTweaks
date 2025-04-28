@@ -1,11 +1,5 @@
 {
 	"type": "origins:toggle_night_vision",
-	"name": {
-		"translate": "power.originstweaks.cat_vision.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.cat_vision.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

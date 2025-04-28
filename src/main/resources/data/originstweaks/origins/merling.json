@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.merling.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.merling.description"
-	},
 	"icon": {
 		"item": "minecraft:cod"
 	},

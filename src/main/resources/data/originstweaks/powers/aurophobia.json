@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.aurophobia.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.aurophobia.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -16,9 +10,7 @@
 		}
 	],
 	"gold_diet": {
-		"name": {
-			"translate": "power.originstweaks.aurophobia.name"
-		},
+		"name": "Aurophobia",
 		"type": "origins:prevent_item_use",
 		"item_condition": {
 			"type": "origins:ingredient",
@@ -93,9 +85,7 @@
 		}
 	},
 	"gold_tools_use": {
-		"name": {
-			"translate": "power.originstweaks.aurophobia.name"
-		},
+		"name": "Aurophobia",
 		"type": "origins:prevent_item_use",
 		"item_condition": {
 			"type": "origins:ingredient",
@@ -178,9 +168,7 @@
 		"tick_rate": 5
 	},
 	"gold_armor_use": {
-		"name": {
-			"translate": "power.originstweaks.aurophobia.name"
-		},
+		"name": "Aurophobia",
 		"type": "origins:prevent_item_use",
 		"item_condition": {
 			"type": "origins:ingredient",

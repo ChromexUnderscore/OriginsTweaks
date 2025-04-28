@@ -2,15 +2,39 @@
 
 ## [1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20.1)
 
-### [Version 1.17 [Minecraft 1.20.4]]
+### [Version 1.18 [Minecraft 1.20.1-1.20.4]]
 
-#### [Version 1.17.3 [Russian Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.3)
+#### [Version 1.18.0 [1.20.1 Backport]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.0)
+
+Gameplay Changes
+
++ Avian:
+	+ Edible Glistering Melons now provide 0.8 saturation, matching similar food items.
+        + *(1.20.1 Backport Note)*: The Hoe Harvest bonus and edible Glistering Melons features are not available in this version due to Origins limitations.
++ Enderian
+	+	*(1.20.1 Backport Note)*: The Silk Touch ability is not available in this version due to Origins limitations.
+        + Projectile dodge now uses the `item.chorus_fruit.teleport` sound event instead of `entity.enderman.teleport`.
++ Phantom
+	+ ``Soulbound``:
+		+ Boss Soul absorption now triggers when killing entities tagged `c:bosses`, instead of only entities with more than 100 health.
 
 Technical Changes
 
-+ Added Russian Translations.
-	+ Translations by tiglakirill7.
-+ Bumped version to 1.17.3.
++ Made various internal adjustments to abilities to ensure backwards compatibility with Origins 1.10.0.
++ Utilized Fabric API's Conventional Tags to extend existing tags.
++ Removed unused Mixin configurations.
++ Replaced `origins:type` damage conditions with `origins:name` for backwards compatibility.
++ Removed `name` and `description` keys from origin and power files for backwards compatibility.
++ Added Russian translations (contributed by [tiglakirill7](https://crowdin.com/profile/tiglakirill7)).
++ Supports Minecraft 1.20.1 and Origins Mod v1.10.0.
+
+Fixes
+
++ Shulk
+	+ ``Antigravity Pellet``
+		+ Fixed identifier of the levitation effect using ``origins:levitation`` instead of ``minecraft:levitation``.
+
+### [Version 1.17 [Minecraft 1.20.4]]
 
 #### [Version 1.17.2 [Localization Keys & German Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.2)
 

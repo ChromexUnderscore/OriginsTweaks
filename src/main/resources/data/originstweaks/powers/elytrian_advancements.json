@@ -30,12 +30,20 @@
 					"type": "origins:or",
 					"conditions": [
 						{
-							"type": "origins:type",
-							"damage_type": "minecraft:fly_into_wall"
+							"type": "origins:name",
+							"name": "fall"
 						},
 						{
-							"type": "origins:type",
-							"damage_type": "minecraft:fall"
+							"type": "origins:name",
+							"name": "fall.player"
+						},
+						{
+							"type": "origins:name",
+							"name": "flyIntoWall"
+						},
+						{
+							"type": "origins:name",
+							"name": "flyIntoWall.player"
 						}
 					]
 				}

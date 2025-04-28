@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.phantomize.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.phantomize.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

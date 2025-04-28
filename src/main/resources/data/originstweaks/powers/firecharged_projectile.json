@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.firecharged_projectile.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.firecharged_projectile.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

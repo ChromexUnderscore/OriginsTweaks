@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.green_thumb.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.green_thumb.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -96,7 +90,7 @@
 		"consume_sound": "minecraft:entity.generic.eat",
 		"food_component": {
 			"hunger": 6,
-			"saturation": 0.75,
+			"saturation": 0.8,
 			"meat": false,
 			"snack": true
 		},

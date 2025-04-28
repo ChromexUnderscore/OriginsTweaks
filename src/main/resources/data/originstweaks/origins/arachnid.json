@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.arachnid.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.arachnid.description"
-	},
 	"icon": {
 		"item": "minecraft:cobweb"
 	},

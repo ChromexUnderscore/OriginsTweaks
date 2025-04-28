@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.natural_hunter.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.natural_hunter.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -249,7 +243,7 @@
 		],
 		"block_condition": {
 			"type": "origins:in_tag",
-			"tag": "originstweaks:wood"
+			"tag": "originstweaks:woods"
 		},
 		"item_condition": {
 			"type": "origins:empty"
@@ -494,8 +488,17 @@
 			]
 		},
 		"damage_condition": {
-			"type": "origins:type",
-			"damage_type": "minecraft:player_attack"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "player"
+				},
+				{
+					"type": "origins:name",
+					"name": "player.item"
+				}
+			]
 		},
 		"condition": {
 			"type": "origins:and",

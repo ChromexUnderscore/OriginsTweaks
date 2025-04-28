@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.slow_falling.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.slow_falling.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

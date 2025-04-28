@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.burning_wrath.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.burning_wrath.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -87,8 +81,17 @@
 		},
 		"cooldown": 600,
 		"damage_condition": {
-			"type": "origins:type",
-			"damage_type": "minecraft:player_attack"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "player"
+				},
+				{
+					"type": "origins:name",
+					"name": "player.item"
+				}
+			]
 		},
 		"condition": {
 			"type": "origins:on_fire"

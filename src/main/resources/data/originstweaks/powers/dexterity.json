@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.dexterity.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.dexterity.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -42,8 +36,17 @@
 	"fall_immunity": {
 		"type": "origins:invulnerability",
 		"damage_condition": {
-			"type": "origins:type",
-			"damage_type": "minecraft:fall"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "fall"
+				},
+				{
+					"type": "origins:name",
+					"name": "fall.player"
+				}
+			]
 		}
 	},
 	"jump_power": {

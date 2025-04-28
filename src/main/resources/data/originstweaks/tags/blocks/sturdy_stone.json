@@ -13,6 +13,10 @@
 		"obsidian",
 		"crying_obsidian",
 		"blackstone",
-		"gilded_blackstone"
+		"gilded_blackstone",
+		{
+			"id": "#c:ores_in_ground/deepslate",
+			"required": false
+		}
 	]
 }

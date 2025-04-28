@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.throw_ender_pearl.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.throw_ender_pearl.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

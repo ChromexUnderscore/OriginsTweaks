@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "power.originstweaks.body_moisture.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.body_moisture.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.phantom.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.phantom.description"
-	},
 	"icon": {
 		"item": "minecraft:phantom_membrane"
 	},

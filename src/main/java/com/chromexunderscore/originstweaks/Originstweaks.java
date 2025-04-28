@@ -19,6 +19,6 @@ public class Originstweaks implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Remember to enable flying in the server.properties; set \"mixin.entity.collisions.suffocation=false\" in lithium.properties if using lithium.");
+		LOGGER.info("For the best Origins experience, enable flying in the server.properties and set \"mixin.entity.collisions.suffocation=false\" in lithium.properties when using lithium.");
 	}
 }

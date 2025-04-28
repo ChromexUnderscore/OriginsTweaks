@@ -1,10 +1,4 @@
 {
-	"name": {
-		"translate": "origin.originstweaks.avian.name"
-	},
-	"description": {
-		"translate": "origin.originstweaks.avian.description"
-	},
 	"icon": {
 		"item": "minecraft:feather"
 	},

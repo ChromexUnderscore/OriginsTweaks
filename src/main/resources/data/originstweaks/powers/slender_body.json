@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.ender_body.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.ender_body.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -133,7 +127,7 @@
 							},
 							{
 								"type": "origins:play_sound",
-								"sound": "minecraft:entity.enderman.teleport",
+								"sound": "minecraft:item.chorus_fruit.teleport",
 								"category": "players"
 							},
 							{
@@ -149,7 +143,7 @@
 			"type": "origins:projectile"
 		},
 		"modifier": {
-			"name": "minimal projectile damage",
+			"name": "no projectile damage",
 			"operation": "set_total",
 			"value": 0
 		},
@@ -158,6 +152,66 @@
 			"resource": "*:*_dodge_cooldown",
 			"comparison": "==",
 			"compare_to": 0
+		}
+	},
+	"projectile_dodge_fallback": {
+		"type": "origins:modify_damage_taken",
+		"self_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "execute if dimension minecraft:the_nether run spreadplayers ~ ~ 0 8 under 120 false @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "execute unless dimension minecraft:the_nether run spreadplayers ~ ~ 0 8 false @s"
+				},
+				{
+					"type": "origins:spawn_particles",
+					"particle": "minecraft:portal",
+					"count": 100,
+					"speed": 0.5,
+					"offset_y": 1
+				},
+				{
+					"type": "origins:grant_advancement",
+					"advancement": "originstweaks:enderian/dodge_projectile"
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:item.chorus_fruit.teleport",
+					"category": "players"
+				},
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "*:*_dodge_cooldown"
+				}
+			]
+		},
+		"damage_condition": {
+			"type": "origins:projectile"
+		},
+		"modifier": {
+			"name": "no projectile damage",
+			"operation": "set_total",
+			"value": 0
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "*:*_dodge_cooldown",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:power",
+					"power": "*:*_projectile_dodge",
+					"inverted": true
+				}
+			]
 		}
 	},
 	"dodge_cooldown": {

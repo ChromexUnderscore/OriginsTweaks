@@ -1,11 +1,5 @@
 {
 	"type": "origins:multiple",
-	"name": {
-		"translate": "power.originstweaks.swim_speed.name"
-	},
-	"description": {
-		"translate": "power.originstweaks.swim_speed.description"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",
