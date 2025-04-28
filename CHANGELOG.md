@@ -6,7 +6,7 @@
 
 #### [Version 1.18.0 [1.20.1 Backport]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.0)
 
-Gameplay Changes
+**Gameplay Changes**
 
 + Avian:
 	+ Edible Glistering Melons now provide 0.8 saturation, matching similar food items.
@@ -18,7 +18,7 @@ Gameplay Changes
 	+ ``Soulbound``:
 		+ Boss Soul absorption now triggers when killing entities tagged `c:bosses`, instead of only entities with more than 100 health.
 
-Technical Changes
+**Technical Changes**
 
 + Made various internal adjustments to abilities to ensure backwards compatibility with Origins 1.10.0.
 + Utilized Fabric API's Conventional Tags to extend existing tags.
@@ -27,12 +27,23 @@ Technical Changes
 + Removed `name` and `description` keys from origin and power files for backwards compatibility.
 + Added Russian translations (contributed by [tiglakirill7](https://crowdin.com/profile/tiglakirill7)).
 + Supports Minecraft 1.20.1 and Origins Mod v1.10.0.
++ Updated ``fabric.mod.json`` with contributors, updated dependencies and a link to crowdin.
++ Updated ``README.md`` and ``wiki.md``.
++ Bumped Version to 1.18.0.
 
-Fixes
+**Fixes**
 
 + Shulk
 	+ ``Antigravity Pellet``
 		+ Fixed identifier of the levitation effect using ``origins:levitation`` instead of ``minecraft:levitation``.
+
+**Dependencies**
+
+Minecraft 1.20.1 - 1.20.4
+Origins Mod [1.10.0](https://modrinth.com/mod/origins/version/1.10.0) - [1.13.0-alpha.4](https://modrinth.com/mod/origins/version/1.13.0-alpha.4+mc.1.20.4)
+[Fabric API](https://modrinth.com/mod/fabric-api)
+[Pehkui](https://modrinth.com/mod/pehkui)
+[Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
 
 ### [Version 1.17 [Minecraft 1.20.4]]
 

@@ -3,15 +3,20 @@
 	"id": "originstweaks",
 	"version": "${version}",
 	"name": "OriginsTweaks",
-	"description": "Reworks the Origins Mod's abilities and adds new ones.",
+	"description": "An Origins Mod addon that overhauls the Default Origins and adds new abilities.",
 	"authors": [
 		"ChromexUnderscore"
+	],
+	"contributors": [
+		"AnimGoated",
+		"tiglakirill7"
 	],
 	"contact": {
 		"repository": "https://github.com/ChromexUnderscore/OriginsTweaks",
 		"issues": "https://github.com/ChromexUnderscore/OriginsTweaks/issues",
 		"wiki": "https://github.com/ChromexUnderscore/OriginsTweaks/wiki",
-		"discord": "https://discord.com/invite/Su7tqDmUTu"
+		"discord": "https://discord.com/invite/Su7tqDmUTu",
+		"crowdin": "https://crowdin.com/project/originstweaks"
 	},
 	"license": "MIT License",
 	"icon": "assets/originstweaks/icon.png",
@@ -25,9 +30,9 @@
 		]
 	},
 	"depends": {
-		"minecraft": "*",
+		"minecraft": ">=1.20.1 <=1.20.4",
+		"origins": ">=1.10.0 <=1.13.0-alpha.4",
 		"fabric-api": "*",
-		"origins": ">=1.10.0",
 		"pehkui": "*",
 		"mr_origins_dietarydelights": "*"
 	},
