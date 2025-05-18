@@ -77,7 +77,7 @@
 	"power.originstweaks.natural_hunter.name": "The Hunter's Instinct",
 	"power.originstweaks.natural_hunter.description": "Felines are predators by their very nature; their claws may be sharpened to greater lethality in fierce combat, and fish doth provide them with greater sustenance.",
 	"badge.originstweaks.natural_hunter.0": "Employ [Primary] whilst holding naught in hand to strike with thy formidable Claws.",
-	"badge.originstweaks.natural_hunter.1": "Sharpen thy Claws using the following blocks in due order: Logs or Wool (+5 Attack), Smooth Stone, Polished Granite, -Andesite or -Diorite (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack).",
+	"badge.originstweaks.natural_hunter.1": "Sharpen thy Claws using the following blocks in due order: Logs or Wool (4 Attack), Smooth Stone, Polished Granite, -Andesite or -Diorite (5 Attack), Iron Block (6 Attack), Diamond Block (7 Attack).",
 	"badge.originstweaks.natural_hunter.2": "Attacking with thy claws deals less of a knockback, which doth aid in the swift delivery of follow-up blows.",
 	"badge.originstweaks.natural_hunter.3": "Food crafted from the bounty of the waters doth grant three more measures of hunger and two more of true satiety.",
 	"power.originstweaks.dexterity.name": "The Acrobat's Grace",

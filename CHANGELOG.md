@@ -4,6 +4,34 @@
 
 ### [Version 1.18 [Minecraft 1.20.1-1.20.4]]
 
+#### [Version 1.18.1 [Bugfix Natural Hunter]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.1)
+
+**Gameplay Changes**
+
++ Feline:
+	+ ``Natural Hunter``:
+		+ Added stair and slab variants of smooth and polished stone blocks to the block tag.
+
+**Fixes**
+
++ Feline:
+	+ ``Natural Hunter``:
+		+ Fixed a typo with the wood block condition for claw resharpening.
+		+ Fixed inaccurate badge information for claw damage tiers.
+
+**Technical Changes**
+
++ Updated ``README.md``.
++ Bumped Version to 1.18.1.
+
+**Dependencies**
+
++ Minecraft 1.20.1 - 1.20.4
++ Origins Mod [1.10.0](https://modrinth.com/mod/origins/version/1.10.0) - [1.13.0-alpha.4](https://modrinth.com/mod/origins/version/1.13.0-alpha.4+mc.1.20.4)
++ [Fabric API](https://modrinth.com/mod/fabric-api)
++ [Pehkui](https://modrinth.com/mod/pehkui)
++ [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
+
 #### [Version 1.18.0 [1.20.1 Backport]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.0)
 
 **Gameplay Changes**

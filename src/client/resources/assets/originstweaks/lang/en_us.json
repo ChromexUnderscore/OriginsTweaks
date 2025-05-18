@@ -77,7 +77,7 @@
 	"power.originstweaks.natural_hunter.name": "Natural Hunter",
 	"power.originstweaks.natural_hunter.description": "Felines are natural predators; their claws can be sharpened to be more lethal in combat, and fish is more nourishing.",
 	"badge.originstweaks.natural_hunter.0": "Use [Primary] while not holding any tool to attack using your Claws.",
-	"badge.originstweaks.natural_hunter.1": "Sharpen your Claws using the following blocks in order: Logs or Wool (+5 Attack), Smooth Stone, Polished Granite, -Andesite or -Diorite (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack)",
+	"badge.originstweaks.natural_hunter.1": "Sharpen your Claws using the following blocks in order: Logs or Wool (4 Attack), Smooth Stone, Polished Granite, -Andesite or -Diorite (5 Attack), Iron Block (6 Attack), Diamond Block (7 Attack)",
 	"badge.originstweaks.natural_hunter.2": "Attacking with your claws deals less knockback, which helps with fast follow-up attacks.",
 	"badge.originstweaks.natural_hunter.3": "Food made out of fish provides 3 more hunger and 2 more saturation.",
 	"power.originstweaks.dexterity.name": "Acrobatics",

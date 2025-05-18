@@ -10,18 +10,6 @@ An [Origins Mod](https://modrinth.com/mod/origins) addon that overhauls the Defa
 <a href="https://modrinth.com/mod/pehkui"><img src="https://img.shields.io/badge/Pehkui-lightgray"></a>
 <a href="https://modrinth.com/datapack/origins-dietary-delights"><img src="https://img.shields.io/badge/Origins%20Dietary%20Delights-green"></a>
 
-OriginsTweaks currently offers translations for following Languages:
-+ Complete:
-  + English (US)
-  + English (United Kingdom)
-  + German
-+ Proofreading Required (Reach out on [Discord](#bugs-suggestions--contribution))
-  + Russian
-+ Joke Languages:
-    + Shakespearean English
-    + Pirate Speak
-    + LOLCAT
-
 ## Changes and Additions
 
 For detailed changes to Abilities from the Origins Mod and New Abilities added by OriginsTweaks, check out the [OriginsTweaks Wiki](https://github.com/ChromexUnderscore/OriginsTweaks/wiki).
@@ -132,6 +120,19 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 
 </details>
 
+## Translations
+
+OriginsTweaks currently offers translations for following Languages:
++ Complete:
+  + English (US)
+  + English (United Kingdom)
+  + German
++ Proofreading Required (Reach out on [Discord](#bugs-suggestions--contribution))
+  + Russian
++ Joke Languages:
+    + Shakespearean English
+    + Pirate Speak
+    + LOLCAT
 
 ## Built-in Mod Compat
 

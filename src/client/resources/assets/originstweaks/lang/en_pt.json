@@ -77,7 +77,7 @@
 	"power.originstweaks.natural_hunter.name": "Hunter's Instinct",
 	"power.originstweaks.natural_hunter.description": "Felines be natural predators; their claws can be sharpened fer deadlier strikes, and fish fills their bellies better.",
 	"badge.originstweaks.natural_hunter.0": "Use [Primary] while barehanded to strike with yer claws.",
-	"badge.originstweaks.natural_hunter.1": "Sharpen yer claws usin' these blocks in order: Logs or Wool (+5 Attack), Smooth Stone, Polished Granite, -Andesite or -Diorite (+6 Attack), Iron Block (+7 Attack), Diamond Block (+8 Attack).",
+	"badge.originstweaks.natural_hunter.1": "Sharpen yer claws usin' these blocks in order: Logs or Wool (4 Attack), Smooth Stone, Polished Granite, -Andesite or -Diorite (5 Attack), Iron Block (6 Attack), Diamond Block (7 Attack).",
 	"badge.originstweaks.natural_hunter.2": "Claw strikes deal less knockback, lettin' ye follow up faster.",
 	"badge.originstweaks.natural_hunter.3": "Fishy grub fills ye up better, providin' 3 more hunger and 2 more saturation.",
 	"power.originstweaks.dexterity.name": "Catlike Agility",

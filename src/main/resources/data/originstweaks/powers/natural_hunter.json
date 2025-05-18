@@ -243,7 +243,7 @@
 		],
 		"block_condition": {
 			"type": "origins:in_tag",
-			"tag": "originstweaks:woods"
+			"tag": "originstweaks:wood"
 		},
 		"item_condition": {
 			"type": "origins:empty"
