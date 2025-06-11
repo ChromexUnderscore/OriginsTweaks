@@ -41,7 +41,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:swimming",
@@ -68,7 +68,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -98,7 +98,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -124,7 +124,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -150,7 +150,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -177,7 +177,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -203,7 +203,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -229,7 +229,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",

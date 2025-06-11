@@ -30,7 +30,7 @@
 		"interval": 10,
 		"condition": {
 			"type": "origins:power_active",
-			"power": "*phantomize_toggle",
+			"power": "*:phantomize_toggle",
 			"inverted": true
 		}
 	},

@@ -18,7 +18,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:resource",
@@ -46,7 +46,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:resource",
@@ -80,7 +80,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*phantomize_toggle"
+					"power": "*:phantomize_toggle"
 				},
 				{
 					"type": "origins:resource",
