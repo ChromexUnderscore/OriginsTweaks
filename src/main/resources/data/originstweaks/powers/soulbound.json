@@ -30,7 +30,7 @@
 		"interval": 10,
 		"condition": {
 			"type": "origins:power_active",
-			"power": "*:phantomize",
+			"power": "*phantomize_toggle",
 			"inverted": true
 		}
 	},
@@ -237,6 +237,13 @@
 			"resource": "*:*_energy",
 			"change": 100,
 			"operation": "set"
+		}
+	},
+	"no_insomnia": {
+		"type": "origins:modify_insomnia_ticks",
+		"modifier": {
+			"value": 0,
+			"operation": "set_total"
 		}
 	}
 }

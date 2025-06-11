@@ -25,21 +25,10 @@
 			"type": "origins:and",
 			"conditions": [
 				{
-					"type": "origins:sneaking"
+					"type": "origins:on_block"
 				},
 				{
-					"type": "origins:or",
-					"conditions": [
-						{
-							"type": "origins:on_block"
-						},
-						{
-							"type": "origins:in_block",
-							"block_condition": {
-								"type": "origins:movement_blocking"
-							}
-						}
-					]
+					"type": "origins:sneaking"
 				}
 			]
 		},
@@ -52,7 +41,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:swimming",
@@ -79,7 +68,7 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
@@ -109,92 +98,16 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
-					}
-				}
-			]
-		}
-	},
-	"climbing": {
-		"type": "origins:climbing",
-		"allow_holding": false,
-		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:power_active",
-					"power": "*:phantomize"
-				},
-				{
-					"type": "origins:in_block",
-					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
-					}
-				}
-			]
-		}
-	},
-	"slow_climbing": {
-		"type": "origins:modify_velocity",
-		"modifier": {
-			"operation": "multiply_total",
-			"value": -0.1
-		},
-		"axes": [
-			"y"
-		],
-		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:power_active",
-					"power": "*:phantomize"
-				},
-				{
-					"type": "origins:in_block",
-					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
+						"type": "origins:offset",
+						"condition": {
+							"type": "origins:movement_blocking"
+						},
+						"y": 1
 					}
 				}
 			]
@@ -211,24 +124,16 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
+						"type": "origins:offset",
+						"condition": {
+							"type": "origins:movement_blocking"
+						},
+						"y": 1
 					}
 				}
 			]
@@ -245,24 +150,16 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
+						"type": "origins:offset",
+						"condition": {
+							"type": "origins:movement_blocking"
+						},
+						"y": 1
 					}
 				}
 			]
@@ -280,24 +177,16 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
+						"type": "origins:offset",
+						"condition": {
+							"type": "origins:movement_blocking"
+						},
+						"y": 1
 					}
 				}
 			]
@@ -314,24 +203,16 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
+						"type": "origins:offset",
+						"condition": {
+							"type": "origins:movement_blocking"
+						},
+						"y": 1
 					}
 				}
 			]
@@ -348,24 +229,16 @@
 			"conditions": [
 				{
 					"type": "origins:power_active",
-					"power": "*:phantomize"
+					"power": "*phantomize_toggle"
 				},
 				{
 					"type": "origins:in_block",
 					"block_condition": {
-						"type": "origins:and",
-						"conditions": [
-							{
-								"type": "origins:movement_blocking"
-							},
-							{
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:movement_blocking"
-								},
-								"y": 1
-							}
-						]
+						"type": "origins:offset",
+						"condition": {
+							"type": "origins:movement_blocking"
+						},
+						"y": 1
 					}
 				}
 			]

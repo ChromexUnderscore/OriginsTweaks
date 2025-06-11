@@ -161,11 +161,7 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "execute if dimension minecraft:the_nether run spreadplayers ~ ~ 0 8 under 120 false @s"
-				},
-				{
-					"type": "origins:execute_command",
-					"command": "execute unless dimension minecraft:the_nether run spreadplayers ~ ~ 0 8 false @s"
+					"command": "function originstweaks:fallback_rtp"
 				},
 				{
 					"type": "origins:spawn_particles",

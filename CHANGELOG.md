@@ -1,10 +1,36 @@
 # OriginsTweaks Changelogs
 
-## [1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20.1)
+## [Minecraft 1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20)
 
-### [Version 1.18 [Minecraft 1.20.1-1.20.4]]
+### [Version 1.18 | Minecraft 1.20.1-1.20.4]
 
-#### [Version 1.18.1 [Bugfix Natural Hunter]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.1)
+#### [Version 1.18.2 - Hotfix Enderian Dodge & Phantom Phasing](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.2)
+
+**Fixes**
+
++ Enderian:
+	+ ``Slender Body``:
+		+ Fixed an Issue which caused players to teleport to the surface when dodging a projectile in Minecraft 1.20.1 (#60).
++ Phantom:
+	+ ``Phasing``:
+		+ Fixed an Issue with phasing not properly working in Minecraft 1.20.1 (Thanks ghosthenry and ryo404).
+	+ ``Phantomize``:
+		+ Fixed an Issue with phantomize not being able to be toggled via Primary Active (Thanks ghosthenry and ryo404).
+
+**Technical Changes**
+
++ Removed duplicate ``Human`` entry in the Origins Layer (#58).
++ Bumped Version to 1.18.2.
+
+**Dependencies**
+
++ Minecraft 1.20.1 - 1.20.4
++ Origins Mod [1.10.0](https://modrinth.com/mod/origins/version/1.10.0) - [1.13.0-alpha.4](https://modrinth.com/mod/origins/version/1.13.0-alpha.4+mc.1.20.4)
++ [Fabric API](https://modrinth.com/mod/fabric-api)
++ [Pehkui](https://modrinth.com/mod/pehkui)
++ [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
+
+#### [Version 1.18.1 - Bugfix Natural Hunter](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.1)
 
 **Gameplay Changes**
 
@@ -32,7 +58,7 @@
 + [Pehkui](https://modrinth.com/mod/pehkui)
 + [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
 
-#### [Version 1.18.0 [1.20.1 Backport]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.0)
+#### [Version 1.18.0 - 1.20.1 Backport](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.0)
 
 **Gameplay Changes**
 
@@ -73,9 +99,9 @@
 + [Pehkui](https://modrinth.com/mod/pehkui)
 + [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
 
-### [Version 1.17 [Minecraft 1.20.4]]
+### [Version 1.17 | Minecraft 1.20.4]
 
-#### [Version 1.17.2 [Localization Keys & German Translations]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.2)
+#### [Version 1.17.2 - Localization Keys & German Translations](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.2)
 
 Gameplay Changes
 
@@ -131,7 +157,7 @@ Technical Changes
 + Rewrote ``README.md``. (Issue #52)
 + Bumped version to 1.17.2.
 
-#### [Version 1.17.1 [Origin Advancements]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.1)
+#### [Version 1.17.1 - Origin Advancements](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.1)
 
 Gameplay Changes
 
@@ -188,7 +214,7 @@ Technical Changes
 + Updated ``README.md``.
 + Bumped version to 1.17.1.
 
-#### [Version 1.17.0 [1.20.4 Port & New Abilities]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.0)
+#### [Version 1.17.0 - 1.20.4 Port & New Abilities](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.17.0)
 
 Gameplay Changes
 
@@ -260,9 +286,9 @@ Technical Changes
 + Updated ``README.md``.
 + Bumped version to 1.17.0.
 
-### [Version 1.16 [Minecraft 1.20.2]]
+### [Version 1.16 | Minecraft 1.20.2]
 
-#### [Verion 1.16.5 [Arachnid & Phantom Balance]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.5)
+#### [Verion 1.16.5 - Arachnid & Phantom Balance](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.5)
 
 Gameplay Changes
 
@@ -282,7 +308,7 @@ Technical Changes
 + Updated ``README.md``.
 + Bumped version to 1.16.5.
 
-#### [Version 1.16.4 [Merling Moisture & Balance Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.4)
+#### [Version 1.16.4 - Merling Moisture & Balance Changes](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.4)
 
 Gameplay Changes
 
@@ -312,7 +338,7 @@ Technical Changes
 + Updated ``README.md``.
 + Bumped version to 1.16.4.
 
-#### [Version 1.16.3 [Hotfix Elytrian Wings]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.3)
+#### [Version 1.16.3 - Hotfix Elytrian Wings](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.3)
 
 Gameplay Changes
 
@@ -323,7 +349,7 @@ Technical Changes
 + Bumped version to 1.16.3.
 + Changed dependencies of ``minecraft`` and ``origins`` to allow versions greater than the current minor version. Using OriginsTweaks in combination with any alpha build of the Origins Mod will most likely break stuff. Please don't report bugs if you're not using the recommended version of Origins.
 
-#### [Version 1.16.2 [Dietary Delight Compat and OriginsTweaks Opt-In]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
+#### [Version 1.16.2 - Dietary Delight Compat and OriginsTweaks Opt-In](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.2)
 
 Gameplay Changes
 
@@ -371,7 +397,7 @@ Technical Changes
 
 + Added an option layer prior to the Origins Layer to choose wether OriginsTweaks or Origins Mod Origins are pickable for a single player.
 
-#### [Version 1.16.1 [Elytrian and Enderian Changes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.1)
+#### [Version 1.16.1 - Elytrian and Enderian Changes](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.1)
 
 Gameplay Changes
 
@@ -401,7 +427,7 @@ Fixes
 
 + Fixed more typos and rephrased some descriptions.
 
-#### [Version 1.16.0 [1.20.2 Update & Rebalance]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.0)
+#### [Version 1.16.0 - 1.20.2 Update & Rebalance](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.16.0)
 
 This is a big one.
 
@@ -440,7 +466,7 @@ This is a big one.
 + Removed power ``thermal_lift`` from blazeborn.
 + Removed power ``turtle_helmet`` from merling.
 
-### [Version 1.15 [Minecraft 1.20.0 / 1.20.1]]
+### [Version 1.15 | Minecraft 1.20.0 / 1.20.1]
 
 #### [Version 1.15.4 [Removed Quilt Metadata & Player Suggestions]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.15.4)
 
@@ -519,9 +545,9 @@ This is a big one.
 	+ In the Overworld and below the nether-roof the Enderian may teleport up at most 16 blocks at a time.
 	+ Enderians above the nether-roof (> 128) will always teleport to the bottom regardless of y coordinates.
 
-## [1.19.4](https://minecraft.fandom.com/wiki/Java_Edition_1.19.4)
+## [Minecraft 1.19.4](https://minecraft.fandom.com/wiki/Java_Edition_1.19.4)
 
-### [Version 1.14 [Minecraft 1.19.4]]
+### [Version 1.14 | Minecraft 1.19.4]
 
 #### [Version 1.14.4 [(Another) Enderian Reflex Hotfix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.14.4)
 
@@ -688,9 +714,9 @@ This is a big one.
 + Fixed a Bug with ``recall``.
 	+ Added a Cool down of 10 seconds between toggling the power off -> on, fixing a new beacon being created upon toggling off.
 
-## [1.19.3](https://minecraft.fandom.com/wiki/Java_Edition_1.19.3)
+## [Minecraft 1.19.3](https://minecraft.fandom.com/wiki/Java_Edition_1.19.3)
 
-### [Version 1.13 [1.19.3 Update / Unarchive of Project / Elytrian Rework]]
+### [Version 1.13 | Minecraft 1.19.3]
 
 #### [Version 1.13.2 [More Tweaks]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.13.2)
 
@@ -722,9 +748,9 @@ This is a big one.
 + Changed Merling's Trident recipe.
 + Removed Origin Teams.
 
-## [1.19.1](https://minecraft.fandom.com/wiki/Java_Edition_1.19.1)
+## [Minecraft 1.19.1](https://minecraft.fandom.com/wiki/Java_Edition_1.19.1)
 
-### [Version 1.12 [1.19 Update]]
+### [Version 1.12 | Minecraft 1.19]
 
 #### [Version 1.12.2 [Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.12.2)
 
@@ -747,9 +773,9 @@ This is a big one.
 + Replaced ``execute_command`` actions that execute a ``/playsound`` command with a ``play_sound`` action type.
 + Added a shader for entities hit by a toxic coating arrow.
 
-## [1.18.2](https://minecraft.fandom.com/wiki/Java_Edition_1.18.2)
+## [Minecraft 1.18.2](https://minecraft.fandom.com/wiki/Java_Edition_1.18.2)
 
-### [Version 1.11 [Merling Rework]]
+### [Version 1.11 | Merling Rework]
 
 #### [Version 1.11.2 [Some more fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.11.2)
 
@@ -772,7 +798,7 @@ This is a big one.
 	+ Changed damage bonus from ``addition 4`` to ``multiply_total 1.5``
 	+ Melee is affected as well now.
 
-### [Version 1.10 [Enderian Buff]]
+### [Version 1.10 | Enderian Buff]
 
 #### [Version 1.10.3 [Fabric Mod]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.10.3)
 
@@ -810,7 +836,7 @@ This is a big one.
 + Added power ``Recall Beacon`` to Enderian.
 	+ Secondary Active summons an AoE Cloud, which acts as a teleportation point. Forces teleport once completely uncharged. 30 seconds usage, up to 60 seconds to charge up fully.
 
-### [Version 1.9 [Avian Buff]]
+### [Version 1.9 | Avian Buff]
 
 #### [Version 1.9.2 [Another power for Arachnid]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.9.2))
 
@@ -836,7 +862,7 @@ This is a big one.
 	+ Enchantments and effects are ignored.
 + Changed Active keybinding in power `Slow Falling` from `primary` to `secondary`.
 
-### [Version 1.8 [Feline Buff]]
+### [Version 1.8 | Feline Buff]
 
 #### [Version 1.8.0 [Feline Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.8.0)
 
@@ -859,7 +885,7 @@ This is a big one.
 		+ \+ 3 hunger, + 2 Saturation.
 	+ Added Item tag `originstweaks:feline_food`.
 
-### [Version 1.7 [Balancing, Mod Support & Fixes]]
+### [Version 1.7 | Balancing, Mod Support & Fixes]
 
 #### [Version 1.7.2 [Slight Grappling Modifications]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.7.2)
 
@@ -912,9 +938,9 @@ This is a big one.
 	+ Restricts usage of Elytra when wearing higher than Iron Tier.
 + Fixed Various Spelling Errors.
 
-## [1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
+## [Minecraft 1.18.1](https://modrinth.com/mod/origins/version/1.3.1)
 
-### [Version 1.6 [Blazeborn Buff]]
+### [Version 1.6 | Blazeborn Buff]
 
 #### [Version 1.6.3 [Origin Teams and Reload Notification]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.6.3)
 
@@ -950,7 +976,7 @@ This is a big one.
 	+ Consume 1 Firecharge for 128 seconds revved up.
 	+ Buffs Offensive Abilities when revved.
 
-### [Version 1.5 [Shulk Buff]]
+### [Version 1.5 | Shulk Buff]
 
 #### [Version 1.5.0 [Shulk Buff]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.5)
 
@@ -959,7 +985,7 @@ This is a big one.
 + Added Power ``Protective Shell`` to shulk.
 	+ Grants 3 stages of resistance upon holding down shift
 
-### [Version 1.4 [Arachnid Buff]]
+### [Version 1.4 | Arachnid Buff]
 
 #### [Version 1.4.1 [Arachnid Fixes]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.4.1)
 
@@ -979,7 +1005,7 @@ This is a big one.
 	+ Added sub-power `String Regenerate`.
 + Fixed `Arthropod Appearance` to properly calculate fall damage delay and amount.
 
-### [Version 1.3 [Phantom buff]]
+### [Version 1.3 | Phantom buff]
 
 #### [Version 1.3.2 [Phantom Patch]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.3.2)
 
@@ -1000,7 +1026,7 @@ This is a big one.
 	+ Gold Debuffs: Golden Food is not edible, Golden Blocks are unphasable and give Debuffs in proximity, Golden Tools deal extra Damage to the Origin.
 + Removed power `Fragile` to balance out the damage modifier caused by `Aurophobia`.
 
-### [Version 1.2 [Elytrian Buffs]]
+### [Version 1.2 | Elytrian Buffs]
 
 #### [Version 1.2.1 [Merling Blacksmith Fix]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.2.1)
 
@@ -1012,7 +1038,7 @@ This is a big one.
 	+ Active Ability that gives a small forward boost if activated while gliding; similar to Rockets but weaker.
 + Modified power `Need for Mobility` to support Armor up to Iron Tier.
 
-### [Version 1.1 [Basic Buffs]]
+### [Version 1.1 | Basic Buffs]
 
 #### [Version 1.1.0 [Basic Buffs]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.1)
 
@@ -1028,7 +1054,7 @@ This is a big one.
 	+ Tridents thrown while submerged in water deal more damage.
 + Modified power `Slow Falling` to have a toggle.
 
-### [Version 1.0 [Base Datapack]]
+### [Version 1.0 | Base Datapack]
 
 #### [Version 1.0.0 [Base Datapack]](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.0)
 

@@ -4,6 +4,6 @@
 	"render_armor": true,
 	"condition": {
 		"type": "origins:power_active",
-		"power": "*:phantomize"
+		"power": "*phantomize_toggle"
 	}
 }
