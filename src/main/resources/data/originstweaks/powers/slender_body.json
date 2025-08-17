@@ -5,21 +5,21 @@
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
 			"text": {
-				"translate": "badge.originstweaks.ender_body.0"
+				"translate": "badge.originstweaks.slender_body.0"
 			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/arrow_up.png",
 			"text": {
-				"translate": "badge.originstweaks.ender_body.1"
+				"translate": "badge.originstweaks.slender_body.1"
 			}
 		},
 		{
 			"type": "origins:tooltip",
 			"sprite": "origins:textures/gui/badge/info.png",
 			"text": {
-				"translate": "badge.originstweaks.ender_body.2"
+				"translate": "badge.originstweaks.slender_body.2"
 			}
 		}
 	],
