@@ -1,9 +1,9 @@
 {
 	"type": "origins:multiple",
+	"hidden": true,
 	"entity_group": {
-		"type": "origins:entity_group",
-		"group": "aquatic",
-		"hidden": true
+		"type": "origins:modify_type_tag",
+		"tag": "aquatic"
 	},
 	"spawn": {
 		"type": "origins:modify_player_spawn",

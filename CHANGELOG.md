@@ -6,10 +6,23 @@
 
 #### [Version 1.19.0 - Port to Origins 1.13.0-pre.1](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.19.0)
 
+**Gameplay Changes**
+
++ Feline:
+	+ ``Natural Hunter``:
+		+ Added some missing blocks to the ``sharpen_stone`` block tag.
+		+ Added new Polished Tuff blocks to the ``sharpen_stone`` block tag.
++ Phantom:
+	+ ``Aurophobia``:
+		+ Holding any golden tool no longer allows block interactions.
+	+ ``Phasing``:
+		+ Removed ``minecraft:light_weighted_pressure_plate`` from the ``unphasable`` block tag.
+
 **Technical Changes**
 
 + Updated data Folder Structure for MC 1.21.1.
 + Updated Fabric Project Structure for MC 1.21.1.
++ Updated Advancements to use mc 1.21.1 json components.
 + Refactored java entrypoints for main and client from ``Originstweaks`` to ``OriginsTweaks``.
 + Removed Mod recommendation "More Waterlogging" due to the lack of a 1.21.1 Release and archivation of the Project on Modrinth.
 + Updated Badges linking to Origins: Dietary Delights to use the updated name "Overgrown's Origins: Dietary Delights".
