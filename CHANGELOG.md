@@ -8,10 +8,12 @@
 
 **Technical Changes**
 
++ Updated data Folder Structure for MC 1.21.1.
 + Updated Fabric Project Structure for MC 1.21.1.
 + Refactored java entrypoints for main and client from ``Originstweaks`` to ``OriginsTweaks``.
 + Removed Mod recommendation "More Waterlogging" due to the lack of a 1.21.1 Release and archivation of the Project on Modrinth.
-+ Updated Badges linking to Origins: Dietary Delights to use the updated name "Overgrown's Origins: Dietary Delights" 
++ Updated Badges linking to Origins: Dietary Delights to use the updated name "Overgrown's Origins: Dietary Delights".
++ Updated ``README.md``.
 + Bumped Version to 1.19.0.
 
 **Dependencies**
