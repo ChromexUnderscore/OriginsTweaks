@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.shulk.tank_warden.description"
 		},
 		"icon": {
-			"item": "minecraft:netherite_chestplate"
+			"id": "minecraft:netherite_chestplate"
 		},
 		"frame": "challenge",
 		"show_toast": true,

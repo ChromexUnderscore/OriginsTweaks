@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.phantom.phase_attack.description"
 		},
 		"icon": {
-			"item": "minecraft:infested_stone"
+			"id": "minecraft:infested_stone"
 		},
 		"frame": "task",
 		"show_toast": true,

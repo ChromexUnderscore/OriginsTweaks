@@ -8,9 +8,9 @@
 	"origins": [
 		{
 			"origins": [
-				"originstweaks:vanilla_elytra",
-				"originstweaks:custom_wings",
-				"originstweaks:no_render"
+				"originstweaks:wing_selector/vanilla_elytra",
+				"originstweaks:wing_selector/custom_wings",
+				"originstweaks:wing_selector/no_render"
 			],
 			"condition": {
 				"type": "origins:origin",

@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.feline.cooked_fish_stack.description"
 		},
 		"icon": {
-			"item": "minecraft:cooked_cod"
+			"id": "minecraft:cooked_cod"
 		},
 		"frame": "goal",
 		"show_toast": true,

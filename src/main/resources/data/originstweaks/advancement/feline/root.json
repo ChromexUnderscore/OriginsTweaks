@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.feline.root.description"
 		},
 		"icon": {
-			"item": "minecraft:salmon"
+			"id": "minecraft:salmon"
 		},
 		"frame": "task",
 		"show_toast": true,

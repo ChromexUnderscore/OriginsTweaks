@@ -1,5 +1,7 @@
 {
-	"icon": "minecraft:brush",
+	"icon": {
+		"item": "minecraft:brush"
+	},
 	"impact": 0,
 	"order": 1,
 	"powers": []

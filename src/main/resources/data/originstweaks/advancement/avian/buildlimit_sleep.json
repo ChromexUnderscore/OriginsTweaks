@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.avian.buildlimit_sleep.description"
 		},
 		"icon": {
-			"item": "minecraft:red_bed"
+			"id": "minecraft:red_bed"
 		},
 		"frame": "challenge",
 		"show_toast": true,

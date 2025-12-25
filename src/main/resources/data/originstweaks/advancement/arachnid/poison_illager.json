@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.arachnid.poison_illager.description"
 		},
 		"icon": {
-			"item": "minecraft:spider_eye"
+			"id": "minecraft:spider_eye"
 		},
 		"frame": "challenge",
 		"show_toast": true,

@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.merling.clear_monument.description"
 		},
 		"icon": {
-			"item": "minecraft:prismarine"
+			"id": "minecraft:prismarine"
 		},
 		"frame": "goal",
 		"show_toast": true,

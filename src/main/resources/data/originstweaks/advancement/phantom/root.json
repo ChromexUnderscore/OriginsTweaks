@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.phantom.root.description"
 		},
 		"icon": {
-			"item": "minecraft:phantom_membrane"
+			"id": "minecraft:phantom_membrane"
 		},
 		"frame": "task",
 		"show_toast": true,

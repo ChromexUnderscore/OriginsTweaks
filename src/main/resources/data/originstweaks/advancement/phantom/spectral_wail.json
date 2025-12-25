@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.phantom.spectral_wail.description"
 		},
 		"icon": {
-			"item": "minecraft:compass"
+			"id": "minecraft:compass"
 		},
 		"frame": "task",
 		"show_toast": true,

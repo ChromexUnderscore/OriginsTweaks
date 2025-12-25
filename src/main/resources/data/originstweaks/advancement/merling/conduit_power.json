@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.merling.conduit_power.description"
 		},
 		"icon": {
-			"item": "minecraft:conduit"
+			"id": "minecraft:conduit"
 		},
 		"frame": "goal",
 		"show_toast": true,

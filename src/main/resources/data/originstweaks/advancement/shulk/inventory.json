@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.shulk.inventory.description"
 		},
 		"icon": {
-			"item": "minecraft:shulker_box"
+			"id": "minecraft:shulker_box"
 		},
 		"frame": "task",
 		"show_toast": true,

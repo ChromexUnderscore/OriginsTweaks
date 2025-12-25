@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.shulk.root.description"
 		},
 		"icon": {
-			"item": "minecraft:shulker_shell"
+			"id": "minecraft:shulker_shell"
 		},
 		"frame": "task",
 		"show_toast": true,

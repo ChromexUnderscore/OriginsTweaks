@@ -7,8 +7,10 @@
 			"translate": "advancement.originstweaks.elytrian.crash.description"
 		},
 		"icon": {
-			"item": "minecraft:elytra",
-			"nbt": "{Damage:431}"
+			"id": "minecraft:elytra",
+			"components": {
+				"damage": 431
+			}
 		},
 		"frame": "task",
 		"show_toast": true,

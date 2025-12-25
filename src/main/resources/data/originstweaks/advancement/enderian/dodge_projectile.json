@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.enderian.dodge_projectile.description"
 		},
 		"icon": {
-			"item": "minecraft:chorus_fruit"
+			"id": "minecraft:chorus_fruit"
 		},
 		"frame": "task",
 		"show_toast": true,

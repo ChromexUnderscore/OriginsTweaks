@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.arachnid.craft_cobweb.description"
 		},
 		"icon": {
-			"item": "minecraft:string"
+			"id": "minecraft:string"
 		},
 		"frame": "task"
 	},

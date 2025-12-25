@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.feline.sharp_claws.description"
 		},
 		"icon": {
-			"item": "minecraft:diamond_block"
+			"id": "minecraft:diamond_block"
 		},
 		"frame": "task",
 		"show_toast": true,

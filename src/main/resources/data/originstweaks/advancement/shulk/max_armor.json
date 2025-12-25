@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.shulk.max_armor.description"
 		},
 		"icon": {
-			"item": "minecraft:iron_chestplate"
+			"id": "minecraft:iron_chestplate"
 		},
 		"frame": "goal",
 		"show_toast": true,

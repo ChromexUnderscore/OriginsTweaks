@@ -5,31 +5,31 @@
 			{
 				"condition": "minecraft:location_check",
 				"predicate": {
-					"structure": "minecraft:village_plains"
+					"structures": ["minecraft:village_plains"]
 				}
 			},
 			{
 				"condition": "minecraft:location_check",
 				"predicate": {
-					"structure": "minecraft:village_desert"
+					"structures": ["minecraft:village_desert"]
 				}
 			},
 			{
 				"condition": "minecraft:location_check",
 				"predicate": {
-					"structure": "minecraft:village_savanna"
+					"structures": ["minecraft:village_savanna"]
 				}
 			},
 			{
 				"condition": "minecraft:location_check",
 				"predicate": {
-					"structure": "minecraft:village_snowy"
+					"structures": ["minecraft:village_snowy"]
 				}
 			},
 			{
 				"condition": "minecraft:location_check",
 				"predicate": {
-					"structure": "minecraft:village_taiga"
+					"structures": ["minecraft:village_taiga"]
 				}
 			}
 		]

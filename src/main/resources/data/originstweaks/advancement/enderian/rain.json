@@ -7,8 +7,12 @@
 			"translate": "advancement.originstweaks.enderian.rain.description"
 		},
 		"icon": {
-			"item": "minecraft:potion",
-			"nbt": "{Potion:\"minecraft:water\"}"
+			"id": "minecraft:potion",
+			"components": {
+				"potion_contents": {
+					"potion": "minecraft:water_breathing"
+				}
+			}
 		},
 		"frame": "task",
 		"show_toast": true,

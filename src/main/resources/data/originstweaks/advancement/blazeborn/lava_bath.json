@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.blazeborn.lava_bath.description"
 		},
 		"icon": {
-			"item": "minecraft:golden_leggings"
+			"id": "minecraft:golden_leggings"
 		},
 		"frame": "task",
 		"show_toast": true,

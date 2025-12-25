@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.enderian.punch_pumpkin.description"
 		},
 		"icon": {
-			"item": "minecraft:carved_pumpkin"
+			"id": "minecraft:carved_pumpkin"
 		},
 		"frame": "challenge",
 		"show_toast": true,

@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.arachnid.bane_of_arthropods.description"
 		},
 		"icon": {
-			"item": "minecraft:diamond_axe"
+			"id": "minecraft:diamond_axe"
 		},
 		"frame": "task",
 		"show_toast": true,

@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.shulk.shulker_bullet.description"
 		},
 		"icon": {
-			"item": "minecraft:bow"
+			"id": "minecraft:bow"
 		},
 		"frame": "goal",
 		"show_toast": true,

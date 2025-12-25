@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.elytrian.root.description"
 		},
 		"icon": {
-			"item": "minecraft:elytra"
+			"id": "minecraft:elytra"
 		},
 		"frame": "task",
 		"show_toast": true,

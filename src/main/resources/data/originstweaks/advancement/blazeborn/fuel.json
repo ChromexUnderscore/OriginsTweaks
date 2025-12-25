@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.blazeborn.fuel.description"
 		},
 		"icon": {
-			"item": "minecraft:furnace"
+			"id": "minecraft:furnace"
 		},
 		"frame": "goal",
 		"show_toast": true,

@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.enderian.max_waterprotection.description"
 		},
 		"icon": {
-			"item": "minecraft:enchanted_book"
+			"id": "minecraft:enchanted_book"
 		},
 		"frame": "goal",
 		"show_toast": true,

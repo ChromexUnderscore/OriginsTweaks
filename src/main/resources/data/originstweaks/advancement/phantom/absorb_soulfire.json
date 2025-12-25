@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.phantom.absorb_soulfire.description"
 		},
 		"icon": {
-			"item": "minecraft:soul_lantern"
+			"id": "minecraft:soul_lantern"
 		},
 		"frame": "goal",
 		"show_toast": true,

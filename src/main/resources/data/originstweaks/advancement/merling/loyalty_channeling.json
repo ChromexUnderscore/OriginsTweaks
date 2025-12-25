@@ -7,8 +7,10 @@
 			"translate": "advancement.originstweaks.merling.loyalty_channeling.description"
 		},
 		"icon": {
-			"item": "minecraft:trident",
-			"nbt": "{Enchantments:[{lvl:1,id:channeling},{lvl:3,id:loyalty}]}"
+			"id": "minecraft:trident",
+			"components": {
+				"minecraft:enchantment_glint_override": true
+			}
 		},
 		"frame": "challenge",
 		"show_toast": true,

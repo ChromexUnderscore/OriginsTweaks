@@ -97,21 +97,8 @@
 	"no_block_use": {
 		"type": "origins:prevent_block_use",
 		"block_condition": {
-			"type": "origins:or",
-			"conditions": [
-				{
-					"type": "origins:in_tag",
-					"tag": "originstweaks:wood"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "originstweaks:copper"
-				},
-				{
-					"type": "origins:in_tag",
-					"tag": "minecraft:dirt"
-				}
-			]
+			"type": "origins:constant",
+			"value": true
 		},
 		"condition": {
 			"type": "origins:or",

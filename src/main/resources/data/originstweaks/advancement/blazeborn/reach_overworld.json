@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.blazeborn.reach_overworld.description"
 		},
 		"icon": {
-			"item": "minecraft:fire_charge"
+			"id": "minecraft:fire_charge"
 		},
 		"frame": "challenge",
 		"show_toast": true,

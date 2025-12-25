@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.avian.speed.description"
 		},
 		"icon": {
-			"item": "minecraft:sugar"
+			"id": "minecraft:sugar"
 		},
 		"frame": "goal",
 		"show_toast": true,

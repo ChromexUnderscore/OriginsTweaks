@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.elytrian.y_700.description"
 		},
 		"icon": {
-			"item": "minecraft:glowstone"
+			"id": "minecraft:glowstone"
 		},
 		"frame": "challenge",
 		"show_toast": true,

@@ -7,7 +7,7 @@
 			"translate": "advancement.originstweaks.feline.sleep_in_village.description"
 		},
 		"icon": {
-			"item": "minecraft:feather"
+			"id": "minecraft:feather"
 		},
 		"frame": "task",
 		"show_toast": true,
