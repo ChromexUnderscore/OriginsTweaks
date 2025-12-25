@@ -5,7 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Originstweaks implements ModInitializer {
+public class OriginsTweaks implements ModInitializer {
 	public static final String MOD_ID = "OriginsTweaks";
 
 	// This logger is used to write text to the console and the log file.
@@ -19,6 +19,6 @@ public class Originstweaks implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("For the best Origins experience, enable flying in the server.properties and set \"mixin.entity.collisions.suffocation=false\" in lithium.properties when using lithium.");
+		LOGGER.info("For the best OriginsTweaks experience, enable flying in the server.properties and set \"mixin.entity.collisions.suffocation=false\" in lithium.properties when using lithium.");
 	}
 }

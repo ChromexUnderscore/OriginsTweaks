@@ -2,6 +2,26 @@
 
 ## [Minecraft 1.20](https://minecraft.fandom.com/wiki/Java_Edition_1.20)
 
+### [Version 1.19 | Minecraft 1.21.1]
+
+#### [Version 1.19.0 - Port to Origins 1.13.0-pre.1](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.19.0)
+
+**Technical Changes**
+
++ Updated Fabric Project Structure for MC 1.21.1.
++ Refactored java entrypoints for main and client from ``Originstweaks`` to ``OriginsTweaks``.
++ Removed Mod recommendation "More Waterlogging" due to the lack of a 1.21.1 Release and archivation of the Project on Modrinth.
++ Updated Badges linking to Origins: Dietary Delights to use the updated name "Overgrown's Origins: Dietary Delights" 
++ Bumped Version to 1.19.0.
+
+**Dependencies**
+
++ Minecraft 1.21.1
++ Origins Mod [1.13.0-pre.1](https://modrinth.com/mod/origins/version/1.13.0-pre.1+mc.1.21.1)
++ [Fabric API](https://modrinth.com/mod/fabric-api)
++ [Pehkui](https://modrinth.com/mod/pehkui)
++ [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
+
 ### [Version 1.18 | Minecraft 1.20.1-1.20.4]
 
 #### [Version 1.18.2 - Hotfix Enderian Dodge & Phantom Phasing](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.2)
