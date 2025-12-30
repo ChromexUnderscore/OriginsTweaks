@@ -18,12 +18,12 @@
 	],
 	"speed": {
 		"type": "origins:attribute",
-		"modifier": {
-			"attribute": "additionalentityattributes:water_speed",
-			"name": "merling swim speed",
-			"value": 1.5,
-			"operation": "multiply_base"
-		}
+  		"modifier": {
+    		"attribute": "additionalentityattributes:generic.water_speed",
+    		"name": "merling swim speed",
+    		"value": 1.5,
+    		"operation": "multiply_base_multiplicative"
+  }
 	},
 	"dash": {
 		"type": "origins:active_self",
