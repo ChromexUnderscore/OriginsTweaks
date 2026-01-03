@@ -23,10 +23,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.chromexunderscore.originstweaks.OriginsTweaks"
-		],
-		"client": [
-			"com.chromexunderscore.originstweaks.OriginsTweaksClient"
+			"com.chromexunderscore.originstweaks.Main"
 		]
 	},
 	"depends": {
