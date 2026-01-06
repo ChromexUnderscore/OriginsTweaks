@@ -4,6 +4,20 @@
 
 ### [Version 1.18 | Minecraft 1.20.1-1.20.4]
 
+#### [Version 1.18.3 - Update Merling Swim Attributes](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.3)
+
+**Technical Changes** - Thank you [@MoreCodeToBreak](https://github.com/MoreCodeToBreak).
++ Updated refactored AdditionalEntityAttributes attribute ids with new ones in the generic group for merling powers.
++ Bumped Version to 1.18.3.
+
+**Dependencies**
+
++ Minecraft 1.20.1 - 1.20.4
++ Origins Mod [1.10.0](https://modrinth.com/mod/origins/version/1.10.0) - [1.13.0-alpha.4](https://modrinth.com/mod/origins/version/1.13.0-alpha.4+mc.1.20.4)
++ [Fabric API](https://modrinth.com/mod/fabric-api)
++ [Pehkui](https://modrinth.com/mod/pehkui)
++ [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
+
 #### [Version 1.18.2 - Hotfix Enderian Dodge & Phantom Phasing](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.18.2)
 
 **Fixes**
