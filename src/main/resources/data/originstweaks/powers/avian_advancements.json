@@ -16,8 +16,8 @@
 		},
 		"block_condition": {
 			"type": "origins:height",
-			"compare_to": 300,
-			"comparison": ">="
+			"comparison": ">=",
+			"compare_to": 300
 		}
 	},
 	"harvest_golden_crop": {
@@ -71,8 +71,8 @@
 		"condition": {
 			"type": "origins:attribute",
 			"attribute": "minecraft:generic.movement_speed",
-			"compare_to": 0.2,
-			"comparison": ">="
+			"comparison": ">=",
+			"compare_to": 0.2
 		}
 	}
 }

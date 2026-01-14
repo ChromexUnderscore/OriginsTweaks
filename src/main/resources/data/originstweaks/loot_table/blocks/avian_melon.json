@@ -2,8 +2,32 @@
 	"type": "minecraft:block",
 	"pools": [
 		{
-			
-			"rolls": 1,
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 0,
+				"max": 3
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:glistering_melon_slice",
+					"conditions": [
+						{
+							"condition": "minecraft:table_bonus",
+							"enchantment": "minecraft:fortune",
+							"chances": [
+								0.1,
+								0.2,
+								0.3,
+								0.4,
+								0.5
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"bonus_rolls": 0,
 			"entries": [
 				{
@@ -15,14 +39,16 @@
 								{
 									"condition": "minecraft:match_tool",
 									"predicate": {
-										"enchantments": [
-											{
-												"enchantment": "minecraft:silk_touch",
-												"levels": {
-													"min": 1
+										"predicates": {
+											"minecraft:enchantments": [
+												{
+													"enchantments": "minecraft:silk_touch",
+													"levels": {
+														"min": 1
+													}
 												}
-											}
-										]
+											]
+										}
 									}
 								}
 							],
@@ -62,28 +88,8 @@
 						}
 					]
 				}
-			]
-		},
-		{
-			"rolls": 1,
-			"bonus_rolls": 0,
-			"entries": [
-				{
-					"type": "minecraft:item",
-					"name": "minecraft:glistering_melon_slice",
-					"functions": [
-						{
-							"function": "minecraft:explosion_decay"
-						}
-					],
-					"conditions": [
-						{
-							"condition": "minecraft:random_chance",
-							"chance": 0.5
-						}
-					]
-				}
-			]
+			],
+			"rolls": 1
 		}
 	],
 	"random_sequence": "minecraft:blocks/melon"

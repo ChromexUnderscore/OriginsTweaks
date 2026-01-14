@@ -28,12 +28,22 @@
 		"enchantment": "minecraft:fortune",
 		"modifier": {
 			"operation": "add_base_late",
-			"value": 2
+			"amount": 2
 		},
 		"item_condition": {
 			"type": "origins:ingredient",
 			"ingredient": {
 				"tag": "minecraft:hoes"
+			}
+		},
+		"condition": {
+			"type": "origins:raycast",
+			"block": true,
+			"entity": false,
+			"fluid_handling": "none",
+			"block_condition": {
+				"type": "origins:in_tag",
+				"tag": "originstweaks:green_thumb_crops"
 			}
 		}
 	},
@@ -89,10 +99,9 @@
 		},
 		"consume_sound": "minecraft:entity.generic.eat",
 		"food_component": {
-			"hunger": 6,
+			"nutrition": 6,
 			"saturation": 0.8,
-			"meat": false,
-			"snack": true
+			"eat_seconds": 1.6
 		},
 		"use_action": "eat"
 	}
