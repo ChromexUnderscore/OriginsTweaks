@@ -1,5 +1,6 @@
 {
 	"values": [
+		"#c:ores_in_ground/deepslate",
 		"deepslate",
 		"reinforced_deepslate",
 		"deepslate_coal_ore",
@@ -13,10 +14,6 @@
 		"obsidian",
 		"crying_obsidian",
 		"blackstone",
-		"gilded_blackstone",
-		{
-			"id": "#c:ores_in_ground/deepslate",
-			"required": false
-		}
+		"gilded_blackstone"
 	]
 }

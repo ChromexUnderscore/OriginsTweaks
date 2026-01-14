@@ -27,9 +27,8 @@
 	"slower_mining": {
 		"type": "origins:modify_break_speed",
 		"modifier": {
-			"name": "slower natural stone",
 			"operation": "multiply_total_multiplicative",
-			"value": -0.5
+			"amount": -0.5
 		},
 		"block_condition": {
 			"type": "origins:in_tag",
@@ -73,9 +72,8 @@
 	"no_mining": {
 		"type": "origins:modify_break_speed",
 		"modifier": {
-			"name": "unbreakable sturdy stone",
 			"operation": "set_total",
-			"value": 0
+			"amount": 0
 		},
 		"block_condition": {
 			"type": "origins:in_tag",

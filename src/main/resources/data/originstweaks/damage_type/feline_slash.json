@@ -1,0 +1,7 @@
+{
+	"message_id": "slashed_by_feline",
+	"exhaustion": 0.1,
+	"scaling": "never",
+	"effects": "hurt",
+	"death_message_type": "default"
+}

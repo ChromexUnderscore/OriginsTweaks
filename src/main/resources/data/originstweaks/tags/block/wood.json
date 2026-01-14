@@ -2,17 +2,7 @@
 	"replace": false,
 	"values": [
 		"#minecraft:logs",
-		{
-			"id": "#c:woods",
-			"required": false
-		},
-		{
-			"id": "#originstweaks:wood/cinderscapes",
-			"required": false
-		},
-		{
-			"id": "#originstweaks:wood/terrestria",
-			"required": false
-		}
+		"#c:stripped_logs",
+		"#c:stripped_woods"
 	]
 }

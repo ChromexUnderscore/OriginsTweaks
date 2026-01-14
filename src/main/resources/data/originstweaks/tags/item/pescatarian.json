@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        {
+            "id": "#origins:pescatarian",
+            "required": false
+        },
+        "#c:foods/raw_fish",
+        "#c:foods/cooked_fish"
+    ]
+}

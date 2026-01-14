@@ -14,25 +14,8 @@
 			"text": {
 				"translate": "badge.originstweaks.dexterity.1"
 			}
-		},
-		{
-			"type": "origins:tooltip",
-			"sprite": "origins:textures/gui/badge/info.png",
-			"text": {
-				"translate": "badge.originstweaks.dexterity.2"
-			}
 		}
 	],
-	"sprint_jump": {
-		"type": "origins:modify_jump",
-		"modifier": {
-			"operation": "multiply_base_multiplicative",
-			"value": 0.5
-		},
-		"condition": {
-			"type": "origins:sprinting"
-		}
-	},
 	"fall_immunity": {
 		"type": "origins:invulnerability",
 		"damage_condition": {
@@ -49,187 +32,231 @@
 			]
 		}
 	},
-	"jump_power": {
+	"jump_strength": {
 		"type": "origins:resource",
 		"max": 7,
 		"min": 0,
 		"hud_render": {
-			"bar_index": 16,
 			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+			"bar_index": 16,
+			"order": 1,
 			"condition": {
-				"type": "origins:resource",
-				"resource": "*:*_jump_power",
-				"comparison": "!=",
-				"compare_to": 0
-			}
-		}
-	},
-	"buildup": {
-		"type": "origins:action_over_time",
-		"entity_action": {
-			"type": "origins:if_else",
-			"condition": {
-				"type": "origins:on_block"
-			},
-			"if_action": {
 				"type": "origins:and",
-				"actions": [
+				"conditions": [
 					{
-						"type": "origins:change_resource",
-						"resource": "*:*_jump_power",
-						"change": 1,
-						"operation": "add"
+						"type": "origins:resource",
+						"resource": "*:*_jump_strength",
+						"comparison": "!=",
+						"compare_to": 0
 					},
 					{
-						"type": "origins:delay",
-						"ticks": 1,
-						"action": {
-							"type": "origins:if_else_list",
-							"actions": [
-								{
-									"condition": {
-										"type": "origins:resource",
-										"resource": "*:*_jump_power",
-										"compare_to": 1,
-										"comparison": "=="
-									},
-									"action": {
-										"type": "origins:execute_command",
-										"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1"
-									}
-								},
-								{
-									"condition": {
-										"type": "origins:resource",
-										"resource": "*:*_jump_power",
-										"compare_to": 2,
-										"comparison": "=="
-									},
-									"action": {
-										"type": "origins:execute_command",
-										"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.0.25 1.1"
-									}
-								},
-								{
-									"condition": {
-										"type": "origins:resource",
-										"resource": "*:*_jump_power",
-										"compare_to": 3,
-										"comparison": "=="
-									},
-									"action": {
-										"type": "origins:execute_command",
-										"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.2"
-									}
-								},
-								{
-									"condition": {
-										"type": "origins:resource",
-										"resource": "*:*_jump_power",
-										"compare_to": 4,
-										"comparison": "=="
-									},
-									"action": {
-										"type": "origins:execute_command",
-										"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.3"
-									}
-								},
-								{
-									"condition": {
-										"type": "origins:resource",
-										"resource": "*:*_jump_power",
-										"compare_to": 5,
-										"comparison": "=="
-									},
-									"action": {
-										"type": "origins:execute_command",
-										"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.4"
-									}
-								},
-								{
-									"condition": {
-										"type": "origins:resource",
-										"resource": "*:*_jump_power",
-										"compare_to": 6,
-										"comparison": "=="
-									},
-									"action": {
-										"type": "origins:execute_command",
-										"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.5"
-									}
-								}
-							]
-						}
+						"type": "origins:resource",
+						"resource": "*:*_leap_cooldown",
+						"comparison": "==",
+						"compare_to": 0
 					}
 				]
 			}
+		}
+	},
+	"charge": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "*:*_jump_strength",
+					"change": 1
+				},
+				{
+					"type": "origins:if_else_list",
+					"actions": [
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1"
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"comparison": "==",
+								"compare_to": 2
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.1"
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"comparison": "==",
+								"compare_to": 3
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.2"
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"comparison": "==",
+								"compare_to": 4
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.3"
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"comparison": "==",
+								"compare_to": 5
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.4"
+							}
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 6,
+								"comparison": "=="
+							},
+							"action": {
+								"type": "origins:execute_command",
+								"command": "playsound minecraft:block.note_block.hat player @s ~ ~ ~ 0.25 1.5"
+							}
+						}
+					]
+				}
+			]
 		},
-		"falling_action": {
-			"type": "origins:delay",
-			"ticks": 40,
-			"action": {
-				"type": "origins:change_resource",
-				"resource": "*:*_jump_power",
-				"change": 0,
-				"operation": "set"
-			}
-		},
-		"interval": 3,
+		"interval": 4,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
 				{
-					"type": "origins:sneaking"
+					"type": "origins:resource",
+					"resource": "*:*_hold_timer",
+					"comparison": "!=",
+					"compare_to": 0
 				},
 				{
 					"type": "origins:resource",
-					"resource": "*:*_leap",
+					"resource": "*:*_leap_cooldown",
 					"compare_to": 0,
 					"comparison": "=="
+				},
+				{
+					"type": "origins:on_block"
 				}
 			]
 		}
 	},
-	"buildup_full": {
+	"charge_pose": {
+		"type": "origins:pose",
+		"entity_pose": "crouching",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_hold_timer",
+			"comparison": "!=",
+			"compare_to": 0
+		}
+	},
+	"charge_reset": {
+		"type": "origins:action_over_time",
+		"rising_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_jump_strength",
+			"operation": "set",
+			"change": 0
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:on_block",
+							"inverted": true
+						},
+						{
+							"type": "origins:resource",
+							"resource": "*:*_leap_cooldown",
+							"comparison": "!=",
+							"compare_to": 0
+						}
+					]
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_jump_strength",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		}
+	},
+	"charge_full": {
 		"type": "origins:action_over_time",
 		"rising_action": {
 			"type": "origins:execute_command",
 			"command": "playsound minecraft:block.note_block.chime player @s ~ ~ ~ 0.25 2"
 		},
-		"interval": 3,
+		"interval": 1,
 		"condition": {
 			"type": "origins:resource",
-			"resource": "*:*_jump_power",
+			"resource": "*:*_jump_strength",
 			"compare_to": 7,
 			"comparison": "=="
 		}
 	},
 	"leap": {
-		"type": "origins:active_self",
+		"type": "origins:action_over_time",
 		"entity_action": {
-			"type": "origins:if_else_list",
+			"type": "origins:and",
 			"actions": [
 				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 1,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+					"type": "origins:trigger_cooldown",
+					"power": "*:*_leap_cooldown"
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.goat.long_jump",
+					"category": "players",
+					"volume": 0.5,
+					"pitch": 1.5
+				},
+				{
+					"type": "origins:if_else_list",
+					"actions": [
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 1,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
@@ -242,30 +269,15 @@
 									"client": false
 								}
 							}
-						]
-					}
-				},
-				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 2,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 2,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
@@ -278,30 +290,15 @@
 									"client": false
 								}
 							}
-						]
-					}
-				},
-				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 3,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 3,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
@@ -314,30 +311,15 @@
 									"client": false
 								}
 							}
-						]
-					}
-				},
-				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 4,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 4,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
@@ -350,30 +332,15 @@
 									"client": false
 								}
 							}
-						]
-					}
-				},
-				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 5,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 5,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
@@ -386,30 +353,15 @@
 									"client": false
 								}
 							}
-						]
-					}
-				},
-				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 6,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 6,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
@@ -422,65 +374,120 @@
 									"client": false
 								}
 							}
-						]
-					}
-				},
-				{
-					"condition": {
-						"type": "origins:resource",
-						"resource": "*:*_jump_power",
-						"compare_to": 7,
-						"comparison": "=="
-					},
-					"action": {
-						"type": "origins:and",
-						"actions": [
-							{
-								"type": "origins:execute_command",
-								"command": "playsound minecraft:entity.goat.long_jump player @a ~ ~ ~ 0.5 1.5"
+						},
+						{
+							"condition": {
+								"type": "origins:resource",
+								"resource": "*:*_jump_strength",
+								"compare_to": 7,
+								"comparison": "=="
 							},
-							{
-								"type": "origins:change_resource",
-								"resource": "*:*_jump_power",
-								"change": 0,
-								"operation": "set"
-							},
-							{
+							"action": {
 								"type": "origins:delay",
 								"ticks": 1,
 								"action": {
 									"type": "origins:add_velocity",
 									"x": 0,
-									"y": 1,
+									"y": 1.0,
 									"z": 0.75,
 									"set": true,
 									"space": "local_horizontal_normalized",
 									"client": false
 								}
 							}
-						]
+						}
+					]
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 1,
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_jump_strength",
+						"change": 0,
+						"operation": "set"
 					}
 				}
 			]
 		},
-		"key": "key.jump",
-		"cooldown": 60,
-		"hud_render": {
-			"bar_index": 3
-		},
+		"interval": 1,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
 				{
-					"type": "origins:on_block"
+					"type": "origins:resource",
+					"resource": "*:*_jump_strength",
+					"compare_to": 0,
+					"comparison": "!="
 				},
 				{
 					"type": "origins:resource",
-					"resource": "*:*_jump_power",
-					"compare_to": 0,
-					"comparison": "!="
+					"resource": "*:*_leap_cooldown",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:resource",
+					"resource": "*:*_hold_timer",
+					"comparison": "==",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:on_block"
 				}
 			]
+		}
+	},
+	"leap_cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 80,
+		"hud_render": {
+			"bar_index": 3,
+			"order": 1,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "*:*_leap_cooldown",
+				"comparison": ">",
+				"compare_to": 1
+			}
+		}
+	},
+	"hold_timer": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 2
+	},
+	"hold_check": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_hold_timer",
+			"change": 2,
+			"operation": "set"
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": true
+		},
+		"cooldown": 1,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"hold_decay": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_hold_timer",
+			"change": -1,
+			"operation": "add"
+		},
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_hold_timer",
+			"comparison": "!=",
+			"compare_to": 0
 		}
 	}
 }

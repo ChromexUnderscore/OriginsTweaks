@@ -166,53 +166,7 @@
 			],
 			"entries": [
 				{
-					"type": "minecraft:alternatives",
-					"children": [
-						{
-							"type": "minecraft:item",
-							"weight": 1,
-							"quality": 0,
-							"conditions": [
-								{
-									"condition": "minecraft:survives_explosion"
-								},
-								{
-									"chances": [
-										0.005,
-										0.0055555557,
-										0.00625,
-										0.008333334,
-										0.025
-									],
-									"condition": "minecraft:table_bonus",
-									"enchantment": "minecraft:fortune"
-								}
-							],
-							"name": "minecraft:apple"
-						},
-						{
-							"type": "minecraft:item",
-							"weight": 1,
-							"quality": 2,
-							"conditions": [
-								{
-									"condition": "minecraft:survives_explosion"
-								},
-								{
-									"chances": [
-										0.005,
-										0.0055555557,
-										0.00625,
-										0.008333334,
-										0.025
-									],
-									"condition": "minecraft:table_bonus",
-									"enchantment": "minecraft:fortune"
-								}
-							],
-							"name": "minecraft:golden_apple"
-						}
-					],
+					"type": "minecraft:item",
 					"conditions": [
 						{
 							"condition": "minecraft:survives_explosion"
@@ -224,6 +178,104 @@
 								0.00625,
 								0.008333334,
 								0.025
+							],
+							"condition": "minecraft:table_bonus",
+							"enchantment": "minecraft:fortune"
+						}
+					],
+					"name": "minecraft:apple"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"bonus_rolls": 0,
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:any_of",
+						"terms": [
+							{
+								"condition": "minecraft:match_tool",
+								"predicate": {
+									"items": "minecraft:shears"
+								}
+							},
+							{
+								"condition": "minecraft:match_tool",
+								"predicate": {
+									"predicates": {
+										"minecraft:enchantments": [
+											{
+												"enchantments": "minecraft:silk_touch",
+												"levels": {
+													"min": 1
+												}
+											}
+										]
+									}
+								}
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"weight": 1,
+							"quality": 2,
+							"conditions": [
+								{
+									"condition": "minecraft:survives_explosion"
+								},
+								{
+									"chances": [
+										0.1,
+										0.2,
+										0.3,
+										0.4,
+										0.5
+									],
+									"condition": "minecraft:table_bonus",
+									"enchantment": "minecraft:fortune"
+								}
+							],
+							"name": "minecraft:golden_apple"
+						},
+						{
+							"type": "minecraft:item",
+							"weight": 1,
+							"quality": 0,
+							"conditions": [
+								{
+									"condition": "minecraft:survives_explosion"
+								}
+							],
+							"name": "minecraft:apple"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:match_tool",
+							"predicate": {
+								"items": "#minecraft:hoes"
+							}
+						},
+						{
+							"condition": "minecraft:survives_explosion"
+						},
+						{
+							"chances": [
+								0.01,
+								0.0111111114,
+								0.0125,
+								0.016666668,
+								0.05
 							],
 							"condition": "minecraft:table_bonus",
 							"enchantment": "minecraft:fortune"

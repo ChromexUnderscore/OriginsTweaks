@@ -1,31 +1,9 @@
 {
 	"values":[
-		"stone",
-		"coal_ore",
-		"copper_ore",
-		"iron_ore",
-		"gold_ore",
-		"redstone_ore",
-		"emerald_ore",
-		"lapis_ore",
-		"diamond_ore",
-		"ancient_debris",
-		"granite",
-		"diorite",
-		"andesite",
-		"sandstone",
-		"smooth_sandstone",
-		"red_sandstone",
-		"smooth_red_sandstone",
-		"smooth_basalt",
-		"calcite",
-		"amethyst_block",
-		"budding_amethyst",
-		"tuff",
-		"dripstone_block",
-		"netherrack",
-		"basalt",
-		"magma_block",
-		"end_stone"
+		"#minecraft:base_stone_overworld",
+		"#minecraft:base_stone_nether",
+		"end_stone",
+		"#c:ores",
+		"#c:sandstone/blocks"
 	]
 }

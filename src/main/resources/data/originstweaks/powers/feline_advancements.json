@@ -32,21 +32,10 @@
 			"compare_to": 64,
 			"comparison": ">=",
 			"item_condition": {
-				"type": "origins:or",
-				"conditions": [
-					{
-						"type": "origins:ingredient",
-						"ingredient": {
-							"item": "minecraft:cooked_cod"
-						}
-					},
-					{
-						"type": "origins:ingredient",
-						"ingredient": {
-							"item": "minecraft:cooked_salmon"
-						}
-					}
-				]
+				"type": "origins:ingredient",
+				"ingredient": {
+					"tag": "originstweaks:cooked_fish"
+				}
 			}
 		}
 	},
