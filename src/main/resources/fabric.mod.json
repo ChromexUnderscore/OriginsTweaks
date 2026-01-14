@@ -8,7 +8,8 @@
 		"ChromexUnderscore"
 	],
 	"contributors": [
-		"AnimGoated",
+		"MoreCodeToBreak (1.20.1 Maintainer)",
+		"AnimGoated (Creator of the Elytrian's Companion Mounting Power)",
 		"tiglakirill7"
 	],
 	"contact": {
@@ -32,7 +33,6 @@
 		"minecraft": "~1.21.1",
 		"origins": ">=1.13.0-pre.1+mc.1.21.1",
 		"fabric-api": "*",
-		"pehkui": "*",
 		"mr_origins_dietarydelights": "*"
 	},
 	"recommends": {

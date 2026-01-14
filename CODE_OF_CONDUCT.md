@@ -6,15 +6,15 @@ By contributing, you agree to these guidelines:
 
 - Feel free to use code from this mod in your own projects, provided you clearly credit the original work (OriginsTweaks and its contributors).
 - You are welcome to use this mod in your single-player worlds and on your servers.
-- We encourage you to edit the code to improve it for your own needs and to contribute those improvements back to the project.
-- Please let us know about any bugs you encounter or feature ideas you have by opening an issue on GitHub or reaching out on Discord.
+- I encourage you to edit the code to improve it for your own needs or to suggest a contribution of those improvements to the project.
+- Please let me know about any bugs you encounter or feature ideas you have by opening an issue on GitHub or reaching out on Discord.
 
 #### Translation Consistency:
 
-- For items, blocks, entities and other terms straight from Minecraft, always use their official translated names as they appear in the game. This ensures clarity and avoids confusion for players.
-  - Also refer to the [Minecraft Official Glossary for Crowdin](https://docs.google.com/spreadsheets/d/1xxDvR2MrPUaxXwNfn-oJX-fBerEsZkfo/edit?gid=810030519#gid=810030519).
-- When translating descriptions for changed abilities from the Origins Mod, strive to stay faithful to the existing translations used within the base Origins Mod. This helps players easily understand the relationship between the mods.
+- For items, blocks, entities and other terms adapted from Minecraft, always use their official translated names as they appear translated in-game for consistency with vanilla and to avoid confusion for players.
+  - Refer to the [Minecraft Official Glossary for Crowdin](https://docs.google.com/spreadsheets/d/1xxDvR2MrPUaxXwNfn-oJX-fBerEsZkfo/edit?gid=810030519#gid=810030519).
+- When translating descriptions for changed abilities from the Origins Mod, try to stay faithful to the existing translations and terms used within the base Origins Mod to keep consistency.
 
-####  Prohibited Conduct:
+####  Limitations:
 
-- Please do not reupload this mod or its contents anywhere without making significant alterations to the code, giving it a new name, and clearly crediting the original work (OriginsTweaks and its contributors).
+- Please do not reupload this mod or its contents anywhere without making significant alterations to the code, giving it a clearly new, non-official name, and clearly crediting the original work (OriginsTweaks and its contributors).
