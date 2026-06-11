@@ -62,7 +62,7 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 
 <details><summary>Feline</summary>
 
-+ Feline can attack with claws but they need to be sharpened using blocks in this order:
++ Feline can deal alternating attacks with offhand claws if the offhand is empty but they need to be sharpened using blocks in this order:
   - Logs or wool
   - Smooth stone, Polished stones
   - Iron blocks
@@ -100,7 +100,7 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 
 + Blazeborn can set themselves on fire.
   + While on fire, they can light Campfires, Furnaces, and Brewing Stands.
-  + In addition to a 25% damage increase, hitting targets causes them to burn for 8 seconds.
+  + In addition to a 25% damage increase, hitting targets causes them to burn for 6 seconds.
 + Blazeborn move slightly faster in lava, have better vision, and can swim when submerged.
 + Blazeborn can shoot a burst of 3 Fireballs.
 
