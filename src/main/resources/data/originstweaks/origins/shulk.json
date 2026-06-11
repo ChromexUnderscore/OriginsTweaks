@@ -1,6 +1,6 @@
 {
 	"icon": {
-		"item": "minecraft:shulker_shell"
+		"id": "minecraft:shulker_shell"
 	},
 	"order": 4,
 	"impact": 1,
@@ -8,7 +8,6 @@
 	"powers": [
 		"origins:shulker_inventory",
 		"originstweaks:natural_armor",
-		"originstweaks:antigravity_pellet",
 		"origins:strong_arms",
 		"origins:strong_arms_break_speed",
 		"origins:no_shield",

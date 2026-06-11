@@ -242,7 +242,7 @@
 	"no_insomnia": {
 		"type": "origins:modify_insomnia_ticks",
 		"modifier": {
-			"value": 0,
+			"amount": 0,
 			"operation": "set_total"
 		}
 	}

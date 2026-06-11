@@ -26,26 +26,17 @@
 	"scale": {
 		"type": "origins:action_on_callback",
 		"entity_action_added": {
-			"type": "origins:and",
-			"actions": [
-				{
 					"type": "origins:execute_command",
-					"command": "scale set pehkui:height 0.66"
+					"command": "attribute @s minecraft:generic.scale base set 0.6"
 				},
-				{
-					"type": "origins:execute_command",
-					"command": "scale set pehkui:width 0.66"
-				}
-			]
-		},
 		"entity_action_lost": {
-			"type": "origins:execute_command",
-			"command": "scale reset @s"
-		}
+					"type": "origins:execute_command",
+					"command": "attribute @s minecraft:generic.scale base set 1"
+				}
 	},
 	"entity_group": {
-		"type": "origins:entity_group",
-		"group": "arthropod"
+		"type": "origins:modify_type_tag",
+		"tag": "minecraft:arthropod"
 	},
 	"fall_damage_reduction": {
 		"type": "origins:modify_damage_taken",
@@ -55,7 +46,7 @@
 		},
 		"modifier": {
 			"operation": "add_base_early",
-			"value": -13
+			"amount": -13
 		}
 	}
 }

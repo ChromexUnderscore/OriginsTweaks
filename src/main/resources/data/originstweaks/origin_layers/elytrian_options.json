@@ -1,16 +1,18 @@
 {
 	"gui_title": {
-		"choose_origin": "Choose your Elytra.",
-		"view_origin": "This is your chosen Elytra."
+		"choose_origin": {
+			"translate": "originstweaks.gui.choose_wings.title"
+		},
+		"view_origin": "originstweaks.gui.view_wings.title"
 	},
 	"order": 2,
 	"auto_choose": true,
 	"origins": [
 		{
 			"origins": [
-				"originstweaks:wing_selector/vanilla_elytra",
-				"originstweaks:wing_selector/custom_wings",
-				"originstweaks:wing_selector/no_render"
+				"originstweaks:vanilla_elytra",
+				"originstweaks:custom_wings",
+				"originstweaks:no_render"
 			],
 			"condition": {
 				"type": "origins:origin",

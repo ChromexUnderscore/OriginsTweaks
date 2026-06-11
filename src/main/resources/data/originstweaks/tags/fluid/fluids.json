@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "#c:water",
+        "#c:lava",
+        "#c:experience",
+        "#c:honey",
+        "#c:milk",
+        "#c:mushroom_stew",
+        "#c:potion",
+        "#c:rabbit_stew",
+        "#c:suspicious_stew"
+    ]
+}

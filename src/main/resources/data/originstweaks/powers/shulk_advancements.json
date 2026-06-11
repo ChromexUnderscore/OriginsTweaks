@@ -57,7 +57,7 @@
 				},
 				{
 					"type": "origins:resource",
-					"resource": "*:natural_armor_shells",
+					"resource": "*:natural_armor_shell_shield",
 					"comparison": "==",
 					"compare_to": 7
 				}

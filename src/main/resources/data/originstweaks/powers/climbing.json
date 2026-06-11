@@ -63,8 +63,8 @@
 	"air_affinity": {
 		"type": "origins:modify_break_speed",
 		"modifier": {
-			"operation": "multiply_base",
-			"value": 4
+			"operation": "multiply_base_additive",
+			"amount": 4
 		},
 		"condition": {
 			"type": "origins:and",

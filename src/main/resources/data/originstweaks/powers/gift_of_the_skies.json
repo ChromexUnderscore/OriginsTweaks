@@ -46,7 +46,7 @@
 		"condition": {
 			"type": "origins:origin",
 			"layer": "originstweaks:elytrian_options",
-			"origin": "originstweaks:custom_elytra"
+			"origin": "originstweaks:custom_wings"
 		}
 	},
 	"no_render": {
@@ -86,7 +86,7 @@
 						"actions": [
 							{
 								"type": "origins:add_velocity",
-								"y": 2,
+								"y": 1,
 								"client": false,
 								"operation": "set"
 							},

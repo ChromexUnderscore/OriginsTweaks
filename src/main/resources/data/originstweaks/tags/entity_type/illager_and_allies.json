@@ -1,11 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"minecraft:pillager",
-		"minecraft:vindicator",
-		"minecraft:evoker",
-		"minecraft:vex",
-		"minecraft:ravager",
-		"minecraft:witch"
+		"#minecraft:raiders",
+		"minecraft:vex"
 	]
 }

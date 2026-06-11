@@ -1,15 +1,15 @@
 {
     "replace": false,
     "loading_priority": 1,
-            "origins": [
-                "originstweaks:arachnid",
-                "originstweaks:avian",
-                "originstweaks:blazeborn",
-                "originstweaks:elytrian",
-                "originstweaks:enderian",
-                "originstweaks:feline",
-                "originstweaks:merling",
-                "originstweaks:phantom",
-                "originstweaks:shulk"
-            ]
+    "origins": [
+        "originstweaks:arachnid",
+        "originstweaks:avian",
+        "originstweaks:blazeborn",
+        "originstweaks:elytrian",
+        "originstweaks:enderian",
+        "originstweaks:feline",
+        "originstweaks:merling",
+        "originstweaks:phantom",
+        "originstweaks:shulk"
+    ]
 }

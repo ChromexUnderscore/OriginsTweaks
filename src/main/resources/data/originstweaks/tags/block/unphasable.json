@@ -1,12 +1,9 @@
 {
 	"replace": false,
 	"values": [
+		"#origins:unphasable",
 		"minecraft:gold_block",
 		"minecraft:raw_gold_block",
-		"minecraft:bell",
-		{
-			"id": "#origins:unphasable",
-			"required": false
-		}
+		"minecraft:bell"
 	]
 }

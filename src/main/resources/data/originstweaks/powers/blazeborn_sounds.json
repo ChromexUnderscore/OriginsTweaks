@@ -52,6 +52,11 @@
 					"type": "origins:status_effect",
 					"effect": "minecraft:invisibility",
 					"inverted": true
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:deep_dark",
+					"inverted": true
 				}
 			]
 		}
@@ -62,8 +67,8 @@
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:health",
-				"comparison": ">",
-				"compare_to": 0
+				"compare_to": 0,
+				"comparison": ">"
 			},
 			"if_action": {
 				"type": "origins:play_sound",

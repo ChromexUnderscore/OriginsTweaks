@@ -1,6 +1,6 @@
 {
 	"icon": {
-		"item": "minecraft:cod"
+		"id": "minecraft:cod"
 	},
 	"order": 0,
 	"impact": 3,

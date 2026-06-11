@@ -7,7 +7,7 @@
 	},
 	"spawn": {
 		"type": "origins:modify_player_spawn",
-		"biome": "minecraft:ocean",
-		"dimension": "minecraft:overworld"
+		"dimension": "minecraft:overworld",
+		"structure": "originstweaks:merling_spawn"
 	}
 }

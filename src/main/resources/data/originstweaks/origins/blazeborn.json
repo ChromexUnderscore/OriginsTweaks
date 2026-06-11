@@ -1,6 +1,6 @@
 {
 	"icon": {
-		"item": "minecraft:blaze_powder"
+		"id": "minecraft:blaze_powder"
 	},
 	"order": 1,
 	"impact": 3,
@@ -11,8 +11,7 @@
 		"originstweaks:fire_immunity",
 		"origins:nether_spawn",
 		"origins:hotblooded",
-		"origins:water_vulnerability",
-		"originstweaks:water_cauldron",
+		"originstweaks:water_vulnerability",
 		"origins:damage_from_snowballs",
 		"origins:damage_from_potions",
 		"origins:flame_particles",

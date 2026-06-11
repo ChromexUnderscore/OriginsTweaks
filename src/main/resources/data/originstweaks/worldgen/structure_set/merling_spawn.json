@@ -1,0 +1,16 @@
+{
+	"structures": [
+		{
+			"structure": "originstweaks:merling_spawn",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:concentric_rings",
+		"distance": 8,
+		"spread": 8,
+		"count": 8,
+		"preferred_biomes": "#c:is_ocean",
+		"salt": 0
+	}
+}

@@ -51,9 +51,8 @@
 	"damage_bonus_on_fire": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {
-			"name": "Additional damage while on fire",
 			"operation": "multiply_base_additive",
-			"value": 0.25
+			"amount": 0.25
 		},
 		"condition": {
 			"type": "origins:on_fire"
@@ -62,24 +61,13 @@
 	"enemy_fire": {
 		"type": "origins:action_on_hit",
 		"bientity_action": {
-			"type": "origins:and",
-			"actions": [
-				{
-					"type": "origins:actor_action",
-					"action": {
-						"type": "origins:extinguish"
-					}
-				},
-				{
-					"type": "origins:target_action",
-					"action": {
-						"type": "origins:set_on_fire",
-						"duration": 8
-					}
-				}
-			]
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:set_on_fire",
+				"duration": 6
+			}
 		},
-		"cooldown": 600,
+		"cooldown": 200,
 		"damage_condition": {
 			"type": "origins:or",
 			"conditions": [

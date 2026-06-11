@@ -33,8 +33,8 @@
 			"condition": {
 				"type": "origins:resource",
 				"resource": "*:*_resource",
-				"compare_to": 599,
-				"comparison": "<"
+				"comparison": "<",
+				"compare_to": 599
 			}
 		}
 	},
@@ -53,8 +53,8 @@
 				{
 					"type": "origins:fluid_height",
 					"fluid": "minecraft:water",
-					"compare_to": 0,
-					"comparison": "!="
+					"comparison": "!=",
+					"compare_to": 0
 				},
 				{
 					"type": "origins:in_block",
@@ -78,8 +78,10 @@
 			"operation": "add"
 		},
 		"item_condition": {
-			"type": "origins:nbt",
-			"nbt": "{Potion:\"minecraft:water\"}"
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:potion"
+			}
 		}
 	},
 	"water_bottle_tooltip": {
@@ -89,8 +91,10 @@
 			"color": "aqua"
 		},
 		"item_condition": {
-			"type": "origins:nbt",
-			"nbt": "{Potion:\"minecraft:water\"}"
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:potion"
+			}
 		}
 	},
 	"respawn": {
@@ -102,7 +106,7 @@
 			"operation": "set"
 		}
 	},
-	"ticking": {
+	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 20,
 		"entity_action": {
@@ -120,8 +124,8 @@
 						{
 							"type": "origins:fluid_height",
 							"fluid": "minecraft:water",
-							"compare_to": 0,
-							"comparison": "=="
+							"comparison": "==",
+							"compare_to": 0
 						},
 						{
 							"type": "origins:in_block",
@@ -141,7 +145,7 @@
 			]
 		}
 	},
-	"ticking_nether": {
+	"tick_nether": {
 		"type": "origins:action_over_time",
 		"interval": 10,
 		"entity_action": {
@@ -188,8 +192,8 @@
 		"condition": {
 			"type": "origins:resource",
 			"resource": "*:*_resource",
-			"compare_to": 0,
-			"comparison": "!="
+			"comparison": "!=",
+			"compare_to": 0
 		}
 	},
 	"extend_conduit": {
@@ -197,7 +201,7 @@
 		"entity_action": {
 			"type": "origins:apply_effect",
 			"effect": {
-				"effect": "minecraft:conduit_power",
+				"id": "minecraft:conduit_power",
 				"duration": 6000
 			}
 		},
@@ -215,13 +219,13 @@
 				},
 				{
 					"type": "origins:block_in_radius",
+					"radius": 32,
 					"block_condition": {
 						"type": "origins:block",
 						"block": "minecraft:conduit"
 					},
-					"compare_to": 1,
 					"comparison": ">=",
-					"radius": 32
+					"compare_to": 1
 				}
 			]
 		}

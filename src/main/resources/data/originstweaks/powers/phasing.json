@@ -116,8 +116,8 @@
 	"no_melee": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {
-			"value": 0,
-			"operation": "set_total"
+			"operation": "set_total",
+			"amount": 0
 		},
 		"condition": {
 			"type": "origins:and",
@@ -142,8 +142,8 @@
 	"no_projectile": {
 		"type": "origins:modify_projectile_damage",
 		"modifier": {
-			"value": 0,
-			"operation": "set_total"
+			"operation": "set_total",
+			"amount": 0
 		},
 		"condition": {
 			"type": "origins:and",

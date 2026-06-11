@@ -34,7 +34,7 @@
 					}
 				},
 				"result": {
-					"item": "minecraft:trident",
+					"id": "minecraft:trident",
 					"count": 1
 				}
 			}
@@ -47,9 +47,14 @@
 			"projectile": "minecraft:trident"
 		},
 		"modifier": {
-			"name": "merling projectile trident",
 			"operation": "multiply_total_multiplicative",
-			"value": 0.5
+			"amount": 0.5
+		},
+		"target_condition": {
+			"type": "origins:fluid_height",
+			"compare_to": 0,
+			"comparison": "!=",
+			"fluid": "minecraft:water"
 		},
 		"condition": {
 			"type": "origins:submerged_in",
@@ -59,31 +64,33 @@
 	"melee": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {
-			"name": "merling melee trident",
 			"operation": "multiply_total_multiplicative",
-			"value": 0.5
+			"amount": 0.5
 		},
-		"bientity_condition": {
-			"type": "origins:actor_condition",
-			"condition": {
-				"type": "origins:and",
-				"conditions": [
-					{
-						"type": "origins:equipped_item",
-						"equipment_slot": "mainhand",
-						"item_condition": {
-							"type": "origins:ingredient",
-							"ingredient": {
-								"item": "minecraft:trident"
-							}
+		"target_condition": {
+			"type": "origins:fluid_height",
+			"compare_to": 0,
+			"comparison": "!=",
+			"fluid": "minecraft:water"
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:trident"
 						}
-					},
-					{
-						"type": "origins:submerged_in",
-						"fluid": "minecraft:water"
 					}
-				]
-			}
+				},
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water"
+				}
+			]
 		}
 	},
 	"crafting": {
@@ -108,10 +115,21 @@
 				}
 			},
 			"result": {
-				"item": "minecraft:trident",
+				"id": "minecraft:trident",
 				"count": 1
 			},
 			"group": "trident"
+		}
+	},
+	"recipe": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "recipe give @s originstweaks:aquadynamic_crafting"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "recipe take @s originstweaks:aquadynamic_crafting"
 		}
 	}
 }

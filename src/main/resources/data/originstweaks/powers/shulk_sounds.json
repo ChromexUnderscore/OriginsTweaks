@@ -52,6 +52,11 @@
 					"type": "origins:status_effect",
 					"effect": "minecraft:invisibility",
 					"inverted": true
+				},
+				{
+					"type": "origins:biome",
+					"biome": "minecraft:deep_dark",
+					"inverted": true
 				}
 			]
 		}

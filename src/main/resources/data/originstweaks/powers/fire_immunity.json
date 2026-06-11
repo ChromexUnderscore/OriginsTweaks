@@ -13,22 +13,12 @@
 			"fluid": "minecraft:lava"
 		}
 	},
-	"lava_swim_speed": {
-		"type": "origins:modify_swim_speed",
-		"modifier": {
-			"operation": "addition",
-			"value": -0.02
-		},
-		"condition": {
-			"type": "origins:submerged_in",
-			"fluid": "minecraft:lava"
-		}
-	},
 	"lava_movement_speed": {
 		"type": "origins:modify_lava_speed",
 		"modifier": {
-			"operation": "addition",
-			"value": 0.2
+			"id": "originstweaks:lava_move_speed",
+			"operation": "add_value",
+			"amount": 0.2
 		},
 		"condition": {
 			"type": "origins:swimming",
@@ -38,6 +28,6 @@
 	"lava_vision": {
 		"type": "origins:lava_vision",
 		"s": 0.0,
-		"v": 3.0
+		"v": 6.0
 	}
 }

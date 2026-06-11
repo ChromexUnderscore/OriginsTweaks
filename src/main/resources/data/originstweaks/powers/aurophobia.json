@@ -22,7 +22,7 @@
 	"gold_tools_attack": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {
-			"value": 0,
+			"amount": 0,
 			"operation": "set_total"
 		},
 		"condition": {
@@ -70,7 +70,7 @@
 	"gold_tools_mining": {
 		"type": "origins:modify_break_speed",
 		"modifier": {
-			"value": 0,
+			"amount": 0,
 			"operation": "set_total"
 		},
 		"condition": {

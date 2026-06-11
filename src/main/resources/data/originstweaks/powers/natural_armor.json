@@ -23,7 +23,7 @@
 			}
 		}
 	],
-	"shells": {
+	"shell_shield": {
 		"type": "origins:resource",
 		"min": 0,
 		"max": 7,
@@ -33,7 +33,7 @@
 			"bar_index": 0,
 			"condition": {
 				"type": "origins:resource",
-				"resource": "*:*_shells",
+				"resource": "*:*_shell_shield",
 				"comparison": "!=",
 				"compare_to": 0
 			}
@@ -43,7 +43,7 @@
 		"type": "origins:active_self",
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "*:*_shells",
+			"resource": "*:*_shell_shield",
 			"change": 1
 		},
 		"cooldown": 40,
@@ -61,7 +61,7 @@
 			"comparison": "=="
 		}
 	},
-	"hit": {
+	"shield_crack": {
 		"type": "origins:self_action_when_hit",
 		"damage_condition": {
 			"type": "origins:amount",
@@ -73,12 +73,31 @@
 			"actions": [
 				{
 					"type": "origins:change_resource",
-					"resource": "*:*_shells",
-					"change": -1
+					"resource": "*:*_shell_shield",
+					"change": -2
 				},
 				{
 					"type": "origins:trigger_cooldown",
 					"power": "*:*_cooldown"
+				},
+				{
+					"type": "origins:spawn_particles",
+					"particle": "minecraft:electric_spark",
+					"offset_y": 1,
+					"spread": {
+						"x": 0.25,
+						"y": 0.5,
+						"z": 0.25
+					},
+					"speed": 0,
+					"count": 20
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.zombie.break_wooden_door",
+					"category": "players",
+					"volume": 0.5,
+					"pitch": 1.5
 				}
 			]
 		},
@@ -90,7 +109,7 @@
 			"type": "origins:target_action",
 			"action": {
 				"type": "origins:change_resource",
-				"resource": "*:*_shells",
+				"resource": "*:*_shell_shield",
 				"change": 0,
 				"operation": "set"
 			}
@@ -100,7 +119,7 @@
 		"type": "origins:action_over_time",
 		"rising_action": {
 			"type": "origins:change_resource",
-			"resource": "*:*_shells",
+			"resource": "*:*_shell_shield",
 			"change": 0,
 			"operation": "set"
 		},
@@ -139,11 +158,10 @@
 		"attribute": "minecraft:generic.armor",
 		"modifier": {
 			"operation": "add_base_early",
-			"resource": "*:*_shells",
-			"value": 0,
+			"resource": "*:*_shell_shield",
 			"modifier": {
 				"operation": "add_base_early",
-				"value": 3
+				"amount": 3
 			}
 		}
 	},
@@ -159,25 +177,25 @@
 			"conditions": [
 				{
 					"type": "origins:resource",
-					"resource": "*:*_shells",
+					"resource": "*:*_shell_shield",
 					"comparison": "==",
 					"compare_to": 1
 				},
 				{
 					"type": "origins:resource",
-					"resource": "*:*_shells",
+					"resource": "*:*_shell_shield",
 					"comparison": "==",
 					"compare_to": 3
 				},
 				{
 					"type": "origins:resource",
-					"resource": "*:*_shells",
+					"resource": "*:*_shell_shield",
 					"comparison": "==",
 					"compare_to": 5
 				},
 				{
 					"type": "origins:resource",
-					"resource": "*:*_shells",
+					"resource": "*:*_shell_shield",
 					"comparison": "==",
 					"compare_to": 7
 				}

@@ -8,10 +8,41 @@
 
 **Gameplay Changes**
 
++ Common:
+	``Ambient Sounds``:
+		+ Ambient Sounds will no longer play in the Deep Dark.
++ Arachnid:
+	+ ``Master of Webs``:
+		+ Instead of only shown if not full, the Silk Bar now shows when a grappleable block is in reach, hides otherwise.
+		+ Cobweb recipe now shows in recipe book if the player's origin is Arachnid.
++ Elytrian:
+	+ ``Gift of the Skies``
+		+ Decreased Launch Velocity from ``2`` to ``1``.
++ Shulk:
+	+ ``Antigravity Pellet``:
+		+ Removed unfinished ability for now.
+	+ ``Natural Armor``:
+		+ Broken Shell Shield now has audio and visual effects.
 + Feline:
 	+ ``Natural Hunter``:
 		+ Added some missing blocks to the ``sharpen_stone`` block tag.
 		+ Added new Polished Tuff blocks to the ``sharpen_stone`` block tag.
++ Enderian:
+	+ ``Slender Body``:
+		+ Silk Touch Block Harvest now checks if the mainhand does not hold a tool.
++ Merling:
+	+ ``Aquadynamic``:
+		+ Trident Damage Bonus underwater now only applies if both actor and target are in water.
+		+ Trident Recipe now shows up in the recipe book if the player's origin is Merling.
+	+ ``Aquatic``:
+		+ Merlings now properly spawn in any nearby ocean biome and not just the ``minecraft:ocean`` biome.
++ Blazeborn:
+	+ ``Burning Wrath``:
+		+ Reduced the duration of igniting a player from ``8`` seconds to ``6`` seconds.
+		+ Igniting an enemy no longer extinguishes the player, allowing for follow up attacks to reapply the burning effect.
+	+ ``Fire Immunity``:
+		+ No longer decreases water swim speed.
+		+ Increased far fog visibility in Lava from ``3.0`` to ``6.0``.
 + Phantom:
 	+ ``Aurophobia``:
 		+ Holding any golden tool no longer allows block interactions.
@@ -20,6 +51,11 @@
 
 **Technical Changes**
 
++ Implemented updated Apoli json structure changes.
++ Refactored ``com.chromexunderscore.originstweaks.OriginsTweaks`` class to ``com.chromexunderscore.originstweaks.Main``.
++ Removed the unused client-side Class and moved assets into the Main Entrypoint Folder.
++ Removed Dependency Pehkui; using AdditionalEntityAttributes and Vanilla Attributes instead.
++ Updated ``CODE_OF_CONDUCT.md`` for clarity.
 + Updated data Folder Structure for MC 1.21.1.
 + Updated Fabric Project Structure for MC 1.21.1.
 + Updated Advancements to use mc 1.21.1 json components.
@@ -32,9 +68,8 @@
 **Dependencies**
 
 + Minecraft 1.21.1
-+ Origins Mod [1.13.0-pre.1](https://modrinth.com/mod/origins/version/1.13.0-pre.1+mc.1.21.1)
++ Origins Mod [1.13.0-pre.2](https://modrinth.com/mod/origins/version/1.13.0-pre.2+mc.1.21.1)
 + [Fabric API](https://modrinth.com/mod/fabric-api)
-+ [Pehkui](https://modrinth.com/mod/pehkui)
 + [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
 
 ### [Version 1.18 | Minecraft 1.20.1-1.20.4]
