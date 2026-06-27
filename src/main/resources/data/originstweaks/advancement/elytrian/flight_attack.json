@@ -1,13 +1,13 @@
 {
 	"display": {
 		"title": {
-			"translate": "advancement.originstweaks.elytrian.flight_ranged_attack.title"
+			"translate": "advancement.originstweaks.elytrian.flight_attack.title"
 		},
 		"description": {
-			"translate": "advancement.originstweaks.elytrian.flight_ranged_attack.description"
+			"translate": "advancement.originstweaks.elytrian.flight_attack.description"
 		},
 		"icon": {
-			"id": "minecraft:crossbow"
+			"id": "minecraft:firework_rocket"
 		},
 		"frame": "task",
 		"show_toast": true,

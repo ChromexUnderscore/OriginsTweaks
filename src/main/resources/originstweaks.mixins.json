@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.chromexunderscore.originstweaks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PassengerRenderMixin",
+    "AccessorLivingEntityRenderer",
+    "HideRiderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -244,8 +244,8 @@
 	"advancement.originstweaks.elytrian.crash.title": "Тревога, Тревога",
 	"advancement.originstweaks.elytrian.crash.description": "Получите не менее 7 сердец кинетического урона за один раз.",
 
-	"advancement.originstweaks.elytrian.flight_ranged_attack.title": "Поддержка авиакомпании Элитрианец",
-	"advancement.originstweaks.elytrian.flight_ranged_attack.description": "Используйте дальнюю атаку после как минимум 3 секунд планирования.",
+	"advancement.originstweaks.elytrian.flight_attack.title": "Поддержка авиакомпании Элитрианец",
+	"advancement.originstweaks.elytrian.flight_attack.description": "Используйте дальнюю атаку после как минимум 3 секунд планирования.",
 
 	"advancement.originstweaks.elytrian.player_mount.title": "Бесконечность не придел!",
 	"advancement.originstweaks.elytrian.player_mount.description": "Позвольте другому игроку ездить на вас и совершить полет.",

@@ -65,19 +65,19 @@
 
 	"power.originstweaks.gift_of_the_skies.name": "Geschenk der Winde",
 	"power.originstweaks.gift_of_the_skies.description": "Durch die Gunst der Lüfte wurden dir Flügel verliehen, mit denen du mühelos fliegen kannst.",
-	"badge.originstweaks.gift_of_the_skies.0": "Drücke [Primär], um vom Boden abzuheben oder während des Gleitens aufzusteigen.",
-	"badge.originstweaks.gift_of_the_skies.1": "Abheben und Aufsteigen verbrauchen Energie. Ruhe dich regelmäßig am Boden aus, um nicht zu erschöpfen.",
+	"badge.originstweaks.gift_of_the_skies.0": "Drücke [Primär], um deine Flügel zu schlagen und während des Gleitens aufzusteigen.",
+	"badge.originstweaks.gift_of_the_skies.1": "Flügelschläge verbraucht Energie. Ruhe dich regelmäßig am Boden aus, um nicht zu erschöpfen.",
 	"badge.originstweaks.gift_of_the_skies.2": "Es ist schwieriger in der Luft zu bleiben, wenn du mehr als 12 Rüstungspunkte hast.",
 	"badge.originstweaks.gift_of_the_skies.3": "Es ist zu gefährlich, Feuerwerksraketen beim Gleiten zu verwenden.",
 
 	"power.originstweaks.companion_mounting.name": "Freundestransport",
 	"power.originstweaks.companion_mounting.description": "Du kannst deine Freunde auf deinem Rücken tragen, während du mit deinen Elytren fliegst. Bei einem Absturz oder Treffer durch ein Projektil fallen sie jedoch ab.",
-	"badge.originstweaks.companion_mounting.0": "Du kannst Passagiere jederzeit mit [Sekundär] abwerfen.",
+	"badge.originstweaks.companion_mounting.0": "Du musst Schleichen, um es einen Mitspieler das Aufzusteigen zu ermöglichen und kannst sie jederzeit mit [Sekundär] abwerfen.",
 	"badge.originstweaks.companion_mounting.1": "Beigetragen von AnimGoated",
 
 	"power.originstweaks.aerial_combatant.name": "Luftiger Kämpfer",
-	"power.originstweaks.aerial_combatant.description": "Du verursachst erheblich mehr Schaden, wenn du nach 3 Sekunden Flug angreifst.",
-	"badge.originstweaks.aerial_combatant.0": "Angriffe während des Flugs erhalten jeweils einen Schadensbonus von 2x im Nahkampf und 1.5x im Fernkampf.",
+	"power.originstweaks.aerial_combatant.description": "Du verursachst mehr Schaden, je schneller du fliegst.",
+	"badge.originstweaks.aerial_combatant.0": "Angriffe während des Flugs erhalten einen Schadensbonus von bis zu 3x je nach Fluggeschwindigkeit.",
 
 	"origin.originstweaks.enderian.name": "Enderling [OT]",
 	"origin.originstweaks.enderian.description": "Als Töchter und Söhne des Enderdrachen können sich Enderlinge teleportieren, nehmen jedoch Schaden im Wasser.",
@@ -210,7 +210,7 @@
 	"advancement.originstweaks.avian.root.title": "Vogelwesen",
 	"advancement.originstweaks.avian.root.description": "Du hast die Vogelwesen-Herkunft gewählt.",
 
-	"advancement.originstweaks.avian.buildlimit_sleep.title": "Reinhart Mey - Über den Wolken",
+	"advancement.originstweaks.avian.buildlimit_sleep.title": "Über den Wolken",
 	"advancement.originstweaks.avian.buildlimit_sleep.description": "Schlafe in einer Höhe von mindestens 300 Blöcken.",
 
 	"advancement.originstweaks.avian.harvest_golden_crop.title": "Schmackofatz",
@@ -243,8 +243,8 @@
 	"advancement.originstweaks.elytrian.crash.title": "Nicht so tief, Rüdiger!",
 	"advancement.originstweaks.elytrian.crash.description": "Erleide 7 oder mehr Herzen kinetischen Schaden auf einmal.",
 
-	"advancement.originstweaks.elytrian.flight_ranged_attack.title": "Luftangriff",
-	"advancement.originstweaks.elytrian.flight_ranged_attack.description": "Führe einen Fernkampfangriff aus, nachdem du mindestens 3 Sekunden geflogen bist.",
+	"advancement.originstweaks.elytrian.flight_attack.title": "Luftattacke!",
+	"advancement.originstweaks.elytrian.flight_attack.description": "Führe einen Nahkampfangriff aus, während du mit halsbrecherischen geschwindigkeiten fliegst.",
 
 	"advancement.originstweaks.elytrian.player_mount.title": "Bis zur Unendlichkeit...",
 	"advancement.originstweaks.elytrian.player_mount.description": "Nimm einen Freund huckepack hebe ab.",
@@ -273,7 +273,7 @@
 	"advancement.originstweaks.feline.break_tough_stone.title": "Sturer Block",
 	"advancement.originstweaks.feline.break_tough_stone.description": "Zerstöre einen robusten Steinblock mit einem Trank der Stärke oder der Effizienz Verzauberung.",
 
-	"advancement.originstweaks.feline.cooked_fish_stack.title": "Frischers Fitz frischt... Frischers...",
+	"advancement.originstweaks.feline.cooked_fish_stack.title": "Fischers Fitz frischt... Frischers...",
 	"advancement.originstweaks.feline.cooked_fish_stack.description": "Trage einen vollen Stapel gekochten Kabeljau oder gekochten Lachs in deinem Inventar.",
 
 	"advancement.originstweaks.feline.sharp_claws.title": "Vorsicht, Scharf",

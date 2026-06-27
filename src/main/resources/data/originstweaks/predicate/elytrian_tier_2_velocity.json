@@ -1,0 +1,13 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:player",
+		"movement": {
+			"speed": {
+				"min": 17,
+				"max": 21.999
+			}
+		}
+	}
+}

@@ -23,25 +23,25 @@
 			"type": "origins:mount"
 		},
 		"bientity_condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:target_condition",
-					"condition": {
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
 						"type": "origins:passenger",
 						"inverted": true
-					}
-				},
-				{
-					"type": "origins:target_condition",
-					"condition": {
+					},
+					{
 						"type": "origins:resource",
 						"resource": "*:*_mount_cooldown",
 						"comparison": "==",
 						"compare_to": 0
+					},
+					{
+						"type": "origins:sneaking"
 					}
-				}
-			]
+				]
+			}
 		}
 	},
 	"mount_cooldown": {
@@ -127,18 +127,5 @@
 				}
 			}
 		}
-	},
-	"glow": {
-		"type": "origins:entity_glow",
-		"bientity_condition": {
-			"type": "origins:invert",
-			"condition": {
-				"type": "origins:riding"
-			}
-		},
-		"use_teams": false,
-		"red": 0.5,
-		"green": 0.8,
-		"blue": 0.65
 	}
 }

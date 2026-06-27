@@ -9,87 +9,445 @@
 			}
 		}
 	],
-	"melee": {
+	"melee_tier_1": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {
 			"operation": "multiply_base_additive",
-			"amount": 1
+			"amount": 0.29
 		},
 		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:fall_flying"
-				},
-				{
-					"type": "origins:resource",
-					"resource": "*:*_flight_counter",
-					"comparison": "==",
-					"compare_to": 15
-				}
-			]
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 1
 		}
 	},
-	"ranged": {
-		"type": "origins:modify_projectile_damage",
+	"melee_tier_2": {
+		"type": "origins:modify_damage_dealt",
 		"modifier": {
 			"operation": "multiply_base_additive",
-			"amount": 0.5
+			"amount": 0.57
 		},
 		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:fall_flying"
-				},
-				{
-					"type": "origins:resource",
-					"resource": "*:*_flight_counter",
-					"comparison": "==",
-					"compare_to": 15
-				}
-			]
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 2
 		}
 	},
-	"flight_counter": {
+	"melee_tier_3": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 0.86
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 3
+		}
+	},
+	"melee_tier_4": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 1.14
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 4
+		}
+	},
+	"melee_tier_5": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 1.43
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 5
+		}
+	},
+	"melee_tier_6": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 1.71
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 6
+		}
+	},
+	"melee_tier_7": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_base_additive",
+			"amount": 2.0
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_velocity_tiers",
+			"comparison": "==",
+			"compare_to": 7
+		}
+	},
+	"velocity_tiers": {
 		"type": "origins:resource",
 		"min": 0,
-		"max": 15,
-		"max_action": {
-			"type": "origins:play_sound",
-			"sound": "minecraft:entity.arrow.hit_player",
-			"category": "ambient",
-			"pitch": 1,
-			"volume": 1
-		},
+		"max": 7,
+		"start_value": 0,
 		"hud_render": {
-			"bar_index": 1,
-			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 5,
 			"condition": {
-				"type": "origins:resource",
-				"resource": "*:*_flight_counter",
-				"comparison": "!=",
-				"compare_to": 0
+				"type": "origins:fall_flying"
 			}
 		}
 	},
-	"tick": {
+	"velocity_tier_tick_up": {
 		"type": "origins:action_over_time",
-		"interval": 5,
 		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "*:*_flight_counter",
-			"change": 1,
-			"operation": "add"
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 1,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_1_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "<",
+								"compare_to": 1
+							}
+						]
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 2,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_2_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "<",
+								"compare_to": 2
+							}
+						]
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 3,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_3_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "<",
+								"compare_to": 3
+							}
+						]
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 4,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_4_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "<",
+								"compare_to": 4
+							}
+						]
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 5,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_5_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "<",
+								"compare_to": 5
+							}
+						]
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 6,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_6_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "<",
+								"compare_to": 6
+							}
+						]
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 7,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute if predicate originstweaks:elytrian_tier_7_velocity",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "*:*_velocity_tiers",
+								"comparison": "!=",
+								"compare_to": 7
+							}
+						]
+					}
+				}
+			]
 		},
-		"falling_action": {
-			"type": "origins:change_resource",
-			"resource": "*:*_flight_counter",
-			"change": 0,
-			"operation": "set"
+		"interval": 3
+	},
+	"velocity_tier_tick_down": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": 0,
+						"operation": "set"
+					},
+					"condition": {
+						"type": "origins:fall_flying",
+						"inverted": true
+					}
+				},
+				{
+					"action": {
+						"type": "origins:change_resource",
+						"resource": "*:*_velocity_tiers",
+						"change": -1,
+						"operation": "add"
+					},
+					"condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_0_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 0
+									}
+								]
+							},
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_1_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 1
+									}
+								]
+							},
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_2_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 2
+									}
+								]
+							},
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_3_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 3
+									}
+								]
+							},
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_4_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 4
+									}
+								]
+							},
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_5_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 5
+									}
+								]
+							},
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:command",
+										"command": "execute if predicate originstweaks:elytrian_tier_6_velocity",
+										"comparison": "==",
+										"compare_to": 1
+									},
+									{
+										"type": "origins:resource",
+										"resource": "*:*_velocity_tiers",
+										"comparison": ">",
+										"compare_to": 6
+									}
+								]
+							}
+						]
+					}
+				}
+			]
 		},
-		"condition": {
-			"type": "origins:fall_flying"
-		}
+		"interval": 20
 	}
 }

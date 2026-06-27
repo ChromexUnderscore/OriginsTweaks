@@ -12,6 +12,6 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info(
-				"For OriginsTweaks to work properly, enable flying in the server.properties and set \"mixin.entity.collisions.suffocation=false\" in lithium.properties when using lithium.");
+				"OriginsTweaks loaded.");
 	}
 }

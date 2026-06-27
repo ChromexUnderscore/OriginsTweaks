@@ -4,7 +4,37 @@
 
 ### [Version 1.19 | Minecraft 1.21.1]
 
-#### [Version 1.19.0 - Port to Origins 1.13.0-pre.1](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.19.0)
+#### [Version 1.19.0 - Elytrian Passenger Fixes and Flight Changes](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.19.1)
+
+**Gameplay Changes**
+
++ Elytrian:
+	+ ``Companion Mounting``:
+		+ Passengers will now be properly positioned on a player's back while standing and during Elytra flight.
+		+ Elytrian now has to sneak before another player can mount them.
+	+ ``Gift of the Skies``:
+		+ Removed Launch Ability, since you can simply use ascend instead.
+	+ ``Aerial Combatant``:
+		+ Reworked ability to grant a melee damage bonus relative to flight velocity.
+
+**Technical Changes**
+
++ Updated ``README.md``.
++ Updated Elytrian Wiki Page.
++ Updated American English Localization.
++ Updated British English Localization.
++ Updated German Localization.
++ Removed Joke languages due to being outdated.
++ Bumped Version to 1.19.1.
+
+**Dependencies**
+
++ Minecraft 1.21.1
++ Origins Mod [1.13.0-pre.2](https://modrinth.com/mod/origins/version/1.13.0-pre.2+mc.1.21.1)
++ [Fabric API](https://modrinth.com/mod/fabric-api)
++ [Origins: Dietary Delights](https://modrinth.com/datapack/origins-dietary-delights)
+
+#### [Version 1.19.0 - Port to Origins 1.13.0-pre.2](https://github.com/ChromexUnderscore/OriginsTweaks/releases/tag/1.19.0)
 
 **Gameplay Changes**
 

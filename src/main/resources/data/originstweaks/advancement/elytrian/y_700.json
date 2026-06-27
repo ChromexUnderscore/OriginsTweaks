@@ -22,5 +22,5 @@
 	"rewards": {
 		"experience": 100
 	  },
-	"parent": "originstweaks:elytrian/flight_ranged_attack"
+	"parent": "originstweaks:elytrian/flight_attack"
 }

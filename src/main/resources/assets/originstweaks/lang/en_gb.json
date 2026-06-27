@@ -65,19 +65,19 @@
 
 	"power.originstweaks.gift_of_the_skies.name": "Gift of the Skies",
 	"power.originstweaks.gift_of_the_skies.description": "Evolution gifted you wings, which you can use to fly around with ease.",
-	"badge.originstweaks.gift_of_the_skies.0": "Use [Primary] to launch high into the air when grounded or to ascend while gliding.",
-	"badge.originstweaks.gift_of_the_skies.1": "You have limited Stamina. Launching and ascending use stamina; catch your breath by resting on the ground.",
-	"badge.originstweaks.gift_of_the_skies.2": "It's harder to fly with armour levels higher than 12.",
-	"badge.originstweaks.gift_of_the_skies.3": "It's too dangerous to use fireworks while gliding.",
+	"badge.originstweaks.gift_of_the_skies.0": "Use [Primary] to ascend while gliding.",
+	"badge.originstweaks.gift_of_the_skies.1": "You have limited Stamina. Ascending uses stamina; catch your breath by resting on the ground for a while.",
+	"badge.originstweaks.gift_of_the_skies.2": "It's harder to ascend with armour levels higher than 12.",
+	"badge.originstweaks.gift_of_the_skies.3": "It's too dangerous to use fireworks while flying.",
 
 	"power.originstweaks.companion_mounting.name": "Companion Mounting",
 	"power.originstweaks.companion_mounting.description": "Your companions can mount you, but if you crash or are hit by any projectile, they will fall off.",
-	"badge.originstweaks.companion_mounting.0": "You may kick off passengers at any time with [Secondary].",
+	"badge.originstweaks.companion_mounting.0": "You need to sneak to allow a player to mount you, and you may kick off passengers at any time with [Secondary].",
 	"badge.originstweaks.companion_mounting.1": "Ability contributed by AnimGoated",
 
 	"power.originstweaks.aerial_combatant.name": "Aerial Combatant",
-	"power.originstweaks.aerial_combatant.description": "You deal substantially more damage after 3 seconds of elytra flight.",
-	"badge.originstweaks.aerial_combatant.0": "Attacks mid-flight receive a 2x (Melee) and 1.5x (Ranged) damage boost respectively",
+	"power.originstweaks.aerial_combatant.description": "You deal more melee damage the faster you fly.",
+	"badge.originstweaks.aerial_combatant.0": "Melee Attacks mid-flight receive a damage boost relative to your flight velocity, up to x3.",
 
 	"origin.originstweaks.enderian.name": "Enderian [OT]",
 	"origin.originstweaks.enderian.description": "Born as children of the Ender Dragon, Enderians are capable of teleporting but are vulnerable to water.",
@@ -244,8 +244,8 @@
 	"advancement.originstweaks.elytrian.crash.title": "Mayday, Mayday",
 	"advancement.originstweaks.elytrian.crash.description": "Take 7 or more hearts of kinetic damage at once.",
 
-	"advancement.originstweaks.elytrian.flight_ranged_attack.title": "Elytrian Air Support",
-	"advancement.originstweaks.elytrian.flight_ranged_attack.description": "Use a ranged attack after gliding for at least 3 seconds.",
+	"advancement.originstweaks.elytrian.flight_attack.title": "Air Support",
+	"advancement.originstweaks.elytrian.flight_attack.description": "Use a melee attack while flying at ludicrous speeds.",
 
 	"advancement.originstweaks.elytrian.player_mount.title": "To Infinity and Beyond!",
 	"advancement.originstweaks.elytrian.player_mount.description": "Let another player mount you and take flight.",

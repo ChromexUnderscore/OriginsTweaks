@@ -161,11 +161,9 @@ The Elytrian origin grants players flight-related abilities, making them masters
 ## Abilities
 
 ### Gift of the Skies [C]
-- Activate with the **[Primary] Key**:
-    - While grounded: Launch a few blocks high into the air using **100 Stamina**.
-    - While gliding: Ascend up to 7 blocks using **25 Stamina**.
+- Press the **[Primary] Key** to ascend upwards using **25 Stamina**.
 - Max Stamina: **600**.
-    - Rest on the ground, sleep or respawn to refill stamina.
+    - Rest while gliding, on the ground, sleep or respawn to refill stamina.
 - Wearing **13+ Armor** weakens the ability and increases stamina costs:
     - +50 Stamina for launching.
     - +25 Stamina for ascending.
@@ -180,9 +178,7 @@ The Elytrian origin grants players flight-related abilities, making them masters
 - This ability was contributed by **AnimGoated**.
 
 ### Aerial Combatant [C]
-- Activates after gliding for at least **3 seconds**.
-    - Gain a **2x damage increase** on **Melee Attacks**.
-    - Gain a **1.5x damage increase** on **Ranged Attacks**.
+- Grants a stacking melee damage bonus relative on current flight velocity, up to 3x.
 
 ### Claustrophobia [U]
 - Being somewhere with a low ceiling for too long will weaken you and make you slower.
@@ -198,9 +194,9 @@ The Elytrian origin grants players flight-related abilities, making them masters
 - A template for custom wings is available in **Modrinth** and **GitHub releases**.
 
 ## Playstyle Tips
-- Use the active ability in **Gift of the Skies** to quickly take to the skies or maintain your altitude.
-- Take advantage of **Aerial Combatant** to deal massive damage whilst gliding.
-    - As in Vanilla, **Maces** will not benefit from smashing attacks while in elytra flight.
+- Use the active ability in **Gift of the Skies** to maintain your altitude while flying.
+- Take advantage of **Aerial Combatant** to deal heavy damage when rushing past someone at high speeds.
+    - Like in Vanilla Minecraft, **Maces** will not benefit from smashing attacks while in elytra flight.
 - Be mindful of your **Stamina Bar** and avoid wearing heavy armor to maximize flight time.
     - Optimal Flight Armor: Iron Helmet paired with Chainmail Chestplate, Leggings and Boots.
 - Use **Companion Mounting** to quickly transport allies from A to B.

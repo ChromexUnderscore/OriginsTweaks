@@ -27,6 +27,9 @@
 			"com.chromexunderscore.originstweaks.Main"
 		]
 	},
+	"mixins": [
+		"originstweaks.mixins.json"
+	],
 	"depends": {
 		"minecraft": "~1.21.1",
 		"origins": ">=1.13.0-pre.2+mc.1.21.1",

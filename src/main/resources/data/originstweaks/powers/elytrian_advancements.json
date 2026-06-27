@@ -53,24 +53,25 @@
 			"type": "origins:fall_flying"
 		}
 	},
-	"flight_ranged_attack": {
+	"flight_attack": {
 		"type": "origins:self_action_on_hit",
 		"entity_action": {
 			"type": "origins:grant_advancement",
-			"advancement": "originstweaks:elytrian/flight_ranged_attack"
+			"advancement": "originstweaks:elytrian/flight_attack"
 		},
 		"cooldown": 0,
 		"hud_render": {
 			"should_render": false
 		},
 		"damage_condition": {
-			"type": "origins:projectile"
+			"type": "origins:type",
+			"damage_type": "minecraft:player_attack"
 		},
 		"condition": {
 			"type": "origins:resource",
-			"resource": "*:aerial_combatant_flight_counter",
-			"compare_to": 15,
-			"comparison": "=="
+			"resource": "*:aerial_combatant_velocity_tiers",
+			"compare_to": 7,
+			"comparison": ">="
 		}
 	},
 	"player_mount": {

@@ -43,10 +43,10 @@ For detailed changes to Abilities from the Origins Mod and New Abilities added b
 <details><summary>Elytrian</summary>
 
 + Elytrians can choose different visual styles for their elytra.
-+ They can launch into the sky from the ground or ascend while gliding, which consumes stamina.
-+ Elytrians can wear any armor, but Heavy Armor reduces or prevents the ascend/launch ability and costs more stamina.
-+ Gliding now also provides a +50% damage boost to ranged attacks.
-+ Players can right-click an Elytrian to ride and fly with them.
++ They can ascend while gliding, which consumes stamina.
++ Elytrians can wear any armor, but Heavy Armor reduces or prevents the ascend ability and costs more stamina.
++ Gliding now grants a stacking damage multiplier relative to flight velocity.
++ Players can right-click a sneaking Elytrian to fly with them.
   + Ability contributed by AnimGoated.
 
 </details>
