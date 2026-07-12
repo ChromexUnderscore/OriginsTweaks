@@ -31,8 +31,8 @@ Please also submit your Software Versions, such as:
 + Minecraft
 + Fabric Loader
 + Origins Mod
-+ Pehkui
 + Fabric API
++ Overgrown's Origins: Dietary Delight
 + OriginsTweaks
 
 **Crashlog**
@@ -43,5 +43,5 @@ Crashlogs / Logs are located in ``.minecraft/crashlogs`` / ``.minecraft/logs/lat
 Before creating a report, make sure you properly installed following mods:
 
 + Origins Mod
-+ Pehkui
 + Fabric API
++ Overgrown's Origins: Dietary Delight
