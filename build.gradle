@@ -18,6 +18,78 @@ repositories {
 	// for more information about repositories.
 }
 
+// Origins, Apoli, Calio and Cardinal Components are not on Maven, so they are used as local jars
+// from libs/. Apoli and its dependencies are nested inside the Origins jar, so they get unpacked
+// from it. This runs at configuration time because Loom resolves mod dependencies before tasks run.
+def libsDirectory = rootProject.file('libs')
+
+ext.libsDirectory = libsDirectory
+
+def originsJar = new File(libsDirectory, project.origins_jar)
+def nestedJars = [
+	project.apoli_jar,
+	project.calio_jar,
+	project.cardinal_components_base_jar,
+	project.cardinal_components_entity_jar,
+]
+
+def missingJars = ([project.origins_jar] + nestedJars).findAll { !new File(libsDirectory, it).exists() }
+
+if (!missingJars.isEmpty()) {
+	libsDirectory.mkdirs()
+
+	if (!originsJar.exists()) {
+		logger.lifecycle("Downloading ${project.origins_jar} ...")
+		ant.get(src: project.origins_url, dest: originsJar, verbose: true)
+	}
+
+	List<String> toUnpack = nestedJars.findAll { !new File(libsDirectory, it).exists() }
+
+	if (!toUnpack.isEmpty()) {
+		logger.lifecycle("Unpacking ${toUnpack.size()} nested jar(s) from ${project.origins_jar} ...")
+		copy {
+			from zipTree(originsJar)
+			include toUnpack.collect { "META-INF/jars/${it}" }
+			// Drop the META-INF/jars/ prefix so the jars land directly in libs/.
+			eachFile { it.path = it.name }
+			includeEmptyDirs = false
+			into libsDirectory
+		}
+	}
+
+	// Calio and Cardinal Components are nested inside Apoli, one level deeper than Origins, so they
+	// are only unpacked once the Apoli jar itself is in place.
+	File apoliJar = new File(libsDirectory, project.apoli_jar)
+
+	if (apoliJar.exists()) {
+		List<String> fromApoli = [project.calio_jar, project.cardinal_components_base_jar,
+			project.cardinal_components_entity_jar].findAll { !new File(libsDirectory, it).exists() }
+
+		if (!fromApoli.isEmpty()) {
+			logger.lifecycle("Unpacking ${fromApoli.size()} nested jar(s) from ${project.apoli_jar} ...")
+			copy {
+				from zipTree(apoliJar)
+				include fromApoli.collect { "META-INF/jars/${it}" }
+				eachFile { it.path = it.name }
+				includeEmptyDirs = false
+				into libsDirectory
+			}
+		}
+	}
+
+	List<String> absent = ([project.origins_jar] + nestedJars).findAll { !new File(libsDirectory, it).exists() }
+
+	if (!absent.isEmpty()) {
+		throw new GradleException(
+			"Could not obtain ${absent.join(', ')} in libs/. Download ${project.origins_url} " +
+			"manually and unpack the jars inside its META-INF/jars/ directory.")
+	}
+}
+
+def localDependency(String fileName) {
+	return files(new File(project.ext.libsDirectory, fileName))
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -26,7 +98,19 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
-	
+
+	modCompileOnly localDependency(project.origins_jar)
+	modCompileOnly localDependency(project.apoli_jar)
+	modCompileOnly localDependency(project.calio_jar)
+
+	// Transitive dependencies of Apoli that are also nested inside the Origins jar.
+	modCompileOnly localDependency(project.cardinal_components_base_jar)
+	modCompileOnly localDependency(project.cardinal_components_entity_jar)
+}
+
+// Compiling the mixin needs the jars in libs/, which are fetched above at configuration time.
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
 }
 
 processResources {
@@ -35,10 +119,6 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": inputs.properties.version
 	}
-}
-
-tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
 }
 
 java {

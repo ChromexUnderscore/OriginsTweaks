@@ -5,6 +5,9 @@ build/
 out/
 classes/
 
+# Origins / Apoli jars, downloaded by build.gradle
+libs/
+
 # eclipse
 
 *.launch
