@@ -5,7 +5,8 @@
   "mixins": [
     "PassengerRenderMixin",
     "AccessorLivingEntityRenderer",
-    "HideRiderMixin"
+    "HideRiderMixin",
+    "ConduitRangeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
